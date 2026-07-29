@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attendance__c</fullName>
+    <description>Use for Cara Connects onboarding group service entries.</description>
+    <label>Attendance</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scheduled, No Show</fullName>
+                <default>false</default>
+                <label>Scheduled, No Show</label>
+            </value>
+            <value>
+                <fullName>Attended, Traction Achieved</fullName>
+                <default>false</default>
+                <label>Attended, Traction Achieved</label>
+            </value>
+            <value>
+                <fullName>Partially Attended, Follow Up</fullName>
+                <default>false</default>
+                <label>Partially Attended, Follow Up</label>
+            </value>
+            <value>
+                <fullName>Partially Attended, Opted Out</fullName>
+                <default>false</default>
+                <label>Partially Attended, Opted Out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

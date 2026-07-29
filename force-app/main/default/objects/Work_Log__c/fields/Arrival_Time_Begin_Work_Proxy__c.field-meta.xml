@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arrival_Time_Begin_Work_Proxy__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (contains (Arrival_Time_Begin_Work__c, &quot;AM&quot;) &amp;&amp; contains (Arrival_Time_Begin_Work__c, &quot;12:&quot;), value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Arrival_Time_Begin_Work__c, &quot;AM&quot;), value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Arrival_Time_Begin_Work__c, &quot;PM&quot;) &amp;&amp; contains (Arrival_Time_Begin_Work__c, &quot;12:&quot;), value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Arrival_Time_Begin_Work__c, &quot;PM&quot;), value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+    <label>Arrival Time, Begin Work Proxy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

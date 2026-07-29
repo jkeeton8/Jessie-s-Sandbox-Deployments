@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExP_Cannot_Change_Program_Short_Name</fullName>
+    <active>true</active>
+    <description>ECMv1. Program Short Name is used for criteria based sharing &amp;so if it is changed it can create out of date records &amp; require that criteria based sharing rules need to be updated. To change a Program Short Name administrators can disabled this rule first.</description>
+    <errorConditionFormula>ISCHANGED( Program_Short_Name__c )</errorConditionFormula>
+    <errorMessage>Program Short Name cannot be changed. This is to prevent issues with sharing rules. If you need to change the Program Short Name please see your system administrator.</errorMessage>
+</ValidationRule>

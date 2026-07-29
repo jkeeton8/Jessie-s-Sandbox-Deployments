@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inclusion_Action_Lab_Pre_Survey</fullName>
+    <columns>NAME</columns>
+    <columns>Survey_Form__c</columns>
+    <columns>Date__c</columns>
+    <columns>Organization__c</columns>
+    <columns>Created_By_Summary__c</columns>
+    <columns>Cohort__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Survey__c.Inclusion_Action_Lab_Pre_Survey_1_0,Survey__c.Inclusion_Action_Lab_Pre_Survey_2_0_Short</value>
+    </filters>
+    <label>Inclusion Action Lab Pre-Survey</label>
+    <language>en_US</language>
+</ListView>

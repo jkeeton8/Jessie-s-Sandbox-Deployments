@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Days_Open__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( not(isblank(Referral_Closed_Date__c)), NULL, 
+
+if ( not(isblank(Pending_End_Date__c)), (Pending_Start_Date__c - Referral_Date__c) + (today() - Pending_End_Date__c),
+
+if ( not(isblank(Pending_Start_Date__c)), Pending_Start_Date__c - Referral_Date__c,
+
+today() - Referral_Date__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label># of Days Open</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

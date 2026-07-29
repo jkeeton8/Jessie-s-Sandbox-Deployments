@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_1_0_Total_Customer_Service__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId= &quot;01231000001ERwY&quot;, 
+
+if((if (Question_11_Response__c, 1, 0) + 
+if (Question_12_Response__c, 1, 0) + 
+if (Question_13_Response__c, 1, 0) + 
+if (Question_14_Response__c, 1, 0)) = 4, 1, 0),
+
+NULL)</formula>
+    <inlineHelpText>All checked awarded 1 point. Otherwise 0 points.</inlineHelpText>
+    <label>Cleanslate 1.0 Total: Customer Service</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

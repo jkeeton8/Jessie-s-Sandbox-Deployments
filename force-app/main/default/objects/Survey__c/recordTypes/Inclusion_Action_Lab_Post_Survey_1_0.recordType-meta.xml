@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inclusion_Action_Lab_Post_Survey_1_0</fullName>
+    <active>true</active>
+    <label>Inclusion Action Lab Post-Survey 1.0</label>
+</RecordType>

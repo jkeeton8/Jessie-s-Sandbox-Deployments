@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conviction_Policy_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (includes (Conviction_Policy_Consider_Students__c, &quot;With convictions within past 7 yrs&quot;), &quot;Friendly&quot;, 
+
+if (includes (Conviction_Policy_Consider_Students__c, &quot;With convictions older than 7 yrs&quot;), &quot;Flexible&quot;, 
+
+if (includes (Conviction_Policy_Consider_Students__c, &quot;With no convictions&quot;), &quot;Strict&quot;,
+
+&quot;Rating Not Available&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Based on &quot;Job Conviction Policy: Consider Students&quot;</inlineHelpText>
+    <label>Conviction Policy Rating</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

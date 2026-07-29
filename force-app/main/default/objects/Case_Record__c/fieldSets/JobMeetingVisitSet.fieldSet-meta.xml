@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JobMeetingVisitSet</fullName>
+    <description>This field set will include Primary position Vertical, conviction status, and marijuana use. This will be used on the Job Meeting Visit service entry.</description>
+    <displayedFields>
+        <field>Primary_Position_Vertical__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Conviction_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Tested_Positive_for_Marijuana__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Job Meeting Visit Set</label>
+</FieldSet>

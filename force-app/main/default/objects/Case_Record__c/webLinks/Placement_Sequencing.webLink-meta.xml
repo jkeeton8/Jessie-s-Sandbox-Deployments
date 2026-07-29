@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Sequencing</fullName>
+    <availability>online</availability>
+    <description>Invokes the batch job to re-sequence placements for all case records.</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Placement Sequencing</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)}
+if(confirm(&apos;The placement sequence will be re-calculated for all case records. Are you sure you want to proceed?&apos;)) sforce.apex.execute(&quot;ExpJPBatchPlacements&quot;,&quot;invokeBatchSequencer&quot;,{ });</url>
+</WebLink>

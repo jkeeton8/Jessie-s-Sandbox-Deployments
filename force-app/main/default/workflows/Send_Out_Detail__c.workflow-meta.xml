@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_1st_Interview</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to 1st Interview when a date is entered into Date of 1st Interview and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>1st Interview</literalValue>
+        <name>CAM Update Stage to 1st Interview</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_Advanced_Interview</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to Advanced Interview when a date is entered into Date of Advanced Interview and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>Advanced Interview</literalValue>
+        <name>CAM Update Stage to Advanced Interview</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_No_Placement</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to No Placement when a date is entered into Date of No Placement and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>No Placement</literalValue>
+        <name>CAM Update Stage to No Placement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_Offer_Made</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to Offer Made when a date is entered into Date of Offer Made and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>Offer Made</literalValue>
+        <name>CAM Update Stage to Offer Made</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_Placement</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to Placement when a date is entered into Date of Placement and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>Placement</literalValue>
+        <name>CAM Update Stage to Placement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Update_Stage_to_Send_Out_Sent</fullName>
+        <description>Part of workflow of same name that updates Send Out Detail Stage to Send Out Sent when a date is entered into Date of Send Out Sent and the record is saved.</description>
+        <field>Stage__c</field>
+        <literalValue>Send Out Sent</literalValue>
+        <name>CAM Update Stage to Send Out Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CAM Update Stage to 1st Interview</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_1st_Interview</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_1st_Interview__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Advanced_Interview__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_No_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Offer_Made__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to 1st Interview when a date is entered into Date of 1st Interview and the record is saved. Requires all subsequent stage dates to be null.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CAM Update Stage to Advanced Interview</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_Advanced_Interview</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Advanced_Interview__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_No_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Offer_Made__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to Advanced Interview when a date is entered into Date of Advanced Interview and the record is saved. Requires all subsequent stage dates to be null.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CAM Update Stage to No Placement</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_No_Placement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_No_Placement__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to No Placement when a date is entered into Date of No Placement and the record is saved.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CAM Update Stage to Offer Made</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_Offer_Made</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Offer_Made__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_No_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to Offer Made when a date is entered into Date of Advanced Interview and the record is saved. Requires all subsequent stage dates to be null.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CAM Update Stage to Placement</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_Placement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Placement__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to Placement when a date is entered into Date of Placement and the record is saved.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CAM Update Stage to Send Out Sent</fullName>
+        <actions>
+            <name>CAM_Update_Stage_to_Send_Out_Sent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Send_Out_Sent__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_1st_Interview__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Advanced_Interview__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_No_Placement__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Send_Out_Detail__c.Date_of_Offer_Made__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Updates Send Out Detail Stage to Send Out Sent when a date is entered into Date of Send Out Sent and the record is saved. Requires all subsequent stage dates to be null.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

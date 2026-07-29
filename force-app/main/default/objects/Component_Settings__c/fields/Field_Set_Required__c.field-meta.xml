@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Set_Required__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((Record_Type_Developer_Name__c == &apos;ExpCaseRecord&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpChildObject&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpChildObjectList&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpClientHousehold&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpClientUOS&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpContact&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpMasterDirectService&apos; || 
+Record_Type_Developer_Name__c == &apos;ExpClientSession&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpRelationship&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpTreatmentPlan&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpGoal&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpPlannedService&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpChildObjectWithParentSObjectList&apos; ||
+Record_Type_Developer_Name__c == &apos;ExpGroupClassSession&apos;), &apos;Yes&apos;, &apos;No&apos;)</formula>
+    <label>Field_Set_Required</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

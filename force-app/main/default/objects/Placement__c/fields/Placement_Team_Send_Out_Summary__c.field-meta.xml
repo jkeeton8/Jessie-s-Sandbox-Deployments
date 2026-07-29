@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Team_Send_Out_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( 
+
+(not(isblank(End_Date__c)) &amp;&amp; 
+
+(ispickval(Job_Type__c, &quot;Temporary&quot;) || ispickval(Job_Type__c, &quot;Internship&quot;))
+
+),
+
+text(Send_Out_Date__c) &amp; &quot; | &quot; &amp; Organization_Summary__c &amp; &quot; - &quot; &amp; Job_Title__c &amp; &quot; | Assignment Complete&quot;,
+
+text(Send_Out_Date__c) &amp; &quot; | &quot; &amp; Organization_Summary__c &amp; &quot; - &quot; &amp; Job_Title__c &amp; &quot; | Staff: &quot; &amp; CAM__c
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Placement Team Send Out Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

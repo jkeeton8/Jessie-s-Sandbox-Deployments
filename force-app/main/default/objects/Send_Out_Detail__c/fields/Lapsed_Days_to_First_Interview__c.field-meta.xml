@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lapsed_Days_to_First_Interview__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE( IF( ISNULL( Date_of_1st_Interview__c ) ,  &quot;&quot;,  TEXT( Date_of_1st_Interview__c -  Date_of_Send_Out_Sent__c ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lapsed Days to First Interview</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

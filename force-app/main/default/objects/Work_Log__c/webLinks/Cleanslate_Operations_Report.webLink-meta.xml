@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Operations_Report</fullName>
+    <availability>online</availability>
+    <description>Conga Template Group: CleanslateOpsReport</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Cleanslate Operations Report</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Work_Log__c.Id}
+
+&amp;ReportID=[BagsYTD]00O0Z0000078yhb?pv0={!Work_Log__c.OrganizationId__c},
+[LitterLastMonth]00O0Z0000078yjN?pv0={!Work_Log__c.OrganizationId__c},
+[SnowLastMonth]00O0Z0000078yk6?pv0={!Work_Log__c.OrganizationId__c},
+[GraffitiYTD]00O0Z0000078yit?pv0={!Work_Log__c.OrganizationId__c},
+[LitterCustom]00O0Z0000078yjI?pv0={!Work_Log__c.OrganizationId__c},
+[LitterYTD]00O0Z0000078yjh?pv0={!Work_Log__c.OrganizationId__c},
+[LitterLastYr]00O0Z0000078yjX?pv0={!Work_Log__c.OrganizationId__c},
+[SnowCustom]00O0Z0000078yjw?pv0={!Work_Log__c.OrganizationId__c},
+[SnowYTD]00O0Z0000078ykV?pv0={!Work_Log__c.OrganizationId__c},
+[SnowLastYr]00O0Z0000078ykL?pv0={!Work_Log__c.OrganizationId__c},
+[BagsCustom]00O0Z0000078yhC?pv0={!Work_Log__c.OrganizationId__c},
+[BagsLastYr]00O0Z0000078yhR?pv0={!Work_Log__c.OrganizationId__c},
+[GraffitiReported]00O0Z0000078yiK?pv0={!Work_Log__c.OrganizationId__c},
+[GraffitiLastYr]00O0Z0000078yie?pv0={!Work_Log__c.OrganizationId__c},
+[CrosswalksLastMonth]00O0Z0000078yiA?pv0={!Work_Log__c.OrganizationId__c},
+[CrosswalksCustom]00O0Z0000078yh7?pv0={!Work_Log__c.OrganizationId__c},
+[CrosswalksYTD]00O0Z0000078yiy?pv0={!Work_Log__c.OrganizationId__c},
+[CrosswalksLastYr]00O0Z0000078yiU?pv0={!Work_Log__c.OrganizationId__c},
+[PermPlacements]00O31000006jNvq?pv0=,
+[Interns]00O31000006jO0v?pv0=,
+[Conviction]00O31000006jO4Y?pv0=,
+[Ethnicity]00O31000006jO4T?pv0=,
+[Race]00O31000006jO49?pv0=,
+[Education]00O31000006jO81?pv0=,
+
+&amp;OFN={Template.Label}+-+{!Work_Log__c.Organization__c}
+&amp;DefaultPDF=True
+&amp;TemplateGroup=CleanslateOpsReport</url>
+</WebLink>

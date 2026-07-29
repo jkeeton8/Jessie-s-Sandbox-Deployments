@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <label>Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Magnet</fullName>
+                <default>false</default>
+                <label>Magnet</label>
+            </value>
+            <value>
+                <fullName>HFB</fullName>
+                <default>false</default>
+                <label>HFB</label>
+            </value>
+            <value>
+                <fullName>Stonewall</fullName>
+                <default>false</default>
+                <label>Stonewall</label>
+            </value>
+            <value>
+                <fullName>1035 Market</fullName>
+                <default>false</default>
+                <label>1035 Market</label>
+            </value>
+            <value>
+                <fullName>Client Home</fullName>
+                <default>false</default>
+                <label>Client Home</label>
+            </value>
+            <value>
+                <fullName>Program Offices</fullName>
+                <default>false</default>
+                <label>Program Offices</label>
+            </value>
+            <value>
+                <fullName>Offsite</fullName>
+                <default>false</default>
+                <label>Offsite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

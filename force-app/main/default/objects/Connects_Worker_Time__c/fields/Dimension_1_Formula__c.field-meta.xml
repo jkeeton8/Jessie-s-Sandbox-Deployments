@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dimension_1_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Administrative Assistant&quot;) || ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Office Clerk&quot;), &quot;a8m0Z000000k9d1QAA&quot;,
+
+if ( ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Customer Service Front of House (FOH)&quot;), &quot;a8mf3000000PAwn&quot;,
+
+if (ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Miscellaneous&quot;), &quot;a8m0Z000000k9dBQAQ&quot;,
+
+if ( ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Janitor&quot;), &quot;a8m0Z000000k9d6QAA&quot;,
+
+if ( ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Warehouse Worker&quot;), &quot;a8m0Z000000bmzuQAA&quot;,
+
+&quot;a8m0Z000000k9dBQAQ&quot;
+
+)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dimension 1 Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

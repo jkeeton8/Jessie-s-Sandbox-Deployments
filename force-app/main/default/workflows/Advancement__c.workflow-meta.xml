@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Latest_Hours_Update</fullName>
+        <field>Latest_Hours_TCP__c</field>
+        <formula>Hours__c</formula>
+        <name>Latest Hours Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Job_Placement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Latest_Wage_Update</fullName>
+        <field>Latest_Wage_TCP__c</field>
+        <formula>Wage__c</formula>
+        <name>Latest Wage Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Job_Placement__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Latest Hours Update</fullName>
+        <actions>
+            <name>Latest_Hours_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>not(isblank(Hours__c)) &amp;&amp;  (or(Date__c &gt;= Job_Placement__r.Latest_Advancement__c, isblank(Job_Placement__r.Latest_Advancement__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Latest Wage Update</fullName>
+        <actions>
+            <name>Latest_Wage_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>not(isblank(Wage__c)) &amp;&amp; (or(Date__c &gt;= Job_Placement__r.Latest_Advancement__c, isblank(Job_Placement__r.Latest_Advancement__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

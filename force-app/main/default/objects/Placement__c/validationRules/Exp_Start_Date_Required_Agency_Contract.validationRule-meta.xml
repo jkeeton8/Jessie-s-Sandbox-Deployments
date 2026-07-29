@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Start_Date_Required_Agency_Contract</fullName>
+    <active>true</active>
+    <description>A start date is required when creating a Placement that has an agency contract.</description>
+    <errorConditionFormula>NOT(ISBLANK(Agency_Contract__c )) &amp;&amp; ISBLANK(Start_Date__c)</errorConditionFormula>
+    <errorDisplayField>Start_Date__c</errorDisplayField>
+    <errorMessage>A Start Date is required when creating a Placement that has an Agency Contract.</errorMessage>
+</ValidationRule>

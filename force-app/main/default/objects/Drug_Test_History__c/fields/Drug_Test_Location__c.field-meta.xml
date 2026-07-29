@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drug_Test_Location__c</fullName>
+    <description>Removed from layout in Jan 2019.</description>
+    <label>Drug Test Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-House</fullName>
+                <default>false</default>
+                <label>In-House</label>
+            </value>
+            <value>
+                <fullName>External Facility</fullName>
+                <default>false</default>
+                <label>External Facility</label>
+            </value>
+            <value>
+                <fullName>Previous Admissions/Onboarding Screen</fullName>
+                <default>false</default>
+                <label>Previous Admissions/Onboarding Screen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

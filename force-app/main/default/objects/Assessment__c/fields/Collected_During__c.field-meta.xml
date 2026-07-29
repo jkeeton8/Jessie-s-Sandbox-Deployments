@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collected_During__c</fullName>
+    <description>Created by AC in Oct 2016 to better organize Housing Assessments. Temporarily used until Housing Assessment entry and rollup is restructured. Values manually determined and uploaded.
+
+Added to layout and field set as part of Incoming Participant Data cleanup in Nov 2018. Changed &quot;Program&quot; picklist value to &quot;Leadership Development&quot;.</description>
+    <label>Collected During</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Program Entry</fullName>
+                <default>false</default>
+                <label>Program Entry</label>
+            </value>
+            <value>
+                <fullName>Program</fullName>
+                <default>false</default>
+                <label>Leadership Development</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Great Wall</fullName>
+                <default>false</default>
+                <label>Great Wall</label>
+            </value>
+            <value>
+                <fullName>Advancement</fullName>
+                <default>false</default>
+                <label>Advancement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

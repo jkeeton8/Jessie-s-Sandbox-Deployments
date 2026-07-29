@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_to_Ticket_Creator__c</fullName>
+    <description>This field is where we put the initial update on a ticket. It will trigger an email to be sent to the individual who opened the ticket.</description>
+    <inlineHelpText>Please provide a quick update on the status of the ticket within 2 business days.</inlineHelpText>
+    <label>Update to Ticket Creator</label>
+    <length>2555</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

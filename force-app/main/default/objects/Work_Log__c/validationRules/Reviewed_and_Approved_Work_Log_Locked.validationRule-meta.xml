@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviewed_and_Approved_Work_Log_Locked</fullName>
+    <active>true</active>
+    <errorConditionFormula>(priorvalue(Reviewed_Approved__c) 
+
+|| 
+
+(not(ischanged(Reviewed_Approved__c)) &amp;&amp; Reviewed_Approved__c))
+
+&amp;&amp; 
+
+not($User.Work_Log_Approver__c)</errorConditionFormula>
+    <errorMessage>Work log has been reviewed and approved and can only be edited by Alison Benes, Andrea Cote, or Julie Chiu.</errorMessage>
+</ValidationRule>

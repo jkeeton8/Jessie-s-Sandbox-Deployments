@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_of_Latest_Internship__c</fullName>
+    <inlineHelpText>For Internships connected to Temp or ETJ with Cleanslate, considers End Date of Temp or ETJ.</inlineHelpText>
+    <label>End Date of Latest Employment</label>
+    <summarizedField>Placement__c.End_Date_of_Latest_Subsequent_Job__c</summarizedField>
+    <summaryFilterItems>
+        <field>Placement__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Cleanslate Internship</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

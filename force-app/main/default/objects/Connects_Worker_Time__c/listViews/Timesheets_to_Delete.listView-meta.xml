@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timesheets_to_Delete</fullName>
+    <columns>NAME</columns>
+    <columns>Send_Out_Employment__c</columns>
+    <columns>Week_Beginning__c</columns>
+    <columns>Total_Weekly_Hours__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Total_Weekly_Hours__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Timesheets to Delete</label>
+    <language>en_US</language>
+</ListView>

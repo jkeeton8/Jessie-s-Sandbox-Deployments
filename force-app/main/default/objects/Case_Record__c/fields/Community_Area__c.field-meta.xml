@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Area__c</fullName>
+    <description>Community Area lookup: https://www.google.com/maps/d/viewer?mid=1O-3Uot4mSetKW-M_govahruUjDc&amp;msa=0&amp;ll=41.69418499999998%2C-87.62758799999995&amp;spn=0.340714%2C0.699692&amp;z=22. As of FY18 year-end, back updated alongside publishing of Performance Update.</description>
+    <inlineHelpText>Corresponds to one of Chicago&apos;s 77 official community areas. Use the Community Area Website link to help select correctly.</inlineHelpText>
+    <label>Community Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Albany Park (14)</fullName>
+                <default>false</default>
+                <label>Albany Park (14)</label>
+            </value>
+            <value>
+                <fullName>Archer Heights (57)</fullName>
+                <default>false</default>
+                <label>Archer Heights (57)</label>
+            </value>
+            <value>
+                <fullName>Armour Square (34)</fullName>
+                <default>false</default>
+                <label>Armour Square (34)</label>
+            </value>
+            <value>
+                <fullName>Ashburn (70)</fullName>
+                <default>false</default>
+                <label>Ashburn (70)</label>
+            </value>
+            <value>
+                <fullName>Auburn Gresham (71)</fullName>
+                <default>false</default>
+                <label>Auburn Gresham (71)</label>
+            </value>
+            <value>
+                <fullName>Austin (25)</fullName>
+                <default>false</default>
+                <label>Austin (25)</label>
+            </value>
+            <value>
+                <fullName>Avalon Park (45)</fullName>
+                <default>false</default>
+                <label>Avalon Park (45)</label>
+            </value>
+            <value>
+                <fullName>Avondale (21)</fullName>
+                <default>false</default>
+                <label>Avondale (21)</label>
+            </value>
+            <value>
+                <fullName>Belmont Cragin (19)</fullName>
+                <default>false</default>
+                <label>Belmont Cragin (19)</label>
+            </value>
+            <value>
+                <fullName>Beverly (72)</fullName>
+                <default>false</default>
+                <label>Beverly (72)</label>
+            </value>
+            <value>
+                <fullName>Bridgeport (60)</fullName>
+                <default>false</default>
+                <label>Bridgeport (60)</label>
+            </value>
+            <value>
+                <fullName>Brighton Park (58)</fullName>
+                <default>false</default>
+                <label>Brighton Park (58)</label>
+            </value>
+            <value>
+                <fullName>Burnside (47)</fullName>
+                <default>false</default>
+                <label>Burnside (47)</label>
+            </value>
+            <value>
+                <fullName>Calumet Heights (48)</fullName>
+                <default>false</default>
+                <label>Calumet Heights (48)</label>
+            </value>
+            <value>
+                <fullName>Chatham (44)</fullName>
+                <default>false</default>
+                <label>Chatham (44)</label>
+            </value>
+            <value>
+                <fullName>Chicago Lawn (66)</fullName>
+                <default>false</default>
+                <label>Chicago Lawn (66)</label>
+            </value>
+            <value>
+                <fullName>Clearing (64)</fullName>
+                <default>false</default>
+                <label>Clearing (64)</label>
+            </value>
+            <value>
+                <fullName>Douglas (35)</fullName>
+                <default>false</default>
+                <label>Douglas (35)</label>
+            </value>
+            <value>
+                <fullName>Dunning (17)</fullName>
+                <default>false</default>
+                <label>Dunning (17)</label>
+            </value>
+            <value>
+                <fullName>East Garfield Park (27)</fullName>
+                <default>false</default>
+                <label>East Garfield Park (27)</label>
+            </value>
+            <value>
+                <fullName>East Side (52)</fullName>
+                <default>false</default>
+                <label>East Side (52)</label>
+            </value>
+            <value>
+                <fullName>Edgewater (77)</fullName>
+                <default>false</default>
+                <label>Edgewater (77)</label>
+            </value>
+            <value>
+                <fullName>Edison Park (9)</fullName>
+                <default>false</default>
+                <label>Edison Park (9)</label>
+            </value>
+            <value>
+                <fullName>Englewood (68)</fullName>
+                <default>false</default>
+                <label>Englewood (68)</label>
+            </value>
+            <value>
+                <fullName>Forest Glen (12)</fullName>
+                <default>false</default>
+                <label>Forest Glen (12)</label>
+            </value>
+            <value>
+                <fullName>Fuller Park (37)</fullName>
+                <default>false</default>
+                <label>Fuller Park (37)</label>
+            </value>
+            <value>
+                <fullName>Gage Park (63)</fullName>
+                <default>false</default>
+                <label>Gage Park (63)</label>
+            </value>
+            <value>
+                <fullName>Garfield Ridge (56)</fullName>
+                <default>false</default>
+                <label>Garfield Ridge (56)</label>
+            </value>
+            <value>
+                <fullName>Grand Boulevard (38)</fullName>
+                <default>false</default>
+                <label>Grand Boulevard (38)</label>
+            </value>
+            <value>
+                <fullName>Greater Grand Crossing (69)</fullName>
+                <default>false</default>
+                <label>Greater Grand Crossing (69)</label>
+            </value>
+            <value>
+                <fullName>Hegewisch (55)</fullName>
+                <default>false</default>
+                <label>Hegewisch (55)</label>
+            </value>
+            <value>
+                <fullName>Hermosa (20)</fullName>
+                <default>false</default>
+                <label>Hermosa (20)</label>
+            </value>
+            <value>
+                <fullName>Humboldt Park (23)</fullName>
+                <default>false</default>
+                <label>Humboldt Park (23)</label>
+            </value>
+            <value>
+                <fullName>Hyde Park (41)</fullName>
+                <default>false</default>
+                <label>Hyde Park (41)</label>
+            </value>
+            <value>
+                <fullName>Irving Park (16)</fullName>
+                <default>false</default>
+                <label>Irving Park (16)</label>
+            </value>
+            <value>
+                <fullName>Jefferson Park (11)</fullName>
+                <default>false</default>
+                <label>Jefferson Park (11)</label>
+            </value>
+            <value>
+                <fullName>Kenwood (39)</fullName>
+                <default>false</default>
+                <label>Kenwood (39)</label>
+            </value>
+            <value>
+                <fullName>Lakeview (6)</fullName>
+                <default>false</default>
+                <label>Lakeview (6)</label>
+            </value>
+            <value>
+                <fullName>Lincoln Park (7)</fullName>
+                <default>false</default>
+                <label>Lincoln Park (7)</label>
+            </value>
+            <value>
+                <fullName>Lincoln Square (4)</fullName>
+                <default>false</default>
+                <label>Lincoln Square (4)</label>
+            </value>
+            <value>
+                <fullName>Logan Square (22)</fullName>
+                <default>false</default>
+                <label>Logan Square (22)</label>
+            </value>
+            <value>
+                <fullName>Loop (32)</fullName>
+                <default>false</default>
+                <label>Loop (32)</label>
+            </value>
+            <value>
+                <fullName>Lower West Side (31)</fullName>
+                <default>false</default>
+                <label>Lower West Side (31)</label>
+            </value>
+            <value>
+                <fullName>McKinley Park (59)</fullName>
+                <default>false</default>
+                <label>McKinley Park (59)</label>
+            </value>
+            <value>
+                <fullName>Montclare (18)</fullName>
+                <default>false</default>
+                <label>Montclare (18)</label>
+            </value>
+            <value>
+                <fullName>Morgan Park (75)</fullName>
+                <default>false</default>
+                <label>Morgan Park (75)</label>
+            </value>
+            <value>
+                <fullName>Mount Greenwood (74)</fullName>
+                <default>false</default>
+                <label>Mount Greenwood (74)</label>
+            </value>
+            <value>
+                <fullName>Near North Side (8)</fullName>
+                <default>false</default>
+                <label>Near North Side (8)</label>
+            </value>
+            <value>
+                <fullName>Near South Side (33)</fullName>
+                <default>false</default>
+                <label>Near South Side (33)</label>
+            </value>
+            <value>
+                <fullName>Near West Side (28)</fullName>
+                <default>false</default>
+                <label>Near West Side (28)</label>
+            </value>
+            <value>
+                <fullName>New City (61)</fullName>
+                <default>false</default>
+                <label>New City (61)</label>
+            </value>
+            <value>
+                <fullName>North Center (5)</fullName>
+                <default>false</default>
+                <label>North Center (5)</label>
+            </value>
+            <value>
+                <fullName>North Lawndale (29)</fullName>
+                <default>false</default>
+                <label>North Lawndale (29)</label>
+            </value>
+            <value>
+                <fullName>North Park (13)</fullName>
+                <default>false</default>
+                <label>North Park (13)</label>
+            </value>
+            <value>
+                <fullName>Norwood Park (10)</fullName>
+                <default>false</default>
+                <label>Norwood Park (10)</label>
+            </value>
+            <value>
+                <fullName>Oakland (36)</fullName>
+                <default>false</default>
+                <label>Oakland (36)</label>
+            </value>
+            <value>
+                <fullName>O&apos;Hare (76)</fullName>
+                <default>false</default>
+                <label>O&apos;Hare (76)</label>
+            </value>
+            <value>
+                <fullName>Portage Park (15)</fullName>
+                <default>false</default>
+                <label>Portage Park (15)</label>
+            </value>
+            <value>
+                <fullName>Pullman (50)</fullName>
+                <default>false</default>
+                <label>Pullman (50)</label>
+            </value>
+            <value>
+                <fullName>Riverdale (54)</fullName>
+                <default>false</default>
+                <label>Riverdale (54)</label>
+            </value>
+            <value>
+                <fullName>Rogers Park (1)</fullName>
+                <default>false</default>
+                <label>Rogers Park (1)</label>
+            </value>
+            <value>
+                <fullName>Roseland (49)</fullName>
+                <default>false</default>
+                <label>Roseland (49)</label>
+            </value>
+            <value>
+                <fullName>South Chicago (46)</fullName>
+                <default>false</default>
+                <label>South Chicago (46)</label>
+            </value>
+            <value>
+                <fullName>South Deering (51)</fullName>
+                <default>false</default>
+                <label>South Deering (51)</label>
+            </value>
+            <value>
+                <fullName>South Lawndale (30)</fullName>
+                <default>false</default>
+                <label>South Lawndale (30)</label>
+            </value>
+            <value>
+                <fullName>South Shore (43)</fullName>
+                <default>false</default>
+                <label>South Shore (43)</label>
+            </value>
+            <value>
+                <fullName>Uptown (3)</fullName>
+                <default>false</default>
+                <label>Uptown (3)</label>
+            </value>
+            <value>
+                <fullName>Washington Heights (73)</fullName>
+                <default>false</default>
+                <label>Washington Heights (73)</label>
+            </value>
+            <value>
+                <fullName>Washington Park (40)</fullName>
+                <default>false</default>
+                <label>Washington Park (40)</label>
+            </value>
+            <value>
+                <fullName>West Elsdon (62)</fullName>
+                <default>false</default>
+                <label>West Elsdon (62)</label>
+            </value>
+            <value>
+                <fullName>West Englewood (67)</fullName>
+                <default>false</default>
+                <label>West Englewood (67)</label>
+            </value>
+            <value>
+                <fullName>West Garfield Park (26)</fullName>
+                <default>false</default>
+                <label>West Garfield Park (26)</label>
+            </value>
+            <value>
+                <fullName>West Lawn (65)</fullName>
+                <default>false</default>
+                <label>West Lawn (65)</label>
+            </value>
+            <value>
+                <fullName>West Pullman (53)</fullName>
+                <default>false</default>
+                <label>West Pullman (53)</label>
+            </value>
+            <value>
+                <fullName>West Ridge (2)</fullName>
+                <default>false</default>
+                <label>West Ridge (2)</label>
+            </value>
+            <value>
+                <fullName>West Town (24)</fullName>
+                <default>false</default>
+                <label>West Town (24)</label>
+            </value>
+            <value>
+                <fullName>Woodlawn (42)</fullName>
+                <default>false</default>
+                <label>Woodlawn (42)</label>
+            </value>
+            <value>
+                <fullName>Not Chicago - Aurora</fullName>
+                <default>false</default>
+                <label>Not Chicago - Aurora</label>
+            </value>
+            <value>
+                <fullName>Not Chicago - Other</fullName>
+                <default>false</default>
+                <label>Not Chicago - Other</label>
+            </value>
+            <value>
+                <fullName>Albany Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Albany Park</label>
+            </value>
+            <value>
+                <fullName>Ashburn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ashburn</label>
+            </value>
+            <value>
+                <fullName>Auburn Gresham</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auburn Gresham</label>
+            </value>
+            <value>
+                <fullName>Austin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Austin</label>
+            </value>
+            <value>
+                <fullName>Avalon Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Avalon Park</label>
+            </value>
+            <value>
+                <fullName>Avondale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Avondale</label>
+            </value>
+            <value>
+                <fullName>Belmont Cragin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Belmont Cragin</label>
+            </value>
+            <value>
+                <fullName>Beverly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Beverly</label>
+            </value>
+            <value>
+                <fullName>Bridgeport</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bridgeport</label>
+            </value>
+            <value>
+                <fullName>Brighton Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brighton Park</label>
+            </value>
+            <value>
+                <fullName>Burnside</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Burnside</label>
+            </value>
+            <value>
+                <fullName>Calumet Heights</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Calumet Heights</label>
+            </value>
+            <value>
+                <fullName>Chatham</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chatham</label>
+            </value>
+            <value>
+                <fullName>Chicago Lawn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chicago Lawn</label>
+            </value>
+            <value>
+                <fullName>Clearing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clearing</label>
+            </value>
+            <value>
+                <fullName>Douglas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Douglas</label>
+            </value>
+            <value>
+                <fullName>Dunning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dunning</label>
+            </value>
+            <value>
+                <fullName>East Garfield Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>East Garfield Park</label>
+            </value>
+            <value>
+                <fullName>Edgewater</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Edgewater</label>
+            </value>
+            <value>
+                <fullName>Englewood</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Englewood</label>
+            </value>
+            <value>
+                <fullName>Fuller ParK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuller ParK</label>
+            </value>
+            <value>
+                <fullName>Gage Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gage Park</label>
+            </value>
+            <value>
+                <fullName>Garfield Ridge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Garfield Ridge</label>
+            </value>
+            <value>
+                <fullName>Grand Boulevard</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Grand Boulevard</label>
+            </value>
+            <value>
+                <fullName>Greater Grand Crossing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Greater Grand Crossing</label>
+            </value>
+            <value>
+                <fullName>Humboldt Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Humboldt Park</label>
+            </value>
+            <value>
+                <fullName>Hyde Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hyde Park</label>
+            </value>
+            <value>
+                <fullName>Irving Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Irving Park</label>
+            </value>
+            <value>
+                <fullName>Jefferson Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jefferson Park</label>
+            </value>
+            <value>
+                <fullName>Kenwood</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kenwood</label>
+            </value>
+            <value>
+                <fullName>Lake View</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lake View</label>
+            </value>
+            <value>
+                <fullName>Lincoln Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lincoln Park</label>
+            </value>
+            <value>
+                <fullName>Lincoln Square</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lincoln Square</label>
+            </value>
+            <value>
+                <fullName>Logan Square</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logan Square</label>
+            </value>
+            <value>
+                <fullName>Lower West Side</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lower West Side</label>
+            </value>
+            <value>
+                <fullName>Morgan Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Morgan Park</label>
+            </value>
+            <value>
+                <fullName>Near North Side</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Near North Side</label>
+            </value>
+            <value>
+                <fullName>Near South Side</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Near South Side</label>
+            </value>
+            <value>
+                <fullName>Near West Side</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Near West Side</label>
+            </value>
+            <value>
+                <fullName>New City</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New City</label>
+            </value>
+            <value>
+                <fullName>North Center</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>North Center</label>
+            </value>
+            <value>
+                <fullName>North Lawndale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>North Lawndale</label>
+            </value>
+            <value>
+                <fullName>North Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>North Park</label>
+            </value>
+            <value>
+                <fullName>Norwood Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Norwood Park</label>
+            </value>
+            <value>
+                <fullName>Not Chicago</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Chicago</label>
+            </value>
+            <value>
+                <fullName>Oakland</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oakland</label>
+            </value>
+            <value>
+                <fullName>Portage Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Portage Park</label>
+            </value>
+            <value>
+                <fullName>Pullman</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pullman</label>
+            </value>
+            <value>
+                <fullName>Riverdale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Riverdale</label>
+            </value>
+            <value>
+                <fullName>Rogers Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rogers Park</label>
+            </value>
+            <value>
+                <fullName>Roseland</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Roseland</label>
+            </value>
+            <value>
+                <fullName>South Chicago</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>South Chicago</label>
+            </value>
+            <value>
+                <fullName>South Deering</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>South Deering</label>
+            </value>
+            <value>
+                <fullName>South Lawndale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>South Lawndale</label>
+            </value>
+            <value>
+                <fullName>South Shore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>South Shore</label>
+            </value>
+            <value>
+                <fullName>The Loop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>The Loop</label>
+            </value>
+            <value>
+                <fullName>Uptown</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Uptown</label>
+            </value>
+            <value>
+                <fullName>Washington Heights</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Washington Heights</label>
+            </value>
+            <value>
+                <fullName>Washington Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Washington Park</label>
+            </value>
+            <value>
+                <fullName>West Elsdon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Elsdon</label>
+            </value>
+            <value>
+                <fullName>West Englewood</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Englewood</label>
+            </value>
+            <value>
+                <fullName>West Garfield Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Garfield Park</label>
+            </value>
+            <value>
+                <fullName>West Lawn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Lawn</label>
+            </value>
+            <value>
+                <fullName>West Pullman</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Pullman</label>
+            </value>
+            <value>
+                <fullName>West Ridge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Ridge</label>
+            </value>
+            <value>
+                <fullName>West Town</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Town</label>
+            </value>
+            <value>
+                <fullName>Woodlawn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Woodlawn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EcmIsLocked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Allows us to lock the object.</description>
+    <inlineHelpText>Allows us to lock the object.</inlineHelpText>
+    <label>EcmIsLocked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

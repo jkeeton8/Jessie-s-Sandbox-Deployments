@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactivation_Guidelines__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;During Leadership Development (including Core &amp; Advanced Training), if participant did not show up at all, enter that day&apos;s date. If dismissed mid-day, enter next day&apos;s date.&quot; 
+
+&amp; br()&amp;br()&amp;
+
+&quot;During Retention or Advancement Services, enter date when participant is no longer working with IDS or Career Advancement Manager.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Inactivation Guidelines</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

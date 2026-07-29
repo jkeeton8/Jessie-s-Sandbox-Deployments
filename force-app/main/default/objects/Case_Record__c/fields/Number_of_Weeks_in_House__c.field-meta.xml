@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Weeks_in_House__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Program_Stage__c, &quot;Referred&quot;) || ispickval(Program_Stage__c, &quot;Applicant&quot;) || ispickval(Program_Stage__c, &quot;Accepted&quot;), 0, 
+
+IF(ISBLANK(Program_Start_Date__c) ,0, 
+
+IF(Program_Start_Date__c &gt; TODAY(), 0, 
+
+if (Inactive_Date__c &lt; Program_Start_Date__c, 0,
+
+if ((ISPICKVAL( Program_Stage__c , &quot;Retention&quot;) || ISPICKVAL( Program_Stage__c , &quot;Retention&quot;) || ISPICKVAL( Program_Stage__c , &quot;Advancement Services&quot;)) &amp;&amp; not (isblank (Date_Prgm_Stage_to_Retention_Services__c)), (Date_Prgm_Stage_to_Retention_Services__c - Program_Start_Date__c)/7, 
+
+if (not (isblank (Inactive_Date__c)), (Inactive_Date__c - Program_Start_Date__c)/7, 
+
+(TODAY() -  Program_Start_Date__c)/7))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Based on Program Start Date. Stops accruing when student enters Retention Services or becomes Inactive.</inlineHelpText>
+    <label># Weeks in House</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

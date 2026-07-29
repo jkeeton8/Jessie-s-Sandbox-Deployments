@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Group_Class_Assignment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Staff Group/Class Assignment</label>
+    <referenceTo>Staff_Group_Class_Assignment__c</referenceTo>
+    <relationshipLabel>Staff UOS</relationshipLabel>
+    <relationshipName>Staff_UOS</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

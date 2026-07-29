@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Cleanslate_Opp_Alert_Brady</fullName>
+        <description>Cleanslate Opp Alert (Brady)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bgott@caracollective.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cleanslate_Templates/Cleanslate_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Cleanslate_Opp_Alert_George</fullName>
+        <description>Cleanslate Opp Alert (George/August)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>amangun@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>gbarnett@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cleanslate_Templates/Cleanslate_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Cleanslate_Opp_Alert_George_Only</fullName>
+        <description>Cleanslate Opp Alert (George Only)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gbarnett@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cleanslate_Templates/Cleanslate_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Cleanslate_Opp_Alert_Ron</fullName>
+        <description>Cleanslate Opp Alert (Ron)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>rholakovsky@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cleanslate_Templates/Cleanslate_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Cleanslate_Opp_Created</fullName>
+        <description>Cleanslate Opp Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bgott@caracollective.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>gbarnett@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rholakovsky@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cleanslate_Templates/Cleanslate_Opportunity_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Declined_Recurring_Payment_Email</fullName>
+        <ccEmails>devadmin@carachicago.org</ccEmails>
+        <description>Declined Recurring Payment Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CnP_PaaS__Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>info@carachicago.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CnP_PaaS__ClickandPledge_Templates/Declined_Recurring_Payment</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Alert_Valentine_s_Day</fullName>
+        <description>Email Alert: Valentine&apos;s Day</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CnP_PaaS__Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>info@carachicago.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CnP_PaaS__ClickandPledge_Templates/Event_Thank_You_Valentine_s_Day</template>
+    </alerts>
+    <alerts>
+        <fullName>npsp__Opportunity_Email_Acknowledgment</fullName>
+        <description>Opportunity Email Acknowledgment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cbogdanov@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>npsp__NPSP_Email_Templates/npsp__NPSP_Opportunity_Acknowledgment</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CAM_Opportunity_Close_Date</fullName>
+        <description>Triggered off of workflow of same name. When CEP Job Opportunity is created and then saved for the first time, Close Date will default to 31 days after the Open Date.</description>
+        <field>CloseDate</field>
+        <formula>Open_Date__c   + 31</formula>
+        <name>CAM Opportunity Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Opportunity_Closed_Lost</fullName>
+        <description>Part of workflow of same name.One day after Close Date on a CEP Job Opportunity, time-based workflow triggers field update-- Opportunity Stage changes to &quot;Closed Lost&quot; if Stage is &quot;Job Order&quot; or &quot;Send Out&quot; and  Send Out Count is greater than 0.</description>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>CAM Opportunity Closed Lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CAM_Opportunity_Closed_No_Send_Outs</fullName>
+        <description>Part of workflow of same name.One day after Close Date on a CEP Job Opportunity, time-based workflow triggers field update-- Opportunity Stage changes to &quot;Closed Lost&quot; if Stage is &quot;Job Order&quot; or &quot;Send Out&quot; and Send Out Count is equal to 0.</description>
+        <field>StageName</field>
+        <literalValue>Closed No Send Outs</literalValue>
+        <name>CAM Opportunity Closed No Send Outs</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Approved_Stage</fullName>
+        <description>Update stage on opportunity when approved</description>
+        <field>StageName</field>
+        <literalValue>Pricing Approved</literalValue>
+        <name>Contract Approved Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contract_Declined_Stage</fullName>
+        <field>StageName</field>
+        <literalValue>Pricing Creation</literalValue>
+        <name>Declined</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>In_Honor_Of_from_C_P</fullName>
+        <field>In_Honor_Of__c</field>
+        <formula>In_Honor_Memory_Of__c</formula>
+        <name>In Honor Of from C&amp;P</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>In_Memory_Of_from_C_P</fullName>
+        <field>In_Memory_Of__c</field>
+        <formula>In_Honor_Memory_Of__c</formula>
+        <name>In Memory Of from C&amp;P</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Name_to_In_Kind_Format</fullName>
+        <field>Name</field>
+        <formula>if (Account.RecordTypeId = &quot;012i0000000xwhV&quot;,
+  
+Donor_Last_Name__c  &amp; &quot;, In-Kind, &quot;&amp; Close_Date_FY__c,
+
+Account.Name  &amp; &quot;, In-Kind, &quot;&amp; Close_Date_FY__c)</formula>
+        <name>Opportunity Name to In-Kind Format</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Outlier_Equals_True</fullName>
+        <field>Outlier__c</field>
+        <literalValue>1</literalValue>
+        <name>Outlier Equals True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Probability_to_Probability_Copy</fullName>
+        <field>Probability</field>
+        <formula>Probability_Copy__c</formula>
+        <name>Probability (%) to Probability (Copy)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_FFA_Product_Designation</fullName>
+        <field>FFA_Product_Designation__c</field>
+        <literalValue>Revenue - Cleanslate</literalValue>
+        <name>Update FFA Product Designation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Invoice_Description</fullName>
+        <field>Invoice_Description__c</field>
+        <formula>&quot;Address: &quot; &amp;  Account.Name &amp; &quot;, &quot; &amp;  BR() &amp;
+&quot;Parcel Number: &quot; &amp; Account.Parcel_Number__c &amp; &quot;, &quot; &amp;  BR() &amp;
+&quot;Square Feet: &quot; &amp; text(Account.Square_Feet__c) &amp; &quot;, &quot; &amp;  BR() &amp;
+&quot;Cut Date: &quot; &amp; text( Pledge_Date__c )</formula>
+        <name>Update Invoice Description</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npsp__Opportunity_AcknowledgmentStatus_Update</fullName>
+        <description>Sets the Acknowledgment Status to &quot;Acknowledged&quot;</description>
+        <field>npsp__Acknowledgment_Status__c</field>
+        <literalValue>Acknowledged</literalValue>
+        <name>Opportunity Acknowledgment Status Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npsp__Opportunity_Acknowledgment_Date_Update</fullName>
+        <description>sets the Acknowledgment Date to Today.</description>
+        <field>npsp__Acknowledgment_Date__c</field>
+        <formula>Today()</formula>
+        <name>Opportunity Acknowledgment Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npsp__Opportunity_Copy_FMV_to_Amount</fullName>
+        <description>Copy the Opportunities Fair Market Value field to the Amount field.</description>
+        <field>Amount</field>
+        <formula>npsp__Fair_Market_Value__c</formula>
+        <name>Opportunity Copy FMV to Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Aurora Cleanslate Billing is Created</fullName>
+        <actions>
+            <name>Update_Invoice_Description</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cleanslate Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>contains</operation>
+            <value>City of Aurora</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>C%26P Opp Declined%3A Recurring Payment</fullName>
+        <actions>
+            <name>Declined_Recurring_Payment_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Donation_Type__c</field>
+            <operation>equals</operation>
+            <value>Recurring Donation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CnP_PaaS__C_P_Recurring_Reference_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Billing is Created</fullName>
+        <actions>
+            <name>Update_FFA_Product_Designation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cleanslate Billing</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Opp Alert %28Brady%29</fullName>
+        <actions>
+            <name>Cleanslate_Opp_Alert_Brady</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &apos;012i0000000xxwY&apos; &amp;&amp;
+
+ISCHANGED(StageName) &amp;&amp; 
+
+(ispickval(StageName, &quot;Prospect&quot;) ||
+ispickval(StageName, &quot;RFP Received&quot;) ||
+ispickval(StageName, &quot;Pricing CLSL Approval Needed&quot;) || 
+ispickval(StageName, &quot;Bid Needs Approval&quot;) ||
+ispickval(StageName, &quot;Bid Submitted&quot;) ||
+ispickval(StageName, &quot;Bid Negotiation&quot;) ||
+ispickval(StageName, &quot;Bid Won&quot;) ||
+ispickval(StageName, &quot;Contract Approval Needed&quot;) ||
+ispickval(StageName, &quot;Contract Submitted&quot;) ||
+ispickval(StageName, &quot;Contract Agreed &amp; Unsigned&quot;) ||
+ispickval(StageName, &quot;Work Completed&quot;) ||
+ispickval(StageName, &quot;Contract Executed&quot;) ||
+ispickval(StageName, &quot;Contract Lost&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Opp Alert %28Kenjuana%29</fullName>
+        <actions>
+            <name>Cleanslate_Opp_Alert_George_Only</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &apos;012i0000000xxwY&apos; &amp;&amp;
+
+ISCHANGED(StageName) &amp;&amp; 
+
+(ispickval(StageName, &quot;Bid Submitted&quot;) ||
+ispickval(StageName, &quot;Contract Submitted&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Opp Alert %28Kenjuana%2FAugust%29</fullName>
+        <actions>
+            <name>Cleanslate_Opp_Alert_George</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &apos;012i0000000xxwY&apos; &amp;&amp;
+
+ISCHANGED(StageName) &amp;&amp; 
+
+(ispickval(StageName, &quot;Prospect&quot;) ||
+ispickval(StageName, &quot;RFP Received&quot;) ||
+ispickval(StageName, &quot;Pricing Creation&quot;) || 
+ispickval(StageName, &quot;Pricing Approved&quot;) ||
+ispickval(StageName, &quot;Bid Creation&quot;) ||
+ispickval(StageName, &quot;Bid Approved&quot;) ||
+ispickval(StageName, &quot;Bid Negotiation&quot;) ||
+ispickval(StageName, &quot;Bid Won&quot;) ||
+ispickval(StageName, &quot;Contract Created&quot;) ||
+ispickval(StageName, &quot;Contract Approved&quot;) ||
+ispickval(StageName, &quot;Contract Agreed &amp; Unsigned&quot;) ||
+ispickval(StageName, &quot;Work Completed&quot;) ||
+ispickval(StageName, &quot;Contract Executed&quot;) ||
+ispickval(StageName, &quot;Contract Lost&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Opp Alert %28Ron%29</fullName>
+        <actions>
+            <name>Cleanslate_Opp_Alert_Ron</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &apos;012i0000000xxwY&apos; &amp;&amp;
+
+ISCHANGED(StageName) &amp;&amp; 
+
+(ispickval(StageName, &quot;Pricing Estimate&quot;) ||
+ispickval(StageName, &quot;Bid Submitted&quot;) ||
+ispickval(StageName, &quot;Bid Negotiation&quot;) ||
+ispickval(StageName, &quot;Bid Won&quot;) ||
+ispickval(StageName, &quot;Prospect&quot;) ||
+ispickval(StageName, &quot;Contract Submitted&quot;) ||
+ispickval(StageName, &quot;Contract Agreed &amp; Unsigned&quot;) ||
+ispickval(StageName, &quot;Work Completed&quot;) ||
+ispickval(StageName, &quot;Contract Executed&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Opp Created</fullName>
+        <actions>
+            <name>Cleanslate_Opp_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cleanslate Contract</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedById</field>
+            <operation>notContain</operation>
+            <value>Alison</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Donation Stage is Research%2C Ask%2C Scheduled</fullName>
+        <actions>
+            <name>Probability_to_Probability_Copy</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &quot;01231000000xzsP&quot; || RecordTypeId =  &quot;012i0000000gekt&quot;
+
+&amp;&amp; Probability &lt;&gt; Probability_Copy__c
+
+&amp;&amp; (ispickval (StageName, &quot;Research&quot;) || ispickval (StageName, &quot;Scheduled&quot;) || ispickval (StageName, &quot;Ask&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Honor%2FMemorial Type is In Honor</fullName>
+        <actions>
+            <name>In_Honor_Of_from_C_P</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Honor_Memorial_Type__c</field>
+            <operation>equals</operation>
+            <value>In Honor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.In_Honor_Of__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Honor%2FMemorial Type is In Memory</fullName>
+        <actions>
+            <name>In_Memory_Of_from_C_P</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Honor_Memorial_Type__c</field>
+            <operation>equals</operation>
+            <value>In Memory</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.In_Memory_Of__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Outliers</fullName>
+        <actions>
+            <name>Outlier_Equals_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3) and 4</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.In_Memory_Of__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Donation_Sub_type__c</field>
+            <operation>equals</operation>
+            <value>Matching Gift</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Campaign__c</field>
+            <operation>contains</operation>
+            <value>Independent Fundraisers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Donation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>npsp__Opportunity Copy FMV to Amount</fullName>
+        <actions>
+            <name>npsp__Opportunity_Copy_FMV_to_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 OR 2) AND (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.npsp__Fair_Market_Value__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.npsp__Fair_Market_Value__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Enable this rule to copy the Fair Market Value to the Amount field, when the Amount is zero or blank.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>npsp__Opportunity Email Acknowledgment</fullName>
+        <actions>
+            <name>npsp__Opportunity_Email_Acknowledgment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>npsp__Opportunity_AcknowledgmentStatus_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>npsp__Opportunity_Acknowledgment_Date_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Emails an acknowledgement to the Primary Contact for an Opportunity when the Acknowledgement Status is set to Email Acknowledgement Now.</description>
+        <formula>TEXT(npsp__Acknowledgment_Status__c) = $Label.npsp__sendAcknowledgmentFireStatus &amp;&amp;  npsp__Primary_Contact__r.Email &lt;&gt; NULL &amp;&amp;  npsp__Primary_Contact__r.npsp__Do_Not_Contact__c &lt;&gt; True &amp;&amp;  npsp__Primary_Contact__r.HasOptedOutOfEmail &lt;&gt; True &amp;&amp;  npsp__Primary_Contact__r.npsp__Deceased__c &lt;&gt; True</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connections_In_Cara__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Do you have a close friend, significant other or family member currently enrolled at Cara</description>
+    <inlineHelpText>Do you have a close friend, significant other or family member currently enrolled at Cara</inlineHelpText>
+    <label>Personal Connections In Cara</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

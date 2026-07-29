@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Time_Site_Compl_Time_Sequence</fullName>
+    <active>true</active>
+    <errorConditionFormula>if ( RecordTypeId=&quot;0120Z000001Ifac&quot;, FALSE, 
+
+if ( contains(Arrival_Time_Begin_Work__c, &quot;AM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c , &quot;PM&quot;), FALSE, 
+
+if (contains(Arrival_Time_Begin_Work__c, &quot;PM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c, &quot;AM&quot;), TRUE, 
+
+if (contains(Arrival_Time_Begin_Work__c, &quot;12:&quot;) &amp;&amp; not(contains (Departure_Time_Site_Completed__c, &quot;12:&quot;)), FALSE, 
+
+if (contains(Arrival_Time_Begin_Work__c, &quot;AM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c , &quot;AM&quot;) &amp;&amp; value(substitute(substitute(Departure_Time_Site_Completed__c , &quot; AM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))-value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot; AM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))&gt;=0, FALSE, 
+
+if (contains(Arrival_Time_Begin_Work__c, &quot;PM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c , &quot;PM&quot;) &amp;&amp; value(substitute(substitute(Departure_Time_Site_Completed__c , &quot; PM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))-value(substitute(substitute(Arrival_Time_Begin_Work__c, &quot; PM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))&gt;=0, FALSE, 
+
+TRUE))))))</errorConditionFormula>
+    <errorMessage>&apos;Departure Time, Site Completed&apos; should be after &apos;Arrival Time, Begin Work&apos;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Type__c</fullName>
+    <description>As of 4/1/15: Maintaining original API name, as set by Exponent. Not sure if changing it will disrupt unit tests or Case Record code. Keeping original picklist values but hiding them from record types that are used.</description>
+    <label>Inquiry Type (LISC)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In person</fullName>
+                <default>false</default>
+                <label>In person</label>
+            </value>
+            <value>
+                <fullName>By phone</fullName>
+                <default>false</default>
+                <label>By phone</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>1 - Individual (includes self-referral)</fullName>
+                <default>false</default>
+                <label>1 - Individual (includes self-referral)</label>
+            </value>
+            <value>
+                <fullName>2 - Alcohol/Drug Abuse Care Program</fullName>
+                <default>false</default>
+                <label>2 - Alcohol/Drug Abuse Care Program</label>
+            </value>
+            <value>
+                <fullName>3 - Other Health Care Provider</fullName>
+                <default>false</default>
+                <label>3 - Other Health Care Provider</label>
+            </value>
+            <value>
+                <fullName>4 - School (Educational)</fullName>
+                <default>false</default>
+                <label>4 - School (Educational)</label>
+            </value>
+            <value>
+                <fullName>5 - Employer/EAP</fullName>
+                <default>false</default>
+                <label>5 - Employer/EAP</label>
+            </value>
+            <value>
+                <fullName>6 - Non-SACPA Court/Criminal Justice</fullName>
+                <default>false</default>
+                <label>6 - Non-SACPA Court/Criminal Justice</label>
+            </value>
+            <value>
+                <fullName>7 - 12 Step mutual aid (AA, Al-Anon, etc.)</fullName>
+                <default>false</default>
+                <label>7 - 12 Step mutual aid (AA, Al-Anon, etc.)</label>
+            </value>
+            <value>
+                <fullName>8 - Other Community Referral</fullName>
+                <default>false</default>
+                <label>8 - Other Community Referral</label>
+            </value>
+            <value>
+                <fullName>9 - SACPA Court/Probation</fullName>
+                <default>false</default>
+                <label>9 - SACPA Court/Probation</label>
+            </value>
+            <value>
+                <fullName>10 - SACPA Parole</fullName>
+                <default>false</default>
+                <label>10 - SACPA Parole</label>
+            </value>
+            <value>
+                <fullName>11 - Friend</fullName>
+                <default>false</default>
+                <label>11 - Friend</label>
+            </value>
+            <value>
+                <fullName>Self</fullName>
+                <default>false</default>
+                <label>Self</label>
+            </value>
+            <value>
+                <fullName>Family</fullName>
+                <default>false</default>
+                <label>Family</label>
+            </value>
+            <value>
+                <fullName>Friend</fullName>
+                <default>false</default>
+                <label>Friend</label>
+            </value>
+            <value>
+                <fullName>Case Manager</fullName>
+                <default>false</default>
+                <label>Case Manager</label>
+            </value>
+            <value>
+                <fullName>Partner Agency</fullName>
+                <default>false</default>
+                <label>Partner Agency</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

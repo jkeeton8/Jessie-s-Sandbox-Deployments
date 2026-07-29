@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Thinking__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Employed student has shown that he/she understands what is expected in order to advance and has the ability to articulate how that applies to his/her life.
+-IDS can identify at least one example from personal or professional life.</inlineHelpText>
+    <label>Critical Thinking</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

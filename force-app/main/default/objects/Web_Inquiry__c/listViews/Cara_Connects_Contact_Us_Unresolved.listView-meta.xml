@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cara_Connects_Contact_Us_Unresolved</fullName>
+    <columns>NAME</columns>
+    <columns>Inquiry_Result__c</columns>
+    <columns>Inquiry_Source__c</columns>
+    <columns>Comments__c</columns>
+    <columns>First_Name__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Email__c</columns>
+    <columns>Phone__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Website_Source__c</field>
+        <operation>equals</operation>
+        <value>Cara Connects</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Web_Inquiry__c.Contact_Us_Form</value>
+    </filters>
+    <filters>
+        <field>Inquiry_Result__c</field>
+        <operation>equals</operation>
+        <value>Unresolved</value>
+    </filters>
+    <label>Cara Connects Contact Us, Unresolved</label>
+    <language>en_US</language>
+</ListView>

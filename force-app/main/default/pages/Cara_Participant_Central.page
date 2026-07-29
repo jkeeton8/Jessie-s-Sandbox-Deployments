@@ -1,0 +1,4 @@
+<apex:page showHeader="false" lightningstylesheets="true">
+    <br/><b>Cara Central</b>
+    <flow:interview name="Cara_Participant_Central"/>
+ </apex:page>

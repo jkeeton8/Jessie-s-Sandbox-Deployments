@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADAP</fullName>
+                <default>false</default>
+                <label>ADAP</label>
+            </value>
+            <value>
+                <fullName>CARE_HIPP</fullName>
+                <default>false</default>
+                <label>CARE_HIPP</label>
+            </value>
+            <value>
+                <fullName>OA-HIPP</fullName>
+                <default>false</default>
+                <label>OA-HIPP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

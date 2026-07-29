@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Status__c</fullName>
+    <label>Referral Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Referral_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Referral Sent</fullName>
+                <default>false</default>
+                <label>Referral Sent</label>
+            </value>
+            <value>
+                <fullName>Initiated Contact with Participant</fullName>
+                <default>false</default>
+                <label>Initiated Contact with Participant</label>
+            </value>
+            <value>
+                <fullName>In Process</fullName>
+                <default>false</default>
+                <label>In Process</label>
+            </value>
+            <value>
+                <fullName>Participant Scheduled</fullName>
+                <default>false</default>
+                <label>Participant Scheduled</label>
+            </value>
+            <value>
+                <fullName>Pending More Information</fullName>
+                <default>false</default>
+                <label>Pending More Information</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Waitlisted</fullName>
+                <default>false</default>
+                <label>Referral Closed - Waitlisted</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Referred Externally</fullName>
+                <default>false</default>
+                <label>Referral Closed - Referred Externally</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Outcome Obtained</fullName>
+                <default>false</default>
+                <label>Referral Closed - Outcome Obtained</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Outcome Not Met</fullName>
+                <default>false</default>
+                <label>Referral Closed - Outcome Not Met</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Imported</fullName>
+                <default>false</default>
+                <label>Referral Closed - Imported</label>
+            </value>
+            <value>
+                <fullName>Referral Closed - Met 1:1</fullName>
+                <default>false</default>
+                <label>Referral Closed - Met 1:1</label>
+            </value>
+            <value>
+                <fullName>Application Submitted</fullName>
+                <default>false</default>
+                <label>Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Scheduled For Interview</fullName>
+                <default>false</default>
+                <label>Scheduled For Interview</label>
+            </value>
+            <value>
+                <fullName>Completed Interview</fullName>
+                <default>false</default>
+                <label>Completed Interview</label>
+            </value>
+            <value>
+                <fullName>Attended Orientation</fullName>
+                <default>false</default>
+                <label>Attended Orientation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <controllingFieldValue>Internal - Resume Support</controllingFieldValue>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <controllingFieldValue>Internal - Transportation</controllingFieldValue>
+            <controllingFieldValue>Internal - Stability Screening</controllingFieldValue>
+            <controllingFieldValue>Internal - Job Skills Assessment</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <controllingFieldValue>Internal - Enterprise Recruitment</controllingFieldValue>
+            <valueName>Referral Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <controllingFieldValue>Internal - Resume Support</controllingFieldValue>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <controllingFieldValue>Internal - Transportation</controllingFieldValue>
+            <controllingFieldValue>Internal - Stability Screening</controllingFieldValue>
+            <controllingFieldValue>Internal - Job Skills Assessment</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <controllingFieldValue>Internal - Enterprise Recruitment</controllingFieldValue>
+            <valueName>Participant Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <controllingFieldValue>Internal - Resume Support</controllingFieldValue>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <controllingFieldValue>Internal - Enterprise Recruitment</controllingFieldValue>
+            <valueName>Pending More Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <controllingFieldValue>Internal - Resume Support</controllingFieldValue>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <controllingFieldValue>Internal - Transportation</controllingFieldValue>
+            <controllingFieldValue>Internal - Stability Screening</controllingFieldValue>
+            <controllingFieldValue>Internal - Job Skills Assessment</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <controllingFieldValue>Internal - Enterprise Recruitment</controllingFieldValue>
+            <valueName>Referral Closed - Outcome Obtained</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <controllingFieldValue>Internal - Resume Support</controllingFieldValue>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <controllingFieldValue>Internal - Transportation</controllingFieldValue>
+            <controllingFieldValue>Internal - Stability Screening</controllingFieldValue>
+            <controllingFieldValue>Internal - Job Skills Assessment</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <controllingFieldValue>Internal - Enterprise Recruitment</controllingFieldValue>
+            <valueName>Referral Closed - Outcome Not Met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Initiated Contact with Participant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>In Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External</controllingFieldValue>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Referral Closed - Waitlisted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Referral Closed - Met 1:1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Referral Closed - Referred Externally</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Application Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Scheduled For Interview</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Completed Interview</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Attended Orientation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

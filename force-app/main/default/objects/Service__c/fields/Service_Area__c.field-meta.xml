@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area__c</fullName>
+    <label>Service Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Service_Domain__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(Semi-) Professional Performances and Events</fullName>
+                <default>false</default>
+                <label>(Semi-) Professional Performances and Events</label>
+            </value>
+            <value>
+                <fullName>(Supplemental) Income Assistance</fullName>
+                <default>false</default>
+                <label>(Supplemental) Income Assistance</label>
+            </value>
+            <value>
+                <fullName>Adult Arts Participation Services (Program)</fullName>
+                <default>false</default>
+                <label>Adult Arts Participation Services (Program)</label>
+            </value>
+            <value>
+                <fullName>Adult Education</fullName>
+                <default>false</default>
+                <label>Adult Education</label>
+            </value>
+            <value>
+                <fullName>Adult Workforce Development</fullName>
+                <default>false</default>
+                <label>Adult Workforce Development</label>
+            </value>
+            <value>
+                <fullName>Arts Employment</fullName>
+                <default>false</default>
+                <label>Arts Employment</label>
+            </value>
+            <value>
+                <fullName>Arts Organization Residency Services</fullName>
+                <default>false</default>
+                <label>Arts Organization Residency Services</label>
+            </value>
+            <value>
+                <fullName>Business Owner/ Manager Services</fullName>
+                <default>false</default>
+                <label>Business Owner/ Manager Services</label>
+            </value>
+            <value>
+                <fullName>Business Strip Services</fullName>
+                <default>false</default>
+                <label>Business Strip Services</label>
+            </value>
+            <value>
+                <fullName>Child Care/Support</fullName>
+                <default>false</default>
+                <label>Child Care/Support</label>
+            </value>
+            <value>
+                <fullName>Commercial Leasing</fullName>
+                <default>false</default>
+                <label>Commercial Leasing</label>
+            </value>
+            <value>
+                <fullName>Counseling &amp; Consultation</fullName>
+                <default>false</default>
+                <label>Counseling &amp; Consultation</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Financial Counseling/ Coaching</fullName>
+                <default>false</default>
+                <label>Financial Counseling/ Coaching</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Houselift Energy Efficiency</fullName>
+                <default>false</default>
+                <label>Houselift Energy Efficiency</label>
+            </value>
+            <value>
+                <fullName>Houselift General Contracting</fullName>
+                <default>false</default>
+                <label>Houselift General Contracting</label>
+            </value>
+            <value>
+                <fullName>Houselift Handyman Services</fullName>
+                <default>false</default>
+                <label>Houselift Handyman Services</label>
+            </value>
+            <value>
+                <fullName>Houselift Healthy Homes</fullName>
+                <default>false</default>
+                <label>Houselift Healthy Homes</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Immigration</fullName>
+                <default>false</default>
+                <label>Immigration</label>
+            </value>
+            <value>
+                <fullName>Legal Services</fullName>
+                <default>false</default>
+                <label>Legal Services</label>
+            </value>
+            <value>
+                <fullName>Presenting Opportunities</fullName>
+                <default>false</default>
+                <label>Presenting Opportunities</label>
+            </value>
+            <value>
+                <fullName>Retrofit Block-by-Block</fullName>
+                <default>false</default>
+                <label>Retrofit Block-by-Block</label>
+            </value>
+            <value>
+                <fullName>Room Rentals</fullName>
+                <default>false</default>
+                <label>Room Rentals</label>
+            </value>
+            <value>
+                <fullName>Technical Assistance</fullName>
+                <default>false</default>
+                <label>Technical Assistance</label>
+            </value>
+            <value>
+                <fullName>Weatherization Assistance Program</fullName>
+                <default>false</default>
+                <label>Weatherization Assistance Program</label>
+            </value>
+            <value>
+                <fullName>Youth Arts Participation Services</fullName>
+                <default>false</default>
+                <label>Youth Arts Participation Services</label>
+            </value>
+            <value>
+                <fullName>Youth Education</fullName>
+                <default>false</default>
+                <label>Youth Education</label>
+            </value>
+            <value>
+                <fullName>Youth Workforce Development</fullName>
+                <default>false</default>
+                <label>Youth Workforce Development</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Adjustment to Trauma</controllingFieldValue>
+            <controllingFieldValue>Behavioral/Emotional Needs</controllingFieldValue>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <valueName>Counseling &amp; Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adjustment to Trauma</controllingFieldValue>
+            <controllingFieldValue>Behavioral/Emotional Needs</controllingFieldValue>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>School &amp; Education</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Culture</controllingFieldValue>
+            <valueName>(Semi-) Professional Performances and Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Culture</controllingFieldValue>
+            <valueName>Adult Arts Participation Services (Program)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Culture</controllingFieldValue>
+            <controllingFieldValue>School &amp; Education</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Arts Employment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Culture</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Arts Organization Residency Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Culture</controllingFieldValue>
+            <valueName>Youth Arts Participation Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>School &amp; Education</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Adult Workforce Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>School &amp; Education</controllingFieldValue>
+            <valueName>Child Care/Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Financial Counseling/ Coaching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <valueName>Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <valueName>Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Legal Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homelessness</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Youth Workforce Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>(Supplemental) Income Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <valueName>Houselift Energy Efficiency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <valueName>Houselift General Contracting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <valueName>Houselift Handyman Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <valueName>Houselift Healthy Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <valueName>Room Rentals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing</controllingFieldValue>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Technical Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>School &amp; Education</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Adult Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immigration</controllingFieldValue>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <valueName>Immigration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Business Owner/ Manager Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <valueName>Business Strip Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal</controllingFieldValue>
+            <valueName>Commercial Leasing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Domain Functioning</controllingFieldValue>
+            <controllingFieldValue>Workforce</controllingFieldValue>
+            <valueName>Youth Education</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

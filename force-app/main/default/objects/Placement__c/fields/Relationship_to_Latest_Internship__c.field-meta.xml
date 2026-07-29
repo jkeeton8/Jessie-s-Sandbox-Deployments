@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_to_Latest_Internship__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Start_Date__c = Case_Record__r.Start_Date_of_Latest_Internship__c &amp;&amp;  Organization_TCP__c = &quot;001i000000K8MVQ&quot;, &quot;Latest Cleanslate TJ&quot;,
+
+if (Start_Date__c &gt; Case_Record__r.Start_Date_of_Latest_Internship__c, &quot;After Latest Cleanslate TJ&quot;, 
+
+if (Start_Date__c &lt; Case_Record__r.Start_Date_of_Latest_Internship__c, &quot;Before Latest Cleanslate TJ&quot;, 
+
+NULL)))</formula>
+    <label>Relationship to Latest Cleanslate TJ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

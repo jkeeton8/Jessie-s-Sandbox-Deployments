@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Insurance_at_Intake__c</fullName>
+    <inlineHelpText>Health insurance at program start</inlineHelpText>
+    <label>Health Insurance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Private insurance through a household member&apos;s employer</fullName>
+                <default>false</default>
+                <label>Private insurance through a household member&apos;s employer</label>
+            </value>
+            <value>
+                <fullName>Private insurance (not through a household member&apos;s employer)</fullName>
+                <default>false</default>
+                <label>Private insurance (not through a household member&apos;s employer)</label>
+            </value>
+            <value>
+                <fullName>Insured through government program</fullName>
+                <default>false</default>
+                <label>Insured through government program</label>
+            </value>
+            <value>
+                <fullName>No insurance at all</fullName>
+                <default>false</default>
+                <label>No insurance at all</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

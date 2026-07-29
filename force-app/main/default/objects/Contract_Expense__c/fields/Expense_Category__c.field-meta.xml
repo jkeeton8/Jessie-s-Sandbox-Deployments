@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Category__c</fullName>
+    <label>Expense Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Expense_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Background Screen (standard)</fullName>
+                <default>false</default>
+                <label>Background Screen (standard)</label>
+            </value>
+            <value>
+                <fullName>National Criminal Record &amp; Sex Offender Search</fullName>
+                <default>false</default>
+                <label>National Criminal Record &amp; Sex Offender Search</label>
+            </value>
+            <value>
+                <fullName>Background Screen (2 counties &amp; standard search)</fullName>
+                <default>false</default>
+                <label>Background Screen (2 counties &amp; standard search)</label>
+            </value>
+            <value>
+                <fullName>Drug Screen 5 Panel</fullName>
+                <default>false</default>
+                <label>Drug Screen 5 Panel</label>
+            </value>
+            <value>
+                <fullName>Social Service Transactions</fullName>
+                <default>false</default>
+                <label>Social Service Transactions</label>
+            </value>
+            <value>
+                <fullName>Social Service Transactions - Full 6 Months</fullName>
+                <default>false</default>
+                <label>Social Service Transactions - Full 6 Months</label>
+            </value>
+            <value>
+                <fullName>7 Day Pass</fullName>
+                <default>false</default>
+                <label>7 Day Pass</label>
+            </value>
+            <value>
+                <fullName>3 Day Pass</fullName>
+                <default>false</default>
+                <label>3 Day Pass</label>
+            </value>
+            <value>
+                <fullName>1 Day Pass</fullName>
+                <default>false</default>
+                <label>1 Day Pass</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Drug Screen</controllingFieldValue>
+            <valueName>Drug Screen 5 Panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Background Screen</controllingFieldValue>
+            <valueName>Background Screen (standard)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Background Screen</controllingFieldValue>
+            <valueName>National Criminal Record &amp; Sex Offender Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Background Screen</controllingFieldValue>
+            <valueName>Background Screen (2 counties &amp; standard search)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Verification</controllingFieldValue>
+            <valueName>Social Service Transactions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Verification</controllingFieldValue>
+            <valueName>Social Service Transactions - Full 6 Months</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit</controllingFieldValue>
+            <valueName>7 Day Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit</controllingFieldValue>
+            <valueName>3 Day Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transit</controllingFieldValue>
+            <valueName>1 Day Pass</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

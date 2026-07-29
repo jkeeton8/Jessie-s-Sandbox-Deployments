@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreviousAssessments__c</fullName>
+    <inlineHelpText>Do you know if you&apos;ve taken any of these assessments in the last 6 months? Select all that apply.</inlineHelpText>
+    <label>Previous Assessments</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TABE</fullName>
+                <default>false</default>
+                <label>TABE</label>
+            </value>
+            <value>
+                <fullName>CASAS</fullName>
+                <default>false</default>
+                <label>CASAS</label>
+            </value>
+            <value>
+                <fullName>ESL</fullName>
+                <default>false</default>
+                <label>ESL</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Assessment_Summary_Requires_CR</fullName>
+    <active>true</active>
+    <description>This component can only be associated with a Status Bar Configuration of type Case Record, Enrolled Client or Enrolled Client Household.</description>
+    <errorConditionFormula>IF(LOWER(Component_Classname__c) == &apos;component.c.expstatusbarassessmentsummary&apos; &amp;&amp; 
+(ECM_Status_Bar_Configuration__r.RecordType.DeveloperName != &apos;Case_Record&apos;), 
+true, false)</errorConditionFormula>
+    <errorMessage>The Assessment Summary component can only be associated with a Status Bar Configuration of type Case Record.</errorMessage>
+</ValidationRule>

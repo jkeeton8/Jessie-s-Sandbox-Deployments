@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Out_Hold_Notification</name>
+        <label>Incident__c.Send_Out_Hold_Notification</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Incident__c.Send_Out_Hold_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Incident__c.Send_Out_Hold_Notification</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Student Put on Send Out Hold workflow rule
+Workflow rule description: &quot;</description>
+    <label>Student Put on Send Out Hold</label>
+    <migratedFromWorkflowRuleName>Student Put on Send Out Hold</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Out_Hold_Notification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hold/Concern</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Effective_Date__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateValue>2021-10-25</dateValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Send Out Hold</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Reason__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Business Only</stringValue>
+            </value>
+        </filters>
+        <object>Incident__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

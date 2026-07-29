@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competency_Definitions__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Conflict Management: When faced with conflict, acts rationally to identify causes of issues, seeks to understand opposing viewpoint, and works to identify a workable solution.&quot; 
+
+&amp; br()&amp;br() &amp;
+
+&quot;Communication: Listens actively to supervisors and peers; communicates clearly in own language and in an appropriate way in different situations and contexts.&quot; 
+
+&amp; br()&amp;br() &amp;
+
+&quot;Professionalism: Demonstrates ethical and professional behaviors in relations with everyone, both inside and outside, in order to build and maintain credibility and trust.&quot; 
+
+&amp; br()&amp;br() &amp;
+
+&quot;Teamwork: Works effectively with others in order to maximize results.&quot; 
+
+&amp; br()&amp;br() &amp;
+
+&quot;Time Management: Prioritizes tasks with respect to importance and deadlines; adjusts priorities as situations change; utilizes sound methods to plan and track work and appointments; meets deadlines.&quot;</formula>
+    <label>Competency Definitions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

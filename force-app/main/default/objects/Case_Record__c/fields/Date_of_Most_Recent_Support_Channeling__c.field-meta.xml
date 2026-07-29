@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Most_Recent_Support_Channeling__c</fullName>
+    <inlineHelpText>Support Channeling Checklist: Used as tool to determine eligibility, readiness, and interest in Advancement Services at 6, 9, and 12 months in Retention Services.</inlineHelpText>
+    <label>Date of Most Recent Support Channeling</label>
+    <summarizedField>Assessment__c.Assessment_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Assessment__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Support Channeling Checklist</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Assessment__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

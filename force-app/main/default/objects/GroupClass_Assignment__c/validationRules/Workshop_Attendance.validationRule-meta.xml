@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workshop_Attendance</fullName>
+    <active>true</active>
+    <errorConditionFormula>Group_Class_Name__c  &lt;&gt; &quot;Connects Onboarding&quot;
+
+&amp;&amp;
+
+ischanged(Connects_Attendance__c )</errorConditionFormula>
+    <errorMessage>Please use the &quot;Attendance Exception&quot; field to track attendance-related data.</errorMessage>
+</ValidationRule>

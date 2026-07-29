@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <label>Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CWF-CEP</fullName>
+                <default>false</default>
+                <label>CWF-CEP</label>
+            </value>
+            <value>
+                <fullName>CWF-nonCEP</fullName>
+                <default>false</default>
+                <label>CWF-nonCEP</label>
+            </value>
+            <value>
+                <fullName>TCP-CEP</fullName>
+                <default>false</default>
+                <label>TCP-CEP</label>
+            </value>
+            <value>
+                <fullName>TCP-nonCEP</fullName>
+                <default>false</default>
+                <label>TCP-nonCEP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competency_Check__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(Resume_SOE_Date__c)),
+    NOT(ISBLANK(Background_Check_SOE_Date__c)),
+    OR(
+        ISBLANK(Housing_SOE_Date__c),
+        ISBLANK(Health_SOE_Date__c),
+        ISBLANK(Child_Care_SOE_Date__c),
+        ISBLANK(Conflict_Management_SOE_Date__c),
+        ISBLANK(Professionalism_SOE_Date__c),
+        ISBLANK(Time_Management_SOE_Date__c),
+        ISBLANK(Team_Building_SOE_Date__c),
+        ISBLANK(Communication_SOE_Date__c)
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Competency Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

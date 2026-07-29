@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Organization_referred_by__c</fullName>
+    <label>Name of Organization referred by</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A Safe Haven</fullName>
+                <default>false</default>
+                <label>A Safe Haven</label>
+            </value>
+            <value>
+                <fullName>CAPS (Corridor Ambassador)</fullName>
+                <default>false</default>
+                <label>CAPS (Corridor Ambassador)</label>
+            </value>
+            <value>
+                <fullName>DHS</fullName>
+                <default>false</default>
+                <label>DHS</label>
+            </value>
+            <value>
+                <fullName>Franciscan Outreach Association</fullName>
+                <default>false</default>
+                <label>Franciscan Outreach Association</label>
+            </value>
+            <value>
+                <fullName>Gateway Foundation</fullName>
+                <default>false</default>
+                <label>Gateway Foundation</label>
+            </value>
+            <value>
+                <fullName>GRO Community</fullName>
+                <default>false</default>
+                <label>GRO Community</label>
+            </value>
+            <value>
+                <fullName>Hardin House Inc.</fullName>
+                <default>false</default>
+                <label>Hardin House Inc.</label>
+            </value>
+            <value>
+                <fullName>Haymarket Center</fullName>
+                <default>false</default>
+                <label>Haymarket Center</label>
+            </value>
+            <value>
+                <fullName>Illinois Department of Corrections</fullName>
+                <default>false</default>
+                <label>Illinois Department of Corrections</label>
+            </value>
+            <value>
+                <fullName>Kedzie House Gateway</fullName>
+                <default>false</default>
+                <label>Kedzie House Gateway</label>
+            </value>
+            <value>
+                <fullName>LCLC</fullName>
+                <default>false</default>
+                <label>LCLC</label>
+            </value>
+            <value>
+                <fullName>Lincoln Park Community Services</fullName>
+                <default>false</default>
+                <label>Lincoln Park Community Services</label>
+            </value>
+            <value>
+                <fullName>N&apos; The Spirit Transformational Living</fullName>
+                <default>false</default>
+                <label>N&apos; The Spirit Transformational Living</label>
+            </value>
+            <value>
+                <fullName>NAMI Chicago</fullName>
+                <default>false</default>
+                <label>NAMI Chicago</label>
+            </value>
+            <value>
+                <fullName>Northwest Center</fullName>
+                <default>false</default>
+                <label>Northwest Center</label>
+            </value>
+            <value>
+                <fullName>OAI, Inc.</fullName>
+                <default>false</default>
+                <label>OAI, Inc.</label>
+            </value>
+            <value>
+                <fullName>Olive Branch Mission</fullName>
+                <default>false</default>
+                <label>Olive Branch Mission</label>
+            </value>
+            <value>
+                <fullName>Pacific Garden Mission</fullName>
+                <default>false</default>
+                <label>Pacific Garden Mission</label>
+            </value>
+            <value>
+                <fullName>Phoenix Recovery Support Services</fullName>
+                <default>false</default>
+                <label>Phoenix Recovery Support Services</label>
+            </value>
+            <value>
+                <fullName>Salvation Army - Freedom Center</fullName>
+                <default>false</default>
+                <label>Salvation Army - Freedom Center</label>
+            </value>
+            <value>
+                <fullName>SisterHouse</fullName>
+                <default>false</default>
+                <label>SisterHouse</label>
+            </value>
+            <value>
+                <fullName>TASC</fullName>
+                <default>false</default>
+                <label>TASC</label>
+            </value>
+            <value>
+                <fullName>Teamwork Englewood</fullName>
+                <default>false</default>
+                <label>Teamwork Englewood</label>
+            </value>
+            <value>
+                <fullName>(W)RAP - Rehab Alternative Program, Circuit Court of Cook County Drug Court Treatment Program</fullName>
+                <default>false</default>
+                <label>(W)RAP - Rehab Alternative Program, Circuit Court of Cook County Drug Court Treatment Program</label>
+            </value>
+            <value>
+                <fullName>UCAN Chicago</fullName>
+                <default>false</default>
+                <label>UCAN Chicago</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

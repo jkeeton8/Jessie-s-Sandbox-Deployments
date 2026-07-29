@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salary__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <formula>Hours__c *  Wage__c * 52</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is auto-calculated by taking the &apos;Wage&apos; x &apos;Hours&apos; x 52. If you have annual salary info but not &apos;Wage&apos;, divide the salary by the &apos;Hours&apos; per week and then divide by 52. Enter than value into &apos;Wage&apos;.</inlineHelpText>
+    <label>Salary</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

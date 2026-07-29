@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advancement_Inactive_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>CONTAINS(text(Advancement_Status__c), &quot;Inactive&quot;) &amp;&amp; isblank (Advancement_Inactive_Date__c)</errorConditionFormula>
+    <errorDisplayField>Advancement_Inactive_Date__c</errorDisplayField>
+    <errorMessage>Please enter Advancement Inactive Date</errorMessage>
+</ValidationRule>

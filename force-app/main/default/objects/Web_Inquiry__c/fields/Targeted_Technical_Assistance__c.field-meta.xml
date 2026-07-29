@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Targeted_Technical_Assistance__c</fullName>
+    <label>Targeted Technical Assistance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recruitment practices</fullName>
+                <default>false</default>
+                <label>Recruitment practices</label>
+            </value>
+            <value>
+                <fullName>Socio-emotional curriculum</fullName>
+                <default>false</default>
+                <label>Socio-emotional curriculum</label>
+            </value>
+            <value>
+                <fullName>Competency based training</fullName>
+                <default>false</default>
+                <label>Competency based training</label>
+            </value>
+            <value>
+                <fullName>Employment services</fullName>
+                <default>false</default>
+                <label>Employment services</label>
+            </value>
+            <value>
+                <fullName>Retention practices</fullName>
+                <default>false</default>
+                <label>Retention practices</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

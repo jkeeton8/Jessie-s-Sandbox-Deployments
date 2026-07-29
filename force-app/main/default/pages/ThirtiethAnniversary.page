@@ -1,0 +1,560 @@
+<apex:page showHeader="false"  standardStylesheets="false"  >
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <!-- Scripts and styles -->
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+            <apex:includeScript value="{!$Resource.KELLValidationLibrary}"/>
+            <script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>
+            <script type="text/javascript"> trackPredictive(); </script>
+            <script>function unvalueHonor(){ if (!j$('#showMemCheckbox').is(":checked")){ j$('select[name="FieldValue3300"]').val('');}}</script>
+            <form id="Donation" class="doValidate" method="post" action="https://faas.cloud.clickandpledge.com">
+                <h2>Online Donation</h2>
+                <p>Thank you for your support!</p>
+                <!-- hidden C&P Donation Fields -->
+                <input name="ItemID1" type="hidden" id="ItemID1" value="1" />
+                <input name="ItemName1" type="hidden" id="ItemName1" value="Donation" />
+                <input name="SKU1" type="hidden" id="SKU1" value="DON-30" />
+                <input name="Quantity1" type="hidden" id="Quantity1" value="1" />
+                <!-- hidden C&P Redirect Fields -->
+                <input type="hidden" name="OnSuccessUrl" id="OnSuccessUrl"  value="https://cara.secure.force.com/donate/thanks" />
+                <input type="hidden" name="OnDeclineUrl" id="OnDeclineUrl"  value="https://cara.secure.force.com/donate/declined" />
+                <input type="hidden" name="OnErrorUrl" id="OnErrorUrl"      value="https://cara.secure.force.com/donate/error" />
+                <!-- hidden C&P ACCOUNT Fields -->
+                <input type="hidden" name="AccountGuid" id="AccountGuid" value="3aafb0ce-2dd5-4b3f-83af-26a34ef02507" />
+                <input type="hidden" name="AccountID" id="AccountID" value="25666" />
+                <input type="hidden" name="WID" id="WID" value="66665" />
+                <!-- hidden C&P Reference Fields -->
+                <input type="hidden" name="RefID" id="RefID" value="Website" />
+                <input type="hidden" name="Tracker" id="Tracker" value="Website" />
+                <!-- hidden C&P Form Method Fields -->
+                <input type="hidden" name="SendReceipt" id="SendReceipt" value="False" />
+                <input type="hidden" name="OrderMode" id="OrderMode" value="Production" />
+                <!-- Order Mode can be Test or Production -->
+           
+                <input type="hidden" name="TransactionType" id="TransactionType" value="Payment" />
+                <!-- hidden C&P Standardization Fields -->
+                <input type="hidden" name="DecimalMark" id="DecimalMarkMode" value="US" />
+                <input name="UnitDeductible1" type="hidden" id="UnitDeductible1" value="100%" />
+
+                <fieldset>         
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice0" name="UnitPrice1" type="radio" value="30" autocomplete="off" onClick='ClearText("#Other1");' />           
+                            <label for="UnitPrice0" class="collapse">$30</label>
+                        </div>
+                    </div>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice1" name="UnitPrice1" type="radio" value="300" autocomplete="off" onClick='ClearText("#Other1");' />           
+                            <label for="UnitPrice1" class="collapse">$300</label>
+                        </div>
+                    </div>
+                    <div class="formItem"> 
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice2" name="UnitPrice1" type="radio" value="3000"  autocomplete="off" onClick='ClearText("Other1");' />
+                            <label for="UnitPrice2" class="collapse">$3,000</label>
+                        </div>
+                    </div>
+                    <div class="formItem"> 
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice3" name="UnitPrice1" type="radio" value="30000" autocomplete="off" onClick='ClearText("Other1");' />
+                            <label for="UnitPrice3" class="collapse">$30,000</label>
+                        </div>
+                    </div>
+                    <div class="formItem"> 
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice9" name="UnitPrice1" type="radio" value="Other" autocomplete="off" />        
+                            <label>$
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" onclick='SetRadio("UnitPrice1","Other");' id="Other1" name="Other1" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="OTHER" />
+                                </span>
+                            </label>    
+                        </div>
+                    </div>
+                <br/>
+                </fieldset>
+                                <fieldset>
+                    <legend>Recurring</legend>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label for="Single"  class="collapse">
+                                <input name="Installment" type="radio" id="Single" value="" checked="checked" autocomplete="off"  /> 
+                                This is a one-time donation.  
+                            </label>
+                            <label></label>
+                            <label for="Recurring" class="collapse">
+                                <input type="radio" name="Installment" value="999" id="Recurring" onchange="ShowBlock(this.id, 'Periodicity');" 
+                                autocomplete="off"/>
+                                I want to make a recurring donation. 
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <div class="formItem" >
+                        <label>Pay every</label>
+                        <div class="form-row">
+                            <select name="Periodicity" id="Periodicity"  autocomplete="off" >
+                                <option value=""></option>
+                                <option value="Month">Month</option>
+                                <option value="2 Months">2 Months</option>
+                                <option value="Quarter">Quarter</option>
+                                <option value="6 Months">6 Months</option>
+                                <option value="Year">Year</option>
+                            </select>
+                        </div>
+                    </div>               
+                <br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <input name="FieldName2601" type="hidden" value="Salutation"  autocomplete="off" />
+                            <label for="FieldValue2601">Salutation:</label>
+                            <select name="FieldValue2601" class="class" size="1">
+                                <option value=""></option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Rev.">Rev.</option>
+                                <option value="Fr.">Fr.</option>
+                                <option value="Sr.">Sr.</option>
+                                <option value="Rabbi">Rabbi</option>
+                            </select>
+                        </div>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingFirstName" name="BillingFirstName" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="FIRST NAME*" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingLastName" name="BillingLastName" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="LAST NAME*" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2602" type="hidden" value="Nickname"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2602" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="NAME YOU GO BY" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2603" type="hidden" value="Suffix"  autocomplete="off" />
+                            <select name="FieldValue2603" class="class" size="1">
+                                <option selected="true" disabled="disabled">SUFFIX</option>
+                                <option value="Sr.">Sr.</option>
+                                <option value="Jr.">Jr.</option>
+                                <option value="II">II</option>
+                                <option value="III">III</option>
+                                <option value="IV">IV</option>
+                            </select>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2600" type="hidden" value="Title"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2600" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="TITLE" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2500" type="hidden" value="Employer"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2500" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="EMPLOYER" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingPhone" name="BillingPhone" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="PHONE NUMBER" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingEmail" name="BillingEmail" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="EMAIL ADDRESS*" />
+                                </span>
+                            </label>
+                        </p>
+                        <div class="form-row"> 
+                            <label> 
+                                <span class="wpcf7-form-control-wrap">
+                                    <input name="FieldName1" type="hidden" value="MailedCorrespondence"/>
+                                    <input name="FieldValue1" type="checkbox"/>
+                                This gift is in response to a mailed correspondence. </span> 
+                            </label> 
+                        </div>
+                        <div class="formItem">
+                            <label ></label>
+                            <label class="collapse" for="showcompany2200">
+                                <input type="checkbox" value="yes" id="showcompany2200" autocomplete="off" 
+                                onchange="ShowBlock(this.id, 'companyName');ClearText('FieldValue2200');" />
+                                This donation is on behalf of a company
+                            </label> 
+                        </div>
+                        <input name="FieldName2200" type="hidden" value="Company"/>
+                        <div class="formItem" id="companyName" style="display:none;">
+                            <label for="FieldValue4">Company:</label>
+                            <input name="FieldValue2200" class="" type="text" id="FieldValue2200" value="" size="40" />
+                        </div>
+                        <p>
+                            <input name="FieldName2100" type="hidden" value="Comments"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="textarea" name="FieldValue2100" style="width:300px; height:40px;" autocomplete="off" 
+                                    class="wpcf7-form-control wpcf7-text" placeholder="COMMENTS" />
+                                </span>
+                            </label>
+                        </p>
+                    </div>
+                    <br/>
+                    <br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Honor / Memorial</legend>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label></label>
+                            <label class="collapse">
+                                <input id="showMemCheckbox" onchange="ShowBlock(this.id, 'memorial');unvalueHonor();" type="checkbox" 
+                                autocomplete="off" value="yes"/> This donation is in honor/memorial of someone.
+                            </label> 
+                        </div>
+                    </div>
+                    <div id="memorial" style="display: none;">
+                        <div class="formItem">
+                            <input name="FieldName3300" type="hidden" value="HonorType"/>
+                            <label for="FieldValue3300">This donation is:</label>
+                            <select name="FieldValue3300">
+                                <option value=""></option>
+                                <option value="Memorial">In memory of someone</option>
+                                <option value="Honor">In honor of someone</option>
+                            </select>
+                        </div>
+ 
+                        <p class="two-column">
+                            <input name="FieldName3301" type="hidden" value="Honoree"/>
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue3301" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="HONOREE/MEMORIAL NAME" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName3302" type="hidden" value="Notify"/>
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue3302" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="PERSON TO NOTIFY" />
+                                </span>
+                            </label>
+                        </p>
+                    
+                        <div class="formItem">
+                            <input name="FieldName3303" type="hidden" value="NotificationMethod"/>
+                            <label for="FieldValue3303">Acknowledgement:</label>
+                            <select name="FieldValue3303" id="FieldValue3303" onChange="j$('#Notification_email').hide();j$('#Notification_mail').hide();
+                            j$('#Notification_'+j$('#FieldValue3303').val()).fadeIn(200); 
+                            if (j$('#FieldValue3303').val()=='None'){j$('#nmmsg').fadeOut(200);}else{j$('#nmmsg').fadeIn(200);}">
+                                <option value=""></option>
+                                <option value="None">No acknowledgement necessary</option>
+                                <option value="email">Send e-mail acknowledgement</option>
+                                <option value="mail">Send postal mail acknowledgement</option>
+                            </select>
+                        </div>
+                    
+                
+                    
+                        <div class="two-column formItem" id="Notification_email" style="display:none;">
+                            <p>
+                                <input name="FieldName3304" type="hidden" value="NotificationEmail"/>
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" name="FieldValue3304" size="40" autocomplete="off" class="wpcf7-form-control wpcf7-text" placeholder="E-MAIL TO NOTIFY" />
+                                    </span>
+                                </label>
+                            </p>
+                        </div>
+        
+                        <div class="two-column formItem" id="Notification_mail" style="display:none;">            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td style="width:150px">
+                                            <label for="FieldValue3305">Address:</label>
+                                        </td>
+                                        <td>
+                                            <input name="FieldName3305" type="hidden" value="HonorAddress"/>
+                                            <textarea name="FieldValue3305" style="width:270px; height:50px;"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="formItem two-column" id='nmmsg' style='display:none;'>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td style="width:150px">
+                                            <label for="FieldValue3306">Message:</label>
+                                        </td>
+                                        <td>
+                                            <input name="FieldName3306" type="hidden" value="HonorComment"/>
+                                            <textarea name="FieldValue3306" style="width:270px; height:50px;" ></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br/>
+                </fieldset>
+                <fieldset>
+                    <legend>First-Time Donor</legend>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label></label>
+                            <label class="collapse" for="showFirstTimeDonor">
+                                <input id="showFirstTimeDonor" onchange="ShowBlock(this.id, 'firsttimedonor')" type="checkbox" 
+                                autocomplete="off" value="yes"/> I am a first-time donor of Cara.
+                            </label> 
+                        </div>
+                    </div>
+                    <div id="firsttimedonor" style="display: none;">
+                        <div class="formItem">
+                            <input name="FieldName02" type="hidden" value="Source"/>
+                            <label for="FieldValue02">How did you hear of us?</label>
+                            <select name="FieldValue02">
+                                <option value="" selected="selected">Select Reason</option>
+                                <option value="Employer or Other Organization">Employer or Other Organization</option>
+                                <option value="Family Member or Friend">Family Member or Friend</option>
+                                <option value="Cara Social Media">Cara Social Media</option>
+                                <option value="TV, Radio, or Print">TV, Radio, or Print</option>
+                                <option value="Web/Search Engine">Web/Search Engine</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <span class="wpcf7-form-control-wrap">
+                        <input name="FieldName03" type="hidden" value="SourceDescription"/>
+                            <div class="formItem" id="SourceDescription" style="">
+                                <label for="FieldValue03">Please provide any additional details below, such as the company, individual's name, or social media outlet.</label>
+                                <input name="FieldValue03" class="" type="text" id="FieldValue3" value="" size="40" />
+                            </div>
+                        </span>
+                    </div>
+                    <br/>
+                </fieldset>
+                <fieldset>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <legend>Billing Information</legend>
+                            <p class="one-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingAddress1" name="BillingAddress1" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="ADDRESS 1*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="one-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingAddress2" name="BillingAddress2" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="ADDRESS 2 (OPTIONAL)" />
+                                    </span>
+                                </label>
+                            </p>
+                 
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingCity" name="BillingCity" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="CITY*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <select name="BillingCountryCode" size="1" onChange="UpdateStates();" id="BillingCountryCode" >
+                                    <option value="840" selected="selected">United States of America</option>
+                                </Select>
+
+                                <select name="BillingStateProvince" size="1" id="BillingStateProvince" >
+                                    <option value="NA" selected="selected">Select State*</option>
+                                    <option value="Alabama">Alabama</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Arizona">Arizona</option>
+                                    <option value="Arkansas">Arkansas</option>
+                                    <option value="Armed Forces- Africa">Armed Forces- Africa</option>
+                                    <option value="Armed Forces- Americas">Armed Forces- Americas</option>
+                                    <option value="Armed Forces- Canada">Armed Forces- Canada</option>
+                                    <option value="Armed Forces- Europe">Armed Forces- Europe</option>
+                                    <option value="Armed Forces- Middle East">Armed Forces- Middle East</option>
+                                    <option value="Armed Forces- Pacific">Armed Forces- Pacific</option>
+                                    <option value="California">California</option>
+                                    <option value="Colorado">Colorado</option>
+                                    <option value="Connecticut">Connecticut</option>
+                                    <option value="Delaware">Delaware</option>
+                                    <option value="District of Columbia">District of Columbia</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Hawaii">Hawaii</option>
+                                    <option value="Idaho">Idaho</option>
+                                    <option value="Illinois">Illinois</option>
+                                    <option value="Indiana">Indiana</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Kansas">Kansas</option>
+                                    <option value="Kentucky">Kentucky</option>
+                                    <option value="Louisiana">Louisiana</option>
+                                    <option value="Maine">Maine</option>
+                                    <option value="Maryland">Maryland</option>
+                                    <option value="Massachusetts">Massachusetts</option>
+                                    <option value="Michigan">Michigan</option>
+                                    <option value="Minnesota">Minnesota</option>
+                                    <option value="Mississippi">Mississippi</option>
+                                    <option value="Missouri">Missouri</option>
+                                    <option value="Montana">Montana</option>
+                                    <option value="Nebraska">Nebraska</option>
+                                    <option value="Nevada">Nevada</option>
+                                    <option value="New Hampshire">New Hampshire</option>
+                                    <option value="New Jersey">New Jersey</option>
+                                    <option value="New Mexico">New Mexico</option>
+                                    <option value="New York">New York</option>
+                                    <option value="North Carolina">North Carolina</option>
+                                    <option value="North Dakota">North Dakota</option>
+                                    <option value="Ohio">Ohio</option>
+                                    <option value="Oklahoma">Oklahoma</option>
+                                    <option value="Oregon">Oregon</option>
+                                    <option value="Pennsylvania">Pennsylvania</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Rhode Island">Rhode Island</option>
+                                    <option value="South Carolina">South Carolina</option>
+                                    <option value="South Dakota">South Dakota</option>
+                                    <option value="Tennessee">Tennessee</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Utah">Utah</option>
+                                    <option value="Vermont">Vermont</option>
+                                    <option value="Virgin Islands- US">Virgin Islands- US</option>
+                                    <option value="Virginia">Virginia</option>
+                                    <option value="Washington">Washington</option>
+                                    <option value="West Virginia">West Virginia</option>
+                                    <option value="Wisconsin">Wisconsin</option>
+                                    <option value="Wyoming">Wyoming</option>
+                                </select>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingPostalCode" name="BillingPostalCode" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="ZIP*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p> If you would like to donate from another country, please call 312-798-3331.</p> 
+                        </div>
+                    </div>
+                    <br/>
+                </fieldset>
+                <fieldset>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <legend>Payment Information</legend>
+                            <input name="PaymentType" type="hidden" id="PaymentType" value="CreditCard" />
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="NameOnCard" name="NameOnCard" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="NAME ON CREDIT CARD*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="CardNumber" name="CardNumber" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="CREDIT CARD NUMBER*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="Cvv2" name="Cvv2" value="" size="6" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" 
+                                        aria-required="true" aria-invalid="false" placeholder="CVV2*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <select name="ExpirationMonth" id="ExpirationMonth">
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select> 
+                                <select name="ExpirationYear" id="ExpirationYear">
+                                    <option value="21" selected="selected">2021</option>
+                                    <option value="22">2022</option>
+                                    <option value="23">2023</option>
+                                    <option value="24">2024</option>
+                                    <option value="25">2025</option>
+                                    <option value="26">2026</option>
+                                    <option value="27">2027</option>
+                                    <option value="28">2028</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+                <p>*Starred fields are required. Please hit the "Submit Donation" button only once, 
+                 as pressing the button multiple times could result in duplicate transactions. Thank you!</p>
+                <div class="button-wrapper">
+                    <input name="SubmitButton" type="button" onClick="checkForm();" id="SubmitButton" class="color-button" value="Submit Donation" />
+                    <span class="formNotice inError" style="border-radius:5px;float:right;padding:10px; color:#833;display:none;">Please fix the errors indicated above</span>
+                </div>
+            </form>
+     
+            <!-- END FORM -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

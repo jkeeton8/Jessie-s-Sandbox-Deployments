@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Should_Set_Retention_Placement_Sequence</name>
+        <label>Should Set Retention Placement Sequence</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Sequence</name>
+            <conditionLogic>1 OR 2 OR 3 OR 4</conditionLogic>
+            <conditions>
+                <leftValueReference>frm_IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>frm_PrevRetentionTypesChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>frm_SequenceNameChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ECM_Retention_Placement_Sequence__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_ECM_Retention_Placement_Sequence</targetReference>
+            </connector>
+            <label>Update Sequence</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>frm_IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK($Record__Prior.Id)</expression>
+    </formulas>
+    <formulas>
+        <name>frm_PrevRetentionTypesChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>$Record.ECM_Previous_Retention_Placement_Types__c &lt;&gt; $Record__Prior.ECM_Previous_Retention_Placement_Types__c</expression>
+    </formulas>
+    <formulas>
+        <name>frm_RetentionPlacementSequence</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  LEN($Record.ECM_Previous_Retention_Placement_Types__c) + LEN($Record.ECM_Sequence_Name__c) &gt; 255,
+  $Record.ECM_Previous_Retention_Placement_Types__c &amp; &quot;,&quot;,
+  IF(
+    NOT(ISBLANK($Record.ECM_Previous_Retention_Placement_Types__c)),
+    $Record.ECM_Previous_Retention_Placement_Types__c &amp; &quot;,&quot; &amp;
+    SUBSTITUTE(
+      SUBSTITUTE($Record.ECM_Sequence_Name__c, &quot;; &quot;, &quot;&quot;),
+      &quot;;&quot;,
+      &quot;&quot;
+    ),
+    SUBSTITUTE(
+      SUBSTITUTE($Record.ECM_Sequence_Name__c, &quot;; &quot;, &quot;&quot;),
+      &quot;;&quot;,
+      &quot;&quot;
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>frm_SequenceNameChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>$Record.ECM_Sequence_Name__c &lt;&gt; $Record__Prior.ECM_Sequence_Name__c</expression>
+    </formulas>
+    <interviewLabel>Exp Retention Placement Created/Updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Exp Retention Placement Created/Updated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_ECM_Retention_Placement_Sequence</name>
+        <label>Set ECM Retention Placement Sequence</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>ECM_Retention_Placement_Sequence__c</field>
+            <value>
+                <elementReference>frm_RetentionPlacementSequence</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Should_Set_Retention_Placement_Sequence</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Agency_Contract__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Placement__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

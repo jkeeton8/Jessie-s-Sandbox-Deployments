@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thursday_Vehicle__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Thursday Vehicle</label>
+    <referenceTo>Fixed_Asset__c</referenceTo>
+    <relationshipLabel>Contract Schedules (Thursday Vehicle)</relationshipLabel>
+    <relationshipName>Contract_Schedules_Thursday_Vehicle</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

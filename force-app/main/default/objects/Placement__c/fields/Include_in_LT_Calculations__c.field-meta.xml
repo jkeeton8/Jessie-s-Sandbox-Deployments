@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Include_in_LT_Calculations__c</fullName>
+    <formula>IF(
+AND(
+     Text(Job_Type__c) != &quot;Short-Term&quot;,
+     ISBLANK(Placement_Number__c) = false,
+     Text(Job_Type__c) != &quot;Permanent-Advancement&quot;,
+     ISBLANK(Text(Retention_Exception__c)) ),
+TRUE,FALSE)</formula>
+    <label>Include in LT Calculations</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

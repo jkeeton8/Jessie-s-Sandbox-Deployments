@@ -1,0 +1,52 @@
+<apex:page title="Clone ECM Configuration" standardController="ECM_Configuration__c" extensions="ExpEditConfigController" lightningstylesheets="true">
+<apex:form >
+<apex:inputField value="{!ECM_Configuration__c.Name}" rendered="false"/>
+<!--apex:detail subject="{!config.id}" relatedList="false" title="true"/-->    
+<apex:sectionHeader title="Edit ECM Configuration Settings"/>
+<apex:actionRegion id="mainregion">
+
+    <apex:pageBlock title="Component Settings for {!config.Name}" id="thepageblock">
+        <apex:pageMessages />
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" action="{!saveConfig}"/>
+            <apex:commandButton value="Clone" action="{!cloneConfig}" disabled="{!config.id==null}"/>
+            <apex:commandButton value="{!IF(config.id==null,'Cancel','Close')}" action="{!cancelConfig}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="New ECM Configuration" rendered="{!config.id==null}">
+            <apex:inputField value="{!config.Name}"/>
+            <apex:inputField value="{!config.Page_Prefix__c}"/>
+            <apex:inputField value="{!config.Maximum_Page_Count__c}"/>
+            <apex:inputField value="{!config.PDF_Rendering__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Settings">
+            <apex:pageBlockTable title="Component Setttings" value="{!settings}" var="s">
+                <apex:column headerValue="Clone" rendered="{!config.id != null}">
+                    <apex:inputCheckbox value="{!s.selected}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Name.label}">
+                    <apex:outputField value="{!s.cs.Name}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Label__c.label}">
+                    <apex:inputField value="{!s.cs.Label__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Section_Title__c.label}">
+                    <apex:inputField value="{!s.cs.Section_Title__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Component_Classname__c.label}">
+                    <apex:inputField value="{!s.cs.Component_Classname__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Page_Number__c.label}">
+                    <apex:inputField value="{!s.cs.Page_Number__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Order__c.label}">
+                    <apex:inputField value="{!s.cs.Order__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Component_Settings__c.fields.Field_Set_Name__c.label}">
+                    <apex:inputField value="{!s.cs.Field_Set_Name__c}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:actionRegion>    
+</apex:form>
+</apex:page>

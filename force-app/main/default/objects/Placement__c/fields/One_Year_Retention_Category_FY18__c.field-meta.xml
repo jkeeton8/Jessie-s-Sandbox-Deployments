@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Year_Retention_Category_FY18__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (contains(Participant_Name__c, &quot;CBOC&quot;), &quot;CBOC&quot;, 
+
+if (contains(Notes__c, &quot;not counted&quot;), &quot;Not Counted&quot;, 
+
+if (Counted_as_Job_Only__c = TRUE, &quot;Counted as Job Only&quot;, 
+
+if (isblank (Placement_Number__c), NULL, 
+
+if (TEXT( Job_Type__c ) = &quot;Short-Term&quot; , NULL, 
+
+if (value(right(text(Placement_Year__c), 2)) &lt; 17, &quot;See &apos;One-Year Retention Category, FY14-FY17&apos;&quot;,
+
+if (ispickval (Job_Type__c, &quot;Permanent-Advancement&quot;), text(Job_Type__c), 
+
+if (ispickval (Retention_Exception__c, &quot;Retention Override&quot;) || ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;), text (Retention_Exception__c), 
+
+if (Retention_Days_Lapsed_Since_Start_FY18__c &gt;= 365, &quot;#Retained One Year&quot;, 
+
+if (isblank (One_Year_Retention_End_Date__c), &quot;Tracking&quot;, 
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; One_Year_Retention_End_Date__c &gt;= ETJ_Commitment_End_Date__c &amp;&amp; not (ispickval (End_Type__c, &quot;Terminated&quot;)), &quot;#Retained ETJ&quot;,
+
+&quot;Lost Employment&quot;)))))))))))</formula>
+    <inlineHelpText>Placement retention for retention years FY18+ (placement years FY17+).</inlineHelpText>
+    <label>One-Year Retention Category, FY18+</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Management_Hover_for_Prompt_2__c</fullName>
+    <description>Changed May 2022, previous question: What steps do you take to show up on time if you have a long commute?
+Changed Feb 2021, previous question: Sometimes it’s just not possible to get everything done.  Tell me about a time your responsibilities got a little overwhelming.  What did you do?</description>
+    <inlineHelpText>You landed your dream job. Within the first month on the job, you wake up tired, and its raining out. You don’t have an umbrella and Uber is surging. What do you do?</inlineHelpText>
+    <label>Time Management, Hover for Prompt 2</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

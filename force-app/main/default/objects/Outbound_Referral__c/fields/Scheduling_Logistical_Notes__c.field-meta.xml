@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduling_Logistical_Notes__c</fullName>
+    <inlineHelpText>Use this space for notes on the best time to call the participant, appointment date(s), and other logistical details that are helpful to you or, in the case of an Internal referral, might be helpful to your colleague on the receiving end.</inlineHelpText>
+    <label>Scheduling &amp; Logistical Notes</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

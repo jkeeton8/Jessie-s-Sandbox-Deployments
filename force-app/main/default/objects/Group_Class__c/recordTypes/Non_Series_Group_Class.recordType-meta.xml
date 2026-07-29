@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Series_Group_Class</fullName>
+    <active>true</active>
+    <description>A group or class that is fully offered in one session, on one day. The majority of Digital Literacy, Employment, and Financial Workshops fall into this category.</description>
+    <label>Non-Series Group/Class</label>
+    <picklistValues>
+        <picklist>Day__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Class_Name__c</picklist>
+        <values>
+            <fullName>ABM Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABM Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante 1%3A1 Makeup Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Computer Basics and Digital Literacy%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Email Basics%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Excel %26 Sheets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Excel%2C Pt%2E 1%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Excel%2C Pt%2E 2%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Intro to digital literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante MS Office %26 Google Suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante MS Office %2B Google Suite%2C Pt%2E 1%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante MS Office %2B Google Suite%2C Pt%2E 2%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Other - please specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Outlook and Gmail%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante PowerPoint %26 Slides</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante PowerPoint Presentation%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante PowerPoint%2C Pt%2E 1%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante PowerPoint%2C Pt%2E 2%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante PowerPoint%2C Pt%2E 3%2C South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Word %26 Docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMO Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behaviors on the Job</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blogging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand%2FBrag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budgeting and Saving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26W Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cara Central Office Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cara Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cara Orientation Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checking and Savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classic Cohort Impacted by Coronavirus Pandemic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate Worker Request List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothing Assessments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Interviewing Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Interviewing Techniques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Commitments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Introduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Navigating Email Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Time Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Video - Virtual Workplace Competencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Workshop - Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Workshop - Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Workshop - Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Workshop - Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competency Workshop - Time Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management%3A Diversity %26 Power of the Pause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict%2C Emotions%2C Triggers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connects Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Service Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit as an Asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical Thinking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross the Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit%2FCredit Transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declaring Participant Commitments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Service Professional Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Effective Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevator Pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emailing Etiquette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Services Team Office Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Experience Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Literacy Video - Banking Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Literacy Video - Financial Safety and Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Literacy Video - Income and Paychecks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Impressions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Five Workplace Competencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Franklin Covey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GCFD_Food_Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GED Prep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Great Debaters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harassment and Discrimination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Support Screening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interviewing Techniques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro To Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro to Cara Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro to Digital Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JARC Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Search Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Justice that Heals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership - Employment Services Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership - Interviewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Mapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Love Exercise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Love%2FForgiveness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meet a CEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Excel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft PowerPoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Word</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirror Exercise%2FDebrief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motivations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Applications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Interviewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open %28Clothing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Hurts %26 Pain %28Forgiveness%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning for Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning for Success - Part 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policies and Procedures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power of the Pause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Cohort Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Interviewing Techniques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation Skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reading of the Love Exercise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebuild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebuild Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resumes%2FCover Letters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rozalado Janitorial%2FFloor Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scavenger Hunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Directed Job Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Directed Job Search - Online Job Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side Campus Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speed Interviewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TABE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDL - Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDL - Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDL - Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDL - Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapeutic Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tower Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Change Your Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Don%27t Relax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Introduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Know the Deepest Truth of Who You Are</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Look with New Eyes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Video - Think Outside the Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformative Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4 Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What%27s your brand%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Who are you%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whole Foods Market Prepared Foods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wintrust Leadership%3A All Things Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wintrust Leadership%3A Budgeting 101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace Ethics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Class_Type__c</picklist>
+        <values>
+            <fullName>Adelante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Branded%2FPartner Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cara Accelerator Pathway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Service Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundations Cohort Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro Into Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership - Employment Services Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Campus Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Cohort Workshop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northwest Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offsite Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offsite at Organization%27s Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reoccurrence__c</picklist>
+        <values>
+            <fullName>Bi-monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time__c</picklist>
+        <values>
+            <fullName>1%3A00 PM - 2%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 2%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM - 12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM - 12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 PM - 3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 4%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A40 AM - 12%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A40 AM-4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 AM - 12%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 AM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 1%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A15 - 12%3A15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 AM - 12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Client__c</picklist>
+        <values>
+            <fullName>Enrolled Clients</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<apex:page showHeader="false" cache="false">
+  <apex:composition template="StdExceptionTemplate">
+    <apex:define name="icon">
+      <apex:image url="{!URLFOR($Resource.SiteSamples, 'img/warning.gif')}"/>
+    </apex:define>
+    <apex:define name="error">
+      <apex:outputText escape="false" styleClass="title" value="This site has moved! Please visit https://cara.secure.force.com/volunteerfeedback">
+      </apex:outputText>
+      <br/>
+   </apex:define>
+  </apex:composition>
+</apex:page>

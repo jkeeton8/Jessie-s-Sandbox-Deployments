@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Habitat_Job_Order</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+DATEVALUE(CreatedDate) &gt;= DATE (2021,04,01),
+
+Organization_ID__c = &apos;001i000000K8NLy&apos;,
+
+TEXT( Employment_Source__c ) = &quot;Cara Connects&quot;
+)</errorConditionFormula>
+    <errorMessage>Please attach job order to the Individual site record via the Organization field. Please refer to the following link for reference to the possible site records:
+Habitat: https://na151.salesforce.com/acc/account_hierarchy.jsp?id=001i000000K8NLy</errorMessage>
+</ValidationRule>

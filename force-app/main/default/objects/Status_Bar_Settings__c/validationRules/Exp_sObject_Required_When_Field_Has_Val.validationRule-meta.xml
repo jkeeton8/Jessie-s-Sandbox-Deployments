@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_sObject_Required_When_Field_Has_Val</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(( sObject_Field_1__c != null ||  sObject_Field_2__c  != null ||  sObject_Field_3__c  != null ||  sObject_Field_4__c  != null) &amp;&amp; sObject__c == null, true, false)</errorConditionFormula>
+    <errorMessage>Value required for sObject when an sObject Field has a value.</errorMessage>
+</ValidationRule>

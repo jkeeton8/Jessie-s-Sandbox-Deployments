@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Category_Qr__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (Start_Date__c), NULL,
+
+(
+
+if (Start_Date__c &lt; date(2012,1,1), &quot;CY&quot; &amp; right (text (year (Start_Date__c)), 2) &amp;
+
+(if (month (Start_Date__c) &gt;= 10, &quot;-Q4&quot;,
+if (month (Start_Date__c) &gt;= 7, &quot;-Q3&quot;,
+if (month (Start_Date__c) &gt;= 4, &quot;-Q2&quot;, &quot;-Q1&quot;)))),
+
+
+if (month (Start_Date__c) &lt;= 3, &quot;FY&quot; &amp; right (text (year (Start_Date__c)), 2) &amp; &quot;Q3&quot;, 
+if (month (Start_Date__c) &lt;= 6, &quot;FY&quot; &amp; right (text (year (Start_Date__c)), 2) &amp; &quot;Q4&quot;, 
+if (month (Start_Date__c) &lt;= 9, &quot;FY&quot; &amp; right (text (year (Start_Date__c)+1), 2) &amp; &quot;Q1&quot;, 
+&quot;FY&quot; &amp; right (text (year (Start_Date__c)+1), 2) &amp; &quot;Q2&quot;))))))</formula>
+    <label>Start Date Category (Qr)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

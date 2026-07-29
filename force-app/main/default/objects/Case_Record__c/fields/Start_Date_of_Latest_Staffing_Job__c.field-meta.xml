@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_of_Latest_Staffing_Job__c</fullName>
+    <label>Start Date of Latest Connects TJ</label>
+    <summarizedField>Placement__c.Start_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Placement__c.Employment_Source__c</field>
+        <operation>equals</operation>
+        <value>TCP Staffing, Cara Connects</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Job_Type__c</field>
+        <operation>equals</operation>
+        <value>Temporary, External Transitional, Temporary-Permanent, Internship</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Stage__c</field>
+        <operation>equals</operation>
+        <value>Job/Placement</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Organization_TCP__c</field>
+        <operation>notEqual</operation>
+        <value>001i000000K8MVQ</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

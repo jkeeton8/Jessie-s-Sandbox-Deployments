@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historical_Contract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>As requests are made for historical contract enrollment information, &apos;Historical Contract&apos; fields and layout are used to allow for single reporting on Contract Links and Employment.</inlineHelpText>
+    <label>Historical Contract</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

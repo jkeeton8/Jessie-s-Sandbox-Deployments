@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partially_Attended_Onboarding__c</fullName>
+    <label>Partially Attended Onboarding</label>
+    <summaryFilterItems>
+        <field>GroupClass_Assignment__c.Connects_Attendance__c</field>
+        <operation>equals</operation>
+        <value>&quot;Partially Attended, Follow Up&quot;, &quot;Partially Attended, Opted Out&quot;</value>
+    </summaryFilterItems>
+    <summaryForeignKey>GroupClass_Assignment__c.Group_Class__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

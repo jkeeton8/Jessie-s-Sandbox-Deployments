@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Category_FY__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (Start_Date__c), NULL, 
+if (not(isblank(Placement_Number__c)) &amp;&amp; Start_Date__c &lt; date(2000,1,1), left(text(Placement_Year__c), 2)&amp;&quot;19&quot;&amp;right(text(Placement_Year__c), 2),
+if (not(isblank(Placement_Number__c)), left(text(Placement_Year__c), 2)&amp;&quot;20&quot;&amp;right(text(Placement_Year__c), 2),
+if (Start_Date__c &lt; date(2012,1,1), &quot;CY&quot; &amp; right (text (year (Start_Date__c)), 4),
+if (month (Start_Date__c) &lt;= 6, &quot;FY&quot; &amp; right (text (year (Start_Date__c)), 4),
+&quot;FY&quot; &amp; right (text (year (Start_Date__c)+1),4))))))</formula>
+    <label>Start Date Category (FY)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

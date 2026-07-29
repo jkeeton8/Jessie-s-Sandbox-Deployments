@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <label>Deprecated - Job Order Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Job Order Created</fullName>
+                <default>true</default>
+                <label>Job Order Created</label>
+            </value>
+            <value>
+                <fullName>Job Order Shared</fullName>
+                <default>false</default>
+                <label>Job Order Shared</label>
+            </value>
+            <value>
+                <fullName>Send Out</fullName>
+                <default>false</default>
+                <label>Send Out</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+            <value>
+                <fullName>Closed No Send Outs</fullName>
+                <default>false</default>
+                <label>Closed No Send Outs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

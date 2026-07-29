@@ -1,0 +1,24 @@
+<apex:page standardController="Treatment_Plan__c" extensions="ExpServicePlanLaunchController" 
+            sidebar="false" action="{!gotoServicePlan}">
+    <apex:form >
+        <apex:sectionHeader subtitle="Select an {!$ObjectType.ECM_Service_Plan__c.label} Form" />
+        <apex:pageBlock >
+            <apex:pageBlockSection rendered="{!hasSPOptions}">
+                <apex:selectRadio value="{!selectedSP}" >
+                    <apex:selectOptions value="{!spOptions}" />
+                </apex:selectRadio> 
+            </apex:pageBlockSection>
+            <apex:outputPanel rendered="{!!hasSPOptions}">
+                <table width="100%">
+                    <tr>                    
+                     <td width="10%"></td><td><apex:pageMessage severity="info" summary="There are currently no {!$ObjectType.ECM_Service_Plan__c.label} forms with a valid {!$ObjectType.ECM_Configuration__c.label} for this Case {!$ObjectType.Program__c.label}." strength="3"/></td><td width="10%"></td>
+                     </tr>
+                </table>
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Next" action="{!launchServicePlan}" rendered="{!hasSPOptions}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page standardController="ECM_Configuration__c" extensions="ExpEcmConfigUtilityController" sidebar="false" showHeader="false" lightningstylesheets="true">
+	<style>
+		.tabPanelHeaderClass {font-weight:bold; text-align: center;}
+		.tabPanelContentClass {font-size:10pt;}
+		.tabPanelTabClass {font-size:10pt;}
+	</style>
+	<br/>
+	<apex:pageMessage severity="info" strength="3" title="Visualforce Page Syntax" summary="Copy the content shown below to the clipboard and paste into a new Visualforce page. The Visualforce page name must be the same as the name shown in the tab header."/>
+	<br/>
+	<apex:dynamicComponent componentValue="{!tabPanel}" />
+	
+</apex:page>

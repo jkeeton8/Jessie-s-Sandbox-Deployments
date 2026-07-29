@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Order_By_Record_Type__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Removes the Record Type as a field used in Assessment record ordering.</inlineHelpText>
+    <label>Do Not Order By Record Type</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

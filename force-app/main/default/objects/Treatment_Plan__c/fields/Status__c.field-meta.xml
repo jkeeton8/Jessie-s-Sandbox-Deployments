@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planned</fullName>
+                <default>false</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+                <label>Ready for Approval</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Treatment Not Started</fullName>
+                <default>false</default>
+                <label>Treatment Not Started</label>
+            </value>
+            <value>
+                <fullName>Treatment Started</fullName>
+                <default>false</default>
+                <label>Treatment Started</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Treatment Completed</fullName>
+                <default>false</default>
+                <label>Treatment Completed</label>
+            </value>
+            <value>
+                <fullName>Lost to Follow Up</fullName>
+                <default>false</default>
+                <label>Lost to Follow Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

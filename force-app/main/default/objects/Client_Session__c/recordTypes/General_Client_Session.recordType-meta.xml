@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Client_Session</fullName>
+    <active>true</active>
+    <description>General purpose client session record type.</description>
+    <label>General Client Session</label>
+    <picklistValues>
+        <picklist>Assessment_Name__c</picklist>
+        <values>
+            <fullName>CAM Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Skills Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stability Assessment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Communication_Method__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Person %28Cara%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Person %28Out%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conviction_Type__c</picklist>
+        <values>
+            <fullName>Self-Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Declining_Job_Reason__c</picklist>
+        <values>
+            <fullName>Background barriers too strict</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Does Not Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No skill match to required qualifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOE Concern</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETO_Attempted_Contact_Value__c</picklist>
+        <values>
+            <fullName>Attempted contact%2C could not leave%2Fsend message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attempted contact%2C left%2Fsent message</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETO_Contact_Location_Method__c</picklist>
+        <values>
+            <fullName>By e-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>By mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>By phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETO_Successful_Contact_Value__c</picklist>
+        <values>
+            <fullName>Contact with client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with service provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fighting_Open_Case__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>If_yes_please_specify__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Felony</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misdemeanor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_there_a_warrant_out_for_arrest__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Position_Vertical__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Progress_Note_Type__c</picklist>
+        <values>
+            <fullName>Cara Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connects Supervisor Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prove It Test Results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wellness Check</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visit_Type__c</picklist>
+        <values>
+            <fullName>Action Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Action Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisor Visit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

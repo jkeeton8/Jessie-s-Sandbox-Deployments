@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Housing_Type__c</fullName>
+    <description>Swapped field dependency between &apos;Housing Type&apos; and &apos;Housing Details&apos; in Nov 2018 as part of Incoming Participant Data cleanup.
+
+-Homeless includes shelters, recovery homes, emergency housing, or halfway houses
+-Transitional includes transitional housing unit with specific end date or staying with family/friend
+-Permanent includes independent housing without specific end date</description>
+    <inlineHelpText>Depends on Housing Details</inlineHelpText>
+    <label>Housing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Housing_Details__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Homeless</fullName>
+                <default>false</default>
+                <label>Homeless</label>
+            </value>
+            <value>
+                <fullName>Transitional</fullName>
+                <default>false</default>
+                <label>Transitional</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>Permanent</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rental through provider</controllingFieldValue>
+            <controllingFieldValue>Rental through private</controllingFieldValue>
+            <controllingFieldValue>Not Collected</controllingFieldValue>
+            <controllingFieldValue>Homeownership</controllingFieldValue>
+            <valueName>Permanent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Collected</controllingFieldValue>
+            <controllingFieldValue>Shelter</controllingFieldValue>
+            <controllingFieldValue>Recovery home</controllingFieldValue>
+            <controllingFieldValue>Emergency housing</controllingFieldValue>
+            <controllingFieldValue>Halfway house</controllingFieldValue>
+            <valueName>Homeless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Collected</controllingFieldValue>
+            <controllingFieldValue>Transitional housing (with specified end)</controllingFieldValue>
+            <controllingFieldValue>Living with family/friend (name not on lease)</controllingFieldValue>
+            <valueName>Transitional</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

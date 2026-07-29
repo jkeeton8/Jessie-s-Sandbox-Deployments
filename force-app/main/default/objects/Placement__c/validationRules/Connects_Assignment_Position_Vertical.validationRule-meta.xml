@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connects_Assignment_Position_Vertical</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(Employment_Source__c, &quot;Cara Connects&quot;)
+
+&amp;&amp;
+
+RecordTypeId &lt;&gt; &quot;012i0000000xlKP&quot;
+
+&amp;&amp;
+
+not(isblank( Start_Date__c ))
+
+&amp;&amp;
+
+isblank(End_Date__c)
+
+&amp;&amp;
+
+isblank(text( Position_Vertical__c ))</errorConditionFormula>
+    <errorDisplayField>Position_Vertical__c</errorDisplayField>
+    <errorMessage>Please fill in the &apos;Position Vertical&apos; field.</errorMessage>
+</ValidationRule>

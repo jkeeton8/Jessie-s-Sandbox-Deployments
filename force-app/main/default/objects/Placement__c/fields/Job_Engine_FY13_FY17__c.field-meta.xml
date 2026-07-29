@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Engine_FY13_FY17__c</fullName>
+    <description>Used throughout FY13-FY17 Strategic Plan. Discontinued for use in FY18.</description>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Job_Type__c, &quot;Temporary&quot;) &amp;&amp;  contains(Case_Record__r.Referring_Organization__r.Name, &quot;Emerson&quot;), &quot;Enterprise, Cara Connects&quot;,
+
+if (Organization_TCP__r.Name = &quot;Cleanslate Chicago&quot;, &quot;Enterprise, Cleanslate&quot;,
+
+if (Organization_TCP__r.Name = &quot;Chapter Two&quot;, &quot;Enterprise, Chapter Two&quot;,
+
+if (ispickval(Employment_Source__c, &quot;Cara Connects&quot;), &quot;Enterprise, Cara Connects&quot;,
+
+if (ispickval (Student_Source__c, &quot;Connects Direct&quot;), &quot;Enterprise, Cara Connects&quot;,
+
+if (ispickval (Student_Source__c, &quot;Cleanslate Direct&quot;), &quot;Enterprise, Cleanslate&quot;,
+
+&quot;Programs, &quot;&amp;text (Student_Source__c)))))))</formula>
+    <inlineHelpText>Method for attributing Cara jobs to the programmatic or enterprise component responsible for the job. Generally, attributes business transitional jobs to the specific business, and furthermore attributes based on the participant portal. Discontinued FY18.</inlineHelpText>
+    <label>Job Engine, FY13-FY17</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

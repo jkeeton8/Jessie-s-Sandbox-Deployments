@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Facilities &amp; Operations</fullName>
+                <default>false</default>
+                <label>Facilities &amp; Operations</label>
+            </value>
+            <value>
+                <fullName>Finance &amp; Accounting</fullName>
+                <default>false</default>
+                <label>Finance &amp; Accounting</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Recurring</fullName>
+                <default>false</default>
+                <label>Recurring</label>
+            </value>
+            <value>
+                <fullName>Solutions: Salesforce &amp; Data</fullName>
+                <default>false</default>
+                <label>Solutions: Salesforce &amp; Data</label>
+            </value>
+            <value>
+                <fullName>New Hire Setup, Terminations, Employee Updates</fullName>
+                <default>false</default>
+                <label>New Hire Setup, Terminations, Employee Updates</label>
+            </value>
+            <value>
+                <fullName>Solutions: Onsite IT &amp; Tech Support</fullName>
+                <default>false</default>
+                <label>Solutions: Onsite IT &amp; Tech Support</label>
+            </value>
+            <value>
+                <fullName>Employee Relations Committee (ERC) Events</fullName>
+                <default>false</default>
+                <label>Employee Relations Committee (ERC) Events</label>
+            </value>
+            <value>
+                <fullName>Strategic Objective</fullName>
+                <default>false</default>
+                <label>Strategic Objective</label>
+            </value>
+            <value>
+                <fullName>Annual KPI</fullName>
+                <default>false</default>
+                <label>Annual KPI</label>
+            </value>
+            <value>
+                <fullName>One-Time</fullName>
+                <default>false</default>
+                <label>One-Time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

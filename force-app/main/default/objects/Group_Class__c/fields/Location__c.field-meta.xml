@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <label>Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Downtown Campus</fullName>
+                <default>false</default>
+                <label>Downtown Campus</label>
+            </value>
+            <value>
+                <fullName>South Side Campus</fullName>
+                <default>false</default>
+                <label>South Side Campus</label>
+            </value>
+            <value>
+                <fullName>Cleanslate</fullName>
+                <default>false</default>
+                <label>Cleanslate</label>
+            </value>
+            <value>
+                <fullName>Offsite at Organization&apos;s Facility</fullName>
+                <default>false</default>
+                <label>Offsite at Organization&apos;s Facility</label>
+            </value>
+            <value>
+                <fullName>Offsite Other</fullName>
+                <default>false</default>
+                <label>Offsite Other</label>
+            </value>
+            <value>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+                <label>Virtual</label>
+            </value>
+            <value>
+                <fullName>Northwest Center</fullName>
+                <default>false</default>
+                <label>Northwest Center</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

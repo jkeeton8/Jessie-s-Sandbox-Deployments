@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Field_Set_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Field_Set_Required__c == &apos;Yes&apos; &amp;&amp; Field_Set_Name__c == null, true, false)</errorConditionFormula>
+    <errorMessage>This type of component always requires a field set name.</errorMessage>
+</ValidationRule>

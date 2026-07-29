@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Order_Stage_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Number_of_Jobs_Placements__c &gt; 0, &quot;Closed Won&quot;,
+
+if (Close_Date__c &lt;= today() &amp;&amp;  Number_of_Send_Outs__c = 0, &quot;Closed No Send Outs&quot;,
+
+if (Close_Date__c &lt;= today(), &quot;Closed Lost&quot;,
+
+if (Number_of_Send_Outs__c &gt; 0, &quot;Send Out&quot;,
+
+&quot;Job Order Shared&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field updates nightly as part of a batch process.</inlineHelpText>
+    <label>Job Order Stage (Formula)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_Manager_of_Placement_Services</fullName>
+        <description>Notify Manager of Placement Services</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cfowler@carachicago.org.invalid</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>cklyn@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Send_Out_Eligible_Notifcation</template>
+    </alerts>
+    <alerts>
+        <fullName>Student_Inactivation_Notification</fullName>
+        <description>Student Inactivation Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Facilities_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>Participant_Service_Delivery</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>bgott@caracollective.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lfeldman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lkidd@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rholakovsky@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Inactivation_Template_Service_Entry</template>
+    </alerts>
+    <alerts>
+        <fullName>Write_Up_Limit_Reached</fullName>
+        <description>Write-Up Limit Reached</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cbogdanov@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Write_Up_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Background_Check_SOE_Date_is_Null</fullName>
+        <field>Background_Check_SOE_Date__c</field>
+        <name>Background Check SOE Date is Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Background_Check_SOE_Date_to_Today</fullName>
+        <field>Background_Check_SOE_Date__c</field>
+        <formula>today()</formula>
+        <name>Background Check SOE Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Conviction_Category_to_No_convictions</fullName>
+        <field>Conviction_Category_for_Job_Matching__c</field>
+        <literalValue>With no convictions</literalValue>
+        <name>Conviction Category to No convictions</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Conviction_Category_to_Older_than_7_yrs</fullName>
+        <field>Conviction_Category_for_Job_Matching__c</field>
+        <literalValue>With convictions older than 7 yrs</literalValue>
+        <name>Conviction Category to Older than 7 yrs</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Conviction_Category_to_Within_past_7_yrs</fullName>
+        <field>Conviction_Category_for_Job_Matching__c</field>
+        <literalValue>With convictions within past 7 yrs</literalValue>
+        <name>Conviction Category to Within past 7 yrs</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Conviction_Category_to_blank</fullName>
+        <field>Conviction_Category_for_Job_Matching__c</field>
+        <name>Conviction Category to blank</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Prgm_Stage_to_Leadership_Dev</fullName>
+        <field>Date_Prgm_Stage_to_Core_Training__c</field>
+        <formula>today()</formula>
+        <name>Date Prgm Stage to Leadership Dev</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_of_Most_Rec_Prgm_Stage_Ch_to_Adv_IA</fullName>
+        <field>Date_of_Most_Recent_Prgm_Stage_Change__c</field>
+        <formula>Advancement_Inactive_Date__c</formula>
+        <name>Date of Most Rec Prgm Stage Ch to Adv IA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_of_Most_Rec_Prgm_Stage_Ch_to_Adv_St</fullName>
+        <field>Date_of_Most_Recent_Prgm_Stage_Change__c</field>
+        <formula>Advancement_Start_Date__c</formula>
+        <name>Date of Most Rec Prgm Stage Ch to Adv St</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Education_Summary_to_Associates</fullName>
+        <field>Education_Summary_for_Job_Order__c</field>
+        <literalValue>Associates</literalValue>
+        <name>Education Summary to Associates</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Education_Summary_to_Bachelors_or_higher</fullName>
+        <field>Education_Summary_for_Job_Order__c</field>
+        <literalValue>Bachelors or higher</literalValue>
+        <name>Education Summary to Bachelors or higher</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Education_Summary_to_GED_HS_Diploma</fullName>
+        <field>Education_Summary_for_Job_Order__c</field>
+        <literalValue>GED/HS Diploma</literalValue>
+        <name>Education Summary to GED/HS Diploma</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Education_Summary_to_No_GED_HS_Diploma</fullName>
+        <field>Education_Summary_for_Job_Order__c</field>
+        <literalValue>No GED/HS Diploma</literalValue>
+        <name>Education Summary to No GED/HS Diploma</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ExP_Set_ECM_Sharing_Field</fullName>
+        <description>Used by criteria based sharing.</description>
+        <field>ECM_Sharing__c</field>
+        <formula>Program__r.Program_Short_Name__c</formula>
+        <name>ExP Set ECM Sharing Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Felony_to_No</fullName>
+        <field>Felony__c</field>
+        <literalValue>No</literalValue>
+        <name>Felony to No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Highest_Milestone_to_NULL</fullName>
+        <field>Highest_Milestone_Achievements__c</field>
+        <name>Highest Milestone to NULL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Homeless_Verified_to_Needs_Review</fullName>
+        <field>Homelessness_Verified__c</field>
+        <literalValue>Needs Review</literalValue>
+        <name>Homeless Verified to Needs Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactivated_By_to_Current_User</fullName>
+        <field>Inactivated_By__c</field>
+        <formula>$User.Full_Name__c</formula>
+        <name>Inactivated By to Current User</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactivation_Descript_from_Advancement</fullName>
+        <field>Inactivation_Description__c</field>
+        <formula>text (Advancement_Inactive_Reason__c)</formula>
+        <name>Inactivation Descript from Advancement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Date_to_Adv_Inactive_Date</fullName>
+        <field>Inactive_Date__c</field>
+        <formula>Advancement_Inactive_Date__c</formula>
+        <name>Inactive Date to Adv Inactive Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Date_to_NULL</fullName>
+        <field>Inactive_Date__c</field>
+        <name>Inactive Date to NULL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Date_to_Today</fullName>
+        <field>Inactive_Date__c</field>
+        <formula>today()</formula>
+        <name>Inactive Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Reason_to_Advancement_Inactive</fullName>
+        <field>Inactive_Reason__c</field>
+        <literalValue>Advancement Inactivation</literalValue>
+        <name>Inactive Reason to Advancement Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Reason_to_Criminal_Background</fullName>
+        <field>Inactive_Reason__c</field>
+        <literalValue>Criminal Background Issues</literalValue>
+        <name>Inactive Reason to Criminal Background</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactive_Reason_to_NULL</fullName>
+        <field>Inactive_Reason__c</field>
+        <name>Inactive Reason to NULL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Milestone_to_Accepted_Into_Program</fullName>
+        <field>Highest_Milestone_Achievements__c</field>
+        <literalValue>Accepted Into Program</literalValue>
+        <name>Milestone to Accepted Into Program</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Milestone_to_Send_Out_Eligible</fullName>
+        <field>Highest_Milestone_Achievements__c</field>
+        <literalValue>Send Out Eligible</literalValue>
+        <name>Milestone to Send Out Eligible</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Milestone_to_Transformations_Completed</fullName>
+        <field>Highest_Milestone_Achievements__c</field>
+        <literalValue>Transformations Completed</literalValue>
+        <name>Milestone to Transformations Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Misdemeanor_to_No</fullName>
+        <field>Misdemeanor__c</field>
+        <literalValue>No</literalValue>
+        <name>Misdemeanor to No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Accepted</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Accepted</literalValue>
+        <name>Program Stage to Accepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Advanced_Training</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Advanced Training</literalValue>
+        <name>Program Stage to Advanced Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Advancement_Services</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Advancement Services</literalValue>
+        <name>Program Stage to Advancement Services</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Applicant</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Applicant</literalValue>
+        <name>Program Stage to Applicant</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Core_Training</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Core Training</literalValue>
+        <name>Program Stage to Core Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Leadership_Dev</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Leadership Development</literalValue>
+        <name>Program Stage to Leadership Dev</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Referred</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Referred</literalValue>
+        <name>Program Stage to Referred</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Retention_Advancement</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Retention &amp; Advancement Services</literalValue>
+        <name>Program Stage to Retention &amp; Advancement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Stage_to_Retention_Services</fullName>
+        <field>Program_Stage__c</field>
+        <literalValue>Retention Services</literalValue>
+        <name>Program Stage to Retention Services</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Start_Date_Re_Engagement</fullName>
+        <field>Program_Start_Date__c</field>
+        <formula>Program_Re_Engagement_Date__c</formula>
+        <name>Program Start Date (Re-Engagement)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Start_Date_wClass</fullName>
+        <field>Program_Start_Date__c</field>
+        <formula>DATEVALUE( Text(Scheduled_Program_Start_Date__c ))</formula>
+        <name>Program Start Date (w Class)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Status_to_Active</fullName>
+        <description>Changes &apos;Program Status&apos; to &quot;Active&quot;.</description>
+        <field>Status__c</field>
+        <literalValue>Active</literalValue>
+        <name>Program Status to Active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Status_to_Inactive</fullName>
+        <field>Status__c</field>
+        <literalValue>Inactive</literalValue>
+        <name>Program Status to Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Status_to_On_Hold</fullName>
+        <description>Changes &apos;Program Status&apos; to &quot;On Hold&quot;.</description>
+        <field>Status__c</field>
+        <literalValue>On Hold</literalValue>
+        <name>Program Status to On Hold</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Status_to_Prospective_Student</fullName>
+        <field>Status__c</field>
+        <literalValue>Prospective Student</literalValue>
+        <name>Program Status to Prospective Student</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resume_SOE_Date_to_Today</fullName>
+        <field>Resume_SOE_Date__c</field>
+        <formula>today()</formula>
+        <name>Resume SOE Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_Out_Eligible_Date_to_NULL</fullName>
+        <field>Send_Out_Eligible_Date__c</field>
+        <name>Send Out Eligible Date to NULL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_Out_Eligible_Date_to_TODAY</fullName>
+        <field>Send_Out_Eligible_Date__c</field>
+        <formula>today()</formula>
+        <name>Send Out Eligible Date to TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_Out_Eligible_to_No</fullName>
+        <field>Send_Out_Eligible__c</field>
+        <literalValue>No</literalValue>
+        <name>Send Out Eligible to No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_Out_Eligible_to_Yes</fullName>
+        <field>Send_Out_Eligible__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Send Out Eligible to Yes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_out_Eligible_to_On_Send_Out_Hold</fullName>
+        <field>Send_Out_Eligible__c</field>
+        <literalValue>On Send Out Hold</literalValue>
+        <name>Send out Eligible to On Send Out Hold</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Connects_Tracked_Field</fullName>
+        <field>Connects_Tracked__c</field>
+        <literalValue>Connects</literalValue>
+        <name>Update Connects Tracked Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Prgm_Stage_to_Accepted</fullName>
+        <field>Date_Prgm_Stage_to_Accepted__c</field>
+        <formula>today()</formula>
+        <name>Update Date Prgm Stage to Accepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Prgm_Stage_to_Adv_Training</fullName>
+        <field>Date_Prgm_Stage_to_Advanced_Training__c</field>
+        <formula>today()</formula>
+        <name>Update Date Prgm Stage to Adv Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Prgm_Stage_to_Applicant</fullName>
+        <field>Date_Prgm_Stage_to_Applicant__c</field>
+        <formula>today()</formula>
+        <name>Update Date Prgm Stage to Applicant</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Prgm_Stage_to_Core_Training</fullName>
+        <field>Date_Prgm_Stage_to_Core_Training__c</field>
+        <formula>Program_Start_Date__c</formula>
+        <name>Update Date Prgm Stage to Core Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_Prgm_Stage_to_Referred</fullName>
+        <field>Date_Prgm_Stage_to_Referred__c</field>
+        <formula>Referral_Date__c</formula>
+        <name>Update Date Prgm Stage to Referred</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_of_Most_Recent_Prgm_Stage_Ch</fullName>
+        <field>Date_of_Most_Recent_Prgm_Stage_Change__c</field>
+        <formula>today()</formula>
+        <name>Update Date of Most Recent Prgm Stage Ch</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_ID_on_File_Checkbox</fullName>
+        <field>Identification_on_File__c</field>
+        <literalValue>1</literalValue>
+        <name>Update ID on File Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Background Check Not Reviewed %26 Approved</fullName>
+        <actions>
+            <name>Background_Check_SOE_Date_is_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Background_Check_Result__c</field>
+            <operation>equals</operation>
+            <value>Reviewed &amp; Needs Follow-Up</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Background Check Reviewed %26 Approved</fullName>
+        <actions>
+            <name>Background_Check_SOE_Date_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Background_Check_Result__c</field>
+            <operation>equals</operation>
+            <value>Reviewed &amp; Approved</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Connects Tracked</fullName>
+        <actions>
+            <name>Update_Connects_Tracked_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Site_Track__c</field>
+            <operation>equals</operation>
+            <value>Connects Direct</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contracts Identification on File</fullName>
+        <actions>
+            <name>Update_ID_on_File_Checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>not(ISBLANK( Contracts_Photo_ID_on_File__c ))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conviction Category to With convictions older than 7 yrs</fullName>
+        <actions>
+            <name>Conviction_Category_to_Older_than_7_yrs</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>not (isblank (Date_of_Last_Conviction__c))  &amp;&amp; not (isblank (Send_Out_Eligible_Date__c))  &amp;&amp; (today() - Date_of_Last_Conviction__c)/365 &gt; 7</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conviction Category to With convictions within past 7 yrs</fullName>
+        <actions>
+            <name>Conviction_Category_to_Within_past_7_yrs</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>not (isblank (Date_of_Last_Conviction__c))  &amp;&amp; not (isblank (Send_Out_Eligible_Date__c))  &amp;&amp; (today() - Date_of_Last_Conviction__c)/365 &lt;= 7</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conviction Category to With no convictions</fullName>
+        <actions>
+            <name>Conviction_Category_to_No_convictions</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>isblank (Date_of_Last_Conviction__c)  &amp;&amp; not (isblank (Send_Out_Eligible_Date__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conviction Category to blank</fullName>
+        <actions>
+            <name>Conviction_Category_to_blank</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>isblank (Send_Out_Eligible_Date__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Education Summary to Associates</fullName>
+        <actions>
+            <name>Education_Summary_to_Associates</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>Associates</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Education Summary to Bachelors or higher</fullName>
+        <actions>
+            <name>Education_Summary_to_Bachelors_or_higher</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>Masters</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>Bachelors</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Education Summary to GED%2FHS Diploma</fullName>
+        <actions>
+            <name>Education_Summary_to_GED_HS_Diploma</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>GED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>High School Diploma</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Education Summary to No GED%2FHS Diploma</fullName>
+        <actions>
+            <name>Education_Summary_to_No_GED_HS_Diploma</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Formal_Education_Acheived__c</field>
+            <operation>contains</operation>
+            <value>8th Grade</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Highest Milestone to Transformations Completed</fullName>
+        <actions>
+            <name>Milestone_to_Transformations_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>equals</operation>
+            <value>Advanced Training</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Milestone_Achievements__c</field>
+            <operation>notEqual</operation>
+            <value>Send Out Eligible</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manual Traction Achieved%2C Leadership Dev%2C Connects</fullName>
+        <actions>
+            <name>Date_Prgm_Stage_to_Leadership_Dev</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Program_Stage_to_Leadership_Dev</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <criteriaItems>
+            <field>Case_Record__c.Traction_Achieved_Workshop_Direct_Temp__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Site_Track__c</field>
+            <operation>equals</operation>
+            <value>Connects Direct</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Retention Services,Retention &amp; Advancement Services,Advancement Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Highest_Milestone_Achievements__c</field>
+            <operation>notEqual</operation>
+            <value>Retained</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Participant is Send Out Eligible</fullName>
+        <actions>
+            <name>Notify_Manager_of_Placement_Services</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ispickval(priorvalue(Send_Out_Eligible__c), &quot;No&quot;)  &amp;&amp;  ISCHANGED(Send_Out_Eligible__c)   &amp;&amp;  ispickval(Send_Out_Eligible__c, &quot;Yes&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Stage to Advancement Services %28from Inactive%29</fullName>
+        <actions>
+            <name>Date_of_Most_Rec_Prgm_Stage_Ch_to_Adv_St</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactive_Date_to_NULL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactive_Reason_to_NULL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Program_Stage_to_Advancement_Services</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Inactive_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Stage to Retention %26 Advancement</fullName>
+        <actions>
+            <name>Date_of_Most_Rec_Prgm_Stage_Ch_to_Adv_St</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Program_Stage_to_Retention_Advancement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active,On Hold</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Stage to Retention Services %28from Retention %26 Advancement%29</fullName>
+        <actions>
+            <name>Date_of_Most_Rec_Prgm_Stage_Ch_to_Adv_IA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Program_Stage_to_Retention_Services</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Status__c</field>
+            <operation>equals</operation>
+            <value>&quot;Inactive, Option to Return&quot;,&quot;Inactive, Cannot Return&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>equals</operation>
+            <value>Retention &amp; Advancement Services</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Start Date %28Re-Engagement%29</fullName>
+        <actions>
+            <name>Program_Start_Date_Re_Engagement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Re_Engagement_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Start Date %28w Class%29</fullName>
+        <actions>
+            <name>Program_Start_Date_wClass</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <field>Case_Record__c.Scheduled_Program_Start_Date__c</field>
+            <operation>notEqual</operation>
+            <value>,Pending Batch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Scheduled_Program_Start_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Re_Engagement_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Status to Active</fullName>
+        <actions>
+            <name>Program_Status_to_Active</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Status_Formula__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Status to Inactive</fullName>
+        <actions>
+            <name>Program_Status_to_Inactive</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Program_Status_Formula__c = &quot;Inactive&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Status to On Hold</fullName>
+        <actions>
+            <name>Program_Status_to_On_Hold</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Status_Formula__c</field>
+            <operation>equals</operation>
+            <value>On Hold</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Program Status to Prospective Student</fullName>
+        <actions>
+            <name>Highest_Milestone_to_NULL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Program_Status_to_Prospective_Student</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Status_Formula__c</field>
+            <operation>equals</operation>
+            <value>Prospective Student</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Resume on File to Yes</fullName>
+        <actions>
+            <name>Resume_SOE_Date_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Resume_on_File__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Out Eligibility Obtained %28After Send Out Hold%29</fullName>
+        <actions>
+            <name>Send_Out_Eligible_to_Yes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Percent_to_Send_Out_Eligible__c</field>
+            <operation>equals</operation>
+            <value>100</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Number_of_Unresolved_Send_Out_Holds__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Send_Out_Eligible_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Out Eligibility Obtained %28First Time%29</fullName>
+        <actions>
+            <name>Milestone_to_Send_Out_Eligible</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Send_Out_Eligible_Date_to_TODAY</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Send_Out_Eligible_to_Yes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Percent_to_Send_Out_Eligible__c</field>
+            <operation>equals</operation>
+            <value>100</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Number_of_Unresolved_Send_Out_Holds__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Send_Out_Eligible_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Out Eligibility Revoked</fullName>
+        <actions>
+            <name>Send_Out_Eligible_Date_to_NULL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Send_Out_Eligible_to_No</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Percent_to_Send_Out_Eligible__c</field>
+            <operation>notEqual</operation>
+            <value>100</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Number_of_Unresolved_Send_Out_Holds__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Out Hold%2C Service Entry</fullName>
+        <actions>
+            <name>Send_out_Eligible_to_On_Send_Out_Hold</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Number_of_Unresolved_Send_Out_Holds__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Student is Inactivated %28from Advancement%29</fullName>
+        <actions>
+            <name>Inactivated_By_to_Current_User</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactivation_Descript_from_Advancement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactive_Date_to_Adv_Inactive_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactive_Reason_to_Advancement_Inactive</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Status__c</field>
+            <operation>equals</operation>
+            <value>&quot;Inactive, Option to Return&quot;,&quot;Inactive, Cannot Return&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>equals</operation>
+            <value>Advancement Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Inactive_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Student is Inactivated%2C Email Notification</fullName>
+        <actions>
+            <name>Student_Inactivation_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Case_Record__c.Inactivated_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Inactive_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Inactive_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>9/1/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Inactive_Reason__c</field>
+            <operation>notEqual</operation>
+            <value>Advancement Inactivation,Placed &amp; Retained</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Resource Only</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Complete_Case_Record_Review_and_initial_Assessment</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Complete Case Record Review and initial Assessment</subject>
+    </tasks>
+</Workflow>

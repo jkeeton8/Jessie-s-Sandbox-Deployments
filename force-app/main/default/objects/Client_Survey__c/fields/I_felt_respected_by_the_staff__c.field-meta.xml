@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_felt_respected_by_the_staff__c</fullName>
+    <inlineHelpText>Rate experience in the past 12 months</inlineHelpText>
+    <label>I felt respected by the staff</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disagree completely</fullName>
+                <default>false</default>
+                <label>Disagree completely</label>
+            </value>
+            <value>
+                <fullName>Somewhat disagree</fullName>
+                <default>false</default>
+                <label>Somewhat disagree</label>
+            </value>
+            <value>
+                <fullName>Somewhat agree</fullName>
+                <default>false</default>
+                <label>Somewhat agree</label>
+            </value>
+            <value>
+                <fullName>Agree completely</fullName>
+                <default>false</default>
+                <label>Agree completely</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Indicator_Filter__c</fullName>
+    <description>Semi-colon delimited list of &lt;variable&gt;=&lt;value&gt; pairs. Variable names are: &apos;variableValue&apos;, &apos;outcomeIndicatorVariableTypeName&apos;, &apos;oivtCat1Name&apos;, &apos;oivtCat2Name&apos;, &apos;outcomeIndicatorTypeName&apos;, &apos;outcomeTypeName&apos;, &apos;outcomeStatus&apos;, and &apos;outcomeParentName&apos;</description>
+    <inlineHelpText>Semi-colon delimited list of &lt;variable&gt;=&lt;value&gt; pairs. Variable names are: &apos;variableValue&apos;, &apos;outcomeIndicatorVariableTypeName&apos;, &apos;oivtCat1Name&apos;, &apos;oivtCat2Name&apos;, &apos;outcomeIndicatorTypeName&apos;, &apos;outcomeTypeName&apos;, &apos;outcomeStatus&apos;, and &apos;outcomeParentName&apos;</inlineHelpText>
+    <label>Default Indicator Filter</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

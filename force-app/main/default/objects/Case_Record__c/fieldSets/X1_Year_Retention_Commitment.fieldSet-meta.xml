@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_Year_Retention_Commitment</fullName>
+    <description>Stability/Needs Assessment</description>
+    <displayedFields>
+        <field>Informed_of_1_Year_Retention_Commitment__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Goal_Motivations__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>1-Year Retention Commitment</label>
+</FieldSet>

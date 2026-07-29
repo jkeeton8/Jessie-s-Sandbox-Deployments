@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Client_ID_Access__c</fullName>
+    <description>Initially from Client table in legacy Access database, and then used to align student IDs across Case Records, when needed.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>For use with specific Gov Grants, only, for ID continuity across Case Records.</inlineHelpText>
+    <label>Legacy Client ID</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

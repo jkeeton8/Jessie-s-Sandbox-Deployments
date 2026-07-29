@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Needs_for_Transition_out_of_Casey__c</fullName>
+    <inlineHelpText>Who/what is needed to transition the client out of Casey services and maintain continued success after the case is closed with Casey?</inlineHelpText>
+    <label>Needs for Transition out of Casey</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

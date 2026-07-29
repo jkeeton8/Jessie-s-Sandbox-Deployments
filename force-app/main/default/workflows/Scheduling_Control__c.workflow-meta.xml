@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Control_End_Date</fullName>
+        <field>Control_End_Date__c</field>
+        <formula>Control_Start_Date__c</formula>
+        <name>Update Control End Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>One-Time Control%2C No End Date</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Scheduling_Control__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Day</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Scheduling_Control__c.Control_Duration__c</field>
+            <operation>equals</operation>
+            <value>One-Time</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Scheduling_Control__c.Control_End_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Control_End_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Scheduling_Control__c.Control_Start_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

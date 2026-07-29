@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoMatchReason__c</fullName>
+    <description>This is to document the reason why the job order was not successful.</description>
+    <label>No Match Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pay too low</fullName>
+                <default>false</default>
+                <label>Pay too low</label>
+            </value>
+            <value>
+                <fullName>Location too far</fullName>
+                <default>false</default>
+                <label>Location too far</label>
+            </value>
+            <value>
+                <fullName>Background barriers too strict</fullName>
+                <default>false</default>
+                <label>Background barriers too strict</label>
+            </value>
+            <value>
+                <fullName>No skill match</fullName>
+                <default>false</default>
+                <label>No skill match</label>
+            </value>
+            <value>
+                <fullName>Not enough candidate matches</fullName>
+                <default>false</default>
+                <label>Not enough candidate matches</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Require_1_Staff_Or_StaffContact</fullName>
+    <active>true</active>
+    <description>User must choose either Staff or Staff Contact. Only one of the two fields can be set.</description>
+    <errorConditionFormula>IF(IF(Staff__c != null, 1, 0) + IF(Staff_Contact__c  != null, 1, 0) &gt; 1, true, false)</errorConditionFormula>
+    <errorMessage>Please choose a value for only one of the following: Staff or Contact.</errorMessage>
+</ValidationRule>

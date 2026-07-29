@@ -1,0 +1,27 @@
+<apex:page showHeader="false"  standardStylesheets="false"   lightningstylesheets="true">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <h1>Unexpected Error</h1>
+            <p>
+                We're sorry there has been an error in processing the transaction, please hit back on your browser and verify your information and try again.
+            </p> 
+            <h3>Error Message:</h3>
+            <p>
+                <script>
+                var prmstr = window.location.search.substr(1);
+    var prmarr = prmstr.split("&");
+    var params = {};
+
+    for (var i = 0; i < prmarr.length; i++) {
+        var tmparr = prmarr[i].split("=");
+        params[tmparr[0]] = tmparr[1];
+        document.write(decodeURIComponent( tmparr[1]));
+        document.write("<br/>");
+    }
+   // document.write(decodeURIComponent(prmarr[1]));
+                </script>
+            </p>
+            <!-- END CONTENT -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

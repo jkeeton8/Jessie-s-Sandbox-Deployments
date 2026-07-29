@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conviction_Outcome__c</fullName>
+    <description>Changed to multi-picklist in February 2020.</description>
+    <inlineHelpText>Select all values that apply to conviction.</inlineHelpText>
+    <label>Conviction Outcome</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Supervision</fullName>
+                <default>false</default>
+                <label>Supervision</label>
+            </value>
+            <value>
+                <fullName>Probation</fullName>
+                <default>false</default>
+                <label>Probation</label>
+            </value>
+            <value>
+                <fullName>Incarcerated (Prison)</fullName>
+                <default>false</default>
+                <label>Incarcerated (Prison)</label>
+            </value>
+            <value>
+                <fullName>Incarcerated (Jail)</fullName>
+                <default>false</default>
+                <label>Incarcerated (Jail)</label>
+            </value>
+            <value>
+                <fullName>Found Guilty</fullName>
+                <default>false</default>
+                <label>Found Guilty</label>
+            </value>
+            <value>
+                <fullName>Conditional Discharge</fullName>
+                <default>false</default>
+                <label>Conditional Discharge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

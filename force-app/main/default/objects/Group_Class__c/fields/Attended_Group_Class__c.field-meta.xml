@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attended_Group_Class__c</fullName>
+    <inlineHelpText>Count of Group/Class Assignments without &apos;Attendance Exception&apos; entered.</inlineHelpText>
+    <label>Attended Group/Class</label>
+    <summaryFilterItems>
+        <field>GroupClass_Assignment__c.Attendance__c</field>
+        <operation>notEqual</operation>
+        <value>NCNS for Workshop, Reschedule</value>
+    </summaryFilterItems>
+    <summaryForeignKey>GroupClass_Assignment__c.Group_Class__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

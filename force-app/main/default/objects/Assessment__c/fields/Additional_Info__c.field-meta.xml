@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Info__c</fullName>
+    <description>Created in Nov 2018 as part of Incoming Participant Data cleanup capturing &apos;Housing Name&apos;, &apos;Housing Available Until&apos;, &apos;Rent Paid By&apos;, &apos;Additional Info&apos;, &apos;Number in Living Situation at Intake&apos;, &apos;Housing Instability at Intake&apos;, &apos;Extension Available for Intake Housing&apos;, &apos;Months Behind on Rent at Intake&apos;, and &apos;Plan for Back Rent at Intake&apos; fields.</description>
+    <inlineHelpText>Enter information regarding housing name, housing instability at intake, number in living situation, months behind on rent, plan for back rent, extensions available for housing, etc.</inlineHelpText>
+    <label>Housing Narrative</label>
+    <length>15000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Devices__c</fullName>
+    <description>Began collecting in May 2020 during Coronavirus Pandemic.</description>
+    <inlineHelpText>Do you have a computer, tablet, and/or smart phone? Choose all that apply.</inlineHelpText>
+    <label>Tech Devices</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Computer</fullName>
+                <default>false</default>
+                <label>Computer</label>
+            </value>
+            <value>
+                <fullName>Tablet</fullName>
+                <default>false</default>
+                <label>Tablet</label>
+            </value>
+            <value>
+                <fullName>Smart Phone</fullName>
+                <default>false</default>
+                <label>Smart Phone</label>
+            </value>
+            <value>
+                <fullName>Basic Cellphone</fullName>
+                <default>false</default>
+                <label>Basic Cellphone</label>
+            </value>
+            <value>
+                <fullName>No Device</fullName>
+                <default>false</default>
+                <label>No Device</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Source__c</fullName>
+    <description>Requires Permission Set to edit. EITC sparsely collected and completely phased out as of 2017.</description>
+    <label>Income Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Income</fullName>
+                <default>false</default>
+                <label>No Income</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Unemployment</fullName>
+                <default>false</default>
+                <label>Unemployment</label>
+            </value>
+            <value>
+                <fullName>SSI/SSDI</fullName>
+                <default>false</default>
+                <label>SSI/SSDI</label>
+            </value>
+            <value>
+                <fullName>Child Support</fullName>
+                <default>false</default>
+                <label>Child Support</label>
+            </value>
+            <value>
+                <fullName>TANF</fullName>
+                <default>false</default>
+                <label>TANF</label>
+            </value>
+            <value>
+                <fullName>Food Stamps</fullName>
+                <default>false</default>
+                <label>Food Stamps</label>
+            </value>
+            <value>
+                <fullName>Family/Friend</fullName>
+                <default>false</default>
+                <label>Family/Friend</label>
+            </value>
+            <value>
+                <fullName>General Assistance Program</fullName>
+                <default>false</default>
+                <label>General Assistance Program</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>EITC</fullName>
+                <default>false</default>
+                <label>EITC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

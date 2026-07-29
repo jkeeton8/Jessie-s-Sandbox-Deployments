@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Out_Eligible_Formula__c</fullName>
+    <formula>if (Percent_to_Send_Out_Eligible__c = 1, TRUE, FALSE)</formula>
+    <label>Became SOE</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

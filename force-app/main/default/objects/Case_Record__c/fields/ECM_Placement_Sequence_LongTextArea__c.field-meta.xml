@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Placement_Sequence_LongTextArea__c</fullName>
+    <description>ECM v2.1 field related to ECM_Placement_Sequence__c. Contains the ECM auto-calculated sequence of Placements (text separated by semi colons). In the case that the ECM_Placement_Sequence__c field exceeds 255 characters this field can be used to garner the full sequence. This field is only updated when the ECM Placement Sequence process runs. This is a non-reportable field.</description>
+    <label>ECM Placement Sequence LongTextArea</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

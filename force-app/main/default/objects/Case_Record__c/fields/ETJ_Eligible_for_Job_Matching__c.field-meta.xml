@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETJ_Eligible_for_Job_Matching__c</fullName>
+    <label>Retention Eligible for Job Matching</label>
+    <summarizedField>Placement__c.ETJ_Date_Eligible_for_Job_Matching__c</summarizedField>
+    <summaryFilterItems>
+        <field>Placement__c.ETJ_Date_Eligible_for_Job_Matching__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.End_Date__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Job_Type__c</field>
+        <operation>equals</operation>
+        <value>External Transitional, Temporary-Permanent, Permanent, Temporary, Long-Term, Short-Term</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,45 @@
+<apex:page standardController="Case_Record__c" extensions="ExpProgramLaunchController" sidebar="false" 
+            action="{!gotoIntake}" tabStyle="Intake__tab" cache="false" lightningstylesheets="true">
+    <apex:form >
+        <apex:sectionHeader subtitle="Choose an Intake Program" />
+        <apex:pageBlock id="thePageBlock">
+            <apex:pageBlockSection columns="{!columnCount}" rendered="{!allowIntake}" >
+                <apex:selectRadio value="{!intakeType}" rendered="{!showIntakeType}" >
+                    <apex:selectOption itemValue="Contact" itemLabel="Client" rendered="{!hasClientIntakePrograms}"/>
+                    <apex:selectOption itemValue="Household" itemLabel="Household" rendered="{!hasHouseholdIntakePrograms}"/>
+                    <apex:actionSupport event="onchange" status="nextBtnStatus" action="{!refreshOptions}" rerender="thePageBlock" />
+                </apex:selectRadio>
+                <apex:pageBlockSectionItem >
+	                <apex:outputLabel value="Program" />
+	                <apex:selectList id="programList" label="Program" value="{!selectedProgram}" multiselect="false" size="1" >
+	                    <apex:selectOptions value="{!programOptions}" />
+	                    <apex:actionSupport event="onchange" status="nextBtnStatus" action="{!setSelectedRecordTypesForProgram}" rerender="thePageBlock" />
+	                </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:inputField label="Case Record Type" value="{!dummyCaseRecord.recordTypeId}" rendered="{!showCaseRecordTypeDropdown}"/>
+                <apex:pageBlockSectionItem rendered="{!showContactRecordTypeDropdown}">
+	                <apex:outputLabel value="Contact Record Type" />
+	                <apex:selectList value="{!selectedContactRTId}" multiselect="false" size="1" >
+	                    <apex:selectOptions value="{!contactRTOptions}" />
+	                </apex:selectList>
+	            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:outputPanel rendered="{!!allowIntake}">
+                <table width="100%">
+                    <tr>                    
+                     <td width="10%"></td><td><apex:pageMessage severity="info" summary="{!noIntakeMessage}" strength="3"/></td><td width="10%"></td>
+                     </tr>
+                </table>
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="bottom">
+                <apex:actionStatus id="nextBtnStatus" >
+                      <apex:facet name="start"><c:ExpProcessingImage msg=""/></apex:facet>
+                      <apex:facet name="stop">
+                        <apex:commandButton id="nextBtn" value="Next" action="{!launchIntake}" rendered="{!allowIntake}"/>
+                      </apex:facet>
+                </apex:actionStatus>
+                <apex:commandButton value="Cancel" action="{!cancel}" rendered="{!showCancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

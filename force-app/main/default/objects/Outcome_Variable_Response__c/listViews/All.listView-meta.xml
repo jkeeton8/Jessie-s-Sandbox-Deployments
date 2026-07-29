@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Outcome_Variable_Response_Configuration__c</columns>
+    <columns>NAME</columns>
+    <columns>sObject__c</columns>
+    <columns>sObject_Field_Name__c</columns>
+    <columns>User_Value__c</columns>
+    <columns>Outcome_Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

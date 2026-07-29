@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_of_First_Job__c</fullName>
+    <label>Start Date of First Job</label>
+    <summarizedField>Placement__c.Start_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Placement__c.Stage__c</field>
+        <operation>equals</operation>
+        <value>Job/Placement</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Notes__c</field>
+        <operation>notContain</operation>
+        <value>Not Counted</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

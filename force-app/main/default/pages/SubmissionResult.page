@@ -1,0 +1,4 @@
+<apex:page standardStylesheets="true" showHeader="true">
+<c:SubmissionResult >
+</c:SubmissionResult>
+</apex:page>

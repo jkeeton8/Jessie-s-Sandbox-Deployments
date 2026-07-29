@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WhatKindofWorkWouldYouLikeToDo__c</fullName>
+    <label>What kind of work would you like to do?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Professional/Technical</fullName>
+                <default>false</default>
+                <label>Professional/Technical</label>
+            </value>
+            <value>
+                <fullName>Management/Officials/Proprietor</fullName>
+                <default>false</default>
+                <label>Management/Officials/Proprietor</label>
+            </value>
+            <value>
+                <fullName>Craftsmen/Foreman</fullName>
+                <default>false</default>
+                <label>Craftsmen/Foreman</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Farm/OtherLabor</fullName>
+                <default>false</default>
+                <label>Farm/Other Labor</label>
+            </value>
+            <value>
+                <fullName>Clerical</fullName>
+                <default>false</default>
+                <label>Clerical</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor__c</fullName>
+    <description>Create a link to the Organization/Account record for this contract&apos;s Vendor.</description>
+    <inlineHelpText>Create a link to the Organization record for this contract&apos;s Vendor.</inlineHelpText>
+    <label>Vendor</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Vendor Contracts</relationshipLabel>
+    <relationshipName>Vendor_Contracts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

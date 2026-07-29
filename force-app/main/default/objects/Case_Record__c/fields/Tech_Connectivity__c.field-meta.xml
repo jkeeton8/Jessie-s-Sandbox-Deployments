@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Connectivity__c</fullName>
+    <description>Began collecting in May 2020 during Coronavirus Pandemic.</description>
+    <inlineHelpText>Do you have access to the internet where you stay and/or do you have mobile data? Choose all that apply.</inlineHelpText>
+    <label>Tech Connectivity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internet in Residence</fullName>
+                <default>false</default>
+                <label>Internet in Residence</label>
+            </value>
+            <value>
+                <fullName>Mobile Data</fullName>
+                <default>false</default>
+                <label>Mobile Data</label>
+            </value>
+            <value>
+                <fullName>No Connectivity</fullName>
+                <default>false</default>
+                <label>No Connectivity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Inactivation_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check box to send Inactivation Email to Program Services.</inlineHelpText>
+    <label>Send Inactivation Email</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

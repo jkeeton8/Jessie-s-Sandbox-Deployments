@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Career_Advancement_Referrals__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Referral_Type__c, &quot;Internal - Resume Support&quot;), &quot;Resume Support&quot;,
+
+if (ispickval(Referral_Type__c, &quot;Internal - Personal Technical Support&quot;), &quot;Personal Technical Support&quot;,
+
+if (ispickval(Referral_Category__c, &quot;Career Coach&quot;), &quot;Career Coaching&quot;,
+
+if (ispickval(Referral_Category__c, &quot;Interview / Mock&quot;), &quot;Mock Interview&quot;,
+
+if (ispickval(Referral_Type__c, &quot;Internal - Stability Screening&quot;), &quot;Stability Assessment&quot;,
+
+NULL)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Career Advancement Referrals</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

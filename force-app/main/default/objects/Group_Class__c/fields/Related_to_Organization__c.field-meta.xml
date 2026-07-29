@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_to_Organization__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Related to Organization</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Groups &amp; Classes</relationshipLabel>
+    <relationshipName>Groups_Classes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

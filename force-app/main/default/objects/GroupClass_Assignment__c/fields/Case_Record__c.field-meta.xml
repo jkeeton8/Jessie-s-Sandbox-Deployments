@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Record__c</fullName>
+    <label>Case Record</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Please select an active participant.</errorMessage>
+        <filterItems>
+            <field>Case_Record__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Prospective Student, Active, On Hold</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Case_Record__c</referenceTo>
+    <relationshipLabel>Group / Class Assignments</relationshipLabel>
+    <relationshipName>Group_Class_Assignments1</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

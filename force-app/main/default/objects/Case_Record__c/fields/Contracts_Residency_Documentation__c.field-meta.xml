@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts_Residency_Documentation__c</fullName>
+    <label>Contracts Residency Documentation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mail-Other</fullName>
+                <default>false</default>
+                <label>Mail-Other</label>
+            </value>
+            <value>
+                <fullName>Letter from Shelter</fullName>
+                <default>false</default>
+                <label>Letter from Shelter</label>
+            </value>
+            <value>
+                <fullName>Medicaid/Medicare Card</fullName>
+                <default>false</default>
+                <label>Medicaid/Medicare Card</label>
+            </value>
+            <value>
+                <fullName>Current Voter Reg Card</fullName>
+                <default>false</default>
+                <label>Current Voter Reg Card</label>
+            </value>
+            <value>
+                <fullName>Letter for Social Service Agency</fullName>
+                <default>false</default>
+                <label>Letter for Social Service Agency</label>
+            </value>
+            <value>
+                <fullName>Selective Service Registration Card</fullName>
+                <default>false</default>
+                <label>Selective Service Registration Card</label>
+            </value>
+            <value>
+                <fullName>Insurance Policy</fullName>
+                <default>false</default>
+                <label>Insurance Policy</label>
+            </value>
+            <value>
+                <fullName>Printout from other Gov Agency</fullName>
+                <default>false</default>
+                <label>Printout from other Gov Agency</label>
+            </value>
+            <value>
+                <fullName>Current Utility Bill w/ Name &amp; Address</fullName>
+                <default>false</default>
+                <label>Current Utility Bill w/ Name &amp; Address</label>
+            </value>
+            <value>
+                <fullName>Driver&apos;s License</fullName>
+                <default>false</default>
+                <label>Driver&apos;s License</label>
+            </value>
+            <value>
+                <fullName>State ID</fullName>
+                <default>false</default>
+                <label>State ID</label>
+            </value>
+            <value>
+                <fullName>Housing Authority Certification</fullName>
+                <default>false</default>
+                <label>Housing Authority Certification</label>
+            </value>
+            <value>
+                <fullName>Public Assistance Record</fullName>
+                <default>false</default>
+                <label>Public Assistance Record</label>
+            </value>
+            <value>
+                <fullName>Food Stamp Award Letter</fullName>
+                <default>false</default>
+                <label>Food Stamp Award Letter</label>
+            </value>
+            <value>
+                <fullName>Property Tax Records</fullName>
+                <default>false</default>
+                <label>Property Tax Records</label>
+            </value>
+            <value>
+                <fullName>Landlord Statement/Lease</fullName>
+                <default>false</default>
+                <label>Landlord Statement/Lease</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

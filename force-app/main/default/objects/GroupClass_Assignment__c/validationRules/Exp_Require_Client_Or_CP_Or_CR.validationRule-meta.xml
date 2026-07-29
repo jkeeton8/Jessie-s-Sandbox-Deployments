@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Require_Client_Or_CP_Or_CR</fullName>
+    <active>true</active>
+    <description>Forces the user to enter a value for Client, Case Participant or Case Record</description>
+    <errorConditionFormula>IF(Client__c == null &amp;&amp;  Case_Participation__c == null &amp;&amp; Case_Record__c == null, true, false)</errorConditionFormula>
+    <errorMessage>A value is required for at least one of the following: Case Record, Case Participation or Client.</errorMessage>
+</ValidationRule>

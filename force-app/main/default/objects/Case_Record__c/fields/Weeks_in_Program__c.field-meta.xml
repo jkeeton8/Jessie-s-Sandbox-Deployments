@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weeks_in_Program__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Program_Stage__c, &quot;Referred&quot;) || ispickval(Program_Stage__c, &quot;Applicant&quot;) || ispickval(Program_Stage__c, &quot;Accepted&quot;), 0, 
+
+IF(ISBLANK(Program_Start_Date__c) ,0, 
+
+IF(Program_Start_Date__c &gt; TODAY(), 0, 
+
+if (Inactive_Date__c &lt; Program_Start_Date__c, 0, 
+
+if (not (isblank (Inactive_Date__c)), (Inactive_Date__c - Program_Start_Date__c)/7, 
+
+(TODAY() - Program_Start_Date__c)/7)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label># Weeks in Program</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

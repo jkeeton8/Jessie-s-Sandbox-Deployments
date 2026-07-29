@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signature_Distribution_Sheet</fullName>
+    <availability>online</availability>
+    <description>10/18/2023: replaced with Conga Solutions Signature Distribution Sheet Individual and Signature Distribution Sheet</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>deprecatedSignature Distribution Sheet</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}  
+&amp;serverUrl={!API.Partner_Server_URL_370} 
+&amp;Id={!Transit_Card_Inventory__c.Id} 
+&amp;ReportID=[DistributionSheet]00Of3000004Av4a?pv0={!Transit_Card_Inventory__c.Id} 
+&amp;TemplateGroup=Transit 
+&amp;TemplateID=a1Ff300000954zn</url>
+</WebLink>

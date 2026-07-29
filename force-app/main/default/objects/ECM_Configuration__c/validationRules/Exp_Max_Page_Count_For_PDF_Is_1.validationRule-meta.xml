@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Max_Page_Count_For_PDF_Is_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( PDF_Rendering__c &amp;&amp;  Maximum_Page_Count__c  &gt; 1, true, false)</errorConditionFormula>
+    <errorDisplayField>Maximum_Page_Count__c</errorDisplayField>
+    <errorMessage>PDF rendering may generate multiple pages, but only one Visualforce page is ever involved. Max Page Count must be 1 when PDF rendering is true.</errorMessage>
+</ValidationRule>

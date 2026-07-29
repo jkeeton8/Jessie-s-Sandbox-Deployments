@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Contract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Grant billed for this Supportive Services Distribution.</description>
+    <label>Grant / Contract</label>
+    <referenceTo>Agency_Contract1__c</referenceTo>
+    <relationshipLabel>Supportive Services Distributions</relationshipLabel>
+    <relationshipName>Supportive_Services_Distributions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Orientation</fullName>
+    <columns>NAME</columns>
+    <columns>Group_Class_Type__c</columns>
+    <columns>Group_Class_Name__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Time__c</columns>
+    <columns>Location__c</columns>
+    <columns>Staff_Trainer__c</columns>
+    <columns>Assignments__c</columns>
+    <columns>Program__c</columns>
+    <columns>Service__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Group_Class__c.Cleanslate_Orientation</value>
+    </filters>
+    <filters>
+        <field>Group_Class_Name__c</field>
+        <operation>equals</operation>
+        <value>Cleanslate Orientation</value>
+    </filters>
+    <label>Cleanslate Orientation</label>
+    <language>en_US</language>
+</ListView>

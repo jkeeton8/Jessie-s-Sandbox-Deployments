@@ -1,0 +1,185 @@
+<apex:page controller="ExpRecordMatchController" applyBodyTag="false" lightningstylesheets="true">
+
+    <head>
+        <apex:includeScript value="{!$Resource.jquery_v1_10_2_min}"/>
+        <style>
+            .recordmatch-main,
+            .recordmatch-search
+            {
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            .recordmatch-main
+            {
+                width: 70%;
+            }
+            
+            .recordmatch-search
+            {
+                width: 25%
+            }
+            
+            .recordmatch-resultsheader
+            {
+                background-color: #1797C0;
+            }
+            
+            .recordmatch-results-even
+            {
+            }
+            
+            .recordmatch-results-odd
+            {
+                background-color: #CFEEF8;
+            }
+            .recordmatch-results-value
+            {
+                word-wrap:break-word;
+            }
+            .recordmatch-joborder-fieldsets
+            {
+                margin-bottom: 15px;
+                border-radius: 8px;
+            }
+            .recordmatch-joborder-fieldsets-field
+            {
+                display: inline-block;
+                width: 290px;
+                white-space: nowrap;
+                margin-bottom: 5px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .recordmatch-joborder-fieldsets-field-label
+            {
+                margin-right: 5px;
+            }
+            .recordmatch-header
+            {
+                font-size: 3em;
+                margin-bottom: 25px;
+            }
+            .recordmatch-header-name
+            {
+                font-size: 0.75em;
+            }
+            .recordmatch-workingstatus
+            {
+                display: none;
+            }
+            .recordmatch-workingstatus span
+            {
+                text-align: center;
+                display: inline-block;
+                width: 100%
+            }
+        </style>
+        <script>
+            $(document).ready
+            (
+                function()
+                {                    
+                    $('input.btn').click
+                    (
+                        function()
+                        {
+                            $('.recordmatch-workingstatus').show();
+                        }
+                    );
+                }
+            );
+        </script>
+    </head>
+
+    <body>
+        <apex:form >
+            <div class="recordmatch-header">
+                <div><h1>{!$Label.Record_Match_Header}</h1></div>
+                <div class="recordmatch-header-name">{!sourceObject['Name']}</div>
+            </div>
+            <fieldset class="recordmatch-joborder-fieldsets">
+                <legend>{!SourceObjectFieldSetLabel1}</legend>
+                <apex:repeat value="{!$ObjectType[sourceObjectName].FieldSets[matchConfig.Source_Object_Field_Set_One_API_Name__c]}" var="fieldName">
+                    <div class="recordmatch-joborder-fieldsets-field" title="{!sourceObject[fieldName]}">
+                        <span class="recordmatch-joborder-fieldsets-field-label">{!fieldName.label}:</span>
+                        <apex:outputField style="text-overflow:ellipsis;" value="{!sourceObject[fieldName]}"/>
+                    </div>
+                </apex:repeat>
+            </fieldset>
+            <fieldset class="recordmatch-joborder-fieldsets">
+                <legend>{!SourceObjectFieldSetLabel2}</legend>
+                <apex:repeat value="{!$ObjectType[sourceObjectName].FieldSets[matchConfig.Source_Object_Field_Set_API_Name_Two__c]}" var="fieldName">
+                    <div class="recordmatch-joborder-fieldsets-field" title="{!sourceObject[fieldName]}">
+                        <span class="recordmatch-joborder-fieldsets-field-label">{!fieldName.label}:</span>
+                        <apex:outputField style="text-overflow:ellipsis;" value="{!sourceObject[fieldName]}"/>
+                    </div>
+                </apex:repeat>
+            </fieldset>
+            <div style="overflow-x:auto; overflow-y:hidden; width: 100%">
+                <div class="recordmatch-main">
+                    <apex:pageBlock >
+                        <apex:pageBlockButtons location="both">
+                            <apex:commandButton action="{!saveAction}" value="Save" status="statusWorking" />
+                            <apex:commandButton action="{!saveAndCloseAction}" value="Save & Close" status="statusWorking"/>
+                            <apex:commandButton action="{!cancelAction}" value="Cancel" status="statusWorking"/>
+                        </apex:pageBlockButtons>
+                        <apex:pageBlockSection columns="1" html-class="recordmatch-workingstatus">
+                            <c:ExpProcessingImage msg="Working..."/>
+                        </apex:pageBlockSection>
+                        
+                        <apex:pageBlockSection title="Find Results" html-style="width:100%;overflow-x:auto" columns="1">
+                            <apex:dataTable value="{!results}" var="result" cellspacing="0" cellpadding="5" border="1" width="98%" headerClass="recordmatch-resultsheader"
+                                rowClasses="recordmatch-results-odd,recordmatch-results-even" rendered="{!resultCount <= matchConfig.Max_Results__c && resultCount > 0}">
+                                <apex:column >
+                                    <apex:facet name="header"><apex:outputText value="Select" /></apex:facet>
+                                    <apex:inputCheckbox value="{!result.selected}" />
+                                </apex:column>
+                                <apex:repeat value="{!$ObjectType[targetObjectName].FieldSets[matchConfig.Target_Field_Set_API_Name__c]}" var="resultFieldName">
+                                    <apex:column styleClass="recordmatch-results-value">
+                                        <apex:facet name="header"><apex:outputText value="{!resultFieldName.Label}" /></apex:facet>
+                                        <apex:outputField value="{!result.obj[resultFieldName]}" rendered="{!resultFieldName != 'Id' && resultFieldName != 'Name'}"/>
+                                        <apex:outputLink value="/{!result.obj['Id']}" rendered="{!resultFieldName == 'Id' || resultFieldName == 'Name'}" target="_blank">
+                                            <apex:outputText style="text-overflow:ellipsis;" value="{!result.obj[resultFieldName]}"/>
+                                        </apex:outputLink>
+                                    </apex:column>
+                                </apex:repeat>
+                            </apex:dataTable>
+                            <div>
+                                <apex:outputText value="{!$Label.No_Results_Found}" rendered="{!resultCount==0}" />
+                                <apex:outputText value="{!$Label.Too_Many_Results}" rendered="{!resultCount > matchConfig.Max_Results__c}" />
+                            </div>
+                            <div>{!resultCount} match(es)</div>
+                        </apex:pageBlockSection>
+                        
+                        <apex:pageBlockSection title="{!$ObjectType.Placement__c.labelPlural}" html-style="width:100%;overflow-x:auto"  columns="1">
+                            <apex:dataTable value="{!placements}" var="result" cellspacing="0" cellpadding="5" border="1" width="98%" headerClass="recordmatch-resultsheader"
+                                rowClasses="recordmatch-results-odd,recordmatch-results-even">
+                                <apex:column >
+                                    <apex:facet name="header"><apex:outputText value="Select" /></apex:facet>
+                                    <apex:inputCheckbox value="{!result.selected}" disabled="true" title="{!$Label.Placement_checkbox_help}"/>
+                                </apex:column>
+                                <apex:repeat value="{!$ObjectType[targetObjectName].FieldSets[matchConfig.Target_Field_Set_API_Name__c]}" var="resultFieldName">
+                                    <apex:column styleClass="recordmatch-results-value">
+                                        <apex:facet name="header"><apex:outputText value="{!resultFieldName.Label}" /></apex:facet>
+                                        <apex:outputField value="{!result.obj['Case_Record__r'][resultFieldName]}" rendered="{!resultFieldName != 'Id' && resultFieldName != 'Name'}"/>
+                                        <apex:outputLink value="/{!result.obj['Case_Record__r']['Id']}" rendered="{!resultFieldName == 'Id' || resultFieldName == 'Name'}" target="_blank">
+                                            <apex:outputText style="text-overflow:ellipsis;" value="{!result.obj['Case_Record__r'][resultFieldName]}"/>
+                                        </apex:outputLink>
+                                    </apex:column>
+                                </apex:repeat>
+                            </apex:dataTable>
+                            <div>{!placements.size} {!$ObjectType.Placement__c.labelPlural}</div>
+                        </apex:pageBlockSection>
+                    
+                    </apex:pageBlock>
+                </div>
+            
+                <div class="recordmatch-search">
+                    <c:ExpRecordSearch criteriaList="{!criteria}" objectName="Case_Record__c" hostPage="{!me}" orderByFieldNames="{!resultFieldNames}" />
+                </div>
+            </div>
+        </apex:form>
+    </body>
+
+</apex:page>

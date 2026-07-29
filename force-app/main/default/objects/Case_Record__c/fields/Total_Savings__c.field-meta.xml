@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Savings__c</fullName>
+    <formula>if (Verified_Savings_Contributions__c &gt; 0, 
+Verified_Savings_Contributions__c +  Base_Savings_Contributions__c, 
+Self_Reported_Savings_Contributions__c + Base_Savings_Contributions__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If available, &quot;Savings Program Ending Balance, Verified&quot; + any additional contributions/match. Otherwise, &quot;Great Wall Ending Balance, Self-Reported&quot; + any additional contributions/match.</inlineHelpText>
+    <label>Total Savings</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Non_Visual_Field_Set</fullName>
+    <description>Fields that will be incorporated into the select for intake configurations.</description>
+    <displayedFields>
+        <field>All_Programs__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>All_Services__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>ECM_Non_Visual_Field_Set</label>
+</FieldSet>

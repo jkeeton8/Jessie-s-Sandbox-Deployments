@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Income_Based_on_1_6_Mo_Prior__c</fullName>
+    <formula>IF(  NOT(ISPICKVAL(Income_Source__c, &quot;Food Stamps&quot;)),
+
+(Income_1_Mo_Prior__c + Income_2_Mo_Prior__c + Income_3_Mo_Prior__c +  Income_4_Mo_Prior__c + Income_5_Mo_Prior__c + Income_6_Mo_Prior__c)*2,
+
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Annual Income, Based on 1-6 Mo. Prior</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

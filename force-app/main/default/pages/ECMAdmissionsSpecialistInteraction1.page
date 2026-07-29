@@ -1,0 +1,29 @@
+<apex:page controller="ExpServiceEntryController" sidebar="false" tabStyle="Case_Record__c">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!clientSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Admissions Specialist Interaction ****-->
+
+<!-- ***** Scheduling, page 1, order 1 ***** -->
+<c:ExpScheduling theParentController="{!this}" csName="CompSettings-0012"/>
+
+<!-- ***** Client UOS, page 1, order 2 ***** -->
+<c:ExpClientUOS theParentController="{!this}" csName="CompSettings-0013"/>
+
+<!-- ***** Staff UOS, page 1, order 3 ***** -->
+<c:ExpStaffUOS theParentController="{!this}" csName="CompSettings-0014"/>
+
+<!-- ***** Progress Note, page 1, order 4 ***** -->
+<c:ExpProgressNote theParentController="{!this}" csName="CompSettings-0015"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

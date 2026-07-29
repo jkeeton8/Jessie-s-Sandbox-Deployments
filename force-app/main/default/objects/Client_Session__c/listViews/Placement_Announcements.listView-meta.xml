@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Announcements</fullName>
+    <columns>Date__c</columns>
+    <columns>Client_Name__c</columns>
+    <columns>Progress_Note__c</columns>
+    <columns>Created_by_Summary__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Service_Entry_Name__c</field>
+        <operation>equals</operation>
+        <value>Progress Note Only</value>
+    </filters>
+    <filters>
+        <field>Progress_Note_Type__c</field>
+        <operation>equals</operation>
+        <value>Placement Announcement</value>
+    </filters>
+    <filters>
+        <field>Client_Name__c</field>
+        <operation>notContain</operation>
+        <value>*</value>
+    </filters>
+    <filters>
+        <field>Date__c</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:14</value>
+    </filters>
+    <label>Placement Announcements</label>
+    <language>en_US</language>
+</ListView>

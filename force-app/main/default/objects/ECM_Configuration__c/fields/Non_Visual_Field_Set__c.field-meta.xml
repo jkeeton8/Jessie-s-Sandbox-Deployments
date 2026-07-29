@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Visual_Field_Set__c</fullName>
+    <defaultValue>&quot;ECM_Non_Visual_Field_Set&quot;</defaultValue>
+    <description>Intake objects: Case record, contact, program
+Service entry objects: Case record, client session, service, program
+Group Service Entry: Group, group session, service, program</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The global name of the field set for all objects related to this configuration. ECM will query and populate each record with fields from the field set and make them available through variables in the page. These fields are query-only.</inlineHelpText>
+    <label>Non-Visual Field Set</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complete_Transit_Inventories_South_Side</fullName>
+    <columns>NAME</columns>
+    <columns>Transit_Card_Order__c</columns>
+    <columns>Inventory_Location__c</columns>
+    <columns>Order_Date__c</columns>
+    <columns>Transit_Card_Type__c</columns>
+    <columns>Total_Number_of_Transit_Cards_Purchased__c</columns>
+    <columns>Total_Amount_of_Transit_Cards_Purchased__c</columns>
+    <columns>Number_of_Distributed_Cards__c</columns>
+    <columns>Number_of_Write_Offs__c</columns>
+    <columns>Distribution_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Distribution_Status__c</field>
+        <operation>equals</operation>
+        <value>Complete</value>
+    </filters>
+    <filters>
+        <field>Inventory_Location__c</field>
+        <operation>equals</operation>
+        <value>South Side</value>
+    </filters>
+    <filters>
+        <field>Transit_Card_Type__c</field>
+        <operation>notContain</operation>
+        <value>Ventra</value>
+    </filters>
+    <label>Complete Transit Inventories, South Side</label>
+    <language>en_US</language>
+</ListView>

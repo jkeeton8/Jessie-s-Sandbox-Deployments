@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Series_Group_Class</fullName>
+    <active>true</active>
+    <description>A group or class that is offered over multiple sessions, typically over more than one day. Most branded trainings fall into this category.</description>
+    <label>Series Group/Class</label>
+    <picklistValues>
+        <picklist>Day__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Class_Name__c</picklist>
+        <values>
+            <fullName>ABM Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABM Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante Digital Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMO Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%26W Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNC Certification Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate Worker Request List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothing Assessments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comed Construct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Interviewing Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management%3A Diversity %26 Power of the Pause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Service Professional Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Impressions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GCFD_Food_Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GED Prep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hire 360 Certification Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro To Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro to Cara Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro to Digital Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Interviewing Techniques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebuild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rozalado Janitorial%2FFloor Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TABE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation%2C Distribution and Logistics %28TDL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whole Foods Market Prepared Foods</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Class_Type__c</picklist>
+        <values>
+            <fullName>Adelante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Branded%2FPartner Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offsite Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offsite at Organization%27s Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side Campus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reoccurrence__c</picklist>
+        <values>
+            <fullName>Bi-monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time__c</picklist>
+        <values>
+            <fullName>1%3A00 PM - 2%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 2%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM - 4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM - 12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM - 12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 PM - 3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 4%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A40 AM-4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 AM - 12%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 AM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 1%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM - 5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 AM - 12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Client__c</picklist>
+        <values>
+            <fullName>Enrolled Clients</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connects_Total_Hours_Maximum__c</fullName>
+    <label>Connects Total Hours, Maximum</label>
+    <summarizedField>Connects_Worker_Time__c.Week_Beginning__c</summarizedField>
+    <summaryForeignKey>Connects_Worker_Time__c.Send_Out_Employment__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

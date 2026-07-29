@@ -1,0 +1,136 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" standardController="campaign">
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            Number.prototype.formatMoney = function(c, d, t){
+            var n = this, 
+                c = isNaN(c = Math.abs(c)) ? 2 : c, 
+                d = d == undefined ? "." : d, 
+                t = t == undefined ? "," : t, 
+                s = n < 0 ? "-" : "", 
+                i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+                j = (j = i.length) > 3 ? j % 3 : 0;
+               return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+             };
+             
+            var total = "{!campaign.AmountWonOpportunities}" *1;
+            var displayTotal = "$"+parseFloat(total).formatMoney(2, '.', ',') + " raised so far";
+            var goal = "{!campaign.fundraising_goal__c}" *1;
+            var displayGoal = "Goal: $"+parseFloat(goal).formatMoney(2, '.', ',');
+            var percent = 0;
+            if (total >= goal){
+                percent = 100;
+            }else{
+               percent =  total / goal;
+            }
+            percent = Math.ceil(percent*100);
+            jQuery(document).ready(function(){                
+                jQuery('.barAmount').html(percent+'%');
+                jQuery('.barGraph').css('height',percent+'%');
+                jQuery('.goal').html(displayGoal);
+                jQuery('.current').html(displayTotal);
+                if (goal < 0.01){
+                    jQuery('.goal').hide();
+                }
+                jQuery('.twenty').html("<span>$"+(goal * 0.2).formatMoney()+"</span>");
+                jQuery('.fourty').html("<span>$"+(goal * 0.4).formatMoney()+"</span>");
+                jQuery('.sixty').html("<span>$"+(goal * 0.6).formatMoney()+"</span>");
+                jQuery('.eighty').html("<span>$"+(goal * 0.8).formatMoney()+"</span>");
+            });
+        </script>
+        <style>
+        .thermometerContainer{
+            text-align:center;
+            width:100%;
+             width:{!$CurrentPage.parameters.barWidth};
+             margin:1em auto;
+        }
+         .barContainer{
+             height:200px;
+             height: {!$CurrentPage.parameters.height}px;
+             background:#ccc;
+             background:#{!$CurrentPage.parameters.thermoBg};
+             position:relative;
+             width:100%;
+             width:{!$CurrentPage.parameters.barWidth};
+             margin:1em auto 0;
+             border:solid 1px #333;
+         }
+         .barGraph{
+             background:#1c6ef9;
+             background:#{!$CurrentPage.parameters.barColor};
+             height: 0;
+             position: absolute;
+             bottom: 0;
+             width: 100%;
+         }
+         .barAmount{
+             font-size:1.4em;
+             color:#fff;
+             width:100%;
+             text-align:center;
+             color:#{!$CurrentPage.parameters.barText};
+             position:absolute;
+             z-index:200;
+          }
+         .campaignName{
+             color: #1c6ef9;
+             font-size: 18px;
+            font-family: helvetica,arial,sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            text-transform: uppercase;
+            margin:10px 0;
+        }
+        .goal{
+                font-size: 1.5em;
+                color: #777;
+        }
+        .current{
+              font-size: 1.5em;
+        }
+        .bodytext{
+            margin-top:10px;
+            color:#666;
+            line-height:1.2em;
+            font-size:0.95em;
+        }
+        .twenty{ height:20%;}
+        .fourty{ height:40%;}
+        .sixty{ height:60%;}
+        .eighty{ height:80%;}
+        .marker{ 
+            width:100%;
+            position:absolute;
+            bottom:0;
+            border-top: dashed 1px #555;
+            text-align:right;
+            color:#555;
+        }
+        .marker span{
+            padding-right:10px;
+        }
+        </style>
+        <script>
+            function refresh(){
+                var curl =  window.location.toString().split('&ts=')
+                window.location = curl[0]+ "&ts=" + new Date().getTime();
+            }
+            window.setTimeout(refresh, 30000);
+        </script>
+    </head>
+    <body>
+        <div class="thermometerContainer">
+            <img src="" style="width:100%" />
+            <div class="barContainer">
+                <div class="barGraph"><div class="barAmount">{!campaign.AmountWonOpportunities}</div></div>
+                <div class="marker twenty"></div><div class="marker fourty"></div><div class="marker sixty"></div><div class="marker eighty"></div>
+            </div>
+            <br/>
+            <div class="goal">{!campaign.fundraising_goal__c}</div>
+            <div class="current">{!campaign.AmountWonOpportunities}</div>
+        </div>
+    </body>
+</html>
+</apex:page>

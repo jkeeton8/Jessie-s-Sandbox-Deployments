@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Event__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Creates a Salesforce Calendar event linking it this client session via the Related To field on the event.</inlineHelpText>
+    <label>Create Event</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

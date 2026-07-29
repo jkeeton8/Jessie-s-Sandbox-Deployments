@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_1_0_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId= &quot;01231000001ERwY&quot;,
+
+Cleanslate_1_0_Total_Professionalism__c + Cleanslate_1_0_Total_Ownership_of_Route__c + Cleanslate_1_0_Total_Customer_Service__c + Cleanslate_1_0_Total_Conflict_Mgmt__c +  Cleanslate_1_0_Total_Leadership_Bonus__c, 
+
+NULL)</formula>
+    <inlineHelpText>1-3: Unacceptable, violation recommended; 4-5 Improvement required; 6: Acceptable; 7-8: Good; 9: Excellent</inlineHelpText>
+    <label>Cleanslate 1.0 Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Practitioner_Post_Institute_Survey_1_0</fullName>
+    <active>true</active>
+    <label>Practitioner Post-Institute Survey 1.0</label>
+</RecordType>

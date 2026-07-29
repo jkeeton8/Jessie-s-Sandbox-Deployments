@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Daily_Logs_Two_Weeks_Ago</fullName>
+    <columns>Log__c</columns>
+    <columns>NAME</columns>
+    <columns>Work_Date__c</columns>
+    <columns>Organization__c</columns>
+    <columns>Job_Function__c</columns>
+    <columns>Reviewed_Approved_Decoy__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Work_Log__c.Cleanslate_Daily_Log</value>
+    </filters>
+    <filters>
+        <field>Work_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>N_WEEKS_AGO:2</value>
+    </filters>
+    <label>Cleanslate Daily Logs, Two Weeks Ago</label>
+    <language>en_US</language>
+</ListView>

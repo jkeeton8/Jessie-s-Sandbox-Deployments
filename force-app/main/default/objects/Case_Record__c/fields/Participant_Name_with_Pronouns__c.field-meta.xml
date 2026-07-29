@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Name_with_Pronouns__c</fullName>
+    <description>Includes first name and last name, not middle. If Pronouns are identified on the participant&apos;s Contact record, that information is included here.</description>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Main_Client__r.Pronouns__c, &quot;She/Her&quot;) || ispickval(Main_Client__r.Pronouns__c, &quot;He/Him&quot;) || ispickval(Main_Client__r.Pronouns__c, &quot;They/Them&quot;),
+
+Main_Client__r.FirstName &amp; &quot; &quot; &amp; Main_Client__r.LastName &amp; &quot; &quot; &amp; Main_Client__r.Suffix &amp; &quot; (&quot;&amp; text(Main_Client__r.Pronouns__c)&amp;&quot;)&quot;,
+
+if(ispickval(Main_Client__r.Pronouns__c, &quot;Write-In/Other&quot;), 
+
+Main_Client__r.FirstName &amp; &quot; &quot; &amp; Main_Client__r.LastName &amp; &quot; &quot; &amp; Main_Client__r.Suffix &amp; &quot; (See Contact record for Pronoun preferences)&quot;,
+
+Main_Client__r.FirstName &amp; &quot; &quot; &amp; Main_Client__r.LastName &amp; &quot; &quot; &amp; Main_Client__r.Suffix))</formula>
+    <inlineHelpText>If Pronouns are identified on the participant&apos;s Contact record, that information is included here.</inlineHelpText>
+    <label>Participant Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

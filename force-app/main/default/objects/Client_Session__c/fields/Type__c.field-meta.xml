@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    ECM_Service_Activity__r.Name,
+    &quot;Referral&quot;, text(Outbound_Referral__r.Referral_Type__c),
+    
+    &quot;Conviction History&quot;, TEXT(Conviction_Type__c),
+    
+    &quot;IDS Visit&quot;, 
+    IF(
+        New_Hire_Orientation__c, 
+        &quot;New Hire - &quot; &amp; TEXT(Visit_Type__c), 
+        TEXT(Visit_Type__c)
+    ),
+    
+    &quot;Progress Note Only&quot;, TEXT(Progress_Note_Type__c),
+    
+    &quot;Student Absence&quot;, &quot;Incident / Observation&quot;,
+    &quot;COAT&quot;, &quot;Incident / Observation&quot;,
+    &quot;Program Hold&quot;, &quot;Incident / Observation&quot;,
+    &quot;Send Out Hold&quot;, &quot;Incident / Observation&quot;,
+    &quot;Write-Up&quot;, &quot;Incident / Observation&quot;,
+    
+    &quot;Hold/Concern&quot;,
+    IF(
+        CONTAINS(Progress_Note_Short__c, &quot;90 Day Review&quot;), 
+        &quot;90 Day Review&quot;, 
+        &quot;Incident / Observation&quot;
+    ),
+
+    
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worker_Time_Controller</fullName>
+    <active>true</active>
+    <errorConditionFormula>Worker_Time_In__c = Worker_Time_Out__c</errorConditionFormula>
+    <errorMessage>Worker Time In should be different from Worker Time Out.</errorMessage>
+</ValidationRule>

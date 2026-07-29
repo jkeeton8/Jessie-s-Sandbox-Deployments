@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sunday_ADP_Time_Out_1__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank( Sunday_Lunch_Start__c )
+|| Sunday_Lunch_End_Proxy__c &lt;=  Sunday_Time_In_Proxy__c 
+||  Sunday_Lunch_Start_Proxy__c &lt;= Sunday_Time_In_Proxy__c ,  Sunday_Time_Out__c ,
+if (Sunday_Lunch_Start_Proxy__c &lt;= Sunday_Time_Out_Proxy__c , Sunday_Lunch_Start__c ,
+Sunday_Time_Out__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sunday ADP Time Out (#1)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

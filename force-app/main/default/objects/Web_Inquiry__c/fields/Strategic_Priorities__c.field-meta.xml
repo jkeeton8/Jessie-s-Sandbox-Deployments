@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Priorities__c</fullName>
+    <label>Strategic Priorities</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Long term employment</fullName>
+                <default>false</default>
+                <label>Long term employment</label>
+            </value>
+            <value>
+                <fullName>Short term/transitional employment</fullName>
+                <default>false</default>
+                <label>Short term/transitional employment</label>
+            </value>
+            <value>
+                <fullName>Early childhood education</fullName>
+                <default>false</default>
+                <label>Early childhood education</label>
+            </value>
+            <value>
+                <fullName>K-12 education</fullName>
+                <default>false</default>
+                <label>K-12 education</label>
+            </value>
+            <value>
+                <fullName>Violence intervention</fullName>
+                <default>false</default>
+                <label>Violence intervention</label>
+            </value>
+            <value>
+                <fullName>Emergency/transitional housing</fullName>
+                <default>false</default>
+                <label>Emergency/transitional housing</label>
+            </value>
+            <value>
+                <fullName>Long term housing</fullName>
+                <default>false</default>
+                <label>Long term housing</label>
+            </value>
+            <value>
+                <fullName>Recovery care</fullName>
+                <default>false</default>
+                <label>Recovery care</label>
+            </value>
+            <value>
+                <fullName>Mental health</fullName>
+                <default>false</default>
+                <label>Mental health</label>
+            </value>
+            <value>
+                <fullName>Domestic violence</fullName>
+                <default>false</default>
+                <label>Domestic violence</label>
+            </value>
+            <value>
+                <fullName>Immigration</fullName>
+                <default>false</default>
+                <label>Immigration</label>
+            </value>
+            <value>
+                <fullName>Food relief/security</fullName>
+                <default>false</default>
+                <label>Food relief/security</label>
+            </value>
+            <value>
+                <fullName>Post-secondary education and access</fullName>
+                <default>false</default>
+                <label>Post-secondary education and access</label>
+            </value>
+            <value>
+                <fullName>Reducing justice-system involvement/recidivism</fullName>
+                <default>false</default>
+                <label>Reducing justice-system involvement/recidivism</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

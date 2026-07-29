@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Archived_Primary_Projects_Closed</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Primary_Staff_Contact__c</columns>
+    <columns>Primary_Staff_Contact_Department__c</columns>
+    <columns>Open_Date__c</columns>
+    <columns>Close_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Project__c.Archived_Primary_Project</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <label>z Archived Primary Projects, Closed</label>
+    <language>en_US</language>
+</ListView>

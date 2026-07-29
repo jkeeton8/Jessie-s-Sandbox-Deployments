@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Print_Face_Sheet</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Face Sheet</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/ExpPrintFaceSheetLaunch?caseRecordId={!Case_Record__c.Id}&amp;title={!Case_Record__c.Name}&amp;
+defaultConfigId={!Case_Record__c.Default_Face_Sheet_Configuration__c}</url>
+</WebLink>

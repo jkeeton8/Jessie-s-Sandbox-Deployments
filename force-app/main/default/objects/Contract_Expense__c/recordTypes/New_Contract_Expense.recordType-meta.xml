@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Contract_Expense</fullName>
+    <active>true</active>
+    <label>New Contract Expense</label>
+    <picklistValues>
+        <picklist>Expense_Category__c</picklist>
+        <values>
+            <fullName>Background Screen %282 counties %26 standard search%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Background Screen %28standard%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Screen 5 Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Criminal Record %26 Sex Offender Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Transactions - Full 6 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expense_Type__c</picklist>
+        <values>
+            <fullName>Background Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Advance_Special_Event_is_False</fullName>
+        <field>Advance_Special_Event_Product__c</field>
+        <literalValue>0</literalValue>
+        <name>Advance - Special Event is False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advance_Special_Event_is_True</fullName>
+        <field>Advance_Special_Event_Product__c</field>
+        <literalValue>1</literalValue>
+        <name>Advance - Special Event is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Campaign_to_Active</fullName>
+        <field>IsActive</field>
+        <literalValue>1</literalValue>
+        <name>Campaign to Active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Campaign in Created</fullName>
+        <actions>
+            <name>Campaign_to_Active</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Campaign.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Check Advance - Special Event</fullName>
+        <actions>
+            <name>Advance_Special_Event_is_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(ispickval(Type, &apos;Private - Event&apos;) || ispickval(Type, &apos;Business - Consulting&apos;))
+
+&amp;&amp;
+
+today() &lt; StartDate</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uncheck Advance - Special Event</fullName>
+        <actions>
+            <name>Advance_Special_Event_is_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(ispickval(Type, &apos;Private - Event&apos;) || ispickval(Type, &apos;Business - Consulting&apos;))
+
+&amp;&amp; 
+
+today() &gt;= StartDate</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_to_Send_Out_Eligible__c</fullName>
+    <description>On 1/17/20, increased from 10 to 11 SOE competencies, with the addition of &apos;Resume SOE Date&apos;.</description>
+    <formula>(if (Send_Out_Eligible_by_Previous_Criteria__c, 1, 
+
+
+(IF((ISBLANK( Housing_SOE_Date__c )) , 0, 1) + 
+ IF((ISBLANK( Child_Care_SOE_Date__c )) , 0, 1) +
+ IF((ISBLANK( Health_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Background_Check_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Time_Management_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Conflict_Management_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Professionalism_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Team_Building_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Communication_SOE_Date__c  )) , 0, 1) +
+ IF((ISBLANK( Drug_Test_Submitted_Date__c)), 0, 1) +
+ IF((ISBLANK( Resume_SOE_Date__c )), 0, 1)
+)/11))</formula>
+    <inlineHelpText>Based on 11 SOE competencies.</inlineHelpText>
+    <label>Percent to Send Out Eligible</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

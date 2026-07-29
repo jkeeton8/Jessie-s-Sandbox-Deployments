@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interpersonal_Restriction__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Id=&quot;01If3000000cbsl&quot; &amp;&amp; not (isblank(Crew_Chief__c)) &amp;&amp; not (isblank(Send_Out_Employment__c)), Crew_Chief__r.Name&amp;&quot;, &quot;&amp;Send_Out_Employment__c,
+
+if (Id=&quot;01If3000000cbsl&quot; &amp;&amp; not (isblank(Crew_Chief__c)), Crew_Chief__r.Name,
+
+if (Id=&quot;01If3000000cbsl&quot; &amp;&amp; not (isblank(Send_Out_Employment__c)), Send_Out_Employment__r.Participant_Name__c,
+
+NULL)))</formula>
+    <label>Interpersonal Restriction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

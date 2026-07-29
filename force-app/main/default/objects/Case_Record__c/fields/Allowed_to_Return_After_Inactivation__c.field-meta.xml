@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allowed_to_Return_After_Inactivation__c</fullName>
+    <label>Allowed to Return After Inactivated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes, through any Portal (Send Inactivation Email)</fullName>
+                <default>false</default>
+                <label>Yes, through any Portal (Send Inactivation Email)</label>
+            </value>
+            <value>
+                <fullName>Yes, through any Portal</fullName>
+                <default>false</default>
+                <label>Yes, through any Portal (No Inactivation Email)</label>
+            </value>
+            <value>
+                <fullName>No, barred from Cara Enterprise</fullName>
+                <default>false</default>
+                <label>No, barred from Cara Enterprise</label>
+            </value>
+            <value>
+                <fullName>Yes, as Resource Only due to background</fullName>
+                <default>false</default>
+                <label>Yes, as Resource Only due to background</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Require_1_Client_Or_CP_Or_CR</fullName>
+    <active>true</active>
+    <description>User must choose either case record, case participation or client -- only 1 of the 3 is allowed.</description>
+    <errorConditionFormula>IF(IF(Case_Record__c != null, 1, 0) + IF(Case_Participation__c != null, 1, 0) + IF(Client__c != null, 1, 0) &gt; 1, true, false)</errorConditionFormula>
+    <errorMessage>Please choose a value for only one of the following: Case Record, Case Participation or Client.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Cost_Formula__c</fullName>
+    <formula>if ( not(isblank( Expense_Cost__c ) || Expense_Cost__c = 0),  Expense_Cost__c,
+
+if ( ispickval( Expense_Category__c, &quot;Background Screen (standard)&quot;), 14.18,
+
+if ( ispickval( Expense_Category__c, &quot;National Criminal Record &amp; Sex Offender Search&quot;), 6.30,
+
+if ( ispickval( Expense_Category__c, &quot;Background Screen (2 counties &amp; standard search)&quot;), 22.06,
+
+if ( ispickval( Expense_Category__c, &quot;Drug Screen 5 Panel&quot;), 30.00,
+
+if ( ispickval( Expense_Category__c, &quot;Social Service Transactions&quot;), 15.40,
+
+if ( ispickval( Expense_Category__c, &quot;Social Service Transactions - Full 6 Months&quot;), 34.99,
+
+if ( ispickval( Expense_Category__c, &quot;7 Day Pass&quot;), 28.50,
+
+if ( ispickval( Expense_Category__c, &quot;3 Day Pass&quot;), 20.50,
+
+if ( ispickval( Expense_Category__c, &quot;1 Day Pass&quot;), 10.00,
+
+NULL))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Expense Cost Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

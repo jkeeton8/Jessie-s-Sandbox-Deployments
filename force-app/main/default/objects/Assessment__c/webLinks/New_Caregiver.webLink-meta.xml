@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Caregiver</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Caregiver</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0G/e?RecordType=012K00000000WPL&amp;CF00NK000000135XR={!Assessment__c.Name}&amp;CF00NK000000135XR_lkid={!Assessment__c.Id}&amp;CF00Nd0000007ChOo={!Assessment__c.Case_Record__c}&amp;CF00Nd0000007ChOo_lkid={!Assessment__c.Case_RecordId__c}&amp;00NG0000009btx0={!Assessment__c.Assessment_Date__c}&amp;&amp;retURL={!Assessment__c.Id}&amp;ent=01Id00000010SpS&amp;CancelURL={!Assessment__c.Name}</url>
+</WebLink>

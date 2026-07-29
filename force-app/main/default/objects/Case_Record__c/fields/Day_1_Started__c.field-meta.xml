@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_1_Started__c</fullName>
+    <description>2025: Logic has been added to account for work first participants, who spend the first 90 days working before programming starts.</description>
+    <externalId>false</externalId>
+    <formula>if (not(contains (text((Accepted__c)), &quot;Yes&quot;)), 0,
+
+
+if(
+
+ispickval( Program_Site_Track__c , &quot;Work First&quot;),
+if((Days_in_Program__c &gt; 90),1,0),
+
+if ((Days_in_Program__c &gt; 0), 1,
+
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Day 1 Started</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

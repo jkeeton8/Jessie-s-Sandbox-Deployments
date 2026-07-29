@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Limitation</fullName>
+                <default>false</default>
+                <label>Limitation</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Praise</fullName>
+                <default>false</default>
+                <label>Praise</label>
+            </value>
+            <value>
+                <fullName>Send Out Hold</fullName>
+                <default>false</default>
+                <label>Send Out Hold</label>
+            </value>
+            <value>
+                <fullName>Program Hold</fullName>
+                <default>false</default>
+                <label>Program Hold</label>
+            </value>
+            <value>
+                <fullName>Concern</fullName>
+                <default>false</default>
+                <label>Concern</label>
+            </value>
+            <value>
+                <fullName>Observation</fullName>
+                <default>false</default>
+                <label>Observation</label>
+            </value>
+            <value>
+                <fullName>Concern (Retention)</fullName>
+                <default>false</default>
+                <label>Concern (Retention)</label>
+            </value>
+            <value>
+                <fullName>Job Search Concern</fullName>
+                <default>false</default>
+                <label>Job Search Concern</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

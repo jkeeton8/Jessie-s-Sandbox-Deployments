@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Reason__c</fullName>
+    <label>Rejected Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Option One</fullName>
+                <default>false</default>
+                <label>Option One</label>
+            </value>
+            <value>
+                <fullName>Option Two</fullName>
+                <default>false</default>
+                <label>Option Two</label>
+            </value>
+            <value>
+                <fullName>Option Three</fullName>
+                <default>false</default>
+                <label>Option Three</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

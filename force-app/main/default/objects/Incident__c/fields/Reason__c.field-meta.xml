@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <description>For COATs starting mid-FY19, &apos;Reason&apos; reflects competency observed.</description>
+    <inlineHelpText>&quot;Coronavirus Pandemic&quot; has temporarily been added for Holds. 
+
+Program Hold: Complete disengagement from programming due to focus on resolving a Coronavirus-related issue, such as own/dependent illness.
+
+Send Out Hold: Preference or quarantine.</inlineHelpText>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>90 Day Review Panel</fullName>
+                <default>false</default>
+                <label>90 Day Review Panel</label>
+            </value>
+            <value>
+                <fullName>Behavior</fullName>
+                <default>false</default>
+                <label>Behavior</label>
+            </value>
+            <value>
+                <fullName>Business Only</fullName>
+                <default>false</default>
+                <label>Business Only</label>
+            </value>
+            <value>
+                <fullName>Child Care</fullName>
+                <default>false</default>
+                <label>Child Care</label>
+            </value>
+            <value>
+                <fullName>Committed to Job/School</fullName>
+                <default>false</default>
+                <label>Committed to Job/School</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Conflict Management</fullName>
+                <default>false</default>
+                <label>Conflict Management</label>
+            </value>
+            <value>
+                <fullName>Coronavirus Pandemic</fullName>
+                <default>false</default>
+                <label>Coronavirus Pandemic</label>
+            </value>
+            <value>
+                <fullName>Court Date</fullName>
+                <default>false</default>
+                <label>Court Date</label>
+            </value>
+            <value>
+                <fullName>Criminal Background Issues</fullName>
+                <default>false</default>
+                <label>Criminal Background Issues</label>
+            </value>
+            <value>
+                <fullName>Did Not Leave A Reason</fullName>
+                <default>false</default>
+                <label>Did Not Leave A Reason</label>
+            </value>
+            <value>
+                <fullName>Did not meet performance standards</fullName>
+                <default>false</default>
+                <label>Did not meet performance standards</label>
+            </value>
+            <value>
+                <fullName>Did not sign-up for weekly workshop</fullName>
+                <default>false</default>
+                <label>Did not sign-up for weekly workshop</label>
+            </value>
+            <value>
+                <fullName>Docter&apos;s Appointment</fullName>
+                <default>false</default>
+                <label>Docter&apos;s Appointment</label>
+            </value>
+            <value>
+                <fullName>Employment Appointment</fullName>
+                <default>false</default>
+                <label>Employment Appointment</label>
+            </value>
+            <value>
+                <fullName>Excessive absence</fullName>
+                <default>false</default>
+                <label>Excessive reschedules/absences</label>
+            </value>
+            <value>
+                <fullName>External Training</fullName>
+                <default>false</default>
+                <label>External Training</label>
+            </value>
+            <value>
+                <fullName>Family Event</fullName>
+                <default>false</default>
+                <label>Family Event</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Inappropriate attire</fullName>
+                <default>false</default>
+                <label>Inappropriate attire</label>
+            </value>
+            <value>
+                <fullName>Interview</fullName>
+                <default>false</default>
+                <label>Interview</label>
+            </value>
+            <value>
+                <fullName>Job Offer Accepted</fullName>
+                <default>false</default>
+                <label>Job Offer Accepted</label>
+            </value>
+            <value>
+                <fullName>Job-related appointment</fullName>
+                <default>false</default>
+                <label>Job-related appointment</label>
+            </value>
+            <value>
+                <fullName>Lack of communication</fullName>
+                <default>false</default>
+                <label>Lack of communication</label>
+            </value>
+            <value>
+                <fullName>Lack of integrity</fullName>
+                <default>false</default>
+                <label>Lack of integrity</label>
+            </value>
+            <value>
+                <fullName>Late to Cara/Cleanslate</fullName>
+                <default>false</default>
+                <label>Late to Cara/Cleanslate</label>
+            </value>
+            <value>
+                <fullName>Late to Cara-related appointment</fullName>
+                <default>false</default>
+                <label>Late to Cara-related appointment</label>
+            </value>
+            <value>
+                <fullName>Late to class</fullName>
+                <default>false</default>
+                <label>Late to class</label>
+            </value>
+            <value>
+                <fullName>Left Cara Day early</fullName>
+                <default>false</default>
+                <label>Left Cara Day early</label>
+            </value>
+            <value>
+                <fullName>Missed Cara-related appointment</fullName>
+                <default>false</default>
+                <label>Missed Cara-related appointment</label>
+            </value>
+            <value>
+                <fullName>NCNS</fullName>
+                <default>false</default>
+                <label>NCNS</label>
+            </value>
+            <value>
+                <fullName>NCNS to Interview</fullName>
+                <default>false</default>
+                <label>NCNS to Interview</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive to CEP</fullName>
+                <default>false</default>
+                <label>Non-Responsive to CEP</label>
+            </value>
+            <value>
+                <fullName>Not following instructions or proper protocol</fullName>
+                <default>false</default>
+                <label>Not following instructions or proper protocol</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Personal</fullName>
+                <default>false</default>
+                <label>Personal</label>
+            </value>
+            <value>
+                <fullName>Personal Day</fullName>
+                <default>false</default>
+                <label>Personal Day</label>
+            </value>
+            <value>
+                <fullName>Professionalism</fullName>
+                <default>false</default>
+                <label>Professionalism</label>
+            </value>
+            <value>
+                <fullName>Refused Job Offer</fullName>
+                <default>false</default>
+                <label>Refused Job Offer</label>
+            </value>
+            <value>
+                <fullName>Required work not completed</fullName>
+                <default>false</default>
+                <label>Required work not completed</label>
+            </value>
+            <value>
+                <fullName>Required work not submitted</fullName>
+                <default>false</default>
+                <label>Required work not submitted</label>
+            </value>
+            <value>
+                <fullName>Required work submitted late</fullName>
+                <default>false</default>
+                <label>Required work submitted late</label>
+            </value>
+            <value>
+                <fullName>Return to Leadership Development</fullName>
+                <default>false</default>
+                <label>Return to Leadership Development</label>
+            </value>
+            <value>
+                <fullName>Review Panel</fullName>
+                <default>false</default>
+                <label>Review Panel</label>
+            </value>
+            <value>
+                <fullName>Short Term Job Accepted</fullName>
+                <default>false</default>
+                <label>Short Term Job Accepted</label>
+            </value>
+            <value>
+                <fullName>Sick</fullName>
+                <default>false</default>
+                <label>Sick</label>
+            </value>
+            <value>
+                <fullName>Supportive Services Only</fullName>
+                <default>false</default>
+                <label>Supportive Services Only</label>
+            </value>
+            <value>
+                <fullName>Team Building</fullName>
+                <default>false</default>
+                <label>Teamwork</label>
+            </value>
+            <value>
+                <fullName>Time Management</fullName>
+                <default>false</default>
+                <label>Time Management</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Break</fullName>
+                <default>false</default>
+                <label>Unauthorized Break</label>
+            </value>
+            <value>
+                <fullName>Unprofessional conduct</fullName>
+                <default>false</default>
+                <label>Unprofessional conduct</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

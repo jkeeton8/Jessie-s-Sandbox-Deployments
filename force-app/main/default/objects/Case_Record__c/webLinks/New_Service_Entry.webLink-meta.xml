@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Service_Entry</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Record Service</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/ExpServiceLaunch?caseRecordId={!Case_Record__c.Id }&amp;programId={!Case_Record__c.ProgramId__c}&amp;caseRecordStatus={!Case_Record__c.Status__c}</url>
+</WebLink>

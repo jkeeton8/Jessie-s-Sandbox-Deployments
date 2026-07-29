@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Balance_Days_Applied__c</fullName>
+    <description>Totals the Number of Balance Days Applied captured on Write-Up&apos;s issued during Cleanslate.</description>
+    <label># Cleanslate Balance Days Applied</label>
+    <summarizedField>Incident__c.Balance_Days_Applied__c</summarizedField>
+    <summaryFilterItems>
+        <field>Incident__c.Issued_During__c</field>
+        <operation>equals</operation>
+        <value>Cleanslate Internship</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Incident__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Write-Up</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Incident__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

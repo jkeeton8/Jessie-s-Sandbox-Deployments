@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detected_Substances__c</fullName>
+    <label>Detected Substances</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alcohol</fullName>
+                <default>false</default>
+                <label>Alcohol</label>
+            </value>
+            <value>
+                <fullName>AMP - Amphetamines</fullName>
+                <default>false</default>
+                <label>AMP - Amphetamines</label>
+            </value>
+            <value>
+                <fullName>COC - Cocaine</fullName>
+                <default>false</default>
+                <label>COC - Cocaine</label>
+            </value>
+            <value>
+                <fullName>OPI - Opiates</fullName>
+                <default>false</default>
+                <label>OPI - Opiates</label>
+            </value>
+            <value>
+                <fullName>PCP - Phencyclidine</fullName>
+                <default>false</default>
+                <label>PCP - Phencyclidine</label>
+            </value>
+            <value>
+                <fullName>THC - Marijuana</fullName>
+                <default>false</default>
+                <label>THC - Marijuana</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

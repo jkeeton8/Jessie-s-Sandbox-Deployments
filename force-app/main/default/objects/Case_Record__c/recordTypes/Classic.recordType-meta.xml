@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classic</fullName>
+    <active>true</active>
+    <label>Classic</label>
+    <picklistValues>
+        <picklist>Accepted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Adequate_Dependent_Care__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Admissions_Identification_on_File__c</picklist>
+        <values>
+            <fullName>Birth Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver%27s License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Security Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Identification Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Advancement_Inactive_Reason__c</picklist>
+        <values>
+            <fullName>Independently working towards Advancement goals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Loss%2C Inactivated from Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Loss%2C Referred to Cara Connects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Loss%2C Referred to Recruitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Loss%2C Returned to Advanced Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No call%2C no show to Advancement meeting%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opted out of continuing Advancement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opted out of starting Advancement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reached Advancement goals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive to Advancement communication</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Advancement_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive%2C Cannot Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive%2C Option to Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Allowed_to_Return_After_Inactivation__c</picklist>
+        <values>
+            <fullName>No%2C barred from Cara Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C as Resource Only due to background</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C through any Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C through any Portal %28Send Inactivation Email%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Any_Sexual_Based_Convictions__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Arrested_Outside_of_Chicago_Cook_County__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Arrested_in_Chicago_Cook_County__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attended_Orientation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Background_Check_Result__c</picklist>
+        <values>
+            <fullName>Not Yet Reviewed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed %26 Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed %26 Inactivation to Follow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed %26 Needs Follow-Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Benefits__c</picklist>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement%2F401K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacation%2FSick</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bill_Code__c</picklist>
+        <values>
+            <fullName>Never True</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Often True</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sometimes True</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>COVID_Vaccination_Status__c</picklist>
+        <values>
+            <fullName>Fully Vaccinated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Vaccinated%2C Not Willing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Vaccinated%2C Would Consider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Vaccinated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefers Not to Say</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Can_Take_Lower_Salary__c</picklist>
+        <values>
+            <fullName>Check w%2F IDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cash_Handling_Experience__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Checking_Account_at_Needs_Assessment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Childcare_Consistently_Available__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Clean_Driving_Record__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cleanslate_Start_Date__c</picklist>
+        <values>
+            <fullName>2024-05-16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-06-13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-07-11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-07-18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-08-08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-08-15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-09-12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-09-19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-10-10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-10-17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-11-07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-11-14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-01-09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-01-16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-02-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-02-13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-03-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-03-13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-04-10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-04-17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-05-08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-05-15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-06-05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-06-12</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cohort_Type__c</picklist>
+        <values>
+            <fullName>Never True</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Often True</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sometimes True</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Committed_to__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Area__c</picklist>
+        <values>
+            <fullName>Albany Park %2814%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archer Heights %2857%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armour Square %2834%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashburn %2870%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auburn Gresham %2871%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austin %2825%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avalon Park %2845%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avondale %2821%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Cragin %2819%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverly %2872%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bridgeport %2860%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brighton Park %2858%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnside %2847%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calumet Heights %2848%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatham %2844%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Lawn %2866%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearing %2864%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Douglas %2835%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dunning %2817%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Garfield Park %2827%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Side %2852%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater %2877%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edison Park %289%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Englewood %2868%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Glen %2812%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuller Park %2837%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gage Park %2863%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garfield Ridge %2856%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Boulevard %2838%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Grand Crossing %2869%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hegewisch %2855%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hermosa %2820%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humboldt Park %2823%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyde Park %2841%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irving Park %2816%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jefferson Park %2811%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenwood %2839%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakeview %286%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Park %287%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Square %284%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logan Square %2822%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loop %2832%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower West Side %2831%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKinley Park %2859%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montclare %2818%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morgan Park %2875%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mount Greenwood %2874%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near North Side %288%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near South Side %2833%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near West Side %2828%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New City %2861%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Center %285%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Lawndale %2829%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Park %2813%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwood Park %2810%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Chicago - Aurora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Chicago - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%27Hare %2876%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland %2836%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portage Park %2815%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pullman %2850%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverdale %2854%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rogers Park %281%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland %2849%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Chicago %2846%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Deering %2851%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Lawndale %2830%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Shore %2843%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uptown %283%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Heights %2873%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Park %2840%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Elsdon %2862%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Englewood %2867%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Garfield Park %2826%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Lawn %2865%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Pullman %2853%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Ridge %282%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Town %2824%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodlawn %2842%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conga_Sign_Documentation_Exceptions__c</picklist>
+        <values>
+            <fullName>Contracts Packet %28WS D%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Packet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro Packet %28WS D and CL D%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Connects_Tracked__c</picklist>
+        <values>
+            <fullName>Connects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Connects</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_Birth_Date_Age_Documentation__c</picklist>
+        <values>
+            <fullName>Baptismal Certificate w%2F DOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Birth Certificate%2FHospital Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD-214 w%2F DOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver%27s License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal%2C State%2C or Local Gov ID Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Assistance%2FMedical Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Records%2FID Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Security Adm NUM Printout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Records</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_Photo_ID_on_File__c</picklist>
+        <values>
+            <fullName>Driver%27s License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Identification Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_Residency_Documentation__c</picklist>
+        <values>
+            <fullName>Current Utility Bill w%2F Name %26 Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Voter Reg Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver%27s License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Stamp Award Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing Authority Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landlord Statement%2FLease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter for Social Service Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter from Shelter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail-Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicaid%2FMedicare Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printout from other Gov Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Tax Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Assistance Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selective Service Registration Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State ID</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_SSN_Documentation__c</picklist>
+        <values>
+            <fullName>Pay Stub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Security Card%2FPrintout Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemp%2E Compensation Info Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W-2 Form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_Selective_Serv_Documentation__c</picklist>
+        <values>
+            <fullName>Contacted Selective Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to Reg Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable-Born before 1960</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable-Female Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selective Service Registration Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stamped PO Receipt of Reg</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contracts_Work_Auth_Documentation__c</picklist>
+        <values>
+            <fullName>Alien Registration Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baptismal Certificate w%2F DOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Birth Certificate%2FHospital Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combo of DL and Social Sec Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combo of State ID and Social Sec Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD-214 w%2F Place of Birth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foreign Passport w%2F Eligibility Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naturalization Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Passport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Convicted_Charged_Violent_Crime__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conviction_Category_for_Job_Matching__c</picklist>
+        <values>
+            <fullName>With convictions older than 7 yrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With convictions within past 7 yrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With no convictions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currently_fighting_any_open_case__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currently_on_Parole__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currently_on_Probation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_you_have_any_federal_convictions__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_you_have_any_warrants__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Domestic_Violence_Survivor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Driver_s_License_Status__c</picklist>
+        <values>
+            <fullName>Has Valid DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Valid DL%2C Can Obtain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Valid DL%2C Cannot Obtain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Education_Summary_for_Job_Order__c</picklist>
+        <values>
+            <fullName>Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bachelors or higher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GED%2FHS Diploma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No GED%2FHS Diploma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Eligible_for_Advancement_Job_Matching__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ever_Arrested_Charged_w_Crime__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ever_Convicted_of_a_Crime__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Felony_Last_7_Years__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Felony__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flagged__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Food_Insecurity_Lunch_Needs__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Formerly_Incarcerated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Has_Children__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Health_Insurance_Status__c</picklist>
+        <values>
+            <fullName>No Proof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Reported</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified with Affidavit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Health_Insurance_at_Intake__c</picklist>
+        <values>
+            <fullName>Insured through government program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No insurance at all</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private insurance %28not through a household member%27s employer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private insurance through a household member%27s employer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Highest_Milestone_Achievements__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Out Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformations Completed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Homelessness_Verified__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inactive_Reason__c</picklist>
+        <values>
+            <fullName>6th And%2For 7th Write Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement Inactivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflicting Employment%2FInterviews</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflicting School%2FTraining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Childcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Criminal Background%2FLegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Drug Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Integrity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missed Four Weeks of Recommitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCNS for Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCNS for Connects Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCNS for Internship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCNS%2FLate for Cara-Related Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact After Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact Prior to Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact While On Program Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opted Out of Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - See Inactivation Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placed %26 Retained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rule Violations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Threatening%2FViolent Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unprofessional Conduct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Computer_Skills__c</picklist>
+        <values>
+            <fullName>Basic Aptitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Aptitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate Aptitude</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_Fluency__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - See Progress Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Incarceration_Location__c</picklist>
+        <values>
+            <fullName>Cook County Department of Corrections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois Department of Corrections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mandatory_Attendance_Confirmation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marital_Status__c</picklist>
+        <values>
+            <fullName>Common Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divorced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Married</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widowed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mental_Health_Limitation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Misdemeanor_Last_7_Years__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Misdemeanor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OAI_tracked__c</picklist>
+        <values>
+            <fullName>No OAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Obstacle_Level__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>On_Electronic_Monitoring__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>On_the_Active_Sexual_Offender_Registry__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Onboarding_Preference__c</picklist>
+        <values>
+            <fullName>In-Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Onboarding_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Physical_Health_Limitation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Position_Verticals_for_Job_Matching__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Position_Verticals_of_Experience__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_Cohort_Location__c</picklist>
+        <values>
+            <fullName>Cara Southside Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown Campus</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Method_of_Communication__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Position_Vertical__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Site_Track__c</picklist>
+        <values>
+            <fullName>CAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVC%3A Co-Location</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Stage__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advancement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-Term Employment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Receiving_Income_Supports_at_Intake__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recently_Incarcerated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Status__c</picklist>
+        <values>
+            <fullName>Agency Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Health Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Participant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Aid Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walked-In</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Type__c</picklist>
+        <values>
+            <fullName>By phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In person</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reliable_Car_Access__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rent_Paid_By_at_Intake__c</picklist>
+        <values>
+            <fullName>Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter%2FRecovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resume_on_File__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Savings_Account_at_Needs_Assessment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scheduled_Program_Start_Date__c</picklist>
+        <values>
+            <fullName>2024-05-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-06-03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-07-08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-08-05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-09-09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-10-07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-11-04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-01-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-02-03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-03-03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-04-07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-05-05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-06-02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-12-02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025-12-07</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Position_Vertical__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seeking_Employment_Schedule__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Time Only - SSI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Send_Out_Eligible__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Send Out Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shift_Availability__c</picklist>
+        <values>
+            <fullName>First%2FDay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Second%2FEvenings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third%2FOvernight</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Signed_Connects_CoC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spent_Time_Incarcerated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospective Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Substance_Use_Status__c</picklist>
+        <values>
+            <fullName>No History of Dependency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Use %2F In Recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Use</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Recruitment_Initiative__c</picklist>
+        <values>
+            <fullName>Aon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHA Ogden Commons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTA Second Chance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CVI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pierce Direct Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebuild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPRING Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPRING Forward%2FCVI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Connectivity__c</picklist>
+        <values>
+            <fullName>Internet in Residence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Connectivity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Devices__c</picklist>
+        <values>
+            <fullName>Basic Cellphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Interests__c</picklist>
+        <values>
+            <fullName>CDL Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannabis Education %26 Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef Di Partie Certification Unionized Career through United Here Local 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Trades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drone Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flagger Certification and Painting %26 Plaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forklift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GED Courses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT - Digital Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT - Google Certifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Assistant%2FUrban Farm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TWIC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Track__c</picklist>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Cleanslate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Virtual_Community_Status__c</picklist>
+        <values>
+            <fullName>Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not on Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removed Due to Group Rule Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removed Due to Inactivation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ward_Verified__c</picklist>
+        <values>
+            <fullName>Contacted HUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Chicago Resident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

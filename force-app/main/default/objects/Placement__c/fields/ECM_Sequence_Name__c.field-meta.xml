@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Sequence_Name__c</fullName>
+    <description>ECMv2.1 field used by ECM in the creating the Placement sequence. Best practice is to keep this field as short as possible and to not include semi-colons (&apos;;&apos;). In addition, the field should always be based in part off of Job_Type__c for compatibility with the ECM Placement trigger logic.
+Original ECM field. Restore for unit test to pass: TEXT(Job_Type__c)</description>
+    <externalId>false</externalId>
+    <formula>if (not(isblank (Start_Date__c)), TEXT(Job_Type__c), NULL)</formula>
+    <label>ECM Sequence Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

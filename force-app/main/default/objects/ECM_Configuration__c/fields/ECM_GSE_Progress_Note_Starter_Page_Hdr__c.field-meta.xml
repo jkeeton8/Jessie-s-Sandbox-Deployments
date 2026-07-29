@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_GSE_Progress_Note_Starter_Page_Hdr__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&lt;apex:page controller=\&quot;ExpGroupServiceEntryController\&quot; sidebar=\&quot;false\&quot; renderAs=\&quot;{&quot; + &quot;!&quot; +&quot;renderAs&quot; +&quot;}\&quot;&gt;&quot;+ BR() 
++ &quot;&lt;apex:stylesheet value=\&quot;URLFOR($Resource.ExpResources, styleSheet)\&quot;/&gt;&quot;+ BR()
++ &quot;&lt;apex:form rendered=\&quot;{&quot; + &quot;!&quot; +&quot;renderAsPdf&quot;+ &quot;}\&quot;&gt;&quot; + BR()
++ &quot;&lt;c:ExpPdfPageHeader dateRange=\&quot;dateRange\&quot; orgLogoUrl=\&quot;URLFOR($Resource.ExpResources, &apos;ecm_logo_small.png&apos;)\&quot; /&gt;&quot; + BR() 
++ &quot;&lt;c:ExpPdfPageFooter /&gt;&quot; + BR() + BR()
++ &quot;&lt;!-- **** Based off of ECM Configuration: &quot;+Name+&quot; ****--&gt;&quot; +BR() + BR()
++ &quot;&lt;apex:repeat value=\&quot;{&quot; + &quot;!&quot; +&quot;controllerList&quot;+&quot;}\&quot; var=\&quot;m\&quot; &gt;&quot; + BR() + BR()</formula>
+    <label>ECM GSE Progress Note Starter Page Hdr</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

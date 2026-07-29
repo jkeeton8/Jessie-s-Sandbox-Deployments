@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticket_Category__c</fullName>
+    <label>Ticket Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Assistance with Conference Room Setup (meeting tech planning, projectors)</fullName>
+                <default>false</default>
+                <label>Assistance with Conference Room Setup (meeting tech planning, projectors)</label>
+            </value>
+            <value>
+                <fullName>Assistance with Copy Machines or Printers</fullName>
+                <default>false</default>
+                <label>Assistance with Copy Machines or Printers</label>
+            </value>
+            <value>
+                <fullName>Assistance with Doors Security (key fobs, door hours, security cameras)</fullName>
+                <default>false</default>
+                <label>Assistance with Doors Security (key fobs, door hours)</label>
+            </value>
+            <value>
+                <fullName>Assistance with Zoom, Teams</fullName>
+                <default>false</default>
+                <label>Assistance with Zoom, Teams</label>
+            </value>
+            <value>
+                <fullName>Broken Hardware</fullName>
+                <default>false</default>
+                <label>Broken Hardware</label>
+            </value>
+            <value>
+                <fullName>Business Cards</fullName>
+                <default>false</default>
+                <label>Business Cards</label>
+            </value>
+            <value>
+                <fullName>Cara Website Issue</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>Cara Website Issue</label>
+            </value>
+            <value>
+                <fullName>Catering Only</fullName>
+                <default>false</default>
+                <label>Catering Only</label>
+            </value>
+            <value>
+                <fullName>Certificate/Worksheet Merges or Photo Uploads</fullName>
+                <color>#6600CC</color>
+                <default>false</default>
+                <label>Certificate/Worksheet Merges or Photo Uploads</label>
+            </value>
+            <value>
+                <fullName>Conference Room Tech Assistance</fullName>
+                <default>false</default>
+                <label>Conference Room Tech Assistance</label>
+            </value>
+            <value>
+                <fullName>Connectivity (VPN/Shared Drive)</fullName>
+                <color>#66FF99</color>
+                <default>false</default>
+                <label>Connectivity (VPN/Shared Drive)</label>
+            </value>
+            <value>
+                <fullName>Data Maintenance</fullName>
+                <color>#333399</color>
+                <default>false</default>
+                <label>Data Maintenance</label>
+            </value>
+            <value>
+                <fullName>Desk Move Request</fullName>
+                <default>false</default>
+                <label>Desk Move Request</label>
+            </value>
+            <value>
+                <fullName>Documentation Support</fullName>
+                <color>#33FF33</color>
+                <default>false</default>
+                <label>Documentation Support</label>
+            </value>
+            <value>
+                <fullName>Event Feedback</fullName>
+                <default>false</default>
+                <label>Event Feedback</label>
+            </value>
+            <value>
+                <fullName>Event Idea</fullName>
+                <default>false</default>
+                <label>Event Idea</label>
+            </value>
+            <value>
+                <fullName>Facilities Cleanup</fullName>
+                <default>false</default>
+                <label>Facilities Cleanup</label>
+            </value>
+            <value>
+                <fullName>Facilities Maintenance</fullName>
+                <default>false</default>
+                <label>Facilities Maintenance</label>
+            </value>
+            <value>
+                <fullName>Facilities Tech Assistance</fullName>
+                <default>false</default>
+                <label>Facilities Tech Assistance</label>
+            </value>
+            <value>
+                <fullName>Fill Out a Customer/Vendor Form</fullName>
+                <default>false</default>
+                <label>Fill Out a Customer/Vendor Form</label>
+            </value>
+            <value>
+                <fullName>Interested in Joining or Learning More</fullName>
+                <default>false</default>
+                <label>Interested in Joining or Learning More</label>
+            </value>
+            <value>
+                <fullName>Interested in Leading an Event</fullName>
+                <default>false</default>
+                <label>Interested in Leading an Event</label>
+            </value>
+            <value>
+                <fullName>Marketing Materials Custom</fullName>
+                <default>false</default>
+                <label>Marketing Materials Custom</label>
+            </value>
+            <value>
+                <fullName>Marketing Materials Reorder</fullName>
+                <default>false</default>
+                <label>Marketing Materials Reorder</label>
+            </value>
+            <value>
+                <fullName>New Hire, Employee Termination, or Employee Update</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>New Hire, Employee Termination, or Employee Update</label>
+            </value>
+            <value>
+                <fullName>Office Equipment Request</fullName>
+                <default>false</default>
+                <label>Office Equipment Request</label>
+            </value>
+            <value>
+                <fullName>Office Supplies Request</fullName>
+                <default>false</default>
+                <label>Office Supplies Request</label>
+            </value>
+            <value>
+                <fullName>Other - Facilities</fullName>
+                <default>false</default>
+                <label>Other - Facilities</label>
+            </value>
+            <value>
+                <fullName>Other - Finance</fullName>
+                <default>false</default>
+                <label>Other - Finance</label>
+            </value>
+            <value>
+                <fullName>Other - IT</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Other - IT</label>
+            </value>
+            <value>
+                <fullName>Other IT Issues (excluding Salesforce)</fullName>
+                <default>false</default>
+                <label>Other IT Issues (excluding Salesforce)</label>
+            </value>
+            <value>
+                <fullName>Other - Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Other - Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Other - Salesforce</fullName>
+                <color>#6633FF</color>
+                <default>false</default>
+                <label>Other - Salesforce</label>
+            </value>
+            <value>
+                <fullName>Outlook Distribution List</fullName>
+                <color>#009900</color>
+                <default>false</default>
+                <label>Outlook Distribution List</label>
+            </value>
+            <value>
+                <fullName>Pay a Vendor Invoice</fullName>
+                <default>false</default>
+                <label>Pay a Vendor Invoice</label>
+            </value>
+            <value>
+                <fullName>Permissions (SharePoint/Shared Drive)</fullName>
+                <color>#006600</color>
+                <default>false</default>
+                <label>Permissions (SharePoint/Shared Drive)</label>
+            </value>
+            <value>
+                <fullName>Phishing/Spam</fullName>
+                <color>#336666</color>
+                <default>false</default>
+                <label>Phishing/Spam</label>
+            </value>
+            <value>
+                <fullName>Photo/Social Media Opportunity</fullName>
+                <default>false</default>
+                <label>Photo/Social Media Opportunity</label>
+            </value>
+            <value>
+                <fullName>Printer, Copier, or Phone Issues</fullName>
+                <color>#339999</color>
+                <default>false</default>
+                <label>Printer, Copier, or Phone Issues</label>
+            </value>
+            <value>
+                <fullName>Report/Metrics Request</fullName>
+                <color>#6666CC</color>
+                <default>false</default>
+                <label>Report/Metrics Request</label>
+            </value>
+            <value>
+                <fullName>Request a Conversation - Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Request a Conversation - Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Request a Conversation or New Feature</fullName>
+                <color>#9999FF</color>
+                <default>false</default>
+                <label>Request a Conversation or New Feature</label>
+            </value>
+            <value>
+                <fullName>Request an Invoice</fullName>
+                <default>false</default>
+                <label>Request an Invoice</label>
+            </value>
+            <value>
+                <fullName>Request Marketing Packets</fullName>
+                <default>false</default>
+                <label>Request Marketing Packets</label>
+            </value>
+            <value>
+                <fullName>Request Participant Gift Cards</fullName>
+                <default>false</default>
+                <label>Request Participant Gift Cards</label>
+            </value>
+            <value>
+                <fullName>Request Participant Petty Cash</fullName>
+                <default>false</default>
+                <label>Request Participant Petty Cash</label>
+            </value>
+            <value>
+                <fullName>Request Tech Support</fullName>
+                <color>#00CCCC</color>
+                <default>false</default>
+                <label>Request Tech Support</label>
+            </value>
+            <value>
+                <fullName>Room Setup</fullName>
+                <default>false</default>
+                <label>Room Setup</label>
+            </value>
+            <value>
+                <fullName>Room Setup &amp; Catering</fullName>
+                <default>false</default>
+                <label>Room Setup &amp; Catering</label>
+            </value>
+            <value>
+                <fullName>Security Footage Review</fullName>
+                <default>false</default>
+                <label>Security Footage Review</label>
+            </value>
+            <value>
+                <fullName>Shared Drive &amp; Sharepoint Issues</fullName>
+                <color>#006600</color>
+                <default>false</default>
+                <label>Shared Drive &amp; Sharepoint Issues</label>
+            </value>
+            <value>
+                <fullName>Staff Survey Creation Support</fullName>
+                <default>false</default>
+                <label>Staff Survey Creation Support</label>
+            </value>
+            <value>
+                <fullName>Submit/Update ACH Info</fullName>
+                <default>false</default>
+                <label>Submit/Update ACH Info</label>
+            </value>
+            <value>
+                <fullName>Submit an Expense Report</fullName>
+                <default>false</default>
+                <label>Submit an Expense Report</label>
+            </value>
+            <value>
+                <fullName>Submit Feedback on NIE</fullName>
+                <default>false</default>
+                <label>Submit Feedback on NIE</label>
+            </value>
+            <value>
+                <fullName>Video Conferencing Assistance</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Video Conferencing Assistance</label>
+            </value>
+            <value>
+                <fullName>Website Edit</fullName>
+                <default>false</default>
+                <label>Website Edit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Assistance with Conference Room Setup (meeting tech planning, projectors)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Assistance with Copy Machines or Printers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Assistance with Doors Security (key fobs, door hours, security cameras)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Assistance with Zoom, Teams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Other IT Issues (excluding Salesforce)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Onsite IT &amp; Tech Support</controllingFieldValue>
+            <valueName>Security Footage Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Catering Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Desk Move Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Facilities Cleanup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Facilities Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Office Equipment Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Office Supplies Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Room Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Operations</controllingFieldValue>
+            <valueName>Room Setup &amp; Catering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Salesforce &amp; Data</controllingFieldValue>
+            <valueName>Certificate/Worksheet Merges or Photo Uploads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Salesforce &amp; Data</controllingFieldValue>
+            <valueName>Data Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Salesforce &amp; Data</controllingFieldValue>
+            <valueName>Other - Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Salesforce &amp; Data</controllingFieldValue>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Report/Metrics Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions: Salesforce &amp; Data</controllingFieldValue>
+            <valueName>Request a Conversation or New Feature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Business Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Marketing Materials Custom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Marketing Materials Reorder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Other - Marketing &amp; Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Photo/Social Media Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Request a Conversation - Marketing &amp; Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Request Marketing Packets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing &amp; Communications</controllingFieldValue>
+            <valueName>Website Edit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Fill Out a Customer/Vendor Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Other - Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Pay a Vendor Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Request an Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Request Participant Gift Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Request Participant Petty Cash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Submit/Update ACH Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; Accounting</controllingFieldValue>
+            <valueName>Submit an Expense Report</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

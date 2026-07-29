@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_Topic__c</fullName>
+    <label>Topic</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Culture</fullName>
+                <default>false</default>
+                <label>Culture</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Model</fullName>
+                <default>false</default>
+                <label>Service Delivery Model</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Professional Development</fullName>
+                <default>false</default>
+                <label>Professional Development</label>
+            </value>
+            <value>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+                <label>Engagement</label>
+            </value>
+            <value>
+                <fullName>Expansion</fullName>
+                <default>false</default>
+                <label>Expansion</label>
+            </value>
+            <value>
+                <fullName>Childcare</fullName>
+                <default>false</default>
+                <label>Childcare</label>
+            </value>
+            <value>
+                <fullName>Financial Assistance</fullName>
+                <default>false</default>
+                <label>Financial Assistance</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Self-Care</fullName>
+                <default>false</default>
+                <label>Health &amp; Self-Care</label>
+            </value>
+            <value>
+                <fullName>Housing Support</fullName>
+                <default>false</default>
+                <label>Housing Support</label>
+            </value>
+            <value>
+                <fullName>Learning Tools</fullName>
+                <default>false</default>
+                <label>Learning Tools</label>
+            </value>
+            <value>
+                <fullName>Remote Working</fullName>
+                <default>false</default>
+                <label>Remote Working</label>
+            </value>
+            <value>
+                <fullName>Resource List</fullName>
+                <default>false</default>
+                <label>Resource List</label>
+            </value>
+            <value>
+                <fullName>Unemployment Benefits</fullName>
+                <default>false</default>
+                <label>Unemployment Benefits</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Volunteer or Donate</fullName>
+                <default>false</default>
+                <label>Volunteer or Donate</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

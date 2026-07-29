@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_to_Advancement</fullName>
+    <columns>NAME</columns>
+    <columns>Advancement_Status__c</columns>
+    <columns>Eligible_for_Advancement_Job_Matching__c</columns>
+    <columns>Program_Start_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Program_Stage__c</columns>
+    <columns>Employment_Status__c</columns>
+    <columns>Highest_Milestone_Achievements__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case_Record__c.Classic</value>
+    </filters>
+    <filters>
+        <field>Advancement_Status__c</field>
+        <operation>equals</operation>
+        <value>Referred</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>Referred to Advancement, Classic</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Career_Advancement_Manager</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending (Waiting On Requester Response)</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Closed - Moved to Project (Active)</fullName>
+                <default>false</default>
+                <label>Closed - Moved to Project (Active)</label>
+            </value>
+            <value>
+                <fullName>Closed - Moved to Project (Inactive)</fullName>
+                <default>false</default>
+                <label>Closed - Moved to Project (Inactive)</label>
+            </value>
+            <value>
+                <fullName>Hold</fullName>
+                <default>false</default>
+                <label>Hold</label>
+            </value>
+            <value>
+                <fullName>With Craftsman</fullName>
+                <default>false</default>
+                <label>With Craftsman</label>
+            </value>
+            <value>
+                <fullName>Closed - Incomplete</fullName>
+                <default>false</default>
+                <label>Closed - Incomplete</label>
+            </value>
+            <value>
+                <fullName>With NIE</fullName>
+                <default>false</default>
+                <label>With NIE</label>
+            </value>
+            <value>
+                <fullName>Closed - Moved to Project</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed - Moved to Project</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

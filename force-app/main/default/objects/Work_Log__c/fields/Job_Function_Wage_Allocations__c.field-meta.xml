@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Function_Wage_Allocations__c</fullName>
+    <externalId>false</externalId>
+    <formula>case (Job_Function__c,
+&quot;Litter Abatement&quot;,&quot;LIT&quot;,
+&quot;Landscaping&quot;, &quot;LAN&quot;,
+&quot;Snow Removal&quot;, &quot;SNO&quot;,
+&quot;Special Event&quot;, &quot;SPEV&quot;,
+&quot;Service&quot;, &quot;SER&quot;,
+&quot;Graffiti&quot;, &quot;GRA&quot;,
+&quot;Pressure Wash&quot;, &quot;PRW&quot;,
+&quot;CLSL&quot;, &quot;CLSL&quot;,
+&quot;Janitorial (Interior)&quot;, &quot;HOU&quot;,
+&quot;CC2 Code Needed&quot;)</formula>
+    <label>Job Function, Wage Allocations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

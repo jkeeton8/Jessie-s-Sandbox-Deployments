@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zodiac_Sign__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(AND(MONTH( Birthday__c ) = 3, DAY(Birthday__c ) &gt; 20),AND(MONTH(Birthday__c ) = 4, DAY(Birthday__c ) &lt; 20)), &quot;Aries&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 4, DAY(Birthday__c ) &gt; 19),AND(MONTH(Birthday__c ) = 5, DAY(Birthday__c ) &lt; 21)), &quot;Taurus&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 5, DAY(Birthday__c ) &gt; 20),AND(MONTH(Birthday__c ) = 6, DAY(Birthday__c ) &lt; 21)), &quot;Gemini&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 6, DAY(Birthday__c ) &gt; 20),AND(MONTH(Birthday__c ) = 7, DAY(Birthday__c ) &lt; 23)), &quot;Cancer&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 7, DAY(Birthday__c ) &gt; 22),AND(MONTH(Birthday__c ) = 8, DAY(Birthday__c ) &lt; 23)), &quot;Leo&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 8, DAY(Birthday__c ) &gt; 22),AND(MONTH(Birthday__c ) = 9, DAY(Birthday__c ) &lt; 23)), &quot;Virgo&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 9, DAY(Birthday__c ) &gt; 22),AND(MONTH(Birthday__c ) = 10, DAY(Birthday__c ) &lt; 23)), &quot;Libra&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 10, DAY(Birthday__c ) &gt; 22),AND(MONTH(Birthday__c ) = 11, DAY(Birthday__c ) &lt; 21)), &quot;Scorpio&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 11, DAY(Birthday__c ) &gt; 21),AND(MONTH(Birthday__c ) = 12, DAY(Birthday__c ) &lt; 22)), &quot;Sagittarius&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 12, DAY(Birthday__c ) &gt; 21),AND(MONTH(Birthday__c ) = 1, DAY(Birthday__c ) &lt; 20)), &quot;Capricorn&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 1, DAY(Birthday__c ) &gt; 19),AND(MONTH(Birthday__c ) = 2, DAY(Birthday__c ) &lt; 19)), &quot;Aquarius&quot;,
+
+IF(OR(AND(MONTH(Birthday__c ) = 2, DAY(Birthday__c ) &gt; 18),AND(MONTH(Birthday__c ) = 3, DAY(Birthday__c ) &lt; 21)), &quot;Pisces&quot;,
+
+NULL))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Zodiac Sign</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

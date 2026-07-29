@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedJobOrder__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This will be used in the new Employment Service Job Meeting Service Entry.</description>
+    <label>Related Job Order</label>
+    <referenceTo>Job_Order__c</referenceTo>
+    <relationshipLabel>Service Entries</relationshipLabel>
+    <relationshipName>Service_Entries</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

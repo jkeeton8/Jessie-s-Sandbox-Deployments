@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Category__c</fullName>
+    <description>From ARIES db</description>
+    <inlineHelpText>ARIES Direct Service field.</inlineHelpText>
+    <label>Service Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+                <label>Mental Health</label>
+            </value>
+            <value>
+                <fullName>Substance Use</fullName>
+                <default>false</default>
+                <label>Substance Use</label>
+            </value>
+            <value>
+                <fullName>Incident Report</fullName>
+                <default>false</default>
+                <label>Incident Report</label>
+            </value>
+            <value>
+                <fullName>Adherence</fullName>
+                <default>false</default>
+                <label>Adherence</label>
+            </value>
+            <value>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+                <label>Administrative</label>
+            </value>
+            <value>
+                <fullName>Client Contact</fullName>
+                <default>false</default>
+                <label>Client Contact</label>
+            </value>
+            <value>
+                <fullName>Education/Training</fullName>
+                <default>false</default>
+                <label>Education/Training</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Family/Social Support</fullName>
+                <default>false</default>
+                <label>Family/Social Support</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Health Education</fullName>
+                <default>false</default>
+                <label>Health Education</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Impressions</fullName>
+                <default>false</default>
+                <label>Impressions</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Nutrition</fullName>
+                <default>false</default>
+                <label>Nutrition</label>
+            </value>
+            <value>
+                <fullName>Presenting Problem</fullName>
+                <default>false</default>
+                <label>Presenting Problem</label>
+            </value>
+            <value>
+                <fullName>Rick Reduction</fullName>
+                <default>false</default>
+                <label>Rick Reduction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

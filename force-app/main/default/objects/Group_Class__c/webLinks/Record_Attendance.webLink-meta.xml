@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Attendance</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Record Attendance</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/DEMOGroupServiceEntry1?ecmConfigId=a0Zd0000002chAWEAY&amp;ecmSAId=a0ad0000006iKiEAAU&amp;groupClassId=a0ld0000003xgnIAAQ&amp;programId=a0qd0000001FlprAAC</url>
+</WebLink>

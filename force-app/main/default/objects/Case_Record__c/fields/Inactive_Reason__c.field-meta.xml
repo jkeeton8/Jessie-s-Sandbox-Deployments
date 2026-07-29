@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Reason__c</fullName>
+    <label>Inactive Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conflicting Employment/Interviews</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Conflicting Employment/Interviews</label>
+            </value>
+            <value>
+                <fullName>Conflicting School/Training</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Conflicting School/Training</label>
+            </value>
+            <value>
+                <fullName>Issues - Childcare</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Issues - Childcare</label>
+            </value>
+            <value>
+                <fullName>Issues - Criminal Background/Legal</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Issues - Criminal Background/Legal</label>
+            </value>
+            <value>
+                <fullName>Issues - Drug Test</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Issues - Drug Test</label>
+            </value>
+            <value>
+                <fullName>Issues - Housing</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Issues - Housing</label>
+            </value>
+            <value>
+                <fullName>Issues - Medical</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Issues - Medical</label>
+            </value>
+            <value>
+                <fullName>Job Loss</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Job Loss</label>
+            </value>
+            <value>
+                <fullName>Lack of Integrity</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Lack of Integrity</label>
+            </value>
+            <value>
+                <fullName>Missed Four Weeks of Recommitment</fullName>
+                <color>#FF99FF</color>
+                <default>false</default>
+                <label>Missed Four Weeks of Recommitment</label>
+            </value>
+            <value>
+                <fullName>NCNS/Late for Cara-Related Appointment</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>NCNS/Late for Cara-Related Appointment</label>
+            </value>
+            <value>
+                <fullName>NCNS for Class</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>NCNS for Class</label>
+            </value>
+            <value>
+                <fullName>NCNS for Connects Assignment</fullName>
+                <default>false</default>
+                <label>NCNS for Connects Assignment</label>
+            </value>
+            <value>
+                <fullName>NCNS for Internship</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>NCNS for Internship</label>
+            </value>
+            <value>
+                <fullName>No Contact After Employment</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>No Contact After Employment</label>
+            </value>
+            <value>
+                <fullName>No Contact Prior to Class</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>No Contact Prior to Class</label>
+            </value>
+            <value>
+                <fullName>No Contact While On Program Hold</fullName>
+                <color>#8F6429</color>
+                <default>false</default>
+                <label>No Contact While On Program Hold</label>
+            </value>
+            <value>
+                <fullName>Opted Out of Program</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>Opted Out of Program</label>
+            </value>
+            <value>
+                <fullName>Unprofessional Conduct</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Unprofessional Conduct</label>
+            </value>
+            <value>
+                <fullName>Rule Violations</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Rule Violations</label>
+            </value>
+            <value>
+                <fullName>Placed &amp; Retained</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Placed &amp; Retained</label>
+            </value>
+            <value>
+                <fullName>Advancement Inactivation</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Advancement Inactivation</label>
+            </value>
+            <value>
+                <fullName>Other - See Inactivation Note</fullName>
+                <color>#999999</color>
+                <default>false</default>
+                <label>Other - See Inactivation Note</label>
+            </value>
+            <value>
+                <fullName>Threatening/Violent Behavior</fullName>
+                <default>false</default>
+                <label>Threatening/Violent Behavior</label>
+            </value>
+            <value>
+                <fullName>6th And/or 7th Write Up</fullName>
+                <default>false</default>
+                <label>6th And/or 7th Write Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

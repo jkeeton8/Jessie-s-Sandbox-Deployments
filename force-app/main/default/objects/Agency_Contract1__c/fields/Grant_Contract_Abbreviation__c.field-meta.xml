@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Contract_Abbreviation__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( RecordType.Name = &quot;Funding Contract&quot;,
+
+Case (Grant_Contract_Type__c,
+&quot;Neighborhood Cleanup&quot;,&quot;DFSS-NCU&quot;,
+&quot;Dignity of Choice&quot;,&quot;DHS-DOC&quot;,
+&quot;Covenant House&quot;, &quot;Covenant&quot;, 
+&quot;DHS - FSE&amp;T&quot;, &quot;DHS&quot;,
+&quot;DHS - TANF&quot;, &quot;TANF&quot;,
+&quot;DHS - SNAP to Success&quot;, &quot;SNAP to Success&quot;,
+&quot;CDBG EP&amp;P&quot;, &quot;CDBG-EP&amp;P&quot;, 
+&quot;Traditional&quot;, &quot;CDBG-TRD&quot;,
+&quot;CSBG - TJ&quot;, &quot;CSBG-TJ&quot;,
+&quot;CDBG - CARES Act&quot;, &quot;CDBG - CARES Act&quot;,
+&quot;CSBG - CARES Act&quot;, &quot;CSBG - CARES Act&quot;,
+&quot;LISC - CDBG&quot;, &quot;LISC-CDBG&quot;,
+&quot;CDBG T&amp;P&quot;, &quot;CDBG-T&amp;P&quot;,
+&quot;CDBG Aurora&quot;, &quot;CDBG Aurora&quot;,
+&quot;Job Training and Economic Development&quot;, &quot;DCEO-TRD&quot;,
+&quot;Training for Tomorrow&quot;, &quot;DCEO-TFT&quot;,
+&quot;Digital Divide&quot;, &quot;DCEO-DD&quot;,
+&quot;Eleanor Foundation Grant (cohort 1)&quot;, &quot;ELEANOR (1)&quot;,
+&quot;Eleanor Foundation Grant (cohort 2)&quot;, &quot;ELEANOR (2)&quot;,
+&quot;Eleanor Foundation Grant (cohort 3)&quot;, &quot;ELEANOR (3)&quot;,
+&quot;Chicago Foundation for Women&quot;, &quot;CFW&quot;,
+&quot;TIF - Hyde Park&quot;, &quot;TIF-HP&quot;,
+&quot;TIF - 24th Ward&quot;, &quot;TIF-24th&quot;,
+&quot;Corporate-Transitional Jobs for Ex-Offenders&quot;, &quot;CORP-TJX&quot;,
+&quot;Work Services-Traditional&quot;, &quot;WS-T&quot;,
+&quot;No grant eligibility&quot;, &quot;NONE&quot;, 
+&quot;MOWD Transitional Jobs&quot;, &quot;MOWD-TJ&quot;, 
+&quot;Dept. of General Services&quot;, &quot;DGS&quot;, 
+&quot;Community Services Block Grant - T&amp;P&quot;, &quot;CSBG-T&amp;P&quot;, 
+&quot;Workforce Investment Act - Adult&quot;, &quot;WIA&quot;, 
+&quot;TIF - Quad Communities&quot;, &quot;TIF-QC&quot;,
+&quot;Bank One&quot;, &quot;Bank One&quot;, 
+&quot;EPIC&quot;, &quot;EPIC&quot;,
+&quot;REDF&quot;, &quot;REDF&quot;,
+&quot;Rebuild&quot;, &quot;Rebuild&quot;,
+&quot;No abbreviation assigned&quot;),
+
+text (Customer_Name__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Grant/Contract Abbreviation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

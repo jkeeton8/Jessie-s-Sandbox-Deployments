@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Conga_Sign</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Conga Composer &amp; Conga Sign</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Connects_Worker_Time__c.Id}
+&amp;ReportId=[SendOut]00Of30000058wTD?pv0={!Connects_Worker_Time__c.Id}
+&amp;csvisible=1
+&amp;CSRecipient1={!Placement__c.Contact_ID__c}
+&amp;CSRecipient2={!Placement__c.Supervisor_NameId__c}
+&amp;CSRoutingType=SERIAL
+&amp;TemplateGroup=Connects
+&amp;OFN=&quot;Connects Timesheet Week of&quot;+{!Connects_Worker_Time__c.Week_Beginning__c}</url>
+</WebLink>

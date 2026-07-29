@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Locked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Whether or not this configuration can be changed. A configuration becomes locked as soon as any outcome associated with it is locked.</description>
+    <inlineHelpText>Whether or not this configuration can be changed. A configuration becomes locked as soon as any outcome associated with it is locked.</inlineHelpText>
+    <label>Is Locked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

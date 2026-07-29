@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hot_Job__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is to indicate that this job is in demand enough to be shared for employment service team members.</description>
+    <inlineHelpText>This is to indicate that this job is in demand enough to be shared for employment service team members. Note: Only stays &quot;Hot&quot; for 14 days.</inlineHelpText>
+    <label>Hot Job</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Class_Type__c</fullName>
+    <label>Group/Class Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Foundations Cohort Workshop</fullName>
+                <default>false</default>
+                <label>Foundations Cohort Workshop</label>
+            </value>
+            <value>
+                <fullName>Leadership Workshop</fullName>
+                <default>false</default>
+                <label>Leadership Workshop</label>
+            </value>
+            <value>
+                <fullName>Core Training Series</fullName>
+                <default>false</default>
+                <label>Core Training Series</label>
+            </value>
+            <value>
+                <fullName>Advanced Training</fullName>
+                <default>false</default>
+                <label>Advanced Training</label>
+            </value>
+            <value>
+                <fullName>Branded/Partner Training</fullName>
+                <default>false</default>
+                <label>Branded/Partner Training</label>
+            </value>
+            <value>
+                <fullName>Corporate Service Day</fullName>
+                <default>false</default>
+                <label>Corporate Service Day</label>
+            </value>
+            <value>
+                <fullName>Employment Workshop</fullName>
+                <default>false</default>
+                <label>Employment Workshop</label>
+            </value>
+            <value>
+                <fullName>Employment Video</fullName>
+                <default>false</default>
+                <label>Employment Video</label>
+            </value>
+            <value>
+                <fullName>On-Campus Group</fullName>
+                <default>false</default>
+                <label>On-Campus Group</label>
+            </value>
+            <value>
+                <fullName>Orientation/Onboarding</fullName>
+                <default>false</default>
+                <label>Orientation/Onboarding</label>
+            </value>
+            <value>
+                <fullName>Adelante</fullName>
+                <default>false</default>
+                <label>Adelante</label>
+            </value>
+            <value>
+                <fullName>Cara Accelerator Pathway</fullName>
+                <default>false</default>
+                <label>Cara Accelerator Pathway</label>
+            </value>
+            <value>
+                <fullName>Pre-Cohort Workshop</fullName>
+                <default>false</default>
+                <label>Pre-Cohort Workshop</label>
+            </value>
+            <value>
+                <fullName>Intro Into Leadership</fullName>
+                <default>false</default>
+                <label>Intro Into Leadership</label>
+            </value>
+            <value>
+                <fullName>Leadership - Employment Services Team</fullName>
+                <default>false</default>
+                <label>Leadership - Employment Services Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

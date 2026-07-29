@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Contract_Type__c</fullName>
+    <label>Grant/Contract Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>CDBG Aurora</fullName>
+                <default>false</default>
+                <label>CDBG Aurora</label>
+            </value>
+            <value>
+                <fullName>CDBG - CARES Act</fullName>
+                <default>false</default>
+                <label>CDBG - CARES Act</label>
+            </value>
+            <value>
+                <fullName>CDBG EP&amp;P</fullName>
+                <default>false</default>
+                <label>CDBG EP&amp;P</label>
+            </value>
+            <value>
+                <fullName>CDBG T&amp;P</fullName>
+                <default>false</default>
+                <label>CDBG T&amp;P</label>
+            </value>
+            <value>
+                <fullName>Chicago Foundation for Women</fullName>
+                <default>false</default>
+                <label>Chicago Foundation for Women</label>
+            </value>
+            <value>
+                <fullName>Corporate-Transitional Jobs for Ex-Offenders</fullName>
+                <default>false</default>
+                <label>Corporate-Transitional Jobs for Ex-Offenders</label>
+            </value>
+            <value>
+                <fullName>Covenant House</fullName>
+                <default>false</default>
+                <label>Covenant House</label>
+            </value>
+            <value>
+                <fullName>CSBG - CARES Act</fullName>
+                <default>false</default>
+                <label>CSBG - CARES Act</label>
+            </value>
+            <value>
+                <fullName>CSBG - TJ</fullName>
+                <default>false</default>
+                <label>CSBG - TJ</label>
+            </value>
+            <value>
+                <fullName>DHS - FSE&amp;T</fullName>
+                <default>false</default>
+                <label>DHS - FSE&amp;T</label>
+            </value>
+            <value>
+                <fullName>DHS - SNAP to Success</fullName>
+                <default>false</default>
+                <label>DHS - SNAP to Success</label>
+            </value>
+            <value>
+                <fullName>DHS - TANF</fullName>
+                <default>false</default>
+                <label>DHS - TANF</label>
+            </value>
+            <value>
+                <fullName>Digital Divide</fullName>
+                <default>false</default>
+                <label>Digital Divide</label>
+            </value>
+            <value>
+                <fullName>Dignity of Choice</fullName>
+                <default>false</default>
+                <label>Dignity of Choice</label>
+            </value>
+            <value>
+                <fullName>Eleanor Foundation Grant (cohort 1)</fullName>
+                <default>false</default>
+                <label>Eleanor Foundation Grant (cohort 1)</label>
+            </value>
+            <value>
+                <fullName>Eleanor Foundation Grant (cohort 2)</fullName>
+                <default>false</default>
+                <label>Eleanor Foundation Grant (cohort 2)</label>
+            </value>
+            <value>
+                <fullName>Eleanor Foundation Grant (cohort 3)</fullName>
+                <default>false</default>
+                <label>Eleanor Foundation Grant (cohort 3)</label>
+            </value>
+            <value>
+                <fullName>EPIC</fullName>
+                <default>false</default>
+                <label>EPIC</label>
+            </value>
+            <value>
+                <fullName>Job Training and Economic Development</fullName>
+                <default>false</default>
+                <label>Job Training and Economic Development</label>
+            </value>
+            <value>
+                <fullName>LISC - CDBG</fullName>
+                <default>false</default>
+                <label>LISC - CDBG</label>
+            </value>
+            <value>
+                <fullName>Neighborhood Cleanup</fullName>
+                <default>false</default>
+                <label>Neighborhood Cleanup</label>
+            </value>
+            <value>
+                <fullName>No grant eligibility</fullName>
+                <default>false</default>
+                <label>No grant eligibility</label>
+            </value>
+            <value>
+                <fullName>Rebuild</fullName>
+                <default>false</default>
+                <label>Rebuild</label>
+            </value>
+            <value>
+                <fullName>REDF</fullName>
+                <default>false</default>
+                <label>REDF</label>
+            </value>
+            <value>
+                <fullName>SPRING Forward</fullName>
+                <default>false</default>
+                <label>SPRING Forward</label>
+            </value>
+            <value>
+                <fullName>TIF - 24th Ward</fullName>
+                <default>false</default>
+                <label>TIF - 24th Ward</label>
+            </value>
+            <value>
+                <fullName>TIF - Hyde Park</fullName>
+                <default>false</default>
+                <label>TIF - Hyde Park</label>
+            </value>
+            <value>
+                <fullName>Traditional</fullName>
+                <default>false</default>
+                <label>Traditional</label>
+            </value>
+            <value>
+                <fullName>Training for Tomorrow</fullName>
+                <default>false</default>
+                <label>Training for Tomorrow</label>
+            </value>
+            <value>
+                <fullName>Work Services-Traditional</fullName>
+                <default>false</default>
+                <label>Work Services-Traditional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

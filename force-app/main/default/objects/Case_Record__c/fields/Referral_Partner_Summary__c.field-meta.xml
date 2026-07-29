@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Partner_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (not (isblank (Referring_Organization__c)), Referring_Organization__r.Name,
+
+if (not (isblank (Legacy_Referring_Organization__c)), Legacy_Referring_Organization__c,
+
+if (not (isblank (Referring_Contact__c)), Referring_Contact__r.Client_Full_Name__c,
+
+if (not (isblank (Legacy_Referring_Contact_Access__c)), Legacy_Referring_Contact_Access__c, 
+
+NULL))))</formula>
+    <label>Referral Partner Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

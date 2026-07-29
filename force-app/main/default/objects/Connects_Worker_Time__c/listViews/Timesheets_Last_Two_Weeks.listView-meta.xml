@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timesheets_Last_Two_Weeks</fullName>
+    <columns>NAME</columns>
+    <columns>Send_Out_Employment__c</columns>
+    <columns>Week_Beginning__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Week_Beginning__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>N_WEEKS_AGO:3</value>
+    </filters>
+    <label>Timesheets, Last Two Weeks</label>
+    <language>en_US</language>
+</ListView>

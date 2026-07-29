@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CEP_New_Hiring_Level_Obtained</fullName>
+        <description>CEP New Hiring Level Obtained</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>croehri@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>eross@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/New_Hiring_Level_Obtained</template>
+    </alerts>
+    <alerts>
+        <fullName>Connects_New_Service_Agreement_Alert</fullName>
+        <ccEmails>ar@carachicago.org</ccEmails>
+        <description>Connects New Service Agreement Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>TCP_Staffing</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>pmurray@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Connects_Templates/Connects_New_Service_Agreement_Alert</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Account_Trading_Currency_is_USD</fullName>
+        <field>c2g__CODAAccountTradingCurrency__c</field>
+        <formula>&quot;USD&quot;</formula>
+        <name>Account Trading Currency is USD</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Base_Date_1_is_Invoice_Date</fullName>
+        <field>c2g__CODABaseDate1__c</field>
+        <literalValue>Invoice Date</literalValue>
+        <name>Base Date 1 is Invoice Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Bucket_Revenue_Equals_True</fullName>
+        <field>Bucket_Revenue__c</field>
+        <literalValue>1</literalValue>
+        <name>Bucket Revenue Equals True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Days_Offset_1_is_15</fullName>
+        <field>c2g__CODADaysOffset1__c</field>
+        <formula>15</formula>
+        <name>Days Offset 1 is 15</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Days_Offset_1_is_30</fullName>
+        <field>c2g__CODADaysOffset1__c</field>
+        <formula>30</formula>
+        <name>Days Offset 1 is 30</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Household_Account_Owner_to_Shikha_Jain</fullName>
+        <field>OwnerId</field>
+        <lookupValue>tharper@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Household Account Owner to Tara Harper</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ind_Donor_Segment_to_00_Programs_Only</fullName>
+        <field>Individual_Donor_Segment__c</field>
+        <literalValue>00 - Programs Only</literalValue>
+        <name>Ind Donor Segment to 00 - Programs Only</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ind_Donor_Segment_to_6_Joe_Public</fullName>
+        <field>Individual_Donor_Segment__c</field>
+        <literalValue>6 - Joe Public</literalValue>
+        <name>Ind Donor Segment to 6 - Joe Public</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sales_Tax_Status_is_Exempt_1</fullName>
+        <field>fferpcore__SalesTaxStatus__c</field>
+        <literalValue>Exempt</literalValue>
+        <name>Sales Tax Status is Exempt #1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sales_Tax_Status_is_Exempt_2</fullName>
+        <field>c2g__CODASalesTaxStatus__c</field>
+        <literalValue>Exempt</literalValue>
+        <name>Sales Tax Status is Exempt #2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Segment_Owner_Review_Date_to_Today</fullName>
+        <field>Owner_Segment_Review_Date__c</field>
+        <formula>today()</formula>
+        <name>Segment/Owner Review Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Description_1</fullName>
+        <field>c2g__CODADescription1__c</field>
+        <formula>&quot;Net 15, after 30 5% fee&quot;</formula>
+        <name>Set Description 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Stage_to_Traction</fullName>
+        <field>Lead_Stage__c</field>
+        <literalValue>Traction</literalValue>
+        <name>Update Lead Stage to Traction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Org_Owner_to_Cara</fullName>
+        <field>OwnerId</field>
+        <lookupValue>cap@thecaraprogram.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Org Owner to Cara</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Org_Owner_to_Eftiola_Trebicka</fullName>
+        <field>OwnerId</field>
+        <lookupValue>aadibe@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Org Owner to Eftiola Trebicka</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Org_Owner_to_Lisa_Schreck</fullName>
+        <field>OwnerId</field>
+        <lookupValue>lschreck@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Org Owner to Lisa Schreck</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Org_Owner_to_Robyn_Lustbader</fullName>
+        <field>OwnerId</field>
+        <lookupValue>cara@ctgclients.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Org Owner to Robyn Lustbader</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Org_Owner_to_Tara_Harper</fullName>
+        <field>OwnerId</field>
+        <lookupValue>tharper@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Update Org Owner to Tara Harper</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Cara Plus Partner</fullName>
+        <actions>
+            <name>Update_Lead_Stage_to_Traction</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Cara_Plus_Partner__c</field>
+            <operation>equals</operation>
+            <value>Affiliate,Practitioner,Employer</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cleanslate Active Customer%2C Bucket Revenue</fullName>
+        <actions>
+            <name>Bucket_Revenue_Equals_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.ParentId</field>
+            <operation>equals</operation>
+            <value>Big Buzz Idea Group,Cushman &amp; Wakefield,Hunt Commercial Group,McCaffery Interests,Mid-America Asset Management,Sterling Bay,The Habitat Company,Cook County Land Bank Authority</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.New_Customer_Type__c</field>
+            <operation>includes</operation>
+            <value>Cleanslate</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Connects Service Agreement%2C Send Email Alert</fullName>
+        <actions>
+            <name>Connects_New_Service_Agreement_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.New_Customer_Type__c</field>
+            <operation>includes</operation>
+            <value>Cara Connects</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.CreatedById</field>
+            <operation>notContain</operation>
+            <value>Alison</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Household Org%2C Active Cleanslate Customer</fullName>
+        <actions>
+            <name>Days_Offset_1_is_30</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Description_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Household Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.New_Customer_Type__c</field>
+            <operation>includes</operation>
+            <value>Cleanslate</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Household Org%2C FFA Controls</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Household Account</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Trading_Currency_is_USD</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Base_Date_1_is_Invoice_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Days_Offset_1_is_15</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Sales_Tax_Status_is_Exempt_1</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Sales_Tax_Status_is_Exempt_2</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

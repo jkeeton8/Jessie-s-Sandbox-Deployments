@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emerson_Evaluation</fullName>
+    <active>true</active>
+    <description>General evaluation form created in March 2017 for use across various CRED internship opportunities, based on SOE competencies</description>
+    <label>CRED Evaluation</label>
+    <picklistValues>
+        <picklist>Competencies_Demonstrated__c</picklist>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competencies_Need_Improvement__c</picklist>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Red_Flag_Type__c</picklist>
+        <values>
+            <fullName>Health Concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Instability</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>In-Person Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Interview</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Would_Hire__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

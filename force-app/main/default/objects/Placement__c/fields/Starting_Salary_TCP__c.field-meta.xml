@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Starting_Salary_TCP__c</fullName>
+    <formula>Starting_Wage__c *  Starting_Hours__c *52</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is auto-calculated by taking the &apos;Starting Wage&apos; x &apos;Starting Hours&apos; x 52. If you have annual salary info but not &apos;Starting Wage&apos;, divide the salary by the &apos;Starting Hours&apos; per week and then divide by 52. Enter than value into &apos;Starting Wage&apos;.</inlineHelpText>
+    <label>Starting Salary</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Verification_Months__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( MONTH(Income_Verification_Date__c) = 10, &quot;April; May; June; July; August; September; October&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 11, &quot;May; June; July; August; September; October; November&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 12, &quot;June; July; August; September; October; November; December&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 1, &quot;July; August; September; October; November; December; January&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 2, &quot;August; September; October; November; December; January; February&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 3, &quot;September; October; November; December; January; February; March&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 4, &quot;October; November; December; January; February; March; April&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 5, &quot;November; December; January; February; March; April; May&quot;,
+
+IF( MONTH(Income_Verification_Date__c) = 6, &quot;December; January; February; March; April; May; June&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 7, &quot;January; February; March; April; May; June; July&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 8, &quot;February; March; April; May; June; July; August&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 9, &quot;March; April; May; June; July; August; September&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 10, &quot;April; May; June; July; August; September; October&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 11, &quot;May; June; July; August; September; October; November&quot;, 
+
+IF( MONTH(Income_Verification_Date__c) = 12, &quot;June; July; August; September; October; November; December&quot;, 
+
+NULL)))))))))))))))</formula>
+    <label>Income Verification Months</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

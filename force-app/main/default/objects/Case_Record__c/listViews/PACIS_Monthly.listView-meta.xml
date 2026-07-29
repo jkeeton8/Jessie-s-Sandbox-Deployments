@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACIS_Monthly</fullName>
+    <columns>NAME</columns>
+    <columns>Program_Start_Date__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>First_Name__c</columns>
+    <columns>FCRC_Office__c</columns>
+    <columns>DHS_Case_Number__c</columns>
+    <columns>DHS_Eligibility_Date__c</columns>
+    <columns>Contracts_Internal_Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case_Record__c.Classic</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,On Hold</value>
+    </filters>
+    <filters>
+        <field>Program_Stage__c</field>
+        <operation>equals</operation>
+        <value>Core Training,Advanced Training</value>
+    </filters>
+    <filters>
+        <field>Program_Site_Track__c</field>
+        <operation>contains</operation>
+        <value>Downtown</value>
+    </filters>
+    <label>PACIS - Monthly, Downtown</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Contracts_Manager</role>
+    </sharedTo>
+</ListView>

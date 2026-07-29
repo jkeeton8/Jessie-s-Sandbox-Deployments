@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_to_Organization__c</fullName>
+    <externalId>false</externalId>
+    <formula>Group_Class__r.Related_to_Organization__r.Name</formula>
+    <label>Related to Organization</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

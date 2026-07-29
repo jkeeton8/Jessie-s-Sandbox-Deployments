@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Did_Not_Attend_Onboarding__c</fullName>
+    <label>Did Not Attend Onboarding</label>
+    <summaryFilterItems>
+        <field>GroupClass_Assignment__c.Connects_Attendance__c</field>
+        <operation>equals</operation>
+        <value>&quot;Scheduled, No Show&quot;, Rescheduled</value>
+    </summaryFilterItems>
+    <summaryForeignKey>GroupClass_Assignment__c.Group_Class__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

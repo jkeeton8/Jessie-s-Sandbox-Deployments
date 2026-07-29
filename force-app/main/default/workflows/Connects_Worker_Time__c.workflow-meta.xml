@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Friday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Friday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Friday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Friday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Friday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Friday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Friday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Friday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Friday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Friday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Friday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Friday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Friday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Friday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Friday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Friday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Friday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Friday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Friday_Time_In_Proxy_Autofill</fullName>
+        <field>Friday_Time_In_Proxy__c</field>
+        <formula>if (contains (Friday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Friday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Friday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Friday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Friday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Friday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Friday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Friday_Time_Out_Proxy_Autofill</fullName>
+        <field>Friday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Friday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Friday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Friday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Friday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Friday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Friday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Friday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Friday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Monday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Monday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Monday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Monday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Monday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Monday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Monday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Monday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Monday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Monday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Monday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Monday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Monday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Monday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Monday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Monday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Monday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Monday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Monday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Monday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Monday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Monday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Monday_Time_In_Proxy_Autofill</fullName>
+        <field>Monday_Time_In_Proxy__c</field>
+        <formula>if (contains (Monday_Time_In__c, &quot;AM&quot;) &amp;&amp; contains (Monday_Time_In__c, &quot;12:&quot;), value(substitute(substitute(Monday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Monday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Monday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Monday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Monday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Monday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Monday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Monday_Time_Out_Proxy_Autofill</fullName>
+        <field>Monday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Monday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Monday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Monday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Monday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Monday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Monday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Monday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Monday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Monday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Monday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Saturday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Saturday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Saturday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Saturday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Saturday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Saturday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Saturday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Saturday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Saturday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Saturday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Saturday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Saturday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Saturday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Saturday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Saturday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Saturday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Saturday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Saturday_Time_In_Proxy_Autofill</fullName>
+        <field>Saturday_Time_In_Proxy__c</field>
+        <formula>if (contains (Saturday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Saturday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Saturday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Saturday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Saturday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Saturday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Saturday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Saturday_Time_Out_Proxy_Autofill</fullName>
+        <field>Saturday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Saturday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Saturday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Saturday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Saturday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Saturday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Saturday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Saturday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Saturday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Saturday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sunday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Sunday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Sunday_Lunch_End__c, &quot;AM&quot;) &amp;&amp; contains (Sunday_Lunch_End__c, &quot;12:&quot;), value(substitute(substitute(Sunday_Lunch_End__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_End__c, &quot;AM&quot;), value(substitute(substitute(Sunday_Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_End__c, &quot;PM&quot;) &amp;&amp; contains (Sunday_Lunch_End__c, &quot;12:&quot;), value(substitute(substitute(Sunday_Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_End__c, &quot;PM&quot;), value(substitute(substitute(Sunday_Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Sunday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sunday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Sunday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Sunday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Sunday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Sunday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Sunday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Sunday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Sunday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Sunday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sunday_Time_In_Proxy_Autofill</fullName>
+        <field>Sunday_Time_In_Proxy__c</field>
+        <formula>if (contains (Sunday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Sunday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Sunday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Sunday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Sunday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Sunday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Sunday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sunday_Time_Out_Proxy_Autofill</fullName>
+        <field>Sunday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Sunday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Sunday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Sunday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Sunday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Sunday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Sunday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Sunday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Sunday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Sunday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Thursday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Thursday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Thursday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Thursday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Thursday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Thursday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Thursday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Thursday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Thursday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Thursday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Thursday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Thursday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Thursday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Thursday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Thursday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Thursday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Thursday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Thursday_Time_In_Proxy_Autofill</fullName>
+        <field>Thursday_Time_In_Proxy__c</field>
+        <formula>if (contains (Thursday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Thursday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Thursday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Thursday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Thursday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Thursday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Thursday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Thursday_Time_Out_Proxy_Autofill</fullName>
+        <field>Thursday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Thursday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Thursday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Thursday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Thursday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Thursday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Thursday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Thursday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Thursday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Thursday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tuesday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Tuesday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Tuesday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Tuesday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Tuesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Tuesday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Tuesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Tuesday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tuesday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Tuesday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Tuesday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Tuesday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Tuesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Tuesday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Tuesday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Tuesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Tuesday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tuesday_Time_In_Proxy_Autofill</fullName>
+        <field>Tuesday_Time_In_Proxy__c</field>
+        <formula>if (contains (Tuesday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Tuesday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Tuesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Tuesday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Tuesday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Tuesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Tuesday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tuesday_Time_Out_Proxy_Autofill</fullName>
+        <field>Tuesday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Tuesday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Tuesday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Tuesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Tuesday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Tuesday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Tuesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Tuesday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Tuesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Tuesday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Wednesday_Lunch_End_Proxy_Autofill</fullName>
+        <field>Wednesday_Lunch_End_Proxy__c</field>
+        <formula>if (contains (Wednesday_Lunch_End__c , &quot;AM&quot;) &amp;&amp; contains (Wednesday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Lunch_End__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_End__c , &quot;AM&quot;), value(substitute(substitute(Wednesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_End__c , &quot;PM&quot;) &amp;&amp; contains (Wednesday_Lunch_End__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_End__c , &quot;PM&quot;), value(substitute(substitute(Wednesday_Lunch_End__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Wednesday Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Wednesday_Lunch_Start_Proxy_Autofill</fullName>
+        <field>Wednesday_Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Wednesday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Wednesday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Lunch_Start__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_Start__c , &quot;AM&quot;), value(substitute(substitute(Wednesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Wednesday_Lunch_Start__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Wednesday_Lunch_Start__c , &quot;PM&quot;), value(substitute(substitute(Wednesday_Lunch_Start__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Wednesday Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Wednesday_Time_In_Proxy_Autofill</fullName>
+        <field>Wednesday_Time_In_Proxy__c</field>
+        <formula>if (contains (Wednesday_Time_In__c , &quot;AM&quot;) &amp;&amp; contains (Wednesday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Time_In__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Time_In__c , &quot;AM&quot;), value(substitute(substitute(Wednesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Time_In__c , &quot;PM&quot;) &amp;&amp; contains (Wednesday_Time_In__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Wednesday_Time_In__c , &quot;PM&quot;), value(substitute(substitute(Wednesday_Time_In__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Wednesday Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Wednesday_Time_Out_Proxy_Autofill</fullName>
+        <field>Wednesday_Time_Out_Proxy__c</field>
+        <formula>if (contains (Wednesday_Time_Out__c , &quot;AM&quot;) &amp;&amp; contains (Wednesday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Time_Out__c , &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Time_Out__c , &quot;AM&quot;), value(substitute(substitute(Wednesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)),
+
+if (contains (Wednesday_Time_Out__c , &quot;PM&quot;) &amp;&amp; contains (Wednesday_Time_Out__c , &quot;12:&quot;), value(substitute(substitute(Wednesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)),
+
+if (contains (Wednesday_Time_Out__c , &quot;PM&quot;), value(substitute(substitute(Wednesday_Time_Out__c , &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12,
+
+NULL))))</formula>
+        <name>Wednesday Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Friday Worker Time is Edited</fullName>
+        <actions>
+            <name>Friday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Friday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Friday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Friday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Friday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Friday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Monday Worker Time is Edited</fullName>
+        <actions>
+            <name>Monday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Monday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Monday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Monday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Monday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Monday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Saturday Worker Time is Edited</fullName>
+        <actions>
+            <name>Saturday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Saturday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Saturday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Saturday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Saturday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Saturday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sunday Worker Time is Edited</fullName>
+        <actions>
+            <name>Sunday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sunday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sunday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sunday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Sunday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Sunday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Thursday Worker Time is Edited</fullName>
+        <actions>
+            <name>Thursday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Thursday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Thursday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Thursday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Thursday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Thursday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tuesday Worker Time is Edited</fullName>
+        <actions>
+            <name>Tuesday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Tuesday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Tuesday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Tuesday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Tuesday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Tuesday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Wednesday Worker Time is Edited</fullName>
+        <actions>
+            <name>Wednesday_Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Wednesday_Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Wednesday_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Wednesday_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Wednesday_Time_In__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Connects_Worker_Time__c.Wednesday_Time_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,28 @@
+<apex:page controller="ExpDeleteSessionsController" sidebar="false" showHeader="false">
+ <script>
+		function redirectParent(){
+			var redirUrl = document.getElementById("{!$Component.theForm.redirUrl}");
+			//alert('Test '+ redirUrl.value);	
+			if (redirUrl != null && redirUrl.value != '') {				
+				window.opener.location.href = redirUrl.value;
+				window.close();
+			}			
+ 			return true;
+		}
+ </script>	  
+ <apex:form id="theForm">
+ 	  <apex:pageblock title="{!title}" id="theBlock">
+           <apex:pageblocksection columns="1">
+                <apex:SelectRadio value="{!deleteOption}" layout="pageDirection">
+       		         <apex:selectOptions value="{!deleteOptions}"/>
+                </apex:SelectRadio>                
+           </apex:pageblocksection>
+           <apex:pageblocksection >
+           		<apex:commandButton value="Delete" action="{!deleteSessions}" onClick="return confirm('Are you sure?');"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+           </apex:pageblocksection>
+      </apex:pageblock> 
+      <apex:inputHidden id="redirUrl" value="{!redirectUrl}"/>
+      <script>redirectParent();</script>
+ </apex:form>
+</apex:page>

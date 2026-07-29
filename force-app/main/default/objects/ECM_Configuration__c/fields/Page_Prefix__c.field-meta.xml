@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Page_Prefix__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <externalId>false</externalId>
+    <inlineHelpText>Prefix for VisualForce pages to be used by this configuration. Example: if value = &apos;IntakePage&apos; then next and previous will navigate between IntakePage1, IntakePage2, etc based on maximum page value</inlineHelpText>
+    <label>Page Prefix</label>
+    <length>100</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

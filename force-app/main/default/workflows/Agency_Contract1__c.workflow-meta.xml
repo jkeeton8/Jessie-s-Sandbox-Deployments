@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Grant_Contract_Name</fullName>
+        <field>Name</field>
+        <formula>if (not(isblank(Organization__c)), 
+
+if (YEAR(Grant_Contract_Start_Date__c) = YEAR(Grant_Contract_End_Date__c), 
+
+Organization__r.Name &amp; &quot; (&quot; &amp; text(Year(Grant_Contract_Start_Date__c)) &amp; &quot;)&quot;, 
+
+Organization__r.Name &amp; &quot; (&quot; &amp; text(Year(Grant_Contract_Start_Date__c)) &amp; &quot;-&quot; &amp; text(Year(Grant_Contract_End_Date__c))&amp;&quot;)&quot;),
+
+
+if (YEAR(Grant_Contract_Start_Date__c) = YEAR(Grant_Contract_End_Date__c), 
+
+Grant_Contract_Abbreviation__c &amp; &quot; (&quot; &amp; text(Year(Grant_Contract_Start_Date__c)) &amp; &quot;)&quot;, 
+
+Grant_Contract_Abbreviation__c &amp; &quot; (&quot; &amp; text(Year(Grant_Contract_Start_Date__c)) &amp; &quot;-&quot; &amp; text(Year(Grant_Contract_End_Date__c))&amp;&quot;)&quot;))</formula>
+        <name>Grant/Contract Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Grant%2FContract Name</fullName>
+        <actions>
+            <name>Grant_Contract_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Agency_Contract1__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

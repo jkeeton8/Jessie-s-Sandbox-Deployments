@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ADP_Time_In_1_Proxy_Autofill</fullName>
+        <field>ADP_Time_In_1_Proxy__c</field>
+        <formula>if (contains (ADP_Time_In_1__c, &quot;AM&quot;) &amp;&amp; contains (ADP_Time_In_1__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_In_1__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_1__c, &quot;AM&quot;), value(substitute(substitute(ADP_Time_In_1__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_1__c, &quot;PM&quot;) &amp;&amp; contains (ADP_Time_In_1__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_In_1__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_1__c, &quot;PM&quot;), value(substitute(substitute(ADP_Time_In_1__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>ADP Time In (#1) Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ADP_Time_In_2_Proxy_Autofill</fullName>
+        <field>ADP_Time_In_2_Proxy__c</field>
+        <formula>if (contains (ADP_Time_In_2__c, &quot;AM&quot;) &amp;&amp; contains (ADP_Time_In_2__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_In_2__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_2__c, &quot;AM&quot;), value(substitute(substitute(ADP_Time_In_2__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_2__c, &quot;PM&quot;) &amp;&amp; contains (ADP_Time_In_2__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_In_2__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (ADP_Time_In_2__c, &quot;PM&quot;), value(substitute(substitute(ADP_Time_In_2__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>ADP Time In (#2) Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ADP_Time_Out_1_Proxy_Autofill</fullName>
+        <field>ADP_Time_Out_1_Proxy__c</field>
+        <formula>if (contains (ADP_Time_Out_1__c, &quot;AM&quot;) &amp;&amp; contains (ADP_Time_Out_1__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_Out_1__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_1__c, &quot;AM&quot;), value(substitute(substitute(ADP_Time_Out_1__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_1__c, &quot;PM&quot;) &amp;&amp; contains (ADP_Time_Out_1__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_Out_1__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_1__c, &quot;PM&quot;), value(substitute(substitute(ADP_Time_Out_1__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>ADP Time Out (#1) Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ADP_Time_Out_2_Proxy_Autofill</fullName>
+        <field>ADP_Time_Out_2_Proxy__c</field>
+        <formula>if (contains (ADP_Time_Out_2__c, &quot;AM&quot;) &amp;&amp; contains (ADP_Time_Out_2__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_Out_2__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_2__c, &quot;AM&quot;), value(substitute(substitute(ADP_Time_Out_2__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_2__c, &quot;PM&quot;) &amp;&amp; contains (ADP_Time_Out_2__c, &quot;12:&quot;), value(substitute(substitute(ADP_Time_Out_2__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (ADP_Time_Out_2__c, &quot;PM&quot;), value(substitute(substitute(ADP_Time_Out_2__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>ADP Time Out (#2) Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Total_Wage</fullName>
+        <description>Intern Total Wage update</description>
+        <field>Total_Wage_Intern__c</field>
+        <name>Update Total Wage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Worker Time is Edited</fullName>
+        <actions>
+            <name>ADP_Time_In_1_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ADP_Time_In_2_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ADP_Time_Out_1_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>ADP_Time_Out_2_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

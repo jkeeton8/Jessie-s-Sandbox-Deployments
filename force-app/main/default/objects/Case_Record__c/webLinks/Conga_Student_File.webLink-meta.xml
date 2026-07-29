@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Student_File</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Conga - Participant Files</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Case_Record__c.Id}
+
+&amp;QueryId=a3Ci0000000TaXU?pv0={!Case_Record__c.Main_ClientId__c}
+
+&amp;ReportId=[Conv]00Oi0000005cb5e?pv0={!Case_Record__c.Id},[Convs]00Oi0000005cbU0?pv0={!Case_Record__c.Id},[FinAss]00Oi0000005bMCX?pv0={!Case_Record__c.Id},[Client]00Oi0000005bMCc?pv0={!Case_Record__c.Id},[Incidents]00Oi0000005bMDB?pv0={!Case_Record__c.Id},[Holds]00Oi0000005bMDB?pv0={!Case_Record__c.Id},[Absence]00Oi0000005bMDG?pv0={!Case_Record__c.Id},[WriteUp]00Oi0000005bMDV?pv0={!Case_Record__c.Id},[ServiceEntries]00O31000005mPuE?pv0={!Case_Record__c.Id},[Evals]00Of30000040qkX?pv0={!Case_Record__c.Id},[Classes]00Of30000040ql6?pv0={!Case_Record__c.Id},[ServiceEntriesMonth]00Of30000040qlL?pv0={!Case_Record__c.Id},[EvalsMonth]00Of30000040qlV?pv0={!Case_Record__c.Id},[ClassesMonth]00Of30000040qlQ?pv0={!Case_Record__c.Id},[Time]00Of30000040v9v?pv0={!Case_Record__c.Id},[TimeMonth]00Of30000040vA0?pv0={!Case_Record__c.Id},[CleanslateEvals]00O4y000004gwAc?pv0={!Case_Record__c.Id},[WorkerTime]00O4y000004gwB1?pv0={!Case_Record__c.Id}
+
+
+&amp;OFN={Template.Label}+-+{!Case_Record__c.Name}
+&amp;DefaultPDF=True&amp;zippdfs=1
+&amp;TemplateGroup=Admissions</url>
+</WebLink>

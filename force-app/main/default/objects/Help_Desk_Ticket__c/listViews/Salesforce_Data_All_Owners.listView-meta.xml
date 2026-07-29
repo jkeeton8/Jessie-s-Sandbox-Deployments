@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Data_All_Owners</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>User__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>Ticket_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Solutions: Salesforce &amp; Data</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New,Working,Pending,Active,Closed - Moved to Project (Active),Hold,With Craftsman</value>
+    </filters>
+    <label>Salesforce &amp; Data - All Owners</label>
+    <sharedTo>
+        <group>Salesforce_Data</group>
+    </sharedTo>
+</ListView>

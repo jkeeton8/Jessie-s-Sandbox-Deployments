@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Future_Dates</fullName>
+    <active>true</active>
+    <description>Prevents entering future dates for last incarceration date or date of last conviction</description>
+    <errorConditionFormula>Last_Incarceration_Release_Date__c &gt; TODAY() ||
+Date_of_Last_Conviction__c &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>Last_Incarceration_Release_Date__c</errorDisplayField>
+    <errorMessage>Date cannot be in the future. Please enter correct date.</errorMessage>
+</ValidationRule>

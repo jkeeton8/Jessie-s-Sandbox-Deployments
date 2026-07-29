@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Placement_Type__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <label>Job/Placement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Temporary</fullName>
+                <default>false</default>
+                <label>Temporary</label>
+            </value>
+            <value>
+                <fullName>Internship</fullName>
+                <default>false</default>
+                <label>Internship</label>
+            </value>
+            <value>
+                <fullName>External Transitional</fullName>
+                <default>false</default>
+                <label>External Transitional</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Temporary-Permanent</fullName>
+                <default>false</default>
+                <label>Temporary-Permanent</label>
+            </value>
+            <value>
+                <fullName>Short-Term</fullName>
+                <default>false</default>
+                <label>Short-Term</label>
+            </value>
+            <value>
+                <fullName>Long-Term</fullName>
+                <default>false</default>
+                <label>Long-Term</label>
+            </value>
+            <value>
+                <fullName>Permanent-Inactive</fullName>
+                <default>false</default>
+                <label>Permanent-Inactive</label>
+            </value>
+            <value>
+                <fullName>Permanent-Advancement</fullName>
+                <default>false</default>
+                <label>Permanent-Advancement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

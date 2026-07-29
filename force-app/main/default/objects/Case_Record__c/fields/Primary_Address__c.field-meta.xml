@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (Main_Client__r.MailingStreet) &amp;&amp; isblank (Main_Client__r.MailingCity), 
+
+HYPERLINK(&quot;https://na56.salesforce.com/&quot;&amp;Main_Client__r.Id, &quot;Click to enter on Contact record&quot;), 
+
+Main_Client__r.MailingStreet &amp;&quot;, &quot;&amp; Main_Client__r.MailingCity &amp;&quot;, &quot;&amp; Main_Client__r.MailingState &amp;&quot; &quot;&amp; Main_Client__r.MailingPostalCode)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

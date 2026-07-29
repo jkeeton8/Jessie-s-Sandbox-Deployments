@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Out_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://na15.salesforce.com/&quot;&amp;Id,    Job_Order__r.Name  &amp; &quot; - &quot; &amp;  text(month(   Job_Order__r.Open_Date__c   )) &amp; &quot;/&quot; &amp; text(day(  Job_Order__r.Close_Date__c  )) &amp; &quot;/&quot; &amp; text(year( Job_Order__r.Open_Date__c )) &amp; &quot; - &quot; &amp; Student__r.Last_Name__c &amp; &quot;, &quot; &amp; LEFT(Student__r.First_Name__c, 1) &amp; &quot;.&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send Out Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

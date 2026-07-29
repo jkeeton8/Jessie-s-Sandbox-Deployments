@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thursday_Crew_Chief_Employee__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Thursday Crew Chief</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Contract Schedules (Thursday Crew Chief)</relationshipLabel>
+    <relationshipName>Contract_Schedules_Thursday</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

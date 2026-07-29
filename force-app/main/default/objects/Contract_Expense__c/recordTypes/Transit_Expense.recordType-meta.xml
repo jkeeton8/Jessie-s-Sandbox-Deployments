@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transit_Expense</fullName>
+    <active>true</active>
+    <label>Transit Expense</label>
+    <picklistValues>
+        <picklist>Expense_Category__c</picklist>
+        <values>
+            <fullName>1 Day Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Day Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 Day Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Background Screen %282 counties %26 standard search%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Background Screen %28standard%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Screen 5 Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Criminal Record %26 Sex Offender Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Service Transactions - Full 6 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expense_Type__c</picklist>
+        <values>
+            <fullName>Transit</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

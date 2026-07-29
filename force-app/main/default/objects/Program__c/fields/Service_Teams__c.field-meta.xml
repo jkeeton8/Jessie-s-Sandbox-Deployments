@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Teams__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>Indicates that the program uses Service Teams (Service Team Member records).</inlineHelpText>
+    <label>Service Teams</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

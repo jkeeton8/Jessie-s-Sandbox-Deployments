@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Search_Field_Label__c</fullName>
+    <description>ECMv2.1</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Label to be used to in the search page in the criteria section.</inlineHelpText>
+    <label>Search Field Label</label>
+    <length>80</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

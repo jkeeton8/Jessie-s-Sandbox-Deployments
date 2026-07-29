@@ -1,0 +1,24 @@
+<apex:page standardController="Group_Class_Session__c" extensions="ExpGroupServiceLaunchController" 
+            sidebar="false" action="{!gotoGroupServiceEntry}" lightningstylesheets="true">
+    <apex:form >
+        <apex:sectionHeader subtitle="Select a Group Service Entry Form" />
+        <apex:pageBlock >
+            <apex:pageBlockSection rendered="{!hasSAOptions}">
+                <apex:selectRadio value="{!selectedSA}" >
+                    <apex:selectOptions value="{!saOptions}" />
+                </apex:selectRadio> 
+            </apex:pageBlockSection>
+            <apex:outputPanel rendered="{!!hasSAOptions}">
+                <table width="100%">
+                    <tr>                    
+                     <td width="10%"></td><td><apex:pageMessage severity="info" summary="There are currently no Service Entry forms of type 'Group/Class' with a valid ECM Configuration for this Group Class Program." strength="3"/></td><td width="10%"></td>
+                     </tr>
+                </table>
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Next" action="{!launchGroupServiceEntry}" rendered="{!hasSAOptions}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

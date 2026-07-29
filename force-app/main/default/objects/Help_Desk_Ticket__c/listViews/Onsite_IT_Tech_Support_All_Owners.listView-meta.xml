@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onsite_IT_Tech_Support_All_Owners</fullName>
+    <booleanFilter>1 AND (2 OR 3) and 4</booleanFilter>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>User__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Deadline__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>Ticket_Category__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Progress_Note__c</columns>
+    <columns>Resolution__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Moved to Project (Active),Closed - Moved to Project (Inactive)</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>&quot;New Hire Setup, Terminations, Employee Updates&quot;,Solutions: Onsite IT &amp; Tech Support</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Hugo</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Help_Desk_Ticket__c.Help_Desk_Ticket</value>
+    </filters>
+    <label>Onsite IT &amp; Tech Support - All Owners</label>
+    <sharedTo>
+        <group>Onsite_IT_Tech_Support</group>
+    </sharedTo>
+</ListView>

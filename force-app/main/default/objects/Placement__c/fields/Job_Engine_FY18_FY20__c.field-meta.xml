@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Engine_FY18_FY20__c</fullName>
+    <description>Changed &quot;Cara Connects&quot; to &quot;Connects&quot; to make value come alphabetically after Cleanslate and to correspond to brand colors in report graphs.</description>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Job_Type__c, &quot;Temporary&quot;) &amp;&amp; contains(Case_Record__r.Referring_Organization__r.Name, &quot;Emerson&quot;), &quot;Connects&quot;, 
+
+if (Organization_TCP__r.Name = &quot;Cleanslate Chicago&quot;, &quot;Cleanslate&quot;, 
+
+if (Organization_TCP__r.Name = &quot;Chapter Two&quot;, &quot;Chapter Two&quot;, 
+
+if (ispickval(Employment_Source__c, &quot;Cara Connects&quot;), &quot;Connects&quot;,
+
+text (Employment_Source__c)))))</formula>
+    <inlineHelpText>Jobs engines are our job creators and curators. Based primarily on &apos;Employment Source&apos; but further designates jobs on Connects payroll into &quot;Connects&quot; or &quot;Cleanslate&quot;, based on the business that created the job.</inlineHelpText>
+    <label>Job Engine</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

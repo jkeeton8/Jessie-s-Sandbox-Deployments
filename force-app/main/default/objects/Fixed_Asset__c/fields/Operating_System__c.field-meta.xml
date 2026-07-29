@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_System__c</fullName>
+    <inlineHelpText>If not applicable please select &quot;N/A&quot;</inlineHelpText>
+    <label>Operating System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Windows 7</fullName>
+                <default>false</default>
+                <label>Windows 7</label>
+            </value>
+            <value>
+                <fullName>Windows 10</fullName>
+                <default>false</default>
+                <label>Windows 10</label>
+            </value>
+            <value>
+                <fullName>Windows 11</fullName>
+                <default>false</default>
+                <label>Windows 11</label>
+            </value>
+            <value>
+                <fullName>IOS</fullName>
+                <default>false</default>
+                <label>IOS</label>
+            </value>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>N/A (for non-laptop/desktop devices)</fullName>
+                <default>false</default>
+                <label>N/A (for non-laptop/desktop devices)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

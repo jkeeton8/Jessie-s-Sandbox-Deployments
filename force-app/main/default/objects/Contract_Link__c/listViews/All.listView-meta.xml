@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Grant_Contract__c</columns>
+    <columns>Application_Date__c</columns>
+    <columns>Enrollment_Date__c</columns>
+    <columns>Completion_Date__c</columns>
+    <columns>Case_Record__c</columns>
+    <columns>Grant_Contract_Studentforce_Import_ID__c</columns>
+    <columns>Comments__c</columns>
+    <columns>Hours_Met_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract_Link__c.Student_Assignment</value>
+    </filters>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

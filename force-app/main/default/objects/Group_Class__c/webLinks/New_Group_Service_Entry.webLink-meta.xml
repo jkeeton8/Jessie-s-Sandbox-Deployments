@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Group_Service_Entry</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Record Service</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/ExpGroupServiceLaunch?groupClassId={!Group_Class__c.Id}&amp;programId={!Group_Class__c.ProgramId__c}&amp;serviceId={!Group_Class__c.ServiceId__c}</url>
+</WebLink>

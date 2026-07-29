@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Client_HH_Restricts_sObject</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( ECM_Status_Bar_Configuration__r.RecordType.DeveloperName == &apos;Client_Household&apos; &amp;&amp; LOWER(sObject__c) != &apos;client_household__c&apos; , true, false)</errorConditionFormula>
+    <errorMessage>Parent configuration is of type &apos;Client Household&apos;, therefore sObject value must equal &apos;Client_Household__c&apos;.</errorMessage>
+</ValidationRule>

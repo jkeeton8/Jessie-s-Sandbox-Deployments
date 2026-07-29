@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Start_Date_is_Today</fullName>
+    <active>true</active>
+    <errorConditionFormula>ischanged(Program_Start_Date__c)
+
+&amp;&amp;
+
+today() = Program_Start_Date__c
+
+&amp;&amp;
+
+not(isblank(text(Scheduled_Program_Start_Date__c)))</errorConditionFormula>
+    <errorMessage>Today&apos;s Program Start Date can no longer be selected. Please select the next Program Start Date or one that is in the future.</errorMessage>
+</ValidationRule>

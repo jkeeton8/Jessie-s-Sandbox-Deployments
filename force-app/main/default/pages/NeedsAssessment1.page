@@ -1,0 +1,65 @@
+<apex:page controller="ExpServiceEntryController" sidebar="false" tabStyle="Case_Record__c" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!clientSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Stability Assessment ****-->
+
+<!-- ***** Client Session, page 1, order 1 ***** -->
+<c:ExpClientSession theParentController="{!this}" csName="CompSettings-11372"/>
+
+<!-- ***** Case Record, page 1, order 2 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11373"/>
+
+<!-- ***** Case Record, page 1, order 3 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11370"/>
+
+<!-- ***** Case Record, page 1, order 4 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22106"/>
+
+<!-- ***** Child Object List, page 1, order 5 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22045"/>
+
+<!-- ***** Case Record, page 1, order 6 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11363"/>
+
+<!-- ***** Case Record, page 1, order 7 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11365"/>
+
+<!-- ***** Case Record, page 1, order 8 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11364"/>
+
+<!-- ***** Case Record, page 1, order 9 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22088"/>
+
+<!-- ***** Case Record, page 1, order 10 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-11367"/>
+
+<!-- ***** Child Object List, page 1, order 11 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22122"/>
+
+<!-- ***** Case Record, page 1, order 12 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22108"/>
+
+<!-- ***** Client Session, page 1, order 13 ***** -->
+<c:ExpClientSession theParentController="{!this}" csName="CompSettings-11371"/>
+
+<!-- ***** Child Object List, page 1, order 14 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-15254"/>
+
+<!-- ***** Child Object List, page 1, order 15 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22034"/>
+
+<!-- ***** Child Object List, page 1, order 16 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-11366"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Max_Page_Count_For_SEGSE_Is_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( (Record_Type_Developer_Name__c == &apos;Service_Entry&apos; ||  Record_Type_Developer_Name__c == &apos;Group_Service_Entry&apos; ||
+Record_Type_Developer_Name__c == &apos;Service_Plan&apos;
+) &amp;&amp;  Maximum_Page_Count__c &gt; 1, true, false)</errorConditionFormula>
+    <errorMessage>Maximum page count for Service Entry, Group Service Entry and Service Plan configurations is 1.</errorMessage>
+</ValidationRule>

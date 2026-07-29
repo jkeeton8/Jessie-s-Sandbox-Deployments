@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpStatusBarImage</fullName>
+    <active>true</active>
+    <description>Image attachment to display</description>
+    <label>Image</label>
+    <picklistValues>
+        <picklist>List_Style__c</picklist>
+        <values>
+            <fullName>Buttons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropdown Picklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrollable Picklist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

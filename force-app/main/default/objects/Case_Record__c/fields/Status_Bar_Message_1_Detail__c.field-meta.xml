@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Bar_Message_1_Detail__c</fullName>
+    <description>Originally an Exponent field. Did not change API name as not to mess with unit tests. // Started tracking Conviction Exceptions in February 2016.</description>
+    <externalId>false</externalId>
+    <formula>if (Number_of_Sealed_Convictions__c &gt; 0, text(Number_of_Sealed_Convictions__c) &amp; &quot; Sealed Conviction(s); &quot;, NULL)</formula>
+    <label>Background Exceptions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

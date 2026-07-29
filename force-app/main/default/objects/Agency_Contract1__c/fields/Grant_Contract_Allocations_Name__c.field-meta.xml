@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Contract_Allocations_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case (Grant_Contract_Type__c,
+&quot;Covenant House&quot;, &quot;Covenant&quot;, 
+&quot;DHS - FSE&amp;T&quot;, &quot;SNAP&quot;, 
+&quot;DHS - TANF&quot;, &quot;TANF&quot;, 
+&quot;DHS - SNAP to Success&quot;, &quot;S2S&quot;,
+&quot;Traditional&quot;, &quot;D-INN&quot;,
+&quot;CDBG EP&amp;P&quot;, &quot;D-EP&amp;P&quot;, 
+&quot;CSBG - TJ&quot;, &quot;S-TJ&quot;,
+&quot;CDBG - CARES Act&quot;, &quot;D-CARES&quot;, 
+&quot;CSBG - CARES Act&quot;, &quot;S-CARES&quot;, 
+&quot;CDBG T&amp;P&quot;, &quot;D-T&amp;P&quot;, 
+&quot;Job Training and Economic Development&quot;, &quot;JTED&quot;, 
+&quot;Training for Tomorrow&quot;, &quot;TFT&quot;, 
+&quot;Digital Divide&quot;, &quot;DD&quot;, 
+&quot;Eleanor Foundation Grant (cohort 1)&quot;, &quot;ELNR&quot;, 
+&quot;Eleanor Foundation Grant (cohort 2)&quot;, &quot;ELNR&quot;, 
+&quot;Eleanor Foundation Grant (cohort 3)&quot;, &quot;ELNR&quot;, 
+&quot;Chicago Foundation for Women&quot;, &quot;CFW&quot;, 
+&quot;TIF - Hyde Park&quot;, &quot;TIF-HP&quot;, 
+&quot;TIF - 24th Ward&quot;, &quot;TIF-24&quot;, 
+&quot;Corporate-Transitional Jobs for Ex-Offenders&quot;, &quot;TJX&quot;, 
+&quot;Work Services-Traditional&quot;, &quot;WS-T&quot;, 
+&quot;No grant eligibility&quot;, &quot;PCFS&quot;, 
+&quot;EPIC&quot;, &quot;EPIC&quot;,
+&quot;REDF&quot;, &quot;REDF&quot;,
+&quot;No allocation assigned&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Grant/Contract Allocations Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

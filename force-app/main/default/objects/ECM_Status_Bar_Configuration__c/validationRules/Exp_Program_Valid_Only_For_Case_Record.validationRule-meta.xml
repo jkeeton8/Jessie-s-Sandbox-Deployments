@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Program_Valid_Only_For_Case_Record</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Program__c != null &amp;&amp;  RecordType.Name != &apos;Case Record&apos;, true, false)</errorConditionFormula>
+    <errorMessage>Program may be set only when record type is &apos;Case Record&apos;. Either change the record type for this configuration or remove the value for Program.</errorMessage>
+</ValidationRule>

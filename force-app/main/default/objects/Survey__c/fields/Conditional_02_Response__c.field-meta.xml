@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_02_Response__c</fullName>
+    <inlineHelpText>Employer Institute Question 3c
+Inclusion Action Lab Pre-Survey Question 17</inlineHelpText>
+    <label>Conditional 02 Response</label>
+    <length>5000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

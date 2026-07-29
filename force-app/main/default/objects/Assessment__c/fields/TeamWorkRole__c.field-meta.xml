@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TeamWorkRole__c</fullName>
+    <inlineHelpText>(Choose 1)</inlineHelpText>
+    <label>What role do you usually play in a team?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Leader</fullName>
+                <default>false</default>
+                <label>Leader</label>
+            </value>
+            <value>
+                <fullName>Organizer</fullName>
+                <default>false</default>
+                <label>Organizer</label>
+            </value>
+            <value>
+                <fullName>Motivator</fullName>
+                <default>false</default>
+                <label>Motivator</label>
+            </value>
+            <value>
+                <fullName>TechnicalWorker</fullName>
+                <default>false</default>
+                <label>Technical Worker</label>
+            </value>
+            <value>
+                <fullName>CreativityGenerator</fullName>
+                <default>false</default>
+                <label>Creativity Generator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

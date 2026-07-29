@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Class_Assignment</fullName>
+    <active>true</active>
+    <label>Group/Class Assignment</label>
+    <picklistValues>
+        <picklist>Attendance_Exception_Reason__c</picklist>
+        <values>
+            <fullName>Court Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not leave a reason</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor%27s Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sick</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attendance__c</picklist>
+        <values>
+            <fullName>Attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCNS for Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reschedule</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cara_Day_Attendance_Expectation__c</picklist>
+        <values>
+            <fullName>Requested based on Hold%2FConcern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training %2B Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training %2B Lab %2B Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Connects_Attendance__c</picklist>
+        <values>
+            <fullName>Attended%2C Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attended%2C Traction Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Attended%2C Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Attended%2C Opted Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled%2C No Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

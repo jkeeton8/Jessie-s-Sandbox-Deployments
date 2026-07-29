@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Operations_Report_Custom</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Cleanslate Operations Report Custom</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Conga_Cleanslate_Operations_Report_Custom_Data?recordId={!Work_Log__c.Id}&amp;retURL={!Work_Log__c.Id}</url>
+</WebLink>

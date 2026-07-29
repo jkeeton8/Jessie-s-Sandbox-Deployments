@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Status__c</fullName>
+    <description>As of 4/1/15: Maintaining original API name, as set by Exponent. Not sure if changing it will disrupt unit tests or Case Record code. Keeping original picklist values but hiding them from record types that are used.</description>
+    <label>Inquiry Source (LISC)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Program Participant</fullName>
+                <default>false</default>
+                <label>Program Participant</label>
+            </value>
+            <value>
+                <fullName>Friend</fullName>
+                <default>false</default>
+                <label>Friend</label>
+            </value>
+            <value>
+                <fullName>Walked-In</fullName>
+                <default>false</default>
+                <label>Walked-In</label>
+            </value>
+            <value>
+                <fullName>Public Aid Office</fullName>
+                <default>false</default>
+                <label>Public Aid Office</label>
+            </value>
+            <value>
+                <fullName>Social Service Program</fullName>
+                <default>false</default>
+                <label>Social Service Program</label>
+            </value>
+            <value>
+                <fullName>Flyer</fullName>
+                <default>false</default>
+                <label>Flyer</label>
+            </value>
+            <value>
+                <fullName>Program Staff</fullName>
+                <default>false</default>
+                <label>Program Staff</label>
+            </value>
+            <value>
+                <fullName>Community Health Center</fullName>
+                <default>false</default>
+                <label>Community Health Center</label>
+            </value>
+            <value>
+                <fullName>IDOC</fullName>
+                <default>false</default>
+                <label>IDOC</label>
+            </value>
+            <value>
+                <fullName>Agency Staff</fullName>
+                <default>false</default>
+                <label>Agency Staff</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>IDHS</fullName>
+                <default>false</default>
+                <label>IDHS</label>
+            </value>
+            <value>
+                <fullName>Intake</fullName>
+                <default>false</default>
+                <label>Intake</label>
+            </value>
+            <value>
+                <fullName>Referred to Program</fullName>
+                <default>false</default>
+                <label>Referred to Program</label>
+            </value>
+            <value>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+                <label>Waitlisted</label>
+            </value>
+            <value>
+                <fullName>Referral Accepted</fullName>
+                <default>false</default>
+                <label>Referral Accepted</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

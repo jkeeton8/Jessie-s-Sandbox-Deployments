@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral</fullName>
+    <active>true</active>
+    <label>Referral</label>
+    <picklistValues>
+        <picklist>Certification_Achieved__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sit Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stand Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Device__c</picklist>
+        <values>
+            <fullName>Laptop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Router</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome_Not_Met_Reason__c</picklist>
+        <values>
+            <fullName>No Longer Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Schedule Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant_NCNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Coordinate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive to Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer Schedule Change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Category__c</picklist>
+        <values>
+            <fullName>A Knock at Midnight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - Excel %26 Sheets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - Intro to digital literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - MS Office %26 Google Suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - Other - please specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - PowerPoint %26 Slides</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adelante - Word %26 Docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BeMore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill Paying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budgeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Coach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Development Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Urban League</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Urban League - Google Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Childcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ComEd %22CONSTRUCT%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connects Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daley College CNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Insecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foreclosure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Chicago Food Depository</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haircut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hire 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interview %2F Mock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JARC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Status Exam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Competencies %28Specify in Progress Note%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Medical Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - 10hr%2E OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - 40hr%2E Hazwoper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - First Aid%2FCPR%2FBloodborne Pathogens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - Forklift %28sit down%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - Forklift %28stand up%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - LRRP %28Lead Renovation %26 Repair%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI - Solar Panel Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Olive Harvey College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opening Bank Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Cohort Wellness Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Flag - Risk Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEIU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPRING Forward Housing Navigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Take your Legacy Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transitional Training Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Union Pacific Railroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workshop Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow Flag - Mental Health Check-In</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Reasons__c</picklist>
+        <values>
+            <fullName>Anger Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Background</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Childcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glasses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare waiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental or Ownership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substance Abuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supportive Living%2C Affordable%2C Senior%2C Transitional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twin Accounts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Status__c</picklist>
+        <values>
+            <fullName>Application Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attended Orientation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initiated Contact with Participant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending More Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Imported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Met 1%3A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Outcome Not Met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Outcome Obtained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Referred Externally</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Closed - Waitlisted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled For Interview</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Type__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External- CUL Digitial Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External- GED Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External- Non-Certification Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Adelante Digital Literacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Certification Trainings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Engagement Digital Assistance Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Enterprise Recruitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Job Skills Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Mental Health Concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Resume Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Stability Screening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Supportive Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal - Volunteer Coaching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reschedule__c</picklist>
+        <values>
+            <fullName>First Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reschedule</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scheduled_Appointment_Location__c</picklist>
+        <values>
+            <fullName>In-Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Attended__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Completed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

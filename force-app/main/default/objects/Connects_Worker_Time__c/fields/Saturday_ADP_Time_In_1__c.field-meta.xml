@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Saturday_ADP_Time_In_1__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank( Saturday_Lunch_Start__c ), Saturday_Time_In__c ,
+if ( Saturday_Lunch_End_Proxy__c &lt;= Saturday_Time_In_Proxy__c , Saturday_Time_In__c ,
+if ( Saturday_Lunch_Start_Proxy__c &lt;= Saturday_Time_In_Proxy__c , Saturday_Lunch_End__c ,
+Saturday_Time_In__c )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Saturday ADP Time In (#1)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

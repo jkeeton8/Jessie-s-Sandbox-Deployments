@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDS_Perm_Visit_Next_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isnull (Placement_Number__c) ||
+ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;) ||
+not (isnull (One_Year_Retention_End_Date__c)) ||
+not (isnull (Case_Record__r.Inactive_Date__c)) ||
+Start_Date__c + 366 &lt; date(year(today()-day(today())+32), month(today()-day(today())+32), 1), NULL,
+
+if (ispickval (Job_Type__c, &quot;Permanent&quot;) || ispickval (Job_Type__c, &quot;Temporary-Permanent&quot;) || (ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; ispickval (End_Type__c, &quot;Move within Company&quot;)), 
+
+if (month(Start_Date__c + 14) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 14) = year(today()-day(today())+32), &quot;Visit 01&quot;,
+if (month(Start_Date__c + 28) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 28) = year(today()-day(today())+32), &quot;Visit 02&quot;,
+if (month(Start_Date__c + 49) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 49) = year(today()-day(today())+32), &quot;Visit 03&quot;,
+if (month(Start_Date__c + 77) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 77) = year(today()-day(today())+32), &quot;Visit 04&quot;,
+if (month(Start_Date__c + 108) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 108) = year(today()-day(today())+32), &quot;Visit 05&quot;,
+if (month(Start_Date__c + 140) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 140) = year(today()-day(today())+32), &quot;Visit 06&quot;,
+if (month(Start_Date__c + 175) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 175) = year(today()-day(today())+32), &quot;Visit 07&quot;,
+if (month(Start_Date__c + 217) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 217) = year(today()-day(today())+32), &quot;Visit 08&quot;,
+if (month(Start_Date__c + 266) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 266) = year(today()-day(today())+32), &quot;Visit 09&quot;,
+if (month(Start_Date__c + 315) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 315) = year(today()-day(today())+32), &quot;Visit 10&quot;,
+
+&quot;No Visit Next Month&quot;)))))))))),
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;), &quot;ETJ Visit&quot;,
+
+NULL)))</formula>
+    <label>IDS Perm Visit Next Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

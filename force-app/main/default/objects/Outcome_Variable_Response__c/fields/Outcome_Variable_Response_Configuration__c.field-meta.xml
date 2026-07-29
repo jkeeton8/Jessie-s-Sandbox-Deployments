@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome_Variable_Response_Configuration__c</fullName>
+    <label>Outcome Variable Response Configuration</label>
+    <referenceTo>Outcome_Variable_Response_Configuration__c</referenceTo>
+    <relationshipLabel>Outcome Variable Responses</relationshipLabel>
+    <relationshipName>Outcome_Variable_Responses</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supervisor_Contact__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( isblank(Supervisor_Name__c), &quot;&quot;, 
+
+&quot;Work Phone: &quot; &amp; Supervisor_Name__r.npe01__WorkPhone__c &amp; br() &amp;
+&quot;Work Email: &quot; &amp;  Supervisor_Name__r.npe01__WorkEmail__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Supervisor Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

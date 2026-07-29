@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Internship</fullName>
+    <active>true</active>
+    <label>Cleanslate Internship</label>
+    <picklistValues>
+        <picklist>Approved_by_IDS__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Reviewed</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Benefits__c</picklist>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacation%2FSick</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CAM_Recommendation_for_Advancement__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Certification_Category__c</picklist>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Health Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Trade %28i%2Ee%2E%2C electrical%2C plumbing%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction flagger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrepreneurship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forklift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HS Diploma%2FGED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping%2FGardening %28Horticulture%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28please specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Management %28planning%2Forganizing projects for a team%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Water Sampling Coordinator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coronavirus_Pandemic_Impact__c</picklist>
+        <values>
+            <fullName>Furloughed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laid Off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Default_Work_Days__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Earned_Cert_Used_for_Placement__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employment_Continues_on_Next_Record__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employment_Source__c</picklist>
+        <values>
+            <fullName>Cara Connects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Secured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>End_Details__c</picklist>
+        <values>
+            <fullName>Absenteeism%2FTardiness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Actions Questionable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Reducing Workforce%2FLack of Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed Initial Terms of Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daycare Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Like</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed from Cara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incapable of Performing Duties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Employment %28At No Fault of Employee%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misconduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Job with New Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Position-Lateral Move</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Position-Promoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obtained Better Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%2FUnknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Attitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relapse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same Position-Change in Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>End_Type__c</picklist>
+        <values>
+            <fullName>Job Ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laid Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move within Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualifying Retention Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quit%2FResigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Type__c</picklist>
+        <values>
+            <fullName>Long-Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lunch_Duration__c</picklist>
+        <values>
+            <fullName>1 hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 minutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 minutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Lunch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_Placement_Reason__c</picklist>
+        <values>
+            <fullName>Candidate Had Poor Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Deferred Position</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Found Other Candidate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pay_Frequency__c</picklist>
+        <values>
+            <fullName>Bi-weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Placement_Year__c</picklist>
+        <values>
+            <fullName>FY14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Position_Vertical__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly Line Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Teller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified Nursing Assistant %28CNA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2FTrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecommendationDenialExplanationPicklist__c</picklist>
+        <values>
+            <fullName>Background barriers too strict</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Does Not Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location too far</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No skill match to required qualifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOE Concern</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retention_Exception__c</picklist>
+        <values>
+            <fullName>Opted Out of Retention Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previously Retained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Override</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Tracked Under Previous Placement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Salary_Type__c</picklist>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Advanced Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job%2FPlacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Job%2FPlacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch Denied by Participant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch Unsuccessful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommendation Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended by CAM</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Send Out Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Starting_Benefits__c</picklist>
+        <values>
+            <fullName>COBRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family and Medical Leave Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Holidays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Raise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severance Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sick Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Security Disability Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployment Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacation Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Breaks and Meal Breaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers Compensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Placed</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospective</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Student_Source__c</picklist>
+        <values>
+            <fullName>Business Growth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connects Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workshop Direct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Timesheet_Preference__c</picklist>
+        <values>
+            <fullName>Conga Sign - Supervisor First</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conga Sign - Worker First</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Uniform_Returned__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wage_Unit__c</picklist>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Weight_Range</fullName>
+    <active>true</active>
+    <description>Weight value must be null or fall between 0 and 100</description>
+    <errorConditionFormula>IF(Weight__c&lt;0 || Weight__c &gt;1, true, false)</errorConditionFormula>
+    <errorDisplayField>Weight__c</errorDisplayField>
+    <errorMessage>Weight value must be null or fall between 0 and 100</errorMessage>
+</ValidationRule>

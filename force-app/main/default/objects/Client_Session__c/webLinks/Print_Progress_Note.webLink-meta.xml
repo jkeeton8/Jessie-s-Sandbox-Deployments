@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Print_Progress_Note</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Progress Note</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/ExpPrintProgressNotesLaunch?caseRecordId={! Client_Session__c.Case_RecordId__c }&amp;type=Service_Entry&amp; 
+programId={!Client_Session__c.Program__c}&amp;clientSessionId={!Client_Session__c.Id}&amp;title={!Client_Session__c.Name}</url>
+</WebLink>

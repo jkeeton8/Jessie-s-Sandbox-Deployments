@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Verification_Mo__c</fullName>
+    <description>Requires Permission Set to edit. Had character length limit of 4 characters prior to 1/27/2017. Changed to 5 characters on 1/27/2017.</description>
+    <label>Income, Verification Mo.</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

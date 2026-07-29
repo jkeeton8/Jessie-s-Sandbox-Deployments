@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Out_Eligible_Cleanslate_Direct</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Student_Type_Job_Matching__c</columns>
+    <columns>Send_Out_Eligible_Date__c</columns>
+    <columns>Primary_Position_Vertical__c</columns>
+    <columns>Secondary_Position_Vertical__c</columns>
+    <columns>Position_Verticals_of_Experience__c</columns>
+    <columns>Resume_on_File__c</columns>
+    <columns>Date_of_Code_of_Conduct_Meeting__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case_Record__c.Cleanslate_Direct</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Program_Stage_for_Job_Matching__c</field>
+        <operation>equals</operation>
+        <value>Eligible for Job Match</value>
+    </filters>
+    <filters>
+        <field>Send_Out_Eligible__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <filters>
+        <field>Advancement_Job_Matching_Status__c</field>
+        <operation>equals</operation>
+        <value>Yes/NA</value>
+    </filters>
+    <label>Send Out Eligible, Cleanslate Direct</label>
+    <language>en_US</language>
+</ListView>

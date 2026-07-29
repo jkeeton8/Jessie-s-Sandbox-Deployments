@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active__c</fullName>
+    <description>ECM field added for TCP retention calculation (see CreateMilestones field)</description>
+    <formula>TEXT(Case_Record__r.Status__c) &lt;&gt; &apos;Inactive&apos; &amp;&amp; TEXT(Case_Record__r.Status__c) &lt;&gt; &apos;On Hold&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If a student&apos;s Case Record is not &quot;active&quot; do not calculate placement milestones/retention.</inlineHelpText>
+    <label>Is Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

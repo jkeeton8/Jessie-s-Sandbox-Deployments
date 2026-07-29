@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology</fullName>
+    <active>true</active>
+    <label>Technology</label>
+    <picklistValues>
+        <picklist>Depreciation_Method__c</picklist>
+        <values>
+            <fullName>Straight Line 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straight Line 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straight Line 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>237</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operating_System__c</picklist>
+        <values>
+            <fullName>Android</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA %28for non-laptop%2Fdesktop devices%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows 7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Disposed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>All-In-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docking Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webcam</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

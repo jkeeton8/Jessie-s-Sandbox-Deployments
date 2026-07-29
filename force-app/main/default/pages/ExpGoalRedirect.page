@@ -1,0 +1,2 @@
+<apex:page standardController="Goal__c" extensions="ExpGoalRedirectController" action="{!redirect}">
+</apex:page>

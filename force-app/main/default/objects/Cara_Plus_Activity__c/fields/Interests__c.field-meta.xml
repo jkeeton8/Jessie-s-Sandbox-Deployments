@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interests__c</fullName>
+    <label>Interests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sourcing</fullName>
+                <default>false</default>
+                <label>Sourcing</label>
+            </value>
+            <value>
+                <fullName>Hiring</fullName>
+                <default>false</default>
+                <label>Hiring</label>
+            </value>
+            <value>
+                <fullName>Job Quality/Support</fullName>
+                <default>false</default>
+                <label>Job Quality/Support</label>
+            </value>
+            <value>
+                <fullName>Recruitment</fullName>
+                <default>false</default>
+                <label>Recruitment</label>
+            </value>
+            <value>
+                <fullName>Training/Transformations</fullName>
+                <default>false</default>
+                <label>Training/Transformations</label>
+            </value>
+            <value>
+                <fullName>Pre-Placement Coaching</fullName>
+                <default>false</default>
+                <label>Pre-Placement Coaching</label>
+            </value>
+            <value>
+                <fullName>Placement/Employer Relations</fullName>
+                <default>false</default>
+                <label>Placement/Employer Relations</label>
+            </value>
+            <value>
+                <fullName>Retention Coaching</fullName>
+                <default>false</default>
+                <label>Retention Coaching</label>
+            </value>
+            <value>
+                <fullName>Advancement</fullName>
+                <default>false</default>
+                <label>Advancement</label>
+            </value>
+            <value>
+                <fullName>Overall Service Delivery</fullName>
+                <default>false</default>
+                <label>Overall Service Delivery</label>
+            </value>
+            <value>
+                <fullName>Data Tracking System</fullName>
+                <default>false</default>
+                <label>Data Tracking System</label>
+            </value>
+            <value>
+                <fullName>Metrics and Storytelling</fullName>
+                <default>false</default>
+                <label>Metrics and Storytelling</label>
+            </value>
+            <value>
+                <fullName>Cara&apos;s History</fullName>
+                <default>false</default>
+                <label>Cara&apos;s History</label>
+            </value>
+            <value>
+                <fullName>Cara&apos;s Culture</fullName>
+                <default>false</default>
+                <label>Cara&apos;s Culture</label>
+            </value>
+            <value>
+                <fullName>Social Enterprises</fullName>
+                <default>false</default>
+                <label>Social Enterprises</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Workforce Development/Industry Landscape</fullName>
+                <default>false</default>
+                <label>Workforce Development/Industry Landscape</label>
+            </value>
+            <value>
+                <fullName>Public Positioning</fullName>
+                <default>false</default>
+                <label>Public Positioning</label>
+            </value>
+            <value>
+                <fullName>Inclusive Employment</fullName>
+                <default>false</default>
+                <label>Inclusive Employment</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

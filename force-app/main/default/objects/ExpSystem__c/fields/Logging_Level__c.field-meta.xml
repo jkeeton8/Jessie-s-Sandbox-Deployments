@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logging_Level__c</fullName>
+    <defaultValue>10</defaultValue>
+    <description>Level at which calls to ExpSystem.debug will be logged. 1 for Finest, 2 for Finer, 3 for Fine, 4 for Debug, 5 for Info, 6 for Warn, 7 for Error. A number greater than 7 means no extended logging.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Level at which calls to ExpSystem.debug will be logged. 1 for Finest, 2 for Finer, 3 for Fine, 4 for Debug, 5 for Info, 6 for Warn, 7 for Error. A number greater than 7 means no extended logging.</inlineHelpText>
+    <label>Logging Level</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Reasons__c</fullName>
+    <inlineHelpText>Based on Referral Category. Choose all that apply.</inlineHelpText>
+    <label>Referral Reason(s)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Anger Management</fullName>
+                <default>false</default>
+                <label>Anger Management</label>
+            </value>
+            <value>
+                <fullName>Background</fullName>
+                <default>false</default>
+                <label>Background</label>
+            </value>
+            <value>
+                <fullName>Childcare</fullName>
+                <default>false</default>
+                <label>Childcare</label>
+            </value>
+            <value>
+                <fullName>Child custody</fullName>
+                <default>false</default>
+                <label>Child custody</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Family Support Services</fullName>
+                <default>false</default>
+                <label>Family Support Services</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Glasses</fullName>
+                <default>false</default>
+                <label>Glasses</label>
+            </value>
+            <value>
+                <fullName>Health Care Services</fullName>
+                <default>false</default>
+                <label>Health Care Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare waiver</fullName>
+                <default>false</default>
+                <label>Healthcare waiver</label>
+            </value>
+            <value>
+                <fullName>Medications</fullName>
+                <default>false</default>
+                <label>Medications</label>
+            </value>
+            <value>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+                <label>Mental Health</label>
+            </value>
+            <value>
+                <fullName>Rental or Ownership</fullName>
+                <default>false</default>
+                <label>Rental or Ownership</label>
+            </value>
+            <value>
+                <fullName>Substance Abuse</fullName>
+                <default>false</default>
+                <label>Substance Abuse</label>
+            </value>
+            <value>
+                <fullName>Supportive Living, Affordable, Senior, Transitional</fullName>
+                <default>false</default>
+                <label>Supportive Living, Affordable, Senior, Transitional</label>
+            </value>
+            <value>
+                <fullName>Twin Accounts</fullName>
+                <default>false</default>
+                <label>Twin Accounts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

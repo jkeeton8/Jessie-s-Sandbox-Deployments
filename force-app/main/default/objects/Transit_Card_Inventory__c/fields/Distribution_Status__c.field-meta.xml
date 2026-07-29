@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Number_of_Distributed_Cards__c + Number_of_Write_Offs__c = Total_Number_of_Transit_Cards_Purchased__c, &quot;Complete&quot;, 
+
+if (Number_of_Distributed_Cards__c  = 0, &quot;Not Yet Started&quot;, 
+
+if (Number_of_Undistributed_Cards__c &gt; 0 &amp;&amp; Number_of_Undistributed_Cards__c &lt; Total_Number_of_Transit_Cards_Purchased__c, &quot;In Progress&quot;, 
+
+if (Number_of_Undistributed_Cards__c = 0 , &quot;Complete&quot;, 
+
+NULL))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Distribution Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

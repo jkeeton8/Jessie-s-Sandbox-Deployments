@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal_Name_with_Parent__c</fullName>
+    <externalId>false</externalId>
+    <formula>Parent_Enterprise_Goal__r.Goal_Name__c &amp; &quot;, &quot; &amp; text(Goal_Sequence__c) &amp; &quot; - &quot; &amp;Goal_Name__c</formula>
+    <label>Goal Name with Parent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

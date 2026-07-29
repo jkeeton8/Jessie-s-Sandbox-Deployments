@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETJ_Retention_Numerator__c</fullName>
+    <formula>if (isblank (Placement_Number__c), FALSE, 
+
+if (not (ispickval (Job_Type__c, &quot;External Transitional&quot;)), FALSE, 
+
+if (One_Year_Retention_Category_FY14_FY17__c &lt;&gt; &quot;ETJ Retention Tracking Only&quot;, FALSE, 
+
+if (ispickval (Retention_Exception__c, &quot;Retention Override&quot;), FALSE, 
+
+if (isblank (End_Date__c), TRUE, 
+
+if (ispickval (End_Type__c, &quot;Terminated&quot;), FALSE, 
+
+if (End_Date__c &lt; ETJ_Commitment_End_Date__c, FALSE, 
+
+TRUE)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ETJ Retention Numerator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

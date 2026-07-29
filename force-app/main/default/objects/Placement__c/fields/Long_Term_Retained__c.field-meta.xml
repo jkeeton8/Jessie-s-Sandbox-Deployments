@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Long_Term_Retained__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Is true if Job Type is &quot;Long-Term&quot; and they have completed 365 days since start date. For older records, use old retention formula values</description>
+    <formula>IF(
+    AND(
+         OR(
+            AND(ISPICKVAL(Job_Type__c,&quot;Long-Term&quot;), Retention_Days_Lapsed_Since_Start_FY18__c&gt;=365),
+            One_Year_Retention_Category_FY18__c  = &quot;#Retained One Year&quot;,
+            One_Year_Retention_Category_FY18__c  = &quot;#Retained ETJ&quot;
+            ),
+        Text(Job_Type__c) != &quot;Permanent-Advancement&quot;,
+        Text(Job_Type__c) != &quot;Short-Term&quot;,
+        ISBLANK(Text(Retention_Exception__c)) ),
+
+
+TRUE,FALSE)</formula>
+    <inlineHelpText>Is true if Job Type is &quot;Long-Term&quot; and they have completed 365 days since start date.</inlineHelpText>
+    <label>Long-Term Retained</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

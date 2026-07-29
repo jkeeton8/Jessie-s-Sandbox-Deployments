@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Milestones__c</fullName>
+    <description>ECM v1 Job Placement</description>
+    <label>Number of Milestones</label>
+    <summaryForeignKey>Contract_Milestone__c.Agency_Contract__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

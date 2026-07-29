@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warranty_Expiration_Date__c</fullName>
+    <inlineHelpText>Most companies have warranty databases on their websites, you usually just need to enter the device’s serial number. 
+Lenovo: https://pcsupport.lenovo.com/us/en/warrantylookup#/  
+Dell: https://www.dell.com/support/home/en-us?app=warranty  
+HP: https://support.hp.com/us-en/checkwarranty</inlineHelpText>
+    <label>Warranty Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

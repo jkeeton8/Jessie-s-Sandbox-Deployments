@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Source__c</fullName>
+    <description>&quot;TCP Staffing&quot; changed to &quot;Cara Connects&quot; on 1/17/17.</description>
+    <inlineHelpText>This field impacts the cleanslate app</inlineHelpText>
+    <label>Employment Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Job_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Self-Secured</fullName>
+                <default>false</default>
+                <label>Self-Secured</label>
+            </value>
+            <value>
+                <fullName>Cara Connects</fullName>
+                <default>false</default>
+                <label>Cara Connects</label>
+            </value>
+            <value>
+                <fullName>Cleanslate</fullName>
+                <default>false</default>
+                <label>Cleanslate</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Short-Term</controllingFieldValue>
+            <controllingFieldValue>Long-Term</controllingFieldValue>
+            <valueName>Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Short-Term</controllingFieldValue>
+            <controllingFieldValue>Long-Term</controllingFieldValue>
+            <valueName>Self-Secured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Short-Term</controllingFieldValue>
+            <valueName>Cara Connects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Short-Term</controllingFieldValue>
+            <valueName>Cleanslate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

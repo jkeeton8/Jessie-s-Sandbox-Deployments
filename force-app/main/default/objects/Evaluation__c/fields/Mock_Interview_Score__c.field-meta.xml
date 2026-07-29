@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mock_Interview_Score__c</fullName>
+    <formula>if (RecordTypeId= &quot;0120Z000001clWX&quot; &amp;&amp;  ispickval (Type__c, &quot;Phone Interview&quot;) ,
+
+(If (Question_01_Response__c, 1, 0) + 
+If (Question_02_Response__c, 1, 0) + 
+If (Question_05_Response__c, 1, 0) + 
+If (Question_06_Response__c, 1, 0) + 
+If (Question_07_Response__c, 1, 0) + 
+If (Question_08_Response__c, 1, 0) + 
+If (Question_09_Response__c, 1, 0) + 
+If (Question_12_Response__c, 1, 0) + 
+If (Question_15_Response__c, 1, 0) + 
+If (Question_16_Response__c, 1, 0) + 
+If (Question_17_Response__c, 1, 0) + 
+If (Question_18_Response__c, 1, 0) + 
+If (Question_19_Response__c, 1, 0) + 
+If (Question_20_Response__c, 1, 0) + 
+If (Question_21_Response__c, 1, 0) + 
+If (Question_22_Response__c, 1, 0) + 
+If (Question_23_Response__c, 1, 0) + 
+If (Question_24_Response__c, 1, 0) + 
+If (Question_25_Response__c, 1, 0) + 
+If (Question_26_Response__c, 1, 0))/20,
+
+if (RecordTypeId= &quot;0120Z000001clWX&quot;,
+
+(If (Question_01_Response__c, 1, 0) + 
+If (Question_02_Response__c, 1, 0) + 
+If (Question_03_Response__c, 1, 0) + 
+If (Question_04_Response__c, 1, 0) + 
+If (Question_05_Response__c, 1, 0) + 
+If (Question_06_Response__c, 1, 0) + 
+If (Question_07_Response__c, 1, 0) + 
+If (Question_08_Response__c, 1, 0) + 
+If (Question_09_Response__c, 1, 0) + 
+If (Question_10_Response__c, 1, 0) + 
+If (Question_11_Response__c, 1, 0) + 
+If (Question_12_Response__c, 1, 0) + 
+If (Question_13_Response__c, 1, 0) + 
+If (Question_14_Response__c, 1, 0) + 
+If (Question_15_Response__c, 1, 0) + 
+If (Question_16_Response__c, 1, 0) + 
+If (Question_17_Response__c, 1, 0) + 
+If (Question_18_Response__c, 1, 0) + 
+If (Question_19_Response__c, 1, 0) + 
+If (Question_20_Response__c, 1, 0) + 
+If (Question_21_Response__c, 1, 0) + 
+If (Question_22_Response__c, 1, 0) + 
+If (Question_23_Response__c, 1, 0) + 
+If (Question_24_Response__c, 1, 0) + 
+If (Question_25_Response__c, 1, 0) + 
+If (Question_26_Response__c, 1, 0))/26,
+
+NULL))</formula>
+    <label>Mock Interview Score (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

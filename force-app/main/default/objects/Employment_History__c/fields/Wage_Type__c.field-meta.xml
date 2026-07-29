@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wage_Type__c</fullName>
+    <label>Wage Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Subsidized Job</fullName>
+                <default>false</default>
+                <label>Subsidized Job</label>
+            </value>
+            <value>
+                <fullName>Unsubsidized Job</fullName>
+                <default>false</default>
+                <label>Unsubsidized Job</label>
+            </value>
+            <value>
+                <fullName>Unpaid/Volunteer Job</fullName>
+                <default>false</default>
+                <label>Unpaid/Volunteer Job</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

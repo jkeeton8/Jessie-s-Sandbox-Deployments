@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Written_E_Team_Approval_Received__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Instating for help desk tickets requesting security camera footage.</description>
+    <inlineHelpText>All requests for security camera footage require executive team approval. Please also include the day and time of the event to review as well as any additional helpful detailed information such as clothing the person wore, what happened, etc.</inlineHelpText>
+    <label>Written E-Team Approval Received?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

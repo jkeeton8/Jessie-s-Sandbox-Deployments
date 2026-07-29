@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Tech_Assignment__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <inlineHelpText>Who the device is currently assigned to whether its an employee or to a specific meeting room.</inlineHelpText>
+    <label>Employee Tech Assignment</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Fixed Assets (Employee Tech Assignment)</relationshipLabel>
+    <relationshipName>Fixed_Assets1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

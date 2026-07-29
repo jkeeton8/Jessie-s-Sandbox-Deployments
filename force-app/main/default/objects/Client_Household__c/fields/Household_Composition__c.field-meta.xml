@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Household_Composition__c</fullName>
+    <label>Household Composition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Female Single Parent Household</fullName>
+                <default>false</default>
+                <label>Female Single Parent Household</label>
+            </value>
+            <value>
+                <fullName>Grandparent(s) and Household</fullName>
+                <default>false</default>
+                <label>Grandparent(s) and Household</label>
+            </value>
+            <value>
+                <fullName>Guardian(s) and Household</fullName>
+                <default>false</default>
+                <label>Guardian(s) and Household</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Male Single Parent Household</fullName>
+                <default>false</default>
+                <label>Male Single Parent Household</label>
+            </value>
+            <value>
+                <fullName>Two Parent Household</fullName>
+                <default>false</default>
+                <label>Two Parent Household</label>
+            </value>
+            <value>
+                <fullName>Two Parent Household (2 Females)</fullName>
+                <default>false</default>
+                <label>Two Parent Household (2 Females)</label>
+            </value>
+            <value>
+                <fullName>Two Parent Household (2 Males)</fullName>
+                <default>false</default>
+                <label>Two Parent Household (2 Males)</label>
+            </value>
+            <value>
+                <fullName>Two Parent Household (Male and Female)</fullName>
+                <default>false</default>
+                <label>Two Parent Household (Male and Female)</label>
+            </value>
+            <value>
+                <fullName>Single Parent Household</fullName>
+                <default>false</default>
+                <label>Single Parent Household</label>
+            </value>
+            <value>
+                <fullName>Two Person Household</fullName>
+                <default>false</default>
+                <label>Two Person Household</label>
+            </value>
+            <value>
+                <fullName>Three Person Household</fullName>
+                <default>false</default>
+                <label>Three Person Household</label>
+            </value>
+            <value>
+                <fullName>Four Person Household</fullName>
+                <default>false</default>
+                <label>Four Person Household</label>
+            </value>
+            <value>
+                <fullName>Five Person Household</fullName>
+                <default>false</default>
+                <label>Five Person Household</label>
+            </value>
+            <value>
+                <fullName>Six Person Household</fullName>
+                <default>false</default>
+                <label>Six Person Household</label>
+            </value>
+            <value>
+                <fullName>Seven Person Household</fullName>
+                <default>false</default>
+                <label>Seven Person Household</label>
+            </value>
+            <value>
+                <fullName>Eight Person Household</fullName>
+                <default>false</default>
+                <label>Eight Person Household</label>
+            </value>
+            <value>
+                <fullName>Other Multi-generational Household</fullName>
+                <default>false</default>
+                <label>Other Multi-generational Household</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Progress_Note</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Progress Note</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/GeneralProgressNote1?caseRecordId={!Case_Record__c.Id }
+&amp;ecmConfigId=a22i0000000adXyAAI
+&amp;ecmSAId=a23i0000000IY6zAAG
+&amp;programId={!Case_Record__c.ProgramId__c}</url>
+</WebLink>

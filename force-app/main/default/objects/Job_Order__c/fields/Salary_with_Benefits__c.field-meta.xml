@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salary_with_Benefits__c</fullName>
+    <formula>if ( ISPICKVAL( Benefits__c , &quot;Yes&quot;),  1.3 * Salary__c,  Salary__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Adds 30% to salary if job has benefits.</inlineHelpText>
+    <label>Salary with Benefits</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

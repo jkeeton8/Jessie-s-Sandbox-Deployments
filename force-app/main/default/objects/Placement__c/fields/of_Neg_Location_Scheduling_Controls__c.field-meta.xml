@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Neg_Location_Scheduling_Controls__c</fullName>
+    <label># of Neg Location Scheduling Controls</label>
+    <summaryFilterItems>
+        <field>Scheduling_Control__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Location</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Scheduling_Control__c.Control_End_Date__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Scheduling_Control__c.Control_Type__c</field>
+        <operation>equals</operation>
+        <value>Negative</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Scheduling_Control__c.Send_Out_Employment__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Condition_One_Case_Records__c</fullName>
+    <description>Count set by Case Record trigger based on the number of Case Record records where Case_Record__c.HH_Condition_One__c == &apos;Yes&apos;.</description>
+    <externalId>false</externalId>
+    <label>Number of Condition One Case Records</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

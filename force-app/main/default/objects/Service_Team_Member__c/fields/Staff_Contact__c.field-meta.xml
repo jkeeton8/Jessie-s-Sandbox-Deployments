@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Staff or team member who are not logged in to the system or considered external users.</description>
+    <label>Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipName>Treatment_Team_Members</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

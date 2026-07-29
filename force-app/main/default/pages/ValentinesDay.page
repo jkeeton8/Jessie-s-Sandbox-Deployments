@@ -1,0 +1,617 @@
+<apex:page showHeader="false"  standardStylesheets="false"  standardController="campaign" lightningstylesheets="true">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <!-- Scripts and styles -->
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+            <apex:includeScript value="{!$Resource.KELLValidationLibrary}"/>
+            <script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>
+            <script type="text/javascript"> trackPredictive(); </script>
+            <script>function unvalueHonor(){if (!j$('#showMemCheckbox').is(":checked")){j$('select[name="FieldValue3300"]').val('');}}</script>
+            <style>#col1,#col2{vertical-align:top;width:49%;display:inline-block;}</style>
+            
+            <h3>Give the gift of motivation and friendship this Valentine’s Day.</h3> 
+ 
+            <p>Friendship is knowing you have someone in your corner, celebrating the highs and cheering you on during the toughest of times. 
+            Words of encouragement from a friend are particularly powerful when facing obstacles like homelessness and poverty. Do you know why our name is Cara? 
+            It’s because Cara is Irish for friend.</p>
+            
+            <p>This Valentine’s Day, we want to remind our motivated job seekers that they are surrounded by an entire community of friends - 
+            rooting for them every step of the way towards finding a job and lifting themselves out of homelessness and poverty. But we need YOUR help!</p>
+                    
+            <br/>
+            <h3>Send a valentine with a little #Motivation.</h3>
+                    
+            <p>With a $20 donation to Cara this Valentine’s Day, you can send a Cara participant a specially-designed valentine that provides an extra dose of motivation. 
+            We will print and deliver a valentine with your name hand-written on the card to participants at our downtown and south side campuses and to our hard-working Cleanslate interns. 
+            Want to know how the deliveries go? Be sure to follow us on social media. We will post pictures all Valentine’s Day long to celebrate our community and friends. 
+            Thanks for your support! #BeMyCara
+            </p>
+                    
+           <br/>
+           <h3> Donate today! </h3>
+
+            
+            <form id="Donation" class="doValidate" method="post" action="https://faas.cloud.clickandpledge.com">
+                <!-- hidden C&P Donation Fields -->
+                <input name="ItemID1" type="hidden" id="ItemID1" value="1" />
+                <input name="ItemName1" type="hidden" id="ItemName1" value="Donation" />
+                <input name="SKU1" type="hidden" id="SKU1" value="DON-Valentine" />
+                <input name="Quantity1" type="hidden" id="Quantity1" value="1" />
+                <!-- hidden C&P Redirect Fields -->
+                <input type="hidden" name="OnSuccessUrl" id="OnSuccessUrl"  value="https://cara.secure.force.com/donate/thanks" />
+                <input type="hidden" name="OnDeclineUrl" id="OnDeclineUrl"  value="https://cara.secure.force.com/donate/declined" />
+                <input type="hidden" name="OnErrorUrl" id="OnErrorUrl"      value="https://cara.secure.force.com/donate/error" />
+                <!-- hidden C&P ACCOUNT Fields -->
+                <input type="hidden" name="AccountGuid" id="AccountGuid" value="3aafb0ce-2dd5-4b3f-83af-26a34ef02507" />
+                <input type="hidden" name="AccountID" id="AccountID" value="25666" />
+                <input type="hidden" name="WID" id="WID" value="66665" />
+                <!-- hidden C&P Reference Fields -->
+                <input type="hidden" name="RefID" id="RefID" value="Website" />
+                <input type="hidden" name="Tracker" id="Tracker" value="Website" />
+                <!-- hidden C&P Form Method Fields -->
+                <input type="hidden" name="SendReceipt" id="SendReceipt" value="False" />
+                <input type="hidden" name="OrderMode" id="OrderMode" value="Production" />
+                <!-- Order Mode can be Test or Production -->
+           
+                <input type="hidden" name="TransactionType" id="TransactionType" value="Payment" />
+                <!-- hidden C&P Standardization Fields -->
+                <input type="hidden" name="DecimalMark" id="DecimalMarkMode" value="US" />
+                <input name="UnitDeductible1" type="hidden" id="UnitDeductible1" value="100%" />
+                
+                               
+                <fieldset>         
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice0" name="UnitPrice1" type="radio" value="20" autocomplete="off" onClick='ClearText("#Other1");' />           
+                            <label for="UnitPrice0" class="collapse">
+                                <b>$20</b> to send a Cara participant a valentine
+                            </label>
+                        </div>
+                    </div>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice0" name="UnitPrice1" type="radio" value="40" autocomplete="off" onClick='ClearText("#Other1");' />           
+                            <label for="UnitPrice0" class="collapse">
+                                <b>$40</b> to send 2 Cara participants a valentine
+                            </label>
+                        </div>
+                    </div>
+                    <div class="formItem"> 
+                        <div class="form-row">
+                            <label> </label>
+                            <input id="UnitPrice1" name="UnitPrice1" type="radio" value="100"  autocomplete="off" onClick='ClearText("Other1");' />
+                            <label for="UnitPrice1" class="collapse">
+                                <b>$100</b> to send 5 participants a valentine
+                            </label>
+                        </div>
+                    </div>
+                    <div class="formItem"> 
+                        <div class="form-row">
+                            <label></label>
+                            <input id="UnitPrice9" name="UnitPrice1" type="radio" value="Other" autocomplete="off" />        
+                            <label>Additional amount to support our motivated job seekers: $
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" onclick='SetRadio("UnitPrice1","Other");' id="Other1" name="Other1" 
+                                    value="" size="150" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Amount" />
+                                </span>
+                            </label>    
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <p>If your company is interested in sponsoring valentines, contact Shikha Jain at sjain@carachicago.org.</p>
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <input name="FieldName2601" type="hidden" value="Salutation"  autocomplete="off" />
+                            <label for="FieldValue2601">Salutation:</label>
+                            <select name="FieldValue2601" class="class" size="1">
+                                <option value=""></option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Rev.">Rev.</option>
+                                <option value="Fr.">Fr.</option>
+                                <option value="Sr.">Sr.</option>
+                            </select>
+                        </div>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingFirstName" name="BillingFirstName" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="FIRST NAME*" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingLastName" name="BillingLastName" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="LAST NAME*" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2602" type="hidden" value="Nickname"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2602" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="NAME YOU GO BY" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2603" type="hidden" value="Suffix"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2603" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="SUFFIX" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2600" type="hidden" value="Title"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2600" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="TITLE" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <input name="FieldName2500" type="hidden" value="Employer"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" name="FieldValue2500" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="EMPLOYER" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingPhone" name="BillingPhone" value="" size="40" class="wpcf7-form-control wpcf7-text" 
+                                    aria-invalid="false" placeholder="PHONE NUMBER" />
+                                </span>
+                            </label>
+                        </p>
+                        <p class="two-column">
+                            <label>
+                                <span  class="wpcf7-form-control-wrap">
+                                    <input type="text" id="BillingEmail" name="BillingEmail" value="" size="40" 
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                    aria-invalid="false" placeholder="EMAIL ADDRESS*" />
+                                </span>
+                            </label>
+                        </p>
+                        <div class="formItem">
+                            <label ></label>
+                            <label class="collapse" for="showcompany2200">
+                                <input  type="checkbox" value="yes" id="showcompany2200" autocomplete="off" 
+                                onchange="ShowBlock(this.id, 'companyName');ClearText('FieldValue2200');" />
+                                This donation is on behalf of a company.
+                            </label> 
+                        </div>
+                        <input name="FieldName2200" type="hidden" value="Company"/>
+                        <div class="formItem" id="companyName" style="display:none;">
+                            <label for="FieldValue4">Company:</label>
+                            <input name="FieldValue2200" class="" type="text" id="FieldValue2200" value="" size="40" />
+                        </div>
+                        <p>
+                            <input name="FieldName2100" type="hidden" value="Comments"  autocomplete="off" />
+                            <label>
+                                <span class="wpcf7-form-control-wrap">
+                                    <input type="textarea" name="FieldValue2100" style="width:300px; height:40px;" autocomplete="off" 
+                                    class="wpcf7-form-control wpcf7-text" placeholder="WHO IS THE VALENTINE FROM?" />
+                                </span>
+                            </label>
+                        </p>
+                    </div>
+                    <br/>
+                    <br/>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <legend>Billing Information</legend>
+                            <p class="one-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingAddress1" name="BillingAddress1" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="ADDRESS 1*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="one-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingAddress2" name="BillingAddress2" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="ADDRESS 2 (OPTIONAL)" />
+                                    </span>
+                                </label>
+                            </p>
+                 
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingCity" name="BillingCity" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="CITY*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <select name="BillingCountryCode" size="1" onChange="UpdateStates();" id="BillingCountryCode" >
+                                    <option value="004">Afghanistan</option>
+                                    <option value="008">Albania</option>
+                                    <option value="012">Algeria</option>
+                                    <option value="016">American Samoa</option>
+                                    <option value="020">Andorra</option>
+                                    <option value="024">Angola</option>
+                                    <option value="010">Antarctica</option>
+                                    <option value="028">Antigua and Barbuda</option>
+                                    <option value="032">Argentina</option>
+                                    <option value="051">Armenia</option>
+                                    <option value="533">Aruba</option>
+                                    <option value="036">Australia</option>
+                                    <option value="040">Austria</option>
+                                    <option value="031">Azerbaijan Rep.</option>
+                                    <option value="044">Bahamas </option>
+                                    <option value="048">Bahrain</option>
+                                    <option value="050">Bangladesh</option>
+                                    <option value="052">Barbados</option>
+                                    <option value="112">Belarus</option>
+                                    <option value="056">Belgium</option>
+                                    <option value="084">Belize</option>
+                                    <option value="204">Benin</option>
+                                    <option value="060">Bermuda</option>
+                                    <option value="064">Bhutan</option>
+                                    <option value="068">Bolivia</option>
+                                    <option value="070">Bosnia</option>
+                                    <option value="072">Botswana</option>
+                                    <option value="076">Brazil</option>
+                                    <option value="096">Brunei</option>
+                                    <option value="100">Bulgaria</option>
+                                    <option value="854">Burkina Faso</option>
+                                    <option value="108">Burundi</option>
+                                    <option value="116">Cambodia</option>
+                                    <option value="120">Cameroon</option>
+                                    <option value="124">Canada</option>
+                                    <option value="132">Cape Verde Islands</option>
+                                    <option value="136">Cayman Islands</option>
+                                    <option value="140">Central African Republic</option>
+                                    <option value="148">Chad</option>
+                                    <option value="152">Chile</option>
+                                    <option value="156">China People&apos;s Republic</option>
+                                    <option value="170">Columbia</option>
+                                    <option value="174">Comoros</option>
+                                    <option value="178">Congo</option>
+                                    <option value="184">Cook Islands</option>
+                                    <option value="188">Costa Rica</option>
+                                    <option value="191">Croatia</option>
+                                    <option value="192">Cuba</option>
+                                    <option value="196">Cyprus</option>
+                                    <option value="203">Czech Republic</option>
+                                    <option value="208">Denmark</option>
+                                    <option value="262">Djibouti</option>
+                                    <option value="214">Dominican Republic</option>
+                                    <option value="218">Ecuador</option>
+                                    <option value="818">Egypt</option>
+                                    <option value="222">El Salvador</option>
+                                    <option value="226">Equatorial Guinea Malabo</option>
+                                    <option value="232">Eritrea</option>
+                                    <option value="233">Estonia</option>
+                                    <option value="231">Ethiopia</option>
+                                    <option value="242">Fiji Islands</option>
+                                    <option value="246">Finland</option>
+                                    <option value="250">France</option>
+                                    <option value="254">French Guiana</option>
+                                    <option value="258">French Polynesia</option>
+                                    <option value="266">Gabon</option>
+                                    <option value="270">Gambia</option>
+                                    <option value="268">Georgia</option>
+                                    <option value="276">Germany</option>
+                                    <option value="288">Ghana</option>
+                                    <option value="292">Gibraltar</option>
+                                    <option value="300">Greece</option>
+                                    <option value="304">Greenland</option>
+                                    <option value="308">Grenada</option>
+                                    <option value="312">Guadeloupe</option>
+                                    <option value="316">Guam</option>
+                                    <option value="320">Guatemala</option>
+                                    <option value="324">Guinea</option>
+                                    <option value="328">Guyana</option>
+                                    <option value="332">Haiti</option>
+                                    <option value="340">Honduras</option>
+                                    <option value="344">Hong Kong</option>
+                                    <option value="348">Hungary</option>
+                                    <option value="352">Iceland</option>
+                                    <option value="356">India</option>
+                                    <option value="360">Indonesia</option>
+                                    <option value="364">Iran</option>
+                                    <option value="368">Iraq</option>
+                                    <option value="372">Ireland</option>
+                                    <option value="376">Israel</option>
+                                    <option value="380">Italy</option>
+                                    <option value="388">Jamaica</option>
+                                    <option value="392">Japan</option>
+                                    <option value="400">Jordan</option>
+                                    <option value="398">Kazakhstan</option>
+                                    <option value="404">Kenya</option>
+                                    <option value="296">Kiribati</option>
+                                    <option value="410">Korea, Republic of</option>
+                                    <option value="414">Kuwait</option>
+                                    <option value="417">Kyrgystan</option>
+                                    <option value="428">Latvia</option>
+                                    <option value="422">Lebanon</option>
+                                    <option value="426">Lesotho</option>
+                                    <option value="430">Liberia</option>
+                                    <option value="434">Libya</option>
+                                    <option value="438">Liechtenstein</option>
+                                    <option value="440">Lithuania</option>
+                                    <option value="442">Luxembourg</option>
+                                    <option value="446">Macao</option>
+                                    <option value="807">Macedonia</option>
+                                    <option value="450">Madagascar</option>
+                                    <option value="454">Malawi</option>
+                                    <option value="458">Malaysia</option>
+                                    <option value="462">Maldives</option>
+                                    <option value="466">Mali</option>
+                                    <option value="470">Malta</option>
+                                    <option value="584">Marshall Islands</option>
+                                    <option value="474">Martinique</option>
+                                    <option value="478">Mauritania</option>
+                                    <option value="480">Mauritius</option>
+                                    <option value="484">Mexico</option>
+                                    <option value="583">Micronesia</option>
+                                    <option value="498">Moldova</option>
+                                    <option value="492">Monaco</option>
+                                    <option value="496">Mongolia</option>
+                                    <option value="499">Montenegro</option>
+                                    <option value="500">Montserrat</option>
+                                    <option value="504">Morocco</option>
+                                    <option value="508">Mozambique</option>
+                                    <option value="104">Myanmar</option>
+                                    <option value="516">Namibia</option>
+                                    <option value="520">Nauru</option>
+                                    <option value="524">Nepal</option>
+                                    <option value="528">Netherlands</option>
+                                    <option value="530">Netherlands Antilles</option>
+                                    <option value="540">New Caledonia</option>
+                                    <option value="554">New Zealand</option>
+                                    <option value="558">Nicaragua</option>
+                                    <option value="562">Niger</option>
+                                    <option value="566">Nigeria</option>
+                                    <option value="570">Niue</option>
+                                    <option value="580">Northern Mariana Islands</option>
+                                    <option value="578">Norway</option>
+                                    <option value="512">Oman</option>
+                                    <option value="586">Pakistan</option>
+                                    <option value="585">Palau</option>
+                                    <option value="591">Panama</option>
+                                    <option value="598">Papua New Guinea</option>
+                                    <option value="600">Paraguay</option>
+                                    <option value="604">Peru</option>
+                                    <option value="608">Phillippines</option>
+                                    <option value="616">Poland</option>
+                                    <option value="620">Portugal</option>
+                                    <option value="634">Qatar</option>
+                                    <option value="642">Romania</option>
+                                    <option value="643">Russian Federation</option>
+                                    <option value="646">Rwanda</option>
+                                    <option value="654">Saint Helena</option>
+                                    <option value="659">Saint Kitts and Nevis</option>
+                                    <option value="666">Saint Pierre and Miquelon</option>
+                                    <option value="674">San Marino</option>
+                                    <option value="678">Sao Tome and Principe</option>
+                                    <option value="682">Saudi Arabia</option>
+                                    <option value="686">Senegal</option>
+                                    <option value="688">Serbia</option>
+                                    <option value="690">Seychelles</option>
+                                    <option value="694">Sierra Leone</option>
+                                    <option value="702">Singapore</option>
+                                    <option value="703">Slovakia</option>
+                                    <option value="705">Slovenia</option>
+                                    <option value="090">Solomon Islands</option>
+                                    <option value="706">Somalia</option>
+                                    <option value="710">South Africa</option>
+                                    <option value="724">Spain</option>
+                                    <option value="144">Sri Lanka</option>
+                                    <option value="736">Sudan</option>
+                                    <option value="740">Suriname</option>
+                                    <option value="748">Swaziland</option>
+                                    <option value="752">Sweden</option>
+                                    <option value="756">Switzerland</option>
+                                    <option value="760">Syria</option>
+                                    <option value="158">Taiwan</option>
+                                    <option value="762">Tajikistan</option>
+                                    <option value="834">Tanzania</option>
+                                    <option value="764">Thailand</option>
+                                    <option value="772">Tokelau</option>
+                                    <option value="768">Tonga</option>
+                                    <option value="780">Trinidad and Tobago</option>
+                                    <option value="788">Tunisia</option>
+                                    <option value="792">Turkey</option>
+                                    <option value="795">Turkmenistan</option>
+                                    <option value="798">Tuvalu</option>
+                                    <option value="800">Uganda</option>
+                                    <option value="804">Ukraine</option>
+                                    <option value="784">United Arab Emirates</option>
+                                    <option value="826">United Kingdom</option>
+                                    <option value="840" selected="selected">United States of America</option>
+                                    <option value="858">Uruguay</option>
+                                    <option value="860">Uzbekistan</option>
+                                    <option value="548">Vanuatu</option>
+                                    <option value="336">Vatican City</option>
+                                    <option value="862">Venzuela</option>
+                                    <option value="704">Vietnam</option>
+                                    <option value="876">Wallis and Futuna</option>
+                                    <option value="016">Western Samoa</option>
+                                    <option value="887">Yemen, Peoples Demo. Rep. Of</option>
+                                    <option value="807">Yugoslavia</option>
+                                    <option value="894">Zambia</option>
+                                    <option value="716">Zimbabwe</option>
+                                </Select>
+
+                                <select name="BillingStateProvince" size="1" id="BillingStateProvince" >
+                                    <option value="NA" selected="selected">Select State*</option>
+                                    <option value="Alabama">Alabama</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Arizona">Arizona</option>
+                                    <option value="Arkansas">Arkansas</option>
+                                    <option value="Armed Forces- Africa">Armed Forces- Africa</option>
+                                    <option value="Armed Forces- Americas">Armed Forces- Americas</option>
+                                    <option value="Armed Forces- Canada">Armed Forces- Canada</option>
+                                    <option value="Armed Forces- Europe">Armed Forces- Europe</option>
+                                    <option value="Armed Forces- Middle East">Armed Forces- Middle East</option>
+                                    <option value="Armed Forces- Pacific">Armed Forces- Pacific</option>
+                                    <option value="California">California</option>
+                                    <option value="Colorado">Colorado</option>
+                                    <option value="Connecticut">Connecticut</option>
+                                    <option value="Delaware">Delaware</option>
+                                    <option value="District of Columbia">District of Columbia</option>
+                                    <option value="Federated States of Micronesia">Federated States of Micronesia</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Hawaii">Hawaii</option>
+                                    <option value="Idaho">Idaho</option>
+                                    <option value="Illinois">Illinois</option>
+                                    <option value="Indiana">Indiana</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Kansas">Kansas</option>
+                                    <option value="Kentucky">Kentucky</option>
+                                    <option value="Louisiana">Louisiana</option>
+                                    <option value="Maine">Maine</option>
+                                    <option value="Maryland">Maryland</option>
+                                    <option value="Massachusetts">Massachusetts</option>
+                                    <option value="Michigan">Michigan</option>
+                                    <option value="Minnesota">Minnesota</option>
+                                    <option value="Mississippi">Mississippi</option>
+                                    <option value="Missouri">Missouri</option>
+                                    <option value="Montana">Montana</option>
+                                    <option value="Nebraska">Nebraska</option>
+                                    <option value="Nevada">Nevada</option>
+                                    <option value="New Hampshire">New Hampshire</option>
+                                    <option value="New Jersey">New Jersey</option>
+                                    <option value="New Mexico">New Mexico</option>
+                                    <option value="New York">New York</option>
+                                    <option value="North Carolina">North Carolina</option>
+                                    <option value="North Dakota">North Dakota</option>
+                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                    <option value="Ohio">Ohio</option>
+                                    <option value="Oklahoma">Oklahoma</option>
+                                    <option value="Oregon">Oregon</option>
+                                    <option value="Palau">Palau</option>
+                                    <option value="Pennsylvania">Pennsylvania</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Rhode Island">Rhode Island</option>
+                                    <option value="South Carolina">South Carolina</option>
+                                    <option value="South Dakota">South Dakota</option>
+                                    <option value="Tennessee">Tennessee</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Utah">Utah</option>
+                                    <option value="Vermont">Vermont</option>
+                                    <option value="Virgin Islands- US">Virgin Islands- US</option>
+                                    <option value="Virginia">Virginia</option>
+                                    <option value="Washington">Washington</option>
+                                    <option value="West Virginia">West Virginia</option>
+                                    <option value="Wisconsin">Wisconsin</option>
+                                    <option value="Wyoming">Wyoming</option>
+                                </select>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="BillingPostalCode" name="BillingPostalCode" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="ZIP*" />
+                                    </span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <br/>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="formItem">
+                        <div class="form-row">
+                            <legend>Payment Information</legend>
+                            <input name="PaymentType" type="hidden" id="PaymentType" value="CreditCard" />
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="NameOnCard" name="NameOnCard" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="NAME ON CREDIT CARD*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="CardNumber" name="CardNumber" value="" size="40" 
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" aria-required="true" 
+                                        aria-invalid="false" placeholder="CREDIT CARD NUMBER*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <label>
+                                    <span class="wpcf7-form-control-wrap">
+                                        <input type="text" id="Cvv2" name="Cvv2" value="" size="6" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" 
+                                        aria-required="true" aria-invalid="false" placeholder="CVV2*" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="two-column">
+                                <select name="ExpirationMonth" id="ExpirationMonth">
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select> 
+                                <select name="ExpirationYear" id="ExpirationYear">
+                                    <option value="20" selected="selected">2020</option>
+                                    <option value="21">2021</option>
+                                    <option value="22">2022</option>
+                                    <option value="23">2023</option>
+                                    <option value="24">2024</option>
+                                    <option value="25">2025</option>
+                                    <option value="26">2026</option>
+                                    <option value="27">2027</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <p>*Starred fields are required. Please hit the "Submit Donation" button only once, 
+                 as pressing the button multiple times will result in duplicate transactions. Thank you!</p>
+                 
+                <div class="button-wrapper">
+                    <input name="SubmitButton" type="button" onClick="checkForm();" id="SubmitButton" class="color-button" value="Submit Donation" />
+                    <span class="formNotice inError" style="border-radius:5px;float:right;padding:10px; color:#833;display:none;">Please fix the errors indicated above</span>
+                </div>
+            </form>
+            <!-- END FORM -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

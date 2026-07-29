@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Retention_Placement_Sequence__c</fullName>
+    <description>ECMv2.1 field set by Placement workflow field update to capture the Placement sequence for retention placements (linked Placements within an agency contract).
+
+How it works:
+- ECM_Sequence_Name__c is the field used to name each placement
+- ECM_Previous_Retention_Placement_Types is the field that stores the sequence up to the previous placement 
+- ECM_Retention_Placement_Sequence__c (this field) is updated by workflow using the two fields above to set the sequence up to and including this placement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The sequence of linked placements within an agency contract.</inlineHelpText>
+    <label>ECM Retention Placement Sequence</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

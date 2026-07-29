@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Assignment</fullName>
+    <active>true</active>
+    <label>Student Assignment</label>
+    <picklistValues>
+        <picklist>Funder_Approved__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grant_Category__c</picklist>
+        <values>
+            <fullName>Advancement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First-Time Placement%2FRe-Placement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

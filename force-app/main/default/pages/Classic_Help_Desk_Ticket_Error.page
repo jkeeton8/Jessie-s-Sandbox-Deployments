@@ -1,0 +1,6 @@
+<apex:page standardController="Help_Desk_Ticket__c">
+
+  <h1>You cannot create a new help desk ticket from here!</h1>
+
+  <p>Please go <a href="https://cara.my.salesforce.com/flow/HELP_DESK_TICKET_screenflow_create_new_HDT_Global_Action">here</a> to create your help desk ticket.</p>
+  </apex:page>

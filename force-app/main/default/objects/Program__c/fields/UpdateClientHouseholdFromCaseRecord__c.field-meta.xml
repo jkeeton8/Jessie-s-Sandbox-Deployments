@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateClientHouseholdFromCaseRecord__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>When set, a change to the Client Household field on the Case Record will result in a change of the Main Client&apos;s Client Household field on the contact record. A blank value will result in the Client Household field being set to blank.</inlineHelpText>
+    <label>Update Client Household From Case Record</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

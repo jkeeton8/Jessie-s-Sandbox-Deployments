@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Milestone_must_equal_Case</fullName>
+    <active>true</active>
+    <description>Ensures Placement selected is related to the selected Case Record</description>
+    <errorConditionFormula>NOT(ISBLANK(Case_Record__c)) &amp;&amp; NOT(ISBLANK( Employment_Milestone__c )) &amp;&amp; Case_Record__r.Id !=  Employment_Milestone__r.Case_Record_ID__c</errorConditionFormula>
+    <errorMessage>Placement Milestone Case Record must equal the selected Case Record</errorMessage>
+</ValidationRule>

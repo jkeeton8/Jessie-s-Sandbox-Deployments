@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight__c</fullName>
+    <description>The relative weight of this indicator in relationship to other indicators when calculating an outcome</description>
+    <inlineHelpText>The sum of all weights must equal 100 for an outcome</inlineHelpText>
+    <label>Weight</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

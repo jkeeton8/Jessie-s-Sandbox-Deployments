@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Habitat_Send_Out</fullName>
+    <active>true</active>
+    <errorConditionFormula>DATEVALUE(CreatedDate) &gt;= DATE (2021,04,01)
+
+&amp;&amp;
+
+Organization_ID__c = &apos;001i000000K8NLy&apos;</errorConditionFormula>
+    <errorMessage>Please attached employment record to the Individual site organization. Please refer to the following link for reference:
+Habitat: https://na151.salesforce.com/acc/account_hierarchy.jsp?id=001i000000K8NLy</errorMessage>
+</ValidationRule>

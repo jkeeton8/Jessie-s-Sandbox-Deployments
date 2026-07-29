@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HighSchoolDiplomaGED__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Student has High School Diploma/GED, is in process of obtaining, or is signed up for coursework.</inlineHelpText>
+    <label>High School Diploma/GED</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

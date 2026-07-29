@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_Student_Inactivation_Fields</name>
+        <label>Set Student Inactivation Fields</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Inactive_Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advancement Inactivation</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Inactivated_By__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Full_Name__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Inactivation_Description__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Advancement_Inactive_Reason__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Inactive_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Advancement_Inactive_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>Student is Inactivated (from Advancement) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Student is Inactivated (from Advancement)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Student_Inactivation_Fields</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 OR 2) AND 3 AND 4</filterLogic>
+        <filters>
+            <field>Advancement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactive, Option to Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Advancement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactive, Cannot Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Program_Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Advancement Services</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Advancement_Inactive_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Case_Record__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

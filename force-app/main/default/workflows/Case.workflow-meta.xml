@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Assign_Case_to_AB</fullName>
+        <description>Modified to be Clare Murrell by CTG in order to allow deactivation of Alison Benes (AB)</description>
+        <field>OwnerId</field>
+        <lookupValue>cap@thecaraprogram.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to AB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_Admin</fullName>
+        <field>OwnerId</field>
+        <lookupValue>cap@thecaraprogram.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to Admin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_ED</fullName>
+        <description>Temporarily updated this rule to assign to &quot;Cara&quot; user.</description>
+        <field>OwnerId</field>
+        <lookupValue>cap@thecaraprogram.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to ED</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_JC</fullName>
+        <field>OwnerId</field>
+        <lookupValue>jkeeton@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to IT/Solutions</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_LS</fullName>
+        <field>OwnerId</field>
+        <lookupValue>lschreck@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to LS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_MT</fullName>
+        <field>OwnerId</field>
+        <lookupValue>mtoriski@carachicago.org</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Case to MT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Update_Type</fullName>
+        <field>Type</field>
+        <literalValue>Database/Salesforce</literalValue>
+        <name>Case: Update Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Update_Type_Data_IT</fullName>
+        <field>Type</field>
+        <literalValue>IT</literalValue>
+        <name>Case: Update Type, Data &amp; IT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Update_Type_IT</fullName>
+        <field>Type</field>
+        <literalValue>IT</literalValue>
+        <name>Case: Update Type, IT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>New_Update_Type_to_IT</fullName>
+        <field>Type</field>
+        <literalValue>IT</literalValue>
+        <name>New, Update Type to IT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>New_Update_Type_to_MarComms</fullName>
+        <field>Type</field>
+        <literalValue>Marketing &amp; Communications</literalValue>
+        <name>New, Update Type to MarComms</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Type_to_Data_Systems</fullName>
+        <field>Type</field>
+        <literalValue>Data &amp; Systems</literalValue>
+        <name>Update Type to Data &amp; Systems</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Type_to_Facilities_Ops</fullName>
+        <field>Type</field>
+        <literalValue>Facilities &amp; Operations</literalValue>
+        <name>Update Type to Facilities &amp; Ops</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

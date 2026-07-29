@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDS_ETJ_Visit_Last_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isnull(Placement_Number__c) || 
+Start_Date__c &gt; today()-day(today()) || 
+ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;) || 
+One_Year_Retention_End_Date__c &lt; date(year(today()-day(today())), month(today()-day(today())), 1) ||
+Case_Record__r.Inactive_Date__c &lt; date(year(today()-day(today())), month(today()-day(today())), 1)|| 
+Start_Date__c + 366 &lt; date(year(today()-day(today())), month(today()-day(today())), 1) || 
+ispickval (Job_Type__c, &quot;Permanent&quot;) || 
+ispickval (Job_Type__c, &quot;Temporary-Permanent&quot;) || 
+(ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; ispickval (End_Type__c, &quot;Move within Company&quot;)), NULL, 
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;), 
+
+if (month(Start_Date__c + 14) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 14) = year(today()-day(today())), &quot;Visit 01&quot;, 
+if (month(Start_Date__c + 44) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 44) = year(today()-day(today())), &quot;Visit 02&quot;, 
+if (month(Start_Date__c + 74) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 74) = year(today()-day(today())), &quot;Visit 03&quot;, 
+if (month(Start_Date__c + 104) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 104) = year(today()-day(today())), &quot;Visit 04&quot;, 
+if (month(Start_Date__c + 134) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 134) = year(today()-day(today())), &quot;Visit 05&quot;, 
+if (month(Start_Date__c + 164) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 164) = year(today()-day(today())), &quot;Visit 06&quot;, 
+if (month(Start_Date__c + 194) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 194) = year(today()-day(today())), &quot;Visit 07&quot;, 
+if (month(Start_Date__c + 224) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 224) = year(today()-day(today())), &quot;Visit 08&quot;, 
+if (month(Start_Date__c + 254) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 254) = year(today()-day(today())), &quot;Visit 09&quot;, 
+if (month(Start_Date__c + 284) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 284) = year(today()-day(today())), &quot;Visit 10&quot;, 
+if (month(Start_Date__c + 314) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 314) = year(today()-day(today())), &quot;Visit 11&quot;, 
+if (month(Start_Date__c + 344) = month(today()-day(today())) &amp;&amp; year(Start_Date__c + 344) = year(today()-day(today())), &quot;Visit 12&quot;,
+
+&quot;No Visit Last Month&quot;)))))))))))), 
+
+NULL))</formula>
+    <label>IDS ETJ Visit Last Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

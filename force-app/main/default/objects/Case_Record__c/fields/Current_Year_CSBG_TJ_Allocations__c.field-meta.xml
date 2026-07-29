@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Year_CSBG_TJ_Allocations__c</fullName>
+    <formula>if (Current_Year_CSBG_TJ__c
+
+&amp;&amp; Current_Year_CSBG_TJ_Enrollment_Date__c &lt;= Program__r.Grant_Contract_Allocations_End_Date__c
+
+&amp;&amp; (Current_Year_CSBG_TJ_Completion_Date__c &gt;= Program__r.Grant_Contract_Allocations_Start_Date__c || isblank (Current_Year_CSBG_TJ_Completion_Date__c))
+
+, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current Year CSBG - TJ Allocations</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

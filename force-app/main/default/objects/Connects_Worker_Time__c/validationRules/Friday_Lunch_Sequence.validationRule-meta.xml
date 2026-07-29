@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Friday_Lunch_Sequence</fullName>
+    <active>true</active>
+    <errorConditionFormula>if (isblank (Friday_Lunch_Start__c ) &amp;&amp; isblank(Friday_Lunch_End__c), FALSE,
+
+if (contains(Friday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Lunch_End__c, &quot;PM&quot;), FALSE,
+
+if (contains(Friday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Lunch_End__c, &quot;AM&quot;), TRUE,
+
+if (contains(Friday_Lunch_Start__c , &quot;12:&quot;) &amp;&amp; not(contains (Friday_Lunch_End__c, &quot;12:&quot;)), FALSE,
+
+if (contains(Friday_Lunch_Start__c , &quot;AM&quot;) &amp;&amp; contains (Friday_Lunch_End__c, &quot;AM&quot;) &amp;&amp; value(substitute(substitute(Friday_Lunch_End__c, &quot; AM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))-value(substitute(substitute(Friday_Lunch_Start__c , &quot; AM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))&gt;=0, FALSE,
+
+if (contains(Friday_Lunch_Start__c , &quot;PM&quot;) &amp;&amp; contains (Friday_Lunch_End__c, &quot;PM&quot;) &amp;&amp; value(substitute(substitute(Friday_Lunch_End__c, &quot; PM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))-value(substitute(substitute(Friday_Lunch_Start__c , &quot; PM&quot;, NULL), &quot;:&quot;, &quot;.&quot;))&gt;=0, FALSE,
+
+TRUE))))))</errorConditionFormula>
+    <errorMessage>&apos;Lunch End&apos; should be after &apos;Lunch Start&apos;, and both or neither should be filled in.</errorMessage>
+</ValidationRule>

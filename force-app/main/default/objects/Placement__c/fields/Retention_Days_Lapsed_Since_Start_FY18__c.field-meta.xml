@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retention_Days_Lapsed_Since_Start_FY18__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isnull (Start_Date__c), NULL, 
+
+if (not(isnull(End_Date_of_Latest_Subsequent_Job__c)), End_Date_of_Latest_Subsequent_Job__c - Start_Date__c, 
+
+if (not (isnull (End_Date__c)) &amp;&amp; Count_of_Subsequent_Jobs_with_Same_Org__c = 0, End_Date__c - Start_Date__c, 
+
+if (not (isnull (End_Date__c)) &amp;&amp; isnull (Count_of_Subsequent_Jobs_with_Same_Org__c), End_Date__c - Start_Date__c, 
+
+if (ispickval (Retention_Exception__c, &quot;Opted Out of Retention Support&quot;) || ispickval (Retention_Exception__c, &quot;Previously Retained&quot;)  || ispickval (Job_Type__c, &quot;Permanent-Inactive&quot;), today() - Start_Date__c, 
+
+if (not (isnull (Case_Record__r.Inactive_Date__c)), Case_Record__r.Inactive_Date__c - Start_Date__c, 
+
+today() - Start_Date__c))))))</formula>
+    <inlineHelpText>Placement retention for retention years FY18+ (placement years FY17+).</inlineHelpText>
+    <label>Retention Days Lapsed Since Start, FY18+</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

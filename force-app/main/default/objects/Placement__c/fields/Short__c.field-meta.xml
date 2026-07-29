@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field tells us if a short term job converted into a long term job. Manually selected by Cara staff.</description>
+    <inlineHelpText>Check this box if a short term job converted to a long term job.</inlineHelpText>
+    <label>Short Term Convereted to Long Term</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

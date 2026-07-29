@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>SetAttendeeEmail</name>
+        <label>Set Attendee Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Attendee_Email__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Extracted_Email</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>Extracted_Email</name>
+        <dataType>String</dataType>
+        <expression>RIGHT(
+LEFT(
+$Record.CnP_PaaS_EVT__Contact_Data__c,
+FIND(&apos;&lt;/Email&gt;&apos;, $Record.CnP_PaaS_EVT__Contact_Data__c)-1
+),
+LEN(
+LEFT(
+$Record.CnP_PaaS_EVT__Contact_Data__c,
+FIND(&apos;&lt;/Email&gt;&apos;, $Record.CnP_PaaS_EVT__Contact_Data__c)-1
+)
+)
+-
+FIND(
+&apos;&lt;Email&gt;&apos;,
+LEFT(
+$Record.CnP_PaaS_EVT__Contact_Data__c,
+FIND(&apos;&lt;/Email&gt;&apos;, $Record.CnP_PaaS_EVT__Contact_Data__c)-1
+)
+)
+-6
+)</expression>
+    </formulas>
+    <interviewLabel>C&amp;P Event Registered Attendee is Created {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>C&amp;P Event Registered Attendee is Created</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SetAttendeeEmail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CnP_PaaS_EVT__Contact_Data__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>CnP_PaaS_EVT__Event_attendee_session__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

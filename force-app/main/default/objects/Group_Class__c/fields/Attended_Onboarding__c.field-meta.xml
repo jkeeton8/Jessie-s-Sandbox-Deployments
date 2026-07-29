@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attended_Onboarding__c</fullName>
+    <label>Attended Onboarding</label>
+    <summaryFilterItems>
+        <field>GroupClass_Assignment__c.Connects_Attendance__c</field>
+        <operation>equals</operation>
+        <value>&quot;Attended, Traction Achieved&quot;, &quot;Attended, Follow Up&quot;</value>
+    </summaryFilterItems>
+    <summaryForeignKey>GroupClass_Assignment__c.Group_Class__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

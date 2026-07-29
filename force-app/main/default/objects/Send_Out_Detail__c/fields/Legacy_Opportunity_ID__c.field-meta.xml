@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Opportunity_ID__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Salesforce ID of Opportunity that Send Out Detail was associated with before Studentforce launch in Sep&apos;14.</inlineHelpText>
+    <label>Legacy Opportunity ID</label>
+    <length>25</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

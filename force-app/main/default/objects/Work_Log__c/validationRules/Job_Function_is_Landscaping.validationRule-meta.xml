@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Function_is_Landscaping</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Organization__r.Organization_ID_18_Digits__c = &apos;001i000000K8RGPAA3&apos; || Organization__r.Organization_ID_18_Digits__c = &apos;0013100001mQg61AAC&apos;) &amp;&amp; 
+not(ispickval(Job_Function__c, &quot;Landscaping&quot;))</errorConditionFormula>
+    <errorMessage>Job Function should be Landscaping.</errorMessage>
+</ValidationRule>

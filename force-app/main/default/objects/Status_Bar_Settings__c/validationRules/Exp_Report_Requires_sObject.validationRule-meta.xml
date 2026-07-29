@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Report_Requires_sObject</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( LOWER(Component_Classname__c) == &apos;component.c.expstatusbarreport&apos; &amp;&amp; (sObject__c == null || (LOWER(sObject__c) != &apos;contact&apos; &amp;&amp; LOWER(sObject__c) != &apos;client_household__c&apos; &amp;&amp; LOWER(sObject__c) != &apos;case_record__c&apos;)), true, false)</errorConditionFormula>
+    <errorMessage>The Report component requires a value for sObject. Value must be one of the following: Contact, Client_Household__c, or Case_Record__c.</errorMessage>
+</ValidationRule>

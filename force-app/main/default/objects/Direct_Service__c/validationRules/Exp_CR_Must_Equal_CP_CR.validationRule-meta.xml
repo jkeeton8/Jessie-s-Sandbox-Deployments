@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_CR_Must_Equal_CP_CR</fullName>
+    <active>true</active>
+    <description>If Case Participation is set and Case Record is set, then Case Record must equal the Case Record associated with the Case Participation.</description>
+    <errorConditionFormula>IF( Case_Participation__c != null &amp;&amp; Case_Record__c != null &amp;&amp;  Case_Participation__r.Case_Record__c != Case_Record__c, true, false)</errorConditionFormula>
+    <errorMessage>Case Record must equal the Case Record associated with the selected Case Participation.</errorMessage>
+</ValidationRule>

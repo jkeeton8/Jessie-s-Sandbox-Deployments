@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strat_Plan_FY18_FY20_Goals</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Goal_Sequence__c</columns>
+    <columns>Goal_Name__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Enterprise_Goal__c.Strategic_Plan_Goal</value>
+    </filters>
+    <label>Strat Plan FY18-FY20 Goals</label>
+    <language>en_US</language>
+</ListView>

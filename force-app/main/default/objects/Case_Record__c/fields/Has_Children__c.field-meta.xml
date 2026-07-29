@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Children__c</fullName>
+    <description>Created field in Nov 2018 as part of Incoming Participant Data cleanup. Backfilled using data captured in &apos;Number of Children (Intake Only)&apos; field on Case Record and &apos;Number of Children&apos;, &apos;Childcare Consistently Available&apos;, and &apos;Ages of Children&apos; fields on Contact Record.</description>
+    <inlineHelpText>New field as of Nov 2018. Populated information based on data in &apos;Ages of Children&apos; and &apos;Childcare Consistently Available&apos; fields.</inlineHelpText>
+    <label>Has Children</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

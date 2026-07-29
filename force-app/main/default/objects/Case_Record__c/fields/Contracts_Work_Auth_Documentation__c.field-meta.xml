@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts_Work_Auth_Documentation__c</fullName>
+    <label>Contracts Work Auth Documentation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Birth Certificate/Hospital Record</fullName>
+                <default>false</default>
+                <label>Birth Certificate/Hospital Record</label>
+            </value>
+            <value>
+                <fullName>Combo of State ID and Social Sec Card</fullName>
+                <default>false</default>
+                <label>Combo of State ID and Social Sec Card</label>
+            </value>
+            <value>
+                <fullName>Combo of DL and Social Sec Card</fullName>
+                <default>false</default>
+                <label>Combo of DL and Social Sec Card</label>
+            </value>
+            <value>
+                <fullName>US Passport</fullName>
+                <default>false</default>
+                <label>US Passport</label>
+            </value>
+            <value>
+                <fullName>Work Permit</fullName>
+                <default>false</default>
+                <label>Work Permit</label>
+            </value>
+            <value>
+                <fullName>Naturalization Certification</fullName>
+                <default>false</default>
+                <label>Naturalization Certification</label>
+            </value>
+            <value>
+                <fullName>Alien Registration Card</fullName>
+                <default>false</default>
+                <label>Alien Registration Card</label>
+            </value>
+            <value>
+                <fullName>Foreign Passport w/ Eligibility Stamp</fullName>
+                <default>false</default>
+                <label>Foreign Passport w/ Eligibility Stamp</label>
+            </value>
+            <value>
+                <fullName>Baptismal Certificate w/ DOB</fullName>
+                <default>false</default>
+                <label>Baptismal Certificate w/ DOB</label>
+            </value>
+            <value>
+                <fullName>DD-214 w/ Place of Birth</fullName>
+                <default>false</default>
+                <label>DD-214 w/ Place of Birth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

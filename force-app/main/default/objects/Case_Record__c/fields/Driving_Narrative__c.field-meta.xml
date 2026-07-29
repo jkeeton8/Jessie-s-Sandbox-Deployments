@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driving_Narrative__c</fullName>
+    <description>Field created in Feb 2019 as part of participant data cleanup.</description>
+    <inlineHelpText>Input information regarding driver’s license history, license revoked, driving fines, and DL2 access.</inlineHelpText>
+    <label>Driving Narrative</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

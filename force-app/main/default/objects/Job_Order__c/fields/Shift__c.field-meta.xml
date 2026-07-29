@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift__c</fullName>
+    <inlineHelpText>If Rotating, choose all that apply.</inlineHelpText>
+    <label>Shift</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>First/Day</fullName>
+                <default>false</default>
+                <label>First/Day</label>
+            </value>
+            <value>
+                <fullName>Second/Evenings</fullName>
+                <default>false</default>
+                <label>Second/Evenings</label>
+            </value>
+            <value>
+                <fullName>Third/Overnight</fullName>
+                <default>false</default>
+                <label>Third/Overnight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

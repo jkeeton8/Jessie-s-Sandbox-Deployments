@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETJ_Next_Mo__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isnull (Placement_Number__c) || 
+ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;) || 
+not (isnull (One_Year_Retention_End_Date__c)) || 
+not (isnull (Case_Record__r.Inactive_Date__c)) || 
+Start_Date__c + 366 &lt; date(year(today()-day(today())+32), month(today()-day(today())+32), 1) || 
+ispickval (Job_Type__c, &quot;Permanent&quot;) || 
+ispickval (Job_Type__c, &quot;Temporary-Permanent&quot;) || 
+(ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; ispickval (End_Type__c, &quot;Move within Company&quot;)), 0, 
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;), 
+
+if (month(Start_Date__c + 14) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 14) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 44) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 44) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 74) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 74) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 104) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 104) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 134) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 134) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 164) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 164) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 194) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 194) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 224) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 224) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 254) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 254) = year(today()-day(today())+32), 1, 0) +  
+if (month(Start_Date__c + 284) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 284) = year(today()-day(today())+32), 1, 0) + 
+if (month(Start_Date__c + 314) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 314) = year(today()-day(today())+32), 1, 0) +  
+if (month(Start_Date__c + 344) = month(today()-day(today())+32) &amp;&amp; year(Start_Date__c + 344) = year(today()-day(today())+32), 1, 0), 
+
+0))</formula>
+    <label># ETJ, Next Mo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

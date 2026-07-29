@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpCaseStatusHistory</fullName>
+    <description>Used by the ECM Case Record trigger. When a change occurs to one of these fields a new Case Record History record is created with the values of those field set fields. Only the fields from the field set that exist on the both the Case Record and the Case Record History objects are set on the Case Record History record.</description>
+    <displayedFields>
+        <field>Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Bill_Code__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>ExpCaseStatusHistory</label>
+</FieldSet>

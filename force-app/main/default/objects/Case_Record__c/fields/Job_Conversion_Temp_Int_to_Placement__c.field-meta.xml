@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Conversion_Temp_Int_to_Placement__c</fullName>
+    <formula>if (contains (ECM_Placement_Sequence__c, &quot;Temporary;Permanent&quot;)
+|| contains (ECM_Placement_Sequence__c, &quot;Temporary;External Transitional&quot;)
+|| contains (ECM_Placement_Sequence__c, &quot;Temporary;Temporary-Permanent&quot;)
+|| contains (ECM_Placement_Sequence__c, &quot;Internship;Permanent&quot;) 
+|| contains (ECM_Placement_Sequence__c, &quot;Internship;External Transitional&quot;) 
+|| contains (ECM_Placement_Sequence__c, &quot;Internship;Temporary-Permanent&quot;),
+
+TRUE,
+FALSE)</formula>
+    <label>Job Conversion, Temp/Int to Placement</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

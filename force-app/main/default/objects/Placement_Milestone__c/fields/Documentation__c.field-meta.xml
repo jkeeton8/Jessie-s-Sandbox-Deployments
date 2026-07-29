@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documentation__c</fullName>
+    <inlineHelpText>Source of documentation used for verification.</inlineHelpText>
+    <label>Documentation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employer Verification</fullName>
+                <default>false</default>
+                <label>Employer Verification</label>
+            </value>
+            <value>
+                <fullName>LED</fullName>
+                <default>false</default>
+                <label>LED</label>
+            </value>
+            <value>
+                <fullName>Paystubs</fullName>
+                <default>false</default>
+                <label>Paystubs</label>
+            </value>
+            <value>
+                <fullName>Verbal</fullName>
+                <default>false</default>
+                <label>Verbal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

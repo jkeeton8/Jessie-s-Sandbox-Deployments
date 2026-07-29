@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Assessment_Summary_Requires_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( LOWER(Component_Classname__c) == &apos;component.c.expstatusbarassessmentsummary&apos; &amp;&amp;  (sObject_Field_1__c  == null || sObject_Field_2__c  == null) , true, false)</errorConditionFormula>
+    <errorMessage>The Assessment Summary component requires field names for sObject Field 1 and sObject Field 2. These fields must exist on Assessment__c.</errorMessage>
+</ValidationRule>

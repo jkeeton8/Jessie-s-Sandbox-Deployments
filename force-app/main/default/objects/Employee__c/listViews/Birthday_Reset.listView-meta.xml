@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Birthday_Reset</fullName>
+    <columns>NAME</columns>
+    <columns>Hire_Date__c</columns>
+    <columns>Birthday__c</columns>
+    <columns>Next_Birthday__c</columns>
+    <columns>Receive_Birthday_Posts__c</columns>
+    <columns>Reset_Birthday_System__c</columns>
+    <columns>Chatter_User__c</columns>
+    <columns>Chatter_Free_User_ID__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Birthday Reset</label>
+</ListView>

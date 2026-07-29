@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Year_Retention_Numerator_FY14_FY17__c</fullName>
+    <formula>if (isnull (Placement_Number__c), FALSE, 
+
+if (value(right(text(Placement_Year__c), 2)) &gt; 16, FALSE,
+
+if (not (ispickval (Student_Source__c, &quot;Downtown&quot;)) &amp;&amp; not (ispickval (Student_Source__c, &quot;South Side&quot;)) &amp;&amp; not (ispickval (Retention_Exception__c, &quot;Non-Student Included in Retention&quot;)), FALSE, 
+
+if (ispickval (Job_Type__c, &quot;Permanent-Advancement&quot;) || ispickval (Job_Type__c, &quot;Permanent-Inactive&quot;), FALSE, 
+
+if (ispickval (Retention_Exception__c, &quot;Previously Retained&quot;) || ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;), FALSE, 
+
+if (ispickval (Retention_Exception__c, &quot;Under One Year Considered Retained&quot;), TRUE,
+
+if (((Count_of_Subsequent_Jobs_with_Same_Org__c=0 || isblank(Count_of_Subsequent_Jobs_with_Same_Org__c)) &amp;&amp; ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; Retention_Days_Lapsed_FY14_FY17__c &lt; 365) || ispickval (Retention_Exception__c, &quot;ETJ Over One Year Not Considered Retained&quot;), FALSE, 
+
+if (ispickval (Retention_Exception__c, &quot;Retention Override&quot;), FALSE, 
+
+if (Retention_Days_Lapsed_FY14_FY17__c &gt;= 365, TRUE, 
+
+if (isblank (One_Year_Retention_End_Date__c) &amp;&amp; Retention_Days_Lapsed_FY14_FY17__c &lt; 365, TRUE, 
+
+FALSE))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates whether placement is included in numerator of placement retention for retention years FY14 through FY17 (placement years FY13 through FY16).</inlineHelpText>
+    <label>One-Year Retention Numerator, FY14-FY17</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

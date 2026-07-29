@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_1_0_Total_Professionalism__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId= &quot;01231000001ERwY&quot;,
+
+case( 
+(if (Question_01_Response__c, 1, 0) + 
+if (Question_02_Response__c, 1, 0) + 
+if (Question_03_Response__c, 1, 0) + 
+if (Question_04_Response__c, 1, 0) + 
+if (Question_05_Response__c, 1, 0)) 
+
+, 0, 0 
+, 1, 0 
+, 2, 0 
+, 3, 1 
+, 2),
+
+NULL)</formula>
+    <inlineHelpText>Out of 2 points. 3 checked to receive 1 point; 4 or 5 checked to receive 2 points.</inlineHelpText>
+    <label>Cleanslate 1.0 Total: Professionalism</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

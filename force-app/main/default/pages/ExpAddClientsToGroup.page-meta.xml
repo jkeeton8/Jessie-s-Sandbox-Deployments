@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>26.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Field set on Contact for client search fields: EcmClientSearchCriteria
+Field set on Case Record for enrolled client display fields: EcmCaseRecordSearch
+Field set on Case Participation for case participant display fields: EcmCaseParticipantSearch
+Field set on Contact for non-enrolled client display fields: EcmNonEnrolledClientSearch</description>
+    <label>ExpAddClientsToGroup</label>
+    <packageVersions>
+        <majorNumber>2</majorNumber>
+        <minorNumber>1</minorNumber>
+        <namespace>npe01</namespace>
+    </packageVersions>
+</ApexPage>

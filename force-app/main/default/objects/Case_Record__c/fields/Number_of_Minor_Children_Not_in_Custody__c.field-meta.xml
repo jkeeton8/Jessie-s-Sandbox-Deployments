@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Minor_Children_Not_in_Custody__c</fullName>
+    <description>Created in Nov 2018 as part of Incoming Participant Data cleanup. Backfilled by adding data in &apos;Number of Children in DCFS Custody&apos; and &apos;Number of Children in Family/Other Custody&apos; fields on Contact Record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Including Family, DCFS, etc. Detailed information can be added to Family Structure Narrative.
+
+See help text on &apos;Number of Minor Children in Custody&apos; for note about ambiguity.</inlineHelpText>
+    <label>Number of Minor Children Not in Custody</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

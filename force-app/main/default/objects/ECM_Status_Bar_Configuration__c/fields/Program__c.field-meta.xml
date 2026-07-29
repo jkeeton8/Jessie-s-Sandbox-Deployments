@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The program that this configuration will be related to.</description>
+    <inlineHelpText>The program that this configuration will be related to.</inlineHelpText>
+    <label>Program</label>
+    <referenceTo>Program__c</referenceTo>
+    <relationshipName>ECM_Dashboard_Configurations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

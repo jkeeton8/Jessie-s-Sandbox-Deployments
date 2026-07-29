@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Assessment_Fields_Check</fullName>
+    <active>true</active>
+    <description>Prevents the update of Case_Participation, Case_Record or Record Type on the Assessment if the Next or Previous fields are set.</description>
+    <errorConditionFormula>AND(OR(ISCHANGED(RecordTypeId),ISCHANGED(Case_Record__c),ISCHANGED(Case_Participant__c)), OR(NOT(ISBLANK(Next__c)),NOT(ISBLANK(Previous__c))) )</errorConditionFormula>
+    <errorMessage>The Case Record, Case Participation or Record Type cannot be changed for the Assessment record if the Next or Previous fields have been set.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Continues_on_Next_Formula__c</fullName>
+    <formula>if (ispickval (Employment_Continues_on_Next_Record__c, &quot;Yes&quot;), TRUE, FALSE)</formula>
+    <label>Employment Continues on Next (Formula)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

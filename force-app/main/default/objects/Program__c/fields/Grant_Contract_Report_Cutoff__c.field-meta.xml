@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Contract_Report_Cutoff__c</fullName>
+    <inlineHelpText>Used as max cutoff date in &apos;# Days in House (Grants/Contracts)&apos; field on Case Record.</inlineHelpText>
+    <label>Grant/Contract Report Cutoff</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

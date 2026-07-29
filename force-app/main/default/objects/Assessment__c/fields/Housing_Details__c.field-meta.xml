@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Housing_Details__c</fullName>
+    <description>Swapped field dependency between &apos;Housing Type&apos; and &apos;Housing Details&apos; in Nov 2018 as part of Incoming Participant Data cleanup.</description>
+    <label>Housing Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shelter</fullName>
+                <default>false</default>
+                <label>Shelter</label>
+            </value>
+            <value>
+                <fullName>Recovery home</fullName>
+                <default>false</default>
+                <label>Recovery home</label>
+            </value>
+            <value>
+                <fullName>Emergency housing</fullName>
+                <default>false</default>
+                <label>Emergency housing</label>
+            </value>
+            <value>
+                <fullName>Halfway house</fullName>
+                <default>false</default>
+                <label>Halfway house</label>
+            </value>
+            <value>
+                <fullName>Transitional housing (with specified end)</fullName>
+                <default>false</default>
+                <label>Transitional housing (with specified end)</label>
+            </value>
+            <value>
+                <fullName>Living with family/friend (name not on lease)</fullName>
+                <default>false</default>
+                <label>Living with family/friend (name not on lease)</label>
+            </value>
+            <value>
+                <fullName>Rental through provider</fullName>
+                <default>false</default>
+                <label>Rental through provider</label>
+            </value>
+            <value>
+                <fullName>Rental through private</fullName>
+                <default>false</default>
+                <label>Rental through private</label>
+            </value>
+            <value>
+                <fullName>Homeownership</fullName>
+                <default>false</default>
+                <label>Homeownership</label>
+            </value>
+            <value>
+                <fullName>Not Collected</fullName>
+                <default>false</default>
+                <label>Not Collected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

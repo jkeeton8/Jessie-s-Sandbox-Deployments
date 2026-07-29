@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day</fullName>
+    <active>true</active>
+    <label>Day</label>
+    <picklistValues>
+        <picklist>Community_Area__c</picklist>
+        <values>
+            <fullName>Albany Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archer Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armour Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashburn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auburn Gresham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avalon Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avondale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Cragin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bridgeport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brighton Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calumet Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Lawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Douglas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dunning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Garfield Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edison Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Englewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Glen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuller Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gage Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garfield Ridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Boulevard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Grand Crossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hegewisch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hermosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humboldt Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyde Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irving Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jefferson Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakeview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logan Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower West Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKinley Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montclare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morgan Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mount Greenwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near North Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near South Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near West Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Lawndale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwood Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%27Hare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portage Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pullman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverdale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rogers Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Deering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Lawndale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Shore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uptown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Elsdon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Englewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Garfield Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Lawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Pullman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Ridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Town</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodlawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Control_Duration__c</picklist>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Control_Type__c</picklist>
+        <values>
+            <fullName>Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Day_of_the_Week__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location_Day_Restriction__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>North Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Side</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

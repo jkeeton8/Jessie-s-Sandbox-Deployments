@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Jobs_Available__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the CEP number of jobs available that are expected to be filled by TCP students.</inlineHelpText>
+    <label>Number of Jobs Available</label>
+    <precision>3</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

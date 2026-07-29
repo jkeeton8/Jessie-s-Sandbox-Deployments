@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Punch_Check__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(Participant_Time_Date__c &gt; Case_Record__r.Inactive_Date__c, &quot;Inactive Punch&quot;, 
+
+if (contains(text(Case_Record__r.Status__c), &quot;Prospective&quot;), &quot;Prospective Punch&quot;, &quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Inactive Punch Check</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

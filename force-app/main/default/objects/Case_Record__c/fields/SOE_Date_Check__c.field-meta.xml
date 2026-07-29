@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOE_Date_Check__c</fullName>
+    <formula>IF(
+    OR(
+        ISBLANK(Resume_SOE_Date__c),
+        ISBLANK(Background_Check_SOE_Date__c)
+    ),
+    AND(
+        NOT(ISBLANK(Drug_Test_Submitted_Date__c)),
+        NOT(ISBLANK(Housing_SOE_Date__c)),
+        NOT(ISBLANK(Health_SOE_Date__c)),
+        NOT(ISBLANK(Child_Care_SOE_Date__c)),
+        NOT(ISBLANK(Conflict_Management_SOE_Date__c)),
+        NOT(ISBLANK(Professionalism_SOE_Date__c)),
+        NOT(ISBLANK(Time_Management_SOE_Date__c)),
+        NOT(ISBLANK(Team_Building_SOE_Date__c)),
+        NOT(ISBLANK(Communication_SOE_Date__c))
+    ),
+    false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SOE Date Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

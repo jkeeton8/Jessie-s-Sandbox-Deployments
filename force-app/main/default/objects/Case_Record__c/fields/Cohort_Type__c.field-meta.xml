@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cohort_Type__c</fullName>
+    <description>Exponent field, formerly &apos;Cohort Type&apos;. Did not change API name as not to disturb unit tests. Began collecting food security questions in Feb &apos;16.</description>
+    <inlineHelpText>Within the past 12 months, I/we worried whether our food would run out before I/we got money to buy more.</inlineHelpText>
+    <label>Food Insecurity Concern</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Often True</fullName>
+                <default>false</default>
+                <label>Often True</label>
+            </value>
+            <value>
+                <fullName>Sometimes True</fullName>
+                <default>false</default>
+                <label>Sometimes True</label>
+            </value>
+            <value>
+                <fullName>Never True</fullName>
+                <default>false</default>
+                <label>Never True</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

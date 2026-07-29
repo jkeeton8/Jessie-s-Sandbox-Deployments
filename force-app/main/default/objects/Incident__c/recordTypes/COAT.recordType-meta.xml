@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COAT</fullName>
+    <active>true</active>
+    <label>COAT</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Observation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Praise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Connects_Send_Out_Hold__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Distribute_to_Program_Services__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issued_During__c</picklist>
+        <values>
+            <fullName>Cleanslate Internship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities Internship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front Desk and Security Internship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Send_Out_Hold__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>Child Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Term Job Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Exp__c</picklist>
+        <values>
+            <fullName>1 - Regular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Monitored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Terminated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresolved</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Strategic_Job_Search_Focus_Stage__c</picklist>
+        <values>
+            <fullName>Brand Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interviewing and Networking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researching and Applying for Jobs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

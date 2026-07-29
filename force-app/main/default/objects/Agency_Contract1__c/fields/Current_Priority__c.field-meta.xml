@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Priority__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox will be used to select the current priority grant for transit card distributions</description>
+    <inlineHelpText>This checkbox will be used to select the current priority grant for transit card distributions</inlineHelpText>
+    <label>Current Priority</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

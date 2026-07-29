@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_SP_Config_Starter_Page_Header__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&lt;apex:page controller=\&quot;ExpServicePlanController\&quot; sidebar=\&quot;false\&quot; tabStyle=\&quot;Case_Record__c\&quot; action=\&quot;{&quot; + &quot;!&quot; + &quot;checkForLock&quot;+ &quot;}\&quot;&gt;&quot; + BR() +
+&quot;&lt;apex:includeScript value=\&quot;&quot; + &quot;{&quot; + &quot;!&quot; + &quot;$&quot; + &quot;Resource.jquery_v1_10_2_min&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot;&lt;apex:includeScript value=\&quot;&quot; + &quot;{&quot; + &quot;!&quot; + &quot;$&quot; + &quot;Resource.ExpJavaScript&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:stylesheet value=\&quot;{&quot; + &quot;!&quot; + &quot;URLFOR(&quot; + &quot;$&quot; + &quot;Resource.ExpResources, styleSheet)&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:form id=\&quot;theForm\&quot;&gt;&quot; + BR() +
+&quot;&lt;span id=\&quot;previousvalues\&quot;&gt;&lt;apex:inputHidden value=\&quot;{&quot; + &quot;!&quot; + &quot;previousValues&quot; + &quot;}\&quot; /&gt;&lt;/span&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:image value=\&quot;{&quot; + &quot;!&quot; + &quot;$&quot; + &quot;Resource.EcmLogov2&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:sectionHeader title=\&quot;{&quot; + &quot;!&quot; +  &quot;pageTitle&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:pageBlock id=\&quot;thePageBlock\&quot;&gt;&quot; + BR() +
+&quot; &quot; + &quot;&lt;apex:pageMessages id=\&quot;errors\&quot;/&gt;&quot; + BR() + 
+&quot; &quot; + &quot;&lt;apex:tabPanel id=\&quot;tabPanel\&quot; switchType=\&quot;client\&quot; value=\&quot;{&quot; + &quot;!&quot; + &quot;selectedMainTab&quot; + &quot;}\&quot;&gt;&quot; + BR() +
+&quot; &quot; + &quot; &quot; + &quot;&lt;apex:tab id=\&quot;tab1\&quot; name=\&quot;tab1\&quot; label=\&quot;{&quot; + &quot;!&quot; + &quot;treatmentPlanTabLabel&quot;+ &quot;}\&quot; ontabenter=\&quot;setElementValue(&apos;selectedMainTab&apos;,&apos;tab1&apos;);\&quot; &gt;&quot;  + BR() + BR() +
+&quot; &quot; + &quot; &quot; + &quot;&lt;apex:outputPanel id=\&quot;actionPlanContainer\&quot;&gt;&quot;  + BR() +
+&quot;&lt;!-- **** Based off of ECM Configuration: &quot;+Name+&quot; ****--&gt;&quot; +BR() + BR()</formula>
+    <label>ECM SP Config Starter Page Header</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

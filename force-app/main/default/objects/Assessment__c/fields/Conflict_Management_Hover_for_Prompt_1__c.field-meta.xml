@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conflict_Management_Hover_for_Prompt_1__c</fullName>
+    <description>Changed May 2022, previous question: Tell me about a time when you had a conflict with a coworker and how you handled it. What are the skills you use to manage frustration at work?
+Changed Feb 2021, previous question: Tell me about a time when you had to work with someone you disagreed with. How did you handle it?</description>
+    <inlineHelpText>Tell me about a time you had a conflict at work?</inlineHelpText>
+    <label>Conflict Management, Hover for Prompt 1</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Site_Track__c</fullName>
+    <description>Classic Core Training discontinued at SSC after September 2015. &quot;Traditional&quot; to &quot;Downtown&quot;; &quot;CWF&quot; to &quot;QCC&quot;, and &quot;Staffing Direct&quot; to &quot;Connects Direct&quot; on 1/17/17. &quot;QCC&quot; to &quot;South Side&quot; on 1/22/17. &apos;Program Track&apos; to &apos;Portal&apos; on 8/27/17. Added &quot;Business Growth&quot; on 1/30/19.</description>
+    <inlineHelpText>This field is required. If not yet determined, choose expected Portal and update as needed.</inlineHelpText>
+    <label>Portal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCP</fullName>
+                <default>false</default>
+                <label>Cara Core Programming</label>
+            </value>
+            <value>
+                <fullName>CAP</fullName>
+                <default>false</default>
+                <label>Cara Accelerator Pathway</label>
+            </value>
+            <value>
+                <fullName>Workshop Direct</fullName>
+                <default>false</default>
+                <label>Workshop Direct</label>
+            </value>
+            <value>
+                <fullName>Business Growth</fullName>
+                <default>false</default>
+                <label>Business Growth</label>
+            </value>
+            <value>
+                <fullName>Connects Direct</fullName>
+                <default>false</default>
+                <label>Connects Direct</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Direct</fullName>
+                <default>false</default>
+                <label>Cleanslate Direct</label>
+            </value>
+            <value>
+                <fullName>Downtown</fullName>
+                <default>false</default>
+                <label>Downtown</label>
+            </value>
+            <value>
+                <fullName>XCH</fullName>
+                <default>false</default>
+                <label>Xchange</label>
+            </value>
+            <value>
+                <fullName>CVI</fullName>
+                <default>false</default>
+                <label>CVI</label>
+            </value>
+            <value>
+                <fullName>WDC</fullName>
+                <default>false</default>
+                <label>WDC</label>
+            </value>
+            <value>
+                <fullName>Work First</fullName>
+                <default>false</default>
+                <label>Work First</label>
+            </value>
+            <value>
+                <fullName>Business Only</fullName>
+                <default>false</default>
+                <label>Business Only</label>
+            </value>
+            <value>
+                <fullName>INVC: Co-Location</fullName>
+                <default>false</default>
+                <label>INVC: Co-Location</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

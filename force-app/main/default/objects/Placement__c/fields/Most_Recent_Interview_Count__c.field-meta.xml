@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Most_Recent_Interview_Count__c</fullName>
+    <description>Does not include those with only Start Date filled in unless attached to Job Order, since Send Out / Employment is also used to record jobs secured without the involvement of staff.</description>
+    <externalId>false</externalId>
+    <formula>if (not (isblank (Most_Recent_Interview_Date__c)), 1, 
+
+if (not (isblank (Start_Date__c)) &amp;&amp; not (isblank (Send_Out_Date__c)), 1, 
+
+if (not (isblank (Start_Date__c)) &amp;&amp; not (isblank (Job_Order__c)), 1,
+
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Most Recent Interview Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

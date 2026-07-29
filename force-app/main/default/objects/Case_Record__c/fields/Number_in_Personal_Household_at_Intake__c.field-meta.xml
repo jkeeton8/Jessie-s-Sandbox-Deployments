@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_in_Personal_Household_at_Intake__c</fullName>
+    <description>Changed field label to &quot;Number of Dependents, Including Self&quot; in Nov 2018 as part of Incoming Participant Data cleanup.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This includes children in your custody, yourself, and any others you support in your household.
+
+Field formerly labeled as &quot;Number in Personal Household at Intake&quot; until Nov 2018.</inlineHelpText>
+    <label>Number of Dependents, Including Self</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

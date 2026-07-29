@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traction_Achieved_Workshop_Direct_Temp__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field now used in Connects Onboarding, if traction has to be manually added by the team.
+
+Temporary field to allow for Workshop Direct meeting Traction in FY17 and FY18 to be pulled into reports. These values have been manually filled and will be deleted once Traction is automatically calculated. This field should be deleted by September 2018.</description>
+    <label>Traction Achieved, Manual</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

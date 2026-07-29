@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Competency__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  MIN(
+    ABS(Send_Out_Eligible_Date__c - Background_Check_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Child_Care_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Communication_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Conflict_Management_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Drug_Test_Submitted_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Health_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Housing_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Professionalism_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Resume_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Team_Building_SOE_Date__c),
+    ABS(Send_Out_Eligible_Date__c - Time_Management_SOE_Date__c)
+  ),
+  ABS(Send_Out_Eligible_Date__c - Background_Check_SOE_Date__c), &quot;Background Check&quot;,
+  ABS(Send_Out_Eligible_Date__c - Child_Care_SOE_Date__c), &quot;Child Care&quot;,
+  ABS(Send_Out_Eligible_Date__c - Communication_SOE_Date__c), &quot;Communication&quot;,
+  ABS(Send_Out_Eligible_Date__c - Conflict_Management_SOE_Date__c), &quot;Conflict Management&quot;,
+  ABS(Send_Out_Eligible_Date__c - Drug_Test_Submitted_Date__c), &quot;Drug Test&quot;,
+  ABS(Send_Out_Eligible_Date__c - Health_SOE_Date__c), &quot;Health&quot;,
+  ABS(Send_Out_Eligible_Date__c - Housing_SOE_Date__c), &quot;Housing&quot;,
+  ABS(Send_Out_Eligible_Date__c - Professionalism_SOE_Date__c), &quot;Professionalism&quot;,
+  ABS(Send_Out_Eligible_Date__c - Resume_SOE_Date__c), &quot;Resume&quot;,
+  ABS(Send_Out_Eligible_Date__c - Team_Building_SOE_Date__c), &quot;Team Building&quot;,
+  ABS(Send_Out_Eligible_Date__c - Time_Management_SOE_Date__c), &quot;Time Management&quot;,
+  &quot;None&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Competency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

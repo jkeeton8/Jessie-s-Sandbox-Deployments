@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Population_Focus__c</fullName>
+    <label>Population Focus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low income or economically disadvantaged</fullName>
+                <default>false</default>
+                <label>Low income or economically disadvantaged</label>
+            </value>
+            <value>
+                <fullName>Unemployed or underemployed</fullName>
+                <default>false</default>
+                <label>Unemployed or underemployed</label>
+            </value>
+            <value>
+                <fullName>Homeless</fullName>
+                <default>false</default>
+                <label>Homeless</label>
+            </value>
+            <value>
+                <fullName>People with physical disabilities</fullName>
+                <default>false</default>
+                <label>People with physical disabilities</label>
+            </value>
+            <value>
+                <fullName>People with mental disabilities</fullName>
+                <default>false</default>
+                <label>People with mental disabilities</label>
+            </value>
+            <value>
+                <fullName>Opportunity youth</fullName>
+                <default>false</default>
+                <label>Opportunity youth</label>
+            </value>
+            <value>
+                <fullName>Justice involved</fullName>
+                <default>false</default>
+                <label>Justice involved</label>
+            </value>
+            <value>
+                <fullName>Veterans</fullName>
+                <default>false</default>
+                <label>Veterans</label>
+            </value>
+            <value>
+                <fullName>Newcomers, immigrants, or refugees</fullName>
+                <default>false</default>
+                <label>Newcomers, immigrants, or refugees</label>
+            </value>
+            <value>
+                <fullName>Single parents</fullName>
+                <default>false</default>
+                <label>Single parents</label>
+            </value>
+            <value>
+                <fullName>Place-based</fullName>
+                <default>false</default>
+                <label>Place-based</label>
+            </value>
+            <value>
+                <fullName>Substance abuse and addiction</fullName>
+                <default>false</default>
+                <label>Substance abuse and addiction</label>
+            </value>
+            <value>
+                <fullName>Domestic violence survivors</fullName>
+                <default>false</default>
+                <label>Domestic violence survivors</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

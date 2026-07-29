@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Contract_Link</fullName>
+    <availability>online</availability>
+    <description>Populates Case Record and Placement</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Contract Link</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/a3D/e?CF00Ni000000EO5G7={!Placement__c.Name}
+&amp;CF00Ni000000EO5G7_lkid={!Placement__c.Id}
+&amp;CF00Ni000000EO5GM={!Placement__c.Case_Record__c}
+&amp;CF00Ni000000EO5GM_lkid={!Placement__c.Case_RecordId__c}
+&amp;retURL={!Placement__c.Id}</url>
+</WebLink>

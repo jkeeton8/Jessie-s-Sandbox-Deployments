@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Category__c</fullName>
+    <label>Referral Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Referral_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Adelante - Excel &amp; Sheets</fullName>
+                <default>false</default>
+                <label>Adelante - Excel &amp; Sheets</label>
+            </value>
+            <value>
+                <fullName>Adelante - Intro to digital literacy</fullName>
+                <default>false</default>
+                <label>Adelante - Intro to digital literacy</label>
+            </value>
+            <value>
+                <fullName>Adelante - MS Office &amp; Google Suite</fullName>
+                <default>false</default>
+                <label>Adelante - MS Office &amp; Google Suite</label>
+            </value>
+            <value>
+                <fullName>Adelante - Other - please specify</fullName>
+                <default>false</default>
+                <label>Adelante - Other - please specify</label>
+            </value>
+            <value>
+                <fullName>Adelante - PowerPoint &amp; Slides</fullName>
+                <default>false</default>
+                <label>Adelante - PowerPoint &amp; Slides</label>
+            </value>
+            <value>
+                <fullName>Adelante - Word &amp; Docs</fullName>
+                <default>false</default>
+                <label>Adelante - Word &amp; Docs</label>
+            </value>
+            <value>
+                <fullName>A Knock at Midnight</fullName>
+                <default>false</default>
+                <label>A Knock at Midnight</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>BeMore</fullName>
+                <default>false</default>
+                <label>BeMore</label>
+            </value>
+            <value>
+                <fullName>Bill Paying</fullName>
+                <default>false</default>
+                <label>Bill Paying</label>
+            </value>
+            <value>
+                <fullName>Budgeting</fullName>
+                <default>false</default>
+                <label>Budgeting</label>
+            </value>
+            <value>
+                <fullName>Career Coach</fullName>
+                <default>false</default>
+                <label>Career Coach</label>
+            </value>
+            <value>
+                <fullName>Career Development Costs</fullName>
+                <default>false</default>
+                <label>Career Development Costs</label>
+            </value>
+            <value>
+                <fullName>Chicago Urban League</fullName>
+                <default>false</default>
+                <label>Chicago Urban League</label>
+            </value>
+            <value>
+                <fullName>Chicago Urban League - Google Certification</fullName>
+                <default>false</default>
+                <label>Chicago Urban League - Google Certification</label>
+            </value>
+            <value>
+                <fullName>Childcare</fullName>
+                <default>false</default>
+                <label>Childcare</label>
+            </value>
+            <value>
+                <fullName>Child Support</fullName>
+                <default>false</default>
+                <label>Child Support</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Direct</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Cleanslate Direct</label>
+            </value>
+            <value>
+                <fullName>Clothing</fullName>
+                <default>false</default>
+                <label>Clothing</label>
+            </value>
+            <value>
+                <fullName>ComEd &quot;CONSTRUCT&quot;</fullName>
+                <default>false</default>
+                <label>ComEd &quot;CONSTRUCT&quot;</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Conflict Management</fullName>
+                <default>false</default>
+                <label>Conflict Management</label>
+            </value>
+            <value>
+                <fullName>Connects Direct</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Connects Direct</label>
+            </value>
+            <value>
+                <fullName>Credit Building</fullName>
+                <default>false</default>
+                <label>Credit Building</label>
+            </value>
+            <value>
+                <fullName>Credit Repair</fullName>
+                <default>false</default>
+                <label>Credit Repair (Debt)</label>
+            </value>
+            <value>
+                <fullName>Daley College CNC</fullName>
+                <default>false</default>
+                <label>Daley College CNC</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>Document Recovery</fullName>
+                <default>false</default>
+                <label>Document Recovery</label>
+            </value>
+            <value>
+                <fullName>Employment Benefits</fullName>
+                <default>false</default>
+                <label>Employer-Based Benefits</label>
+            </value>
+            <value>
+                <fullName>Family</fullName>
+                <default>false</default>
+                <label>Family</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Food Insecurity</fullName>
+                <default>false</default>
+                <label>Food Insecurity</label>
+            </value>
+            <value>
+                <fullName>Foreclosure</fullName>
+                <default>false</default>
+                <label>Foreclosure</label>
+            </value>
+            <value>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+                <label>Furniture</label>
+            </value>
+            <value>
+                <fullName>Greater Chicago Food Depository</fullName>
+                <default>false</default>
+                <label>Greater Chicago Food Depository</label>
+            </value>
+            <value>
+                <fullName>Growing Home</fullName>
+                <default>false</default>
+                <label>Growing Home</label>
+            </value>
+            <value>
+                <fullName>Haircut</fullName>
+                <default>false</default>
+                <label>Haircut</label>
+            </value>
+            <value>
+                <fullName>Hire 360</fullName>
+                <default>false</default>
+                <label>Hire 360</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>ID</fullName>
+                <default>false</default>
+                <label>ID</label>
+            </value>
+            <value>
+                <fullName>Interview / Mock</fullName>
+                <default>false</default>
+                <label>Interview / Mock</label>
+            </value>
+            <value>
+                <fullName>JARC</fullName>
+                <default>false</default>
+                <label>JARC</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Lumity</fullName>
+                <default>false</default>
+                <label>Lumity</label>
+            </value>
+            <value>
+                <fullName>Mental Status Exam</fullName>
+                <default>false</default>
+                <label>Mental Status Exam</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Multiple Competencies (Specify in Progress Note)</fullName>
+                <default>false</default>
+                <label>Multiple Competencies (Specify in Progress Note)</label>
+            </value>
+            <value>
+                <fullName>Non-Medical Insurance</fullName>
+                <default>false</default>
+                <label>Non-Medical Insurance</label>
+            </value>
+            <value>
+                <fullName>OAI</fullName>
+                <default>false</default>
+                <label>OAI</label>
+            </value>
+            <value>
+                <fullName>OAI - 10hr. OSHA</fullName>
+                <default>false</default>
+                <label>OAI - 10hr. OSHA</label>
+            </value>
+            <value>
+                <fullName>OAI - 40hr. Hazwoper</fullName>
+                <default>false</default>
+                <label>OAI - 40hr. Hazwoper</label>
+            </value>
+            <value>
+                <fullName>OAI - Carpentry</fullName>
+                <default>false</default>
+                <label>OAI - Carpentry</label>
+            </value>
+            <value>
+                <fullName>OAI - First Aid/CPR/Bloodborne Pathogens</fullName>
+                <default>false</default>
+                <label>OAI - First Aid/CPR/Bloodborne Pathogens</label>
+            </value>
+            <value>
+                <fullName>OAI - Forklift (sit down)</fullName>
+                <default>false</default>
+                <label>OAI - Forklift (sit down)</label>
+            </value>
+            <value>
+                <fullName>OAI - Forklift (stand up)</fullName>
+                <default>false</default>
+                <label>OAI - Forklift (stand up)</label>
+            </value>
+            <value>
+                <fullName>OAI - LRRP (Lead Renovation &amp; Repair)</fullName>
+                <default>false</default>
+                <label>OAI - LRRP (Lead Renovation &amp; Repair)</label>
+            </value>
+            <value>
+                <fullName>OAI - Solar Panel Installer</fullName>
+                <default>false</default>
+                <label>OAI - Solar Panel Installer</label>
+            </value>
+            <value>
+                <fullName>Olive Harvey College</fullName>
+                <default>false</default>
+                <label>Olive Harvey College</label>
+            </value>
+            <value>
+                <fullName>Opening Bank Account</fullName>
+                <default>false</default>
+                <label>Opening Bank Account</label>
+            </value>
+            <value>
+                <fullName>ORC</fullName>
+                <default>false</default>
+                <label>ORC</label>
+            </value>
+            <value>
+                <fullName>Post-Cohort Wellness Check</fullName>
+                <default>false</default>
+                <label>Post-Cohort Wellness Check</label>
+            </value>
+            <value>
+                <fullName>Professionalism</fullName>
+                <default>false</default>
+                <label>Professionalism</label>
+            </value>
+            <value>
+                <fullName>Public Benefits</fullName>
+                <default>false</default>
+                <label>Public Benefits</label>
+            </value>
+            <value>
+                <fullName>Red Flag - Risk Assessment</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Red Flag - Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Rental Assistance</fullName>
+                <default>false</default>
+                <label>Rental Assistance</label>
+            </value>
+            <value>
+                <fullName>Request for counseling</fullName>
+                <default>false</default>
+                <label>Request for counseling</label>
+            </value>
+            <value>
+                <fullName>SEIU</fullName>
+                <default>false</default>
+                <label>SEIU</label>
+            </value>
+            <value>
+                <fullName>SPRING Forward Housing Navigation</fullName>
+                <default>false</default>
+                <label>SPRING Forward Housing Navigation</label>
+            </value>
+            <value>
+                <fullName>Student Loans</fullName>
+                <default>false</default>
+                <label>Student Loans</label>
+            </value>
+            <value>
+                <fullName>Take your Legacy Back</fullName>
+                <default>false</default>
+                <label>Take Your Legacy Back</label>
+            </value>
+            <value>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+                <label>Tax Issues</label>
+            </value>
+            <value>
+                <fullName>Teamwork</fullName>
+                <default>false</default>
+                <label>Teamwork</label>
+            </value>
+            <value>
+                <fullName>Time Management</fullName>
+                <default>false</default>
+                <label>Time Management</label>
+            </value>
+            <value>
+                <fullName>Transitional Training Services</fullName>
+                <default>false</default>
+                <label>Transitional Training Services</label>
+            </value>
+            <value>
+                <fullName>Union Pacific Railroad</fullName>
+                <default>false</default>
+                <label>Union Pacific Railroad</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>Vision</fullName>
+                <default>false</default>
+                <label>Vision</label>
+            </value>
+            <value>
+                <fullName>Workshop Direct</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Workshop Direct</label>
+            </value>
+            <value>
+                <fullName>Xchange</fullName>
+                <default>false</default>
+                <label>Xchange</label>
+            </value>
+            <value>
+                <fullName>Yellow Flag - Mental Health Check-In</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>Yellow Flag - Mental Health Check-In</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <valueName>Career Coach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Volunteer Coaching</controllingFieldValue>
+            <valueName>Interview / Mock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <valueName>Mental Status Exam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <valueName>Post-Cohort Wellness Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <valueName>Red Flag - Risk Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <valueName>Request for counseling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Mental Health Concern</controllingFieldValue>
+            <valueName>Yellow Flag - Mental Health Check-In</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - Excel &amp; Sheets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - Intro to digital literacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - MS Office &amp; Google Suite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - Other - please specify</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - PowerPoint &amp; Slides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Adelante Digital Literacy</controllingFieldValue>
+            <valueName>Adelante - Word &amp; Docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Bankruptcy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Bill Paying</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Budgeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Career Development Costs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Childcare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Child Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Clothing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Credit Building</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Credit Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Dental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Document Recovery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Employment Benefits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Food Insecurity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Foreclosure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Haircut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Miscellaneous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Multiple Competencies (Specify in Progress Note)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Non-Medical Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Opening Bank Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Public Benefits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Rental Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>SPRING Forward Housing Navigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Student Loans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Taxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Supportive Services</controllingFieldValue>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>A Knock at Midnight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>BeMore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Chicago Urban League</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Chicago Urban League - Google Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>ComEd &quot;CONSTRUCT&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Daley College CNC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Greater Chicago Food Depository</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Growing Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Hire 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>JARC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Lumity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - 10hr. OSHA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - 40hr. Hazwoper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - Carpentry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - First Aid/CPR/Bloodborne Pathogens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - Forklift (sit down)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - Forklift (stand up)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - LRRP (Lead Renovation &amp; Repair)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>OAI - Solar Panel Installer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Olive Harvey College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>ORC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>SEIU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Take your Legacy Back</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Transitional Training Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Union Pacific Railroad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Certification Trainings</controllingFieldValue>
+            <valueName>Xchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External</controllingFieldValue>
+            <valueName>Financial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <valueName>Cleanslate Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <valueName>Connects Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal - Portal</controllingFieldValue>
+            <valueName>Workshop Direct</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

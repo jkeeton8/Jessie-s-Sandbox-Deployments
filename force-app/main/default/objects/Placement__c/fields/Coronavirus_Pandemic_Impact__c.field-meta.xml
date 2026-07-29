@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coronavirus_Pandemic_Impact__c</fullName>
+    <inlineHelpText>&apos;Coronavirus Pandemic Impact&apos; has temporarily been added for visibility into experience of those employed.
+
+Laid Off: No longer on the company books. 
+
+Furloughed: Expected to eventually return. Possibly receiving some benefits, hours, or pay.</inlineHelpText>
+    <label>Coronavirus Pandemic Impact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Laid Off</fullName>
+                <default>false</default>
+                <label>Laid Off</label>
+            </value>
+            <value>
+                <fullName>Furloughed</fullName>
+                <default>false</default>
+                <label>Furloughed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

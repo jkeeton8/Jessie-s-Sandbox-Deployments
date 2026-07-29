@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Minor_Children_in_Custody__c</fullName>
+    <description>Created in Nov 2018 as part of Incoming Participant Data cleanup. Backfilled using data in &apos;Number of Children in Client Custody&apos; field on Contact Record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Until Nov 2018, custody fields were found on the participant&apos;s contact record. For those with multiple case records, there is an ambiguity as to when the data captured in this field was collected and if it&apos;s accurate as of the program start date.</inlineHelpText>
+    <label>Number of Minor Children in Custody</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

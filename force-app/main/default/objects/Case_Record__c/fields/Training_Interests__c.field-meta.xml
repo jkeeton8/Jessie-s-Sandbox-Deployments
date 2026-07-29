@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Interests__c</fullName>
+    <description>New field as of Feb 2019. Question originates on CAM Assessment.</description>
+    <inlineHelpText>TWIC is a credential for all personnel requiring un-escorted access to secure vessels, and all mariners holding United States Coast Guard-issued credentials.</inlineHelpText>
+    <label>Certification/Training Interests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABM Janitorial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ABM Janitorial</label>
+            </value>
+            <value>
+                <fullName>Cannabis Education &amp; Certification</fullName>
+                <default>false</default>
+                <label>Cannabis Education &amp; Certification</label>
+            </value>
+            <value>
+                <fullName>Carpentry</fullName>
+                <default>false</default>
+                <label>Carpentry</label>
+            </value>
+            <value>
+                <fullName>CDL Certification</fullName>
+                <default>false</default>
+                <label>CDL Certification</label>
+            </value>
+            <value>
+                <fullName>Chef Di Partie Certification Unionized Career through United Here Local 1</fullName>
+                <default>false</default>
+                <label>Chef Di Partie Certification Unionized Career through United Here Local 1</label>
+            </value>
+            <value>
+                <fullName>Construction Trades</fullName>
+                <default>false</default>
+                <label>Construction Trades (i.e., electrical, plumbing, etc.)</label>
+            </value>
+            <value>
+                <fullName>CPR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPR</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Digital Literacy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>Drone Operations</fullName>
+                <default>false</default>
+                <label>Drone Operations</label>
+            </value>
+            <value>
+                <fullName>Flagger Certification and Painting &amp; Plaster</fullName>
+                <default>false</default>
+                <label>Flagger Certification and Painting &amp; Plaster</label>
+            </value>
+            <value>
+                <fullName>Forklift</fullName>
+                <default>false</default>
+                <label>Forklift</label>
+            </value>
+            <value>
+                <fullName>Greater Chicago Food Depository</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GCFD Food Handling</label>
+            </value>
+            <value>
+                <fullName>GED Courses</fullName>
+                <default>false</default>
+                <label>GED Courses</label>
+            </value>
+            <value>
+                <fullName>Health Care</fullName>
+                <default>false</default>
+                <label>Health Care</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality/Customer Service CGSP certification</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>IT/Technology</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IT/Technology</label>
+            </value>
+            <value>
+                <fullName>IT - Digital Literacy</fullName>
+                <default>false</default>
+                <label>IT - Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>IT - Google Certifications</fullName>
+                <default>false</default>
+                <label>IT - Google Certifications</label>
+            </value>
+            <value>
+                <fullName>NRF Customer Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NRF Customer Service</label>
+            </value>
+            <value>
+                <fullName>OSHA</fullName>
+                <default>false</default>
+                <label>OSHA</label>
+            </value>
+            <value>
+                <fullName>Power &amp; Utilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Power &amp; Utilities</label>
+            </value>
+            <value>
+                <fullName>Production Assistant/Urban Farm</fullName>
+                <default>false</default>
+                <label>Production Assistant/Urban Farm</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management (planning/organizing projects for a team)</label>
+            </value>
+            <value>
+                <fullName>Prove-It Assessments</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prove-It Assessments</label>
+            </value>
+            <value>
+                <fullName>Railroad Train Crew or Train Conductor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Railroad Train Crew or Train Conductor</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Transportation, Distribution and Logistics (TDL)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TDL</label>
+            </value>
+            <value>
+                <fullName>TWIC</fullName>
+                <default>false</default>
+                <label>TWIC</label>
+            </value>
+            <value>
+                <fullName>Whole Foods Market Prepared Foods</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Whole Foods Market Prepared Foods</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

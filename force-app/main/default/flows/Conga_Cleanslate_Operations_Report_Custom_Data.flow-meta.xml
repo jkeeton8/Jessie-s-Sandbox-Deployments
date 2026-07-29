@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>formulaCongaMerge</name>
+        <dataType>String</dataType>
+        <expression>&quot;https://cara--apxtconga4.vf.force.com/apex/Conga_Composer?SolMgr=1&amp;serverUrl=&quot;
+&amp;
+{!$Api.Partner_Server_URL_370} 
+&amp; 
+&quot;&amp;id=&quot;
+&amp;
+{!Get_Work_Log.Id}
+&amp;
+&quot;&amp;ReportID=[BagsYTD]00O0Z0000078yhb?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[LitterLastMonth]00O0Z0000078yjN?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[SnowLastMonth]00O0Z0000078yk6?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[GraffitiYTD]00O0Z0000078yit?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[LitterCustom]00O0Z0000078yjI?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;~pv1=&quot;&amp;{!textStartDate}&amp;&quot;~pv2=&quot;&amp;{!textEndDate}&amp;&quot;,[LitterYTD]00O0Z0000078yjh?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[LitterLastYr]00O0Z0000078yjX?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[SnowCustom]00O0Z0000078yjw?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;~pv1=&quot;&amp;{!textStartDate}&amp;&quot;~pv2=&quot;&amp;{!textEndDate}&amp;&quot;,[SnowYTD]00O0Z0000078ykV?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[SnowLastYr]00O0Z0000078ykL?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[BagsCustom]00O0Z0000078yhC?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;~pv1=&quot;&amp;{!textStartDate}&amp;&quot;~pv2=&quot;&amp;{!textEndDate}&amp;&quot;,[BagsLastYr]00O0Z0000078yhR?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[GraffitiReported]00O0Z0000078yiK?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[GraffitiLastYr]00O0Z0000078yie?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[CrosswalksLastMonth]00O0Z0000078yiA?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[CrosswalksCustom]00O0Z0000078yh7?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;~pv1=&quot;&amp;{!textStartDate}&amp;&quot;~pv2=&quot;&amp;{!textEndDate}&amp;&quot;,[CrosswalksYTD]00O0Z0000078yiy?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[CrosswalksLastYr]00O0Z0000078yiU?pv0=&quot;&amp;{!formulaOrgID}&amp;&quot;,[PermPlacements]00O31000006jNvq?pv0=,[Interns]00O31000006jO0v?pv0=,[Conviction]00O31000006jO4Y?pv0=,[Ethnicity]00O31000006jO4T?pv0=,[Race]00O31000006jO49?pv0=,[Education]00O31000006jO81?pv0=,&amp;OFN={Template.Label}+-+&quot;&amp;{!Get_Work_Log.Organization__r.Name}&amp;&quot;&amp;DefaultPDF=True&amp;TemplateGroup=CleanslateOpsReport&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>formulaOrgID</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!Get_Work_Log.Organization__c},15)</expression>
+    </formulas>
+    <formulas>
+        <name>textEndDate</name>
+        <dataType>String</dataType>
+        <expression>Text(MONTH(  {!End_Work_Date}) )
+&amp;&quot;/&quot;&amp;
+Text(DAY( {!End_Work_Date}))
+&amp;&quot;/&quot;&amp;
+Text(YEAR( {!End_Work_Date}))</expression>
+    </formulas>
+    <formulas>
+        <name>textStartDate</name>
+        <dataType>String</dataType>
+        <expression>Text(MONTH(  {!Start_Work_Date}) )
+&amp;&quot;/&quot;&amp; 
+Text(DAY(  {!Start_Work_Date}))
+&amp;&quot;/&quot;&amp; 
+Text(YEAR( {!Start_Work_Date}))</expression>
+    </formulas>
+    <interviewLabel>Conga {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Conga Cleanslate Operations Report Custom Data</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Work_Log</name>
+        <label>Get Work Log</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Enter_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Work_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Conga_Link</name>
+        <label>Conga Link</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>URL</name>
+            <fieldText>&lt;p&gt;&lt;a href=&quot;{!formulaCongaMerge}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 16px;&quot;&gt;Click here to merge the report&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Enter_Date</name>
+        <label>Enter Date</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Conga_Link</targetReference>
+        </connector>
+        <fields>
+            <name>OrganizationName</name>
+            <fieldText>&lt;p&gt;Organization Name: &lt;strong&gt;{!Get_Work_Log.Organization__r.Name}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Enter_Date_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Enter_Date_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Start_Work_Date</name>
+                    <dataType>Date</dataType>
+                    <fieldText>Start Work Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Date_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>End_Work_Date</name>
+                    <dataType>Date</dataType>
+                    <fieldText>End Work Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Date_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Work_Log</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Work Log Id</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

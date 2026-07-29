@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SS_Inventories</fullName>
+    <columns>NAME</columns>
+    <columns>Order_Date__c</columns>
+    <columns>Transit_Card_Type__c</columns>
+    <columns>Transit_Card_Value__c</columns>
+    <columns>Total_Number_of_Transit_Cards_Purchased__c</columns>
+    <columns>Total_Amount_of_Transit_Cards_Purchased__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Transit_Card_Type__c</field>
+        <operation>notEqual</operation>
+        <value>3 Day,Ventra/Pace,Ventra/Other Amount</value>
+    </filters>
+    <label>SS Inventories</label>
+</ListView>

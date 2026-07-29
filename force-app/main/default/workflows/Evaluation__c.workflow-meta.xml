@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_CA_NV</fullName>
+        <description>Email CA &amp; NV</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>callen@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Red_Flag_Template</template>
+    </alerts>
+    <rules>
+        <fullName>Red Flag Email Alert</fullName>
+        <actions>
+            <name>Email_CA_NV</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Evaluation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Mock Interview Feedback,Career Coach Feedback</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Evaluation__c.Red_Flag__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Placement_Reason__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <inlineHelpText>Reason for No Placement</inlineHelpText>
+    <label>No Placement Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Candidate Didn&apos;t Pass Job Assessment</fullName>
+                <default>false</default>
+                <label>Candidate Didn&apos;t Pass Job Assessment</label>
+            </value>
+            <value>
+                <fullName>Candidate Found Other Position</fullName>
+                <default>false</default>
+                <label>Candidate Found Other Position</label>
+            </value>
+            <value>
+                <fullName>Candidate Had Poor Interview</fullName>
+                <default>false</default>
+                <label>Candidate Had Poor Interview</label>
+            </value>
+            <value>
+                <fullName>Candidate Dismissed</fullName>
+                <default>false</default>
+                <label>Cara Inactivated Candidate</label>
+            </value>
+            <value>
+                <fullName>Company Deferred Position</fullName>
+                <default>false</default>
+                <label>Company Deferred Position</label>
+            </value>
+            <value>
+                <fullName>Company Found Other Candidate</fullName>
+                <default>false</default>
+                <label>Company Found Other Candidate</label>
+            </value>
+            <value>
+                <fullName>Issues - Criminal Background/Legal</fullName>
+                <default>false</default>
+                <label>Issues - Criminal Background/Legal</label>
+            </value>
+            <value>
+                <fullName>Issues - Drug Test</fullName>
+                <default>false</default>
+                <label>Issues - Drug Test</label>
+            </value>
+            <value>
+                <fullName>Issues - Medical</fullName>
+                <default>false</default>
+                <label>Issues - Medical</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

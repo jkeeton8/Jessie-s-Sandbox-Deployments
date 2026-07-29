@@ -1,0 +1,41 @@
+<apex:page controller="ExpServiceEntryController" sidebar="false" tabStyle="Case_Record__c" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!clientSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: IDS Pre-Placement Meeting ****-->
+
+<!-- ***** Client Session, page 1, order 1 ***** -->
+<c:ExpClientSession theParentController="{!this}" csName="CompSettings-22059"/>
+
+<!-- ***** Case Record, page 1, order 2 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22060"/>
+
+<!-- ***** Child Object List, page 1, order 3 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22084"/>
+
+<!-- ***** Child Object List, page 1, order 4 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22061"/>
+
+<!-- ***** Child Object List, page 1, order 5 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22120"/>
+
+<!-- ***** Case Record, page 1, order 6 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22124"/>
+
+<!-- ***** Case Record, page 1, order 7 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22126"/>
+
+<!-- ***** Client Session, page 1, order 8 ***** -->
+<c:ExpClientSession theParentController="{!this}" csName="CompSettings-22062"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

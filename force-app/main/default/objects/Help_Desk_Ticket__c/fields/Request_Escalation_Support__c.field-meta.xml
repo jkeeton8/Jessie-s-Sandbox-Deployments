@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Escalation_Support__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field for internal Tech Team staff to request manager support on a help desk ticket</description>
+    <inlineHelpText>Triggers an escalation request</inlineHelpText>
+    <label>Request Escalation/Support</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

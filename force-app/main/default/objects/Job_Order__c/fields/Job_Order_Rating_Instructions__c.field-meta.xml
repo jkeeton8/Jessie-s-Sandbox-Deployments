@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Order_Rating_Instructions__c</fullName>
+    <label>Job Order Rating Instructions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Please enter Hours and Wage values</fullName>
+                <default>false</default>
+                <label>Please enter Hours and Wage values</label>
+            </value>
+            <value>
+                <fullName>Management approval required before Send Out</fullName>
+                <default>false</default>
+                <label>Management approval required before Send Out</label>
+            </value>
+            <value>
+                <fullName>IDS approval required before Send Out if indicated on Case Record</fullName>
+                <default>false</default>
+                <label>IDS approval required before Send Out if indicated on Case Record</label>
+            </value>
+            <value>
+                <fullName>Counted for any student</fullName>
+                <default>false</default>
+                <label>Counted for any student</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

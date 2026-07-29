@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Log_is_Voided</fullName>
+    <active>true</active>
+    <errorConditionFormula>Organization__r.Organization_ID_18_Digits__c = &apos;0010Z000023BF3EQAW&apos; &amp;&amp;
+(Vehicle_Fixed_Asset_Lookup__r.Id  &lt;&gt; &apos;aBr0Z000000blLU&apos; ||
+not(ispickval(Job_Function__c, &quot;None - Voided Log&quot;)))</errorConditionFormula>
+    <errorMessage>If &quot;Cleanslate Voided Work Log&quot; is selected as the customer, &apos;Fixed Asset (Vehicle)&apos; should equal &quot;No Cleanslate Vehicle Used&quot; and &apos;Job Function&apos; should equal &quot;None - Voided Log&quot;.</errorMessage>
+</ValidationRule>

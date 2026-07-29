@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>42.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Donation form to route Opportunities to Spring Appeal campaign (sku is &quot;DON-Spring&quot;). In FY18, url is carachicago.org/andrea</description>
+    <label>Spring Appeal 2018</label>
+</ApexPage>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monday_Start_and_End_Times</fullName>
+    <active>true</active>
+    <errorConditionFormula>Monday_End_Work_Time__c &lt; Monday_Start_Work_Time__c</errorConditionFormula>
+    <errorDisplayField>Monday_End_Work_Time__c</errorDisplayField>
+    <errorMessage>End Time has to be after Start Time</errorMessage>
+</ValidationRule>

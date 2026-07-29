@@ -1,0 +1,5 @@
+<apex:page standardController="Job_Order__c">
+
+<apex:image url="{!URLFOR($Resource.DemoEcmJobMatch)}"/>
+
+</apex:page>

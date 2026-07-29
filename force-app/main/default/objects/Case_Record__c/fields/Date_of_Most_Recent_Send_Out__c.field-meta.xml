@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Most_Recent_Send_Out__c</fullName>
+    <label>Date of Most Recent Send Out</label>
+    <summarizedField>Placement__c.Send_Out_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Placement__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>General Send Out / Employment</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

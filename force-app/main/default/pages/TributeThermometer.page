@@ -1,0 +1,122 @@
+<apex:page showHeader="false"  standardStylesheets="false"  standardController="campaign">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <!-- Scripts and styles -->
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+            <apex:includeScript value="{!$Resource.KELLValidationLibrary}"/>
+            <script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>
+            <script type="text/javascript"> trackPredictive(); </script>
+            
+            <apex:form >
+                    <html>
+                        <head>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                            <script>Number.prototype.formatMoney = function(c, d, t)
+                             {var n = this, 
+                                  c = isNaN(c = Math.abs(c)) ? 2 : c, 
+                                  d = d == undefined ? "." : d, 
+                                  t = t == undefined ? "," : t, 
+                                  s = n < 0 ? "-" : "", 
+                                  i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+                                  j = (j = i.length) > 3 ? j % 3 : 0;
+                                  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + 
+                                  (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");};
+                              var total = "{!campaign.AmountWonOpportunities}" *1;
+                              var displayTotal = "$"+parseFloat(total).formatMoney(2, '.', ',') + " raised of $15,000";
+                              var goal = "{!campaign.fundraising_goal__c}" *1;
+                              var displayGoal = "Goal: $"+parseFloat(goal).formatMoney(2, '.', ',');
+                              var percent = 0;if (total >= goal){percent = 100;}else{percent =  total / goal;}
+                               percent = Math.ceil(percent*100);jQuery(document).ready(function(){jQuery('.barAmount').html(percent+'%');
+                             jQuery('.barGraph').css('height',percent+'%');
+                             jQuery('.current').html(displayTotal);if (goal< 0.01){jQuery('.goal').hide();}
+                             jQuery('.twenty').html("<span>$"+(goal* 0.2).formatMoney()+"</span>");
+                             jQuery('.fourty').html("<span>$"+(goal* 0.4).formatMoney()+"</span>");
+                             jQuery('.sixty').html("<span>$"+(goal* 0.6).formatMoney()+"</span>");
+                             jQuery('.eighty').html("<span>$"+(goal* 0.8).formatMoney()+"</span>");});
+                            </script>
+                            <style>
+                             .thermometerContainer{
+                              text-align:left;
+                              width:100%;
+                              width:{!$CurrentPage.parameters.barWidth};
+                              margin:1em auto;}
+                             .barContainer{
+                              height:200px;
+                              height:{!$CurrentPage.parameters.height}px;
+                              background:#ededed;
+                              position:relative;
+                              width:100%;
+                              width:{!$CurrentPage.parameters.barWidth};
+                              margin:1em auto 0;
+                              border:solid 1px #ededed;}
+                             .barGraph{
+                              background:#38BDB5;
+                              height: 0;
+                              position: absolute;
+                              bottom: 0;
+                              width: 100%;}
+                             .barAmount{
+                              font-size:1.2em;
+                              width:100%;
+                              text-align:left;
+                              font-weight:bold;
+                              color:#fff;
+                              padding-left:10px;
+                              position:absolute;
+                              z-index:200;}
+                             .campaignName{
+                              color: #0278BD;
+                              font-size: 20px;
+                              font-family: helvetica,arial,sans-serif;
+                              font-weight: bold;
+                              font-style: normal;
+                              letter-spacing:2px; 
+                              text-transform: uppercase;margin:10px 0;}
+                             .goal{
+                              font-size: 1em;
+                              color: #053249;}
+                             .current{
+                              font-size: 1em;
+                              color: #38BDB5;}
+                             .bodytext{
+                              margin-top:20px;
+                              color:#666;
+                              line-height:1.2em;
+                              font-size:1em;}
+                             .twenty{ height:20%;}
+                             .fourty{ height:40%;}
+                             .sixty{ height:60%;}
+                             .eighty{ height:80%;}
+                             .marker{
+                              width:100%;
+                              position:absolute;
+                              bottom:0;
+                              border-top: dashed 1px #ccc;
+                              text-align:right;
+                              color:#053249;}
+                             .marker span{padding-right:10px;}
+                            </style>
+                        </head>
+                        
+                        <body>
+                            <div class="thermometerContainer">
+                                <div class="barContainer">
+                                    <div class="barGraph">
+                                        <div class="barAmount">{!campaign.AmountWonOpportunities}</div>
+                                    </div>
+                                    <div class="marker twenty"></div>
+                                    <div class="marker fourty"></div>
+                                    <div class="marker sixty"></div>
+                                    <div class="marker eighty"></div>
+                                </div><br/>
+                                <div class="campaignName">{!campaign.name}</div>
+                                <div class="goal">{!campaign.fundraising_goal__c}</div>
+                                <div class="current">{!campaign.AmountWonOpportunities}</div>
+                                <div class='bodytext'>{!campaign.description}</div>
+                            </div>
+                        </body>
+                    </html>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

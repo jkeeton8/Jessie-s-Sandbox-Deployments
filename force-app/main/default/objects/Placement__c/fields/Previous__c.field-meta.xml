@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A link to the previous placement for this Contract, if one exists. For Placements that are have an Agency Contract this field is maintained by the ECM Placement trigger.</description>
+    <label>Previous</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Case_Record__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Case_Record__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Placement__c</referenceTo>
+    <relationshipLabel>Next Job with Same Organization</relationshipLabel>
+    <relationshipName>Placements</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

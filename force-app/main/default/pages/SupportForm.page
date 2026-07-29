@@ -1,0 +1,258 @@
+<apex:page standardStylesheets="true" showHeader="true">
+
+<head>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  ----------------------------------------------------------------------  -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"></META>
+</head>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Content Section   -->
+<!--  ----------------------------------------------------------------------  -->
+<div>
+<p></p>
+<c:HelpDeskNotes >
+</c:HelpDeskNotes>
+</div>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: <FORM> element details - Results Page URL noted here     -->
+<!--  ----------------------------------------------------------------------  -->
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<input type="hidden" name="orgid" value="00Di0000000bkb8">
+</input>
+<input type="hidden" name="retURL" value="http://cara.force.com/ticketsubmitted">
+</input>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Form Fields Section - Can edit labels, order, etc.    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<div class="bPageBlock brandSecondaryBrd bEditBlock secondary Palette" id="ep">
+<apex:pageBlock title="Submit Ticket to Help Desk">
+
+<div class="pbSubsection">
+<apex:pageBlockSection >
+<table class="detailList" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+
+<tr>
+<td class="labelCol">
+<label for="name">Name</label>
+</td>
+<td class="dataCol">
+<input  id="name" maxlength="80" name="name" size="20" type="text" /><br></br>
+</td>
+</tr>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  Commented out Submitted on behalf of   -->
+<!--  ----------------------------------------------------------------------  -->
+<!-- <tr>                                                                     -->
+<!-- <td class="labelCol">                                                    -->
+<!-- <span class="helpButton" id="Case.00Ni000000EsQhm-_help">                -->
+<!-- Submitted on behalf of                                                   -->
+<!-- <img src="/s.gif" alt="" class="helpOrb" title="">                       -->
+<!-- <script>sfdcPage.setHelp('Case.00Ni000000EsQhm', 'Please enter name if submitting ticket on behalf of another user.');</script> -->
+<!-- </img>                                                                   -->
+<!-- </span>                                                                  -->
+<!-- </td>                                                                    -->
+<!-- <td class="dataCol">                                                     -->
+<!-- <input  id="00Ni000000EsQhm" maxlength="80" name="00Ni000000EsQhm" size="20" type="text" /><br></br> -->
+<!-- </td>                                                                    -->
+<!-- </tr>                                                                    -->
+
+<tr>
+<td class="labelCol">
+<label for="email">Email</label>
+</td>
+<td class="dataCol">
+<input  id="email" maxlength="80" name="email" size="20" type="text" /><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<label for="phone">Phone</label>
+</td>
+<td class="dataCol">
+<input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<label for="type">Type</label>
+</td>
+<td class="dataCol">
+<select  id="type" name="type">
+<option value="Database/Salesforce">Database/Salesforce</option>
+<option value="IT">IT</option>
+</select><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.00Ni000000ErPmX-_help">
+Salesforce Category
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.00Ni000000ErPmX', 'Please select a Category if submitting a Database/Salesforce Type ticket.');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<select  id="00Ni000000ErPmX" name="00Ni000000ErPmX" title="Salesforce Category">
+<option value="">--None--</option>
+<option value="Training/Documentation">Training/Documentation</option>
+<option value="Data-related">Data-related</option>
+<option value="Configuration Issue/Bug">Configuration Issue/Bug</option>
+<option value="Request/Suggestion">Request/Suggestion</option>
+</select><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.00Ni000000ErPmc-_help">
+Salesforce URL
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.00Ni000000ErPmc', 'Please copy and paste the Link/URL from the web address bar for the page within Salesforce where you are experiencing the issue.');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<input  id="00Ni000000ErPmc" maxlength="255" name="00Ni000000ErPmc" size="20" type="text" /><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.Priority-_help">
+<label for="priority">Priority</label>
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.Priority', 'High - Complete functionality loss, service disruption that impacts multiple users, or has financial impact.\r\u003Cbr\u003EMedium -Pending deadline (within 48 hours), causes delay of work, has no work around or impacts business goals.\r\u003Cbr\u003ELow - All other issues, requests');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<select  id="priority" name="priority">
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.00Ni000000ErPmS-_help">
+Deadline
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.00Ni000000ErPmS', 'Please note in the description if the deadline is tied to an external requirement.');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<span class="dateInput dateOnlyInput">
+<input  id="00Ni000000ErPmS" name="00Ni000000ErPmS" size="12" type="text" />
+</span><br></br>
+</td>
+</tr>
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.Subject-_help">
+<label for="subject">Subject</label>
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.Subject', 'Please use a title that highlights the issue or requested services from the help desk.');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br></br>
+</td>
+</tr>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  Commented out Background Information   -->
+<!--  ----------------------------------------------------------------------  -->
+<!-- <tr>                                                                     -->
+<!-- <td class="labelCol">                                                    -->
+<!-- <span class="helpButton" id="Case.00Ni000000EsRIs-_help">                -->
+<!-- Background Information:                                                  -->
+<!-- <img src="/s.gif" alt="" class="helpOrb" title="">                       -->
+<!-- <script>sfdcPage.setHelp('Case.00Ni000000EsRIs', 'Please enter relevant background information on issue or history of of other related tickets.');</script> -->
+<!-- </img>                                                                   -->
+<!-- </span>                                                                  -->
+<!-- </td>                                                                    -->
+<!-- <td class="dataCol">                                                     -->
+<!-- <textarea  id="00Ni000000EsRIs" name="00Ni000000EsRIs" type="text" wrap="soft"></textarea><br></br> -->
+<!-- </td>                                                                    -->
+<!-- </tr>                                                                    -->
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.Description-_help">
+<label for="description">Description</label>
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.Description', 'The description should contain full details of the issue or request, including steps taken before the issue occurred, information about any relevant approvals and specifics regarding the deadline noted.');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<textarea name="description" rows="4" cols="100">
+</textarea><br></br>
+</td>
+</tr>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  Commented out Preferences for follow-up   -->
+<!--  ----------------------------------------------------------------------  -->
+<!-- <tr>                                                                     -->
+<!-- <td class="labelCol">                                                    -->
+<!-- <span class="helpButton" id="Case.00Ni000000EsRIi-_help">                -->
+<!-- Contact Preferences for Follow-up                                        -->
+<!-- <img src="/s.gif" alt="" class="helpOrb" title="">                       -->
+<!-- <script>sfdcPage.setHelp('Case.00Ni000000EsRIi', 'Please enter information about when, where and how you can best be contacted for follow-up (such as phone extension, physical location, and hours of availability, as applicable).');</script> -->
+<!-- </img>                                                                   -->
+<!-- </span>                                                                  -->
+<!-- </td>                                                                    -->
+<!-- <td class="dataCol">                                                     -->
+<!-- <textarea  id="00Ni000000EsRIi" name="00Ni000000EsRIi" type="text" wrap="soft"></textarea><br></br> -->
+<!-- </td>                                                                    -->
+<!-- </tr>                                                                    -->
+
+<tr>
+<td class="labelCol">
+<span class="helpButton" id="Case.00Ni000000EsR2Q-_help">
+Attachment Emailed?
+<img src="/s.gif" alt="" class="helpOrb" title="">
+<script>sfdcPage.setHelp('Case.00Ni000000EsR2Q', 'If documentation is required for this support ticket submission, please send an email with the same subject entered in the form to: support@thecaraprogram.org');</script>
+</img>
+</span>
+</td>
+<td class="dataCol">
+<input  id="00Ni000000EsR2Q" name="00Ni000000EsR2Q" type="checkbox" value="1" /><br></br>
+</td>
+</tr>
+
+</tbody>
+</table>
+</apex:pageBlockSection>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Button Section   -->
+<!--  ----------------------------------------------------------------------  -->
+<apex:pageBlockButtons >
+<input type="hidden"  id="external" name="external" value="1" />
+<input type="submit" name="submit">
+</input>
+</apex:pageBlockButtons>
+</div>
+</apex:pageBlock>
+</div>
+</form>
+
+</apex:page>

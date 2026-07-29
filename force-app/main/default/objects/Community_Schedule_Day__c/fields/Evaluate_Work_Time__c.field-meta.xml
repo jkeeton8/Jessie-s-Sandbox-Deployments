@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluate_Work_Time__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Workflow &quot;Evaluate Work Time&quot; changes to checked at record creation to force the &quot;Work Time &gt;= 5 Hours&quot; workflow rule to run and Lunch Start/End Times to update if needed.</description>
+    <label>Evaluate Work Time</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

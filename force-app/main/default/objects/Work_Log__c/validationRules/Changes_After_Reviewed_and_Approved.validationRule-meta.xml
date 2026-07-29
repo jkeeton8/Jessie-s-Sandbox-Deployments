@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Changes_After_Reviewed_and_Approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>priorvalue( Reviewed_Approved_Decoy__c ) = TRUE
+
+&amp;&amp;
+
+(
+
+ischanged ( Job_Function__c )
+
+||
+
+ischanged ( Organization__c )
+
+||
+
+ischanged ( Vehicle_Fixed_Asset_Lookup__c )
+
+)</errorConditionFormula>
+    <errorMessage>This work log has to be unapproved in order to make edits.</errorMessage>
+</ValidationRule>

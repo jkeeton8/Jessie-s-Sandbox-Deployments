@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReferralSentToCEP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if you have sent the attached referral to the associated Corporate Employment Partner.</description>
+    <inlineHelpText>Check this box if you have sent the attached referral to the associated Corporate Employment Partner.</inlineHelpText>
+    <label>Referral Sent To CEP</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

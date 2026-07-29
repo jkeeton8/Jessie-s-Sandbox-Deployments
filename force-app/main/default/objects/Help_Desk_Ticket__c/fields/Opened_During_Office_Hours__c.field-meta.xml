@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opened_During_Office_Hours__c</fullName>
+    <description>Used by &quot;HELP DESK TICKET | subflow: email alerts&quot; flow logic; 
+returns FALSE if the ticket was opened on the weekend or outside office hours on a weekday</description>
+    <formula>IF( 
+   AND( 
+      Time_Opened__c &gt;= TIMEVALUE( &quot;08:30:00.000&quot; ),
+      Time_Opened__c &lt;= TIMEVALUE( &quot;17:00:00.000&quot; ),
+      Opened_on_What_Day__c != &quot;Saturday&quot;,
+      Opened_on_What_Day__c != &quot;Sunday&quot;
+   ),
+   TRUE,
+   FALSE
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opened During Office Hours</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

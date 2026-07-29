@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Notes__c</fullName>
+    <inlineHelpText>Enter notes specific to this transaction, such as check number. Do not enter general Progress Notes.</inlineHelpText>
+    <label>Transaction Notes</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

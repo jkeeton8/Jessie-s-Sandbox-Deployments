@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SkillsToImprove__c</fullName>
+    <inlineHelpText>What skills would you like to get better at?</inlineHelpText>
+    <label>Skills To Improve</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Mechanical/Trades</fullName>
+                <default>false</default>
+                <label>Mechanical/Trades</label>
+            </value>
+            <value>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+                <label>Administrative</label>
+            </value>
+            <value>
+                <fullName>Caretaking</fullName>
+                <default>false</default>
+                <label>Caretaking</label>
+            </value>
+            <value>
+                <fullName>Leadership/Management</fullName>
+                <default>false</default>
+                <label>Leadership/Management</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Teaching/Training Others</fullName>
+                <default>false</default>
+                <label>Teaching/Training Others</label>
+            </value>
+            <value>
+                <fullName>Art/Music</fullName>
+                <default>false</default>
+                <label>Art/Music</label>
+            </value>
+            <value>
+                <fullName>Food Preparation/Service</fullName>
+                <default>false</default>
+                <label>Food Preparation/Service</label>
+            </value>
+            <value>
+                <fullName>CustomerService/Retail</fullName>
+                <default>false</default>
+                <label>Customer Service/Retail</label>
+            </value>
+            <value>
+                <fullName>Cleaning/FacilityMaintenance</fullName>
+                <default>false</default>
+                <label>Cleaning/Facility Maintenance</label>
+            </value>
+            <value>
+                <fullName>Financial/Math/Accounting</fullName>
+                <default>false</default>
+                <label>Financial/Math/Accounting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

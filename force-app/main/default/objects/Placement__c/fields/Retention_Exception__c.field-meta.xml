@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retention_Exception__c</fullName>
+    <label>Retention Exception</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opted Out of Retention Support</fullName>
+                <default>false</default>
+                <label>Opted Out of Retention Support</label>
+            </value>
+            <value>
+                <fullName>Previously Retained</fullName>
+                <default>false</default>
+                <label>Previously Retained</label>
+            </value>
+            <value>
+                <fullName>Retention Override</fullName>
+                <default>false</default>
+                <label>Retention Override</label>
+            </value>
+            <value>
+                <fullName>Retention Tracked Under Previous Placement</fullName>
+                <default>false</default>
+                <label>Retention Tracked Under Previous Placement</label>
+            </value>
+            <value>
+                <fullName>Non-Student Included in Retention</fullName>
+                <default>false</default>
+                <label>Non-Student Included in Retention</label>
+            </value>
+            <value>
+                <fullName>ETJ Over One Year Not Considered Retained</fullName>
+                <default>false</default>
+                <label>ETJ Over One Year Not Considered Retained</label>
+            </value>
+            <value>
+                <fullName>Under One Year Considered Retained</fullName>
+                <default>false</default>
+                <label>Under One Year Considered Retained</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

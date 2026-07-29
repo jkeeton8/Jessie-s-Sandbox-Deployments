@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transit_Card_Inventory__c</fullName>
+    <label>Supportive Services Inventory</label>
+    <referenceTo>Transit_Card_Inventory__c</referenceTo>
+    <relationshipLabel>Supportive Services Distributions</relationshipLabel>
+    <relationshipName>Transit_Card_Distributions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

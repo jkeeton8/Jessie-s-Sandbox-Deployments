@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Sign_Documentation_Exceptions__c</fullName>
+    <description>Added Feb 2021 during Communications Coordination effort.</description>
+    <inlineHelpText>Use this field to track if the participant is NOT required to submit the documentation through Conga Sign, either because they submitted it in another form or it does not apply to them.</inlineHelpText>
+    <label>Conga Sign Documentation Exceptions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intro Packet (WS D and CL D)</fullName>
+                <default>false</default>
+                <label>Intro Packet (WS D and CL D)</label>
+            </value>
+            <value>
+                <fullName>Contracts Packet (WS D)</fullName>
+                <default>false</default>
+                <label>Contracts Packet (WS D)</label>
+            </value>
+            <value>
+                <fullName>Financial Packet</fullName>
+                <default>false</default>
+                <label>Financial Packet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Donation Stage is Research, Ask, Scheduled workflow rule
+Workflow rule description: &quot;</description>
+    <label>Donation Stage is Research, Ask, Scheduled</label>
+    <migratedFromWorkflowRuleName>Donation Stage is Research, Ask, Scheduled</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Probability</field>
+            <value>
+                <elementReference>$Record.Probability_Copy__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordTypeId} = &quot;01231000000xzsP&quot; || {!$Record.RecordTypeId} =  &quot;012i0000000gekt&quot;
+
+&amp;&amp; {!$Record.Probability} &lt;&gt; {!$Record.Probability_Copy__c}
+
+&amp;&amp; (ispickval ({!$Record.StageName}, &quot;Research&quot;) || ispickval ({!$Record.StageName}, &quot;Scheduled&quot;) || ispickval ({!$Record.StageName}, &quot;Ask&quot;))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

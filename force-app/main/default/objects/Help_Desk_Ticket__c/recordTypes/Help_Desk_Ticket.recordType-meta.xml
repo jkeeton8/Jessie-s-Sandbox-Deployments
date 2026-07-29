@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Help_Desk_Ticket</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Help_Desk_Ticket_Compact_Layout</compactLayoutAssignment>
+    <label>Solutions / MarComms</label>
+    <picklistValues>
+        <picklist>Attending_Motivations__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Booked_Room__c</picklist>
+        <values>
+            <fullName>302</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>326</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Great Room</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Specify in description%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERC_Event_Format__c</picklist>
+        <values>
+            <fullName>Both In-Person and Virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERC_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Include_Cups__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Include_Cutlery__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Include_Drinks__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Include_Napkins__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location_Catering__c</picklist>
+        <values>
+            <fullName>237</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instant Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Projector_and_Screen_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Moved to Project %28Active%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Moved to Project %28Inactive%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Craftsman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With NIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ticket_Category__c</picklist>
+        <values>
+            <fullName>Assistance with Conference Room Setup %28meeting tech planning%2C projectors%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistance with Copy Machines or Printers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistance with Doors Security %28key fobs%2C door hours%2C security cameras%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistance with Zoom%2C Teams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cara Website Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certificate%2FWorksheet Merges or Photo Uploads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference Room Tech Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity %28VPN%2FShared Drive%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desk Move Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Idea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities Cleanup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities Tech Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill Out a Customer%2FVendor Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interested in Joining or Learning More</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interested in Leading an Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Materials Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Materials Reorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hire%2C Employee Termination%2C or Employee Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Equipment Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Supplies Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Marketing %26 Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other IT Issues %28excluding Salesforce%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outlook Distribution List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay a Vendor Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permissions %28SharePoint%2FShared Drive%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phishing%2FSpam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo%2FSocial Media Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printer%2C Copier%2C or Phone Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report%2FMetrics Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Marketing Packets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Participant Petty Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request a Conversation - Marketing %26 Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request a Conversation or New Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request an Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Room Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Room Setup %26 Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Footage Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared Drive %26 Sharepoint Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff Survey Creation Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Feedback on NIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit an Expense Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit%2FUpdate ACH Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Conferencing Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Edit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_Food_Ready__c</picklist>
+        <values>
+            <fullName>1%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A15 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A45 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A15 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A45 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A15 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A45 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A15 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A15 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A15 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A45 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A45 PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_Sensitivity__c</picklist>
+        <values>
+            <fullName>Internal%2FExternal Deadline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Preferred Due Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Due Date</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Facilities %26 Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance %26 Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing %26 Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hire Setup%2C Terminations%2C Employee Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solutions%3A Onsite IT %26 Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solutions%3A Salesforce %26 Data</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

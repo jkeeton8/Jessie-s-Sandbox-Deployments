@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Hire_Setup_Termin_Employee_Updates</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Subject__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>User__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>Ticket_Category__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Moved to Project (Active),Closed - Moved to Project (Inactive)</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>&quot;New Hire Setup, Terminations, Employee Updates&quot;</value>
+    </filters>
+    <label>New Hire, Termination, Employee Updates</label>
+    <queue>New_Hire_Setup_Termin_Employee_Updates</queue>
+    <sharedTo>
+        <group>Facilities_Operations</group>
+        <group>Marketing_Communications</group>
+        <group>Salesforce_Data</group>
+    </sharedTo>
+</ListView>

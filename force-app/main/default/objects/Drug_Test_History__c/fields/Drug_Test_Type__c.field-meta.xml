@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drug_Test_Type__c</fullName>
+    <description>As part of incoming participant data cleanup efforts in Jan 2019, &quot;Core Admissions Screen&quot; and &quot;Social Enterprise Onboarding Screen&quot; were combined into one option called &quot;Initial Recruitment Screen&quot;. A new option &quot;Recruitment Retest&quot; was also created due to new drug testing policies regarding marijuana.</description>
+    <label>Drug Test Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial Recruitment Screen</fullName>
+                <default>false</default>
+                <label>Initial Recruitment Screen</label>
+            </value>
+            <value>
+                <fullName>Random</fullName>
+                <default>false</default>
+                <label>Random</label>
+            </value>
+            <value>
+                <fullName>Behavior-Based</fullName>
+                <default>false</default>
+                <label>Behavior-Based</label>
+            </value>
+            <value>
+                <fullName>Interview Process</fullName>
+                <default>false</default>
+                <label>Interview Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

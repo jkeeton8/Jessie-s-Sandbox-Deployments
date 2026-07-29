@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Schedule_Date_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ischanged( Community_Schedule_Start_Date__c )
+
+||
+
+ischanged( Community_Schedule_End_Date__c ))
+
+&amp;&amp;
+
+Community_Schedule_Generated__c = TRUE</errorConditionFormula>
+    <errorMessage>This Community Schedule needs to be reset in order to change the dates.</errorMessage>
+</ValidationRule>

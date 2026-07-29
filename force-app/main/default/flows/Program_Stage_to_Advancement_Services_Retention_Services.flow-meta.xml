@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Determine_Program_Stage_Update</name>
+        <label>Determine Program Stage Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Program_Stage_to_Advancement_Services</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Advancement_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Inactive_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Advancement_Services</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Program Stage to Advancement Services</label>
+        </rules>
+        <rules>
+            <name>Program_Stage_to_Retention_Services</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Advancement_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Inactive, Option to Return</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Advancement_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Inactive, Cannot Return</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Program_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Retention Services</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Retention_Services</targetReference>
+            </connector>
+            <label>Program Stage to Retention Services</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Program Stage to Advancement Services/Retention Services {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Program Stage to Advancement Services/Retention Services</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Advancement_Services</name>
+        <label>Advancement Services</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Date_of_Most_Recent_Prgm_Stage_Change__c</field>
+            <value>
+                <elementReference>$Record.Advancement_Start_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive_Date__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive_Reason__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Program_Stage__c</field>
+            <value>
+                <stringValue>Advancement Services</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Retention_Services</name>
+        <label>Retention Services</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Date_of_Most_Recent_Prgm_Stage_Change__c</field>
+            <value>
+                <elementReference>$Record.Advancement_Inactive_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Program_Stage__c</field>
+            <value>
+                <stringValue>Retention Services</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Determine_Program_Stage_Update</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 AND 2) OR (1 AND (3 OR 4)) OR ((5 OR 6) AND 7)</filterLogic>
+        <filters>
+            <field>Advancement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Inactive_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>On Hold</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Advancement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactive, Option to Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Advancement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactive, Cannot Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Program_Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Advancement Services</stringValue>
+            </value>
+        </filters>
+        <object>Case_Record__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

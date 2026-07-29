@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SharePoint_Permission_Distribution</fullName>
+    <columns>NAME</columns>
+    <columns>Email_Address__c</columns>
+    <columns>Use_Type__c</columns>
+    <columns>Ownership_Group__c</columns>
+    <columns>Permission_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permission_Type__c</field>
+        <operation>equals</operation>
+        <value>SharePoint Permission &amp; Distribution List</value>
+    </filters>
+    <label>All SharePoint Permission &amp; Distribution</label>
+    <language>en_US</language>
+</ListView>

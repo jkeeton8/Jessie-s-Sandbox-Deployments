@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measurement_Unit__c</fullName>
+    <inlineHelpText>Measurement type for Units of Service</inlineHelpText>
+    <label>Measurement Unit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Day</fullName>
+                <default>false</default>
+                <label>Day</label>
+            </value>
+            <value>
+                <fullName>Event / Meeting</fullName>
+                <default>false</default>
+                <label>Event / Meeting</label>
+            </value>
+            <value>
+                <fullName>Fixed Time (Hours)</fullName>
+                <default>false</default>
+                <label>Fixed Time (Hours)</label>
+            </value>
+            <value>
+                <fullName>Fixed Time (Minutes)</fullName>
+                <default>false</default>
+                <label>Fixed Time (Minutes)</label>
+            </value>
+            <value>
+                <fullName>Item</fullName>
+                <default>false</default>
+                <label>Item</label>
+            </value>
+            <value>
+                <fullName>Month</fullName>
+                <default>false</default>
+                <label>Month</label>
+            </value>
+            <value>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+                <label>Phone Call</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Time (Hours)</fullName>
+                <default>false</default>
+                <label>Time (Hours)</label>
+            </value>
+            <value>
+                <fullName>Time (Minutes)</fullName>
+                <default>false</default>
+                <label>Time (Minutes)</label>
+            </value>
+            <value>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+                <label>Transaction</label>
+            </value>
+            <value>
+                <fullName>Visit</fullName>
+                <default>false</default>
+                <label>Visit</label>
+            </value>
+            <value>
+                <fullName>Custom (Specify below)</fullName>
+                <default>false</default>
+                <label>Custom (Specify below)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

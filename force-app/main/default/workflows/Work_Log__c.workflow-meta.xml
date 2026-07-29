@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Lunch_End_Proxy_Autofill</fullName>
+        <field>Lunch_End_Proxy__c</field>
+        <formula>if (contains (Lunch_End__c, &quot;AM&quot;) &amp;&amp; contains (Lunch_End__c, &quot;12:&quot;), value(substitute(substitute(Lunch_End__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Lunch_End__c, &quot;AM&quot;), value(substitute(substitute(Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Lunch_End__c, &quot;PM&quot;) &amp;&amp; contains (Lunch_End__c, &quot;12:&quot;), value(substitute(substitute(Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Lunch_End__c, &quot;PM&quot;), value(substitute(substitute(Lunch_End__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>Lunch End Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lunch_Start_Proxy_Autofill</fullName>
+        <field>Lunch_Start_Proxy__c</field>
+        <formula>if (contains (Lunch_Start__c, &quot;AM&quot;) &amp;&amp; contains (Lunch_Start__c, &quot;12:&quot;), value(substitute(substitute(Lunch_Start__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Lunch_Start__c, &quot;AM&quot;), value(substitute(substitute(Lunch_Start__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Lunch_Start__c, &quot;PM&quot;) &amp;&amp; contains (Lunch_Start__c, &quot;12:&quot;), value(substitute(substitute(Lunch_Start__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Lunch_Start__c, &quot;PM&quot;), value(substitute(substitute(Lunch_Start__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>Lunch Start Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reviewed_Approved_True</fullName>
+        <field>Reviewed_Approved_Decoy__c</field>
+        <literalValue>1</literalValue>
+        <name>Reviewed &amp; Approved, True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Worker_Time_In_Proxy_Autofill</fullName>
+        <field>Worker_Time_In_Proxy__c</field>
+        <formula>if (contains (Worker_Time_In__c, &quot;AM&quot;) &amp;&amp; contains (Worker_Time_In__c, &quot;12:&quot;), value(substitute(substitute(Worker_Time_In__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Worker_Time_In__c, &quot;AM&quot;), value(substitute(substitute(Worker_Time_In__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Worker_Time_In__c, &quot;PM&quot;) &amp;&amp; contains (Worker_Time_In__c, &quot;12:&quot;), value(substitute(substitute(Worker_Time_In__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Worker_Time_In__c, &quot;PM&quot;), value(substitute(substitute(Worker_Time_In__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>Worker Time In Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Worker_Time_Out_Proxy_Autofill</fullName>
+        <field>Worker_Time_Out_Proxy__c</field>
+        <formula>if (contains (Worker_Time_Out__c, &quot;AM&quot;) &amp;&amp; contains (Worker_Time_Out__c, &quot;12:&quot;), value(substitute(substitute(Worker_Time_Out__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Worker_Time_Out__c, &quot;AM&quot;), value(substitute(substitute(Worker_Time_Out__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Worker_Time_Out__c, &quot;PM&quot;) &amp;&amp; contains (Worker_Time_Out__c, &quot;12:&quot;), value(substitute(substitute(Worker_Time_Out__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Worker_Time_Out__c, &quot;PM&quot;), value(substitute(substitute(Worker_Time_Out__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+        <name>Worker Time Out Proxy Autofill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Work Log is Edited</fullName>
+        <actions>
+            <name>Lunch_End_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Lunch_Start_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Worker_Time_In_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Worker_Time_Out_Proxy_Autofill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Work Log%2C Not Reviewed and Approved</fullName>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reviewed_Approved_True</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Work_Log__c.LastModifiedDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

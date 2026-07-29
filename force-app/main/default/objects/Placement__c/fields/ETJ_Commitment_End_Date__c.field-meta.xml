@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETJ_Commitment_End_Date__c</fullName>
+    <inlineHelpText>Date until which the participant has commitment to stay in the position, typically determined by the employer and applying to short-term jobs.</inlineHelpText>
+    <label>Commitment End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Contact_Us_Form_LS</name>
+        <label>Web_Inquiry__c.Contact_Us_Form_LS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Web_Inquiry__c.Contact_Us_Form_LS</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Web_Inquiry__c.Contact_Us_Form_LS</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Contact Us Form, Motivations and Other workflow rule
+Workflow rule description: Email alert sent to Individual Giving Manager &amp; LS when Web Inquiry Source is &quot;Motivations&quot; or &quot;Other&quot;.&quot;</description>
+    <label>Contact Us Form, Motivations and Other</label>
+    <migratedFromWorkflowRuleName>Contact Us Form, Motivations and Other</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Contact_Us_Form_LS</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>Inquiry_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Motivations</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Inquiry_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Other</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Website_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Cara</stringValue>
+            </value>
+        </filters>
+        <object>Web_Inquiry__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

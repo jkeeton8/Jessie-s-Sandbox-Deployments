@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issued_During__c</fullName>
+    <label>Issued During</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Program</fullName>
+                <default>true</default>
+                <label>Program</label>
+            </value>
+            <value>
+                <fullName>Program, Pre-Placement</fullName>
+                <default>false</default>
+                <label>Program, Pre-Placement</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Internship</fullName>
+                <default>false</default>
+                <label>Cleanslate Internship</label>
+            </value>
+            <value>
+                <fullName>Cleanslate, Pre-Placement</fullName>
+                <default>false</default>
+                <label>Cleanslate, Pre-Placement</label>
+            </value>
+            <value>
+                <fullName>Connects, Pre-Placement</fullName>
+                <default>false</default>
+                <label>Connects, Pre-Placement</label>
+            </value>
+            <value>
+                <fullName>Facilities Internship</fullName>
+                <default>false</default>
+                <label>Facilities Internship</label>
+            </value>
+            <value>
+                <fullName>Front Desk and Security Internship</fullName>
+                <default>false</default>
+                <label>Front Desk and Security Internship</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Internship, Pre-Reset</fullName>
+                <default>false</default>
+                <label>Cleanslate Internship, Pre-Reset</label>
+            </value>
+            <value>
+                <fullName>Program, Pre-Reset</fullName>
+                <default>false</default>
+                <label>Program, Pre-Reset</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

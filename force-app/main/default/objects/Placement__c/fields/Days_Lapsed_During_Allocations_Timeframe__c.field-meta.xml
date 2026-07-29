@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Lapsed_During_Allocations_Timeframe__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Start_Date__c &lt; Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c 
+&amp;&amp; End_Date__c &lt;= Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c 
+&amp;&amp; not(isblank(End_Date__c)), 
+End_Date__c - Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c,
+
+if (Start_Date__c &lt; Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c 
+&amp;&amp; Case_Record__r.Inactive_Date__c &lt;= Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c 
+&amp;&amp; not(isblank(Case_Record__r.Inactive_Date__c)), 
+Case_Record__r.Inactive_Date__c - Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c,
+
+if (Start_Date__c &lt; Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c, 
+Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c - Case_Record__r.Program__r.Grant_Contract_Allocations_Start_Date__c, 
+
+if (End_Date__c &lt;= Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c 
+&amp;&amp; not(isblank(End_Date__c)), 
+End_Date__c - Start_Date__c,
+
+if (Case_Record__r.Inactive_Date__c &lt;= Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c 
+&amp;&amp; not(isblank(Case_Record__r.Inactive_Date__c)), 
+Case_Record__r.Inactive_Date__c - Start_Date__c,
+
+Case_Record__r.Program__r.Grant_Contract_Allocations_End_Date__c - Start_Date__c)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Lapsed During Allocations Timeframe</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Archived_Primary_Project</fullName>
+    <active>true</active>
+    <label>Archived Primary Project</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question%2FIdea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting%2FMetrics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enterprise_Department__c</picklist>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise-Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programs Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Enterprise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>External_Deadline_Type__c</picklist>
+        <values>
+            <fullName>Hard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Functions__c</picklist>
+        <values>
+            <fullName>Back Office - Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Office - Data %26 Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Office - Facilities %26 Ops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Office - Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Office - HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dev - Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dev - Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dev - Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dev - Institutional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dev - MarComms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expansion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Recruitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - SD Job Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Supportive Svs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participant Svs - Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Team__c</picklist>
+        <values>
+            <fullName>Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCP Staffing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

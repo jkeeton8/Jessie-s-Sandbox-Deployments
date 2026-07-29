@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Date_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(CreatedDate) = DATEVALUE(&quot;2018-11-28&quot;), &quot;Staff Retreat FY19&quot;, 
+
+TEXT(month(datevalue(CreatedDate))) &amp; &quot;/&quot; &amp; text(day(datevalue(CreatedDate)))&amp; &quot;/&quot; &amp; text (year(datevalue(CreatedDate))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Created Date, Summary</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

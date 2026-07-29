@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Substance_Use_Recovery_Narrative__c</fullName>
+    <description>Re-purposed &apos;Substances Used&apos; field in Oct. 2018 as part of incoming participant data cleanup project to replace the following fields: &apos;Substances Used’, ‘Recovery Start Date’, ‘Attend Recovery Meetings?’, ‘Location of Recovery Meetings’, ‘Frequency of Recovery Meetings’, ‘Has Recovery Sponsor’, and ‘Recovery Sponsor Name &amp; Contact’.</description>
+    <inlineHelpText>Enter information regarding substance use, recovery start date, recovery meetings, and recovery sponsor.</inlineHelpText>
+    <label>Substance Use/Recovery Narrative</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

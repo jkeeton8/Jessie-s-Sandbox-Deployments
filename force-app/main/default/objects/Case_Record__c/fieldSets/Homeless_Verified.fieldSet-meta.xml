@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Homeless_Verified</fullName>
+    <description>Service Entry</description>
+    <displayedFields>
+        <field>Homelessness_Verified__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Homeless Verified</label>
+</FieldSet>

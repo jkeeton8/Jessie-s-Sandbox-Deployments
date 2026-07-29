@@ -1,0 +1,267 @@
+<apex:page showHeader="false" id="TCPTemplate"  standardStylesheets="false" >
+     <head>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.assets,'source_files/widget115.css')}" media="all"/>
+
+        <title>The Cara Program</title>
+
+        <link type="text/css" rel="stylesheet" media="all" href="{!URLFOR($Resource.assets,'source_files/css_77d7ff0ee44048528ef52a3b8e180b25.css')}"/>
+        <link type="text/css" rel="stylesheet" media="print" href="{!URLFOR($Resource.assets,'source_files/css_a489b077a15b32978f73b120862619c6.css')}"/>
+
+        <script type="text/javascript">
+        </script>
+
+        <!--[if lt IE 7]>
+          <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/cara/fix-ie.css" />    <![endif]-->
+    </head>
+    <body class="not-front not-logged-in no-sidebars page-events section-events lightbox-processed cron-check-processed">
+        <div>
+        <div id="masthead">
+            <div id="e_nav">
+                <div class="bounds">
+                    <div id="block-menu-menu-top-left-menu">
+
+                        <ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/about" title="">About</a></li>
+                            <li class="leaf"><a href="http://www.thecaraprogram.org/news" title="">News</a></li>
+                            <li class="leaf active-trail"><a href="http://www.thecaraprogram.org/events" title="" class="active">Events</a></li>
+                            <li class="leaf last"><a href="http://www.thecaraprogram.org/contact-us" title="">Contact</a></li>
+                        </ul></div>
+                    <div id="block-addthis-0">
+
+                        <h2>AddThis</h2>
+                        <span style="top:3px;">
+                            <img src="{!URLFOR($Resource.assets,'source_files/img_spread_the_word.gif')}" style="display:inline;" />
+                            <a href="http://www.youtube.com/user/TheCaraProgram" target="_blank"><img class="add_icon" src="{!URLFOR($Resource.assets,'source_files/img_icon_youtube_0.gif')}"/></a>
+                            <a href="https://www.facebook.com/thecaraprogram" target="_blank"><img class="add_icon" src="{!URLFOR($Resource.assets,'source_files/img_icon_fb_0.gif')}"/></a>
+                            <a href="http://twitter.com/motivatedbycara" target="_blank"><img class="add_icon" src="{!URLFOR($Resource.assets,'source_files/img_icon_twitter_0.gif')}"/></a>
+                            <a href="http://www.linkedin.com/company/the-cara-program" target="_blank"><img class="add_icon" src="{!URLFOR($Resource.assets,'source_files/img_icon_linkedin_0.gif')}"/></a>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title_bar">
+                <div class="bounds clearfix">
+
+                    <h1><a href="http://www.thecaraprogram.org/" title=""></a></h1>     
+                    <form action="http://www.thecaraprogram.org/index.php" accept-charset="UTF-8" method="post" id="search-theme-form">
+                        <div><div id="search" class="container-inline">
+                                <div class="form-item" id="edit-search-theme-form-1-wrapper">
+                                    <label for="edit-search-theme-form-1">Search this site: </label>
+                                    <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text"/>
+                                </div>
+                                <input type="submit" name="op" id="edit-submit-1" value="Search" class="form-submit"/>
+                                <input type="hidden" name="form_build_id" id="form-8350ae8bb1d2289233e0c7fb880a02b1" value="form-8350ae8bb1d2289233e0c7fb880a02b1"/>
+                                <input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"/>
+                            </div>
+
+                        </div></form>
+                    <!-- begin search fill-in
+                    <div id="block-block-7">
+                    
+                            <form action="post"> <input class="search_field" type="text" /> <input class="search_submit" type="submit" value="Search" /> </form></div>
+                    -->
+                    <!-- end fill-in for search -->
+                </div>
+            </div>
+            <div id="primary_nav">
+                <div class="bounds">
+
+                    <ul class="links primary-links"><li class="menu-946 first"><a href="http://www.thecaraprogram.org/what-we-do" title="">What <strong>We Do</strong></a></li>
+                        <li class="menu-1703"><a href="http://www.thecaraprogram.org/impact" title="">The <strong>Impact</strong></a></li>
+                        <li class="menu-2811 last"><a href="http://www.thecaraprogram.org/what-you-can-do" title="">What <strong>You Can Do</strong></a></li>
+                    </ul>        <!-- begin filler for secondary nav -->
+                    <div id="block-block-8">
+
+                        <ul id="signup" class="clearfix">
+                            <li class="donate"><a href="https://cara.secure.force.com/donate" class="ext" target="_self">Donate</a>
+                                <span class="link_subtext">
+                                    to help transform a life                    </span>
+                            </li>
+                            <li class="subscribe"><a href="http://www.thecaraprogram.org/civicrm/profile/create?gid=1&reset=1"><span class="link_subtext">subscribe</span></a></li>
+                        </ul></div>
+                    <!-- end filler for secondary nav -->
+                </div>
+            </div>
+        </div> <!-- end masthead -->
+
+        <div id="main-content" class="clearfix">
+            <div class="main clearfix">   
+                <div class="bounds clearfix">
+                    <div class="left_outer">
+                        <div class="left_inner">
+
+                            <div id="content-top" class="clearfix">
+                                <div id="block-views-section_image-block_1">
+
+                                    <div class="view view-section-image view-id-section_image view-display-id-block_1 view-dom-id-7">
+
+
+
+                                        <div class="view-content">
+                                            <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+
+                                                <div class="views-field-field-simage-fid">
+                                                    <span class="field-content"><img class="imagefield imagefield-field_simage" width="1010" height="208" alt="" src="{!URLFOR($Resource.assets,'source_files/smiling.jpg')}"/></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div> </div>
+                            </div>
+                            <div id="body" class="clearfix">
+                               
+                                <div class="text" style="width:auto;padding:1em; float:none;">
+                                    <div id="AjaxTabs-wrapper">
+                                        <div class="view view-event-display-page view-id-event_display_page view-display-id-page_1 view-dom-id-6">
+                                            <div class="view-content">
+                                                <div class="views-row views-row-1 views-row-odd views-row-first">
+                                                    <div id="node-564" class="node">
+                                                              <apex:insert name="body"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div id="facts">
+
+                            <div id="block-views-Facts-block_1">
+
+                                <h2>The Impact</h2>
+
+
+
+                                <div>
+
+
+                                    <img src="{!URLFOR($Resource.assets,'source_files/4star234x60.gif')}" alt="" title="" class="imagecache imagecache-Fact_Image imagecache-default imagecache-Fact_Image_default" width="187" height="48"/>
+                                </div>
+
+
+                                <strong>
+
+
+                                    The Cara Program is a 4-Star Charity
+                                </strong>
+
+
+                                <span>
+
+
+                                    <p>Charity Navigator has awarded The Cara Program its most coveted 4-star rating!</p>
+                                </span>
+
+
+
+
+                                <a href="http://www.thecaraprogram.org/impact">learn more</a>
+
+
+
+
+                            </div>
+                        </div>
+                        <div id="tall_ad">
+                            <div class="padding">
+                                <div class="separator"></div>
+
+
+
+                                <h3 class="our_partner_programs">Our Partner Programs</h3>
+
+                                <ul>
+
+                                    <li><a href="http://www.cleanslatechicago.org/" target="_blank"><img src="{!URLFOR($Resource.assets,'source_files/clean_slate.png')}" alt="Clean Slate" height="30" width="126"/></a></li>
+
+                                    <li><a href="http://www.quadcommunitiescwf.org/" target="_blank"><img src="{!URLFOR($Resource.assets,'source_files/quad_communities.png')}" alt="Quad Communities Center for Working Families" height="32" width="183"/></a></li>
+                                    <!-- Removed link to 180 Properties due to stale website information -->
+                                    
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div id="tall_ad_bottom">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div id="footer">
+            <div class="bounds clearfix">
+                <div class="contact">
+                    <div id="block-block-6">
+
+                        <form action="http://www.thecaraprogram.org/civicrm/profile/create&gid=10&reset=1" id="Edit" method="post" name="Edit">
+                            <input name="postURL" value="" type="hidden"/><span style="background-color: rgb(255, 255, 255);"> </span>
+                            <input name="cancelURL" value="/civicrm/profile?reset=1&amp;gid=10" type="hidden"/><span style="background-color: rgb(255, 255, 255);"> </span>
+                            <input name="group[4]" value="1" type="hidden"/><span style="background-color: rgb(255, 255, 255);"> </span>
+                            <input name="_qf_default" value="Edit:cancel" type="hidden"/>
+                            <div id="profilewrap10">
+                                <div class="messages help">
+                                    <p>Stay in touch with us by signing up for our quarterly newsletter!</p>
+                                </div>
+                                <div id="input-items">
+                                    <input class="form-text big " id="email-Primary" maxlength="64" name="email-Primary" size="30" type="text"/>
+                                    <input accesskey="S" class="form-submit default" name="_qf_Edit_next" value="Subscribe" type="submit"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="block-menu-menu-news-contact">
+
+                        <ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/news" title="">News</a></li>
+                            <li class="leaf active-trail"><a href="http://www.thecaraprogram.org/events" title="" class="active">Events</a></li>
+                            <li class="leaf last"><a href="http://www.thecaraprogram.org/contact-us" title="">Contact Us</a></li>
+                        </ul></div>
+                </div>
+                <div id="block-menu-menu-footer-menu">
+
+                    <ul class="menu"><li class="expanded first"><a href="http://www.thecaraprogram.org/about" title="About Us">About</a><ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/about/mission-and-philosphy" title="Mission and Philosphy">Our Mission &amp; Services</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/about/awards" title="">Awards</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/about/employment-partners">Employment Partners</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/about/supporters" title="Our Supporters">Supporters</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/about/board-directors" title="">Board of Directors</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/people/staff" title="">Staff</a></li>
+                                <li class="leaf last"><a href="http://www.thecaraprogram.org/about/careers">Career Opportunities</a></li>
+                            </ul></li>
+                        <li class="expanded"><a href="http://www.thecaraprogram.org/what-we-do" title="">What We Do</a><ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/referral-admissions" title="">Referral &amp; Admissions</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/life-career-skills" title="">Life &amp; Career Skills</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/quality-job-placement" title="">Quality Job Placement</a></li>
+                                <li class="leaf last"><a href="http://www.thecaraprogram.org/job-retention-stability" title="">Job Retention &amp; Stability</a></li>
+                            </ul></li>
+                        <li class="expanded"><a href="http://www.thecaraprogram.org/impact" title="">The Impact</a><ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/impact/numbers" title="">The Numbers</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/impact/beyond-numbers" title="">Beyond the Numbers</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/impact/benefits-your-company" title="">Benefits to Your Company</a></li>
+                                <li class="leaf last"><a href="http://www.thecaraprogram.org/impact/annual-report" title="">Annual Report</a></li>
+                            </ul></li>
+                        <li class="expanded last"><a href="http://www.thecaraprogram.org/what-you-can-do" title="">What You Can Do</a><ul class="menu"><li class="leaf first"><a href="http://www.thecaraprogram.org/what-you-can-do/donate" title="">Donate</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/volunteer" title="">Volunteer</a></li>
+                                <li class="leaf"><a href="http://www.thecaraprogram.org/refer" title="">Refer</a></li>
+                                <li class="leaf last"><a href="http://www.thecaraprogram.org/hire" title="">Hire</a></li>
+                            </ul></li>
+                    </ul></div>
+                <div id="block-block-1">
+
+                    <span>Copyright <strong><span style="font-family: Arial;">&copy; </span></strong> 2013 The Cara Program. All Rights Reserved. <a href="http://www.thecaraprogram.org/sitemap">Site Map</a></span>
+                </div>
+            </div>
+            <img src="{!URLFOR($Resource.assets,'source_files/chi_skyline.png')}" alt="chicago skyline image (decorative)" width="444" height="308"/>
+        </div><!-- End Footer -->
+
+       
+    </body>
+</apex:page>

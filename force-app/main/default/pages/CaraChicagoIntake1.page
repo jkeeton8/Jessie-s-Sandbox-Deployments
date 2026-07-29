@@ -1,0 +1,50 @@
+<apex:page controller="ExpIntakeController" sidebar="false" tabStyle="Intake__tab" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedProgram.Name} Intake{!contactHeaderLabel}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Cara Chicago Intake ****-->
+
+<!-- ***** Case Record, page 1, order 1 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22047"/>
+
+<!-- ***** Contact, page 1, order 2 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-22048"/>
+
+<!-- ***** Contact, page 1, order 3 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-22049"/>
+
+<!-- ***** Child Object List, page 1, order 4 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22055"/>
+
+<!-- ***** Case Record, page 1, order 5 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22051"/>
+
+<!-- ***** Case Record, page 1, order 6 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22052"/>
+
+<!-- ***** Contact, page 1, order 7 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-22053"/>
+
+<!-- ***** Case Record, page 1, order 8 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22139"/>
+
+<!-- ***** Case Record, page 1, order 9 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22056"/>
+
+<!-- ***** Contact, page 1, order 10 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-22057"/>
+
+<!-- ***** Group Class Assignment, page 1, order 11 ***** -->
+<c:ExpGroupClassAssignment theParentController="{!this}" csName="CompSettings-22063"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

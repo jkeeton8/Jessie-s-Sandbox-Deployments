@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETO_Living_Arrangement_at_Intake__c</fullName>
+    <externalId>false</externalId>
+    <formula>case (Latest_Housing_Details__c,
+&quot;Shelter&quot;, &quot;Household is homeless (without a roof) or in a shelter&quot;, 
+&quot;Recovery home&quot;, &quot;House/apt. is rented by household member - subsidized&quot;,
+&quot;Emergency housing&quot;, &quot;House/apt. is rented by household member - subsidized&quot;,
+&quot;Halfway house&quot;, &quot;House/apt. is rented by household member - subsidized&quot;,
+&quot;Transitional housing (with specified end)&quot;, &quot;House/apt. is rented by household member - subsidized&quot;,
+&quot;Living with family/friend (name not on lease)&quot;, &quot;Household stays in the house/apt. for free&quot;,
+&quot;Rental through provider&quot;, &quot;House/apt. is rented by household member - unsubsidized&quot;,
+&quot;Rental through private&quot;, &quot;House/apt. is rented by household member - unsubsidized&quot;,
+&quot;Homeownership&quot;, &quot;House/apt. is owned by household member&quot;, 
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ETO Living Arrangement at Intake</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

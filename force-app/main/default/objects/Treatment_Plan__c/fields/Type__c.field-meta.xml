@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acute Pharyngitis</fullName>
+                <default>false</default>
+                <label>Acute Pharyngitis</label>
+            </value>
+            <value>
+                <fullName>Chlamydia - Contact</fullName>
+                <default>false</default>
+                <label>Chlamydia - Contact</label>
+            </value>
+            <value>
+                <fullName>Chlamydia - Confirmed - Pharyngeal</fullName>
+                <default>false</default>
+                <label>Chlamydia - Confirmed - Pharyngeal</label>
+            </value>
+            <value>
+                <fullName>Chlamydia - Confirmed - Urethral</fullName>
+                <default>false</default>
+                <label>Chlamydia - Confirmed - Urethral</label>
+            </value>
+            <value>
+                <fullName>Chlamydia - Confirmed - Rectal</fullName>
+                <default>false</default>
+                <label>Chlamydia - Confirmed - Rectal</label>
+            </value>
+            <value>
+                <fullName>Folliculitis</fullName>
+                <default>false</default>
+                <label>Folliculitis</label>
+            </value>
+            <value>
+                <fullName>Genital Herpes</fullName>
+                <default>false</default>
+                <label>Genital Herpes</label>
+            </value>
+            <value>
+                <fullName>Gonorrhea - Contact</fullName>
+                <default>false</default>
+                <label>Gonorrhea - Contact</label>
+            </value>
+            <value>
+                <fullName>Gonnorrhea - Confirmed - Pharyngeal</fullName>
+                <default>false</default>
+                <label>Gonnorrhea - Confirmed - Pharyngeal</label>
+            </value>
+            <value>
+                <fullName>Gonnorrhea - Confirmed - Urethral</fullName>
+                <default>false</default>
+                <label>Gonnorrhea - Confirmed - Urethral</label>
+            </value>
+            <value>
+                <fullName>Gonnorrhea - Confirmed - Rectal</fullName>
+                <default>false</default>
+                <label>Gonnorrhea - Confirmed - Rectal</label>
+            </value>
+            <value>
+                <fullName>Health Consultation/Info Only</fullName>
+                <default>false</default>
+                <label>Health Consultation/Info Only</label>
+            </value>
+            <value>
+                <fullName>Hepatitis C</fullName>
+                <default>false</default>
+                <label>Hepatitis C</label>
+            </value>
+            <value>
+                <fullName>HIV</fullName>
+                <default>false</default>
+                <label>HIV</label>
+            </value>
+            <value>
+                <fullName>HIV Testing/Counseling</fullName>
+                <default>false</default>
+                <label>HIV Testing/Counseling</label>
+            </value>
+            <value>
+                <fullName>HPV</fullName>
+                <default>false</default>
+                <label>HPV</label>
+            </value>
+            <value>
+                <fullName>Flu vaccine Immunization</fullName>
+                <default>false</default>
+                <label>Flu vaccine Immunization</label>
+            </value>
+            <value>
+                <fullName>Hepatitis A Immunization</fullName>
+                <default>false</default>
+                <label>Hepatitis A Immunization</label>
+            </value>
+            <value>
+                <fullName>Hepatitis B Immunization</fullName>
+                <default>false</default>
+                <label>Hepatitis B Immunization</label>
+            </value>
+            <value>
+                <fullName>Hepatitis A/B Combo Immunization</fullName>
+                <default>false</default>
+                <label>Hepatitis A/B Combo Immunization</label>
+            </value>
+            <value>
+                <fullName>Molluscum</fullName>
+                <default>false</default>
+                <label>Molluscum</label>
+            </value>
+            <value>
+                <fullName>Non-Specific Proctitus</fullName>
+                <default>false</default>
+                <label>Non-Specific Proctitus</label>
+            </value>
+            <value>
+                <fullName>NSU</fullName>
+                <default>false</default>
+                <label>NSU</label>
+            </value>
+            <value>
+                <fullName>NSU - Contact</fullName>
+                <default>false</default>
+                <label>NSU - Contact</label>
+            </value>
+            <value>
+                <fullName>Pediculosis Pubis</fullName>
+                <default>false</default>
+                <label>Pediculosis Pubis</label>
+            </value>
+            <value>
+                <fullName>Prob. Scabies</fullName>
+                <default>false</default>
+                <label>Prob. Scabies</label>
+            </value>
+            <value>
+                <fullName>Probable Fungal Infection</fullName>
+                <default>false</default>
+                <label>Probable Fungal Infection</label>
+            </value>
+            <value>
+                <fullName>R/O STI</fullName>
+                <default>false</default>
+                <label>R/O STI</label>
+            </value>
+            <value>
+                <fullName>Syphilis - Contact</fullName>
+                <default>false</default>
+                <label>Syphilis - Contact</label>
+            </value>
+            <value>
+                <fullName>Syphilis - Presumptive</fullName>
+                <default>false</default>
+                <label>Syphilis - Presumptive</label>
+            </value>
+            <value>
+                <fullName>Syphilis - ConfirmedEarly Latent</fullName>
+                <default>false</default>
+                <label>Syphilis - ConfirmedEarly Latent</label>
+            </value>
+            <value>
+                <fullName>Syphilis - Primary</fullName>
+                <default>false</default>
+                <label>Syphilis - Primary</label>
+            </value>
+            <value>
+                <fullName>Syphilis - Secondary</fullName>
+                <default>false</default>
+                <label>Syphilis - Secondary</label>
+            </value>
+            <value>
+                <fullName>Syphlis - Late Latent</fullName>
+                <default>false</default>
+                <label>Syphlis - Late Latent</label>
+            </value>
+            <value>
+                <fullName>Syphilis - Stage Unknown</fullName>
+                <default>false</default>
+                <label>Syphilis - Stage Unknown</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

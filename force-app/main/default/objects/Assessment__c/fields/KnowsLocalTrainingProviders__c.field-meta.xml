@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KnowsLocalTrainingProviders__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Do you know who in our area provides training in this field?</inlineHelpText>
+    <label>Knows Local Training Providers</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Downtown_Gift_Card_250_2023_06_07</fullName>
+    <columns>NAME</columns>
+    <columns>Participant__c</columns>
+    <columns>Participant_ID__c</columns>
+    <columns>Date_Distributed__c</columns>
+    <columns>Distribution_Type__c</columns>
+    <columns>Write_Off__c</columns>
+    <columns>Write_Off_Reason__c</columns>
+    <columns>Staff__c</columns>
+    <columns>Transit_Card_Value__c</columns>
+    <columns>Transit_Card_Order__c</columns>
+    <columns>Transit_Card_Inventory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Transit_Card_Inventory__c</field>
+        <operation>equals</operation>
+        <value>Inventory-1377</value>
+    </filters>
+    <label>Downtown, Gift Card - $250, 2023-06-07</label>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competency_Average__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId= &quot;01231000001ERwT&quot; || RecordTypeId = &quot;01231000001ERwd&quot;, 
+
+(Competency_Total_Time_Management__c + Competency_Total_Communication__c + Competency_Total_Professionalism__c + Competency_Total_Conflict_Resolution__c + Competency_Total_Teamwork__c)/5, 
+
+NULL)</formula>
+    <inlineHelpText>Cleanslate Evaluations: Out of 9 points, the average of the Competency Totals.</inlineHelpText>
+    <label>Cleanslate Competency Average</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

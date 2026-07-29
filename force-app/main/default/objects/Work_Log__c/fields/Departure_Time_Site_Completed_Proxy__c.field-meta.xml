@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Time_Site_Completed_Proxy__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (contains (Departure_Time_Site_Completed__c, &quot;AM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c, &quot;12:&quot;), value(substitute(substitute(Departure_Time_Site_Completed__c, &quot;12:&quot;, &quot;0.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Departure_Time_Site_Completed__c, &quot;AM&quot;), value(substitute(substitute(Departure_Time_Site_Completed__c, &quot;:&quot;, &quot;.&quot;), &quot; AM&quot;, NULL)), 
+
+if (contains (Departure_Time_Site_Completed__c, &quot;PM&quot;) &amp;&amp; contains (Departure_Time_Site_Completed__c, &quot;12:&quot;), value(substitute(substitute(Departure_Time_Site_Completed__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL)), 
+
+if (contains (Departure_Time_Site_Completed__c, &quot;PM&quot;), value(substitute(substitute(Departure_Time_Site_Completed__c, &quot;:&quot;, &quot;.&quot;), &quot; PM&quot;, NULL))+12, 
+
+NULL))))</formula>
+    <label>Departure Time, Site Completed Proxy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,20 @@
+<apex:page showHeader="false"  standardStylesheets="false"   lightningstylesheets="true">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <h1>Thank You</h1>
+            <p>
+                Thank you for your donation to Cara. Be sure to 
+                <apex:outputLink value="https://www.facebook.com/CaraChicago/" id="theLink1" target="_blank"> follow @CaraChicago on social media
+                </apex:outputLink> 
+                and  
+                <apex:outputLink value="https://carachicago.org/contact/?tfa_148=selected" id="theLink2" target="_blank"> subscribe to our newsletter</apex:outputLink> 
+                for success stories, event invites, and more.
+                
+                Ready to see your donation put to work? 
+                <apex:outputLink value="https://carachicago.org/contact/?tfa_131=selected" id="theLink3" target="_blank"> Schedule a visit</apex:outputLink> to attend our signature morning Motivations.
+            </p>  
+  
+            <!-- END CONTENT -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

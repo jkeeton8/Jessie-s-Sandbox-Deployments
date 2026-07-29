@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Childcare__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Employed student’s childcare is solid.
+-If there is any problem with childcare, student has a back-up plan.
+-Childcare does not compromise ability to work.
+-Childcare is within budget.</inlineHelpText>
+    <label>Childcare</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

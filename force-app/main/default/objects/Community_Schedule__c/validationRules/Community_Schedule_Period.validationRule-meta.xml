@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Schedule_Period</fullName>
+    <active>true</active>
+    <errorConditionFormula>(month(Community_Schedule_End_Date__c) &lt;&gt; month( Community_Schedule_Start_Date__c))
+
+||
+
+(year(Community_Schedule_End_Date__c) &lt;&gt; year( Community_Schedule_Start_Date__c))</errorConditionFormula>
+    <errorMessage>A community schedule can only be set for, at max, one month at a time. Please review start and end dates.</errorMessage>
+</ValidationRule>

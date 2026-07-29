@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Most_Recent_Job_Workflow__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Workflow controlled field that mirrors &apos;Most Recent Job (Formula)&apos;. For use in &apos;Most Recent Employment End Date&apos; rollup field on Case Record, since formula fields cannot be used in rollups.</description>
+    <label>Most Recent Job (Workflow)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

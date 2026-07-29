@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Code__c</fullName>
+    <description>Need to rationalize with HFB. Is this the same as Health Education Risk Reduction?</description>
+    <label>Service Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HIV Test Education</fullName>
+                <default>false</default>
+                <label>HIV Test Education</label>
+            </value>
+            <value>
+                <fullName>1 - Individual Counseling</fullName>
+                <default>false</default>
+                <label>1 - Individual Counseling</label>
+            </value>
+            <value>
+                <fullName>1P - Phone Call/E-mail with client/family</fullName>
+                <default>false</default>
+                <label>1P - Phone Call/E-mail with client/family</label>
+            </value>
+            <value>
+                <fullName>2 - Family Counseling</fullName>
+                <default>false</default>
+                <label>2 - Family Counseling</label>
+            </value>
+            <value>
+                <fullName>3 - Class (Life Skills Education)</fullName>
+                <default>false</default>
+                <label>3 - Class (Life Skills Education)</label>
+            </value>
+            <value>
+                <fullName>4 - Intake</fullName>
+                <default>false</default>
+                <label>4 - Intake</label>
+            </value>
+            <value>
+                <fullName>5C - Class (Life Skills Education)</fullName>
+                <default>false</default>
+                <label>5C - Class (Life Skills Education)</label>
+            </value>
+            <value>
+                <fullName>5ER - Expanded Assessment</fullName>
+                <default>false</default>
+                <label>5ER - Expanded Assessment</label>
+            </value>
+            <value>
+                <fullName>5FC - Family Counseling – with client (conjoint)</fullName>
+                <default>false</default>
+                <label>5FC - Family Counseling – with client (conjoint)</label>
+            </value>
+            <value>
+                <fullName>5FNC - Family Counseling – no client</fullName>
+                <default>false</default>
+                <label>5FNC - Family Counseling – no client</label>
+            </value>
+            <value>
+                <fullName>5G - Group (Support Groups)</fullName>
+                <default>false</default>
+                <label>5G - Group (Support Groups)</label>
+            </value>
+            <value>
+                <fullName>5GM - Group Case Management</fullName>
+                <default>false</default>
+                <label>5GM - Group Case Management</label>
+            </value>
+            <value>
+                <fullName>5IC - Individual Counseling</fullName>
+                <default>false</default>
+                <label>5IC - Individual Counseling</label>
+            </value>
+            <value>
+                <fullName>5M - Case Management</fullName>
+                <default>false</default>
+                <label>5M - Case Management</label>
+            </value>
+            <value>
+                <fullName>5P - Phone Call</fullName>
+                <default>false</default>
+                <label>5P - Phone Call</label>
+            </value>
+            <value>
+                <fullName>5R - Assessment &amp; Referral</fullName>
+                <default>false</default>
+                <label>5R - Assessment &amp; Referral</label>
+            </value>
+            <value>
+                <fullName>5U - Urinalysis</fullName>
+                <default>false</default>
+                <label>5U - Urinalysis</label>
+            </value>
+            <value>
+                <fullName>6 - Case Management</fullName>
+                <default>false</default>
+                <label>6 - Case Management</label>
+            </value>
+            <value>
+                <fullName>6P - Phone Call/E-mail collateral contact</fullName>
+                <default>false</default>
+                <label>6P - Phone Call/E-mail collateral contact</label>
+            </value>
+            <value>
+                <fullName>7 - Crisis Intervention</fullName>
+                <default>false</default>
+                <label>7 - Crisis Intervention</label>
+            </value>
+            <value>
+                <fullName>7FC - GCE Family Counseling – with client (conjoint)</fullName>
+                <default>false</default>
+                <label>7FC - GCE Family Counseling – with client (conjoint)</label>
+            </value>
+            <value>
+                <fullName>7G - Group (Support Groups)</fullName>
+                <default>false</default>
+                <label>7G - Group (Support Groups)</label>
+            </value>
+            <value>
+                <fullName>7IC - GCE Individual Counseling</fullName>
+                <default>false</default>
+                <label>7IC - GCE Individual Counseling</label>
+            </value>
+            <value>
+                <fullName>7M - GCE Case Management</fullName>
+                <default>false</default>
+                <label>7M - GCE Case Management</label>
+            </value>
+            <value>
+                <fullName>7R - GCE Assessment &amp; Referral</fullName>
+                <default>false</default>
+                <label>7R - GCE Assessment &amp; Referral</label>
+            </value>
+            <value>
+                <fullName>8 - School Support</fullName>
+                <default>false</default>
+                <label>8 - School Support</label>
+            </value>
+            <value>
+                <fullName>9 - Group (Support Groups)</fullName>
+                <default>false</default>
+                <label>9 - Group (Support Groups)</label>
+            </value>
+            <value>
+                <fullName>10 - Supervision</fullName>
+                <default>false</default>
+                <label>10 - Supervision</label>
+            </value>
+            <value>
+                <fullName>11 - Parenting Classes</fullName>
+                <default>false</default>
+                <label>11 - Parenting Classes</label>
+            </value>
+            <value>
+                <fullName>14 - Gain SS &amp; Quadrant Placement Code</fullName>
+                <default>false</default>
+                <label>14 - Gain SS &amp; Quadrant Placement Code</label>
+            </value>
+            <value>
+                <fullName>15 - CTR and COB</fullName>
+                <default>false</default>
+                <label>15 - CTR and COB</label>
+            </value>
+            <value>
+                <fullName>16 - Travel Time</fullName>
+                <default>false</default>
+                <label>16 - Travel Time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

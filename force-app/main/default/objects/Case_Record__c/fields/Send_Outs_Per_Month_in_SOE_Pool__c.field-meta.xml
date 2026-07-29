@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Outs_Per_Month_in_SOE_Pool__c</fullName>
+    <externalId>false</externalId>
+    <formula>Amount__c / (Case_Record_Age__c / 30)</formula>
+    <label>Send Outs Per Month in SOE Pool</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

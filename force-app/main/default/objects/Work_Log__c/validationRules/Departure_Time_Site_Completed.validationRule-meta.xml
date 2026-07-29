@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Time_Site_Completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>if (RecordTypeId=&quot;0120Z000001Ifac&quot;, FALSE, 
+
+if (NOT(REGEX(Departure_Time_Site_Completed__c, &quot;[0]?[0-9]:[0-5][0-9] [A|P]M&quot;)) &amp;&amp; NOT(REGEX(Departure_Time_Site_Completed__c, &quot;[1]?[0-2]:[0-5][0-9] [A|P]M&quot;)), TRUE,
+
+FALSE))</errorConditionFormula>
+    <errorDisplayField>Departure_Time_Site_Completed__c</errorDisplayField>
+    <errorMessage>Enter time in format hh:mm AM/PM.</errorMessage>
+</ValidationRule>

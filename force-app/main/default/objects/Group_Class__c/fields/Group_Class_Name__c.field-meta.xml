@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Class_Name__c</fullName>
+    <label>Group/Class Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Group_Class_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABM Janitorial</fullName>
+                <default>false</default>
+                <label>ABM Janitorial</label>
+            </value>
+            <value>
+                <fullName>ABM Security</fullName>
+                <default>false</default>
+                <label>ABM Security</label>
+            </value>
+            <value>
+                <fullName>Adelante 1:1 Makeup Session</fullName>
+                <default>false</default>
+                <label>Adelante 1:1 Makeup Session</label>
+            </value>
+            <value>
+                <fullName>Adelante Computer Basics and Digital Literacy, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante Computer Basics and Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>Adelante Digital Literacy</fullName>
+                <default>false</default>
+                <label>Adelante Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>Adelante Email Basics, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante Email Basics</label>
+            </value>
+            <value>
+                <fullName>Adelante Excel, Pt. 1, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante Excel, Pt. 1</label>
+            </value>
+            <value>
+                <fullName>Adelante Excel, Pt. 2, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante Excel, Pt. 2</label>
+            </value>
+            <value>
+                <fullName>Adelante Excel &amp; Sheets</fullName>
+                <default>false</default>
+                <label>Adelante Excel &amp; Sheets</label>
+            </value>
+            <value>
+                <fullName>Adelante Intro to digital literacy</fullName>
+                <default>false</default>
+                <label>Adelante Intro to Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>Adelante MS Office &amp; Google Suite</fullName>
+                <default>false</default>
+                <label>Adelante MS Office &amp; Google Suite</label>
+            </value>
+            <value>
+                <fullName>Adelante MS Office + Google Suite, Pt. 1, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante MS Office + Google Suite, Pt. 1</label>
+            </value>
+            <value>
+                <fullName>Adelante MS Office + Google Suite, Pt. 2, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante MS Office + Google Suite, Pt. 2</label>
+            </value>
+            <value>
+                <fullName>Adelante Other - please specify</fullName>
+                <default>false</default>
+                <label>Adelante Other - please specify</label>
+            </value>
+            <value>
+                <fullName>Adelante Outlook and Gmail, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante Outlook and Gmail</label>
+            </value>
+            <value>
+                <fullName>Adelante PowerPoint, Pt. 1, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante PowerPoint, Pt. 1</label>
+            </value>
+            <value>
+                <fullName>Adelante PowerPoint, Pt. 2, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante PowerPoint, Pt. 2</label>
+            </value>
+            <value>
+                <fullName>Adelante PowerPoint, Pt. 3, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante PowerPoint, Pt. 3</label>
+            </value>
+            <value>
+                <fullName>Adelante PowerPoint &amp; Slides</fullName>
+                <default>false</default>
+                <label>Adelante PowerPoint &amp; Slides</label>
+            </value>
+            <value>
+                <fullName>Adelante PowerPoint Presentation, South Side Campus</fullName>
+                <default>false</default>
+                <label>Adelante PowerPoint Presentation</label>
+            </value>
+            <value>
+                <fullName>Adelante Word &amp; Docs</fullName>
+                <default>false</default>
+                <label>Adelante Word &amp; Docs</label>
+            </value>
+            <value>
+                <fullName>Advanced Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advanced Training</label>
+            </value>
+            <value>
+                <fullName>Behaviors on the Job</fullName>
+                <default>false</default>
+                <label>Behaviors on the Job</label>
+            </value>
+            <value>
+                <fullName>Blogging</fullName>
+                <default>false</default>
+                <label>Blogging</label>
+            </value>
+            <value>
+                <fullName>BMO Customer Service</fullName>
+                <default>false</default>
+                <label>BMO Customer Service</label>
+            </value>
+            <value>
+                <fullName>Budgeting and Saving</fullName>
+                <default>false</default>
+                <label>Budgeting and Saving</label>
+            </value>
+            <value>
+                <fullName>C&amp;W Services</fullName>
+                <default>false</default>
+                <label>C&amp;W Services</label>
+            </value>
+            <value>
+                <fullName>Cara Central Office Hours</fullName>
+                <default>false</default>
+                <label>Cara Central Office Hours</label>
+            </value>
+            <value>
+                <fullName>Cara Orientation</fullName>
+                <default>false</default>
+                <label>Cara Orientation</label>
+            </value>
+            <value>
+                <fullName>Cara Orientation Video</fullName>
+                <default>false</default>
+                <label>Cara Orientation Video</label>
+            </value>
+            <value>
+                <fullName>Career Planning</fullName>
+                <default>false</default>
+                <label>Career Planning</label>
+            </value>
+            <value>
+                <fullName>Checking and Savings</fullName>
+                <default>false</default>
+                <label>Checking and Savings</label>
+            </value>
+            <value>
+                <fullName>Classic Cohort Impacted by Coronavirus Pandemic</fullName>
+                <default>false</default>
+                <label>Classic Cohort Impacted by Coronavirus Pandemic</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Orientation</fullName>
+                <default>false</default>
+                <label>Cleanslate Orientation</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Worker Request List</fullName>
+                <default>false</default>
+                <label>Cleanslate Worker Request List</label>
+            </value>
+            <value>
+                <fullName>Clothing Assessments</fullName>
+                <default>false</default>
+                <label>Clothing Assessments</label>
+            </value>
+            <value>
+                <fullName>CNC Certification Training</fullName>
+                <default>false</default>
+                <label>CNC Certification Training</label>
+            </value>
+            <value>
+                <fullName>Adelante ComEd Construct</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ComEd Construct</label>
+            </value>
+            <value>
+                <fullName>Comed Construct</fullName>
+                <default>false</default>
+                <label>Comed Construct</label>
+            </value>
+            <value>
+                <fullName>Common Interviewing Questions</fullName>
+                <default>false</default>
+                <label>Common Interviewing Questions</label>
+            </value>
+            <value>
+                <fullName>Common Interviewing Techniques</fullName>
+                <default>false</default>
+                <label>Common Interviewing Techniques</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Brand/Brag</fullName>
+                <default>false</default>
+                <label>Communication/Brand &amp; Brag</label>
+            </value>
+            <value>
+                <fullName>Community Commitments</fullName>
+                <default>false</default>
+                <label>Community Commitments</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Communication</fullName>
+                <default>false</default>
+                <label>Competency Video - Communication</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Conflict Management</fullName>
+                <default>false</default>
+                <label>Competency Video - Conflict Management</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Introduction</fullName>
+                <default>false</default>
+                <label>Competency Video - Introduction</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Navigating Email Communications</fullName>
+                <default>false</default>
+                <label>Competency Video - Navigating Email Communications</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Professionalism</fullName>
+                <default>false</default>
+                <label>Competency Video - Professionalism</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Teamwork</fullName>
+                <default>false</default>
+                <label>Competency Video - Teamwork</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Time Management</fullName>
+                <default>false</default>
+                <label>Competency Video - Time Management</label>
+            </value>
+            <value>
+                <fullName>Competency Video - Virtual Workplace Competencies</fullName>
+                <default>false</default>
+                <label>Competency Video - Virtual Workplace Competencies</label>
+            </value>
+            <value>
+                <fullName>Computer Lab</fullName>
+                <default>false</default>
+                <label>Computer Lab</label>
+            </value>
+            <value>
+                <fullName>Conflict, Emotions, Triggers</fullName>
+                <default>false</default>
+                <label>Conflict, Emotions, Triggers</label>
+            </value>
+            <value>
+                <fullName>Conflict Management: Diversity &amp; Power of the Pause</fullName>
+                <default>false</default>
+                <label>Conflict Management: Diversity &amp; Power of the Pause</label>
+            </value>
+            <value>
+                <fullName>Connects Onboarding</fullName>
+                <default>false</default>
+                <label>Connects Onboarding</label>
+            </value>
+            <value>
+                <fullName>Core Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Core Training</label>
+            </value>
+            <value>
+                <fullName>Corporate Service Day</fullName>
+                <default>false</default>
+                <label>Corporate Service Day</label>
+            </value>
+            <value>
+                <fullName>CPR</fullName>
+                <default>false</default>
+                <label>CPR</label>
+            </value>
+            <value>
+                <fullName>Credit as an Asset</fullName>
+                <default>false</default>
+                <label>Credit as an Asset</label>
+            </value>
+            <value>
+                <fullName>Credit Building</fullName>
+                <default>false</default>
+                <label>Credit Building</label>
+            </value>
+            <value>
+                <fullName>Critical Thinking</fullName>
+                <default>false</default>
+                <label>Critical Thinking</label>
+            </value>
+            <value>
+                <fullName>Cross the Line</fullName>
+                <default>false</default>
+                <label>Cross the Line</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Debit/Credit Transactions</fullName>
+                <default>false</default>
+                <label>Debit/Credit Transactions</label>
+            </value>
+            <value>
+                <fullName>Declaring Participant Commitments</fullName>
+                <default>false</default>
+                <label>Declaring Participant Commitments</label>
+            </value>
+            <value>
+                <fullName>Computer Basics</fullName>
+                <default>false</default>
+                <label>Digital Literacy: Computer Basics</label>
+            </value>
+            <value>
+                <fullName>Emailing Etiquette</fullName>
+                <default>false</default>
+                <label>Digital Literacy: Emailing Etiquette</label>
+            </value>
+            <value>
+                <fullName>Direct Service Professional Training</fullName>
+                <default>false</default>
+                <label>Direct Service Professional Training</label>
+            </value>
+            <value>
+                <fullName>Diversity</fullName>
+                <default>false</default>
+                <label>Diversity</label>
+            </value>
+            <value>
+                <fullName>Effective Follow Up</fullName>
+                <default>false</default>
+                <label>Effective Follow Up</label>
+            </value>
+            <value>
+                <fullName>Elevator Pitch</fullName>
+                <default>false</default>
+                <label>Elevator Pitch</label>
+            </value>
+            <value>
+                <fullName>Employment Services Team Office Hours</fullName>
+                <default>false</default>
+                <label>Employment Services Team Office Hours</label>
+            </value>
+            <value>
+                <fullName>Experience Workshop</fullName>
+                <default>false</default>
+                <label>Experience Workshop / Corporate Service Day</label>
+            </value>
+            <value>
+                <fullName>Financial Literacy</fullName>
+                <default>false</default>
+                <label>Financial Literacy</label>
+            </value>
+            <value>
+                <fullName>Financial Literacy Video - Banking Basics</fullName>
+                <default>false</default>
+                <label>Financial Literacy Video - Banking Basics</label>
+            </value>
+            <value>
+                <fullName>Financial Literacy Video - Financial Safety and Credit</fullName>
+                <default>false</default>
+                <label>Financial Literacy Video - Financial Safety and Credit</label>
+            </value>
+            <value>
+                <fullName>Financial Literacy Video - Income and Paychecks</fullName>
+                <default>false</default>
+                <label>Financial Literacy Video - Income and Paychecks</label>
+            </value>
+            <value>
+                <fullName>First Impressions</fullName>
+                <default>false</default>
+                <label>First Impressions</label>
+            </value>
+            <value>
+                <fullName>Five Workplace Competencies</fullName>
+                <default>false</default>
+                <label>Five Workplace Competencies</label>
+            </value>
+            <value>
+                <fullName>Foundations</fullName>
+                <default>false</default>
+                <label>Foundations</label>
+            </value>
+            <value>
+                <fullName>Franklin Covey</fullName>
+                <default>false</default>
+                <label>Franklin Covey</label>
+            </value>
+            <value>
+                <fullName>GCFD_Food_Handling</fullName>
+                <default>false</default>
+                <label>GCFD Food Handling</label>
+            </value>
+            <value>
+                <fullName>GED Prep</fullName>
+                <default>false</default>
+                <label>GED Prep</label>
+            </value>
+            <value>
+                <fullName>Google Basics</fullName>
+                <default>false</default>
+                <label>Google Basics</label>
+            </value>
+            <value>
+                <fullName>Great Debaters</fullName>
+                <default>false</default>
+                <label>Great Debaters</label>
+            </value>
+            <value>
+                <fullName>Growing Home</fullName>
+                <default>false</default>
+                <label>Growing Home</label>
+            </value>
+            <value>
+                <fullName>Hire 360 Certification Training</fullName>
+                <default>false</default>
+                <label>Hire 360 Certification Training</label>
+            </value>
+            <value>
+                <fullName>Income Support Screening</fullName>
+                <default>false</default>
+                <label>Income Support Screening</label>
+            </value>
+            <value>
+                <fullName>Internet Basics</fullName>
+                <default>false</default>
+                <label>Internet Basics</label>
+            </value>
+            <value>
+                <fullName>Interviewing Techniques</fullName>
+                <default>false</default>
+                <label>Interviewing Techniques</label>
+            </value>
+            <value>
+                <fullName>Intro to Cara Central</fullName>
+                <default>false</default>
+                <label>Intro to Cara Central</label>
+            </value>
+            <value>
+                <fullName>Intro to Digital Literacy</fullName>
+                <default>false</default>
+                <label>Intro to Digital Literacy</label>
+            </value>
+            <value>
+                <fullName>Intro To Leadership</fullName>
+                <default>false</default>
+                <label>Intro To Leadership</label>
+            </value>
+            <value>
+                <fullName>JARC Certification</fullName>
+                <default>false</default>
+                <label>JARC Certification</label>
+            </value>
+            <value>
+                <fullName>Job Search</fullName>
+                <default>false</default>
+                <label>Job Search</label>
+            </value>
+            <value>
+                <fullName>Job Search Process</fullName>
+                <default>false</default>
+                <label>Job Search Process</label>
+            </value>
+            <value>
+                <fullName>Justice that Heals</fullName>
+                <default>false</default>
+                <label>Justice that Heals</label>
+            </value>
+            <value>
+                <fullName>Competency Workshop - Communication</fullName>
+                <default>false</default>
+                <label>Leadership - Communication</label>
+            </value>
+            <value>
+                <fullName>Competency Workshop - Conflict Management</fullName>
+                <default>false</default>
+                <label>Leadership - Conflict Management</label>
+            </value>
+            <value>
+                <fullName>Leadership - Employment Services Team</fullName>
+                <default>false</default>
+                <label>Leadership - Employment Services Team</label>
+            </value>
+            <value>
+                <fullName>Leadership - Interviewing</fullName>
+                <default>false</default>
+                <label>Leadership - Interviewing</label>
+            </value>
+            <value>
+                <fullName>Competency Workshop - Professionalism</fullName>
+                <default>false</default>
+                <label>Leadership - Professionalism</label>
+            </value>
+            <value>
+                <fullName>Competency Workshop - Teamwork</fullName>
+                <default>false</default>
+                <label>Leadership - Teamwork</label>
+            </value>
+            <value>
+                <fullName>Competency Workshop - Time Management</fullName>
+                <default>false</default>
+                <label>Leadership - Time Management</label>
+            </value>
+            <value>
+                <fullName>Life Mapping</fullName>
+                <default>false</default>
+                <label>Life Mapping</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Love/Forgiveness</fullName>
+                <default>false</default>
+                <label>Love/Forgiveness</label>
+            </value>
+            <value>
+                <fullName>Love Exercise</fullName>
+                <default>false</default>
+                <label>Love Exercise</label>
+            </value>
+            <value>
+                <fullName>Meet a CEP</fullName>
+                <default>false</default>
+                <label>Meet a CEP</label>
+            </value>
+            <value>
+                <fullName>Microsoft Excel</fullName>
+                <default>false</default>
+                <label>Microsoft Excel</label>
+            </value>
+            <value>
+                <fullName>Microsoft PowerPoint</fullName>
+                <default>false</default>
+                <label>Microsoft PowerPoint</label>
+            </value>
+            <value>
+                <fullName>Microsoft Word</fullName>
+                <default>false</default>
+                <label>Microsoft Word</label>
+            </value>
+            <value>
+                <fullName>Mirror Exercise/Debrief</fullName>
+                <default>false</default>
+                <label>Mirror Exercise/Debrief</label>
+            </value>
+            <value>
+                <fullName>Motivations</fullName>
+                <default>false</default>
+                <label>Motivations</label>
+            </value>
+            <value>
+                <fullName>New Hire Orientation</fullName>
+                <default>false</default>
+                <label>New Hire Orientation</label>
+            </value>
+            <value>
+                <fullName>OAI</fullName>
+                <default>false</default>
+                <label>OAI Certification Training</label>
+            </value>
+            <value>
+                <fullName>Online Applications</fullName>
+                <default>false</default>
+                <label>Online Applications</label>
+            </value>
+            <value>
+                <fullName>Online Commerce</fullName>
+                <default>false</default>
+                <label>Online Commerce</label>
+            </value>
+            <value>
+                <fullName>Online Interviewing</fullName>
+                <default>false</default>
+                <label>Online Interviewing</label>
+            </value>
+            <value>
+                <fullName>Open (Clothing)</fullName>
+                <default>false</default>
+                <label>Open (Clothing)</label>
+            </value>
+            <value>
+                <fullName>Orientation</fullName>
+                <default>false</default>
+                <label>Orientation</label>
+            </value>
+            <value>
+                <fullName>OSHA</fullName>
+                <default>false</default>
+                <label>OSHA</label>
+            </value>
+            <value>
+                <fullName>Past Hurts &amp; Pain (Forgiveness)</fullName>
+                <default>false</default>
+                <label>Past Hurts &amp; Pain (Forgiveness)</label>
+            </value>
+            <value>
+                <fullName>Personal Development</fullName>
+                <default>false</default>
+                <label>Personal Development</label>
+            </value>
+            <value>
+                <fullName>Planning for Success</fullName>
+                <default>false</default>
+                <label>Planning for Success</label>
+            </value>
+            <value>
+                <fullName>Planning for Success - Part 2</fullName>
+                <default>false</default>
+                <label>Planning for Success - Part 2</label>
+            </value>
+            <value>
+                <fullName>Policies and Procedures</fullName>
+                <default>false</default>
+                <label>Policies and Procedures</label>
+            </value>
+            <value>
+                <fullName>Power of the Pause</fullName>
+                <default>false</default>
+                <label>Power of the Pause</label>
+            </value>
+            <value>
+                <fullName>Pre-Cohort Workshop</fullName>
+                <default>false</default>
+                <label>Pre-Cohort Workshop</label>
+            </value>
+            <value>
+                <fullName>Pre-Interviewing Techniques</fullName>
+                <default>false</default>
+                <label>Pre-Interviewing Techniques</label>
+            </value>
+            <value>
+                <fullName>Presentation Skills</fullName>
+                <default>false</default>
+                <label>Presentation Skills</label>
+            </value>
+            <value>
+                <fullName>Professionalism</fullName>
+                <default>false</default>
+                <label>Professionalism</label>
+            </value>
+            <value>
+                <fullName>Reading of the Love Exercise</fullName>
+                <default>false</default>
+                <label>Reading of the Love Exercise</label>
+            </value>
+            <value>
+                <fullName>Rebuild</fullName>
+                <default>false</default>
+                <label>Rebuild</label>
+            </value>
+            <value>
+                <fullName>Rebuild Carpentry</fullName>
+                <default>false</default>
+                <label>Rebuild Carpentry</label>
+            </value>
+            <value>
+                <fullName>Recipe for Success</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Recipe for Success</label>
+            </value>
+            <value>
+                <fullName>Relationship Building</fullName>
+                <default>false</default>
+                <label>Relationship Building</label>
+            </value>
+            <value>
+                <fullName>Resume</fullName>
+                <default>false</default>
+                <label>Resume</label>
+            </value>
+            <value>
+                <fullName>Resumes/Cover Letters</fullName>
+                <default>false</default>
+                <label>Resumes/Cover Letters</label>
+            </value>
+            <value>
+                <fullName>Rozalado Janitorial/Floor Care</fullName>
+                <default>false</default>
+                <label>Rozalado Janitorial/Floor Care</label>
+            </value>
+            <value>
+                <fullName>Scavenger Hunt</fullName>
+                <default>false</default>
+                <label>Scavenger Hunt</label>
+            </value>
+            <value>
+                <fullName>Self-Directed Job Search - Online Job Search</fullName>
+                <default>false</default>
+                <label>Self-Directed Job Search - Online Job Search</label>
+            </value>
+            <value>
+                <fullName>Harassment and Discrimination</fullName>
+                <default>false</default>
+                <label>Sexual Harassment &amp; Bystander Training</label>
+            </value>
+            <value>
+                <fullName>South Side Campus Orientation</fullName>
+                <default>false</default>
+                <label>South Side Campus Orientation</label>
+            </value>
+            <value>
+                <fullName>Speed Interviewing</fullName>
+                <default>false</default>
+                <label>Speed Interviewing</label>
+            </value>
+            <value>
+                <fullName>TABE</fullName>
+                <default>false</default>
+                <label>TABE</label>
+            </value>
+            <value>
+                <fullName>TDL - Distribution</fullName>
+                <default>false</default>
+                <label>TDL - Distribution</label>
+            </value>
+            <value>
+                <fullName>TDL - Logistics</fullName>
+                <default>false</default>
+                <label>TDL - Logistics</label>
+            </value>
+            <value>
+                <fullName>TDL - Orientation</fullName>
+                <default>false</default>
+                <label>TDL - Orientation</label>
+            </value>
+            <value>
+                <fullName>TDL - Transportation</fullName>
+                <default>false</default>
+                <label>TDL - Transportation</label>
+            </value>
+            <value>
+                <fullName>Team Building</fullName>
+                <default>false</default>
+                <label>Team Building</label>
+            </value>
+            <value>
+                <fullName>Termination Class</fullName>
+                <default>false</default>
+                <label>Termination Class</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Thursday</fullName>
+                <default>false</default>
+                <label>Therapeutic Thursday</label>
+            </value>
+            <value>
+                <fullName>Tower Building</fullName>
+                <default>false</default>
+                <label>Tower Building</label>
+            </value>
+            <value>
+                <fullName>Transformations</fullName>
+                <default>false</default>
+                <label>Transformations</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Change Your Behavior</fullName>
+                <default>false</default>
+                <label>Transformations Video - Change Your Behavior</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Don&apos;t Relax</fullName>
+                <default>false</default>
+                <label>Transformations Video - Don&apos;t Relax</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Introduction</fullName>
+                <default>false</default>
+                <label>Transformations Video - Introduction</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Know the Deepest Truth of Who You Are</fullName>
+                <default>false</default>
+                <label>Transformations Video - Know the Deepest Truth of Who You Are</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Look with New Eyes</fullName>
+                <default>false</default>
+                <label>Transformations Video - Look with New Eyes</label>
+            </value>
+            <value>
+                <fullName>Transformations Video - Think Outside the Box</fullName>
+                <default>false</default>
+                <label>Transformations Video - Think Outside the Box</label>
+            </value>
+            <value>
+                <fullName>Transformative Tuesday</fullName>
+                <default>false</default>
+                <label>Transformative Tuesday</label>
+            </value>
+            <value>
+                <fullName>Self-Directed Job Search</fullName>
+                <default>false</default>
+                <label>Transition to Leadership</label>
+            </value>
+            <value>
+                <fullName>Transportation, Distribution and Logistics (TDL)</fullName>
+                <default>false</default>
+                <label>Transportation, Distribution and Logistics (TDL)</label>
+            </value>
+            <value>
+                <fullName>W4 Forms</fullName>
+                <default>false</default>
+                <label>W4 Forms</label>
+            </value>
+            <value>
+                <fullName>Welcome Week</fullName>
+                <default>false</default>
+                <label>Welcome Week</label>
+            </value>
+            <value>
+                <fullName>What&apos;s your brand?</fullName>
+                <default>false</default>
+                <label>What&apos;s your brand?</label>
+            </value>
+            <value>
+                <fullName>Who are you?</fullName>
+                <default>false</default>
+                <label>Who are you?</label>
+            </value>
+            <value>
+                <fullName>Whole Foods Market Prepared Foods</fullName>
+                <default>false</default>
+                <label>Whole Foods Market Prepared Foods</label>
+            </value>
+            <value>
+                <fullName>Wintrust Leadership: All Things Credit</fullName>
+                <default>false</default>
+                <label>Wintrust Leadership: All Things Credit</label>
+            </value>
+            <value>
+                <fullName>Wintrust Leadership: Budgeting 101</fullName>
+                <default>false</default>
+                <label>Wintrust Leadership: Budgeting 101</label>
+            </value>
+            <value>
+                <fullName>Workplace Ethics</fullName>
+                <default>false</default>
+                <label>Workplace Ethics</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Conflict, Emotions, Triggers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Interviewing Techniques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Life Mapping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Planning for Success</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Policies and Procedures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Professionalism</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Relationship Building</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Team Building</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>What&apos;s your brand?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cara Accelerator Pathway</controllingFieldValue>
+            <valueName>Who are you?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>Classic Cohort Impacted by Coronavirus Pandemic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>Cleanslate Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>Connects Onboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <controllingFieldValue>Advanced Training</controllingFieldValue>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <controllingFieldValue>Core Training Series</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Intro To Leadership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>New Hire Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>South Side Campus Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orientation/Onboarding</controllingFieldValue>
+            <valueName>Welcome Week</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Cohort Workshop</controllingFieldValue>
+            <valueName>Pre-Cohort Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Service Day</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Corporate Service Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Cara Central Office Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Cara Orientation Video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Conflict Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Introduction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Navigating Email Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Professionalism</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Teamwork</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Time Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Competency Video - Virtual Workplace Competencies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Financial Literacy Video - Banking Basics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Financial Literacy Video - Financial Safety and Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Financial Literacy Video - Income and Paychecks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Transformations Video - Change Your Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Transformations Video - Don&apos;t Relax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Transformations Video - Introduction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Transformations Video - Know the Deepest Truth of Who You Are</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <valueName>Transformations Video - Look with New Eyes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employment Video</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Transformations Video - Think Outside the Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Training</controllingFieldValue>
+            <valueName>Job Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On-Campus Group</controllingFieldValue>
+            <valueName>Cleanslate Worker Request List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On-Campus Group</controllingFieldValue>
+            <valueName>Computer Lab</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Budgeting and Saving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Clothing Assessments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Common Interviewing Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Brand/Brag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Community Commitments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Conflict Management: Diversity &amp; Power of the Pause</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Credit as an Asset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Cross the Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Declaring Participant Commitments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Diversity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Elevator Pitch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Financial Literacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>First Impressions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Great Debaters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Intro to Cara Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Intro to Digital Literacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Justice that Heals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Love/Forgiveness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Love Exercise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Mirror Exercise/Debrief</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Open (Clothing)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Past Hurts &amp; Pain (Forgiveness)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Power of the Pause</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Pre-Interviewing Techniques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Reading of the Love Exercise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Resume</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Scavenger Hunt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Harassment and Discrimination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Speed Interviewing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>TABE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Termination Class</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foundations Cohort Workshop</controllingFieldValue>
+            <valueName>Tower Building</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Behaviors on the Job</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Career Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Common Interviewing Techniques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Critical Thinking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Computer Basics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Emailing Etiquette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Five Workplace Competencies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Competency Workshop - Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Competency Workshop - Conflict Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Leadership - Employment Services Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Leadership - Interviewing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Competency Workshop - Professionalism</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Competency Workshop - Teamwork</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Competency Workshop - Time Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Meet a CEP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Personal Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Planning for Success - Part 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Presentation Skills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Rebuild</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Self-Directed Job Search - Online Job Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Therapeutic Thursday</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Transformations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Transformative Tuesday</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Self-Directed Job Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Wintrust Leadership: All Things Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Wintrust Leadership: Budgeting 101</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leadership Workshop</controllingFieldValue>
+            <valueName>Workplace Ethics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>ABM Janitorial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>ABM Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Digital Literacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>BMO Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>C&amp;W Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>CNC Certification Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Comed Construct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>CPR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Direct Service Professional Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Foundations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>GCFD_Food_Handling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>GED Prep</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Growing Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Hire 360 Certification Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>JARC Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>OAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>OSHA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Rebuild Carpentry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Rozalado Janitorial/Floor Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>TDL - Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>TDL - Logistics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>TDL - Orientation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>TDL - Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded/Partner Training</controllingFieldValue>
+            <valueName>Whole Foods Market Prepared Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante 1:1 Makeup Session</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Computer Basics and Digital Literacy, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Email Basics, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Excel, Pt. 1, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Excel, Pt. 2, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante MS Office + Google Suite, Pt. 1, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante MS Office + Google Suite, Pt. 2, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante Outlook and Gmail, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante PowerPoint, Pt. 1, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante PowerPoint, Pt. 2, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante PowerPoint, Pt. 3, South Side Campus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adelante</controllingFieldValue>
+            <valueName>Adelante PowerPoint Presentation, South Side Campus</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

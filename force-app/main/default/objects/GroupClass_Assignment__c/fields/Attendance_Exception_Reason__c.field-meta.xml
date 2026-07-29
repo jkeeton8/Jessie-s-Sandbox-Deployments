@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attendance_Exception_Reason__c</fullName>
+    <label>Attendance Exception Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Attendance__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Court Date</fullName>
+                <default>false</default>
+                <label>Court Date</label>
+            </value>
+            <value>
+                <fullName>Did not leave a reason</fullName>
+                <default>false</default>
+                <label>Did not leave a reason</label>
+            </value>
+            <value>
+                <fullName>Doctor&apos;s Appointment</fullName>
+                <default>false</default>
+                <label>Doctor&apos;s Appointment</label>
+            </value>
+            <value>
+                <fullName>Employment Appointment</fullName>
+                <default>false</default>
+                <label>Employment Appointment</label>
+            </value>
+            <value>
+                <fullName>Family Event</fullName>
+                <default>false</default>
+                <label>Family Event</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Sick</fullName>
+                <default>false</default>
+                <label>Sick</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Court Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Did not leave a reason</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Doctor&apos;s Appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Employment Appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Family Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reschedule</controllingFieldValue>
+            <controllingFieldValue>Partially attended</controllingFieldValue>
+            <controllingFieldValue>Registration Cancelled</controllingFieldValue>
+            <valueName>Sick</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

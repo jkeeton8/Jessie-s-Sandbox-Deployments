@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Record_Status__c</fullName>
+    <description>Field to capture the status of the Case Record at the time service was recorded.</description>
+    <label>Case Record Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Same as case record</fullName>
+                <default>false</default>
+                <label>Same as case record</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

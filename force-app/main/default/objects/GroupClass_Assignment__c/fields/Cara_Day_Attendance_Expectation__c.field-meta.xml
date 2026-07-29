@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cara_Day_Attendance_Expectation__c</fullName>
+    <inlineHelpText>Added for Cara In-Person Days beginning 10/19/21.</inlineHelpText>
+    <label>Cara Day Attendance Expectation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Training Only</fullName>
+                <default>false</default>
+                <label>Training Only</label>
+            </value>
+            <value>
+                <fullName>Training + Lab</fullName>
+                <default>false</default>
+                <label>Training + Lab</label>
+            </value>
+            <value>
+                <fullName>Training + Lab + Orientation</fullName>
+                <default>false</default>
+                <label>Training + Lab + Orientation</label>
+            </value>
+            <value>
+                <fullName>Requested based on Hold/Concern</fullName>
+                <default>false</default>
+                <label>Requested based on Hold/Concern</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

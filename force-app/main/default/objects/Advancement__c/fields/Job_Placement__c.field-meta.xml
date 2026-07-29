@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Placement__c</fullName>
+    <description>ECM v1 Job Placement Service Domain</description>
+    <label>Job Placement</label>
+    <referenceTo>Placement__c</referenceTo>
+    <relationshipLabel>Advancements</relationshipLabel>
+    <relationshipName>Advancements</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

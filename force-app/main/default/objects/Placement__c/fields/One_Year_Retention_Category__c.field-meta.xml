@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Year_Retention_Category__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Placements marked as &quot;#Retained One Year&quot; (FY18+), &quot;#Retained&quot; (before FY18), &quot;Tracking&quot;, or &quot;Lost Employment&quot; are included in the retention calculation. Placements falling into any other category have been removed from the calculation.</inlineHelpText>
+    <label>One-Year Retention Category</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

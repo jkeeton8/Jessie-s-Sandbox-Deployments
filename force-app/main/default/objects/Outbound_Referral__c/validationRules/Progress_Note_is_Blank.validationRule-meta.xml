@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Note_is_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(Referral_Type__c,&quot;Internal - Training Conversation&quot;)
+
+&amp;&amp;
+
+isblank(Progress_Note_from_Service_Entry__c)</errorConditionFormula>
+    <errorMessage>Please enter a progress note with information for the trainers.</errorMessage>
+</ValidationRule>

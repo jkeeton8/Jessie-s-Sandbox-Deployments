@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Open_Enrollments__c</fullName>
+    <label>Total Open Enrollments</label>
+    <summaryFilterItems>
+        <field>Contract_Link__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Student Assignment</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Contract_Link__c.Completion_Date__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Contract_Link__c.Funder_Approved__c</field>
+        <operation>notEqual</operation>
+        <value>No</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Contract_Link__c.Enrollment_Date__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>Contract_Link__c.Grant_Contract__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

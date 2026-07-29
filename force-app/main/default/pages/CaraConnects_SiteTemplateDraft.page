@@ -1,0 +1,327 @@
+<apex:page showHeader="false" id="TCPTemplate"  standardStylesheets="false" >
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cara Connects</title>
+        <meta name='robots' content='noindex,follow' />
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//s.w.org' />
+        <link rel='stylesheet' id='contact-form-7-css'  href="{!URLFOR($Resource.colorjar,'cara_assets/plugins/contact-form-7/includes/css/styles.css?ver=4.8')}" type='text/css' media='all' />
+        <link rel="stylesheet" id='main-stylesheet-css' type="text/css" href="{!URLFOR($Resource.colorjar,'cara_assets/stylesheets/foundation.css?ver=2.9.0')}" media="all"/>
+        <link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Sans+Narrow%7CPT+Serif%7CPT+Serif+Caption%7CJust+Another+Hand&#038;ver=4.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='fonts-css'  href="{!URLFOR($Resource.colorjar,'cara_assets/stylesheets/fonts/fonts.css?ver=4.8')}" type='text/css' media='all' />
+        <link rel='stylesheet' id='font-awesome-css'  href="{!URLFOR($Resource.colorjar,'cara_assets/components/fontawesome/css/font-awesome.min.css?ver=4.8')}" type='text/css' media='all' />
+        <link rel='stylesheet' id='slick-css'  href="{!URLFOR($Resource.colorjar,'cara_assets/components/slick-carousel/slick/slick.css?ver=4.8')}" type='text/css' media='all' />
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/wp-includes/js/jquery/jquery.js?ver=1.12.4')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/slick-carousel/slick/slick.js?ver=4.8')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/foundation-sites/js/foundation.core.js?ver=4.8')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/foundation-sites/js/foundation.dropdown.js?ver=4.8')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/foundation-sites/js/foundation.dropdownMenu.js?ver=4.8')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/foundation-sites/js/foundation.responsiveMenu.js?ver=4.8')}"></script>
+        <script type='text/javascript' src="{!URLFOR($Resource.colorjar,'cara_assets/components/foundation-sites/js/foundation.responsiveToggle.js?ver=4.8')}"></script>
+        <link rel='https://api.w.org/' href='https://cara.colorjarprojects.com/wp-json/' />
+        <link rel="alternate" type="application/json+oembed" href="https://cara.colorjarprojects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcara.colorjarprojects.com%2Four-supporters%2F" />
+        <link rel="alternate" type="text/xml+oembed" href="https://cara.colorjarprojects.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcara.colorjarprojects.com%2Four-supporters%2F&#038;format=xml" />
+
+        <style type="text/css" media="screen">
+            .theme-accent-color-1 {
+                color: #053249;
+            }
+            .theme-accent-bg-1 {
+                background: #053249;
+            }
+            .theme-accent-border-1 {
+                border-color: #053249;
+            }
+                .theme-accent-color-2 {
+                color: #fcaf26;
+            }
+            .theme-accent-bg-2 {
+                background: #fcaf26;
+            }
+            .theme-accent-border-2 {
+                border-color: #fcaf26;
+            }
+                .theme-accent-color-3 {
+                color: #d47e2d;
+            }
+            .theme-accent-bg-3 {
+                background: #d47e2d;
+            }
+            .theme-accent-border-3 {
+                border-color: #d47e2d;
+            }
+                .theme-accent-color-4 {
+                color: #53266b;
+            }
+            .theme-accent-bg-4 {
+                background: #53266b;
+            }
+            .theme-accent-border-4 {
+                border-color: #53266b;
+            }
+                .theme-accent-color-5 {
+                color: #fff2d6;
+            }
+            .theme-accent-bg-5 {
+                background: #fff2d6;
+            }
+            .theme-accent-border-5 {
+                border-color: #fff2d6;
+            }
+                .theme-accent-color-6 {
+                color: #d47e2d;
+            }
+            .theme-accent-bg-6 {
+                background: #d47e2d;
+            }
+            .theme-accent-border-6 {
+                border-color: #d47e2d;
+            }
+                .theme-accent-color-7 {
+                color: #53266b;
+            }
+            .theme-accent-bg-7 {
+                background: #53266b;
+            }
+            .theme-accent-border-7 {
+                border-color: #53266b;
+            }
+                .theme-accent-color-8 {
+                color: #53266b;
+            }
+            .theme-accent-bg-8 {
+                background: #53266b;
+            }
+            .theme-accent-border-8 {
+                border-color: #53266b;
+            }
+            .headblock, .color-button, .button{
+                background: #53266b;
+                background: #53266b linear-gradient(to bottom right, #53266b, #d47e2d 87%);
+                background: #53266b -ms-linear-gradient(to bottom right, #53266b, #d47e2d 87%);
+                background: #53266b -o-linear-gradient(to bottom right, #53266b, #d47e2d 87%);
+                background: #53266b -webkit-linear-gradient(to bottom right, #53266b, #d47e2d 87%);
+                background: #53266b -moz-linear-gradient(to bottom right, #53266b, #d47e2d 87%);
+            }
+            .headblock{
+                background: #53266b;
+                background: #53266b linear-gradient(to bottom left, #53266b, #d47e2d 87%);
+                background: #53266b -ms-linear-gradient(to bottom left, #53266b, #d47e2d 87%);
+                background: #53266b -o-linear-gradient(to bottom left, #53266b, #d47e2d 87%);
+                background: #53266b -webkit-linear-gradient(to bottom left, #53266b, #d47e2d 87%);
+                background: #53266b -moz-linear-gradient(to bottom left, #53266b, #d47e2d 87%);
+            }
+            .color-button:hover,  .button:hover{
+                background: #d47e2d;
+                background: #d47e2d linear-gradient(to bottom right, #d47e2d, #53266b 87%);
+                background: #d47e2d -ms-linear-gradient(to bottom right, #d47e2d, #53266b 87%);
+                background: #d47e2d -o-linear-gradient(to bottom right, #d47e2d, #53266b 87%);
+                background: #d47e2d -webkit-linear-gradient(to bottom right, #d47e2d, #53266b 87%);
+                background: #d47e2d -moz-linear-gradient(to bottom right, #d47e2d,#53266b 87%);
+            }
+            .content p a{
+                color: #53266b;
+            }
+            .dropdown.menu > li.is-dropdown-submenu-parent > a::after,
+            .dropdown.menu.vertical > li.opens-left > a::after,
+            header form .fa, header .top-button-section .sign_up .fa,
+            #footer-container h6, .single .meta-nav, .blog .meta-nav, .search .meta-nav,.archive .meta-nav,
+            .our_process .main_text h4, .callout-image-with-textbox ul li:before,
+            .wpcf7-form-control-wrap:after, .our_process .make_donation .item_active .donation_decr a:hover, .blog .pagination_block .next:after, .archive .pagination_block .next:after,
+            .blog .pagination_block .prev:before, .archive .pagination_block .prev:before,
+            .single .entry-content blockquote,
+            .blog .input-group .input-group-button:after {
+                color: #fcaf26;
+            }
+
+            p, .success_story .block2 .scroll_menu a{
+                color: #053249;
+            }
+            #footer-container input{
+                border-bottom: 2px solid #d47e2d    }
+            #footer-container .transparent-button, #footer-container .transp_btn{
+                color: #d47e2d;
+                border: 4px solid #d47e2d;
+            }
+            .block2 .scroll_menu li a:active,.block2 .scroll_menu li a:hover{
+                border-bottom: 4px solid #fcaf26;
+            }
+            .our_process .make_donation .item_active .donation_amount{
+                background: #fcaf26;
+            }
+            .form select, form .input-group{
+                border-color:  #53266b;
+            }
+            .sidebar h6, .sidebar ul li:before{
+                color: #53266b;
+            }
+            .single .entry-content blockquote strong{
+                background: #053249;
+                color: #fcaf26;
+            }
+            .comment-respond input,.comment-respond textarea{
+                border-color:  #53266b;
+            }
+            .comment-respond input[type="submit"]{
+                color:  #53266b;
+            }
+            .single .nav_post, .pagination_block{
+                background-color: #53266b;
+            }
+            .success_story .tab_active,  .success_story .tab_menu a:hover,.success_story .tab_menu a:focus, .success_story .block2 .scroll_menu a:hover,
+            .our_supp .main_content ul li:before, .our_supp .main_content a {
+                color: #d47e2d!important;
+            }
+            .success_story .select_report .form input[type="text"], .success_story .select_report .form input[type="email"], .employers .form_report .form input[type="text"], .employers .form_report .form input[type="email"], .success_story .block2 .scroll_menu li a:active,
+            .success_story .block2 .scroll_menu li a:hover {
+                border-color:  #d47e2d;
+            }
+            .about .block3 .transparent-button{
+                color: #fcaf26;
+                border-color: #fcaf26;
+            }
+            .is-accordion-submenu-parent > a::after {
+                border-color:  #fcaf26 transparent transparent;
+                color: #fcaf26;
+            }
+            .input-group .input-group-button:after{
+                color: #fcaf26;
+            }
+            .contact_us input[type="text"],.contact_us input[type="email"], select, select:focus, select:active{
+                border-color:  #d47e2d;
+            }
+            .contact_us .content_text{
+                color: #053249;
+            }
+            .more-link{
+                color: #53266b;
+            }
+            #footer-container .email:hover{
+                color: #d47e2d;
+            }
+           .callout-image-with-textbox .textbox a{
+                color: #53266b;
+            }
+            .single .entry-content h1,
+            .single .entry-content h2,
+            .single .entry-content h3,
+            .single .entry-content h4,
+            .single .entry-content h5,
+            .single .entry-content h6,
+            .contact_us h1,
+            .contact_us h2,
+            .contact_us h3,
+            .contact_us h4,
+            .contact_us h5,
+            .contact_us h6{
+                color: #053249;
+            }
+            body.home .block1 .tranparent-background{
+                background-color:  #fff2d6;
+            }
+            .success_story .block_tab .tab_menu li a{
+                color: #053249;
+            }
+            .comment-reply-title{
+                color: #053249;
+            }
+            input[type="checkbox"]:checked:before{
+                background-color: #d47e2d!important;
+            }
+            input[type="checkbox"]:before, input[type="checkbox"]{
+                border-color:  #d47e2d;
+            }
+            .referal .content .body-bottom .body_theme ul li:before{
+                color: #fcaf26;
+            }
+            .search .pagination-centered{
+                background-color: #53266b    }
+            .search .search_block a{
+                color: #fcaf26;
+            }
+            div#form-container label {
+                color: #102d47;
+            }
+            div#form-container input[type="text"], div#form-container input[type="textarea"]  {
+                color: #102d47;
+            }
+            div#form-container input {
+                border-bottom: 2px solid #d47e2d;
+            }
+            div#form-container input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                color:    #102d47;
+            }
+            div#form-container input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+               color:    #102d47;
+               opacity:  1;
+            }
+            div#form-container input::-moz-placeholder { /* Mozilla Firefox 19+ */
+               color:    #102d47;
+               opacity:  1;
+            }
+            div#form-container input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+               color:    #102d47;
+            }
+            div#form-container input::-ms-input-placeholder { /* Microsoft Edge */
+               color:    #102d47;
+            }
+            div#form-container {
+                background-color: #fefefe;
+                color: #102d47;
+            }
+            div#form-container .button-wrapper {
+                text-align: center;
+                padding: 25px 0;
+            }
+            div#form-container .main_content{
+                padding: 1px;
+            }
+            div#form-container p {
+                color: #102d47;
+            }
+            div#form-container select, div#form-container table thead, div#form-container table tbody, div#form-container table tfoot {
+                border-color: #d47e2d;
+                color: #102d47;
+                background-color: #fefefe;
+            }
+            .bootom_footer .about_footer p.footer-logo-small {
+                padding-top: 10px; 
+            }
+            .contact_us .content_text {
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="page-template page-template-page-templates page-template-page-template12 page-template-page-templatespage-template12-php page page-id-232 wp-custom-logo offcanvas our-supporters">
+        <section class="container">
+            <div class="our_supp" id="form-container">
+                <div class="main_content">
+                    <apex:insert name="body"/>
+                </div>
+            </div>
+            <br clear="all"/>
+        </section>
+    </body>
+    <script type='text/javascript'>
+        (function($){
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : sParameterName[1];
+                    }
+                }
+            };
+            var amount = getUrlParameter('amount');
+            $('input:radio[name="UnitPrice1"]').filter('[value="'+amount+'"]').attr('checked', true);
+        })(jQuery);
+    </script>
+</apex:page>

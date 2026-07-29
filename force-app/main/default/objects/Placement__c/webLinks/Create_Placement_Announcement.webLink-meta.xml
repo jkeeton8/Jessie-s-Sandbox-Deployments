@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Placement_Announcement</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Create Placement Announcement</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://www.tfaforms.com/4659961?tfa_872={!Placement__c.Case_RecordId__c}&amp;tfa_902={!User.Full_Name__c}&amp;tfa_904={!Placement__c.Participant_Name__c}&amp;tfa_905={!Placement__c.Placement_Number__c}&amp;tfa_907={!Placement__c.Participant_Primary_Zip_Code__c}&amp;tfa_908={!Placement__c.Placement_Year__c}&amp;tfa_909={!User.Id}</url>
+</WebLink>

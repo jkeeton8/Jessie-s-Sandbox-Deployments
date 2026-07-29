@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Record__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Student_ID_from_Clock_In__c</field>
+        <operation>equals</operation>
+        <value>90201</value>
+    </filters>
+    <label>All</label>
+</ListView>

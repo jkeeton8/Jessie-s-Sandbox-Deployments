@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Service_Activity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>ECM Service Entry</label>
+    <referenceTo>ECM_Service_Activity__c</referenceTo>
+    <relationshipLabel>Group Service Entries</relationshipLabel>
+    <relationshipName>Group_Class_Sessions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adopted_Components__c</fullName>
+    <label>Adopted Components</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recruitment</fullName>
+                <default>false</default>
+                <label>Recruitment</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+                <label>Coaching</label>
+            </value>
+            <value>
+                <fullName>Placement</fullName>
+                <default>false</default>
+                <label>Placement</label>
+            </value>
+            <value>
+                <fullName>Measurement</fullName>
+                <default>false</default>
+                <label>Measurement</label>
+            </value>
+            <value>
+                <fullName>Fundraising/Communications</fullName>
+                <default>false</default>
+                <label>Fundraising/Communications</label>
+            </value>
+            <value>
+                <fullName>SOE/Competency-based assessments</fullName>
+                <default>false</default>
+                <label>SOE/Competency-based assessments</label>
+            </value>
+            <value>
+                <fullName>Motivations/ARTs</fullName>
+                <default>false</default>
+                <label>Motivations/ARTs</label>
+            </value>
+            <value>
+                <fullName>Simulated workplace environment</fullName>
+                <default>false</default>
+                <label>Simulated workplace environment</label>
+            </value>
+            <value>
+                <fullName>Accountability measures</fullName>
+                <default>false</default>
+                <label>Accountability measures</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

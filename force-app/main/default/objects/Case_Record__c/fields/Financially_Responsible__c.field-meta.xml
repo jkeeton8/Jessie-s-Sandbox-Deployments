@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financially_Responsible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Changed field label from &quot;Head of Household&quot; to &quot;Financially Responsible&quot; as part of Aug 2018 Incoming Participant Data cleanup.</description>
+    <inlineHelpText>Field formerly labeled as &quot;Head of Household&quot;.</inlineHelpText>
+    <label>Financially Responsible</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

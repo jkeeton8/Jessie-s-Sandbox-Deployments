@@ -1,0 +1,35 @@
+<apex:page controller="ExpPrintFaceSheetLaunchController" sidebar="false" tabStyle="Intake__tab" >
+    <apex:outputPanel id="launchPdf">
+        <script>
+            var url = '{!pdfUrl}';
+            if(url != '') {
+            	var popup = window.open(url);
+            	// Possibly add code to detect for popup blocker
+            }
+        </script>
+    </apex:outputPanel>
+    <apex:form >
+        <apex:sectionHeader subtitle="Print {!$Label.Exp_Face_Sheet} {!title}" />
+        <apex:pageBlock >
+            <c:ExpErrorPanel id="errors" showMessagesInPanel="true" />
+            <apex:pageBlockSection rendered="{!hasConfig}" collapsible="false" columns="2" >
+                <apex:selectList id="configList" label="Format" value="{!selectedConfigId}" 
+                                 multiselect="false" size="1">
+                    <apex:selectOptions value="{!configOptions}" />
+                </apex:selectList>
+            </apex:pageBlockSection>
+            <apex:outputPanel rendered="{!!hasConfig}">
+            	<table width="100%">
+            		<tr>                    
+                     <td width="10%"></td><td><apex:pageMessage severity="info" summary="There are currently no ECM Configurations of type 'Intake' where Pdf Rendering is true." strength="3"/></td><td width="10%"></td>
+                     </tr>
+                </table>
+            </apex:outputPanel>
+            <apex:pageBlockButtons id="theButtons" location="bottom">
+                <apex:commandButton id="launchBtn" value="View" action="{!launchIntake}" 
+                        rendered="{!hasConfig}" rerender="errors,launchPdf" />
+                <apex:commandButton value="Cancel" action="{!cancel}" rendered="{!showCancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

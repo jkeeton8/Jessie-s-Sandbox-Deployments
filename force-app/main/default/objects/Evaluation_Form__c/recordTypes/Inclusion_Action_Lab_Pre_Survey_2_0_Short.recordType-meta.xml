@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inclusion_Action_Lab_Pre_Survey_2_0_Short</fullName>
+    <active>true</active>
+    <description>Shortened version updated 8.15.22 - https://thecaraprogram.sharepoint.com/:w:/s/Expansion/EcMNSOFDD9hHqMm7L7saiIABy7wwzhrGYaQdv0SE1BbrmA?e=HsjyRc</description>
+    <label>Inclusion Action Lab Pre-Survey 2.0 (Short)</label>
+    <picklistValues>
+        <picklist>Competencies_Demonstrated__c</picklist>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competencies_Need_Improvement__c</picklist>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflict Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professionalism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Management%2C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

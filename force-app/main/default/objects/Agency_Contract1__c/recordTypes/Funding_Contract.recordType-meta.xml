@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Contract</fullName>
+    <active>true</active>
+    <label>Funding Contract</label>
+    <picklistValues>
+        <picklist>Customer_Name__c</picklist>
+        <values>
+            <fullName>27th Ward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>312 Goose Island Urban Block Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albany Park %28SSA 60%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anatomical Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andersonville Chamber of Commerce %28SSA 22%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andersonville City Made Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Fest %28Big Buzz Media%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auburn Gresham %28SSA 32%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auburn Gresham %28SSA 69%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austin Lusson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beth Peter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Buzz Hot Dog Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bright Beat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bright Endeavors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAN TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD One Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calumet Heights Avalon %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cary Main Street Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cedar Street Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Celebrate Hyde Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changing Worlds Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Center for Arts and Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Cubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Dance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Neighborhood Rebuild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>City of Evanston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collateral Trustee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colliers International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook County Land Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cushman and Wakefield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dan Brennan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eastwood Garden %28The Habitat Company%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater %28SSA 26%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater Art Fair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerson Cohort 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerson Collective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emmanuel Church of God in Christ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excel Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEIL Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farpoint Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulton Market Harvest Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garfield %28McCaffery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goldblatt%27s Sewing Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Chatham Neighborhood Initiative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Music Fest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harper Court %28McCaffery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearts Nightclub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helping Hands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heritage Woods of Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hope Manor I - Vol of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hope Manor II - Vol of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hub %28Cleanslate Chicago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyde Park %28SSA 61%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMD Guest House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Council of Northwest Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jones Lang LaSalle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakeview %28SSA 27%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latent Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leasing and Management Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Park Chamber of Commerce %28Clark Street SSA 23%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Square Ravenswood Chamber of Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Little Village %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Little Village CC Parade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lots of Love Preschool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyola University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malet Realty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McCaffery - Multiple Sites</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-America - All Locations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muzyka Funeral Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old St Pats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pine Grove Condos 3631 North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Building Commission of Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quad Communities %28SSA 47%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quad Communities %28SSA 56%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quad Communities Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ribfest %28Big Buzz Media%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>River North Clean Streets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland %28SSA 40%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland %28SSA 41%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland %28SSA 71%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEIU %28Service Employees International Union%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shapack Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Six Corners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Commons - Stage 1 Venture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South East Chicago Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Shore %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest Organizing Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Roots Festival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sterling Bay - Parent Co Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudler Property Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Cara Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Floyds Brewing Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uptown %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urbane Home LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Industrial Partners LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertiport Nighthawk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Village of Calumet Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Village of Oak Lawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Village of Oak Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Village of Skokie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weiss Memorial Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Humboldt Park %28SSA 63%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Town %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wicker Park %2F Bucktown %28SSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodlawn CDC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Funding_Name__c</picklist>
+        <values>
+            <fullName>Name 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grant_Contract_Type__c</picklist>
+        <values>
+            <fullName>CDBG - CARES Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDBG Aurora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDBG EP%26P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDBG T%26P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSBG - CARES Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSBG - TJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Foundation for Women</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covenant House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS - FSE%26T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS - SNAP to Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS - TANF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dignity of Choice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISC - CDBG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neighborhood Cleanup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No grant eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebuild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPRING Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

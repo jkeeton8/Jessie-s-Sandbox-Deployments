@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Note_Type__c</fullName>
+    <label>Progress Note Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1 Year Periodic Check-In</fullName>
+                <default>false</default>
+                <label>1 Year Periodic Check-In</label>
+            </value>
+            <value>
+                <fullName>Quarterly Check-In</fullName>
+                <default>false</default>
+                <label>3 Month Periodic Check-In</label>
+            </value>
+            <value>
+                <fullName>Email Correspondence</fullName>
+                <default>false</default>
+                <label>Email Correspondence</label>
+            </value>
+            <value>
+                <fullName>Technical Assistance</fullName>
+                <default>false</default>
+                <label>Technical Assistance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worker_s_Comp_Formula__c</fullName>
+    <formula>if ( Send_Out_Employment__r.Organization_Summary__c = &quot;Catholic Charities of the Archdiocese of Chicago&quot;, Active_Rate_Set__r.Catholic_Charities_WC__c,
+
+if ( (Send_Out_Employment__r.Organization_Summary__c = &quot;The Habitat Company&quot;) &amp;&amp; (ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Administrative Assistant&quot;) || ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Office Clerk&quot;)),  Active_Rate_Set__r.Habitat_Admin_WC__c,
+
+if ( (Send_Out_Employment__r.Organization_Summary__c = &quot;The Habitat Company&quot;) &amp;&amp; ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Janitor&quot;),  Active_Rate_Set__r.Habitat_Janitorial_WC__c,
+
+if ( Send_Out_Employment__r.Organization_Summary__c = &quot;University of Chicago Medicine&quot;,  Active_Rate_Set__r.Hospital_WC__c,
+
+if ((ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Administrative Assistant&quot;) || ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Office Clerk&quot;)),  Active_Rate_Set__r.General_Admin_WC__c,
+
+if (ispickval(Send_Out_Employment__r.Position_Vertical__c, &quot;Warehouse Worker&quot;),  Active_Rate_Set__r.Warehouse_WC__c ,
+
+Active_Rate_Set__r.General_Admin_WC__c
+
+))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Worker&apos;s Comp Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

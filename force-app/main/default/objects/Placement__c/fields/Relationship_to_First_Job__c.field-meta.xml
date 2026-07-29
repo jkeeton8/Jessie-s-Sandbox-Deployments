@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_to_First_Job__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Start_Date__c = Case_Record__r.Start_Date_of_First_Job__c, &quot;First Job&quot;, 
+if (Start_Date__c &gt; Case_Record__r.Start_Date_of_First_Job__c, &quot;After First Job&quot;, 
+NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Relationship to First Job</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_Outcome_Type__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Whether to show the &apos;Outcome Type&apos; column on an Indicator component</description>
+    <inlineHelpText>Whether to show the &apos;Outcome Type&apos; column on an Indicator component</inlineHelpText>
+    <label>Show Outcome Type Column</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

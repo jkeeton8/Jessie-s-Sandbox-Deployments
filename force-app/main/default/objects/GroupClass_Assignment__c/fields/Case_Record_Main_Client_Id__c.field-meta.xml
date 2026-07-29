@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Record_Main_Client_Id__c</fullName>
+    <description>The enrolled client associated with the case record.</description>
+    <externalId>false</externalId>
+    <formula>Case_Record__r.Main_Client__c</formula>
+    <inlineHelpText>The enrolled client associated with the case record.</inlineHelpText>
+    <label>Case Record Main Client Id</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

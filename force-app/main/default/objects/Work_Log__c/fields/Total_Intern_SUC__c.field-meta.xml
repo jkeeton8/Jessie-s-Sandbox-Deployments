@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Intern_SUC__c</fullName>
+    <formula>if  ( contains( Organization__r.Name, &quot;CRED&quot;),  
+
+Total_Wage_Cost__c * Active_Rate_Set__r.Intern_Unemployment_CRED__c, 
+
+Total_Wage_Cost__c * Active_Rate_Set__r.Intern_Unemployment__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Worker Unemployment (SUC)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

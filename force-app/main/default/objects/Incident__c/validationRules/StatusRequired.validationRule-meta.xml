@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusRequired</fullName>
+    <active>true</active>
+    <description>Make it too were you have to choose a status option.</description>
+    <errorConditionFormula>NOT(OR(
+  ISPICKVAL(Status__c, &quot;Unresolved&quot;),
+  ISPICKVAL(Status__c, &quot;Resolved&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You must choose a Status option to save.</errorMessage>
+</ValidationRule>

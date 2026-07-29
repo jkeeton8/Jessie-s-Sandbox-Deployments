@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Year_Retention_Category_CY11_FY13__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (Placement_Number__c), NULL,
+
+if (value(right(text(Placement_Year__c), 2)) &gt;= 13 &amp;&amp; value(right(text(Placement_Year__c), 2)) &lt; 17, &quot;See &apos;One-Year Retention Category, FY14-FY17&apos;&quot;,
+
+if (value(right(text(Placement_Year__c), 2)) &gt;= 17, &quot;See &apos;One-Year Retention Category, FY18+&apos;&quot;,   
+
+if (not (ispickval (Student_Source__c, &quot;Downtown&quot;)) &amp;&amp; not (ispickval (Student_Source__c, &quot;South Side&quot;)) &amp;&amp; not (ispickval (Retention_Exception__c, &quot;Non-Student Included in Retention&quot;)), &quot;#Non-Student&quot;,
+
+if (Start_Date__c  &lt;=  date(2011,11,01) &amp;&amp; ispickval(Student_Source__c, &quot;South Side&quot;), &quot;South Side Student Not Counted in Retention&quot;,
+
+if (ispickval (Job_Type__c, &quot;Permanent-Advancement&quot;) || ispickval (Job_Type__c, &quot;Permanent-Inactive&quot;), text(Job_Type__c), 
+
+if (ispickval (Retention_Exception__c, &quot;Previously Retained&quot;) || ispickval (Retention_Exception__c, &quot;Retention Tracked Under Previous Placement&quot;), text (Retention_Exception__c), 
+
+if (ispickval (Retention_Exception__c, &quot;Retention Override&quot;), text (Retention_Exception__c),
+
+if ((ispickval(Retention_Exception__c, &quot;Under One Year Considered Retained&quot;) || Retention_Days_Lapsed_FY14_FY17__c &gt;= 365), &quot;#Retained&quot;,
+
+if (isblank (One_Year_Retention_End_Date__c) &amp;&amp; Retention_Days_Lapsed_FY14_FY17__c &lt; 365, &quot;Tracking&quot;, 
+
+&quot;Lost Employment&quot;))))))))))</formula>
+    <inlineHelpText>Placement retention for retention years CY11 through FY13 (placement years CY10 through CY11/FY12 combined).</inlineHelpText>
+    <label>One-Year Retention Category, CY11-FY13</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

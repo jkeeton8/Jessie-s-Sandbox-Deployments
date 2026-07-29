@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <label>Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bio family</fullName>
+                <default>false</default>
+                <label>Bio family</label>
+            </value>
+            <value>
+                <fullName>CASA/GAL</fullName>
+                <default>false</default>
+                <label>CASA/GAL</label>
+            </value>
+            <value>
+                <fullName>Case Aid</fullName>
+                <default>false</default>
+                <label>Case Aid</label>
+            </value>
+            <value>
+                <fullName>Case Manager</fullName>
+                <default>false</default>
+                <label>Case Manager</label>
+            </value>
+            <value>
+                <fullName>Case Manager (External Agency)</fullName>
+                <default>false</default>
+                <label>Case Manager (External Agency)</label>
+            </value>
+            <value>
+                <fullName>Case Owner</fullName>
+                <default>false</default>
+                <label>Case Owner</label>
+            </value>
+            <value>
+                <fullName>Educational Advocate</fullName>
+                <default>false</default>
+                <label>Educational Advocate</label>
+            </value>
+            <value>
+                <fullName>Foster Parent</fullName>
+                <default>false</default>
+                <label>Foster Parent</label>
+            </value>
+            <value>
+                <fullName>ILS case manager</fullName>
+                <default>false</default>
+                <label>ILS case manager</label>
+            </value>
+            <value>
+                <fullName>Psychiatrist</fullName>
+                <default>false</default>
+                <label>Psychiatrist</label>
+            </value>
+            <value>
+                <fullName>SAY treatment provider</fullName>
+                <default>false</default>
+                <label>SAY treatment provider</label>
+            </value>
+            <value>
+                <fullName>State/County/Tribe/ILP – Assigned Case Manager</fullName>
+                <default>false</default>
+                <label>State/County/Tribe/ILP – Assigned Case Manager</label>
+            </value>
+            <value>
+                <fullName>State Social Worker</fullName>
+                <default>false</default>
+                <label>State Social Worker</label>
+            </value>
+            <value>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+                <label>Supervisor</label>
+            </value>
+            <value>
+                <fullName>Support Staff</fullName>
+                <default>false</default>
+                <label>Support Staff</label>
+            </value>
+            <value>
+                <fullName>Therapist</fullName>
+                <default>false</default>
+                <label>Therapist</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

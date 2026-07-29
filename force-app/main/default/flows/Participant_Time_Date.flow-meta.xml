@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Participant Time Date workflow rule
+Workflow rule description: &quot;</description>
+    <formulas>
+        <name>Participant_Time_DateFormula</name>
+        <dataType>Date</dataType>
+        <expression>datevalue ($Record.Participant_Date_Time_In__c)</expression>
+    </formulas>
+    <label>Participant Time Date</label>
+    <migratedFromWorkflowRuleName>Participant Time Date</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Participant_Time_Date__c</field>
+            <value>
+                <elementReference>Participant_Time_DateFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>isnull ({!$Record.Participant_Time_Date__c}) ||  {!$Record.Participant_Time_Date__c} &lt;&gt; datevalue ({!$Record.Participant_Date_Time_In__c})</filterFormula>
+        <object>Participant_Time__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignments__c</fullName>
+    <inlineHelpText>Count of Group-Class Assignments</inlineHelpText>
+    <label>Assignments</label>
+    <summaryForeignKey>GroupClass_Assignment__c.Group_Class__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

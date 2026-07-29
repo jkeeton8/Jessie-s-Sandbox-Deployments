@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decoy_Reviewed_Approved_Work_Log_Locked</fullName>
+    <active>true</active>
+    <description>New Validation Rule for Reviewed &amp; Approved Decoy field.</description>
+    <errorConditionFormula>(priorvalue( Reviewed_Approved_Decoy__c ) || 
+
+(not(ischanged(Reviewed_Approved_Decoy__c)) &amp;&amp; Reviewed_Approved_Decoy__c)) 
+
+&amp;&amp; not($User.Work_Log_Approver__c)</errorConditionFormula>
+    <errorMessage>Work log has been reviewed and approved and can only be edited by Solutions and the Cleanslate Manager of Business Administration.</errorMessage>
+</ValidationRule>

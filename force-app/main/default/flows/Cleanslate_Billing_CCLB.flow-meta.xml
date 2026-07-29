@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>closedate</name>
+        <dataType>Date</dataType>
+        <expression>if({!billingperiod}=&quot;Last Month - Standard Inspection/Cleaning&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1)-1,
+if({!billingperiod}=&quot;Last Month - Special Project Signage&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1)-1,
+if({!billingperiod}=&quot;Last Month - Special Project Other&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1)-1,
+if({!billingperiod}=&quot;This Month - Standard Inspection/Cleaning&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1),
+if({!billingperiod}=&quot;This Month - Special Project Signage&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1),
+if({!billingperiod}=&quot;This Month - Special Project Other&quot;,  Date(Year({!$Flow.CurrentDate}),Month({!$Flow.CurrentDate}),1),
+NULL))))))</expression>
+    </formulas>
+    <formulas>
+        <name>InvoiceDescription</name>
+        <dataType>String</dataType>
+        <expression>if({!billingperiod}=&quot;Last Month - Standard Inspection/Cleaning&quot;,  &quot;Standard Inspection/Cleaning&quot;,
+if({!billingperiod}=&quot;Last Month - Special Project Signage&quot;,  &quot;SPECIAL PROJECT - Install CCLB signage&quot;,
+if({!billingperiod}=&quot;Last Month - Special Project Other&quot;,  &quot;SPECIAL PROJECT - &quot;,
+if({!billingperiod}=&quot;This Month - Standard Inspection/Cleaning&quot;,  &quot;Standard Inspection/Cleaning&quot;,
+if({!billingperiod}=&quot;This Month - Special Project Signage&quot;,  &quot;SPECIAL PROJECT - Install CCLB signage&quot;,
+if({!billingperiod}=&quot;This Month - Special Project Other&quot;,  &quot;SPECIAL PROJECT - &quot;,
+NULL))))))</expression>
+    </formulas>
+    <formulas>
+        <name>opportunityname</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Name} &amp;&quot;- &quot;&amp;text({!closedate})</expression>
+    </formulas>
+    <interviewLabel>Cleanslate Billing - CCLB {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cleanslate Billing - CCLB</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_CCLB_Billing_Opportunity</name>
+        <label>Create CCLB Billing Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignRecordIdToReference>opportunityID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Clear_CCLB_Billing_Creation</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Amount</field>
+            <value>
+                <elementReference>$Record.CCLB_Pricing__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Billing_Amount__c</field>
+            <value>
+                <elementReference>$Record.CCLB_Pricing__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>701f3000001Dp19</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Cleanslate_Contract__c</field>
+            <value>
+                <stringValue>0064y0000101CdP</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>closedate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Description__c</field>
+            <value>
+                <elementReference>InvoiceDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>opportunityname</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pledge_Date__c</field>
+            <value>
+                <elementReference>closedate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Property_Class__c</field>
+            <value>
+                <elementReference>$Record.Property_Class__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012f3000000QPrG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Service_Line__c</field>
+            <value>
+                <stringValue>General Labor</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Work Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordCreates>
+    <recordUpdates>
+        <name>Clear_CCLB_Billing_Creation</name>
+        <label>Clear CCLB Billing Creation</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>CCLB_Billing_Creation__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_CCLB_Billing_Opportunity</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Last Month - Standard Inspection/Cleaning</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Last Month - Special Project Signage</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Last Month - Special Project Other</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>This Month - Standard Inspection/Cleaning</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>This Month - Special Project Signage</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CCLB_Billing_Creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>This Month - Special Project Other</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>billingperiod</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.CCLB_Billing_Creation__c</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>opportunityID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

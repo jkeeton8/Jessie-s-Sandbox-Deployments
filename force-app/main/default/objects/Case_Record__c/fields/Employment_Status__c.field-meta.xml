@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( Most_Recent_Employment_Override__c = TRUE, &quot;Permanent&quot;,
+
+if (isblank (Most_Recent_Employment_Start_Date__c) || isblank (ECM_Placement_Sequence__c), &quot;Not Working&quot;, 
+
+if (NOT(ISBLANK(Most_Recent_Employment_End_Date__c)) &amp;&amp; Most_Recent_Employment_End_Date__c &lt; today() , &quot;Not Working&quot;,
+
+if (isblank (find (&quot;;&quot;, ECM_Placement_Sequence__c)), ECM_Placement_Sequence__c,
+
+if (right (ECM_Placement_Sequence__c, 10)=&quot;Internship&quot;, &quot;Internship&quot;,
+
+if (right (ECM_Placement_Sequence__c, 9)=&quot;Temporary&quot;, &quot;Temporary&quot;,
+
+if (right (ECM_Placement_Sequence__c, 21)=&quot;External Transitional&quot;, &quot;External Transitional&quot;,
+
+if (right (ECM_Placement_Sequence__c, 18)=&quot;Permanent-Inactive&quot;, &quot;Permanent-Inactive&quot;,
+
+if (right (ECM_Placement_Sequence__c, 21)=&quot;Permanent-Advancement&quot;, &quot;Permanent-Advancement&quot;,
+
+if (right (ECM_Placement_Sequence__c, 19)=&quot;Temporary-Permanent&quot;, &quot;Temporary-Permanent&quot;,
+
+if (right (ECM_Placement_Sequence__c, 9)=&quot;Long-Term&quot;, &quot;Long-Term&quot;,
+
+if (right (ECM_Placement_Sequence__c, 10)=&quot;Short-Term&quot;, &quot;Short-Term&quot;,
+
+&quot;Permanent&quot;))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Employment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

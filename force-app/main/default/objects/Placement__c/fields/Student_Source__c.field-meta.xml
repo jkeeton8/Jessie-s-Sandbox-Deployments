@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Source__c</fullName>
+    <description>&quot;Traditional&quot; to &quot;Downtown&quot;; &quot;CWF&quot; to &quot;QCC&quot;, and &quot;Staffing Direct&quot; to &quot;Connects Direct&quot; on 1/17/17. &quot;QCC&quot; to &quot;South Side&quot; on 1/22/17. &quot;Business Expansion&quot; to &quot;Business Growth&quot; on 9/26/19.</description>
+    <label>Participant Portal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Downtown</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Downtown</label>
+            </value>
+            <value>
+                <fullName>South Side</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>South Side</label>
+            </value>
+            <value>
+                <fullName>Connects Direct</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Connects Direct</label>
+            </value>
+            <value>
+                <fullName>Cleanslate Direct</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Cleanslate Direct</label>
+            </value>
+            <value>
+                <fullName>Workshop Direct</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Workshop Direct</label>
+            </value>
+            <value>
+                <fullName>Resource Only</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Resource Only</label>
+            </value>
+            <value>
+                <fullName>Business Growth</fullName>
+                <default>false</default>
+                <label>Business Growth</label>
+            </value>
+            <value>
+                <fullName>CCP</fullName>
+                <default>false</default>
+                <label>CCP</label>
+            </value>
+            <value>
+                <fullName>CAP</fullName>
+                <default>false</default>
+                <label>CAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

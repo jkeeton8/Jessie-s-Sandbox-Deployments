@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Job_Search_Focus_Stage__c</fullName>
+    <inlineHelpText>Which SJS stage was the focus of this Student Progress Meeting?</inlineHelpText>
+    <label>Strategic Job Search Focus Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brand Development</fullName>
+                <color>#3366FF</color>
+                <default>false</default>
+                <label>Brand Development</label>
+            </value>
+            <value>
+                <fullName>Career Planning</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>Career Planning</label>
+            </value>
+            <value>
+                <fullName>Researching and Applying for Jobs</fullName>
+                <color>#CC0000</color>
+                <default>false</default>
+                <label>Researching and Applying for Jobs</label>
+            </value>
+            <value>
+                <fullName>Interviewing and Networking</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Interviewing and Networking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

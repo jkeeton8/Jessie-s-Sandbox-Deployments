@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indicator_as_Metric__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Denotes that the value of the Indicator Metric (currently Indicator Variable) is in fact the value of the Indicator. Example: Casey CANS Assessment needs and strengths.</inlineHelpText>
+    <label>Indicator as Metric</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

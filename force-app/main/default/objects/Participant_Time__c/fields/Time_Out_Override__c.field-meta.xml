@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Out_Override__c</fullName>
+    <description>&quot;2:40 PM&quot;, &quot;14:40&quot;, &quot;14:40:00&quot;, and &quot;14:40:50.600&quot; are all valid times for this field.</description>
+    <inlineHelpText>Enter time in HH:MM AM/PM.</inlineHelpText>
+    <label>Time Out Override</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

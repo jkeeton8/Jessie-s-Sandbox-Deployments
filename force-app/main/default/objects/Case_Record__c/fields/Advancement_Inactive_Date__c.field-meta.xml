@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advancement_Inactive_Date__c</fullName>
+    <inlineHelpText>Auto-fills to today&apos;s date when &apos;Advancement Status&apos; changes to &quot;Inactive&quot;, unless otherwise specified</inlineHelpText>
+    <label>Advancement Inactive Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

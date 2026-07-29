@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAP_Cohort_Competency_Check_Off</fullName>
+    <columns>NAME</columns>
+    <columns>Program_Start_Date__c</columns>
+    <columns>Conflict_Management_SOE_Date__c</columns>
+    <columns>Time_Management_SOE_Date__c</columns>
+    <columns>Professionalism_SOE_Date__c</columns>
+    <columns>Team_Building_SOE_Date__c</columns>
+    <columns>Communication_SOE_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case_Record__c.Cara_Accelerator_Pathway</value>
+    </filters>
+    <filters>
+        <field>Scheduled_Program_Start_Date__c</field>
+        <operation>equals</operation>
+        <value>2024-10-07</value>
+    </filters>
+    <label>CAP Cohort Competency Check Off</label>
+</ListView>

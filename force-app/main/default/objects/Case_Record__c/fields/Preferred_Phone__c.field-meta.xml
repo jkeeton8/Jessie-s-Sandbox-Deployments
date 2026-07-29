@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Phone__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (text(Main_Client__r.npe01__PreferredPhone__c)), 
+HYPERLINK(&quot;https://cara.my.salesforce.com/&quot;&amp;Main_Client__r.Id, &quot;Click to enter on Contact record&quot;), 
+
+Text(Main_Client__r.npe01__PreferredPhone__c)&amp; &quot; - &quot;&amp; Main_Client__r.Phone
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Preferred Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

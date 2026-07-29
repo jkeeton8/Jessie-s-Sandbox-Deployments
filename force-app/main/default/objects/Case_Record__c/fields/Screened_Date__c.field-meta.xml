@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screened_Date__c</fullName>
+    <description>Originally an Exponent field. Did not change API name as not to mess with unit tests. // Certificate of Good Conduct Date began being tracked in February 2016.</description>
+    <inlineHelpText>Enter if applicable.</inlineHelpText>
+    <label>Background Cert of Good Conduct Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

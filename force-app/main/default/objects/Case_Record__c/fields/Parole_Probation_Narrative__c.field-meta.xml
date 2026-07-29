@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parole_Probation_Narrative__c</fullName>
+    <description>Field created in Jan 2019 as part of Incoming Participant Data cleanup.</description>
+    <inlineHelpText>Input information regarding Parole/Probation End Date, Officer Name, and Officer Phone Number.</inlineHelpText>
+    <label>Parole/Probation Narrative</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

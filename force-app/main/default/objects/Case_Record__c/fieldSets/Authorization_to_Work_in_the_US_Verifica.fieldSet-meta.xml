@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorization_to_Work_in_the_US_Verifica</fullName>
+    <description>Service Entry</description>
+    <displayedFields>
+        <field>Contracts_Work_Auth_Documentation__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Work_Authorization_Verification_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Authorization to Work in the US Verification</label>
+</FieldSet>

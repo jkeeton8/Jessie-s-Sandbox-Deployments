@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HR_Contact_Details_Notification</fullName>
+        <description>HR Contact Details Notification (w/ out Kristin)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>wchatman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/HR_Contact_Details_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Alternate_Email_is_Email</fullName>
+        <field>Email</field>
+        <formula>npe01__AlternateEmail__c</formula>
+        <name>Alternate Email is Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_Preferred_Email_Updated</fullName>
+        <description>includes imported email</description>
+        <field>Email</field>
+        <formula>CASE( 
+npe01__Preferred_Email__c , 
+&quot;Work&quot;, IF(!ISBLANK(npe01__WorkEmail__c),npe01__WorkEmail__c,PRIORVALUE(Email)),
+&quot;Personal&quot;,  IF(!ISBLANK(npe01__HomeEmail__c),npe01__HomeEmail__c,PRIORVALUE(Email)) ,
+&quot;Alternate&quot;,  IF(!ISBLANK(npe01__AlternateEmail__c),npe01__AlternateEmail__c,PRIORVALUE(Email)),
+PRIORVALUE(Email))</formula>
+        <name>Contact.Preferred Email Updated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_Record_Type_to_Both</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Both</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Contact Record Type to Both, Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_Record_Type_to_Both_Active</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Both_Active_Student</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Contact Record Type to Both, Active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_Record_Type_to_Client</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Student</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Contact Record Type to Client</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_Record_Type_to_Non_Client</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Non_Student</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Contact Record Type to Non-Client</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Do_Not_Call_is_True</fullName>
+        <field>DoNotCall</field>
+        <literalValue>1</literalValue>
+        <name>Do Not Call is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Do_Not_Mail_is_True</fullName>
+        <field>Do_Not_Mail__c</field>
+        <literalValue>1</literalValue>
+        <name>Do Not Mail is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Do_Not_Solicit_is_True</fullName>
+        <field>Do_Not_Solicit__c</field>
+        <literalValue>1</literalValue>
+        <name>Do Not Solicit is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Middle_Name_Custom_to_Middle_Name</fullName>
+        <field>MiddleName</field>
+        <formula>Middle_Name__c</formula>
+        <name>Middle Name (Custom) to Middle Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NIckname_to_First_Name</fullName>
+        <field>Nickname__c</field>
+        <formula>FirstName</formula>
+        <name>NIckname to First Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Personal_Email_Is_Email</fullName>
+        <field>Email</field>
+        <formula>npe01__HomeEmail__c</formula>
+        <name>Personal Email Is Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Email_is_Alternate</fullName>
+        <field>npe01__Preferred_Email__c</field>
+        <literalValue>Alternate</literalValue>
+        <name>Preferred Email is Alternate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Email_is_Personal</fullName>
+        <field>npe01__Preferred_Email__c</field>
+        <literalValue>Personal</literalValue>
+        <name>Preferred Email is Personal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Email_is_Work</fullName>
+        <field>npe01__Preferred_Email__c</field>
+        <literalValue>Work</literalValue>
+        <name>Preferred Email is Work</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Phone_is_Home</fullName>
+        <field>npe01__PreferredPhone__c</field>
+        <literalValue>Household</literalValue>
+        <name>Preferred Phone is Home</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Phone_is_Mobile</fullName>
+        <field>npe01__PreferredPhone__c</field>
+        <literalValue>Mobile</literalValue>
+        <name>Preferred Phone is Mobile</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Phone_is_Other</fullName>
+        <field>npe01__PreferredPhone__c</field>
+        <literalValue>Other</literalValue>
+        <name>Preferred Phone is Other</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preferred_Phone_is_Work</fullName>
+        <field>npe01__PreferredPhone__c</field>
+        <literalValue>Work</literalValue>
+        <name>Preferred Phone is Work</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Address_Type_is_Null</fullName>
+        <field>npe01__Primary_Address_Type__c</field>
+        <name>Primary Address Type is Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Secondary_Address_Type_is_Null</fullName>
+        <field>npe01__Secondary_Address_Type__c</field>
+        <name>Secondary Address Type is Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Suffix_Custom_to_Suffix</fullName>
+        <field>Suffix</field>
+        <formula>text(Suffix__c)</formula>
+        <name>Suffix (Custom) to Suffix</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TwilioSF__Clear_Last_Message_Status</fullName>
+        <field>TwilioSF__Last_Message_Status__c</field>
+        <name>Clear Last Message Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TwilioSF__Clear_Last_Message_Status_Date</fullName>
+        <field>TwilioSF__Last_Message_Status_Date__c</field>
+        <name>Clear Last Message Status Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Phone_with_Preference_custom</fullName>
+        <field>Phone</field>
+        <formula>CASE(
+npe01__PreferredPhone__c ,
+&quot;Work&quot;,
+npe01__WorkPhone__c ,
+&quot;Home&quot;,
+HomePhone,
+&quot;Mobile&quot;,
+MobilePhone,
+&quot;Other&quot;,
+OtherPhone,
+If(LEN( npe01__WorkPhone__c )&gt;0 , npe01__WorkPhone__c ,
+if(LEN( HomePhone)&gt;0, HomePhone,
+if(LEN( MobilePhone)&gt;0, MobilePhone,
+OtherPhone
+))))</formula>
+        <name>Update Phone with Preference (custom)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SF_Native_Suffix_Field</fullName>
+        <field>Suffix</field>
+        <formula>Pro__c</formula>
+        <name>Update SF Native Suffix Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Work_Email_is_Email</fullName>
+        <field>Email</field>
+        <formula>npe01__WorkEmail__c</formula>
+        <name>Work Email is Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactAlternateEmailUpdate</fullName>
+        <field>npe01__AlternateEmail__c</field>
+        <formula>Email</formula>
+        <name>Contact.AlternateEmail.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactHomePhoneUpdate</fullName>
+        <field>HomePhone</field>
+        <formula>Phone</formula>
+        <name>Contact.HomePhone.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactMobilePhoneUpdate</fullName>
+        <field>MobilePhone</field>
+        <formula>Phone</formula>
+        <name>Contact.MobilePhone.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactOtherEmailUpdate</fullName>
+        <field>OtherPhone</field>
+        <formula>Phone</formula>
+        <name>Contact.OtherEmail.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactPersonalEmailUpdate</fullName>
+        <field>npe01__HomeEmail__c</field>
+        <formula>Email</formula>
+        <name>Contact.PersonalEmail.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactPreferredEmail</fullName>
+        <field>Email</field>
+        <formula>CASE( 
+npe01__Preferred_Email__c , 
+
+&quot;Work&quot;, 
+if(len(npe01__WorkEmail__c)&gt;0, npe01__WorkEmail__c, 
+if(len(npe01__HomeEmail__c)&gt;0, npe01__HomeEmail__c, 
+npe01__AlternateEmail__c)), 
+
+&quot;Personal&quot;, 
+if(len(npe01__HomeEmail__c)&gt;0, npe01__HomeEmail__c, 
+if(len(npe01__WorkEmail__c)&gt;0, npe01__WorkEmail__c, 
+npe01__AlternateEmail__c)), 
+
+&quot;Home&quot;, 
+if(len(npe01__HomeEmail__c)&gt;0, npe01__HomeEmail__c, 
+if(len(npe01__WorkEmail__c)&gt;0, npe01__WorkEmail__c, 
+npe01__AlternateEmail__c)), 
+
+&quot;Alternate&quot;, 
+if(len(npe01__AlternateEmail__c)&gt;0, npe01__AlternateEmail__c, 
+if(len(npe01__WorkEmail__c)&gt;0, npe01__WorkEmail__c, 
+npe01__HomeEmail__c)), 
+
+If(LEN(npe01__WorkEmail__c)&gt;0 , npe01__WorkEmail__c , 
+if(LEN( npe01__HomeEmail__c)&gt;0, npe01__HomeEmail__c, 
+npe01__AlternateEmail__c 
+)))</formula>
+        <name>Contact.PreferredEmail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactPreferredPhone</fullName>
+        <description>Populates the standard Phone field displayed on activities based on the Preferred Phone field value.</description>
+        <field>Phone</field>
+        <formula>CASE(
+  npe01__PreferredPhone__c ,
+&quot;Work&quot;,
+  npe01__WorkPhone__c  ,
+&quot;Home&quot;,
+ HomePhone,
+&quot;Mobile&quot;,
+ MobilePhone,
+&quot;Other&quot;,
+ OtherPhone,
+If(LEN( npe01__WorkPhone__c )&gt;0 , npe01__WorkPhone__c  ,
+if(LEN(  HomePhone)&gt;0,  HomePhone,
+if(LEN( MobilePhone)&gt;0, MobilePhone,
+OtherPhone
+))))</formula>
+        <name>Contact.PreferredPhone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactWorkEmailUpdate</fullName>
+        <field>npe01__WorkEmail__c</field>
+        <formula>Email</formula>
+        <name>Contact.WorkEmail.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__ContactWorkPhoneUpdate</fullName>
+        <field>npe01__WorkPhone__c</field>
+        <formula>Phone</formula>
+        <name>Contact.WorkPhone.Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__PreferredPhonetoWork</fullName>
+        <field>npe01__PreferredPhone__c</field>
+        <literalValue>Work</literalValue>
+        <name>Preferred Phone to Work</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__SetPrefEmailtoWork</fullName>
+        <field>npe01__Preferred_Email__c</field>
+        <literalValue>Work</literalValue>
+        <name>Set Pref Email to Work</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__SetWorkEmailtoEmail</fullName>
+        <field>npe01__WorkEmail__c</field>
+        <formula>Email</formula>
+        <name>Set Work Email to Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npe01__WorkPhonetoPhone</fullName>
+        <field>npe01__WorkPhone__c</field>
+        <formula>Phone</formula>
+        <name>Work Phone to Phone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>npo02__ContactPreferredPhone_WithHousehold</fullName>
+        <description>FOR USE WITH HOUSEHOLDS. Populates the standard Phone field displayed on activities based on the Preferred Phone field value.</description>
+        <field>Phone</field>
+        <formula>CASE( 
+npe01__PreferredPhone__c , 
+&quot;Work&quot;, 
+npe01__WorkPhone__c , 
+&quot;Household&quot;,
+ npo02__Formula_HouseholdPhone__c ,
+&quot;Home&quot;, 
+HomePhone, 
+&quot;Personal&quot;,
+HomePhone,
+&quot;Mobile&quot;, 
+MobilePhone, 
+&quot;Other&quot;, 
+OtherPhone, 
+If(LEN( npe01__WorkPhone__c )&gt;0 , npe01__WorkPhone__c , 
+if(LEN( HomePhone)&gt;0, HomePhone, 
+if(LEN( MobilePhone)&gt;0, MobilePhone, 
+OtherPhone 
+))))</formula>
+        <name>Contact.PreferredPhone_WithHousehold</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>C%26P Suffix Workflow</fullName>
+        <actions>
+            <name>Update_SF_Native_Suffix_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Pro__c</field>
+            <operation>equals</operation>
+            <value>Sr.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Pro__c</field>
+            <operation>equals</operation>
+            <value>Jr.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Pro__c</field>
+            <operation>equals</operation>
+            <value>II</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Pro__c</field>
+            <operation>equals</operation>
+            <value>III</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Pro__c</field>
+            <operation>equals</operation>
+            <value>IV</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Created%2C Nickname Blank</fullName>
+        <actions>
+            <name>NIckname_to_First_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.Nickname__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Deceased</fullName>
+        <actions>
+            <name>Do_Not_Call_is_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Do_Not_Mail_is_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Do_Not_Solicit_is_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npsp__Deceased__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Preferred Email - rewrite</fullName>
+        <actions>
+            <name>Contact_Preferred_Email_Updated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Edited rule in Oct 2018. &apos;Imported Email&apos; field no longer used.
+
+This workflow OVERWRITES the existing value in the standard Email field based on the Preferred Email field value and includes the imported email field.</description>
+        <formula>OR( LEN(Email)=0, ISCHANGED(npe01__Preferred_Email__c) , ISCHANGED(npe01__WorkEmail__c) , ISCHANGED(npe01__HomeEmail__c) , ISCHANGED(npe01__AlternateEmail__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Record Type to Both%2C Active Student</fullName>
+        <actions>
+            <name>Contact_Record_Type_to_Both_Active</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 or 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Number_of_Case_Records__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npo02__NumberOfClosedOpps__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Newsletter_Sign_up__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Number_of_Active_Case_Records__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Record Type to Both%2C Inactive Student</fullName>
+        <actions>
+            <name>Contact_Record_Type_to_Both</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 or 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Number_of_Case_Records__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npo02__NumberOfClosedOpps__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Newsletter_Sign_up__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Number_of_Active_Case_Records__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Record Type to Client</fullName>
+        <actions>
+            <name>Contact_Record_Type_to_Client</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Number_of_Case_Records__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npo02__NumberOfClosedOpps__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npo02__NumberOfClosedOpps__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Newsletter_Sign_up__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact%2EPreferred_Phone%5F%5Fc</fullName>
+        <actions>
+            <name>Update_Phone_with_Preference_custom</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>USE THIS VERSION: This workflow OVERWRITES the existing value in the standard Phone field based on the Preferred Phone field value.  This rule needs to be turned on manually after an Upgrade to this package. Takes into account custom phone fields</description>
+        <formula>OR(  LEN(Phone)=0, ISCHANGED(npe01__PreferredPhone__c) ,  ISCHANGED(npe01__WorkPhone__c) ,  ISCHANGED(HomePhone) ,  ISCHANGED(MobilePhone) , ISCHANGED(OtherPhone))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Middle Name %28Custom%29 Not Blank</fullName>
+        <actions>
+            <name>Middle_Name_Custom_to_Middle_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.Middle_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Temporary workflow rule until issues with new native MiddleName and Suffix fields are resolved. For Middle Name, need to deal with error caused with Contact field set and ECM components.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Other Address is Null</fullName>
+        <actions>
+            <name>Secondary_Address_Type_is_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__Other_Address__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Email is Alternate</fullName>
+        <actions>
+            <name>Alternate_Email_is_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Preferred_Email_is_Alternate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__HomeEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__AlternateEmail__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__Preferred_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Email is Personal</fullName>
+        <actions>
+            <name>Personal_Email_Is_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Preferred_Email_is_Personal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__HomeEmail__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__AlternateEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__Preferred_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Email is Work</fullName>
+        <actions>
+            <name>Preferred_Email_is_Work</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Work_Email_is_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__HomeEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkEmail__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__AlternateEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__Preferred_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Phone is Household</fullName>
+        <actions>
+            <name>Preferred_Phone_is_Home</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__PreferredPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.HomePhone</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MobilePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.OtherPhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Phone is Mobile</fullName>
+        <actions>
+            <name>Preferred_Phone_is_Mobile</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__PreferredPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.HomePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MobilePhone</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.OtherPhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Phone is Other</fullName>
+        <actions>
+            <name>Preferred_Phone_is_Other</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__PreferredPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.HomePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MobilePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.OtherPhone</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preferred Phone is Work</fullName>
+        <actions>
+            <name>Preferred_Phone_is_Work</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.npe01__PreferredPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.HomePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MobilePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.OtherPhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkPhone__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Suffix %28Custom%29 Not Blank</fullName>
+        <actions>
+            <name>Suffix_Custom_to_Suffix</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.Suffix__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Temporary workflow rule until issues with new native MiddleName and Suffix fields are resolved. For Suffix, need to deal with C&amp;P custom mapping.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TwilioSF__Clear Last Message Status%2FDate</fullName>
+        <actions>
+            <name>TwilioSF__Clear_Last_Message_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TwilioSF__Clear_Last_Message_Status_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>1!=1</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EEmailChanged_Alternate</fullName>
+        <actions>
+            <name>npe01__ContactAlternateEmailUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Email field is newly entered or changed AND the Preferred Email picklist is set to Alternate THEN Salesforce will fill in the Alternate Email field with the email address entered in the standard Email field.</description>
+        <formula>AND(      ISPICKVAL( npe01__Preferred_Email__c ,&quot;Alternate&quot;),      OR(           AND(                ISNEW(),                LEN(Email)&gt;0           ),           ISCHANGED( Email )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EEmailChanged_Personal</fullName>
+        <actions>
+            <name>npe01__ContactPersonalEmailUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Email field is newly entered or changed AND the Preferred Email picklist is set to Personal or Home THEN Salesforce will fill in the Personal Email field with the email address entered in the standard Email field.</description>
+        <formula>AND(     OR( ISPICKVAL( npe01__Preferred_Email__c ,&quot;Personal&quot;),ISPICKVAL( npe01__Preferred_Email__c ,&quot;Home&quot;)),      OR(           AND(                ISNEW(),                LEN(Email)&gt;0           ),           ISCHANGED( Email )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EEmailChanged_Work</fullName>
+        <actions>
+            <name>npe01__ContactWorkEmailUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Email field is newly entered or changed AND the Preferred Email picklist is set to Work THEN Salesforce will fill in the Work Email field with the email address entered in the standard Email field.</description>
+        <formula>AND(      ISPICKVAL( npe01__Preferred_Email__c ,&quot;Work&quot;),      OR(           AND(                ISNEW(),                LEN(Email)&gt;0           ),           ISCHANGED( Email )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPhoneChanged_Home</fullName>
+        <actions>
+            <name>npe01__ContactHomePhoneUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Phone field is newly entered or changed AND the Preferred Phone picklist is set to Home THEN Salesforce will fill in the Home Phone field with the phone number entered in the standard Phone field.</description>
+        <formula>AND(      ISPICKVAL( npe01__PreferredPhone__c ,&quot;Home&quot;),      OR(           AND(                ISNEW(),                LEN(Phone)&gt;0           ),           ISCHANGED( Phone )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPhoneChanged_Mobile</fullName>
+        <actions>
+            <name>npe01__ContactMobilePhoneUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Phone field is newly entered or changed AND the Preferred Phone picklist is set to Mobile THEN Salesforce will fill in the Mobile Phone field with the phone number entered in the standard Phone field.</description>
+        <formula>AND(      ISPICKVAL( npe01__PreferredPhone__c ,&quot;Mobile&quot;),      OR(           AND(                ISNEW(),                LEN(Phone)&gt;0           ),           ISCHANGED( Phone )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPhoneChanged_Other</fullName>
+        <actions>
+            <name>npe01__ContactOtherEmailUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Phone field is newly entered or changed AND the Preferred Phone picklist is set to Other THEN Salesforce will fill in the Other Phone field with the phone number entered in the standard Phone field.</description>
+        <formula>AND(      ISPICKVAL( npe01__PreferredPhone__c ,&quot;Other&quot;),      OR(           AND(                ISNEW(),                LEN(Phone)&gt;0           ),           ISCHANGED( Phone )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPhoneChanged_Work</fullName>
+        <actions>
+            <name>npe01__ContactWorkPhoneUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the standard Phone field is newly entered or changed AND the Preferred Phone picklist is set to Work THEN Salesforce will fill in the Work Phone field with the phone number entered in the standard Phone field.</description>
+        <formula>AND(      ISPICKVAL( npe01__PreferredPhone__c ,&quot;Work&quot;),      OR(           AND(                ISNEW(),                LEN(Phone)&gt;0           ),           ISCHANGED( Phone )      ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPreferred_Email%5F%5Fc</fullName>
+        <actions>
+            <name>npe01__ContactPreferredEmail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow OVERWRITES the existing value in the standard Email field based on the Preferred Email field value.  This rule needs to be turned on manually after an Upgrade to this package.</description>
+        <formula>OR( LEN(Email)=0, ISCHANGED(npe01__Preferred_Email__c) , ISCHANGED(npe01__WorkEmail__c) , ISCHANGED(npe01__HomeEmail__c) , ISCHANGED(npe01__AlternateEmail__c)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Contact%2EPreferred_Phone%5F%5Fc</fullName>
+        <actions>
+            <name>npe01__ContactPreferredPhone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow OVERWRITES the existing value in the standard Phone field based on the Preferred Phone field value.  This rule needs to be turned on manually after an Upgrade to this package.</description>
+        <formula>OR(  LEN(Phone)=0, ISCHANGED(npe01__PreferredPhone__c) ,  ISCHANGED(npe01__WorkPhone__c) ,  ISCHANGED(HomePhone) ,  ISCHANGED(MobilePhone) , ISCHANGED(OtherPhone)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Email only%3A Paste to Work</fullName>
+        <actions>
+            <name>npe01__SetPrefEmailtoWork</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>npe01__SetWorkEmailtoEmail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__Preferred_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__HomeEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__AlternateEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkEmail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>If there is a value in the standard Email field AND no values in any NPSP email fields or Preferred Email, then Salesforce updates two fields: Work Email is updated with the email address in the standard Email field and Preferred Email is set to Work.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>npe01__Phone only%3A Paste to Work</fullName>
+        <actions>
+            <name>npe01__PreferredPhonetoWork</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>npe01__WorkPhonetoPhone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Phone</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__PreferredPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.npe01__WorkPhone__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MobilePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.HomePhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.OtherPhone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>If there is a value in the standard Phone field AND no values in any NPSP phone fields or Preferred Phone, then Salesforce updates two fields: Work Phone is updated with the phone number in the standard Phone field and Preferred Phone is set to Work.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>npo02__Contact%2EPreferred_Phone%5F%5Fc WithHousehold</fullName>
+        <active>true</active>
+        <description>DEPRICATED: This workflow does not do anything yet.</description>
+        <formula>1=2</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

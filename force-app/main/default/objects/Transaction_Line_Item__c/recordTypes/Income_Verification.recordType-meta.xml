@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Income_Verification</fullName>
+    <active>true</active>
+    <label>Income Verification</label>
+    <picklistValues>
+        <picklist>Conviction_Outcome__c</picklist>
+        <values>
+            <fullName>Conditional Discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found Guilty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incarcerated %28Jail%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incarcerated %28Prison%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Probation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervision</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conviction_Type__c</picklist>
+        <values>
+            <fullName>Felony</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misdemeanor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Specified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinance Violation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Financial_Assistance_Accessed_Through__c</picklist>
+        <values>
+            <fullName>Advancement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Income_Source__c</picklist>
+        <values>
+            <fullName>Child Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family%2FFriend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Assistance Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSI%2FSSDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Related_to_Network__c</picklist>
+        <values>
+            <fullName>Chicago Foundation for Women</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transaction_Type__c</picklist>
+        <values>
+            <fullName>Clothing-Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothing-Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daycare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eyeglasses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Great Wall Ending Balance%2C Self-Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings Contribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings Program Ending Balance%2C Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings Voucher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

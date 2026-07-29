@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_Age_Served__c</fullName>
+    <label>Average Age Served</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; 18</fullName>
+                <default>false</default>
+                <label>&lt; 18</label>
+            </value>
+            <value>
+                <fullName>18 - 24</fullName>
+                <default>false</default>
+                <label>18 - 24</label>
+            </value>
+            <value>
+                <fullName>25 - 35</fullName>
+                <default>false</default>
+                <label>25 - 35</label>
+            </value>
+            <value>
+                <fullName>36 - 45</fullName>
+                <default>false</default>
+                <label>36 - 45</label>
+            </value>
+            <value>
+                <fullName>46 - 60</fullName>
+                <default>false</default>
+                <label>46 - 60</label>
+            </value>
+            <value>
+                <fullName>61+</fullName>
+                <default>false</default>
+                <label>61+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mock_Interview_Preparedness__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How well did this candidate demonstrate their professionalism, preparedness and interest in the position? 1 being weak, 5 being neutral, and 10 being excellent.</inlineHelpText>
+    <label>Mock Interview: Preparedness</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facilities_Operations_Queue</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>User__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Deadline__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>Ticket_Category__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Moved to Project (Active),Closed - Moved to Project (Inactive)</value>
+    </filters>
+    <label>Facilities &amp; Operations - Queue</label>
+    <queue>Facilities_Operations</queue>
+    <sharedTo>
+        <group>Facilities_Operations</group>
+    </sharedTo>
+</ListView>

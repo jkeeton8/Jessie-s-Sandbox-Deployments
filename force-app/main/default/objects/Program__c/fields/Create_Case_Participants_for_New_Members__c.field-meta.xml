@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Case_Participants_for_New_Members__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Used by the Contact trigger to determine if Household members should be automatically added as Case Participants to existing Household Case Records (Contact insert into existing HH).</inlineHelpText>
+    <label>Create Case Participants for New Members</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Milestone_or_Service</fullName>
+    <active>true</active>
+    <description>Only one can be populated at a time.</description>
+    <errorConditionFormula>(
+NOT(ISBLANK(Employment__c)) ||
+NOT(ISBLANK(Employment_Milestone__c)) ||
+NOT(ISBLANK(Service_Entry__c))
+  )
+&amp;&amp;
+(
+ (
+NOT(ISBLANK(Employment__c)) &amp;&amp;
+NOT(ISBLANK(Employment_Milestone__c))
+  )
+||
+ (
+NOT(ISBLANK(Employment_Milestone__c)) &amp;&amp;
+NOT(ISBLANK(Service_Entry__c))
+  )
+||
+ (
+NOT(ISBLANK(Employment__c)) &amp;&amp;
+NOT(ISBLANK(Service_Entry__c))
+  )
+ )</errorConditionFormula>
+    <errorMessage>A Contract Link can be connected to EITHER a Placement, Placement Milestone, or Service Entry.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lapsed_Days__c</fullName>
+    <description>ECM Job Order Process for Cara</description>
+    <externalId>false</externalId>
+    <formula>Send_Out_Date__c -  First_Interview_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Lapsed days between Send Out and First Interview.</inlineHelpText>
+    <label>Lapsed Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

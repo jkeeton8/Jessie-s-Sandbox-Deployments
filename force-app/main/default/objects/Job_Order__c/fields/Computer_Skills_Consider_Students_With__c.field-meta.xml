@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Computer_Skills_Consider_Students_With__c</fullName>
+    <inlineHelpText>Choose all that apply. For example, if a position is appropriate for someone with &quot;Moderate Aptitude&quot; or higher, also choose &quot;Advanced Aptitude&quot;.</inlineHelpText>
+    <label>Computer Skills: Consider Students With</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Basic Aptitude</fullName>
+                <default>false</default>
+                <label>Basic Aptitude</label>
+            </value>
+            <value>
+                <fullName>Moderate Aptitude</fullName>
+                <default>false</default>
+                <label>Moderate Aptitude</label>
+            </value>
+            <value>
+                <fullName>High Aptitude</fullName>
+                <default>false</default>
+                <label>High Aptitude</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ownership_Group__c</fullName>
+    <label>Ownership Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advancement</fullName>
+                <default>false</default>
+                <label>Advancement</label>
+            </value>
+            <value>
+                <fullName>Cleanslate</fullName>
+                <default>false</default>
+                <label>Cleanslate</label>
+            </value>
+            <value>
+                <fullName>Coaching &amp; Retention</fullName>
+                <default>false</default>
+                <label>Coaching &amp; Retention</label>
+            </value>
+            <value>
+                <fullName>Connects</fullName>
+                <default>false</default>
+                <label>Connects</label>
+            </value>
+            <value>
+                <fullName>Contracts &amp; Compliance</fullName>
+                <default>false</default>
+                <label>Contracts &amp; Compliance</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <default>false</default>
+                <label>Development</label>
+            </value>
+            <value>
+                <fullName>Employment Services</fullName>
+                <default>false</default>
+                <label>Employment Services</label>
+            </value>
+            <value>
+                <fullName>Executive Team</fullName>
+                <default>false</default>
+                <label>Executive Team</label>
+            </value>
+            <value>
+                <fullName>Expansion</fullName>
+                <default>false</default>
+                <label>Expansion</label>
+            </value>
+            <value>
+                <fullName>Facilities &amp; Operations</fullName>
+                <default>false</default>
+                <label>Facilities &amp; Operations</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Communications</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Communications</label>
+            </value>
+            <value>
+                <fullName>Recruitment</fullName>
+                <default>false</default>
+                <label>Recruitment</label>
+            </value>
+            <value>
+                <fullName>Self-Directed Job Search</fullName>
+                <default>false</default>
+                <label>Self-Directed Job Search</label>
+            </value>
+            <value>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+                <label>Solutions</label>
+            </value>
+            <value>
+                <fullName>Supportive Services</fullName>
+                <default>false</default>
+                <label>Supportive Services</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Enterprise Strategy &amp; Committees</fullName>
+                <default>false</default>
+                <label>Enterprise Strategy &amp; Committees</label>
+            </value>
+            <value>
+                <fullName>Participant Service Delivery</fullName>
+                <default>false</default>
+                <label>Participant Service Delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

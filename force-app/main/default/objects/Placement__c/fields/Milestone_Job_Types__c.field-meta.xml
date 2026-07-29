@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Job_Types__c</fullName>
+    <description>ECM field to define what placements receive Placement Milestones for retention tracking. This field is customized on a customer by customer basis. This field is used in the CalculateMilestones__c formula.</description>
+    <externalId>false</externalId>
+    <formula>&apos;Temporary,Internship,External Transitional (ETJ),Permanent,Temporary-Permanent&apos;</formula>
+    <label>Milestone Job Types</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

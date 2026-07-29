@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Only_Hold</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(Reason__c, &quot;Business Only&quot;)
+
+&amp;&amp;
+
+(isblank(text(Category__c)) || ispickval(Category__c, &quot;Program Hold&quot;) || ispickval(Category__c, &quot;Concern&quot;))</errorConditionFormula>
+    <errorMessage>Please select Send Out Hold as the Category.</errorMessage>
+</ValidationRule>

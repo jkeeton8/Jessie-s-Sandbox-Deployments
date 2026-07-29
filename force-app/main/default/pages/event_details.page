@@ -1,0 +1,43 @@
+<apex:page showHeader="false"  standardStylesheets="false"   lightningstylesheets="true">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+              <script>
+                  // Customizable Parameters
+                  var siteDomain="cara";
+                  var sitePath = "events/";
+                  var frameHeight = 1200;
+                  var frameWidth = 700; 
+                  var customFrameCss = "";  // custom css for use on the frame for positioning etc.
+                  /////// 
+                var iFrameCoreUrl = "https://"+siteDomain+".secure.force.com/"+sitePath+"CnP_PaaS_EVT__EventRegistration_1?pagename=Page1_Opening_Page&event_id="
+                var $j = jQuery.noConflict();
+                var prmstr = window.location.search.substr(1);
+                var prmarr = prmstr.split ("&");
+                var params = {};
+                var skipString = "";
+                for ( var i = 0; i < prmarr.length; i++) {
+                    var tmparr = prmarr[i].split("=");
+                    params[tmparr[0]] = tmparr[1];
+                }
+                $j(document).ready(function(){
+                    if(params['id'] != null){                        
+                        if (params['title'] != null){
+                         $j('#pageTitleContent').html = params['title'];
+                        }else{
+                            $j('#pageTitleContent').html = "Event";
+                        }
+                        if(params['cover'] != null){
+                            skipString = "&Temp=Cookie"
+                        }
+                        $j('#iframecontainer').append("<iframe src='" + iFrameCoreUrl + params['id'] + "' frameborder='0' width='"+ frameWidth +"' height='"+ frameHeight +"' style='"+customFrameCss+"'></iframe>");
+                        $j('#iframecontainer').css('height',frameHeight +'px');
+                    }else{
+                        $j('#iframecontainer').append("No Id passed.");
+                    }
+                });
+            </script>
+           <div id='iframecontainer'></div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transit_Card</fullName>
+    <active>true</active>
+    <label>Transit Card</label>
+    <picklistValues>
+        <picklist>Inventory_Location__c</picklist>
+        <values>
+            <fullName>Cleanslate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Side</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transit_Card_Type__c</picklist>
+        <values>
+            <fullName>1 Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventra%2FOther Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventra%2FPace</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

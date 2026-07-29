@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Used by workflow</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARIES Consent Form</fullName>
+                <default>false</default>
+                <label>ARIES Consent Form</label>
+            </value>
+            <value>
+                <fullName>Authorization for Exchange of Information</fullName>
+                <default>false</default>
+                <label>Authorization for Exchange of Information</label>
+            </value>
+            <value>
+                <fullName>Client Grievance Form</fullName>
+                <default>false</default>
+                <label>Client Grievance Form</label>
+            </value>
+            <value>
+                <fullName>Client Rights &amp; Responsibilities</fullName>
+                <default>false</default>
+                <label>Client Rights &amp; Responsibilities</label>
+            </value>
+            <value>
+                <fullName>Consent for General Release of Medical Records</fullName>
+                <default>false</default>
+                <label>Consent for General Release of Medical Records</label>
+            </value>
+            <value>
+                <fullName>HIPPA Privacy Practices</fullName>
+                <default>false</default>
+                <label>HIPPA Privacy Practices</label>
+            </value>
+            <value>
+                <fullName>HIV Letter of Diagnosis</fullName>
+                <default>false</default>
+                <label>HIV Letter of Diagnosis</label>
+            </value>
+            <value>
+                <fullName>Negative HIV Diagnosis Letter</fullName>
+                <default>false</default>
+                <label>Negative HIV Diagnosis Letter</label>
+            </value>
+            <value>
+                <fullName>Positive HIV Diagnosis Letter</fullName>
+                <default>false</default>
+                <label>Positive HIV Diagnosis Letter</label>
+            </value>
+            <value>
+                <fullName>Proof of Income</fullName>
+                <default>false</default>
+                <label>Proof of Income</label>
+            </value>
+            <value>
+                <fullName>Proof of Residence</fullName>
+                <default>false</default>
+                <label>Proof of Residence</label>
+            </value>
+            <value>
+                <fullName>Refusal of Care Acknowledgement Form</fullName>
+                <default>false</default>
+                <label>Refusal of Care Acknowledgement Form</label>
+            </value>
+            <value>
+                <fullName>Rental Subsidy Agreement</fullName>
+                <default>false</default>
+                <label>Rental Subsidy Agreement</label>
+            </value>
+            <value>
+                <fullName>SFAF Consent for Services</fullName>
+                <default>false</default>
+                <label>SFAF Consent for Services</label>
+            </value>
+            <value>
+                <fullName>Treatment Disclosure Form for Contacts to Syphilis</fullName>
+                <default>false</default>
+                <label>Treatment Disclosure Form for Contacts to Syphilis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

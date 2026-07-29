@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpDefault</fullName>
+    <active>true</active>
+    <description>ECM Default record type.</description>
+    <label>Default</label>
+    <picklistValues>
+        <picklist>Activities_Offered__c</picklist>
+        <values>
+            <fullName>Brochures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IEP Documentation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socializing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transcripts Documentation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbal Advice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attendance__c</picklist>
+        <values>
+            <fullName>Attended%2C Traction Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Attended%2C Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Attended%2C Opted Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled%2C No Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bill_Code__c</picklist>
+        <values>
+            <fullName>GF-HHS 10%2F11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private 10%2F11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Record_Status__c</picklist>
+        <values>
+            <fullName>Same as case record</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Attendance__c</picklist>
+        <values>
+            <fullName>Attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excused Absence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Attendance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Un-Excused Absence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Method__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workshop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>1035 Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HFB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stonewall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Category__c</picklist>
+        <values>
+            <fullName>Adherence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education%2FTraining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family%2FSocial Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impressions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presenting Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rick Reduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substance Use</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Code__c</picklist>
+        <values>
+            <fullName>1 - Individual Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Supervision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Parenting Classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Gain SS %26 Quadrant Placement Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - CTR and COB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - Travel Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1P - Phone Call%2FE-mail with client%2Ffamily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Family Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Class %28Life Skills Education%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Intake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5C - Class %28Life Skills Education%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5ER - Expanded Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5FC - Family Counseling %E2%80%93 with client %28conjoint%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5FNC - Family Counseling %E2%80%93 no client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5G - Group %28Support Groups%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5GM - Group Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5IC - Individual Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5M - Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5P - Phone Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5R - Assessment %26 Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5U - Urinalysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6P - Phone Call%2FE-mail collateral contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 - Crisis Intervention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7FC - GCE Family Counseling %E2%80%93 with client %28conjoint%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7G - Group %28Support Groups%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7IC - GCE Individual Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7M - GCE Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7R - GCE Assessment %26 Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 - School Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 - Group %28Support Groups%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIV Test Education</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Type__c</picklist>
+        <values>
+            <fullName>Direct Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indirect Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outreach</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Signed_Connects_CoC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Absent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attended - Full Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attended - Partial Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attended Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did Not Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

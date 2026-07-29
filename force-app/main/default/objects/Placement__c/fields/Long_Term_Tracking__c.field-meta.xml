@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Long_Term_Tracking__c</fullName>
+    <formula>IF(
+
+AND(
+ Text(Job_Type__c)!= &quot;Short-Term&quot;,
+ ISBLANK(Placement_Number__c) = false,
+  or( One_Year_Retention_Category_FY18__c = &quot;Tracking&quot;,
+      AND(Retention_Days_Lapsed_Since_Start_FY18__c  &lt;= 365,Retention_Days_Lapsed_Since_Start_FY18__c  &gt; 0)),
+   ISBLANK(One_Year_Retention_End_Date__c)),
+TRUE,FALSE)</formula>
+    <label>Long-Term Tracking</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

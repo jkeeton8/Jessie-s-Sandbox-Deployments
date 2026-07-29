@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Brag</fullName>
+                <default>false</default>
+                <label>Brag</label>
+            </value>
+            <value>
+                <fullName>Brand Development</fullName>
+                <default>false</default>
+                <label>Brand Development</label>
+            </value>
+            <value>
+                <fullName>Career Planning</fullName>
+                <default>false</default>
+                <label>Career Planning</label>
+            </value>
+            <value>
+                <fullName>Common Interviewing Questions</fullName>
+                <default>false</default>
+                <label>Common Interviewing Questions</label>
+            </value>
+            <value>
+                <fullName>Computer Basics</fullName>
+                <default>false</default>
+                <label>Computer Basics</label>
+            </value>
+            <value>
+                <fullName>Conflict Management / Calling Tree</fullName>
+                <default>false</default>
+                <label>Conflict Management / Calling Tree</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Diversity Listening</fullName>
+                <default>false</default>
+                <label>Diversity Listening</label>
+            </value>
+            <value>
+                <fullName>Effective Follow Up</fullName>
+                <default>false</default>
+                <label>Effective Follow Up</label>
+            </value>
+            <value>
+                <fullName>Effective Job Search</fullName>
+                <default>false</default>
+                <label>Effective Job Search</label>
+            </value>
+            <value>
+                <fullName>Elevator Pitch</fullName>
+                <default>false</default>
+                <label>Elevator Pitch</label>
+            </value>
+            <value>
+                <fullName>Financial Literacy</fullName>
+                <default>false</default>
+                <label>Financial Literacy</label>
+            </value>
+            <value>
+                <fullName>Forgiveness</fullName>
+                <default>false</default>
+                <label>Forgiveness</label>
+            </value>
+            <value>
+                <fullName>Interviewing Techniques</fullName>
+                <default>false</default>
+                <label>Interviewing Techniques</label>
+            </value>
+            <value>
+                <fullName>Job Applications</fullName>
+                <default>false</default>
+                <label>Job Applications</label>
+            </value>
+            <value>
+                <fullName>Love Exercise</fullName>
+                <default>false</default>
+                <label>Love Exercise</label>
+            </value>
+            <value>
+                <fullName>Microsoft Word</fullName>
+                <default>false</default>
+                <label>Microsoft Word</label>
+            </value>
+            <value>
+                <fullName>Mirror Exercise</fullName>
+                <default>false</default>
+                <label>Mirror Exercise</label>
+            </value>
+            <value>
+                <fullName>Needs Assessment</fullName>
+                <default>false</default>
+                <label>Needs Assessment</label>
+            </value>
+            <value>
+                <fullName>Online Applications</fullName>
+                <default>false</default>
+                <label>Online Applications</label>
+            </value>
+            <value>
+                <fullName>Power of the Pause</fullName>
+                <default>false</default>
+                <label>Power of the Pause</label>
+            </value>
+            <value>
+                <fullName>Professional Inventory</fullName>
+                <default>false</default>
+                <label>Professional Inventory</label>
+            </value>
+            <value>
+                <fullName>Professionalism</fullName>
+                <default>false</default>
+                <label>Professionalism</label>
+            </value>
+            <value>
+                <fullName>Questions to Ask the Interviewer</fullName>
+                <default>false</default>
+                <label>Questions to Ask the Interviewer</label>
+            </value>
+            <value>
+                <fullName>Researching Potential employers</fullName>
+                <default>false</default>
+                <label>Researching Potential employers</label>
+            </value>
+            <value>
+                <fullName>Resume Writing</fullName>
+                <default>false</default>
+                <label>Resume Writing</label>
+            </value>
+            <value>
+                <fullName>Scavenger Hunt</fullName>
+                <default>false</default>
+                <label>Scavenger Hunt</label>
+            </value>
+            <value>
+                <fullName>Strategic Job Search (SAM Assessments)</fullName>
+                <default>false</default>
+                <label>Strategic Job Search (SAM Assessments)</label>
+            </value>
+            <value>
+                <fullName>Student Commitments</fullName>
+                <default>false</default>
+                <label>Student Commitments</label>
+            </value>
+            <value>
+                <fullName>TABE Testing</fullName>
+                <default>false</default>
+                <label>TABE Testing</label>
+            </value>
+            <value>
+                <fullName>Team Building</fullName>
+                <default>false</default>
+                <label>Team Building</label>
+            </value>
+            <value>
+                <fullName>Termination</fullName>
+                <default>false</default>
+                <label>Termination</label>
+            </value>
+            <value>
+                <fullName>Thank You Letters</fullName>
+                <default>false</default>
+                <label>Thank You Letters</label>
+            </value>
+            <value>
+                <fullName>Time Management</fullName>
+                <default>false</default>
+                <label>Time Management</label>
+            </value>
+            <value>
+                <fullName>Work Place Ethics</fullName>
+                <default>false</default>
+                <label>Work Place Ethics</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

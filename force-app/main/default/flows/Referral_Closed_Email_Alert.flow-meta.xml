@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Referral_Closed_Email_Alert</name>
+        <label>Outbound_Referral__c.Referral_Closed_Email_Alert</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Outbound_Referral__c.Referral_Closed_Email_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Outbound_Referral__c.Referral_Closed_Email_Alert</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Referral Closed, Email Alert workflow rule
+Workflow rule description: &quot;</description>
+    <label>Referral Closed, Email Alert</label>
+    <migratedFromWorkflowRuleName>Referral Closed, Email Alert</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Referral_Closed_Email_Alert</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 OR 2)</filterLogic>
+        <filters>
+            <field>Referral_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Referral Closed - Outcome Obtained</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Referral_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Referral Closed - Outcome Not Met</stringValue>
+            </value>
+        </filters>
+        <object>Outbound_Referral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

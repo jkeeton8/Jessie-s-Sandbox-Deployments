@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Referral Closed Date workflow rule
+Workflow rule description: &quot;</description>
+    <formulas>
+        <name>Closed_Date_is_TodayFormula</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <label>Referral Closed Date</label>
+    <migratedFromWorkflowRuleName>Referral Closed Date</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Referral_Closed_Date__c</field>
+            <value>
+                <elementReference>Closed_Date_is_TodayFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>ischanged({!$Record.Referral_Status__c}) 
+
+&amp;&amp; 
+
+(ispickval({!$Record.Referral_Status__c} , &quot;Referral Closed - Waitlisted&quot;)
+
+|| 
+
+ispickval({!$Record.Referral_Status__c} , &quot;Referral Closed - Referred Externally&quot;)
+
+|| 
+
+ispickval({!$Record.Referral_Status__c} , &quot;Referral Closed - Outcome Obtained&quot;)
+
+|| 
+
+ispickval({!$Record.Referral_Status__c} , &quot;Referral Closed - Outcome Not Met&quot;)
+
+|| 
+
+ispickval({!$Record.Referral_Status__c} , &quot;Referral Closed - Imported&quot;))</filterFormula>
+        <object>Outbound_Referral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low Threshold</fullName>
+                <default>false</default>
+                <label>Low Threshold</label>
+            </value>
+            <value>
+                <fullName>High Threshold</fullName>
+                <default>false</default>
+                <label>High Threshold</label>
+            </value>
+            <value>
+                <fullName>PROP</fullName>
+                <default>false</default>
+                <label>PROP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

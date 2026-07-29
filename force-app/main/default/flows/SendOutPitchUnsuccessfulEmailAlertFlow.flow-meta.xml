@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SendOutPitchUnsuccessfulEmailAlert</name>
+        <label>SendOutPitchUnsuccessfulEmailAlert</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Placement__c.SendOutPitchUnsuccessfulEmailAlert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Placement__c.SendOutPitchUnsuccessfulEmailAlert</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Email alert to Lead Business Partner Specialist / Biz Dev Lead if a Send Out if a pitch is unsuccessful.</description>
+    <environments>Default</environments>
+    <interviewLabel>SendOutPitchUnsuccessfulEmailAlertFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SendOutPitchUnsuccessfulEmailAlertFlow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SendOutPitchUnsuccessfulEmailAlert</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2)</filterLogic>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pitch Unsuccessful</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pitch Denied by Participant</stringValue>
+            </value>
+        </filters>
+        <object>Placement__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

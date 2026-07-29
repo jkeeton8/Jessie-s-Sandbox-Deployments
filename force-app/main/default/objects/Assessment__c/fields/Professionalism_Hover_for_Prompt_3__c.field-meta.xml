@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professionalism_Hover_for_Prompt_3__c</fullName>
+    <inlineHelpText>Who is your role model for professionalism and why?</inlineHelpText>
+    <label>Professionalism, Hover for Prompt 3</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

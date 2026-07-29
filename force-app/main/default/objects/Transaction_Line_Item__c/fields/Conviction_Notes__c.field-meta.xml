@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conviction_Notes__c</fullName>
+    <inlineHelpText>Enter notes specific to this conviction. Do not enter general Progress Notes.</inlineHelpText>
+    <label>Conviction Notes</label>
+    <length>500</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

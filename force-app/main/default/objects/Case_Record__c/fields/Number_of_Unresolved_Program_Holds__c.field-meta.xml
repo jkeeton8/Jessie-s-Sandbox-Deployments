@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Unresolved_Program_Holds__c</fullName>
+    <label># Unresolved Program Holds</label>
+    <summaryFilterItems>
+        <field>Incident__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Hold/Concern</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Incident__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Unresolved</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Incident__c.Category__c</field>
+        <operation>equals</operation>
+        <value>Program Hold</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Incident__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Out_Hold_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval( Category__c, &quot;Send Out Hold&quot;)
+
+&amp;&amp;
+
+isblank(text(Connects_Send_Out_Hold__c))
+
+&amp;&amp;
+
+isblank(text(Partner_Send_Out_Hold__c ))</errorConditionFormula>
+    <errorMessage>Please input whether this Send Out Hold is a Partner Send Out Hold, Connects Send Out Hold, or both.</errorMessage>
+</ValidationRule>

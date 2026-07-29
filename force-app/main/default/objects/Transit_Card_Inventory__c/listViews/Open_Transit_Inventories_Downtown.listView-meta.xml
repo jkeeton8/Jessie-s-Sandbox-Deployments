@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Transit_Inventories_Downtown</fullName>
+    <columns>NAME</columns>
+    <columns>Transit_Card_Order__c</columns>
+    <columns>Number_of_Distributed_Cards__c</columns>
+    <columns>Number_of_Undistributed_Cards__c</columns>
+    <columns>Number_of_Write_Offs__c</columns>
+    <columns>Inventory_Location__c</columns>
+    <columns>Order_Date__c</columns>
+    <columns>Transit_Card_Type__c</columns>
+    <columns>Total_Number_of_Transit_Cards_Purchased__c</columns>
+    <columns>Total_Amount_of_Transit_Cards_Purchased__c</columns>
+    <columns>Distribution_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Distribution_Status__c</field>
+        <operation>contains</operation>
+        <value>Not Yet Started,In Progress</value>
+    </filters>
+    <filters>
+        <field>Inventory_Location__c</field>
+        <operation>equals</operation>
+        <value>Downtown</value>
+    </filters>
+    <filters>
+        <field>Transit_Card_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Ventra/Pace</value>
+    </filters>
+    <filters>
+        <field>Transit_Card_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Gift Card - $250,Gift Card - $125</value>
+    </filters>
+    <label>Open Transit Inventories, Downtown</label>
+</ListView>

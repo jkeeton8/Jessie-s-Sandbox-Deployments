@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Setup__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId=&quot;0124y0000011y4w&quot;,
+
+&quot;Salesforce Setup:&quot; &amp; br() &amp;
+&quot;* Create User and assign Full or Platform license&quot; &amp; br() &amp;
+&quot;* For Cleanslate Crew Chiefs, create a Chatter Free User&quot; &amp; br() &amp;
+&quot;* Add to Cara Chatter group&quot; &amp; br() &amp;
+&quot;* Include any special setup information (i.e. new Development users) in Completion Notes&quot; &amp; br() &amp;
+&quot;* Trigger password reset email&quot;,
+
+if (RecordTypeId=&quot;0124y0000011y51&quot;,
+
+&quot;General New Hire steps can be found here: &quot;&amp; br()&amp; HYPERLINK(&quot;https://thecaraprogram.sharepoint.com/:w:/s/Solutions/EWgX-6Clw2xBvCrTi0ZIXo8BnytqHEKQjFV-Kb1uMNQzrQ?e=7OJ1uF&quot;, &quot;Solutions New Hire Steps - General&quot;, &quot;_blank&quot;)&amp; br() &amp; br() &amp;
+
+&quot;Cleanslate Crew Chief New Hire steps can be found here: &quot;&amp; br()&amp; HYPERLINK(&quot;https://thecaraprogram.sharepoint.com/:w:/s/Solutions/EaQSYEDY2i9KvGU5syEwFVoBlgoHQBCMrETXC5HMP-uWWA?e=KRcY9i&quot;, &quot;Solutions New Hire Steps - Cleanslate Crew Chief&quot;, &quot;_blank&quot;),
+
+if (RecordTypeId=&quot;0124y0000011y56&quot;,
+
+&quot;Employee Update steps can be found here: &quot;&amp; br()&amp; HYPERLINK(&quot;https://thecaraprogram.sharepoint.com/:w:/s/Solutions/Eey5nYBOQo9Pmo1kUBvV8LEBM_zrXK9_ZUFKvSnGU7tBWA?e=ljvCPQ&quot;, &quot;Solutions Employee Update Steps&quot;, &quot;_blank&quot;),
+
+if (RecordTypeId=&quot;0124y0000011y5B&quot;,
+
+&quot;Employee Update steps can be found here: &quot;&amp; br()&amp; HYPERLINK(&quot;https://thecaraprogram.sharepoint.com/:w:/s/Solutions/ET9_eUEPAJpAugxKswNV5_wBLPcm6e1WehcbvUAoyqJPpg?e=HHuDas&quot;, &quot;Solutions Employee Departure Steps&quot;, &quot;_blank&quot;),
+
+NULL))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Salesforce Setup</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

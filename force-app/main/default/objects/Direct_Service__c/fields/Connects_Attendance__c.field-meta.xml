@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connects_Attendance__c</fullName>
+    <description>Formula field to capture Connects onboarding attendance through one button.</description>
+    <externalId>false</externalId>
+    <formula>if  (
+
+contains( Group_Class_Session__r.Group_Class__r.Service__r.Name, &quot;FY18&quot;) || contains( Group_Class_Session__r.Group_Class__r.Service__r.Name, &quot;FY19&quot;),
+
+text( Client_Attendance__c ),
+
+text( Attendance__c )
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Connects Attendance</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

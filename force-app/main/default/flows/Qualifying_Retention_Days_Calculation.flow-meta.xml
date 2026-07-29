@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>This calculates the difference between the last Start date and End date in a Send Out of the previous job as long as it meets the requirements.</description>
+        <name>Difference_between_Start_Date_and_End_Date</name>
+        <label>Difference between Start Date and End Date</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>varDaysWorked</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>frmDaysWorked</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Rentetion_Days_Qualify</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>This shows the amount of retention days that meet the requirements to qualify.</description>
+        <name>Rentetion_Days_Qualify</name>
+        <label>Retention Days Qualify</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>NotQualifiedForRetentionDays</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Retention Days DO NOT Qualify</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Rentetion_Days_Qualify</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4) AND 5 AND 6</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Job_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Long-Term</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.End_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Qualifying Retention Days</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.End_Details__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lost Employment (At No Fault of Employee)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.End_Details__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Obtained Better Employment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetNextSendOut</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetNextSendOut</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetQualifiedRetentionDays</targetReference>
+            </connector>
+            <label>Outcome 1 of Retention Days Qualify</label>
+        </rules>
+    </decisions>
+    <description>This field was made to calculate and hold the amount of qualified retention days that can be add to the overall retention count given certain requirements are met.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>This calculates the difference between the last Start date and End date in a Send Out of the previous job as long as it meets the requirements.</description>
+        <name>frmDaysWorked</name>
+        <dataType>Number</dataType>
+        <expression>$Record.End_Date__c - $Record.Start_Date__c</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>GetNextSendOut</name>
+        <dataType>Number</dataType>
+        <expression>Get.Start_Date__c - $Record.End_Date__c</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Qualifying Retention Days Calculation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Qualifying Retention Days Calculation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get</name>
+        <label>GetNexSendOut</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Difference_between_Start_Date_and_End_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Case_Record__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Case_Record__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <elementReference>$Record.End_Date__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Placement__c</object>
+        <sortField>Start_Date__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>GetQualifiedRetentionDays</name>
+        <label>GetQualifiedRetentionDays</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Qualifying_Retention_Days__c</field>
+            <value>
+                <elementReference>varDaysWorked</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>NotQualifiedForRetentionDays</name>
+        <label>NotQualifiedForRetentionDays</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Qualifying_Retention_Days__c</field>
+            <value>
+                <stringValue>0</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6)</filterLogic>
+        <filters>
+            <field>Start_Date__c</field>
+            <operator>NotEqualTo</operator>
+        </filters>
+        <filters>
+            <field>End_Date__c</field>
+            <operator>NotEqualTo</operator>
+        </filters>
+        <filters>
+            <field>Job_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Long-Term</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Qualifying Retention Days</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_Details__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lost Employment (At No Fault of Employee)</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_Details__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Obtained Better Employment</stringValue>
+            </value>
+        </filters>
+        <object>Placement__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>This calculates the difference between the last Start date and End date in a Send Out of the previous job as long as it meets the requirements.</description>
+        <name>varDaysWorked</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

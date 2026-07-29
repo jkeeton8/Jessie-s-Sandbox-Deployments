@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Job_Orders_Open</fullName>
+    <columns>NAME</columns>
+    <columns>Job_Order_Stage_Formula__c</columns>
+    <columns>Organization__c</columns>
+    <columns>Open_Date__c</columns>
+    <columns>Recommendations_Due_By__c</columns>
+    <columns>Close_Date__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Job_Order_Stage_Formula__c</field>
+        <operation>equals</operation>
+        <value>Job Order Created,Job Order Shared,Send Out</value>
+    </filters>
+    <label>My Job Orders, Open</label>
+</ListView>

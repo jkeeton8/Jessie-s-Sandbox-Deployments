@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_On_Waitlist__c</fullName>
+    <description>Exponent field, originally &apos;Days On Waitlist&apos;. Kept API name as not to disturb unit tests.</description>
+    <formula>if (not (isblank (text (Scheduled_Program_Start_Date__c))), DATEVALUE( Text(Scheduled_Program_Start_Date__c )), 
+
+if (not (isblank (Program_Re_Engagement_Date__c)), Program_Re_Engagement_Date__c, 
+
+if (not (isblank (Referral_Date__c)), Referral_Date__c, 
+
+NULL)))</formula>
+    <inlineHelpText>Formula including various early engagement dates. In order of preference: Program Start Date, Cohort; Program Start Date, Pre-Cohort; Referral Date.</inlineHelpText>
+    <label>Cara Start Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Participant_Time_Date</fullName>
+        <field>Participant_Time_Date__c</field>
+        <formula>datevalue (Participant_Date_Time_In__c)</formula>
+        <name>Participant Time Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Student_ID</fullName>
+        <field>Student_ID_from_Clock_In__c</field>
+        <formula>Case_Record__r.Student_ID__c</formula>
+        <name>Populate Student ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Time_Out_is_Null</fullName>
+        <field>Participant_Date_Time_Out__c</field>
+        <name>Time Out is Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_In_Override</fullName>
+        <field>Time_In_Override__c</field>
+        <formula>timevalue(Time_In_Override_Conversion__c)</formula>
+        <name>Update Time In Override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Manual Entry%2C Populate Student ID</fullName>
+        <actions>
+            <name>Populate_Student_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 4) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Participant_Time__c.Participant_Time_In_Override__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Participant_Time__c.Participant_Time_Out_Override__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Participant_Time__c.Student_ID_from_Clock_In__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Participant_Time__c.CreatedById</field>
+            <operation>notEqual</operation>
+            <value>005i0000001Gt2a,0050Z000008ctFK,0050Z000008ctFZ</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Participant Time Date</fullName>
+        <actions>
+            <name>Participant_Time_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>isnull (Participant_Time_Date__c) ||  Participant_Time_Date__c &lt;&gt; datevalue (Participant_Date_Time_In__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Time In %26 Time Out Difference</fullName>
+        <actions>
+            <name>Time_Out_is_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(((timevalue( Participant_Date_Time_Out__c ) - timevalue ( Participant_Date_Time_In__c ))/1000)/60)  &lt;= 10</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

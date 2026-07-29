@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Stage_for_Job_Matching__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval (Program_Stage__c, &quot;Referred&quot;), &quot;Not Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Applicant&quot;), &quot;Not Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Accepted&quot;), &quot;Not Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Core Training&quot;), &quot;Not Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Advanced Training&quot;), &quot;Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Roster&quot;), &quot;Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Leadership Development&quot;), &quot;Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Short-Term Employment&quot;), &quot;Eligible for Job Match&quot;,
+
+if ((ispickval (Program_Stage__c, &quot;Retention&quot;) || ispickval (Program_Stage__c, &quot;Retention Tracking&quot;)) &amp;&amp;  isblank(ETJ_Eligible_for_Job_Matching__c), &quot;Not Eligible for Job Match&quot;,
+
+if ((ispickval (Program_Stage__c, &quot;Retention&quot;) || ispickval (Program_Stage__c, &quot;Retention Tracking&quot;)) &amp;&amp;  (today()&lt;ETJ_Eligible_for_Job_Matching__c), &quot;Not Eligible for Job Match&quot;,
+
+if (ispickval (Program_Stage__c, &quot;Retention&quot;) || ispickval (Program_Stage__c, &quot;Retention Tracking&quot;), &quot;Eligible for Job Match&quot;,
+
+if (ispickval (Program_Stage__c, &quot;Retention&quot;), &quot;Eligible for Job Match&quot;,
+if (ispickval (Program_Stage__c, &quot;Advancement Services&quot;), &quot;Eligible for Job Match&quot;,
+
+if (isblank (text(Program_Stage__c)) &amp;&amp; ispickval(Send_Out_Eligible__c, &quot;Yes&quot;), &quot;Eligible for Job Match&quot;,
+&quot;Not Eligible for Job Match&quot;))))))))))))))</formula>
+    <label>Program Stage for Job Matching</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advancement_Inactive_Reason__c</fullName>
+    <inlineHelpText>Updated by Career Advancement Manager</inlineHelpText>
+    <label>Advancement Inactive Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Advancement_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Job Loss, Returned to Advanced Training</fullName>
+                <default>false</default>
+                <label>Job Loss, Returned to Advanced Training</label>
+            </value>
+            <value>
+                <fullName>Job Loss, Referred to Cara Connects</fullName>
+                <default>false</default>
+                <label>Job Loss, Referred to Cara Connects</label>
+            </value>
+            <value>
+                <fullName>Job Loss, Referred to Recruitment</fullName>
+                <default>false</default>
+                <label>Job Loss, Referred to Recruitment</label>
+            </value>
+            <value>
+                <fullName>Job Loss, Inactivated from Core Services</fullName>
+                <default>false</default>
+                <label>Job Loss, Inactivated from Core Services</label>
+            </value>
+            <value>
+                <fullName>Opted out of starting Advancement Services</fullName>
+                <default>false</default>
+                <label>Opted out of starting Advancement Services</label>
+            </value>
+            <value>
+                <fullName>Opted out of continuing Advancement Services</fullName>
+                <default>false</default>
+                <label>Opted out of continuing Advancement Services</label>
+            </value>
+            <value>
+                <fullName>Independently working towards Advancement goals</fullName>
+                <default>false</default>
+                <label>Independently working towards Advancement goals</label>
+            </value>
+            <value>
+                <fullName>Reached Advancement goals</fullName>
+                <default>false</default>
+                <label>Reached Advancement goals</label>
+            </value>
+            <value>
+                <fullName>Unresponsive to Advancement communication</fullName>
+                <default>false</default>
+                <label>Unresponsive to Advancement communication</label>
+            </value>
+            <value>
+                <fullName>No call, no show to Advancement meeting(s)</fullName>
+                <default>false</default>
+                <label>No call, no show to Advancement meeting(s)</label>
+            </value>
+            <value>
+                <fullName>Other - See Inactivation Note</fullName>
+                <default>false</default>
+                <label>Other - See Inactivation Note</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Job Loss, Returned to Advanced Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Job Loss, Referred to Cara Connects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Job Loss, Referred to Recruitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Job Loss, Inactivated from Core Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Opted out of starting Advancement Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Opted out of continuing Advancement Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Independently working towards Advancement goals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Reached Advancement goals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Unresponsive to Advancement communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>No call, no show to Advancement meeting(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactive, Option to Return</controllingFieldValue>
+            <controllingFieldValue>Inactive, Cannot Return</controllingFieldValue>
+            <valueName>Other - See Inactivation Note</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Communications_All_Owners</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>User__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Deadline__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>Ticket_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Marketing &amp; Communications</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Moved to Project (Active),Closed - Moved to Project (Inactive),Closed - Incomplete</value>
+    </filters>
+    <label>Marketing &amp; Communications - All Owners</label>
+    <sharedTo>
+        <group>Marketing_Communications</group>
+    </sharedTo>
+</ListView>

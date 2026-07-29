@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Max_Page_Count_GT_Zero</fullName>
+    <active>true</active>
+    <errorConditionFormula>Maximum_Page_Count__c &lt;=0</errorConditionFormula>
+    <errorMessage>Maximum Page Count must be &gt;= 1</errorMessage>
+</ValidationRule>

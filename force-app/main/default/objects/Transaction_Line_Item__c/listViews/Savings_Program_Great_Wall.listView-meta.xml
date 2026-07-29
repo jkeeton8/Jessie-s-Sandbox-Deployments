@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Savings_Program_Great_Wall</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Record__c</columns>
+    <columns>Transaction_Type__c</columns>
+    <columns>Date__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Date_on_Check_Savings_Match__c</columns>
+    <columns>Check_Number_Savings_Match__c</columns>
+    <columns>Transaction_Notes__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Transaction_Type__c</field>
+        <operation>equals</operation>
+        <value>&quot;Great Wall Ending Balance, Self-Reported&quot;</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Transaction_Line_Item__c.Financial_Savings</value>
+    </filters>
+    <label>Savings Program, Great Wall</label>
+    <language>en_US</language>
+    <sharedTo></sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_End_Type_and_End_Details</fullName>
+    <active>true</active>
+    <description>If a record is saved with the End Date completed and End Type and End Details fields blank, this rule will trigger an email message asking the user to complete the End Type and End Details fields.</description>
+    <errorConditionFormula>AND(
+NOT( ISBLANK( End_Date__c)),
+OR(
+ISPICKVAL(  End_Type__c,&quot;&quot;),
+ISPICKVAL(  End_Details__c,&quot;&quot;)))</errorConditionFormula>
+    <errorDisplayField>End_Type__c</errorDisplayField>
+    <errorMessage>Please enter End Type and End Details.</errorMessage>
+</ValidationRule>

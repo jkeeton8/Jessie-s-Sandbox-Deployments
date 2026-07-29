@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assign_Event_to__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Processed by trigger</description>
+    <inlineHelpText>If Create Event is checked, this field is used to assign the Event owner (Assigned To). If it is left blank the event is assigned to the current user.</inlineHelpText>
+    <label>Assign Event to</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Session_Series</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interview_Assessment</fullName>
+    <description>Intake (Core)</description>
+    <displayedFields>
+        <field>Attendance_Barriers_at_Intake__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Interview Assessment, Core</label>
+</FieldSet>

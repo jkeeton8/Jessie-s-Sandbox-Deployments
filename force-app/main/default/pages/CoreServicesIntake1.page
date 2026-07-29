@@ -1,0 +1,53 @@
+<apex:page controller="ExpIntakeController" sidebar="false" tabStyle="Intake__tab" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedProgram.Name} Intake{!contactHeaderLabel}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Core Services Intake ****-->
+
+<!-- ***** Case Record, page 1, order 1 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-15236"/>
+
+<!-- ***** Contact, page 1, order 2 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-15237"/>
+
+<!-- ***** Case Record, page 1, order 3 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-15238"/>
+
+<!-- ***** Case Record, page 1, order 4 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-15255"/>
+
+<!-- ***** Case Record, page 1, order 5 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21985"/>
+
+<!-- ***** Case Record, page 1, order 6 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21986"/>
+
+<!-- ***** Child Object List, page 1, order 7 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-15244"/>
+
+<!-- ***** Contact, page 1, order 8 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-15240"/>
+
+<!-- ***** Contact, page 1, order 9 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-15243"/>
+
+<!-- ***** Contact, page 1, order 10 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-15241"/>
+
+<!-- ***** Case Record, page 1, order 11 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-15242"/>
+
+<!-- ***** Child Object List, page 1, order 12 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-15245"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

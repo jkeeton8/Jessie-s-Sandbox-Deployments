@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ages_of_Children__c</fullName>
+    <inlineHelpText>Until Nov 2018, &apos;Ages of Children&apos; field was on the participant&apos;s contact record. For those with multiple case records, there is an ambiguity as to when the data captured in this field was collected and if it&apos;s accurate as of the program start date.</inlineHelpText>
+    <label>Ages of Children</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

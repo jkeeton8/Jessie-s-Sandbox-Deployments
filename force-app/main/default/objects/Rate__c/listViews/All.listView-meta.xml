@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Rate_Set_Start_Date__c</columns>
+    <columns>Rate_Set_End_Date__c</columns>
+    <columns>FICA__c</columns>
+    <columns>Staff_Worker_s_Comp__c</columns>
+    <columns>Staff_Unemployment__c</columns>
+    <columns>Intern_Worker_s_Comp__c</columns>
+    <columns>Intern_Worker_s_Comp_Janitorial__c</columns>
+    <columns>Intern_Unemployment__c</columns>
+    <columns>Intern_Unemployment_CRED__c</columns>
+    <columns>Trash_Bag_Cost__c</columns>
+    <columns>Recycling_Bag_Cost__c</columns>
+    <columns>Salt_Cost__c</columns>
+    <columns>Mileage_Cost__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

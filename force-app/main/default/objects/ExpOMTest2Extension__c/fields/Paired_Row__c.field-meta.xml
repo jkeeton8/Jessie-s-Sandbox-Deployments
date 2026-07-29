@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paired_Row__c</fullName>
+    <label>Paired Row</label>
+    <referenceTo>ExpOMTest2__c</referenceTo>
+    <relationshipLabel>ExpOMTest2Extensions</relationshipLabel>
+    <relationshipName>ExpOMTest2Extensions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

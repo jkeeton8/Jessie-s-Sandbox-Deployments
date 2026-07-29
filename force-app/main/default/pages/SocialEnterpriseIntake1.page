@@ -1,0 +1,41 @@
+<apex:page controller="ExpIntakeController" sidebar="false" tabStyle="Intake__tab" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedProgram.Name} Intake{!contactHeaderLabel}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Cara Staffing Intake ****-->
+
+<!-- ***** Case Record, page 1, order 1 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21987"/>
+
+<!-- ***** Contact, page 1, order 2 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-21988"/>
+
+<!-- ***** Contact, page 1, order 3 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-21990"/>
+
+<!-- ***** Child Object List, page 1, order 4 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-21989"/>
+
+<!-- ***** Case Record, page 1, order 5 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21994"/>
+
+<!-- ***** Contact, page 1, order 6 ***** -->
+<c:ExpContact theParentController="{!this}" csName="CompSettings-21991"/>
+
+<!-- ***** Case Record, page 1, order 7 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21993"/>
+
+<!-- ***** Case Record, page 1, order 8 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-21992"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

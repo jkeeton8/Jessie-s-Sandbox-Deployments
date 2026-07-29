@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Sync_Address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Setting this option to true means that Household members will not have their Primary Address synchronized with the Client Household Mailing Address fields.</inlineHelpText>
+    <label>Do Not Sync Address</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

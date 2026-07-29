@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_SOE_Days_Lapsed_Since_Start_Date__c</fullName>
+    <description>Used in Average # of Days in SOE Pool on Employment Services dashboard</description>
+    <externalId>false</externalId>
+    <formula>if (isnull (Start_Date__c), NULL, 
+
+if (ispickval (Job_Type__c, &quot;Internship&quot;) || ispickval (Job_Type__c, &quot;Temporary&quot;), 0,
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; (Organization_Summary__c &lt;&gt; &quot;Cleanslate Chicago&quot;) &amp;&amp;  not (isblank (End_Date__c)) &amp;&amp; ETJ_Commitment_End_Date__c &gt; End_Date__c, End_Date__c - Case_Record__r.Send_Out_Eligible_Date__c ,
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; (Organization_Summary__c &lt;&gt; &quot;Cleanslate Chicago&quot;) &amp;&amp; ETJ_Commitment_End_Date__c &gt; today(), today() - Case_Record__r.Send_Out_Eligible_Date__c,
+
+if (ispickval (Job_Type__c, &quot;External Transitional&quot;) &amp;&amp; (Organization_Summary__c &lt;&gt; &quot;Cleanslate Chicago&quot;), ETJ_Commitment_End_Date__c - Case_Record__r.Send_Out_Eligible_Date__c,
+
+if (not (isblank (End_Date__c)), End_Date__c - Case_Record__r.Send_Out_Eligible_Date__c,
+
+today() - Case_Record__r.Send_Out_Eligible_Date__c))))))</formula>
+    <label>Non-SOE Days Lapsed Since Start Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

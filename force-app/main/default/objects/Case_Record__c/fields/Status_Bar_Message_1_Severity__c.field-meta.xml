@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Bar_Message_1_Severity__c</fullName>
+    <description>Repurposed exponent field, &quot;Status Bar Message 1 Severity&quot;. Did not change API name.</description>
+    <externalId>false</externalId>
+    <formula>if (isblank (Program_Start_Date__c), NULL, today()- Program_Start_Date__c)</formula>
+    <label># Days Since Program Start Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

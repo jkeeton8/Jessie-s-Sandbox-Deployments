@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADP_Hours_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (
+
+isblank(ADP_Time_In_2__c ) &amp;&amp; isblank(ADP_Time_Out_1__c ),
+
+NULL,
+
+(
+
+(floor (ADP_Time_Out_2_Proxy__c) + (ADP_Time_Out_2_Proxy__c - floor (ADP_Time_Out_2_Proxy__c))/60*100)
+
+-
+
+(floor (ADP_Time_In_2_Proxy__c) + (ADP_Time_In_2_Proxy__c - floor (ADP_Time_In_2_Proxy__c))/60*100))
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ADP Hours (#2)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

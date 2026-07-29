@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Education_Level__c</fullName>
+    <label>Education Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than High School graduate</fullName>
+                <default>false</default>
+                <label>Less than High School graduate</label>
+            </value>
+            <value>
+                <fullName>Enrolled in high school</fullName>
+                <default>false</default>
+                <label>Enrolled in high school</label>
+            </value>
+            <value>
+                <fullName>Enrolled in college/training</fullName>
+                <default>false</default>
+                <label>Enrolled in college/training</label>
+            </value>
+            <value>
+                <fullName>High school grad</fullName>
+                <default>false</default>
+                <label>High school grad</label>
+            </value>
+            <value>
+                <fullName>GED</fullName>
+                <default>false</default>
+                <label>GED</label>
+            </value>
+            <value>
+                <fullName>Some college credits (no degree)</fullName>
+                <default>false</default>
+                <label>Some college credits (no degree)</label>
+            </value>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Associate degree</fullName>
+                <default>false</default>
+                <label>Associate degree</label>
+            </value>
+            <value>
+                <fullName>BA degree or &gt;</fullName>
+                <default>false</default>
+                <label>BA degree or &gt;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

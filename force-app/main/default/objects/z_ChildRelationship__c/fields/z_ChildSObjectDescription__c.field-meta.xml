@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>z_ChildSObjectDescription__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Child SObject</label>
+    <referenceTo>z_SObjectDescription__c</referenceTo>
+    <relationshipLabel>ChildRelations (z_ChildSObjectDescription)</relationshipLabel>
+    <relationshipName>z_ChildRelationships1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

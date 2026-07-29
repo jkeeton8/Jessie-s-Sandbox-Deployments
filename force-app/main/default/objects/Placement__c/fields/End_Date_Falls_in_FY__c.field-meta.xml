@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Falls_in_FY__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank (End_Date__c), &quot;N/A&quot;,
+
+if (End_Date__c &lt; date(2012,1,1), &quot;CY&quot; &amp; right (text (year (End_Date__c)), 2), 
+
+if (month (End_Date__c) &lt; 7, &quot;FY&quot;&amp; right (text (year (End_Date__c)), 2), 
+
+&quot;FY&quot;&amp; right (text (year (End_Date__c)+1), 2) )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>End Date Falls in FY</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mental_Health_Concern_Progress_Notes</fullName>
+    <description>ECM Configuration</description>
+    <displayedFields>
+        <field>Mental_Health_Progress_Note__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Mental Health Concern Progress Notes</label>
+</FieldSet>

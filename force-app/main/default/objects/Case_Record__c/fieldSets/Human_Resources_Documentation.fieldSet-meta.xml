@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Human_Resources_Documentation</fullName>
+    <description>Service Entry (Human Resources Review)</description>
+    <displayedFields>
+        <field>Admissions_Identification_on_File__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Driver_s_License_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Human Resources Documentation</label>
+</FieldSet>

@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Certification_Training_Notification</fullName>
+        <description>Certification Training Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ppowell@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rbalzotti@carachicago.org.invalid</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Training_Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Referral_SPRING_Forward_Housing_Navigation</fullName>
+        <ccEmails>contracts@carachicago.org</ccEmails>
+        <description>New Referral, SPRING Forward Housing Navigation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rbalzotti@carachicago.org.invalid</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ywilliams@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Referral_Supportive_Services</fullName>
+        <description>New Referral, Supportive Services</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Supportive_Services</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Adelante_team_and_Creator</fullName>
+        <description>Notify Adelante team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>TCP_Staffing</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Advancement_Team_Jennifer_and_Creator</fullName>
+        <description>Notify Advancement Team, Jennifer, and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Career_Advancement_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>jdeak@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Advancement_Team_and_Creator</fullName>
+        <description>Notify Advancement Team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Career_Advancement_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Ari_Rita_and_Creator</fullName>
+        <description>Notify Elaine, Da&apos;Sean, and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>eross@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Career_Advancement</fullName>
+        <description>Notify Career Advancement Team</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Career_Advancement_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>nvail@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Cleanslate_Team_and_Creator</fullName>
+        <description>Notify Cleanslate Team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>breddick@cleanslatechicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tmartin@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Coaching_Retention_Team</fullName>
+        <description>Notify Coaching &amp; Retention Team</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Individual_Development_Specialist</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Connects_and_Creator</fullName>
+        <description>Notify Connects Team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>TCP_Staffing</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Creator</fullName>
+        <description>Notify Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Da_Sean_Maryam_and_Creator</fullName>
+        <description>Notify Da&apos;Sean, Maryam, and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>marbaboon@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Elaine</fullName>
+        <description>Notify Elaine (now notifies Corneisha)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alexandra_kuzmanovic@mckinsey.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Engagement_and_Rita</fullName>
+        <description>Notify Engagement and Rita</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Career_Advancement_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Engagement_for_Clothing_Referral</fullName>
+        <description>Notify Engagement for Clothing Referral</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Career_Advancement_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Jesse_and_Creator</fullName>
+        <description>Notify Jesse, Joycee, and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>jblack@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jteverbaugh@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_LF_KJ_and_Creator</fullName>
+        <description>Notify LF, KJ, and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>kjones@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lfrazier@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Lynnette_and_Creator</fullName>
+        <description>Notify WSD Team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Admissions_Specialist</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>lfrazier@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>p.banks@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Maryam_Da_Sean_and_Creator</fullName>
+        <description>Mental Health Referral Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>dhillsman@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>marbaboon@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rbalzotti@carachicago.org.invalid</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rkellogg@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Recruitment_Team_and_Creator</fullName>
+        <ccEmails>recruitment@carachicago.org</ccEmails>
+        <description>Notify Recruitment Team and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Closed_Email_Alert</fullName>
+        <description>Referral Closed Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Closed_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Notify_Abby</fullName>
+        <description>Referral, Notify Abby</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>amladic@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Notify_Clennetta_and_Creator</fullName>
+        <description>Referral, Notify Clennetta</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>ctrotter@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Notify_Yasheka_and_Creator</fullName>
+        <description>Referral, Notify Yasheka</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>ywilliams@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Referral_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Status_Change_Email_Alert</fullName>
+        <description>Referral Status Change Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Referral_Status_Change_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Closed_Date_is_Today</fullName>
+        <field>Referral_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Closed Date is Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ExP_Set_ECM_Sharing_Field</fullName>
+        <description>Used by criteria based sharing.</description>
+        <field>ECM_Sharing__c</field>
+        <formula>Referring_From_Program__r.Program_Short_Name__c + &apos;;&apos; +
+ Referring_to_Program__r.Program_Short_Name__c + &apos;;&apos; +
+ Case_Record__r.Program__r.Program_Short_Name__c</formula>
+        <name>ExP Set ECM Sharing Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Pending_End_Date</fullName>
+        <field>Pending_End_Date__c</field>
+        <formula>today()</formula>
+        <name>Update Pending End Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Pending_Start_Date</fullName>
+        <field>Pending_Start_Date__c</field>
+        <formula>today()</formula>
+        <name>Update Pending Start Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Advancement Referral to Job Skills Assessment</fullName>
+        <actions>
+            <name>Notify_Elaine</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Job Skills Assessment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Record__c.Program_Stage__c</field>
+            <operation>contains</operation>
+            <value>Advancement</value>
+        </criteriaItems>
+        <failedMigrationToolVersion>260.9.14</failedMigrationToolVersion>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ExP Outbound Referral Created%2FUpdated</fullName>
+        <actions>
+            <name>ExP_Set_ECM_Sharing_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>ECMv1</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending End Date</fullName>
+        <actions>
+            <name>Update_Pending_End_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ischanged(Referral_Status__c)
+
+&amp;&amp;
+
+ispickval(priorvalue(Referral_Status__c), &quot;Pending More Information&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending Start Date</fullName>
+        <actions>
+            <name>Update_Pending_Start_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ischanged(Referral_Status__c)
+
+&amp;&amp;
+
+ispickval(Referral_Status__c , &quot;Pending More Information&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral Closed Date</fullName>
+        <actions>
+            <name>Closed_Date_is_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ischanged(Referral_Status__c) 
+
+&amp;&amp; 
+
+(ispickval(Referral_Status__c , &quot;Referral Closed - Waitlisted&quot;)
+
+|| 
+
+ispickval(Referral_Status__c , &quot;Referral Closed - Referred Externally&quot;)
+
+|| 
+
+ispickval(Referral_Status__c , &quot;Referral Closed - Outcome Obtained&quot;)
+
+|| 
+
+ispickval(Referral_Status__c , &quot;Referral Closed - Outcome Not Met&quot;)
+
+|| 
+
+ispickval(Referral_Status__c , &quot;Referral Closed - Imported&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral Closed%2C Email Alert</fullName>
+        <actions>
+            <name>Referral_Closed_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Status__c</field>
+            <operation>equals</operation>
+            <value>Referral Closed - Outcome Obtained,Referral Closed - Outcome Not Met</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Adelante</fullName>
+        <actions>
+            <name>Notify_Adelante_team_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Adelante Digital Literacy</value>
+        </criteriaItems>
+        <description>Email alert to Adelante team when referrals are made for Adelante program</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Career Advancement</fullName>
+        <actions>
+            <name>Notify_Advancement_Team_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Resume Support,Internal - Volunteer Coaching</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Career Advancement and Jennifer</fullName>
+        <actions>
+            <name>Notify_Advancement_Team_Jennifer_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Personal Technical Support</value>
+        </criteriaItems>
+        <description>Internal - Personal Technical Support.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Certification Trainings</fullName>
+        <actions>
+            <name>Notify_Coaching_Retention_Team</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Certification Trainings</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Cleanslate Direct</fullName>
+        <actions>
+            <name>Notify_Cleanslate_Team_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>contains</operation>
+            <value>Internal - Portal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Category__c</field>
+            <operation>equals</operation>
+            <value>Cleanslate Direct</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Connects Direct</fullName>
+        <actions>
+            <name>Notify_Connects_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>contains</operation>
+            <value>Internal - Portal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Category__c</field>
+            <operation>equals</operation>
+            <value>Connects Direct</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Criminal Background Request</fullName>
+        <actions>
+            <name>Notify_Da_Sean_Maryam_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Criminal Background Request</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Enterprise Recruitment</fullName>
+        <actions>
+            <name>Notify_Recruitment_Team_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Enterprise Recruitment</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Mental Health Concern</fullName>
+        <actions>
+            <name>Notify_Maryam_Da_Sean_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Mental Health Concern</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Stability Screening</fullName>
+        <actions>
+            <name>Notify_Career_Advancement</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Stability Screening</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Transportation</fullName>
+        <actions>
+            <name>Notify_LF_KJ_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>equals</operation>
+            <value>Internal - Transportation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral to Workshop Direct</fullName>
+        <actions>
+            <name>Notify_Lynnette_and_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Type__c</field>
+            <operation>contains</operation>
+            <value>Internal - Portal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Outbound_Referral__c.Referral_Category__c</field>
+            <operation>equals</operation>
+            <value>Workshop Direct</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Contact_Us_Form_REK</name>
+        <label>Web_Inquiry__c.Contact_Us_Form_REK</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Web_Inquiry__c.Contact_Us_Form_REK</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Web_Inquiry__c.Contact_Us_Form_REK</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Contact Us Form, Motivations workflow rule
+Workflow rule description: Email alert sent to Robyn when Web Inquiry Source is &quot;Motivations&quot;&quot;</description>
+    <label>Contact Us Form, Motivations</label>
+    <migratedFromWorkflowRuleName>Contact Us Form, Motivations</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Contact_Us_Form_REK</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Inquiry_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Motivations</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Website_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Cara</stringValue>
+            </value>
+        </filters>
+        <object>Web_Inquiry__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

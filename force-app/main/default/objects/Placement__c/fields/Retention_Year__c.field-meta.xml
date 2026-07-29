@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retention_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank(Placement_Number__c), NULL, 
+
+if (ispickval(Placement_Year__c,&quot;CY11&quot;) &amp;&amp; (Start_Date__c &gt;= date(2011,07,01) || Placement_Number__c = 192 || Placement_Number__c = 147) , &quot;FY13&quot;, 
+
+if (value(right(text(Placement_Year__c),2)) &lt;= 10, &quot;CY0&quot;&amp;text(value(right(text(Placement_Year__c), 2))+1),
+
+if (value(right(text(Placement_Year__c),2)) = 99, &quot;CY00&quot;,  
+
+&quot;FY&quot;&amp;text(value(right(text(Placement_Year__c), 2))+1)))))</formula>
+    <label>Retention Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

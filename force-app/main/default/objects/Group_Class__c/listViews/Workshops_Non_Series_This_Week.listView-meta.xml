@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workshops_Non_Series_This_Week</fullName>
+    <columns>NAME</columns>
+    <columns>Group_Class_Name__c</columns>
+    <columns>Group_Class_Type__c</columns>
+    <columns>Included_in_Weekly_Email__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Time__c</columns>
+    <columns>Location__c</columns>
+    <columns>Staff_Trainer__c</columns>
+    <columns>Assignments__c</columns>
+    <columns>Attended_Group_Class__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Group_Class__c.Non_Series_Group_Class,Group_Class__c.Cleanslate_Orientation</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <label>Workshops (Non-Series), This Week</label>
+</ListView>

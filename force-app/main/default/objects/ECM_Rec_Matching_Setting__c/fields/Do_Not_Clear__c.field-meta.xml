@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Clear__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ECM v2.1 Job Matching</description>
+    <inlineHelpText>When checked this option prevents the criteria for this setting from being cleared when the Clear button is selected in the record matching page. The criteria will only be able to be cleared manually.</inlineHelpText>
+    <label>Do Not Clear</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

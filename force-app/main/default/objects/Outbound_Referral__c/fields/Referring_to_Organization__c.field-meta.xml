@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referring_to_Organization__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Not needed for Internal referrals. Optional for External referrals, if there is a specific Organization to which the referral is being sent.</inlineHelpText>
+    <label>Referring to Organization</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.Referral_Partner_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Outbound Referrals</relationshipLabel>
+    <relationshipName>Outbound_Referrals</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

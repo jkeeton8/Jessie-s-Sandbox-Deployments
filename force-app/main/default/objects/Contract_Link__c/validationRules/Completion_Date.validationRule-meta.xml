@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completion_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+    ISBLANK(Enrollment_Date__c),
+    FALSE,
+    OR(
+        Completion_Date__c &gt; Grant_Contract__r.Grant_Contract_End_Date__c,
+        Completion_Date__c &lt; Grant_Contract__r.Grant_Contract_Start_Date__c
+    )
+)</errorConditionFormula>
+    <errorMessage>Contact Link completion date is greater than the Grant/Contract End Date.</errorMessage>
+</ValidationRule>

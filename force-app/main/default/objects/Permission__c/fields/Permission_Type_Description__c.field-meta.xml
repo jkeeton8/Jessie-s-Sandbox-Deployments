@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission_Type_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval(Permission_Type__c, &quot;Distribution List&quot;), &quot;Can be used by internal and external contacts to send messages to the list; For external senders, check off &apos;Allow external senders to email this group&apos; in Outlook 365 settings.&quot;,
+
+if (ispickval(Permission_Type__c, &quot;SharePoint Permission &amp; Distribution List&quot;), &quot;Controls permissions for SharePoint Site; Serves as internal distribution list.&quot;,
+
+if (ispickval(Permission_Type__c, &quot;SharePoint Permission Group&quot;), &quot;Controls permissions for SharePoint Site; Internal distribution list hidden because not in use.&quot;,
+
+if (ispickval(Permission_Type__c, &quot;User Account&quot;), &quot;Controlled by &apos;Read/manage&apos; and &apos;Send as&apos; permissions in Outlook 365 or mail flow rules in Exchange.&quot;,
+
+&quot;No Description Provided&quot;))))</formula>
+    <label>Permission Type Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

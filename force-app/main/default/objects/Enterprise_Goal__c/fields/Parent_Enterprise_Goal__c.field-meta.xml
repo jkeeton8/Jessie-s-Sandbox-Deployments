@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Enterprise_Goal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Parent Enterprise Goal</label>
+    <referenceTo>Enterprise_Goal__c</referenceTo>
+    <relationshipLabel>Enterprise Goals</relationshipLabel>
+    <relationshipName>Enterprise_Goals</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Attendance__c</fullName>
+    <label>Client Attendance</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attended</fullName>
+                <default>false</default>
+                <label>Attended</label>
+            </value>
+            <value>
+                <fullName>Partial Attendance</fullName>
+                <default>false</default>
+                <label>Partial Attendance</label>
+            </value>
+            <value>
+                <fullName>Un-Excused Absence</fullName>
+                <default>false</default>
+                <label>Un-Excused Absence</label>
+            </value>
+            <value>
+                <fullName>Excused Absence</fullName>
+                <default>false</default>
+                <label>Excused Absence</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

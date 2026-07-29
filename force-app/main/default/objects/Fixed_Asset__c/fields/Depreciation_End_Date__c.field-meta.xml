@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depreciation_End_Date__c</fullName>
+    <formula>if ( ispickval(Depreciation_Method__c, &quot;Straight Line 10&quot;), IF(
+  AND(
+    MONTH( Date_in_Service__c ) = 2,
+    DAY( Date_in_Service__c ) = 29,
+    NOT( 
+      OR( 
+        MOD( YEAR( Date_in_Service__c ), 400 ) = 0, 
+        AND( 
+          MOD( YEAR( Date_in_Service__c ), 4 ) = 0,
+          MOD( YEAR( Date_in_Service__c ), 100 ) != 0
+        )
+      )
+    ) 
+  ),
+  DATE( YEAR( Date_in_Service__c ) + 10, 3, 1),
+  DATE( YEAR( Date_in_Service__c ) + 10, MONTH( Date_in_Service__c ), DAY( Date_in_Service__c ) )
+),
+
+if ( ispickval(Depreciation_Method__c, &quot;Straight Line 5&quot;), IF(
+  AND(
+    MONTH( Date_in_Service__c ) = 2,
+    DAY( Date_in_Service__c ) = 29,
+    NOT( 
+      OR( 
+        MOD( YEAR( Date_in_Service__c ), 400 ) = 0, 
+        AND( 
+          MOD( YEAR( Date_in_Service__c ), 4 ) = 0,
+          MOD( YEAR( Date_in_Service__c ), 100 ) != 0
+        )
+      )
+    ) 
+  ),
+  DATE( YEAR( Date_in_Service__c ) + 5, 3, 1),
+  DATE( YEAR( Date_in_Service__c ) + 5, MONTH( Date_in_Service__c ), DAY( Date_in_Service__c ) )
+),
+
+if ( ispickval(Depreciation_Method__c, &quot;Straight Line 3&quot;), IF(
+  AND(
+    MONTH( Date_in_Service__c ) = 2,
+    DAY( Date_in_Service__c ) = 29,
+    NOT( 
+      OR( 
+        MOD( YEAR( Date_in_Service__c ), 400 ) = 0, 
+        AND( 
+          MOD( YEAR( Date_in_Service__c ), 4 ) = 0,
+          MOD( YEAR( Date_in_Service__c ), 100 ) != 0
+        )
+      )
+    ) 
+  ),
+  DATE( YEAR( Date_in_Service__c ) + 3, 3, 1),
+  DATE( YEAR( Date_in_Service__c ) + 3, MONTH( Date_in_Service__c ), DAY( Date_in_Service__c ) )
+),
+
+NULL)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Depreciation End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

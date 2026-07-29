@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_External_Transitional__c</fullName>
+    <label># Open External Transitional</label>
+    <summaryFilterItems>
+        <field>Placement__c.Job_Type__c</field>
+        <operation>equals</operation>
+        <value>External Transitional</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.Start_Date__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Placement__c.End_Date__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>Placement__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

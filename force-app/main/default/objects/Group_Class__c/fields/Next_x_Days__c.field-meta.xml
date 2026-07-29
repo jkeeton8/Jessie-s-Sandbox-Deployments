@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_x_Days__c</fullName>
+    <formula>IF(Start_Date__c &gt; today() &amp;&amp; Start_Date__c &lt;= today() + 15 &amp;&amp; NOT(ISBLANK(text(Time__c))), true, false)</formula>
+    <label>Next 15 Days</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

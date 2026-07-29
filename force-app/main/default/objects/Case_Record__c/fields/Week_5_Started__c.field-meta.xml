@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Week_5_Started__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ((ispickval (Program_Site_Track__c, &quot;Downtown&quot;) || ispickval (Program_Site_Track__c, &quot;South Side&quot;)) &amp;&amp; Program_Start_Date__c &gt;= date (2015, 7, 1) &amp;&amp; Days_in_Program__c &gt; 27, 1, 
+
+if ((ispickval (Program_Site_Track__c, &quot;Downtown&quot;) || ispickval (Program_Site_Track__c, &quot;South Side&quot;)) &amp;&amp; Program_Start_Date__c &lt; date (2015, 7, 1) &amp;&amp; Days_in_Program__c &gt; 28, 1, 
+
+0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Week 5 Started</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

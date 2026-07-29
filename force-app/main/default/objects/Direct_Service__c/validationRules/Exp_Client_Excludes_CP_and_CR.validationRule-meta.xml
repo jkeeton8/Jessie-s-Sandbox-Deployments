@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Client_Excludes_CP_and_CR</fullName>
+    <active>true</active>
+    <description>If Client has a value, then Case Participation and Case Record must be null.</description>
+    <errorConditionFormula>IF( Client__c != null &amp;&amp; (Case_Participation__c != null || Case_Record__c != null), true, false)</errorConditionFormula>
+    <errorMessage>Case Participation and/or Case Record cannot have values when Client has a value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Method__c</fullName>
+    <description>From Client Session or Group Session field of same name</description>
+    <label>Contact Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Home Visit</fullName>
+                <default>false</default>
+                <label>Home Visit</label>
+            </value>
+            <value>
+                <fullName>Mailings</fullName>
+                <default>false</default>
+                <label>Mailings</label>
+            </value>
+            <value>
+                <fullName>Office Visit</fullName>
+                <default>false</default>
+                <label>Office Visit</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+                <label>Workshop</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

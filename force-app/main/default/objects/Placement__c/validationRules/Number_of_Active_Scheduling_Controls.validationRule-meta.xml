@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Active_Scheduling_Controls</fullName>
+    <active>true</active>
+    <errorConditionFormula>of_Active_Day_Scheduling_Controls__c &gt; 1
+
+||
+
+of_Active_Location_Scheduling_Controls__c &gt; 1
+
+||
+
+of_Negative_Day_Scheduling_Controls__c &gt; 1
+
+||
+
+of_Neg_Location_Scheduling_Controls__c &gt; 1</errorConditionFormula>
+    <errorMessage>You can only have one active location and/or day scheduling control at a time. Please edit the existing scheduling control.</errorMessage>
+</ValidationRule>

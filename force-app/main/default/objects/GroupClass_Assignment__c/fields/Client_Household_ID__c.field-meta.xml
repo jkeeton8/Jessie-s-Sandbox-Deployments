@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Household_ID__c</fullName>
+    <description>Used by ECM Triggers to group assignments by household to count stats.</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT(ISBLANK(Case_Record__c)), Case_Record__r.Client_Household__r.Id,
+    IF(NOT(ISBLANK(Case_Participation__c)),  Case_Participation__r.Client_Household_ID__c,
+        IF(NOT(ISBLANK(Client__c)),  Client__r.Client_Household__r.Id, null)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Client Household ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

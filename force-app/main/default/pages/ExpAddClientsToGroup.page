@@ -1,0 +1,193 @@
+<apex:page standardController="Group_Class__c" extensions="ExpAddClientsToGroupController" sidebar="false"  lightningstylesheets="true">
+    <apex:form id="theForm" >
+        <apex:sectionHeader subtitle="Add Clients to {!groupClass.Name}" />
+        <apex:pageBlock id="thePageBlock">
+            <c:ExpErrorPanel id="pageErrors" showMessagesInPanel="true" />
+            <apex:pageBlockSection id="searchCriteriaSection" title="Search Criteria" columns="1" collapsible="false">
+                <apex:actionRegion >
+                    <apex:pageBlockSection id="searchDropDownSection">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Type of Client" />
+                            <apex:selectList value="{!selectedClientType}" multiselect="false" size="1" onchange="toggleProgramList(this.value);">
+                                <apex:selectOptions value="{!clientTypeOptions}" />
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="programListSection">
+                            <apex:outputLabel id="programListLabel" value="Program" />
+                            <apex:selectList id="programList" value="{!selectedProgramId}" multiselect="false" size="1">
+                                <apex:selectOptions value="{!programOptions}" />
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection columns="4">
+                        <apex:inputField value="{!searchClient.firstName}" />
+                        <apex:inputField value="{!searchClient.lastName}" required="false"/>
+                        <apex:repeat value="{!searchClientFields}" var="f2">
+                            <apex:inputField value="{!searchClient[f2]}"   />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <apex:panelGrid id="searchButtonPanel" width="100%" style="text-align:center">
+                        <apex:actionStatus id="searchStatus" >
+                            <apex:facet name="start">
+                                <apex:outputPanel >
+                                    <c:ExpProcessingImage msg="Searching..."/> 
+                                </apex:outputPanel>
+                            </apex:facet>
+                            <apex:facet name="stop">
+                                <apex:outputPanel id="searchBtnOutput" >
+                                     <apex:commandButton id="searchBtn" status="searchStatus"  value="Search" 
+                                                         action="{!search}" rerender="searchResultsSection,pageErrors,searchBtnOutput" />
+                                     <table width="100%"><tr>                    
+                                     <td width="20%"></td><td><apex:pageMessage rendered="{!searchExecuted && !hasSaveMessage}" severity="info" summary="{!searchResultMessage}" strength="2"/></td><td width="20%"></td>
+                                     </tr>
+                                     </table>
+                                     <script>var searchBtn = document.getElementById('{!$Component.searchBtn}');</script>
+                                </apex:outputPanel>
+                            </apex:facet>
+                        </apex:actionStatus>
+                    </apex:panelGrid>
+                </apex:actionRegion>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="searchResultsSection" title="Search Results" columns="1" collapsible="false">
+                <apex:pageMessage severity="info" summary="{!saveMessage}" strength="2" rendered="{!hasSaveMessage}"/>
+                <apex:panelGrid width="100%" style="text-align:center">
+                    <apex:outputPanel id="saveCloseBtnPanel">
+                        <table width="100%">
+                            <tr>
+                                <td width="30%"></td>
+                                <td>
+                                    <apex:actionStatus id="saveStatus" >
+                                        <apex:facet name="start">
+                                            <apex:outputPanel >
+                                                <apex:commandButton value="Saving..." disabled="true" />  
+                                            </apex:outputPanel>
+                                        </apex:facet>
+                                        <apex:facet name="stop">
+                                            <apex:outputPanel >
+                                                <apex:commandButton id="saveBtn" status="saveStatus" value="Save" action="{!save}" 
+                                                        rendered="{!searchExecuted && resultsFound}" rerender="thePageBlock"/>
+                                            </apex:outputPanel>
+                                        </apex:facet>
+                                    </apex:actionStatus>
+                                    <apex:commandButton value="Close" action="{!close}" immediate="true" />
+                                </td>
+                                <td width="30%"></td>
+                            </tr>
+                        </table>
+                    </apex:outputPanel>
+                </apex:panelGrid>
+                
+                <apex:pageBlockSection id="enrolledClientResults"  title="Existing Enrolled Clients" 
+                                       columns="1" collapsible="false" rendered="{!enrolledClientsFound}">
+                    <apex:pageBlockTable value="{!resultList}" var="r" width="100%" align="center" > 
+                        <apex:column headerValue="Select" >
+                            <apex:inputCheckbox value="{!r.isInClass}"/>   
+                        </apex:column>
+                        <apex:column headerValue="Status" >
+                            <apex:outputField label="" value="{!r.caseRecord.Status__c}" /> 
+                        </apex:column>
+                        <apex:column headerValue="Client" >
+                            <apex:outputField label="" value="{!r.caseRecord.Main_Client__c}" /> 
+                        </apex:column>
+                        <apex:column headerValue="Client Household" >
+                            <apex:outputField label="" value="{!r.caseRecord.Main_Client__r.Client_Household__c}" /> 
+                        </apex:column>
+                        <apex:repeat value="{!enrolledClientFields}" var="f2">
+                            <apex:column headerValue="{!f2.label}" value="{!r.caseRecord[f2]}"   />
+                        </apex:repeat>
+                    </apex:pageBlockTable>  
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection id="caseParticipantResults" title="Existing Case Participants" 
+                                       columns="1" collapsible="false" rendered="{!caseParticipantsFound}"> 
+                    <apex:pageBlockTable value="{!resultList}" var="r" width="100%" align="center" > 
+                        <apex:column >
+                            <apex:inputCheckbox value="{!r.isInClass}" />   
+                        </apex:column>
+                        <apex:column headerValue="Participant" >
+                            <apex:outputField label="" value="{!r.caseParticipant.Participant__c}" /> 
+                        </apex:column>
+                        <apex:column headerValue="Case Participation Name" >
+                            <apex:outputField label="" value="{!r.caseParticipant.Name}" /> 
+                        </apex:column>
+                        <apex:repeat value="{!caseParticipantFields}" var="f2">
+                            <apex:column headerValue="{!f2.label}" value="{!r.caseParticipant[f2]}" />
+                        </apex:repeat>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection id="clientResults" title="New and Existing Clients" 
+                                       columns="1" collapsible="false" rendered="{!selectClientTypeIsClient}">
+                    <apex:pageBlockTable value="{!resultList}" var="r" width="100%" align="center" > 
+                        <apex:column >
+                            <apex:inputCheckbox value="{!r.isInClass}" />   
+                        </apex:column>
+                        <apex:column headerValue="First Name" >
+                            <apex:outputField label="" value="{!r.client.FirstName}" rendered="{!r.client.Id != null}"/>
+                            <apex:inputField label="" value="{!r.client.FirstName}" rendered="{!r.client.Id == null}"/>
+                        </apex:column>
+                        <apex:column headerValue="Last Name" >
+                            <apex:outputField label="" value="{!r.client.LastName}" rendered="{!r.client.Id != null}"/>
+                            <apex:inputField label="" value="{!r.client.LastName}" rendered="{!r.client.Id == null}"/>
+                        </apex:column>
+                        <apex:repeat value="{!clientFields}" var="f2">
+                            <apex:column headerValue="{!f2.label}" >
+                                <apex:outputField value="{!r.client[f2]}"  rendered="{!r.client.Id != null}"/>
+                                <apex:inputField value="{!r.client[f2]}"  rendered="{!r.client.Id == null}"/>
+                            </apex:column>
+                        </apex:repeat>
+                    </apex:pageBlockTable>
+                    <apex:panelGrid width="100%" style="text-align:center">
+                        <apex:actionRegion >
+                            <apex:actionStatus id="addRowStatus" >
+                                <apex:facet name="start">
+                                    <apex:outputPanel >
+                                        <apex:commandButton value="Add Row..." disabled="true" />  
+                                    </apex:outputPanel>
+                                </apex:facet>
+                                <apex:facet name="stop">
+                                      <apex:outputPanel >
+                                         <apex:commandButton id="addRowBtn" status="addRowStatus" value="Add Row" action="{!addRow}" 
+                                                             rerender="clientResults,saveCloseBtnPanel"/>
+                                     </apex:outputPanel>
+                                </apex:facet>
+                             </apex:actionStatus>
+                        </apex:actionRegion>
+                    </apex:panelGrid>
+                </apex:pageBlockSection>
+                <div>{!debug}</div>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        var programList = document.getElementById('{!$Component.theForm.thePageBlock.searchCriteriaSection.searchDropDownSection.programListSection.programList}');
+        var programListLabel = document.getElementById('{!$Component.theForm.thePageBlock.searchCriteriaSection.searchDropDownSection.programListSection.programListLabel}');
+        
+        function toggleProgramList(toc) {
+            if(toc == 'Non-Enrolled Clients') {
+                programList.style.display='None';
+                programListLabel.style.display='None';
+            } else {
+                programList.style.display='Block';
+                programListLabel.style.display='Block';
+            }
+        }
+        
+        function replaceEnter(evt){
+          var e = evt || window.event;
+          if (e.keyCode == 13){
+            var allElements = document.getElementsByTagName('*');
+            for (var i = 0; i < allElements.length; i++){
+              if (allElements[i].id.indexOf("searchBtn") !=-1){
+                allElements[i].click();
+              }
+            }
+            return false;
+          }else{
+            return true;
+          }
+        }
+        document.onkeypress = replaceEnter;
+        
+    </script>
+</apex:page>

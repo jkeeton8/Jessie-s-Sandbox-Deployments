@@ -1,0 +1,10 @@
+<apex:page standardController="Contact" extensions="ExpContactStatusBarController" 
+           sidebar="false" showHeader="false" >
+    <apex:stylesheet value="{!URLFOR($Resource.ExpResources, 'exp_statusbar.css')}"/>
+    
+    <apex:outputPanel rendered="{!showStatusBar}">
+        <apex:dynamicComponent componentValue="{!statusBar}" />
+    </apex:outputPanel>
+    <apex:pageMessage severity="info" strength="2" rendered="{!!showStatusBar}"
+                    summary="This contact type does not have a status bar configuration" /> 
+</apex:page>

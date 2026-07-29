@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FY22_Placements</fullName>
+    <columns>Placement_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Case_Record__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Job_Type__c</columns>
+    <columns>Employment_Source__c</columns>
+    <columns>Student_Source__c</columns>
+    <columns>Job_Placement_Owner__c</columns>
+    <columns>Organization_TCP__c</columns>
+    <columns>ETJ_Commitment_End_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Starting_Wage__c</columns>
+    <columns>Starting_Hours__c</columns>
+    <columns>Retention_Exception__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Placement__c.General_Send_Out_Employment</value>
+    </filters>
+    <filters>
+        <field>Placement_Year__c</field>
+        <operation>equals</operation>
+        <value>FY22</value>
+    </filters>
+    <filters>
+        <field>Placement_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>FY22 Placements</label>
+</ListView>

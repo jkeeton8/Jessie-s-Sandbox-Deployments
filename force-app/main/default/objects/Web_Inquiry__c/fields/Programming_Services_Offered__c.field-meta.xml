@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programming_Services_Offered__c</fullName>
+    <label>Programming/Services Offered</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Workforce development</fullName>
+                <default>false</default>
+                <label>Workforce development</label>
+            </value>
+            <value>
+                <fullName>Mental health counseling</fullName>
+                <default>false</default>
+                <label>Mental health counseling</label>
+            </value>
+            <value>
+                <fullName>Hunger alleviation</fullName>
+                <default>false</default>
+                <label>Hunger alleviation</label>
+            </value>
+            <value>
+                <fullName>Recovery care</fullName>
+                <default>false</default>
+                <label>Recovery care</label>
+            </value>
+            <value>
+                <fullName>Emergency/transitional housing support</fullName>
+                <default>false</default>
+                <label>Emergency/transitional housing support</label>
+            </value>
+            <value>
+                <fullName>Legal aid (e.g., reentry, expungement, etc.)</fullName>
+                <default>false</default>
+                <label>Legal aid (e.g., reentry, expungement, etc.)</label>
+            </value>
+            <value>
+                <fullName>Long-term housing</fullName>
+                <default>false</default>
+                <label>Long-term housing</label>
+            </value>
+            <value>
+                <fullName>Childcare</fullName>
+                <default>false</default>
+                <label>Childcare</label>
+            </value>
+            <value>
+                <fullName>Certificate training</fullName>
+                <default>false</default>
+                <label>Certificate training</label>
+            </value>
+            <value>
+                <fullName>GED/high school equivalency</fullName>
+                <default>false</default>
+                <label>GED/high school equivalency</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

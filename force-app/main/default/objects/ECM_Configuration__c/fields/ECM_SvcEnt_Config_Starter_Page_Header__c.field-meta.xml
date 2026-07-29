@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_SvcEnt_Config_Starter_Page_Header__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&lt;apex:page controller=\&quot;ExpServiceEntryController\&quot; sidebar=\&quot;false\&quot; tabStyle=\&quot;Case_Record__c\&quot;&gt;&quot; + BR() +
+&quot;    &quot; + &quot;&lt;apex:stylesheet value=\&quot;{&quot; + &quot;!&quot; + &quot;URLFOR(&quot; + &quot;$&quot; + &quot;Resource.ExpResources, styleSheet)&quot; + &quot;}\&quot;/&gt;&quot; + BR() +
+&quot;    &quot; + &quot;&lt;apex:form id=\&quot;theForm\&quot;&gt;&quot; +  BR() +
+&quot;        &quot; + &quot;&lt;apex:image value=\&quot;{&quot; + &quot;!&quot; + &quot;$&quot; + &quot;Resource.EcmLogov2&quot; + &quot;}\&quot;/&gt;&quot; +  BR() +
+&quot;        &quot; + &quot;&lt;apex:sectionHeader title=\&quot;{&quot; + &quot;!&quot; + &quot;selectedServiceActivityName&quot; +&quot;} - {&quot; + &quot;!&quot; + &quot;clientSessionName}\&quot; /&gt;&quot; +  BR() +
+&quot;        &quot; + &quot;&lt;apex:pageBlock id=\&quot;thePageBlock\&quot;&gt;&quot; +  BR() +
+&quot;            &quot; + &quot;&lt;apex:pageMessages id=\&quot;errors\&quot;/&gt;&quot; + BR() + BR() + 
+&quot;&lt;!-- **** Based off of ECM Configuration: &quot;+Name+&quot; ****--&gt;&quot; +BR() + BR()</formula>
+    <inlineHelpText>This sample Visualforce is meant only as helper sample code for setting up an ECM configuration.</inlineHelpText>
+    <label>ECM SvcEnt Config Starter Page Header</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

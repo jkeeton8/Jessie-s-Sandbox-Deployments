@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Category__c</fullName>
+    <inlineHelpText>Which certification category was used?</inlineHelpText>
+    <label>Certification Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OSHA</fullName>
+                <default>false</default>
+                <label>OSHA</label>
+            </value>
+            <value>
+                <fullName>Forklift</fullName>
+                <default>false</default>
+                <label>Forklift</label>
+            </value>
+            <value>
+                <fullName>Community Health Worker</fullName>
+                <default>false</default>
+                <label>Community Health Worker</label>
+            </value>
+            <value>
+                <fullName>Carpentry</fullName>
+                <default>false</default>
+                <label>Carpentry</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>Landscaping/Gardening (Horticulture)</fullName>
+                <default>false</default>
+                <label>Landscaping/Gardening (Horticulture)</label>
+            </value>
+            <value>
+                <fullName>Construction Trade (i.e., electrical, plumbing, etc)</fullName>
+                <default>false</default>
+                <label>Construction Trade (i.e., electrical, plumbing, etc)</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Project Management (planning/organizing projects for a team)</fullName>
+                <default>false</default>
+                <label>Project Management (planning/organizing projects for a team)</label>
+            </value>
+            <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
+                <fullName>Waste Water Sampling Coordinator</fullName>
+                <default>false</default>
+                <label>Waste Water Sampling Coordinator</label>
+            </value>
+            <value>
+                <fullName>Entrepreneurship</fullName>
+                <default>false</default>
+                <label>Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>CDL</fullName>
+                <default>false</default>
+                <label>CDL</label>
+            </value>
+            <value>
+                <fullName>Banking</fullName>
+                <default>false</default>
+                <label>Banking</label>
+            </value>
+            <value>
+                <fullName>General IT</fullName>
+                <default>false</default>
+                <label>General IT</label>
+            </value>
+            <value>
+                <fullName>Construction flagger</fullName>
+                <default>false</default>
+                <label>Construction flagger</label>
+            </value>
+            <value>
+                <fullName>HS Diploma/GED</fullName>
+                <default>false</default>
+                <label>HS Diploma/GED</label>
+            </value>
+            <value>
+                <fullName>Other (please specify)</fullName>
+                <default>false</default>
+                <label>Other (please specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

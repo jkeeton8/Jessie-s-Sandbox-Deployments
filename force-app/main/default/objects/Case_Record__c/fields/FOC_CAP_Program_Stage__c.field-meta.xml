@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOC_CAP_Program_Stage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL(Program_Site_Track__c, &quot;FOC&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;CCP&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;CAP&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;CVI&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;WDC&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;Work First&quot;),
+ISPICKVAL(Program_Site_Track__c, &quot;XCH&quot;)
+),
+/* Verifying Portal is FOC, CAP, CCP, WDC, CVI, Work First or XCH */
+IF(
+NOT(ISNULL(Advancement_Start_Date__c)),
+&quot;Advancement&quot;, /* If Advancement Start Date isn&apos;t Null, setting Program Stage to Advancement */
+IF(
+AND(
+NOT(ISNULL(Start_Date_of_First_Placement__c)),
+ISNULL(Most_Recent_Employment_End_Date__c),
+Employment_Status__c &lt;&gt; &quot;Short-Term&quot;
+
+),
+
+&quot;Retention&quot;, /* If Start Date of First Placement isn&apos;t Null, setting Program Stage to Retention */
+IF(
+AND(
+TODAY() &gt; (DATEVALUE(TEXT(Scheduled_Program_Start_Date__c)) + 25),
+OR(
+ISBLANK(Inactive_Date__c),
+Inactive_Date__c &gt; (DATEVALUE(TEXT(Scheduled_Program_Start_Date__c)) + 25)
+),
+ISPICKVAL(Accepted__c, &quot;Yes&quot;)
+),
+&quot;Leadership Development&quot;, /* If conditions match, setting Program Stage to Leadership Development */
+IF(
+AND(
+TODAY() &gt;= DATEVALUE(TEXT(Scheduled_Program_Start_Date__c)),
+ISPICKVAL(Accepted__c, &quot;Yes&quot;),
+OR(
+ISBLANK(Inactive_Date__c),
+Inactive_Date__c &gt;= DATEVALUE(TEXT(Scheduled_Program_Start_Date__c))
+)
+),
+&quot;Transformations&quot;, /* If today is greater than Program Start Date, set Program Stage to Transformations */
+IF(
+ISPICKVAL(Accepted__c, &quot;Yes&quot;),
+&quot;Accepted&quot;,
+&quot;Referred&quot;
+) /* If Accepted = Yes, set Program Stage to Accepted; otherwise, Referred */
+)
+)
+)
+),
+NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>FOC, CAP Program Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

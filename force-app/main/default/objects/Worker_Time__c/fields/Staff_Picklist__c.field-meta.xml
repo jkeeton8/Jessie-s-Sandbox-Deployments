@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Picklist__c</fullName>
+    <label>Staff</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>August Mangun</fullName>
+                <default>false</default>
+                <label>August Mangun</label>
+            </value>
+            <value>
+                <fullName>Clemente Urrutia</fullName>
+                <default>false</default>
+                <label>Clemente Urrutia</label>
+            </value>
+            <value>
+                <fullName>Darnell Pendleton</fullName>
+                <default>false</default>
+                <label>Darnell Pendleton</label>
+            </value>
+            <value>
+                <fullName>David Atkinson</fullName>
+                <default>false</default>
+                <label>David Atkinson</label>
+            </value>
+            <value>
+                <fullName>Dennis Rodriguez</fullName>
+                <default>false</default>
+                <label>Dennis Rodriguez</label>
+            </value>
+            <value>
+                <fullName>Enrique Borges</fullName>
+                <default>false</default>
+                <label>Enrique Borges</label>
+            </value>
+            <value>
+                <fullName>Ivan Campbell</fullName>
+                <default>false</default>
+                <label>Ivan Campbell</label>
+            </value>
+            <value>
+                <fullName>Jeremy Williams</fullName>
+                <default>false</default>
+                <label>Jeremy Williams</label>
+            </value>
+            <value>
+                <fullName>Juan Rodriguez</fullName>
+                <default>false</default>
+                <label>Juan Rodriguez</label>
+            </value>
+            <value>
+                <fullName>LaBradford Martin</fullName>
+                <default>false</default>
+                <label>LaBradford Martin</label>
+            </value>
+            <value>
+                <fullName>Lisa Kidd</fullName>
+                <default>false</default>
+                <label>Lisa Kidd</label>
+            </value>
+            <value>
+                <fullName>Michael Bellino</fullName>
+                <default>false</default>
+                <label>Michael Bellino</label>
+            </value>
+            <value>
+                <fullName>Michael Hurst</fullName>
+                <default>false</default>
+                <label>Michael Hurst</label>
+            </value>
+            <value>
+                <fullName>Ron Holakovsky</fullName>
+                <default>false</default>
+                <label>Ron Holakovsky</label>
+            </value>
+            <value>
+                <fullName>Rosetta Reeves</fullName>
+                <default>false</default>
+                <label>Rosetta Reeves</label>
+            </value>
+            <value>
+                <fullName>Sam Lovett</fullName>
+                <default>false</default>
+                <label>Sam Lovett</label>
+            </value>
+            <value>
+                <fullName>Tommy Wells</fullName>
+                <default>false</default>
+                <label>Tommy Wells</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

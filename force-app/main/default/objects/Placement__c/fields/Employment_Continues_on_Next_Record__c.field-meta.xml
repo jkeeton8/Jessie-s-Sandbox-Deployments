@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Continues_on_Next_Record__c</fullName>
+    <inlineHelpText>Pick &quot;Yes&quot; if the student is continuing employment with the same company and if a new record will be created to capture the information.</inlineHelpText>
+    <label>Employment Continues on Next Record</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>End_Details__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>New Position-Lateral Move</controllingFieldValue>
+            <controllingFieldValue>Same Position-Change in Status</controllingFieldValue>
+            <controllingFieldValue>New Position-Promoted</controllingFieldValue>
+            <controllingFieldValue>Completed Initial Terms of Employment</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Position-Lateral Move</controllingFieldValue>
+            <controllingFieldValue>Same Position-Change in Status</controllingFieldValue>
+            <controllingFieldValue>New Position-Promoted</controllingFieldValue>
+            <controllingFieldValue>Completed Initial Terms of Employment</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

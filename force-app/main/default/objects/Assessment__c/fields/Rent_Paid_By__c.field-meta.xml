@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rent_Paid_By__c</fullName>
+    <description>Revised picklist options in Nov 2018 as part of Incoming Participant Data cleanup. &quot;Subsidy - CHA&quot; and &quot;Subsidy - Section 8&quot; options take the place of former &apos;Involved with CHA&apos; and &apos;Involved with Section 8&apos; Case Record fields.</description>
+    <inlineHelpText>Revised picklist options in Nov 2018.</inlineHelpText>
+    <label>Additional Rent Paid By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Savings</fullName>
+                <default>false</default>
+                <label>Savings</label>
+            </value>
+            <value>
+                <fullName>Subsidy</fullName>
+                <default>false</default>
+                <label>Subsidy</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Shelter/Recovery</fullName>
+                <default>false</default>
+                <label>Shelter/Recovery</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Family/Friend</fullName>
+                <default>false</default>
+                <label>Family/Friend</label>
+            </value>
+            <value>
+                <fullName>Subsidy - CHA</fullName>
+                <default>false</default>
+                <label>Subsidy - CHA</label>
+            </value>
+            <value>
+                <fullName>Subsidy - Section 8</fullName>
+                <default>false</default>
+                <label>Subsidy - Section 8</label>
+            </value>
+            <value>
+                <fullName>Subsidy - Other</fullName>
+                <default>false</default>
+                <label>Subsidy - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

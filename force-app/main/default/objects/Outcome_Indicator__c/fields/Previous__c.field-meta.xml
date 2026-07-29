@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Previous</label>
+    <referenceTo>Outcome_Indicator__c</referenceTo>
+    <relationshipLabel>Outcome Indicators (Previous)</relationshipLabel>
+    <relationshipName>Outcome_Indicators1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

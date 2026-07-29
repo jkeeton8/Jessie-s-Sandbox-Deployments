@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts_Assigned_in_Allocations_Range__c</fullName>
+    <formula>if (Current_Year_DHS_FSE_T_Allocations__c
+|| Current_Year_DHS_TANF_Allocations__c 
+|| Current_Year_CDBG_T_P_Allocations__c 
+|| Current_Year_CSBG_TJ_Allocations__c 
+|| Current_Year_CDBG_TRD_Allocations__c 
+|| Current_Year_DHS_S2S_Allocations__c 
+|| Contracts_None_Allocations__c, True, False)</formula>
+    <inlineHelpText>Checked if student has an open assignment to an active grant/contract during the allocations timeframe. Chicago Foundation for Women (CFW) is excluded.</inlineHelpText>
+    <label>Contracts: Assigned in Allocations Range</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

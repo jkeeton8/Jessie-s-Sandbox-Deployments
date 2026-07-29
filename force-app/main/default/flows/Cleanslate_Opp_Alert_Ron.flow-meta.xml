@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Cleanslate_Opp_Alert_Ron</name>
+        <label>Opportunity.Cleanslate_Opp_Alert_Ron</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Opportunity.Cleanslate_Opp_Alert_Ron</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Cleanslate_Opp_Alert_Ron</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Cleanslate Opp Alert (Ron) workflow rule
+Workflow rule description: &quot;</description>
+    <label>Cleanslate Opp Alert (Ron)</label>
+    <migratedFromWorkflowRuleName>Cleanslate Opp Alert (Ron)</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Cleanslate_Opp_Alert_Ron</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordTypeId} = &apos;012i0000000xxwY&apos; &amp;&amp;
+
+ISCHANGED({!$Record.StageName}) &amp;&amp; 
+
+(ispickval({!$Record.StageName}, &quot;Pricing Estimate&quot;) ||
+ispickval({!$Record.StageName}, &quot;Bid Submitted&quot;) ||
+ispickval({!$Record.StageName}, &quot;Bid Negotiation&quot;) ||
+ispickval({!$Record.StageName}, &quot;Bid Won&quot;) ||
+ispickval({!$Record.StageName}, &quot;Prospect&quot;) ||
+ispickval({!$Record.StageName}, &quot;Contract Submitted&quot;) ||
+ispickval({!$Record.StageName}, &quot;Contract Agreed &amp; Unsigned&quot;) ||
+ispickval({!$Record.StageName}, &quot;Work Completed&quot;) ||
+ispickval({!$Record.StageName}, &quot;Contract Executed&quot;))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

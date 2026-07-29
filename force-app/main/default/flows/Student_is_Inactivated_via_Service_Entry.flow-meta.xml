@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Student is Inactivated via Service Entry {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Student is Inactivated via Service Entry</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case_Record_Inactivation_Fields</name>
+        <label>Update Case Record — Inactivation Fields</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Inactivated_By__c</field>
+            <value>
+                <elementReference>$Record.CreatedBy.Full_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactivation_Description__c</field>
+            <value>
+                <elementReference>$Record.Progress_Note_Short__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactivation_Service_Entry_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Case_Record__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Case_Record_Inactivation_Fields</targetReference>
+        </connector>
+        <filterLogic>1 OR 2 OR 3 OR 4 OR 5</filterLogic>
+        <filters>
+            <field>Service_Entry_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactivate Student</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Entry_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactivate Worker</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Entry_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inactivation</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Entry_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Drug Test</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Send_Inactivation_Email__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Client_Session__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

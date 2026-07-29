@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>New_Referral_SPRING_Forward_Housing_Navigation</name>
+        <label>New Referral, SPRING Forward Housing Navigation</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>Outbound_Referral__c.New_Referral_SPRING_Forward_Housing_Navigation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Outbound_Referral__c.New_Referral_SPRING_Forward_Housing_Navigation</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>New_Referral_Supportive_Services</name>
+        <label>New Referral, Supportive Services</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>Outbound_Referral__c.New_Referral_Supportive_Services</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Outbound_Referral__c.New_Referral_Supportive_Services</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Email alert for SPRING Forward Housing Navigation referrals.</description>
+        <name>SPRING_Forward_Housing_Navigation</name>
+        <label>SPRING Forward Housing Navigation?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>New_Referral_Supportive_Services</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Referral_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPRING Forward Housing Navigation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_Referral_SPRING_Forward_Housing_Navigation</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Notify YaSheka, Rita, and Contracts when a new SPRING Forward referral is created.</description>
+    <environments>Default</environments>
+    <interviewLabel>Supportive Services Referral Created {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Supportive Services Referral Created</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SPRING_Forward_Housing_Navigation</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Referral_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Internal - Supportive Services</stringValue>
+            </value>
+        </filters>
+        <object>Outbound_Referral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

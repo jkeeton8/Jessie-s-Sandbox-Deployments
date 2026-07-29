@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transit_Card_Number_cannot_be_edited</fullName>
+    <active>true</active>
+    <errorConditionFormula>ischanged(Name) &amp;&amp; not($Profile.Id = &apos;00ei0000001FFFf&apos;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Transit Card Number cannot be edited.</errorMessage>
+</ValidationRule>

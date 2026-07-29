@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Mileage</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Total_Mileage__c &lt; 0  || Total_Mileage__c  &gt;= 200)
+
+&amp;&amp; 
+
+Organization__r.Name &lt;&gt; &quot;Hesed House&quot;</errorConditionFormula>
+    <errorMessage>Total Mileage is negative or Total Mileage is too high (over 200). Please review Mileage Out and Mileage In.</errorMessage>
+</ValidationRule>

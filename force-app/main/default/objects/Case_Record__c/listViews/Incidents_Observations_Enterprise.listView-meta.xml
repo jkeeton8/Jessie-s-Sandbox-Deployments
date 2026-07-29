@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incidents_Observations_Enterprise</fullName>
+    <columns>NAME</columns>
+    <columns>PDS__c</columns>
+    <columns>Number_of_Weeks_in_House__c</columns>
+    <columns>Number_of_Program_Write_Ups__c</columns>
+    <columns>Number_of_Program_Days_Off_Remaining__c</columns>
+    <columns>Number_of_Unresolved_Program_Holds__c</columns>
+    <columns>Number_of_Unresolved_Send_Out_Holds__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case_Record__c.Classic</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,On Hold</value>
+    </filters>
+    <filters>
+        <field>Program_Stage__c</field>
+        <operation>equals</operation>
+        <value>Core Training,Advanced Training</value>
+    </filters>
+    <filters>
+        <field>Program_Site_Track__c</field>
+        <operation>contains</operation>
+        <value>Downtown</value>
+    </filters>
+    <label>Incidents &amp; Observations Classic</label>
+</ListView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <inlineHelpText>Which Cara building the device will be located in.</inlineHelpText>
+    <label>Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>237</fullName>
+                <default>false</default>
+                <label>237</label>
+            </value>
+            <value>
+                <fullName>SSC</fullName>
+                <default>false</default>
+                <label>SSC</label>
+            </value>
+            <value>
+                <fullName>Cleanslate</fullName>
+                <default>false</default>
+                <label>Cleanslate</label>
+            </value>
+            <value>
+                <fullName>Remote</fullName>
+                <default>false</default>
+                <label>Remote</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

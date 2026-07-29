@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Contact Preferred Email - rewrite workflow rule
+Workflow rule description: Edited rule in Oct 2018. &apos;Imported Email&apos; field no longer used.
+
+This workflow OVERWRITES the existing value in the standard Email field based on the Preferred Email field value and includes the imported email field.&quot;</description>
+    <formulas>
+        <name>Contact_Preferred_Email_UpdatedFormula</name>
+        <dataType>String</dataType>
+        <expression>CASE( 
+$Record.npe01__Preferred_Email__c , 
+&quot;Work&quot;, IF(!ISBLANK($Record.npe01__WorkEmail__c),$Record.npe01__WorkEmail__c,PRIORVALUE($Record.Email)),
+&quot;Personal&quot;,  IF(!ISBLANK($Record.npe01__HomeEmail__c),$Record.npe01__HomeEmail__c,PRIORVALUE($Record.Email)) ,
+&quot;Alternate&quot;,  IF(!ISBLANK($Record.npe01__AlternateEmail__c),$Record.npe01__AlternateEmail__c,PRIORVALUE($Record.Email)),
+PRIORVALUE($Record.Email))</expression>
+    </formulas>
+    <label>Contact Preferred Email - rewrite</label>
+    <migratedFromWorkflowRuleName>Contact Preferred Email - rewrite</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>includes imported email</description>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>Contact_Preferred_Email_UpdatedFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>OR( LEN({!$Record.Email})=0, ISCHANGED({!$Record.npe01__Preferred_Email__c}) , ISCHANGED({!$Record.npe01__WorkEmail__c}) , ISCHANGED({!$Record.npe01__HomeEmail__c}) , ISCHANGED({!$Record.npe01__AlternateEmail__c}) )</filterFormula>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

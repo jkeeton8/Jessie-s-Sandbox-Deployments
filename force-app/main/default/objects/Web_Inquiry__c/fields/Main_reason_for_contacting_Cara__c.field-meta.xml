@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_reason_for_contacting_Cara__c</fullName>
+    <label>Main reason for contacting Cara?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Job training, search and skills for success</fullName>
+                <default>false</default>
+                <label>Job training, search and skills for success</label>
+            </value>
+            <value>
+                <fullName>Short-term/temporary work</fullName>
+                <default>false</default>
+                <label>Short-term/temporary work</label>
+            </value>
+            <value>
+                <fullName>Long-term work</fullName>
+                <default>false</default>
+                <label>Long-term work</label>
+            </value>
+            <value>
+                <fullName>Advancement Opportunities (Alumni participants ONLY)</fullName>
+                <default>false</default>
+                <label>Advancement Opportunities (Alumni participants ONLY)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

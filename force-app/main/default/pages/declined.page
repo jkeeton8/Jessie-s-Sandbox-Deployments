@@ -1,0 +1,13 @@
+<apex:page showHeader="false"  standardStylesheets="false"   lightningstylesheets="true">
+    <apex:composition template="{!$Site.Template}">
+        <apex:define name="body">
+            <h1>Transaction Declined</h1>
+            <p>
+               Unfortunately there has been an error completing the transaction.  Please use the back button on your browser and verify your payment details and try again. 
+               Specifically, please check to see if the donation amount entered is $0, as online form auto-completion occasionally overrides entry. Thank you!              
+            
+                </p>       
+            <!-- END CONTENT -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

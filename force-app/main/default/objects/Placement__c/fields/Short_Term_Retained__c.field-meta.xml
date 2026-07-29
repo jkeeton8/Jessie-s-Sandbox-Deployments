@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Term_Retained__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Checked if placement meets criteria for short-term placements to be considered successfully completed.</description>
+    <formula>IF(
+AND( 
+ISPICKVAL(Job_Type__c,&quot;Short-Term&quot;),
+ Days_Until_End_Date__c  &lt;=  0),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Checked if placement meets criteria for short-term placements to be considered successfully completed.</inlineHelpText>
+    <label>Short-Term Completion</label>
+    <securityClassification>Public</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

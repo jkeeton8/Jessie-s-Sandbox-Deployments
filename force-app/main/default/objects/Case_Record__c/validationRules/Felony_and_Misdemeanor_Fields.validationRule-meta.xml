@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Felony_and_Misdemeanor_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(Background_Check_Result__c, &quot;Reviewed &amp; Approved&quot;)
+
+&amp;&amp;
+
+Background_Check_Returned_Date__c &gt;= date(2019,09,16)
+
+&amp;&amp;
+
+(isblank(text(Felony__c)) ||  isblank(text(Felony_Last_7_Years__c)) ||  isblank(text(Misdemeanor__c)) ||  isblank(text(Misdemeanor_Last_7_Years__c)))</errorConditionFormula>
+    <errorMessage>Please complete Felony &amp; Misdemeanor fields.</errorMessage>
+</ValidationRule>

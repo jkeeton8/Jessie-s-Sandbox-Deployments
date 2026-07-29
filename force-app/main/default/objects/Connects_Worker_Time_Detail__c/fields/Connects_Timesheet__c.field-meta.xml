@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connects_Timesheet__c</fullName>
+    <label>Connects Timesheet</label>
+    <referenceTo>Connects_Worker_Time__c</referenceTo>
+    <relationshipLabel>Connects Worker Time</relationshipLabel>
+    <relationshipName>Connects_Worker_Time</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

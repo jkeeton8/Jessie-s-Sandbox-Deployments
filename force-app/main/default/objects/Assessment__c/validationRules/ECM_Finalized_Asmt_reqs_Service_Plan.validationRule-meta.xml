@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Finalized_Asmt_reqs_Service_Plan</fullName>
+    <active>true</active>
+    <description>A finalized assessment is required to have a related service plan.</description>
+    <errorConditionFormula>IF(CONTAINS(TEXT(Status__c), &apos;Final&apos;) &amp;&amp;  ISBLANK(Service_Plan__c ), true, false)</errorConditionFormula>
+    <errorDisplayField>Service_Plan__c</errorDisplayField>
+    <errorMessage>A Finalized assessment must have a Related Service Plan.</errorMessage>
+</ValidationRule>

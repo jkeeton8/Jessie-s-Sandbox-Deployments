@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Distributed_Before_Order_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Transit_Card_Inventory__r.Order_Date__c &gt; Date_Distributed__c</errorConditionFormula>
+    <errorDisplayField>Date_Distributed__c</errorDisplayField>
+    <errorMessage>Date Distributed cannot be before Inventory Order Date.</errorMessage>
+</ValidationRule>

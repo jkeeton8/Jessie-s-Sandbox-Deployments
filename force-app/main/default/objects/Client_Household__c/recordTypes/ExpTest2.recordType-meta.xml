@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpTest2</fullName>
+    <active>true</active>
+    <label>ExpTest2</label>
+    <picklistValues>
+        <picklist>Household_Composition__c</picklist>
+        <values>
+            <fullName>Eight Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Female Single Parent Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Five Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Four Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandparent%28s%29 and Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian%28s%29 and Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male Single Parent Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Multi-generational Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seven Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Parent Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Six Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Person Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Parent Household</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Parent Household %282 Females%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Parent Household %282 Males%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Parent Household %28Male and Female%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Person Household</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

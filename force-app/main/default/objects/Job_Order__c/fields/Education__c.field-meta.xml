@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Education__c</fullName>
+    <inlineHelpText>Choose all education types that are appropriate for this position. For example, if Associates or higher is appropriate, choose &quot;Associates&quot; AND &quot;Bachelors or higher&quot;.</inlineHelpText>
+    <label>Education</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No GED/HS Diploma</fullName>
+                <default>false</default>
+                <label>No GED/HS Diploma</label>
+            </value>
+            <value>
+                <fullName>GED/HS Diploma</fullName>
+                <default>false</default>
+                <label>GED/HS Diploma</label>
+            </value>
+            <value>
+                <fullName>Associates</fullName>
+                <default>false</default>
+                <label>Associates</label>
+            </value>
+            <value>
+                <fullName>Bachelors or higher</fullName>
+                <default>false</default>
+                <label>Bachelors or higher</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

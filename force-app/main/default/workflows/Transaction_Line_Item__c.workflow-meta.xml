@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Edit_Transaction_Record</fullName>
+        <field>Process_Builder_Trigger__c</field>
+        <literalValue>1</literalValue>
+        <name>Edit Transaction Record</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Felony</fullName>
+        <field>Felony__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Felony</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Formerly_Incarcerated</fullName>
+        <field>Formerly_Incarcerated__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Formerly Incarcerated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_1_Mo_Prior</fullName>
+        <field>Income_1_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 1 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_2_Mo_Prior</fullName>
+        <field>Income_2_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 2 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_3_Mo_Prior</fullName>
+        <field>Income_3_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 3 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_4_Mo_Prior</fullName>
+        <field>Income_4_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 4 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_5_Mo_Prior</fullName>
+        <field>Income_5_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 5 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_6_Mo_Prior</fullName>
+        <field>Income_6_Mo_Prior__c</field>
+        <formula>0</formula>
+        <name>Income, 6 Mo. Prior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Income_Verification_Mo</fullName>
+        <field>Income_Verification_Mo__c</field>
+        <formula>0</formula>
+        <name>Income, Verification Mo.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Misdemeanor</fullName>
+        <field>Misdemeanor__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Misdemeanor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Recently_Incarcerated</fullName>
+        <field>Recently_Incarcerated__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Recently Incarcerated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Formerly Incarcerated</fullName>
+        <actions>
+            <name>Formerly_Incarcerated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Transaction_Line_Item__c.Conviction_Outcome__c</field>
+            <operation>includes</operation>
+            <value>Incarcerated (Prison)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Transaction_Line_Item__c.Conviction_Outcome__c</field>
+            <operation>includes</operation>
+            <value>Incarcerated (Jail)</value>
+        </criteriaItems>
+        <failedMigrationToolVersion>260.10.1</failedMigrationToolVersion>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Income Verification%2C No Income</fullName>
+        <actions>
+            <name>Income_1_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_2_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_3_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_4_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_5_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_6_Mo_Prior</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Income_Verification_Mo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Transaction_Line_Item__c.Income_Source__c</field>
+            <operation>equals</operation>
+            <value>No Income</value>
+        </criteriaItems>
+        <description>When &quot;No Income&quot; is selected for the field &quot;Income Source&quot; on the Service Entry (Contracts Eligibility Screening), this rule zeroes out the monthly income fields (Income, Verification Mo.; Income, 1 Mo. Prior; Income, 2 Mo. Prior, etc.).</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Recently Incarcerated</fullName>
+        <actions>
+            <name>Recently_Incarcerated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <failedMigrationToolVersion>260.10.1</failedMigrationToolVersion>
+        <formula>AND( 
+OR( 
+INCLUDES(Conviction_Outcome__c, &quot;Incarcerated (Prison)&quot;), INCLUDES(Conviction_Outcome__c, &quot;Incarcerated (Jail)&quot;) 
+), 
+( 
+(Case_Record__r.Program_Start_Date__c-Conviction_Date__c)/365) 
+&lt;=2 
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trigger Transaction Process</fullName>
+        <actions>
+            <name>Edit_Transaction_Record</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Transaction_Line_Item__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>&quot;Conviction History, Verified&quot;,&quot;Conviction History, Self-Reported&quot;</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

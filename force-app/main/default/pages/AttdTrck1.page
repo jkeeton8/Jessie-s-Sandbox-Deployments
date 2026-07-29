@@ -1,0 +1,32 @@
+<apex:page controller="ExpGroupServiceEntryController" sidebar="false" tabStyle="Group_Class__c">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!groupClassSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Attendance Tracking, Core Training ****-->
+
+<!-- ***** Scheduling, page 1, order 1 ***** -->
+<c:ExpScheduling theParentController="{!this}" csName="CompSettings-22038"/>
+
+<!-- ***** Group Class Session, page 1, order 2 ***** -->
+<c:ExpGroupClassSession theParentController="{!this}" csName="CompSettings-0035"/>
+
+<!-- ***** Group Enrolled Client UOS, page 1, order 3 ***** -->
+<c:ExpGroupEnrolledClientUOS theParentController="{!this}" csName="CompSettings-11415"/>
+
+<!-- ***** Child Object List, page 1, order 4 ***** -->
+<c:ExpChildObjectList theParentController="{!this}" csName="CompSettings-22036"/>
+
+<!-- ***** Service Selection, page 1, order 8 ***** -->
+<c:ExpServiceSelection theParentController="{!this}" csName="CompSettings-22039"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

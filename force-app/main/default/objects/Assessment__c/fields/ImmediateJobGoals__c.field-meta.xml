@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImmediateJobGoals__c</fullName>
+    <label>Immediate Job Goals</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ImmediateJobInterests__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AgriculturalInspectors</fullName>
+                <default>false</default>
+                <label>Agricultural Inspectors</label>
+            </value>
+            <value>
+                <fullName>AgriculturalScientists</fullName>
+                <default>false</default>
+                <label>Agricultural Scientists</label>
+            </value>
+            <value>
+                <fullName>AnimalScientists</fullName>
+                <default>false</default>
+                <label>Animal Scientists</label>
+            </value>
+            <value>
+                <fullName>AquacultureWorkers</fullName>
+                <default>false</default>
+                <label>Aquaculture Workers</label>
+            </value>
+            <value>
+                <fullName>ConservationScientists</fullName>
+                <default>false</default>
+                <label>Conservation Scientists</label>
+            </value>
+            <value>
+                <fullName>FarmManagers</fullName>
+                <default>false</default>
+                <label>Farm Managers</label>
+            </value>
+            <value>
+                <fullName>FishandGameWardens</fullName>
+                <default>false</default>
+                <label>Fish and Game Wardens</label>
+            </value>
+            <value>
+                <fullName>Foresters</fullName>
+                <default>false</default>
+                <label>Foresters</label>
+            </value>
+            <value>
+                <fullName>FoodScientists</fullName>
+                <default>false</default>
+                <label>Food Scientists</label>
+            </value>
+            <value>
+                <fullName>GreenhouseManagers</fullName>
+                <default>false</default>
+                <label>Greenhouse Managers</label>
+            </value>
+            <value>
+                <fullName>Horticulturists</fullName>
+                <default>false</default>
+                <label>Horticulturists</label>
+            </value>
+            <value>
+                <fullName>LandscapeArchitects</fullName>
+                <default>false</default>
+                <label>Landscape Architects</label>
+            </value>
+            <value>
+                <fullName>NaturalResourceTechnicians</fullName>
+                <default>false</default>
+                <label>Natural Resource Technicians</label>
+            </value>
+            <value>
+                <fullName>RangeManagers</fullName>
+                <default>false</default>
+                <label>Range Managers</label>
+            </value>
+            <value>
+                <fullName>SoilConservationists</fullName>
+                <default>false</default>
+                <label>Soil Conservationists</label>
+            </value>
+            <value>
+                <fullName>WildlifeBiologists</fullName>
+                <default>false</default>
+                <label>Wildlife Biologists</label>
+            </value>
+            <value>
+                <fullName>Zoologists</fullName>
+                <default>false</default>
+                <label>Zoologists</label>
+            </value>
+            <value>
+                <fullName>Brickmasons</fullName>
+                <default>false</default>
+                <label>Brickmasons</label>
+            </value>
+            <value>
+                <fullName>BuildingInspectors</fullName>
+                <default>false</default>
+                <label>Building Inspectors</label>
+            </value>
+            <value>
+                <fullName>CarpenterApprentices</fullName>
+                <default>false</default>
+                <label>Carpenter Apprentices</label>
+            </value>
+            <value>
+                <fullName>Carpenters</fullName>
+                <default>false</default>
+                <label>Carpenters</label>
+            </value>
+            <value>
+                <fullName>CementMasons</fullName>
+                <default>false</default>
+                <label>Cement Masons</label>
+            </value>
+            <value>
+                <fullName>CivilDrafters</fullName>
+                <default>false</default>
+                <label>Civil Drafters</label>
+            </value>
+            <value>
+                <fullName>ConstructionLaborers</fullName>
+                <default>false</default>
+                <label>Construction Laborers</label>
+            </value>
+            <value>
+                <fullName>ConstructionManagers</fullName>
+                <default>false</default>
+                <label>Construction Managers</label>
+            </value>
+            <value>
+                <fullName>CostEstimators</fullName>
+                <default>false</default>
+                <label>Cost Estimators</label>
+            </value>
+            <value>
+                <fullName>Electricians</fullName>
+                <default>false</default>
+                <label>Electricians</label>
+            </value>
+            <value>
+                <fullName>FlooringInstallers</fullName>
+                <default>false</default>
+                <label>Flooring Installers</label>
+            </value>
+            <value>
+                <fullName>HVACTechnicians</fullName>
+                <default>false</default>
+                <label>HVAC Technicians</label>
+            </value>
+            <value>
+                <fullName>InsulationWorkers</fullName>
+                <default>false</default>
+                <label>Insulation Workers</label>
+            </value>
+            <value>
+                <fullName>Painters</fullName>
+                <default>false</default>
+                <label>Painters</label>
+            </value>
+            <value>
+                <fullName>Plumbers</fullName>
+                <default>false</default>
+                <label>Plumbers</label>
+            </value>
+            <value>
+                <fullName>Roofers</fullName>
+                <default>false</default>
+                <label>Roofers</label>
+            </value>
+            <value>
+                <fullName>SurveyingTechnicians</fullName>
+                <default>false</default>
+                <label>Surveying Technicians</label>
+            </value>
+            <value>
+                <fullName>TileSetters</fullName>
+                <default>false</default>
+                <label>Tile Setters</label>
+            </value>
+            <value>
+                <fullName>Actors</fullName>
+                <default>false</default>
+                <label>Actors</label>
+            </value>
+            <value>
+                <fullName>Announcers</fullName>
+                <default>false</default>
+                <label>Announcers</label>
+            </value>
+            <value>
+                <fullName>AudioTechnicians</fullName>
+                <default>false</default>
+                <label>Audio Technicians</label>
+            </value>
+            <value>
+                <fullName>BroadcastTechnicians</fullName>
+                <default>false</default>
+                <label>Broadcast Technicians</label>
+            </value>
+            <value>
+                <fullName>CameraOperators</fullName>
+                <default>false</default>
+                <label>Camera Operators</label>
+            </value>
+            <value>
+                <fullName>Directors</fullName>
+                <default>false</default>
+                <label>Directors</label>
+            </value>
+            <value>
+                <fullName>Editors</fullName>
+                <default>false</default>
+                <label>Editors</label>
+            </value>
+            <value>
+                <fullName>GraphicDesigners</fullName>
+                <default>false</default>
+                <label>Graphic Designers</label>
+            </value>
+            <value>
+                <fullName>Illustrators</fullName>
+                <default>false</default>
+                <label>Illustrators</label>
+            </value>
+            <value>
+                <fullName>Journalists</fullName>
+                <default>false</default>
+                <label>Journalists</label>
+            </value>
+            <value>
+                <fullName>MultimediaArtists</fullName>
+                <default>false</default>
+                <label>Multimedia Artists</label>
+            </value>
+            <value>
+                <fullName>Photographers</fullName>
+                <default>false</default>
+                <label>Photographers</label>
+            </value>
+            <value>
+                <fullName>RadioOperators</fullName>
+                <default>false</default>
+                <label>Radio Operators</label>
+            </value>
+            <value>
+                <fullName>SoundEngineers</fullName>
+                <default>false</default>
+                <label>Sound Engineers</label>
+            </value>
+            <value>
+                <fullName>TechnicalWriters</fullName>
+                <default>false</default>
+                <label>Technical Writers</label>
+            </value>
+            <value>
+                <fullName>VideoEditors</fullName>
+                <default>false</default>
+                <label>Video Editors</label>
+            </value>
+            <value>
+                <fullName>VisualDesigners</fullName>
+                <default>false</default>
+                <label>Visual Designers</label>
+            </value>
+            <value>
+                <fullName>AdministrativeAssistants</fullName>
+                <default>false</default>
+                <label>Administrative Assistants</label>
+            </value>
+            <value>
+                <fullName>BusinessAnalysts</fullName>
+                <default>false</default>
+                <label>Business Analysts</label>
+            </value>
+            <value>
+                <fullName>ContractAdministrators</fullName>
+                <default>false</default>
+                <label>Contract Administrators</label>
+            </value>
+            <value>
+                <fullName>DataEntryClerks</fullName>
+                <default>false</default>
+                <label>Data Entry Clerks</label>
+            </value>
+            <value>
+                <fullName>ExecutiveAssistants</fullName>
+                <default>false</default>
+                <label>Executive Assistants</label>
+            </value>
+            <value>
+                <fullName>HumanResourcesSpecialists</fullName>
+                <default>false</default>
+                <label>Human Resources Specialists</label>
+            </value>
+            <value>
+                <fullName>ManagementAnalysts</fullName>
+                <default>false</default>
+                <label>Management Analysts</label>
+            </value>
+            <value>
+                <fullName>OfficeManagers</fullName>
+                <default>false</default>
+                <label>Office Managers</label>
+            </value>
+            <value>
+                <fullName>OperationsManagers</fullName>
+                <default>false</default>
+                <label>Operations Managers</label>
+            </value>
+            <value>
+                <fullName>ProjectCoordinators</fullName>
+                <default>false</default>
+                <label>Project Coordinators</label>
+            </value>
+            <value>
+                <fullName>RecordsClerks</fullName>
+                <default>false</default>
+                <label>Records Clerks</label>
+            </value>
+            <value>
+                <fullName>RiskManagers</fullName>
+                <default>false</default>
+                <label>Risk Managers</label>
+            </value>
+            <value>
+                <fullName>TrainingSpecialists</fullName>
+                <default>false</default>
+                <label>Training Specialists</label>
+            </value>
+            <value>
+                <fullName>AdultEducationTeachers</fullName>
+                <default>false</default>
+                <label>Adult Education Teachers</label>
+            </value>
+            <value>
+                <fullName>CareerCounselors</fullName>
+                <default>false</default>
+                <label>Career Counselors</label>
+            </value>
+            <value>
+                <fullName>CurriculumDevelopers</fullName>
+                <default>false</default>
+                <label>Curriculum Developers</label>
+            </value>
+            <value>
+                <fullName>DistanceLearningInstructors</fullName>
+                <default>false</default>
+                <label>Distance Learning Instructors</label>
+            </value>
+            <value>
+                <fullName>EducationAdministrators</fullName>
+                <default>false</default>
+                <label>Education Administrators</label>
+            </value>
+            <value>
+                <fullName>InstructionalCoordinators</fullName>
+                <default>false</default>
+                <label>Instructional Coordinators</label>
+            </value>
+            <value>
+                <fullName>Librarians</fullName>
+                <default>false</default>
+                <label>Librarians</label>
+            </value>
+            <value>
+                <fullName>PreschoolTeachers</fullName>
+                <default>false</default>
+                <label>Preschool Teachers</label>
+            </value>
+            <value>
+                <fullName>SchoolCounselors</fullName>
+                <default>false</default>
+                <label>School Counselors</label>
+            </value>
+            <value>
+                <fullName>SpecialEducationTeachers</fullName>
+                <default>false</default>
+                <label>Special Education Teachers</label>
+            </value>
+            <value>
+                <fullName>SubstituteTeachers</fullName>
+                <default>false</default>
+                <label>Substitute Teachers</label>
+            </value>
+            <value>
+                <fullName>TeacherAssistants</fullName>
+                <default>false</default>
+                <label>Teacher Assistants</label>
+            </value>
+            <value>
+                <fullName>Trainers</fullName>
+                <default>false</default>
+                <label>Trainers</label>
+            </value>
+            <value>
+                <fullName>Accountants</fullName>
+                <default>false</default>
+                <label>Accountants</label>
+            </value>
+            <value>
+                <fullName>Auditors</fullName>
+                <default>false</default>
+                <label>Auditors</label>
+            </value>
+            <value>
+                <fullName>BillingClerks</fullName>
+                <default>false</default>
+                <label>Billing Clerks</label>
+            </value>
+            <value>
+                <fullName>BudgetAnalysts</fullName>
+                <default>false</default>
+                <label>Budget Analysts</label>
+            </value>
+            <value>
+                <fullName>ClaimsAdjusters</fullName>
+                <default>false</default>
+                <label>Claims Adjusters</label>
+            </value>
+            <value>
+                <fullName>CreditAnalysts</fullName>
+                <default>false</default>
+                <label>Credit Analysts</label>
+            </value>
+            <value>
+                <fullName>FinancialAnalysts</fullName>
+                <default>false</default>
+                <label>Financial Analysts</label>
+            </value>
+            <value>
+                <fullName>FinancialExaminers</fullName>
+                <default>false</default>
+                <label>Financial Examiners</label>
+            </value>
+            <value>
+                <fullName>InsuranceUnderwriters</fullName>
+                <default>false</default>
+                <label>Insurance Underwriters</label>
+            </value>
+            <value>
+                <fullName>LoanOfficers</fullName>
+                <default>false</default>
+                <label>Loan Officers</label>
+            </value>
+            <value>
+                <fullName>PayrollClerks</fullName>
+                <default>false</default>
+                <label>Payroll Clerks</label>
+            </value>
+            <value>
+                <fullName>RiskAnalysts</fullName>
+                <default>false</default>
+                <label>Risk Analysts</label>
+            </value>
+            <value>
+                <fullName>TaxExaminers</fullName>
+                <default>false</default>
+                <label>Tax Examiners</label>
+            </value>
+            <value>
+                <fullName>CityManagers</fullName>
+                <default>false</default>
+                <label>City Managers</label>
+            </value>
+            <value>
+                <fullName>CodeInspectors</fullName>
+                <default>false</default>
+                <label>Code Inspectors</label>
+            </value>
+            <value>
+                <fullName>ComplianceOfficers</fullName>
+                <default>false</default>
+                <label>Compliance Officers</label>
+            </value>
+            <value>
+                <fullName>EmergencyManagementDirectors</fullName>
+                <default>false</default>
+                <label>Emergency Management Directors</label>
+            </value>
+            <value>
+                <fullName>GovernmentProgramAnalysts</fullName>
+                <default>false</default>
+                <label>Government Program Analysts</label>
+            </value>
+            <value>
+                <fullName>GrantsAdministrators</fullName>
+                <default>false</default>
+                <label>Grants Administrators</label>
+            </value>
+            <value>
+                <fullName>ImmigrationOfficers</fullName>
+                <default>false</default>
+                <label>Immigration Officers</label>
+            </value>
+            <value>
+                <fullName>IntelligenceAnalysts</fullName>
+                <default>false</default>
+                <label>Intelligence Analysts</label>
+            </value>
+            <value>
+                <fullName>LegislativeAides</fullName>
+                <default>false</default>
+                <label>Legislative Aides</label>
+            </value>
+            <value>
+                <fullName>PolicyAnalysts</fullName>
+                <default>false</default>
+                <label>Policy Analysts</label>
+            </value>
+            <value>
+                <fullName>PublicAffairsSpecialists</fullName>
+                <default>false</default>
+                <label>Public Affairs Specialists</label>
+            </value>
+            <value>
+                <fullName>RegulatoryAffairsManagers</fullName>
+                <default>false</default>
+                <label>Regulatory Affairs Managers</label>
+            </value>
+            <value>
+                <fullName>AthleticTrainers</fullName>
+                <default>false</default>
+                <label>Athletic Trainers</label>
+            </value>
+            <value>
+                <fullName>DentalAssistants</fullName>
+                <default>false</default>
+                <label>Dental Assistants</label>
+            </value>
+            <value>
+                <fullName>DentalHygienists</fullName>
+                <default>false</default>
+                <label>Dental Hygienists</label>
+            </value>
+            <value>
+                <fullName>HealthEducators</fullName>
+                <default>false</default>
+                <label>Health Educators</label>
+            </value>
+            <value>
+                <fullName>HomeHealthAides</fullName>
+                <default>false</default>
+                <label>Home Health Aides</label>
+            </value>
+            <value>
+                <fullName>MedicalAssistants</fullName>
+                <default>false</default>
+                <label>Medical Assistants</label>
+            </value>
+            <value>
+                <fullName>MedicalCoders</fullName>
+                <default>false</default>
+                <label>Medical Coders</label>
+            </value>
+            <value>
+                <fullName>MedicalLaboratoryTechnicians</fullName>
+                <default>false</default>
+                <label>Medical Laboratory Technicians</label>
+            </value>
+            <value>
+                <fullName>MedicalTranscriptionists</fullName>
+                <default>false</default>
+                <label>Medical Transcriptionists</label>
+            </value>
+            <value>
+                <fullName>OccupationalTherapyAssistants</fullName>
+                <default>false</default>
+                <label>Occupational Therapy Assistants</label>
+            </value>
+            <value>
+                <fullName>PatientCareTechnicians</fullName>
+                <default>false</default>
+                <label>Patient Care Technicians</label>
+            </value>
+            <value>
+                <fullName>PharmacyTechnicians</fullName>
+                <default>false</default>
+                <label>Pharmacy Technicians</label>
+            </value>
+            <value>
+                <fullName>RadiationTherapists</fullName>
+                <default>false</default>
+                <label>Radiation Therapists</label>
+            </value>
+            <value>
+                <fullName>SurgicalTechnologists</fullName>
+                <default>false</default>
+                <label>Surgical Technologists</label>
+            </value>
+            <value>
+                <fullName>AbuseCounselors</fullName>
+                <default>false</default>
+                <label>Abuse Counselors</label>
+            </value>
+            <value>
+                <fullName>AddictionsCounselors</fullName>
+                <default>false</default>
+                <label>Addictions Counselors</label>
+            </value>
+            <value>
+                <fullName>BeautySpecialists</fullName>
+                <default>false</default>
+                <label>Beauty Specialists</label>
+            </value>
+            <value>
+                <fullName>CaseWorkers</fullName>
+                <default>false</default>
+                <label>Case Workers</label>
+            </value>
+            <value>
+                <fullName>ChildCareWorkers</fullName>
+                <default>false</default>
+                <label>Child Care Workers</label>
+            </value>
+            <value>
+                <fullName>ClinicalPsychologists</fullName>
+                <default>false</default>
+                <label>Clinical Psychologists</label>
+            </value>
+            <value>
+                <fullName>CommunityHealthWorkers</fullName>
+                <default>false</default>
+                <label>Community Health Workers</label>
+            </value>
+            <value>
+                <fullName>CounselorsMentalHealthRehabilitationSubstanceAbuse</fullName>
+                <default>false</default>
+                <label>Counselors (Mental Health, Rehabilitation, Substance Abuse)</label>
+            </value>
+            <value>
+                <fullName>FuneralDirectors</fullName>
+                <default>false</default>
+                <label>Funeral Directors</label>
+            </value>
+            <value>
+                <fullName>HairdressersandCosmetologists</fullName>
+                <default>false</default>
+                <label>Hairdressers and Cosmetologists</label>
+            </value>
+            <value>
+                <fullName>MarriageandFamilyTherapists</fullName>
+                <default>false</default>
+                <label>Marriage and Family Therapists</label>
+            </value>
+            <value>
+                <fullName>MassageTherapists</fullName>
+                <default>false</default>
+                <label>Massage Therapists</label>
+            </value>
+            <value>
+                <fullName>PersonalCareAides</fullName>
+                <default>false</default>
+                <label>Personal Care Aides</label>
+            </value>
+            <value>
+                <fullName>SocialandHumanServiceAssistants</fullName>
+                <default>false</default>
+                <label>Social and Human Service Assistants</label>
+            </value>
+            <value>
+                <fullName>SocialWorkers</fullName>
+                <default>false</default>
+                <label>Social Workers</label>
+            </value>
+            <value>
+                <fullName>WeddingPlannersEmerging</fullName>
+                <default>false</default>
+                <label>Wedding Planners (Emerging)</label>
+            </value>
+            <value>
+                <fullName>Cooks</fullName>
+                <default>false</default>
+                <label>Cooks</label>
+            </value>
+            <value>
+                <fullName>EventPlanners</fullName>
+                <default>false</default>
+                <label>Event Planners</label>
+            </value>
+            <value>
+                <fullName>FoodServers</fullName>
+                <default>false</default>
+                <label>Food Servers</label>
+            </value>
+            <value>
+                <fullName>HotelManagers</fullName>
+                <default>false</default>
+                <label>Hotel Managers</label>
+            </value>
+            <value>
+                <fullName>LodgingClerks</fullName>
+                <default>false</default>
+                <label>Lodging Clerks</label>
+            </value>
+            <value>
+                <fullName>RecreationWorkers</fullName>
+                <default>false</default>
+                <label>Recreation Workers</label>
+            </value>
+            <value>
+                <fullName>RestaurantManagers</fullName>
+                <default>false</default>
+                <label>Restaurant Managers</label>
+            </value>
+            <value>
+                <fullName>TourGuides</fullName>
+                <default>false</default>
+                <label>Tour Guides</label>
+            </value>
+            <value>
+                <fullName>TravelAgents</fullName>
+                <default>false</default>
+                <label>Travel Agents</label>
+            </value>
+            <value>
+                <fullName>Ushers</fullName>
+                <default>false</default>
+                <label>Ushers</label>
+            </value>
+            <value>
+                <fullName>WaitersandWaitresses</fullName>
+                <default>false</default>
+                <label>Waiters and Waitresses</label>
+            </value>
+            <value>
+                <fullName>ApplicationsDevelopers</fullName>
+                <default>false</default>
+                <label>Applications Developers</label>
+            </value>
+            <value>
+                <fullName>ComputerNetworkArchitects</fullName>
+                <default>false</default>
+                <label>Computer Network Architects</label>
+            </value>
+            <value>
+                <fullName>ComputerProgrammers</fullName>
+                <default>false</default>
+                <label>Computer Programmers</label>
+            </value>
+            <value>
+                <fullName>ComputerSystemsAnalysts</fullName>
+                <default>false</default>
+                <label>Computer Systems Analysts</label>
+            </value>
+            <value>
+                <fullName>DatabaseAdministrators</fullName>
+                <default>false</default>
+                <label>Database Administrators</label>
+            </value>
+            <value>
+                <fullName>HelpDeskTechnicians</fullName>
+                <default>false</default>
+                <label>Help Desk Technicians</label>
+            </value>
+            <value>
+                <fullName>InformationSecurityAnalysts</fullName>
+                <default>false</default>
+                <label>Information Security Analysts</label>
+            </value>
+            <value>
+                <fullName>NetworkAdministrators</fullName>
+                <default>false</default>
+                <label>Network Administrators</label>
+            </value>
+            <value>
+                <fullName>SoftwareDesigners</fullName>
+                <default>false</default>
+                <label>Software Designers</label>
+            </value>
+            <value>
+                <fullName>SystemsAdministrators</fullName>
+                <default>false</default>
+                <label>Systems Administrators</label>
+            </value>
+            <value>
+                <fullName>TechnicalSupportSpecialists</fullName>
+                <default>false</default>
+                <label>Technical Support Specialists</label>
+            </value>
+            <value>
+                <fullName>WebDevelopersandDesigners</fullName>
+                <default>false</default>
+                <label>Web Developers and Designers</label>
+            </value>
+            <value>
+                <fullName>Attorneys</fullName>
+                <default>false</default>
+                <label>Attorneys</label>
+            </value>
+            <value>
+                <fullName>CourtReporters</fullName>
+                <default>false</default>
+                <label>Court Reporters</label>
+            </value>
+            <value>
+                <fullName>DetectivesandInvestigators</fullName>
+                <default>false</default>
+                <label>Detectives and Investigators</label>
+            </value>
+            <value>
+                <fullName>EmergencyMedicalTechnicians</fullName>
+                <default>false</default>
+                <label>Emergency Medical Technicians</label>
+            </value>
+            <value>
+                <fullName>FireInspectors</fullName>
+                <default>false</default>
+                <label>Fire Inspectors</label>
+            </value>
+            <value>
+                <fullName>Firefighters</fullName>
+                <default>false</default>
+                <label>Firefighters</label>
+            </value>
+            <value>
+                <fullName>ForensicScienceTechnicians</fullName>
+                <default>false</default>
+                <label>Forensic Science Technicians</label>
+            </value>
+            <value>
+                <fullName>Judges</fullName>
+                <default>false</default>
+                <label>Judges</label>
+            </value>
+            <value>
+                <fullName>LegalAssistants</fullName>
+                <default>false</default>
+                <label>Legal Assistants</label>
+            </value>
+            <value>
+                <fullName>Paralegals</fullName>
+                <default>false</default>
+                <label>Paralegals</label>
+            </value>
+            <value>
+                <fullName>PoliceOfficers</fullName>
+                <default>false</default>
+                <label>Police Officers</label>
+            </value>
+            <value>
+                <fullName>ProbationOfficers</fullName>
+                <default>false</default>
+                <label>Probation Officers</label>
+            </value>
+            <value>
+                <fullName>SecurityGuards</fullName>
+                <default>false</default>
+                <label>Security Guards</label>
+            </value>
+            <value>
+                <fullName>Assemblers</fullName>
+                <default>false</default>
+                <label>Assemblers</label>
+            </value>
+            <value>
+                <fullName>ChemicalPlantOperators</fullName>
+                <default>false</default>
+                <label>Chemical Plant Operators</label>
+            </value>
+            <value>
+                <fullName>CNCMachineOperators</fullName>
+                <default>false</default>
+                <label>CNC Machine Operators</label>
+            </value>
+            <value>
+                <fullName>IndustrialMachineryMechanics</fullName>
+                <default>false</default>
+                <label>Industrial Machinery Mechanics</label>
+            </value>
+            <value>
+                <fullName>Jewelers</fullName>
+                <default>false</default>
+                <label>Jewelers</label>
+            </value>
+            <value>
+                <fullName>Machinists</fullName>
+                <default>false</default>
+                <label>Machinists</label>
+            </value>
+            <value>
+                <fullName>ManufacturingSupervisors</fullName>
+                <default>false</default>
+                <label>Manufacturing Supervisors</label>
+            </value>
+            <value>
+                <fullName>MedicalEquipmentRepairers</fullName>
+                <default>false</default>
+                <label>Medical Equipment Repairers</label>
+            </value>
+            <value>
+                <fullName>PowerPlantOperators</fullName>
+                <default>false</default>
+                <label>Power Plant Operators</label>
+            </value>
+            <value>
+                <fullName>PrecisionAssemblers</fullName>
+                <default>false</default>
+                <label>Precision Assemblers</label>
+            </value>
+            <value>
+                <fullName>QualityControlInspectors</fullName>
+                <default>false</default>
+                <label>Quality Control Inspectors</label>
+            </value>
+            <value>
+                <fullName>ToolandDieMakers</fullName>
+                <default>false</default>
+                <label>Tool and Die Makers</label>
+            </value>
+            <value>
+                <fullName>Welders</fullName>
+                <default>false</default>
+                <label>Welders</label>
+            </value>
+            <value>
+                <fullName>AccountExecutives</fullName>
+                <default>false</default>
+                <label>Account Executives</label>
+            </value>
+            <value>
+                <fullName>AdvertisingManagers</fullName>
+                <default>false</default>
+                <label>Advertising Managers</label>
+            </value>
+            <value>
+                <fullName>BuyersandPurchasingAgents</fullName>
+                <default>false</default>
+                <label>Buyers and Purchasing Agents</label>
+            </value>
+            <value>
+                <fullName>DemonstratorsandPromoters</fullName>
+                <default>false</default>
+                <label>Demonstrators and Promoters</label>
+            </value>
+            <value>
+                <fullName>MarketResearchAnalysts</fullName>
+                <default>false</default>
+                <label>Market Research Analysts</label>
+            </value>
+            <value>
+                <fullName>MarketingManagers</fullName>
+                <default>false</default>
+                <label>Marketing Managers</label>
+            </value>
+            <value>
+                <fullName>MediaDirectors</fullName>
+                <default>false</default>
+                <label>Media Directors</label>
+            </value>
+            <value>
+                <fullName>PublicRelationsSpecialists</fullName>
+                <default>false</default>
+                <label>Public Relations Specialists</label>
+            </value>
+            <value>
+                <fullName>RealEstateAgents</fullName>
+                <default>false</default>
+                <label>Real Estate Agents</label>
+            </value>
+            <value>
+                <fullName>RetailBuyers</fullName>
+                <default>false</default>
+                <label>Retail Buyers</label>
+            </value>
+            <value>
+                <fullName>SalesRepresentatives</fullName>
+                <default>false</default>
+                <label>Sales Representatives</label>
+            </value>
+            <value>
+                <fullName>Telemarketers</fullName>
+                <default>false</default>
+                <label>Telemarketers</label>
+            </value>
+            <value>
+                <fullName>AerospaceEngineers</fullName>
+                <default>false</default>
+                <label>Aerospace Engineers</label>
+            </value>
+            <value>
+                <fullName>Biochemists</fullName>
+                <default>false</default>
+                <label>Biochemists</label>
+            </value>
+            <value>
+                <fullName>ChemicalEngineers</fullName>
+                <default>false</default>
+                <label>Chemical Engineers</label>
+            </value>
+            <value>
+                <fullName>EnvironmentalScientists</fullName>
+                <default>false</default>
+                <label>Environmental Scientists</label>
+            </value>
+            <value>
+                <fullName>IndustrialEngineers</fullName>
+                <default>false</default>
+                <label>Industrial Engineers</label>
+            </value>
+            <value>
+                <fullName>MechanicalEngineers</fullName>
+                <default>false</default>
+                <label>Mechanical Engineers</label>
+            </value>
+            <value>
+                <fullName>NuclearEngineers</fullName>
+                <default>false</default>
+                <label>Nuclear Engineers</label>
+            </value>
+            <value>
+                <fullName>PetroleumEngineers</fullName>
+                <default>false</default>
+                <label>Petroleum Engineers</label>
+            </value>
+            <value>
+                <fullName>Physicists</fullName>
+                <default>false</default>
+                <label>Physicists</label>
+            </value>
+            <value>
+                <fullName>ResearchEngineers</fullName>
+                <default>false</default>
+                <label>Research Engineers</label>
+            </value>
+            <value>
+                <fullName>Statisticians</fullName>
+                <default>false</default>
+                <label>Statisticians</label>
+            </value>
+            <value>
+                <fullName>WindEnergyEngineers</fullName>
+                <default>false</default>
+                <label>Wind Energy Engineers</label>
+            </value>
+            <value>
+                <fullName>AircraftMechanics</fullName>
+                <default>false</default>
+                <label>Aircraft Mechanics</label>
+            </value>
+            <value>
+                <fullName>AirTrafficControllers</fullName>
+                <default>false</default>
+                <label>Air Traffic Controllers</label>
+            </value>
+            <value>
+                <fullName>AutomobileMechanics</fullName>
+                <default>false</default>
+                <label>Automobile Mechanics</label>
+            </value>
+            <value>
+                <fullName>BusDrivers</fullName>
+                <default>false</default>
+                <label>Bus Drivers</label>
+            </value>
+            <value>
+                <fullName>DeliveryTruckDrivers</fullName>
+                <default>false</default>
+                <label>Delivery Truck Drivers</label>
+            </value>
+            <value>
+                <fullName>ForkliftOperators</fullName>
+                <default>false</default>
+                <label>Forklift Operators</label>
+            </value>
+            <value>
+                <fullName>HeavyTruckDrivers</fullName>
+                <default>false</default>
+                <label>Heavy Truck Drivers</label>
+            </value>
+            <value>
+                <fullName>LocomotiveEngineers</fullName>
+                <default>false</default>
+                <label>Locomotive Engineers</label>
+            </value>
+            <value>
+                <fullName>LogisticsCoordinators</fullName>
+                <default>false</default>
+                <label>Logistics Coordinators</label>
+            </value>
+            <value>
+                <fullName>Pilots</fullName>
+                <default>false</default>
+                <label>Pilots</label>
+            </value>
+            <value>
+                <fullName>RailroadConductors</fullName>
+                <default>false</default>
+                <label>Railroad Conductors</label>
+            </value>
+            <value>
+                <fullName>ShippingClerks</fullName>
+                <default>false</default>
+                <label>Shipping Clerks</label>
+            </value>
+            <value>
+                <fullName>WarehouseSupervisors</fullName>
+                <default>false</default>
+                <label>Warehouse Supervisors</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>ApplicationsDevelopers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>ComputerNetworkArchitects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>ComputerProgrammers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>ComputerSystemsAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>DatabaseAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>HelpDeskTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>InformationSecurityAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>NetworkAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>SoftwareDesigners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>SystemsAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>TechnicalSupportSpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InformationTechnology</controllingFieldValue>
+            <valueName>WebDevelopersandDesigners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>Attorneys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>CourtReporters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>DetectivesandInvestigators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>EmergencyMedicalTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>FireInspectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>Firefighters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>ForensicScienceTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>Judges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>LegalAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>Paralegals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>PoliceOfficers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>ProbationOfficers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LawPublicSafetyCorrectionsandSecurity</controllingFieldValue>
+            <valueName>SecurityGuards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Assemblers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>ChemicalPlantOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>CNCMachineOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>IndustrialMachineryMechanics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Jewelers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Machinists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>ManufacturingSupervisors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>MedicalEquipmentRepairers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>PowerPlantOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>PrecisionAssemblers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>QualityControlInspectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>ToolandDieMakers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Welders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>AccountExecutives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>AdvertisingManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>BuyersandPurchasingAgents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>DemonstratorsandPromoters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>MarketResearchAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>MarketingManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>MediaDirectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>PublicRelationsSpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>RealEstateAgents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>RetailBuyers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>SalesRepresentatives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Telemarketers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>AerospaceEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>Biochemists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>ChemicalEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>EnvironmentalScientists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>IndustrialEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>MechanicalEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>NuclearEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>PetroleumEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>Physicists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>ResearchEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>Statisticians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ScienceTechnologyEngineering, and Mathematics</controllingFieldValue>
+            <valueName>WindEnergyEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>AircraftMechanics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>AirTrafficControllers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>AutomobileMechanics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>BusDrivers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>DeliveryTruckDrivers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>ForkliftOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>HeavyTruckDrivers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>LocomotiveEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>LogisticsCoordinators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>Pilots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>RailroadConductors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>ShippingClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TransportationDistributionandLogistics</controllingFieldValue>
+            <valueName>WarehouseSupervisors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>AgriculturalInspectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>AgriculturalScientists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>AnimalScientists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>AquacultureWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>ConservationScientists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>FarmManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>FishandGameWardens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>Foresters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>FoodScientists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>GreenhouseManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>Horticulturists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>LandscapeArchitects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>NaturalResourceTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>RangeManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>SoilConservationists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>WildlifeBiologists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AgricultureFoodandNaturalResources</controllingFieldValue>
+            <valueName>Zoologists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Brickmasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>BuildingInspectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>CarpenterApprentices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Carpenters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>CementMasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>CivilDrafters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>ConstructionLaborers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>ConstructionManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>CostEstimators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Electricians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>FlooringInstallers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>HVACTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>InsulationWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Painters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Plumbers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>Roofers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>SurveyingTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArchitectureandConstruction</controllingFieldValue>
+            <valueName>TileSetters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Actors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Announcers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>AudioTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>BroadcastTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>CameraOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Directors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Editors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>GraphicDesigners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Illustrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Journalists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>MultimediaArtists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>Photographers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>RadioOperators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>SoundEngineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>TechnicalWriters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>VideoEditors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ArtsAudio/VisualTechnologyandCommunication</controllingFieldValue>
+            <valueName>VisualDesigners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>AdministrativeAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>BusinessAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>ContractAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>DataEntryClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>ExecutiveAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>HumanResourcesSpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>ManagementAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>OfficeManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>OperationsManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>ProjectCoordinators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>RecordsClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>RiskManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BusinessManagementandAdministration</controllingFieldValue>
+            <valueName>TrainingSpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>AdultEducationTeachers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>CareerCounselors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>CurriculumDevelopers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>DistanceLearningInstructors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>EducationAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>InstructionalCoordinators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>Librarians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>PreschoolTeachers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>SchoolCounselors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>SpecialEducationTeachers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>SubstituteTeachers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>TeacherAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EducationandTraining</controllingFieldValue>
+            <valueName>Trainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Accountants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Auditors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>BillingClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>BudgetAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>ClaimsAdjusters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>CreditAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>FinancialAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>FinancialExaminers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>InsuranceUnderwriters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>LoanOfficers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>PayrollClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>RiskAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>TaxExaminers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>CityManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>CodeInspectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>ComplianceOfficers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>EmergencyManagementDirectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>GovernmentProgramAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>GrantsAdministrators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>ImmigrationOfficers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>IntelligenceAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>LegislativeAides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>PolicyAnalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>PublicAffairsSpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government and Public Administration</controllingFieldValue>
+            <valueName>RegulatoryAffairsManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>AthleticTrainers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>DentalAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>DentalHygienists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>HealthEducators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>HomeHealthAides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>MedicalAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>MedicalCoders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>MedicalLaboratoryTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>MedicalTranscriptionists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>OccupationalTherapyAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>PatientCareTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>PharmacyTechnicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>RadiationTherapists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HealthScience</controllingFieldValue>
+            <valueName>SurgicalTechnologists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>AbuseCounselors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>AddictionsCounselors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>BeautySpecialists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>CaseWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>ChildCareWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>ClinicalPsychologists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>CommunityHealthWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>CounselorsMentalHealthRehabilitationSubstanceAbuse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>FuneralDirectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>HairdressersandCosmetologists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>MarriageandFamilyTherapists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>MassageTherapists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>PersonalCareAides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>SocialandHumanServiceAssistants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>SocialWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HumanServices</controllingFieldValue>
+            <valueName>WeddingPlannersEmerging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>Cooks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>EventPlanners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>FoodServers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>HotelManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>LodgingClerks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>RecreationWorkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>RestaurantManagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>TourGuides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>TravelAgents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>Ushers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HospitalityandTourism</controllingFieldValue>
+            <valueName>WaitersandWaitresses</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

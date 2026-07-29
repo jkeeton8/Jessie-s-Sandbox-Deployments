@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activities_Offered__c</fullName>
+    <description>From Client Session or Group Session field of same name</description>
+    <label>Activities Offered</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Life Skills</fullName>
+                <default>false</default>
+                <label>Life Skills</label>
+            </value>
+            <value>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+                <label>Recreation</label>
+            </value>
+            <value>
+                <fullName>Exercise</fullName>
+                <default>false</default>
+                <label>Exercise</label>
+            </value>
+            <value>
+                <fullName>Socializing</fullName>
+                <default>false</default>
+                <label>Socializing</label>
+            </value>
+            <value>
+                <fullName>IEP Documentation Review</fullName>
+                <default>false</default>
+                <label>IEP Documentation Review</label>
+            </value>
+            <value>
+                <fullName>Transcripts Documentation Review</fullName>
+                <default>false</default>
+                <label>Transcripts Documentation Review</label>
+            </value>
+            <value>
+                <fullName>Verbal Advice</fullName>
+                <default>false</default>
+                <label>Verbal Advice</label>
+            </value>
+            <value>
+                <fullName>Brochures</fullName>
+                <default>false</default>
+                <label>Brochures</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

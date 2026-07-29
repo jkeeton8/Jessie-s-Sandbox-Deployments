@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Face_Sheet_Starter_Page_Footer__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&lt;/apex:form&gt;&quot; + BR() + &quot;&lt;/apex:page&gt;&quot; + BR()</formula>
+    <label>ECM Face Sheet Starter Page Footer</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

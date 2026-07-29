@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Placement_Sequence__c</fullName>
+    <description>ECM v2.1 field that contains the ECM auto-calculated sequence of Placements (text separated by semi colons). In the case that the string exceeds 255 characters the last ECM Sequence Name value will not be included and the string &quot;…&quot; will be appended to the string. This field is only updated when the ECM Placement Sequence process runs. This is a reportable field.</description>
+    <externalId>false</externalId>
+    <label>ECM Placement Sequence</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

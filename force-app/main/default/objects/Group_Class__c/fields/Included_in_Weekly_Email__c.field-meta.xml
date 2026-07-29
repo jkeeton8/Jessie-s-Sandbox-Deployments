@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Included_in_Weekly_Email__c</fullName>
+    <formula>if (ispickval(Group_Class_Type__c, &quot;Leadership Workshop&quot;) &amp;&amp; not(ispickval( Group_Class_Name__c, &quot;Rebuild&quot;)), true,
+
+if (ispickval(Group_Class_Type__c, &quot;Foundations Intro Workshop&quot;), true,
+
+if (ispickval(Group_Class_Type__c, &quot;Foundations Adapted Workshop&quot;), true,
+
+if (ispickval(Group_Class_Type__c, &quot;Virtual Meeting&quot;)&amp;&amp; contains(text(Group_Class_Name__c), &quot;Office Hours&quot;), true,
+
+false))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Foundations Intro Workshop (First Impressions), Foundations Adapted Workshops, Leadership Workshops (excluding Rebuild), and Virtual Meeting Office Hours are included in the weekly email to participants sharing workshops for the week.</inlineHelpText>
+    <label>Included in Weekly Email</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

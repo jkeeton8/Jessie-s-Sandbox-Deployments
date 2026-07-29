@@ -1,0 +1,32 @@
+<apex:page controller="ExpServiceEntryController" sidebar="false" tabStyle="Case_Record__c">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!clientSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Job Skills Assessment ****-->
+
+<!-- ***** Case Record, page 1, order 1 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22115"/>
+
+<!-- ***** Case Record, page 1, order 2 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22116"/>
+
+<!-- ***** Client Session, page 1, order 3 ***** -->
+<c:ExpClientSession theParentController="{!this}" csName="CompSettings-22117"/>
+
+<!-- ***** Child Object, page 1, order 4 ***** -->
+<c:ExpChildObject theParentController="{!this}" csName="CompSettings-22118"/>
+
+<!-- ***** Case Record, page 1, order 5 ***** -->
+<c:ExpCaseRecord theParentController="{!this}" csName="CompSettings-22119"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

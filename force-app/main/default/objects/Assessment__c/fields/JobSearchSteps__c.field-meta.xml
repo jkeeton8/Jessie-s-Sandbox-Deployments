@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JobSearchSteps__c</fullName>
+    <inlineHelpText>What steps have you taken already to look for work? [select all that apply]</inlineHelpText>
+    <label>Job Search Steps Already Taken</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ResumeCompletedInProgress</fullName>
+                <default>false</default>
+                <label>I have started or completed my resume.</label>
+            </value>
+            <value>
+                <fullName>AppliedOnline</fullName>
+                <default>false</default>
+                <label>I have looked for jobs online.</label>
+            </value>
+            <value>
+                <fullName>AppliedInPerson</fullName>
+                <default>false</default>
+                <label>I have applied for positions.</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other: fill in the blank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

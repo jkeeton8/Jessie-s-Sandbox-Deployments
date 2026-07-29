@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timing_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (ispickval (Actual_Status__c, &quot;Postponed&quot;), &quot;Postponed&quot;,
+
+if (ispickval (Actual_Status__c, &quot;Completed&quot;) &amp;&amp; Actual_Completion_Date__c &lt;= Target_Completion_Date__c + 30, &quot;Completed On Time&quot;,
+
+if (ispickval (Actual_Status__c, &quot;Completed&quot;) &amp;&amp; isnull (Actual_Completion_Date__c), &quot;Completed: Needs Date&quot;,
+
+if (ispickval (Actual_Status__c, &quot;Completed&quot;), &quot;Completed Late&quot;,
+
+if (today() &gt; Target_Completion_Date__c, &quot;Overdue&quot;, 
+
+if (today() &gt; Target_Completion_Date__c - 30, &quot;Target Date Approaching&quot;,
+
+&quot;Not Yet Due&quot;))))))</formula>
+    <inlineHelpText>&quot;Completed On Time&quot; if completed within 30 days of Target; &quot;Completed Late&quot; if more than 30 days late; &quot;Overdue&quot; if Target has passed; &quot;Approaching Target Date&quot; if within 30 days of Target; and otherwise &quot;Not Yet Due or Completed&quot;</inlineHelpText>
+    <label>Timing Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drug_Test_History__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Drug Test History</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Case_Record__c</field>
+            <operation>equals</operation>
+            <valueField>Drug_Test_History__c.Case_Record__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Drug_Test_History__c</referenceTo>
+    <relationshipLabel>Contract Expenses</relationshipLabel>
+    <relationshipName>Contract_Expenses</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

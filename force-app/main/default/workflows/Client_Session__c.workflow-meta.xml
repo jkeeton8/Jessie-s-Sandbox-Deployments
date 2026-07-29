@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_Creator_Client_Session_r</fullName>
+        <description>Notify Creator (Client_Session__r)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/COAT_Template_Progress_Note_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Return_to_Job_Search_Notification</fullName>
+        <description>Return to Job Search Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Participant_Service_Delivery</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Return_to_Job_Search_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Advancement_InactiveDate_to_Adv_Mtg_Date</fullName>
+        <field>Advancement_Inactive_Date__c</field>
+        <formula>Date__c</formula>
+        <name>Advancement InactiveDate to Adv Mtg Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advancement_Start_Date_to_Adv_Mtg_Date</fullName>
+        <field>Advancement_Start_Date__c</field>
+        <formula>Date__c</formula>
+        <name>Advancement Start Date to Adv Mtg Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactivated_By_to_Service_Entry_Creator</fullName>
+        <field>Inactivated_By__c</field>
+        <formula>CreatedBy.Full_Name__c</formula>
+        <name>Inactivated By to Service Entry Creator</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactivation_Descript_from_Service_Entry</fullName>
+        <field>Inactivation_Description__c</field>
+        <formula>Progress_Note_Short__c</formula>
+        <name>Inactivation Descript from Service Entry</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inactivation_Service_Entry_ID</fullName>
+        <field>Inactivation_Service_Entry_ID__c</field>
+        <formula>Id</formula>
+        <name>Inactivation Service Entry ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Case_Record__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Process_Builder_Trigger_is_True</fullName>
+        <field>Process_Builder_Trigger__c</field>
+        <literalValue>1</literalValue>
+        <name>Process Builder Trigger is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Progress_Note_Short</fullName>
+        <field>Progress_Note_Short__c</field>
+        <formula>left (Progress_Note__c, 255)</formula>
+        <name>Progress Note (Short)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Follow_Up_Task_Flag</fullName>
+        <field>Create_Follow_up_Task__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Follow Up Task Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Visit_Type_to_Advancement</fullName>
+        <field>Visit_Type__c</field>
+        <literalValue>Advancement</literalValue>
+        <name>Visit Type to Advancement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Advancement Start Date</fullName>
+        <actions>
+            <name>Advancement_Start_Date_to_Adv_Mtg_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Record__c.Advancement_Start_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Client_Session__c.Service_Entry_Name__c</field>
+            <operation>equals</operation>
+            <value>Advancement Meeting</value>
+        </criteriaItems>
+        <failedMigrationToolVersion>260.9.8</failedMigrationToolVersion>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Advancement Visit Type</fullName>
+        <actions>
+            <name>Visit_Type_to_Advancement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Service_Entry_Name__c = &quot;Advancement Meeting&quot;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Progress Note %28Short%29</fullName>
+        <actions>
+            <name>Progress_Note_Short</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Client_Session__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Return to Job Search Progress Note is Created</fullName>
+        <actions>
+            <name>Return_to_Job_Search_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Client_Session__c.Progress_Note_Type__c</field>
+            <operation>equals</operation>
+            <value>Return to Job Search</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Student is Inactivated via Service Entry</fullName>
+        <actions>
+            <name>Inactivated_By_to_Service_Entry_Creator</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactivation_Descript_from_Service_Entry</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Inactivation_Service_Entry_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>Client_Session__c.Service_Entry_Name__c</field>
+            <operation>equals</operation>
+            <value>Inactivate Student,Inactivate Worker,Inactivation,Drug Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Client_Session__c.Send_Inactivation_Email__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <failedMigrationToolVersion>260.10.1</failedMigrationToolVersion>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trigger Service Entry Process Builder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Client_Session__c.Service_Entry_Name__c</field>
+            <operation>contains</operation>
+            <value>Background Check,Verified</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Process_Builder_Trigger_is_True</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Service_Follow_Up_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Client_Session__c.Task_Due_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Service Follow Up Task</subject>
+    </tasks>
+</Workflow>

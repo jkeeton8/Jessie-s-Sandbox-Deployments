@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Relates_to_Does_Not_Match_Field_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF((Treatment_Plan_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Treatment_Plan__c&apos;)) ||
+(Case_Record_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Case_Record__c&apos;)) ||
+(Client_Household_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Client_Household__c&apos;)) ||
+(Client_Session_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Client_Session__c&apos;)) ||
+(Contact_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Contact&apos;)) ||
+(Group_Class_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Group_Class__c&apos;)) ||
+(Group_Class_Session_Field_Name__c != null &amp;&amp; NOT INCLUDES(Relates_to_Objects__c, &apos;Group_Class_Session__c&apos;)) 
+, true, false)</errorConditionFormula>
+    <errorDisplayField>Relates_to_Objects__c</errorDisplayField>
+    <errorMessage>Field names must be left empty if parent type is not included in the &apos;Relates To&apos; list</errorMessage>
+</ValidationRule>

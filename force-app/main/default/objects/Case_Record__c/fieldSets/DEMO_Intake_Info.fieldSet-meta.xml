@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEMO_Intake_Info</fullName>
+    <description>DEMO Intake Configuration</description>
+    <displayedFields>
+        <field>Intake_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>DEMO Intake Info</label>
+</FieldSet>

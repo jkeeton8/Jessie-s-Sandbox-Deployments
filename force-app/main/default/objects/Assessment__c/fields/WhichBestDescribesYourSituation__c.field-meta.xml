@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WhichBestDescribesYourSituation__c</fullName>
+    <label>Which best describes your situation?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>JobTraining</fullName>
+                <default>false</default>
+                <label>I would need training to get a job in this field</label>
+            </value>
+            <value>
+                <fullName>SkillsTraining</fullName>
+                <default>false</default>
+                <label>I need to update my skills in order to get a job in this field</label>
+            </value>
+            <value>
+                <fullName>JobSearch</fullName>
+                <default>false</default>
+                <label>I already have training in the field and just need help getting a job</label>
+            </value>
+            <value>
+                <fullName>JobSearchWithExperience</fullName>
+                <default>false</default>
+                <label>I already have work experience in this field and just need help getting a job</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

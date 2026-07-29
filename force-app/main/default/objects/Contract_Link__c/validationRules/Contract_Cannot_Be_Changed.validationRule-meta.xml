@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED( Grant_Contract__c )</errorConditionFormula>
+    <errorMessage>The Grant/Contract field cannot be changed after creation. If created in error, please create a new Contract Link and submit a help desk ticket to delete the old one.</errorMessage>
+</ValidationRule>

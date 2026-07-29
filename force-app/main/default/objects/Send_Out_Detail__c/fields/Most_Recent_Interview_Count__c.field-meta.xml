@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Most_Recent_Interview_Count__c</fullName>
+    <description>Send Out Details were used exclusively for the recording of Send Outs and subsequent interviews and placements. Therefore, any Send Out Detail with a Date of Placement should be included in Most Recent Interview Count.</description>
+    <externalId>false</externalId>
+    <formula>if (not (isblank (Date_of_Most_Recent_Interview__c)), 1, 
+
+if (not (isblank (Date_of_Placement__c)), 1,
+
+0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Most Recent Interview Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

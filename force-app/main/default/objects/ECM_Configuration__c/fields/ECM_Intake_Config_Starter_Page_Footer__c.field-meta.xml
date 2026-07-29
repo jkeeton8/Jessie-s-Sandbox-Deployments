@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_Intake_Config_Starter_Page_Footer__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&lt;apex:pageBlockButtons &gt;&quot; +  BR() +
+&quot;                &quot; + &quot;&lt;c:ExpNavigationButton id=\&quot;theButtons\&quot; theParentController=\&quot;&quot; + &quot;{&quot; + &quot;!&quot; + &quot;this&quot; + &quot;}\&quot;&quot; + &quot; thePageNum=\&quot;1\&quot;&quot; + &quot; postSaveRerender=\&quot;theForm\&quot;/&gt;&quot; +  BR() +
+&quot;            &quot; + &quot;&lt;/apex:pageBlockButtons&gt;&quot; +  BR() +
+&quot;        &quot;  + &quot;&lt;/apex:pageBlock&gt;&quot; +  BR() +
+&quot;    &quot; + &quot;&lt;/apex:form&gt;&quot; +  BR() +
+&quot;    &quot; + &quot;&lt;apex:includeScript value=\&quot;&quot; + &quot;{&quot; + &quot;!&quot; + &quot;$&quot; + &quot;Resource.ExpJavaScript&quot; + &quot;}\&quot;/&gt;&quot; +  BR() +
+&quot;&lt;/apex:page&gt;&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ECM Intake Config Starter Page Footer</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

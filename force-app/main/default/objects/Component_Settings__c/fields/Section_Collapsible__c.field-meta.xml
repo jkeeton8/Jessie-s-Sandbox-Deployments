@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section_Collapsible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Whether the section on the page can be collapsed or not</inlineHelpText>
+    <label>Section Collapsible</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

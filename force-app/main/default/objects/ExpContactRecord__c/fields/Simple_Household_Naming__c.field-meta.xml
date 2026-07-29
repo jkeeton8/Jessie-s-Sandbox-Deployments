@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Simple_Household_Naming__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If set to True, on Insert of Contacts (household members) do not perform concatenated naming and only use the last name of the first contact inserted (the main client) and DO NOT update the Client_Household__c.Name field with auto-naming after create/initial insert.</description>
+    <inlineHelpText>If set to True, on Insert of Contacts (household members) do not perform concatenated naming and only use the last name of the first contact inserted (the main client) and DO NOT update the Client_Household__c.Name field with auto-naming after create.</inlineHelpText>
+    <label>Simple Household Naming</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

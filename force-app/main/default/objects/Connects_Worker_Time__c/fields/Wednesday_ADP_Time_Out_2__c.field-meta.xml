@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wednesday_ADP_Time_Out_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank( Wednesday_Lunch_Start__c ), &quot;No Lunch&quot;,
+if ( Wednesday_Lunch_Start_Proxy__c &gt;= Wednesday_Time_Out_Proxy__c
+|| Wednesday_Lunch_End_Proxy__c &gt;= Wednesday_Time_Out_Proxy__c
+|| Wednesday_Lunch_Start_Proxy__c &lt;= Wednesday_Time_In_Proxy__c, &quot;Lunch Out of Range&quot;,
+Wednesday_Time_Out__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wednesday ADP Time Out (#2)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

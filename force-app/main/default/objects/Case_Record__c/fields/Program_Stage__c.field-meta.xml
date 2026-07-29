@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Stage__c</fullName>
+    <label>Program Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Referred</fullName>
+                <default>true</default>
+                <label>Referred</label>
+            </value>
+            <value>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+                <label>Accepted</label>
+            </value>
+            <value>
+                <fullName>Transformations</fullName>
+                <default>false</default>
+                <label>Transformations</label>
+            </value>
+            <value>
+                <fullName>Leadership Development</fullName>
+                <default>false</default>
+                <label>Leadership Development</label>
+            </value>
+            <value>
+                <fullName>Advancement Services</fullName>
+                <default>false</default>
+                <label>Advancement Services</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Retention Services</fullName>
+                <default>false</default>
+                <label>Retention Services</label>
+            </value>
+            <value>
+                <fullName>Short-Term Employment</fullName>
+                <default>false</default>
+                <label>Short-Term Employment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

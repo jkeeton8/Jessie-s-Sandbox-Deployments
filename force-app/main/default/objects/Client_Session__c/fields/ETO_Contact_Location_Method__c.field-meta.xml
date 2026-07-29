@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETO_Contact_Location_Method__c</fullName>
+    <label>ETO Contact Location / Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In person</fullName>
+                <default>false</default>
+                <label>In person</label>
+            </value>
+            <value>
+                <fullName>By phone</fullName>
+                <default>false</default>
+                <label>By phone</label>
+            </value>
+            <value>
+                <fullName>By mail</fullName>
+                <default>false</default>
+                <label>By mail</label>
+            </value>
+            <value>
+                <fullName>By e-mail</fullName>
+                <default>false</default>
+                <label>By e-mail</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

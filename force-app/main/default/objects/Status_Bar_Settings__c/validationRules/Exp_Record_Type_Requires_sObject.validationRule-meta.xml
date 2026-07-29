@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exp_Record_Type_Requires_sObject</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(sObject_Record_Type__c   != null &amp;&amp; sObject__c == null, true, false)</errorConditionFormula>
+    <errorMessage>Value required for sObject when sObject Record Type has a value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Self_Selection__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Employed student wants, understands, and commits to advancement process. It’s okay if they have some fear.</inlineHelpText>
+    <label>Self-Selection</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

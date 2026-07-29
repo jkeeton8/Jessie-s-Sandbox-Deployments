@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECM_PDF_Configuration__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>The configuration used to render the output from the Service Activity for PDF rendering and printing (Progress and Group Notes).</inlineHelpText>
+    <label>ECM PDF Configuration</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ECM_Configuration__c.PDF_Rendering__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ECM_Configuration__c</referenceTo>
+    <relationshipName>ECM_Service_Activities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

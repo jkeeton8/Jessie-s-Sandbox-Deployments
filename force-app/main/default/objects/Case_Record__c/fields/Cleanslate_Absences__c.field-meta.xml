@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleanslate_Absences__c</fullName>
+    <description>Total Number of Days summed up from all Absences issued during Cleanslate. Used in Cleanslate attendance summary formulas located on Cleanslate Internship Send Out / Employment records.</description>
+    <inlineHelpText>Abscences issued during Cleanslate with the following reasons: Personal Day, Sick, Late, NCNS, Return to Advanced Training</inlineHelpText>
+    <label># Cleanslate Absences</label>
+    <summarizedField>Incident__c.Number_of_Days__c</summarizedField>
+    <summaryFilterItems>
+        <field>Incident__c.Issued_During__c</field>
+        <operation>equals</operation>
+        <value>Cleanslate Internship</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Incident__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Absence</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Incident__c.Reason__c</field>
+        <operation>equals</operation>
+        <value>Late, NCNS, Personal Day, Sick, Return to Leadership Development</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Incident__c.Case_Record__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

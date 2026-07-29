@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_By_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (not (isblank (Created_By_External_Form_or_Legacy__c)), Created_By_External_Form_or_Legacy__c, CreatedBy.Full_Name__c)</formula>
+    <inlineHelpText>If created through web form or imported from legacy system, displays original creator&apos;s name. Otherwise, displays name of Salesforce Evaluation record creator.</inlineHelpText>
+    <label>Created By, Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Grant/Contract Name workflow rule
+Workflow rule description: &quot;</description>
+    <formulas>
+        <name>Grant_Contract_NameFormula</name>
+        <dataType>String</dataType>
+        <expression>if (not(isblank($Record.Organization__c)), 
+
+if (YEAR($Record.Grant_Contract_Start_Date__c) = YEAR($Record.Grant_Contract_End_Date__c), 
+
+$Record.Organization__r.Name &amp; &quot; (&quot; &amp; text(Year($Record.Grant_Contract_Start_Date__c)) &amp; &quot;)&quot;, 
+
+$Record.Organization__r.Name &amp; &quot; (&quot; &amp; text(Year($Record.Grant_Contract_Start_Date__c)) &amp; &quot;-&quot; &amp; text(Year($Record.Grant_Contract_End_Date__c))&amp;&quot;)&quot;),
+
+
+if (YEAR($Record.Grant_Contract_Start_Date__c) = YEAR($Record.Grant_Contract_End_Date__c), 
+
+$Record.Grant_Contract_Abbreviation__c &amp; &quot; (&quot; &amp; text(Year($Record.Grant_Contract_Start_Date__c)) &amp; &quot;)&quot;, 
+
+$Record.Grant_Contract_Abbreviation__c &amp; &quot; (&quot; &amp; text(Year($Record.Grant_Contract_Start_Date__c)) &amp; &quot;-&quot; &amp; text(Year($Record.Grant_Contract_End_Date__c))&amp;&quot;)&quot;))</expression>
+    </formulas>
+    <label>Grant/Contract Name</label>
+    <migratedFromWorkflowRuleName>Grant/Contract Name</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Grant_Contract_NameFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Agency_Contract1__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

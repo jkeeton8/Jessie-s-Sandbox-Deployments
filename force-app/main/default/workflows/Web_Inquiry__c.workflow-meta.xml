@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contact_Us_Form_Cleanslate_Customer</fullName>
+        <description>Contact Us Form, Cleanslate Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bgott@caracollective.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_Employer_Cara</fullName>
+        <description>Contact Us Form, Employer, Cara</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mharoon@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tloeffler@caraconnects.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_Employer_Connects</fullName>
+        <description>Contact Us Form, Employer, Connects</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bgott@caracollective.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mcorona@caraconnects.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_Event_Supporter</fullName>
+        <description>Contact Us Form, Event Supporter</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mtoriski@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_LS</fullName>
+        <description>Contact Us Form, LS</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lschreck@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_MT</fullName>
+        <description>Contact Us Form, MT</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mtoriski@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_MT_MH</fullName>
+        <description>Contact Us Form, MT &amp; RT</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mtoriski@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rtraphagen@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Short</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_Participant</fullName>
+        <ccEmails>recruitment@carachicago.org</ccEmails>
+        <description>Contact Us Form, Participant</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Participant</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_REK</fullName>
+        <description>Contact Us Form, Corporate Engagement</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>tloeffler@caraconnects.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_SW</fullName>
+        <description>Contact Us Form, SW</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>esauter@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>swasserteil@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Us_Form_Volunteer</fullName>
+        <description>Contact Us Form, Volunteer</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>tloeffler@caraconnects.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Website_Notifications/Contact_Us_Form_Submitted_Company_Info</template>
+    </alerts>
+    <alerts>
+        <fullName>Rental_Assistance_Requested</fullName>
+        <description>Rental Assistance Requested</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cbogdanov@carachicago.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Studentforce_Student_Mgmt_Templates/Rental_Assistance_Requested</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Closed_Date_is_Today</fullName>
+        <field>Inquiry_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Closed Date is Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Inquiry_Closed_Date_to_Today</fullName>
+        <field>Inquiry_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Set Inquiry Closed Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Inquiry_Result_to_Resolved</fullName>
+        <field>Inquiry_Result__c</field>
+        <literalValue>Resolved</literalValue>
+        <name>Update Inquiry Result to Resolved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contact Us Form%2C Cleanslate Customer</fullName>
+        <actions>
+            <name>Contact_Us_Form_Cleanslate_Customer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Customer,Customer Referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cleanslate</value>
+        </criteriaItems>
+        <description>Email alert sent to BG when Web Inquiry Source is &quot;Customer&quot; or &quot;Customer Referral&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C E-News</fullName>
+        <actions>
+            <name>Contact_Us_Form_MT_MH</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>E-News</value>
+        </criteriaItems>
+        <description>Email alert sent to MT &amp; MH when Web Inquiry Source is &quot;E-news&quot; on Cara, Cara Connects, and Cleanslate Contact Us forms.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Employer</fullName>
+        <actions>
+            <name>Contact_Us_Form_Employer_Cara</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Employer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara</value>
+        </criteriaItems>
+        <description>Email alert sent to KS when Web Inquiry Source is &quot;Employer&quot; on Cara Contact Us form.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Employer%2C Connects</fullName>
+        <actions>
+            <name>Contact_Us_Form_Employer_Connects</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Employer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara Connects</value>
+        </criteriaItems>
+        <description>Email alert sent to MC when Web Inquiry Source is &quot;Employer&quot; on Cara Connects Contact Us form.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Event Supporter</fullName>
+        <actions>
+            <name>Contact_Us_Form_Event_Supporter</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Event Supporter</value>
+        </criteriaItems>
+        <description>Email alert sent to MT (temporarily) when Web Inquiry Source is &quot;Event Supporter&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Institute and Affiliate</fullName>
+        <actions>
+            <name>Contact_Us_Form_SW</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Institute,Affiliate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara</value>
+        </criteriaItems>
+        <description>Email alert sent to SW when Web Inquiry Source is &quot;Institute&quot; or &quot;Affiliate&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Media</fullName>
+        <actions>
+            <name>Contact_Us_Form_MT</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Media</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara</value>
+        </criteriaItems>
+        <description>Email alert sent to MT when Web Inquiry Source is &quot;Media&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Motivations</fullName>
+        <actions>
+            <name>Contact_Us_Form_REK</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Motivations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara</value>
+        </criteriaItems>
+        <description>Email alert sent to Robyn when Web Inquiry Source is &quot;Motivations&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Motivations and Other</fullName>
+        <actions>
+            <name>Contact_Us_Form_LS</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Motivations,Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Website_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara</value>
+        </criteriaItems>
+        <description>Email alert sent to Individual Giving Manager &amp; LS when Web Inquiry Source is &quot;Motivations&quot; or &quot;Other&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Participant</fullName>
+        <actions>
+            <name>Contact_Us_Form_Participant</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Cara Participant,Participant Referral,Connects Candidate,Cleanslate Participant</value>
+        </criteriaItems>
+        <description>Email alert sent to recruitment@carachicago.org when Web Inquiry Source is &quot;Cara Participant&quot;, &quot;Participant Referral&quot;, &quot;Connects Candidate&quot;, or &quot;Cleanslate Participant&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Us Form%2C Volunteer</fullName>
+        <actions>
+            <name>Contact_Us_Form_Volunteer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Volunteer</value>
+        </criteriaItems>
+        <description>Email alert sent to Robyn when Inquiry Source is &quot;Volunteer&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inquiry Closed Date</fullName>
+        <actions>
+            <name>Closed_Date_is_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ischanged(Inquiry_Result__c) &amp;&amp; ispickval(Inquiry_Result__c, &quot;Resolved&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Rental Assistance Requested</fullName>
+        <actions>
+            <name>Rental_Assistance_Requested</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Web_Inquiry__c.Inquiry_Source__c</field>
+            <operation>equals</operation>
+            <value>Rental Assistance Request</value>
+        </criteriaItems>
+        <description>Email alert sent to KJ &amp; NV when Web Inquiry Source is &quot;Rental Assistance Request&quot;.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Participant Inquiry to Resolved</fullName>
+        <actions>
+            <name>Update_Inquiry_Result_to_Resolved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordTypeId = &apos;012f3000000coLi&apos;  &amp;&amp;  ispickval(Inquiry_Status__c, &quot;Payment Issued&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

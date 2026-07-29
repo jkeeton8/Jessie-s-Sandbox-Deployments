@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( contains(Organization_TCP__r.Name, &quot;The Habitat Company&quot;), &quot;The Habitat Company&quot;,
+if ( contains(Organization_TCP__r.Name, &quot;Catholic Charities&quot;), &quot;Catholic Charities&quot;,
+if (not (isblank (Organization_TCP__c)), Organization_TCP__r.Name,  
+if (not (isblank (Legacy_Company_Name__c)), Legacy_Company_Name__c,  
+if (not (isblank (Job_Order__c)),  Job_Order__r.Organization__r.Name, 
+&quot;&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Organization Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

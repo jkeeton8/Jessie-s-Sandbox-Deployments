@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendOutCloseRule</fullName>
+    <active>true</active>
+    <description>This makes it to where you cannot save Send Out unless the Referral Sent to CEP checkbox is checked and the Stage field is set to Send Out Sent. Also, you cannot save unless you&apos;re the owner or the creator of the record. Does not apply if record is new.</description>
+    <errorConditionFormula>AND(
+  NOT(ISNEW()),
+  Job_Placement_Owner__c &lt;&gt; $User.Id,
+  CreatedById &lt;&gt; $User.Id,
+  NOT(
+    AND(
+      ISPICKVAL(Stage__c, &quot;Send Out Sent&quot;),
+      ReferralSentToCEP__c
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>TO SAVE CHANGES:
+You must be the Creator (or Owner) of the record.
+OR
+The Referral Sent to CEP checkbox must be checked and the Stage field must be set to &quot;Send Out Sent&quot;.</errorMessage>
+</ValidationRule>

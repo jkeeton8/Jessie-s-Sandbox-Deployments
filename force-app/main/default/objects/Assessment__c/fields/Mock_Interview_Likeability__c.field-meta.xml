@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mock_Interview_Likeability__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How well did the candidate demonstrate that he/she is someone you would want as a colleague? 1 being weak, 5 being neutral, and 10 being excellent.</inlineHelpText>
+    <label>Mock Interview: Likeability</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETO_Highest_Grade_Completed__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Main_Client__r.Student_Completed_Masters_Degree__c, &quot;Masters Degree&quot;, 
+if (Main_Client__r.Student_Completed_Bachelors_Degree__c, &quot;Bachelors Degree&quot;, 
+if (Main_Client__r.Student_Completed_Associates_Degree__c, &quot;AA Degree&quot;, 
+if (Main_Client__r.Student_Completed_High_School__c , &quot;High School Diploma&quot;, 
+if (Main_Client__r.Student_Obtained_GED__c, &quot;GED&quot;, 
+if ( Main_Client__r.Student_Completed_Some_Higher_Ed__c, &quot;Some College&quot;, 
+if (Main_Client__r.Student_Completed_8th_Grade__c, &quot;No High School Diploma&quot;, 
+if (Main_Client__r.Student_Did_Not_Complete_8th__c, &quot;No High School Diploma&quot;, 
+&quot;&quot;))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ETO Highest Grade Completed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

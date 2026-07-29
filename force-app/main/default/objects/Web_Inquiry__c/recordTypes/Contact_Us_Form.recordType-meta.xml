@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Us_Form</fullName>
+    <active>true</active>
+    <description>Contact Us form submissions from Cara, Cleanslate, and Cara Connects Websites.</description>
+    <label>Contact Us Form</label>
+    <picklistValues>
+        <picklist>Address_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Annual_Operating_Budget__c</picklist>
+        <values>
+            <fullName>%3E 20 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0 - 500%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E1 - 5 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2E1 - 20 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E1 - 10 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500%2C001 - 1 Million</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Average_Age_Served__c</picklist>
+        <values>
+            <fullName>%3C 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 - 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 - 35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 - 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 - 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61%2B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Average_Education__c</picklist>
+        <values>
+            <fullName>%3C High school diploma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advance degree %28Master%27s%2C PhD%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Associate degree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bachelor%27s degree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High school diploma%2FGED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade certificate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Can_you_commit_to_a_full_time_schedule__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contacted_for_More_Information__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_you_have_2_forms_of_identification__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Type__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ethnicity__c</picklist>
+        <values>
+            <fullName>Hispanic or Latino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Hispanic or Latino</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Existing_Funding__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Intersex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Man or Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Binary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer not to say</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woman or Female</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_been_to_Cara_Collective_before__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_did_you_hear_about_Cara_Collective__c</picklist>
+        <values>
+            <fullName>Family%2C Friend or Cara alumni%2Fcurrent participant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred by an Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-referral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_did_you_learn_about_RFI__c</picklist>
+        <values>
+            <fullName>Collaborator or partner organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I am a part of Cara%E2%80%99s network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supporter%2FFunder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inquiry_Result__c</picklist>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresolved</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inquiry_Status__c</picklist>
+        <values>
+            <fullName>Application Under Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted to Finance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Launching_Deepening_a_Social_Enterprise__c</picklist>
+        <values>
+            <fullName>Launching a social enterprise like Cara Connects %28has previous history of social enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launching a social enterprise like Cara Connects %28no previous history of social enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launching a social enterprise like Cleanslate %28has previous history of social enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launching a social enterprise like Cleanslate %28no previous history of social enterprise%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_reason_for_contacting_Cara__c</picklist>
+        <values>
+            <fullName>Advancement Opportunities %28Alumni participants ONLY%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job training%2C search and skills for success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-term%2Ftemporary work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Military_Status__c</picklist>
+        <values>
+            <fullName>Active Duty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never Served</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spouse of Active Duty Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spouse of Veteran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veteran</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_Organization_referred_by__c</picklist>
+        <values>
+            <fullName>%28W%29RAP - Rehab Alternative Program%2C Circuit Court of Cook County Drug Court Treatment Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Safe Haven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAPS %28Corridor Ambassador%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Franciscan Outreach Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRO Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gateway Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardin House Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haymarket Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois Department of Corrections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kedzie House Gateway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Park Community Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%27 The Spirit Transformational Living</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAMI Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northwest Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAI%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Olive Branch Mission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific Garden Mission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phoenix Recovery Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salvation Army - Freedom Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SisterHouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TASC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teamwork Englewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UCAN Chicago</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>People_Served_Annually__c</picklist>
+        <values>
+            <fullName>%3C 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 - 199</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 - 299</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - 99</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phone_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Timeline_to_Begin_Support__c</picklist>
+        <values>
+            <fullName>After two years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within the next 1-2 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within the next 12 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within the next 3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within the next 6 months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Programming_Services_Offered__c</picklist>
+        <values>
+            <fullName>Certificate training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Childcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency%2Ftransitional housing support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GED%2Fhigh school equivalency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hunger alleviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal aid %28e%2Eg%2E%2C reentry%2C expungement%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental health counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovery care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workforce development</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pronouns__c</picklist>
+        <values>
+            <fullName>He%2FHim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FHer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>They%2FThem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Race_Primarily_Served__c</picklist>
+        <values>
+            <fullName>Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latinx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Race__c</picklist>
+        <values>
+            <fullName>American Indian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black or African American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiracial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Staff_Size__c</picklist>
+        <values>
+            <fullName>%3E 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0 - 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26 - 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - 15</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>State_Province__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Strategic_Priorities__c</picklist>
+        <values>
+            <fullName>Domestic violence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early childhood education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency%2Ftransitional housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food relief%2Fsecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immigration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K-12 education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long term employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long term housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-secondary education and access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovery care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reducing justice-system involvement%2Frecidivism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short term%2Ftransitional employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violence intervention</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Within_1_2_Years__c</picklist>
+        <values>
+            <fullName>Launching or deepening a social enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launching workforce development program through affiliation%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Targeted technical assistance with a specific part of Cara%27s service delivery model</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Technical_Assistance__c</picklist>
+        <values>
+            <fullName>Competency based training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruitment practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socio-emotional curriculum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Workforce_Development_Employees__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - 9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

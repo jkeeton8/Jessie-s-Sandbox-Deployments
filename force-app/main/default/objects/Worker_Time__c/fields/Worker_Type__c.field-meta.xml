@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worker_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId = &quot;012310000011sUe&quot;, &quot;Intern&quot;, 
+if (RecordTypeId = &quot;012310000011sUj&quot;, &quot;Staff&quot;,
+NULL))</formula>
+    <label>Worker Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

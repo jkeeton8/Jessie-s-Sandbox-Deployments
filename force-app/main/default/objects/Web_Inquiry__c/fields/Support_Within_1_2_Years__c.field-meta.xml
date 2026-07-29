@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Within_1_2_Years__c</fullName>
+    <label>Support Within 1-2 Years</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Launching workforce development program through affiliation.</fullName>
+                <default>false</default>
+                <label>Launching workforce development program through affiliation.</label>
+            </value>
+            <value>
+                <fullName>Targeted technical assistance with a specific part of Cara&apos;s service delivery model</fullName>
+                <default>false</default>
+                <label>Targeted technical assistance with a specific part of Cara&apos;s service delivery model</label>
+            </value>
+            <value>
+                <fullName>Launching or deepening a social enterprise</fullName>
+                <default>false</default>
+                <label>Launching or deepening a social enterprise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

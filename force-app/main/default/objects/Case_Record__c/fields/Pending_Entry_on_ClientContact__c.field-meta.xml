@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Entry_on_ClientContact__c</fullName>
+    <description>Removed Family Structure from Formula after moving relevant fields to Case Record.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://na56.salesforce.com/&quot;&amp;Main_Client__r.Id, 
+
+if (isblank (Main_Client__r.MailingStreet) &amp;&amp; isblank (Main_Client__r.MailingCity), &quot;Primary Address; &quot;, NULL)
+
+&amp; if (isblank (text(Main_Client__r.npe01__PreferredPhone__c)), &quot;Contact Details; &quot;, NULL)
+
+&amp; if (isblank(Main_Client__r.Emergency_Contact__c) &amp;&amp; isblank(Main_Client__r.Emergency_Contact_Phone__c), &quot;Emergency Contact; &quot;, NULL)
+
+&amp; if (isblank (text (Main_Client__r.Race_Cara__c)) || isblank (text (Main_Client__r.Ethnicity__c)) || isblank (text (Main_Client__r.Gender__c)) || isblank (text (Main_Client__r.Neighborhood__c)) || isblank (text (Main_Client__r.Military_Status__c)), &quot;Demographics; &quot;, NULL)
+
+&amp; if (isblank (Main_Client__r.Birthdate), &quot;Documentation; &quot;, NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Click on link to fill in any missing sections listed here.</inlineHelpText>
+    <label>Pending Entry on Client/Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <description>Field set manually by the end user to further categorize an assessment for reporting and other purposes.</description>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intake</fullName>
+                <default>false</default>
+                <label>Intake</label>
+            </value>
+            <value>
+                <fullName>Exit</fullName>
+                <default>false</default>
+                <label>Exit</label>
+            </value>
+            <value>
+                <fullName>Final Month</fullName>
+                <default>false</default>
+                <label>Final Month</label>
+            </value>
+            <value>
+                <fullName>3 Month Follow-Up</fullName>
+                <default>false</default>
+                <label>3 Month Follow-Up</label>
+            </value>
+            <value>
+                <fullName>6 Month Follow-Up</fullName>
+                <default>false</default>
+                <label>6 Month Follow-Up</label>
+            </value>
+            <value>
+                <fullName>9 Month Follow-Up</fullName>
+                <default>false</default>
+                <label>9 Month Follow-Up</label>
+            </value>
+            <value>
+                <fullName>12 Month Follow-Up</fullName>
+                <default>false</default>
+                <label>12 Month Follow-Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

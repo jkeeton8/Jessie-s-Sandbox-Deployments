@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Details__c</fullName>
+    <label>End Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>End_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Absenteeism/Tardiness</fullName>
+                <default>false</default>
+                <label>Absenteeism/Tardiness</label>
+            </value>
+            <value>
+                <fullName>Company Actions Questionable</fullName>
+                <default>false</default>
+                <label>Company Actions Questionable</label>
+            </value>
+            <value>
+                <fullName>Company Closed</fullName>
+                <default>false</default>
+                <label>Company Closed</label>
+            </value>
+            <value>
+                <fullName>Company Error</fullName>
+                <default>false</default>
+                <label>Company Error</label>
+            </value>
+            <value>
+                <fullName>Company Reducing Workforce/Lack of Hours</fullName>
+                <default>false</default>
+                <label>Company Reducing Workforce/Lack of Hours</label>
+            </value>
+            <value>
+                <fullName>Completed Initial Terms of Employment</fullName>
+                <default>false</default>
+                <label>Completed Initial Terms of Employment</label>
+            </value>
+            <value>
+                <fullName>Daycare Issues</fullName>
+                <default>false</default>
+                <label>Daycare Issues</label>
+            </value>
+            <value>
+                <fullName>Did Not Like</fullName>
+                <default>false</default>
+                <label>Did Not Like</label>
+            </value>
+            <value>
+                <fullName>Dismissed from Cara</fullName>
+                <default>false</default>
+                <label>Dismissed from Cara</label>
+            </value>
+            <value>
+                <fullName>Incapable of Performing Duties</fullName>
+                <default>false</default>
+                <label>Incapable of Performing Duties</label>
+            </value>
+            <value>
+                <fullName>Lack of Hours</fullName>
+                <default>false</default>
+                <label>Lack of Hours</label>
+            </value>
+            <value>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+                <label>Mental Health</label>
+            </value>
+            <value>
+                <fullName>Misconduct</fullName>
+                <default>false</default>
+                <label>Misconduct</label>
+            </value>
+            <value>
+                <fullName>Negative Performance</fullName>
+                <default>false</default>
+                <label>Negative Performance</label>
+            </value>
+            <value>
+                <fullName>New Job with New Company</fullName>
+                <default>false</default>
+                <label>New Job with New Company</label>
+            </value>
+            <value>
+                <fullName>New Position-Lateral Move</fullName>
+                <default>false</default>
+                <label>New Position-Lateral Move</label>
+            </value>
+            <value>
+                <fullName>New Position-Promoted</fullName>
+                <default>false</default>
+                <label>New Position-Promoted</label>
+            </value>
+            <value>
+                <fullName>Personal Issues</fullName>
+                <default>false</default>
+                <label>Personal Issues</label>
+            </value>
+            <value>
+                <fullName>Physical Health</fullName>
+                <default>false</default>
+                <label>Physical Health</label>
+            </value>
+            <value>
+                <fullName>Poor Attitude</fullName>
+                <default>false</default>
+                <label>Poor Attitude</label>
+            </value>
+            <value>
+                <fullName>Relapse</fullName>
+                <default>false</default>
+                <label>Relapse</label>
+            </value>
+            <value>
+                <fullName>Same Position-Change in Status</fullName>
+                <default>false</default>
+                <label>Same Position-Change in Status</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+            <value>
+                <fullName>Other/Unknown</fullName>
+                <default>false</default>
+                <label>Other/Unknown</label>
+            </value>
+            <value>
+                <fullName>Obtained Better Employment</fullName>
+                <default>false</default>
+                <label>Obtained Better Employment</label>
+            </value>
+            <value>
+                <fullName>Lost Employment (At No Fault of Employee)</fullName>
+                <default>false</default>
+                <label>Lost Employment (At No Fault of Employee)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Job Ended</controllingFieldValue>
+            <valueName>Completed Initial Terms of Employment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Ended</controllingFieldValue>
+            <controllingFieldValue>Laid Off</controllingFieldValue>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Other/Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laid Off</controllingFieldValue>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Company Actions Questionable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laid Off</controllingFieldValue>
+            <valueName>Company Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laid Off</controllingFieldValue>
+            <valueName>Company Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laid Off</controllingFieldValue>
+            <valueName>Company Reducing Workforce/Lack of Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Move within Company</controllingFieldValue>
+            <valueName>New Position-Lateral Move</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Move within Company</controllingFieldValue>
+            <valueName>New Position-Promoted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Move within Company</controllingFieldValue>
+            <valueName>Same Position-Change in Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <valueName>Daycare Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <valueName>Did Not Like</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <valueName>Lack of Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Mental Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <valueName>New Job with New Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quit/Resigned</controllingFieldValue>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Physical Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Absenteeism/Tardiness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Dismissed from Cara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Misconduct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Negative Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Poor Attitude</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminated</controllingFieldValue>
+            <valueName>Theft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Retention Days</controllingFieldValue>
+            <valueName>Obtained Better Employment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Retention Days</controllingFieldValue>
+            <valueName>Lost Employment (At No Fault of Employee)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

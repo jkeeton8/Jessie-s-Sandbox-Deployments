@@ -1,0 +1,23 @@
+<apex:page controller="ExpGroupServiceEntryController" sidebar="false" tabStyle="Group_Class__c" lightningstylesheets="true">
+<apex:stylesheet value="{!URLFOR($Resource.ExpResources, styleSheet)}"/>
+<apex:form id="theForm">
+<apex:image value="{!$Resource.EcmLogov2}"/>
+<apex:sectionHeader title="{!selectedServiceActivityName} - {!groupClassSessionName}" />
+<apex:pageBlock id="thePageBlock">
+<apex:pageMessages id="errors"/>
+
+<!-- **** Based off of ECM Configuration: Connects Tracking ****-->
+
+<!-- ***** Group Class Session, page 1, order 1 ***** -->
+<c:ExpGroupClassSession theParentController="{!this}" csName="CompSettings-22099"/>
+
+<!-- ***** Group Enrolled Client UOS, page 1, order 2 ***** -->
+<c:ExpGroupEnrolledClientUOS theParentController="{!this}" csName="CompSettings-22100"/>
+
+<apex:pageBlockButtons >
+<c:ExpNavigationButton id="theButtons" theParentController="{!this}" thePageNum="1" postSaveRerender="theForm"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<apex:includeScript value="{!$Resource.ExpJavaScript}"/>
+</apex:page>

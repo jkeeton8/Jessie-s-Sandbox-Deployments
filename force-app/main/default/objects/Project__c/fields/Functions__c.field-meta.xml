@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Functions__c</fullName>
+    <label>Function(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Executive</fullName>
+                <default>false</default>
+                <label>Executive</label>
+            </value>
+            <value>
+                <fullName>Expansion</fullName>
+                <default>false</default>
+                <label>Expansion</label>
+            </value>
+            <value>
+                <fullName>Cleanslate</fullName>
+                <default>false</default>
+                <label>Cleanslate</label>
+            </value>
+            <value>
+                <fullName>Connects</fullName>
+                <default>false</default>
+                <label>Connects</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Supportive Svs</fullName>
+                <default>false</default>
+                <label>Participant Svs - Supportive Svs</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Recruitment</fullName>
+                <default>false</default>
+                <label>Participant Svs - Recruitment</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Training</fullName>
+                <default>false</default>
+                <label>Participant Svs - Training</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - SD Job Search</fullName>
+                <default>false</default>
+                <label>Participant Svs - SD Job Search</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Coaching</fullName>
+                <default>false</default>
+                <label>Participant Svs - Coaching</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Placement</fullName>
+                <default>false</default>
+                <label>Participant Svs - Placement</label>
+            </value>
+            <value>
+                <fullName>Participant Svs - Advancement</fullName>
+                <default>false</default>
+                <label>Participant Svs - Advancement</label>
+            </value>
+            <value>
+                <fullName>Back Office - Finance</fullName>
+                <default>false</default>
+                <label>Back Office - Finance</label>
+            </value>
+            <value>
+                <fullName>Back Office - Contracts</fullName>
+                <default>false</default>
+                <label>Back Office - Contracts</label>
+            </value>
+            <value>
+                <fullName>Back Office - Data &amp; Tech</fullName>
+                <default>false</default>
+                <label>Back Office - Data &amp; Tech</label>
+            </value>
+            <value>
+                <fullName>Back Office - HR</fullName>
+                <default>false</default>
+                <label>Back Office - HR</label>
+            </value>
+            <value>
+                <fullName>Back Office - Facilities &amp; Ops</fullName>
+                <default>false</default>
+                <label>Back Office - Facilities &amp; Ops</label>
+            </value>
+            <value>
+                <fullName>Dev - Institutional</fullName>
+                <default>false</default>
+                <label>Dev - Institutional</label>
+            </value>
+            <value>
+                <fullName>Dev - Individual</fullName>
+                <default>false</default>
+                <label>Dev - Individual</label>
+            </value>
+            <value>
+                <fullName>Dev - Events</fullName>
+                <default>false</default>
+                <label>Dev - Events</label>
+            </value>
+            <value>
+                <fullName>Dev - Engagement</fullName>
+                <default>false</default>
+                <label>Dev - Engagement</label>
+            </value>
+            <value>
+                <fullName>Dev - MarComms</fullName>
+                <default>false</default>
+                <label>Dev - MarComms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

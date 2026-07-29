@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notify_LF_KJ_and_Creator</name>
+        <label>Outbound_Referral__c.Notify_LF_KJ_and_Creator</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Outbound_Referral__c.Notify_LF_KJ_and_Creator</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Outbound_Referral__c.Notify_LF_KJ_and_Creator</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Referral to Transportation workflow rule
+Workflow rule description: &quot;</description>
+    <label>Referral to Transportation</label>
+    <migratedFromWorkflowRuleName>Referral to Transportation</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Notify_LF_KJ_and_Creator</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Referral_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Internal - Transportation</stringValue>
+            </value>
+        </filters>
+        <object>Outbound_Referral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

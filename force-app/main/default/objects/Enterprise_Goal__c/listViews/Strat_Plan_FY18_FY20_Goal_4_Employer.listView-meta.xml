@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strat_Plan_FY18_FY20_Goal_4_Employer</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Parent_Enterprise_Goal_Name__c</columns>
+    <columns>Year_Sequence__c</columns>
+    <columns>Goal_Name__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Enterprise_Goal__c.Strategic_Plan_Objective</value>
+    </filters>
+    <filters>
+        <field>Parent_Enterprise_Goal_Name__c</field>
+        <operation>contains</operation>
+        <value>Goal 4</value>
+    </filters>
+    <label>Strat Plan FY18-FY20, Goal 4: Employer</label>
+    <language>en_US</language>
+</ListView>

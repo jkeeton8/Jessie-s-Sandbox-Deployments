@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Plan_Objective</fullName>
+    <active>true</active>
+    <label>Strategic Plan Objective</label>
+    <picklistValues>
+        <picklist>Year__c</picklist>
+        <values>
+            <fullName>FY18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

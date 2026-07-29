@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recurring_Control_Duration</fullName>
+    <active>true</active>
+    <errorConditionFormula>isblank(Location_Day_Restriction__c)
+
+&amp;&amp;
+
+ispickval(Control_Duration__c, &quot;Recurring&quot;)</errorConditionFormula>
+    <errorDisplayField>Location_Day_Restriction__c</errorDisplayField>
+    <errorMessage>Please select a value in the &apos;Location/Day Restriction&apos; field.</errorMessage>
+</ValidationRule>

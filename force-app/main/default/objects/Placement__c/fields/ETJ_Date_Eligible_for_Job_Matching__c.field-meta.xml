@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETJ_Date_Eligible_for_Job_Matching__c</fullName>
+    <formula>if (not(isblank (ETJ_Commitment_End_Date__c)), ETJ_Commitment_End_Date__c,
+
+if (ISPICKVAL( Job_Type__c, &quot;External Transitional&quot;), Start_Date__c + 90,
+
+NULL))</formula>
+    <label>Date Eligible for Job Matching</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

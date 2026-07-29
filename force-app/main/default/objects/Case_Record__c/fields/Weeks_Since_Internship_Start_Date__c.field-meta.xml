@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weeks_Since_Internship_Start_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isnull ( Start_Date_of_Latest_Internship__c ), NULL, 
+
+if (isnull (End_Date_of_Latest_Internship__c), (today() -  Start_Date_of_Latest_Internship__c)/7,
+
+if (End_Date_of_Latest_Internship__c &lt; Start_Date_of_Latest_Internship__c, (today() - Start_Date_of_Latest_Internship__c)/7,
+
+(End_Date_of_Latest_Internship__c - Start_Date_of_Latest_Internship__c)/7)))</formula>
+    <label># Weeks Since Employment Start Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

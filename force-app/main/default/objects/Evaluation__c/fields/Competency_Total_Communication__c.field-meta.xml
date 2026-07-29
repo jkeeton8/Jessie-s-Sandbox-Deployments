@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competency_Total_Communication__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (RecordTypeId= &quot;01231000001ERwT&quot; || RecordTypeId = &quot;01231000001ERwd&quot;, 
+
+case( 
+(if (Question_04_Response__c, 1, 0) + 
+if (Question_05_Response__c, 1, 0) + 
+if (Question_06_Response__c, 1, 0) + 
+if (Question_07_Response__c, 1, 0) + 
+if (Question_08_Response__c, 1, 0)) 
+
+, 0, 0 
+, 1, 3 
+, 2, 5 
+, 3, 7 
+, 4, 8 
+, 9)
+
+, NULL)</formula>
+    <inlineHelpText>Out of 9 points. Must have all 5 questions checked off to receive full 9 points; 4 checked to receive 8 points; 3 checked to receive 7 points; 2 checked to receive 5 points; 1 checked to receive 3 points.</inlineHelpText>
+    <label>Cleanslate Total: Communication</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

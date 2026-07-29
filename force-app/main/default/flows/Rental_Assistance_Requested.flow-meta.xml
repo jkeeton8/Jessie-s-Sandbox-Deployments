@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Rental_Assistance_Requested</name>
+        <label>Web_Inquiry__c.Rental_Assistance_Requested</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Web_Inquiry__c.Rental_Assistance_Requested</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Web_Inquiry__c.Rental_Assistance_Requested</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Rental Assistance Requested workflow rule
+Workflow rule description: Email alert sent to KJ &amp; NV when Web Inquiry Source is &quot;Rental Assistance Request&quot;.&quot;</description>
+    <label>Rental Assistance Requested</label>
+    <migratedFromWorkflowRuleName>Rental Assistance Requested</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Rental_Assistance_Requested</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Inquiry_Source__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rental Assistance Request</stringValue>
+            </value>
+        </filters>
+        <object>Web_Inquiry__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

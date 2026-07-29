@@ -1,0 +1,3 @@
+<apex:page showHeader="false" lightningStyleSheets="true">
+    <flow:interview name="Cara_Announcements" buttonLocation="both"/>    
+</apex:page>

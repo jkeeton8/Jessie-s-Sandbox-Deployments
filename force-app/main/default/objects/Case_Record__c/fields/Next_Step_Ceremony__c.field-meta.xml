@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Step_Ceremony__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot;+ Id +
+&quot;&amp;EmailToID=&quot;+ Main_Client__r.Id +
+&quot;&amp;EmailFromID=0D24y0000004DdD&quot; +
+&quot;&amp;EmailTemplateId=a1E4y0000040lgi&quot; +
+&quot;&amp;QMode=SendEmail&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Step Ceremony</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
