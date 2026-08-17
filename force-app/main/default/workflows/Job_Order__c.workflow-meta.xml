@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>RecommendationDenialExplanationAlert</fullName>
@@ -15,4 +15,4 @@
         <senderType>CurrentUser</senderType>
         <template>Studentforce_Student_Mgmt_Templates/RecommendationDenialExplanationTemplate</template>
     </alerts>
-</Workflow>
+    </Workflow>

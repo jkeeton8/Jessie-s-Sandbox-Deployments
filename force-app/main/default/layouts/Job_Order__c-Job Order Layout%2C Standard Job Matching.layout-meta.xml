@@ -3,7 +3,6 @@
     <customButtons>Find_Matches</customButtons>
     <customButtons>Status_Report</customButtons>
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
-    <excludeButtons>SmartFillEnrich</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>

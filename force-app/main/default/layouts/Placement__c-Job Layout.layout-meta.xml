@@ -262,10 +262,6 @@
                 <behavior>Required</behavior>
                 <field>Notes__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Qualifying_Retention_Days__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
