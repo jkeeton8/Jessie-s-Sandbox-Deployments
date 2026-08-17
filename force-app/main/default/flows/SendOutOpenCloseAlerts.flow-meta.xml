@@ -69,6 +69,9 @@
                 <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
+        <connector>
+            <targetReference>Update_Sent_Out_Sent_Date</targetReference>
+        </connector>
     </assignments>
     <decisions>
         <name>CriteriaMetCheck</name>
@@ -96,6 +99,9 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Copy_of_Update_Sent_Out_Sent_Date</targetReference>
+            </connector>
             <label>Criteria Was Met</label>
         </rules>
     </decisions>
@@ -154,6 +160,48 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_of_Update_Sent_Out_Sent_Date</name>
+        <label>Copy of Update Sent Out Sent Date</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Send_Out_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_Out_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Sent_Out_Sent_Date</name>
+        <label>Update Sent Out Sent Date</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>1</filterLogic>
+        <filters>
+            <field>Send_Out_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_Out_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
