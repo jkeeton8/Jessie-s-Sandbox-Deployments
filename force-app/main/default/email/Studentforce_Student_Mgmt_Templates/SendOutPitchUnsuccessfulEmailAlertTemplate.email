@@ -1,0 +1,13 @@
+<b>Name</b>: {!Case_Record__c.Client_Name__c}<br>
+<b>Send Out Open Date</b>: {!Placement__c.CreatedDate}<br>
+
+A Send Out pitch was unsuccessful.<br>
+
+To view the full, Send Out, click on the Send Out link below:
+
+
+<br>
+{!Placement__c.RecommendationDenialExplanationPicklist__c}
+<br>
+
+{!Placement__c.Id}<br>

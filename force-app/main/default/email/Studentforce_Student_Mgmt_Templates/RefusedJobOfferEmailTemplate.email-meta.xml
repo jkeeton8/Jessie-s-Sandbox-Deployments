@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Refused Job Offer Email Template</name>
+    <style>none</style>
+    <subject>{!Case_Record__c.Client_Name__c} - Refused Job Offer</subject>
+    <textOnly>Name: {!Case_Record__c.Client_Name__c}
+Category: {!Incident__c.Category__c}
+Reason: {!Incident__c.Reason__c}
+
+A Participant refused a job offer.
+To view the full Progress Note, click on the Service Entry link below:
+https://cara.my.salesforce.com/{!Incident__c.Service_EntryId__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>SendOut24Hours</name>
-        <label>SendOut24Hours</label>
+        <name>SendOut48Hours</name>
+        <label>SendOut48Hours</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <actionName>Placement__c.SendOut24HourAlert</actionName>
+        <actionName>Placement__c.SendOut48HourAlert</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
@@ -14,7 +14,7 @@
                 <elementReference>$Record.Id</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>Placement__c.SendOut24HourAlert</nameSegment>
+        <nameSegment>Placement__c.SendOut48HourAlert</nameSegment>
         <offset>0</offset>
     </actionCalls>
     <actionCalls>
@@ -56,7 +56,6 @@
         <offset>0</offset>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>CriteriaMetEarlyVarCheck</name>
         <label>CriteriaMetEarlyVarCheck</label>
@@ -79,7 +78,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>SendOut24Hours</targetReference>
+            <targetReference>SendOut48Hours</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Criteria Not Met</defaultConnectorLabel>
         <rules>

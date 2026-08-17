@@ -1,0 +1,9 @@
+<b>Send Out Owner: {!Placement__c.Job_Placement_Owner__c}<br>
+<b>Name</b>: {!Case_Record__c.Client_Name__c}<br>
+<b>Send Out Open Date</b>: {!Placement__c.CreatedDate}<br><br>
+
+A Send Out was created!.<br>
+
+To view the full, Send Out, click the link below:
+<br>
+<a href="https://cara.my.salesforce.com/{!Placement__c.Id}">https://cara.my.salesforce.com/{!Placement__c.Id}</a>

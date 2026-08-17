@@ -1,0 +1,13 @@
+The following Job Order was closed with a Recommendation Denial Explanation.
+<br>
+<br>
+Organization: {!Job_Order__c.Organization__c}
+<br>
+Title: {!Job_Order__c.Name}
+<br>
+Recommendation Denial Explanation: {!Job_Order__c.NoMatchReason__c}
+<br>
+<br>
+ Click the link below to view the Job Order:
+<br>
+<a href="https://cara.my.salesforce.com/{!Job_Order__c.Id}">https://cara.my.salesforce.com/{!Job_Order__c.Id}</a>

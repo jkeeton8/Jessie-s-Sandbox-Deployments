@@ -1,0 +1,12 @@
+<b>Name</b>: {!Case_Record__c.Client_Name__c}<br>
+
+
+<b>Category</b>: {!Incident__c.Category__c}<br>
+<b>Reason</b>: {!Incident__c.Reason__c}<br>
+
+<br>A Participant refused a job offer.<br>
+
+
+
+To view the full Progress Note, click on the Service Entry link below:<br>
+<a href="https://cara.my.salesforce.com/{!Incident__c.Service_EntryId__c}">https://cara.my.salesforce.com/{!Incident__c.Service_EntryId__c}</a>

@@ -18,7 +18,6 @@
         <offset>0</offset>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <description>Email alert to Lead Business Partner Specialist / Biz Dev Lead if a Send Out if a pitch is unsuccessful.</description>
     <environments>Default</environments>
     <interviewLabel>SendOutPitchUnsuccessfulEmailAlertFlow {!$Flow.CurrentDateTime}</interviewLabel>

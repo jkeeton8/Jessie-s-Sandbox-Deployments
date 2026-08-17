@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends out an email alert when a Send Out is created to the Business Development team.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SendOutCreatedBDTemplate</name>
+    <style>none</style>
+    <subject>{!Case_Record__c.Client_Name__c} - {!Placement__c} -Send Out Created</subject>
+    <textOnly>Send Out Owner: {!Placement__c.Job_Placement_Owner__c}
+Name: {!Case_Record__c.Client_Name__c}
+Send Out Open Date:: {!Placement__c.CreatedDate}
+
+A Send Out was created! (or updated).
+
+Employer: {!Placement__c.Organization_TCP__c}
+Job Title: {!Placement__c.Job_Title__c}
+Job Order: {!Placement__c.Job_Order__c}
+
+Notes: {!Placement__c.Notes__c}
+
+To view the full, Send Out, click the link below:
+https://cara.my.salesforce.com/{!Placement__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

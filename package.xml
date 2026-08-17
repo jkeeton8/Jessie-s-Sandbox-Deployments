@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================
+  ES & BD UPDATES PROJECT  -  Deployment manifest (package.xml)
+  Built from the ES & BD Component Audit Trail.  Author: Jessie
+  ============================================================================
+
+  METADATA TRACK (Track 1). All 57 components below were verified against the
+  sandbox via a clean retrieve. This manifest deploys ONLY these members -
+  nothing else in the repo or org is touched.
+
+  Objects: Job_Order__c, Placement__c, Client_Session__c, Incident__c
+  Email template folder: Studentforce_Student_Mgmt_Templates
+
+  NOT in this manifest (Track 2 - handled separately as data, AFTER this
+  deploys): the ECM Component Settings, ECM Configuration Page, and ECM
+  Service Entry records (the new service-entry page).
+  ============================================================================
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+  <!-- ===================== CUSTOM FIELDS (confirmed API names) ===================== -->
+  <types>
+    <members>Job_Order__c.High_Priority_Check_Date__c</members>
+    <members>Job_Order__c.NoMatchReason__c</members>
+    <members>Job_Order__c.Job_Placement_Type__c</members>
+    <members>Placement__c.Stage__c</members>
+    <members>Placement__c.RecommendationDenialExplanationPicklist__c</members>
+    <members>Placement__c.Job_Type__c</members>
+    <members>Client_Session__c.Declining_Job_Reason__c</members>
+    <members>Incident__c.Reason__c</members>
+
+    <!-- CONFIRMED by Jessie (suffixes verified; Note corrected to Notes) -->
+    <members>Placement__c.ReferralSentToCEP__c</members>
+    <members>Placement__c.RelatedServiceEntry__c</members>
+    <members>Placement__c.Notes__c</members>
+    <members>Client_Session__c.RelatedJobOrder__c</members>
+
+    <!-- Job Order fields (API names confirmed by Jessie) -->
+    <members>Job_Order__c.HighPriority__c</members>
+    <members>Job_Order__c.JobIsUnion__c</members>
+    <members>Job_Order__c.Wage__c</members>
+    <members>Job_Order__c.Location__c</members>
+    <members>Job_Order__c.Number_of_Jobs_Available__c</members>
+    <members>Job_Order__c.Employment_Source__c</members>
+    <members>Job_Order__c.Benefits__c</members>
+    <members>Job_Order__c.Position_Vertical__c</members>
+    <members>Job_Order__c.Education__c</members>
+    <members>Job_Order__c.Shift__c</members>
+    <members>Job_Order__c.Conviction_Policy_Consider_Students__c</members>
+    <members>Job_Order__c.Driver_s_License_Required__c</members>
+    <members>Job_Order__c.Reliable_Car_Access__c</members>
+    <members>Job_Order__c.AdditionalSteps__c</members>
+    <members>Job_Order__c.Requires_Cash_Handling__c</members>
+    <!-- Intentionally NOT included: "Job Type" and "Drug Testing" already exist
+         under other names (Job/Placement Type, Drug Testing Requirement). -->
+    <name>CustomField</name>
+  </types>
+
+  <!-- ===================== VALIDATION RULES ===================== -->
+  <types>
+    <members>Placement__c.SendOutCloseRule</members>
+    <members>Incident__c.StatusRequired</members>
+    <name>ValidationRule</name>
+  </types>
+
+  <!-- ===================== LIST VIEWS ===================== -->
+  <types>
+    <members>Job_Order__c.High_Priority_Job_Order</members>
+    <name>ListView</name>
+  </types>
+
+  <!-- ===================== WORKFLOW EMAIL ALERTS ===================== -->
+  <types>
+    <members>Incident__c.NonCEPEmailAlert</members>
+    <members>Incident__c.NCNSEmailAlert</members>
+    <members>Incident__c.RefusedJobOfferEmailAlert</members>
+    <members>Job_Order__c.RecommendationDenialExplanationAlert</members>
+    <members>Placement__c.SendOutPitchUnsuccessfulEmailAlert</members>
+    <members>Placement__c.SendOut48HourAlert</members>
+    <members>Placement__c.SendOutComplete</members>
+    <members>Placement__c.SendOutCreatedBD</members>
+    <name>WorkflowAlert</name>
+  </types>
+
+  <!-- ===================== WORKFLOW RULES ===================== -->
+  <types>
+    <members>Incident__c.Concern(Retention) Created</members>
+    <name>WorkflowRule</name>
+  </types>
+
+  <!-- ===================== FLOWS ===================== -->
+  <types>
+    <members>SendOutServiceEntryLookup</members>
+    <members>HighPriorityCountDown</members>
+    <members>SendOutOpenCloseAlerts</members>
+    <members>SendOutPitchUnsuccessfulEmailAlertFlow</members>
+    <members>HoldOrConcernReasonChosenEmailAlertFlow</members>
+    <members>RecommendationDenialExplanationAlertFlow</members>
+    <name>Flow</name>
+  </types>
+
+  <!-- ===================== EMAIL TEMPLATES ===================== -->
+  <types>
+    <members>Studentforce_Student_Mgmt_Templates/NonResponsiveToCEPEmailTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/NCNSToInterviewEmailTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/RefusedJobOfferEmailTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/RecommendationDenialExplanationTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/SendOutPitchUnsuccessfulEmailAlertTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/SendOut48HourTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/SendOutCompleteTemplate</members>
+    <members>Studentforce_Student_Mgmt_Templates/SendOutCreatedBDTemplate</members>
+    <name>EmailTemplate</name>
+  </types>
+
+  <!-- ===================== VISUALFORCE PAGE ===================== -->
+  <types>
+    <members>EmploymentServiceJobSearchMeeting1</members>
+    <name>ApexPage</name>
+  </types>
+
+  <!-- ===================== PUBLIC GROUP ===================== -->
+  <types>
+    <members>JobRelatedImpactTeamAlerts</members>
+    <name>Group</name>
+  </types>
+
+  <!-- ===================== PAGE LAYOUTS ===================== -->
+  <types>
+    <!-- Layout names confirmed by Jessie -->
+    <members>Job_Order__c-Job Order Layout%2C Standard Job Matching</members>
+    <members>Placement__c-Job Layout</members>
+    <name>Layout</name>
+  </types>
+
+  <!--
+    ===================== FIELD SET (needs its object) =====================
+    "DateAndJobOrderLookup" on Service Entry is a Field Set. Field sets cannot
+    be deployed on their own; they travel with their object. To ship it, either
+    deploy the whole ServiceEntry object or add the field set in production by
+    hand. Left out here on purpose - decide which you want (see checklist).
+  -->
+
+  <!--
+    ===================== ECM COMPONENTS - NOT INCLUDED (verify!) =====================
+    Your 10 ECM Component Settings, the ECM Configuration Page ("Employment
+    Service Job Search Meeting"), and the ECM Service Entry ("Send Out Sales
+    Pitch") are managed-package configuration. Their CompSettings numbers look
+    like DATA RECORDS, which the Metadata API does NOT deploy, so they are
+    deliberately excluded here.
+
+    THIS IS THE NEW SERVICE-ENTRY PAGE YOU BUILT. Do not assume it deploys with
+    this manifest. See checklist item 5 to verify and decide how to move it.
+  -->
+
+  <version>62.0</version>
+</Package>
